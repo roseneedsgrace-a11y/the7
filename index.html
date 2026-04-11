@@ -337,16 +337,51 @@ function loadFromJson(studentName, weekNum) {
   // Find current week if not specified
   if (!weekNum) {
     const today = new Date();
-    today.setHours(0,0,0,0);
-    // Find the week containing today or the most recent past week
-    let bestWeek = null;
+    today.setHours(0, 0, 0, 0);
+
+    // Build date ranges for each week from the grid data
+    const weekRanges = {};
     Object.keys(studentData.weeks).forEach(function(w) {
-      const weekDays = studentData.weeks[w].days;
-      // weeks are keyed by week number, find best match
-      if (!bestWeek) bestWeek = w;
-      else if (parseInt(w) > parseInt(bestWeek)) bestWeek = w;
+      studentData.weeks[w].grid.forEach(function(row) {
+        row.tasks.forEach(function(t) {
+          if (!t.rawDate) return;
+          const d = new Date(t.rawDate);
+          d.setHours(0, 0, 0, 0);
+          const ts = d.getTime();
+          if (!weekRanges[w]) weekRanges[w] = { min: ts, max: ts };
+          if (ts < weekRanges[w].min) weekRanges[w].min = ts;
+          if (ts > weekRanges[w].max) weekRanges[w].max = ts;
+        });
+      });
     });
-    weekNum = bestWeek;
+
+    let bestWeek = null;
+
+    // First check if today falls within any week
+    for (const w in weekRanges) {
+      const { min, max } = weekRanges[w];
+      if (today.getTime() >= min && today.getTime() <= max) {
+        bestWeek = w;
+        break;
+      }
+    }
+
+    // Otherwise find nearest week
+    if (!bestWeek) {
+      let closestDist = Infinity;
+      for (const w in weekRanges) {
+        const { min, max } = weekRanges[w];
+        const dist = today.getTime() < min
+          ? min - today.getTime()
+          : today.getTime() - max;
+        if (dist < closestDist) {
+          closestDist = dist;
+          bestWeek = w;
+        }
+      }
+    }
+
+    weekNum = bestWeek || Object.keys(studentData.weeks)[0];
   }
 
   const weekData = studentData.weeks[String(weekNum)];
