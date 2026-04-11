@@ -246,22 +246,42 @@
   let lastData = null;
   let cachedConfig = null;
 
-window.onload = function() {
-  const params = new URLSearchParams(window.location.search);
-  const preselect = params.get('student') || '';
-  const hideHeader = params.get('hideheader') === 'true';
+  window.onload = function() {
+    const params = new URLSearchParams(window.location.search);
+    const preselect = params.get('student') || '';
+    const hideHeader = params.get('hideheader') === 'true';
+    if (!hideHeader) document.getElementById('siteHeader').style.display = 'flex';
 
-  if (!hideHeader) document.getElementById('siteHeader').style.display = 'flex';
+    const jsonUrl = (window.location.hostname === 'roseneedsgrace-a11y.github.io')
+      ? 'data.json?t=' + Date.now()
+      : 'https://roseneedsgrace-a11y.github.io/the7/data.json?t=' + Date.now();
 
-  // Read from static JSON — instant load
-  fetch('data.json?t=' + Date.now())
-    .then(r => r.json())
-    .then(function(json) {
+    // Fetch structure and progress in parallel
+    Promise.all([
+      fetch(jsonUrl).then(r => r.json()),
+      fetch(API_URL + '?action=getProgress').then(r => r.json())
+    ])
+    .then(function(results) {
+      const json = results[0];
+      const progressMap = results[1];
+
+      // Merge live progress into the JSON data
+      if (json.studentData) {
+        json.studentData.forEach(function(s) {
+          Object.keys(s.weeks).forEach(function(w) {
+            s.weeks[w].grid.forEach(function(row) {
+              row.tasks.forEach(function(t) {
+                t.done = progressMap[t.id] === true;
+              });
+            });
+          });
+        });
+      }
+
       cachedConfig = json;
       applyHeader(json.headerText, json.headerColor);
       if (json.sharedDesign) applySharedDesign(json.sharedDesign);
 
-      // Populate dropdown
       const sel = document.getElementById('student');
       sel.innerHTML = '';
       json.students.forEach(s => {
@@ -271,7 +291,6 @@ window.onload = function() {
         sel.appendChild(opt);
       });
 
-      // Pre-select
       const targetStudent = preselect ||
         (json.students.length ? json.students[0].name : '');
       const match = Array.from(sel.options).find(o =>
@@ -282,7 +301,7 @@ window.onload = function() {
       loadFromJson(sel.value, null);
     })
     .catch(function() {
-      // Fallback to GAS if JSON not available
+      // Fallback to GAS entirely
       fetch(API_URL + '?action=getAll&student=' + encodeURIComponent(preselect) + '&week=')
         .then(r => r.json())
         .then(function(data) {
@@ -301,7 +320,7 @@ window.onload = function() {
           drawGrid();
         });
     });
-};
+  };
 
   window.addEventListener('scroll', function() {
     const btn = document.getElementById('scrollTopBtn');
