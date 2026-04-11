@@ -336,18 +336,30 @@
 <div id="content" class="loading">Loading assignments...</div>
 
 <script>
-  const IS_GAS = typeof google !== 'undefined' && google.script;
   const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
+  const IS_GAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
 
   let currentDate = new Date();
   currentDate.setHours(0, 0, 0, 0);
   let allData = null;
 
+  // Dynamically build the base URL for this host
+  function getBaseUrl() {
+    const hostname = window.location.hostname;
+    const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
+    if (isGAS) return API_URL;
+    // On any web host (GitHub, Netlify, etc.) use the current origin + path
+    const path = window.location.pathname.replace(/\/[^/]*$/, '/');
+    return window.location.origin + path;
+  }
+
   // Set home link
+  const base = getBaseUrl();
+  const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
+
   const homeLink = document.getElementById('homeLink');
   if (homeLink) {
-    const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
-    homeLink.href = isGAS ? API_URL : 'index.html';
+    homeLink.href = isGAS ? API_URL : base + 'index.html';
   }
 
   window.onload = function() {
@@ -393,11 +405,12 @@
     allData = data;
     const olderLinks = document.getElementById('olderLinks');
     if (olderLinks && data.students) {
+      const base = getBaseUrl();
       const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
       olderLinks.innerHTML = data.students.map(function(s) {
         const url = isGAS
           ? API_URL + '?student=' + encodeURIComponent(s.student)
-          : 'index.html?student=' + encodeURIComponent(s.student);
+          : base + 'index.html?student=' + encodeURIComponent(s.student);
         return '<a href="' + url + '" target="_blank" style="color:#4682B4;text-decoration:none;">'
           + s.student + '</a>';
       }).join(', ');
@@ -536,10 +549,11 @@ function updateNavButtons() {
     const total = s.tasks.length;
     const pct = total > 0 ? Math.round((done / total) * 100) : 0;
     const pctDisplay = pct === 100 ? '\u2713' : pct + '%';
+    const base = getBaseUrl();
     const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
     const indexUrl = isGAS
       ? API_URL + '?student=' + encodeURIComponent(s.student)
-      : 'index.html?student=' + encodeURIComponent(s.student);
+      : base + 'index.html?student=' + encodeURIComponent(s.student);
 
     let html = '<div class="student-card">';
 
