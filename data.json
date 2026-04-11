@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-11T19:32:34.264Z",
+  "generated": "2026-04-11T20:54:24.827Z",
   "headerText": "Thus Far the Lord Has Helped Us",
   "headerColor": "#741b47",
   "sharedDesign": "orchid",
@@ -23,6 +23,30 @@
     {
       "name": "Amos",
       "gender": "patriotic"
+    },
+    {
+      "name": "Child 1",
+      "gender": "girl"
+    },
+    {
+      "name": "Child 2",
+      "gender": "girl"
+    },
+    {
+      "name": "Testing",
+      "gender": "girl"
+    },
+    {
+      "name": "Ruth",
+      "gender": "girl"
+    },
+    {
+      "name": "Tom",
+      "gender": "girl"
+    },
+    {
+      "name": "Child 1",
+      "gender": "girl"
     }
   ],
   "studentData": [
