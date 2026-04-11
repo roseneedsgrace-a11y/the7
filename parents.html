@@ -372,14 +372,24 @@
         .withFailureHandler(function(e) { showError(e.message); })
         .getThreeWeeksForAllStudents();
     } else {
-      fetch(API_URL + '?action=getConfig')
-        .then(r => r.json())
-        .then(function(config) { applyHeaderSettings(config); });
-      fetch(API_URL + '?action=getThreeWeeks')
-        .then(r => r.json())
-        .then(function(data) { renderDashboard(data); })
-        .catch(function(e) { showError(e.message); });
-    }
+        fetch(API_URL + '?action=getConfig')
+          .then(r => r.json())
+          .then(function(config) { applyHeaderSettings(config); })
+          .catch(function() {});
+
+        fetch(API_URL + '?action=getThreeWeeks')
+          .then(r => r.json())
+          .then(function(data) { renderDashboard(data); })
+          .catch(function(e) {
+            document.getElementById('content').innerHTML =
+              '<div style="color:#dc2626;padding:40px;text-align:center;">' +
+              'Could not load assignments. This may be a connection issue.<br><br>' +
+              '<a href="' + API_URL + '?page=parents" target="_blank" ' +
+              'style="color:#4682B4;">Open Parents Dashboard directly ↗</a>' +
+              '</div>';
+            document.getElementById('dateBar').textContent = 'Connection error';
+          });
+      }
   };
 
   function applyHeaderSettings(config) {
