@@ -220,25 +220,35 @@
 
 <script>
   const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
-  const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
   const hideHeader = new URLSearchParams(window.location.search).get('hideheader') === 'true';
 
+
+  // Dynamically build the base URL for this host
+  function getBaseUrl() {
+    const hostname = window.location.hostname;
+    const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
+    if (isGAS) return API_URL;
+    // On any web host (GitHub, Netlify, etc.) use the current origin + path
+    const path = window.location.pathname.replace(/\/[^/]*$/, '/');
+    return window.location.origin + path;
+  }
   // ── ENVIRONMENT SETUP (runs immediately) ──────────
   if (!hideHeader) document.getElementById('siteHeader').style.display = 'flex';
 
   const adminLink = document.getElementById('adminLink');
   if (adminLink) adminLink.style.display = 'flex';
 
+  const base = getBaseUrl();
+  const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
+
   const adminAnchor = document.getElementById('adminAnchor');
   if (adminAnchor) {
-    adminAnchor.href = API_URL + '?page=config';
+    adminAnchor.href = isGAS ? API_URL + '?page=config' : base + 'config.html';
   }
 
   const parentAnchor = document.getElementById('parentAnchor');
   if (parentAnchor) {
-    parentAnchor.href = isGAS
-      ? API_URL + '?page=parents'
-      : 'https://roseneedsgrace-a11y.github.io/the7/parents.html';
+    parentAnchor.href = isGAS ? API_URL + '?page=parents' : base + 'parents.html';
   }
 
 
@@ -252,75 +262,82 @@
     const hideHeader = params.get('hideheader') === 'true';
     if (!hideHeader) document.getElementById('siteHeader').style.display = 'flex';
 
-    const jsonUrl = (window.location.hostname === 'roseneedsgrace-a11y.github.io')
-      ? 'data.json?t=' + Date.now()
-      : 'https://roseneedsgrace-a11y.github.io/the7/data.json?t=' + Date.now();
+    const jsonUrl = isGAS ? null : getBaseUrl() + 'data.json?t=' + Date.now();
 
-    // Fetch structure and progress in parallel
-    Promise.all([
-      fetch(jsonUrl).then(r => r.json()),
-      fetch(API_URL + '?action=getProgress').then(r => r.json())
-    ])
-    .then(function(results) {
-      const json = results[0];
-      const progressMap = results[1];
-
-      // Merge live progress into the JSON data
-      if (json.studentData) {
-        json.studentData.forEach(function(s) {
-          Object.keys(s.weeks).forEach(function(w) {
-            s.weeks[w].grid.forEach(function(row) {
-              row.tasks.forEach(function(t) {
-                t.done = progressMap[t.id] === true;
-              });
-            });
-          });
-        });
-      }
-
-      cachedConfig = json;
-      applyHeader(json.headerText, json.headerColor);
-      if (json.sharedDesign) applySharedDesign(json.sharedDesign);
-
-      const sel = document.getElementById('student');
-      sel.innerHTML = '';
-      json.students.forEach(s => {
-        const opt = document.createElement('option');
-        opt.value = s.name;
-        opt.textContent = s.name;
-        sel.appendChild(opt);
-      });
-
-      const targetStudent = preselect ||
-        (json.students.length ? json.students[0].name : '');
-      const match = Array.from(sel.options).find(o =>
-        o.value.toLowerCase() === targetStudent.toLowerCase()
-      );
-      if (match) sel.value = match.value;
-
-      loadFromJson(sel.value, null);
-    })
-    .catch(function() {
-      // Fallback to GAS entirely
-      fetch(API_URL + '?action=getAll&student=' + encodeURIComponent(preselect) + '&week=')
+    if (jsonUrl) {
+      fetch(jsonUrl)
         .then(r => r.json())
-        .then(function(data) {
-          cachedConfig = data;
-          applyHeader(data.headerText, data.headerColor);
+        .then(function(json) {
+          cachedConfig = json;
+          applyHeader(json.headerText, json.headerColor);
+          if (json.sharedDesign) applySharedDesign(json.sharedDesign);
+
           const sel = document.getElementById('student');
           sel.innerHTML = '';
-          data.students.forEach(s => {
+          json.students.forEach(s => {
             const opt = document.createElement('option');
             opt.value = s.name;
             opt.textContent = s.name;
             sel.appendChild(opt);
           });
-          lastData = data;
-          updateCSSPalette(data.palette);
-          drawGrid();
-        });
-    });
+
+          const targetStudent = preselect ||
+            (json.students.length ? json.students[0].name : '');
+          const match = Array.from(sel.options).find(o =>
+            o.value.toLowerCase() === targetStudent.toLowerCase()
+          );
+          if (match) sel.value = match.value;
+
+          loadFromJson(sel.value, null);
+
+          fetch(API_URL + '?action=getProgress')
+            .then(r => r.json())
+            .then(function(progressMap) {
+              if (cachedConfig && cachedConfig.studentData) {
+                cachedConfig.studentData.forEach(function(s) {
+                  Object.keys(s.weeks).forEach(function(w) {
+                    s.weeks[w].grid.forEach(function(row) {
+                      row.tasks.forEach(function(t) {
+                        t.done = progressMap[t.id] === true;
+                      });
+                    });
+                  });
+                });
+              }
+              patchProgressInDom(progressMap);
+            })
+            .catch(function() {});
+        })
+        .catch(function() { fallbackToGAS(preselect); });
+    } else {
+      fallbackToGAS(preselect);
+    }
   };
+
+  function fallbackToGAS(preselect) {
+    fetch(API_URL + '?action=getAll&student=' + encodeURIComponent(preselect || '') + '&week=')
+      .then(r => r.json())
+      .then(function(data) {
+        cachedConfig = data;
+        applyHeader(data.headerText, data.headerColor);
+        if (data.sharedDesign) applySharedDesign(data.sharedDesign);
+        const sel = document.getElementById('student');
+        sel.innerHTML = '';
+        data.students.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.name;
+          opt.textContent = s.name;
+          sel.appendChild(opt);
+        });
+        const match = Array.from(sel.options).find(o =>
+          o.value.toLowerCase() === (preselect || '').toLowerCase()
+        );
+        if (match) sel.value = match.value;
+        lastData = data;
+        updateCSSPalette(data.palette);
+        drawGrid();
+      });
+  }
 
   window.addEventListener('scroll', function() {
     const btn = document.getElementById('scrollTopBtn');
@@ -332,6 +349,56 @@
   const s = document.getElementById('student').value;
   const w = document.getElementById('week').value || '';
   loadFromJson(s, w);
+}
+
+function patchProgressInDom(progressMap) {
+  // Patch table view checkboxes
+  document.querySelectorAll('.check-overlay').forEach(function(cb) {
+    const id = cb.getAttribute('onchange').match(/'([^']+)'/);
+    if (!id) return;
+    const key = id[1];
+    const isDone = progressMap[key] === true;
+    if (cb.checked !== isDone) {
+      cb.checked = isDone;
+      cb.parentElement.classList.toggle('is-done', isDone);
+    }
+  });
+
+  // Patch link-only checkboxes
+  document.querySelectorAll('.link-check').forEach(function(cb) {
+    const id = cb.getAttribute('onchange').match(/'([^']+)'/);
+    if (!id) return;
+    const key = id[1];
+    const isDone = progressMap[key] === true;
+    if (cb.checked !== isDone) {
+      cb.checked = isDone;
+      const card = cb.closest('.task-card');
+      if (card) card.classList.toggle('is-done', isDone);
+    }
+  });
+
+  // Patch list view checkboxes
+  document.querySelectorAll('.list-check-overlay, .link-check-list').forEach(function(cb) {
+    const id = cb.getAttribute('onchange').match(/'([^']+)'/);
+    if (!id) return;
+    const key = id[1];
+    const isDone = progressMap[key] === true;
+    if (cb.checked !== isDone) {
+      cb.checked = isDone;
+      const row = document.getElementById('lrow-' + key);
+      if (row) row.classList.toggle('is-done', isDone);
+    }
+  });
+
+  // Update progress pills in list view
+  document.querySelectorAll('.progress-pill').forEach(function(pill) {
+    const id = pill.id;
+    if (!id || !id.startsWith('pill-')) return;
+    const dayIdx = id.replace('pill-', '');
+    const allRows = document.querySelectorAll('[data-day="' + dayIdx + '"]');
+    const doneCount = Array.from(allRows).filter(function(c) { return c.checked; }).length;
+    pill.textContent = doneCount + ' / ' + allRows.length + ' done';
+  });
 }
 
 function loadFromJson(studentName, weekNum) {
