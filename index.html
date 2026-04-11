@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { 
+      --primary: #94a3b8;
+      --secondary: #cbd5e1;
+      --bg: #f8fafc;
+      --panel: #ffffff;
+      --text: #1e293b;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      background-color: var(--bg); 
+      padding: 0 20px 200px 20px;
+      color: var(--text);
+    }
+    
+    .page-header { display: none; margin-bottom: 20px; border-bottom: 2px solid #334155; padding-bottom: 10px; }
+    .page-header h1 { margin: 0; color: var(--text); font-size: 24px; }
+
+.site-header {
+  background: #741b47;
+  width: calc(100% + 40px);
+  margin: 0 -20px 20px -20px;
+  box-sizing: border-box;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+    .site-header h1 {
+      font-family: 'Cinzel Decorative', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+      color: #f9e7f0;
+      font-size: clamp(1.2rem, 10vw, 3.6rem);
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    .controls { display: flex; gap: 20px; margin-bottom: 25px; background: var(--panel); padding: 15px 25px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); align-items: center; flex-wrap: wrap; }
+    select, input[type="number"] { padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 16px; color: var(--text); }
+    .print-btn { background: #475569; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-left: auto; transition: background 0.2s; }
+    .print-btn:hover { background: #1e293b; }
+
+    /* TABLE VIEW */
+    .table-view table { width: 100%; border-collapse: separate; border-spacing: 10px; table-layout: fixed; }
+    .table-view th { background: #e2e8f0; padding: 10px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; color: #475569; }
+    .subject-cell { 
+      width: 180px; background: var(--primary); color: white; font-weight: bold; 
+      font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;
+      padding: 20px 15px; border-radius: 8px; vertical-align: middle; text-align: left;
+    }
+    .subject-cell .curriculum-subtitle { 
+      display: block; font-weight: normal; font-size: 0.7rem; color: #F8FAFC; 
+      text-transform: none; letter-spacing: normal; margin-top: 5px; 
+    }
+    .task-card { background: var(--panel); border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px; min-height: 100px; display: flex; flex-direction: column; position: relative; cursor: pointer; transition: transform 0.1s; }
+    .task-card:active { transform: scale(0.98); }
+    .task-image { width: 60px; height: 60px; margin: 5px auto; display: block; object-fit: contain; }
+    .status-indicator { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: transparent; position: absolute; bottom: 10px; right: 10px; }
+    .is-done .status-indicator { border-color: var(--secondary); background: var(--secondary); color: white; }
+    .is-done .status-indicator::after { content: '✓'; }
+    .check-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 2; margin: 0; }
+    .status-mode .due-late:not(.is-done) { background-color: #fdf2f8 !important; border-color: #fca5a5; } 
+    .status-mode .due-warning:not(.is-done) { background-color: #ecfeff !important; border-color: #fde047; } 
+    .task-card.is-done { background: #f1f5f9 !important; opacity: 0.7; border-color: #cbd5e1; }
+    .task-card.is-done .task-text { text-decoration: line-through; color: #64748b; }
+    .task-text { font-size: 0.8rem; line-height: 1.3; white-space: pre-wrap; margin-bottom: 5px; flex-grow: 1; pointer-events: none; }
+
+    /* LIST VIEW */
+    .list-view { display: flex; flex-direction: column; gap: 14px; }
+    .day-block { background: var(--panel); border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; }
+    .day-header { padding: 12px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e2e8f0; background: #f8fafc; }
+    .day-header .day-name { font-size: 16px; font-weight: 700; color: var(--text); }
+    .day-header .day-date { font-size: 12px; color: #94a3b8; }
+    .day-header .progress-pill { margin-left: auto; font-size: 11px; background: #f1f5f9; color: #64748b; padding: 3px 9px; border-radius: 20px; white-space: nowrap; }
+    .list-task-row { display: flex; align-items: flex-start; gap: 12px; padding: 11px 16px; border-bottom: 1px solid #f1f5f9; position: relative; cursor: pointer; transition: background 0.15s; }
+    .list-task-row:last-child { border-bottom: none; }
+    .list-task-row:active { background: #f8fafc; }
+    .list-task-row.is-done { background: #f8fafc; opacity: 0.7; }
+    .list-task-row.is-done .list-task-text { text-decoration: line-through; color: #94a3b8; }
+    .status-mode .list-task-row.due-late:not(.is-done) { background: #fdf2f8; border-left: 3px solid #fca5a5; padding-left: 13px; }
+    .status-mode .list-task-row.due-warning:not(.is-done) { background: #ecfeff; border-left: 3px solid #fde047; padding-left: 13px; }
+    .list-checkbox { width: 20px; height: 20px; border-radius: 5px; border: 2px solid #cbd5e1; flex-shrink: 0; margin-top: 2px; display: flex; align-items: center; justify-content: center; transition: background 0.15s, border-color 0.15s; }
+    .list-task-row.is-done .list-checkbox { background: var(--secondary); border-color: var(--secondary); }
+    .list-checkbox::after { content: ''; display: none; width: 5px; height: 9px; border: 2px solid white; border-top: none; border-left: none; transform: rotate(45deg) translate(-1px, -1px); }
+    .list-task-row.is-done .list-checkbox::after { display: block; }
+    .list-task-info { flex: 1; min-width: 0; }
+    .list-subject-name { font-size: 11px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 1px; }
+    .list-curriculum { font-size: 11px; color: #94a3b8; margin-bottom: 3px; }
+    .list-task-text { font-size: 14px; color: #334155; line-height: 1.4; }
+    .list-task-image { width: 50px; height: 50px; object-fit: contain; flex-shrink: 0; border-radius: 4px; }
+    .list-check-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 2; margin: 0; }
+
+    /* LINK BUTTON */
+    .link-btn { display: inline-flex; align-items: center; gap: 6px; margin: 6px auto 4px; padding: 7px 14px; background: var(--primary); color: white; border-radius: 8px; font-size: 0.8rem; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: opacity 0.15s; z-index: 10; position: relative; }
+    .link-btn:hover { opacity: 0.85; }
+    .link-btn::before { content: '↗'; font-size: 0.9rem; }
+    .qr-img { display: none; width: 50px; height: 50px; }
+
+    /* LINK-ONLY CARDS */
+    .task-card.link-only { justify-content: center; align-items: center; min-height: 80px; }
+    .task-card.link-only .task-text { display: none; }
+    .task-card.link-only .status-indicator { display: none; }
+    .list-task-row.link-only .list-task-text { display: none; }
+    .list-task-row.link-only .list-curriculum { margin-bottom: 6px; }
+    .link-check { position: absolute; bottom: 10px; right: 10px; width: 20px; height: 20px; cursor: pointer; z-index: 10; opacity: 1; }
+    .list-task-row.link-only .list-check-overlay { display: none; }
+    .link-check-list { position: relative; width: 20px; height: 20px; cursor: pointer; z-index: 10; flex-shrink: 0; margin-top: 2px; opacity: 1; }
+
+    /* RESPONSIVE */
+    .table-view { display: block; }
+    .list-view { display: none; }
+
+    @media (max-width: 700px) {
+      body { padding: 10px; padding-bottom: 120px; }
+      .controls { padding: 12px; gap: 10px; }
+      .table-view { display: none; }
+      .list-view { display: flex; }
+    }
+
+    /* SCROLL TO TOP */
+    #scrollTopBtn { display: none; }
+    @media (max-width: 700px) {
+      #scrollTopBtn {
+        display: flex; align-items: center; justify-content: center;
+        position: fixed; bottom: 24px; right: 16px;
+        width: 44px; height: 44px; border-radius: 50%;
+        background: var(--primary); color: white; font-size: 20px;
+        border: none; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        opacity: 0; pointer-events: none; transition: opacity 0.25s; z-index: 999;
+      }
+      #scrollTopBtn.visible { opacity: 1; pointer-events: auto; }
+    }
+
+    /* SWITCH */
+    .switch { position: relative; display: inline-block; width: 40px; height: 20px; margin: 0 10px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #cbd5e1; transition: .4s; border-radius: 20px; }
+    .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+    input:checked + .slider { background-color: var(--secondary); }
+    input:checked + .slider:before { transform: translateX(20px); }
+
+    /* PRINT */
+    @media print {
+      .controls { display: none !important; }
+      .page-header { display: block !important; }
+      .list-view { display: none !important; }
+      .table-view { display: block !important; }
+      #scrollTopBtn { display: none !important; }
+      .link-btn { display: none !important; }
+      .qr-img { display: block !important; width: 50px !important; height: 50px !important; }
+
+      html, body { width: 100%; height: 100%; margin: 0; padding: 0; background: white !important; }
+
+      table { width: 100%; border-spacing: 0; border-collapse: collapse; font-size: 0.65rem; }
+      th, td { border: 1px solid #94a3b8 !important; border-radius: 0 !important; padding: 3px !important; }
+      th { background: white !important; }
+      .subject-cell { color: black; background: white !important; width: 90px; font-size: 0.65rem; padding: 4px !important; text-transform: none; letter-spacing: normal; }
+      .subject-cell .curriculum-subtitle { font-size: 0.55rem !important; color: #64748b !important; margin-top: 2px !important; }
+      .task-card { border: none !important; min-height: 0 !important; padding: 3px !important; background: white !important; }
+      .task-text { font-size: 0.65rem !important; margin-bottom: 2px !important; white-space: normal !important; }
+      .task-image { width: 40px !important; height: 40px !important; }
+      .status-indicator { border: 1px solid black !important; color: black !important; width: 12px !important; height: 12px !important; position: static !important; margin-top: 3px !important; background: white !important; }
+      .is-done .status-indicator { background: white !important; border: 1px solid black !important; color: black !important; }
+      .is-done .status-indicator::after { content: '✓'; }
+      .task-card.is-done { background: white !important; opacity: 1 !important; }
+      .task-card.is-done .task-text { text-decoration: line-through; color: #94a3b8 !important; opacity: 0.5 !important; }
+      .page-header { border-bottom: 1px solid #94a3b8 !important; }
+
+      @page { margin: 0.25in; size: landscape; }
+    }
+  </style>
+</head>
+<body>
+<div class="site-header" id="siteHeader" style="display:none;">
+  <h1>Thus Far the Lord<br>Has Helped Us</h1>
+</div>
+<div id="printHeader" class="page-header"><h1 id="headerTitle">Planner</h1></div>
+
+<div class="controls">
+  <div><strong>Student:</strong>
+    <select id="student" onchange="load()">
+      <option>Loading...</option>
+    </select>
+  </div>
+  <div><strong>Week:</strong><input type="number" id="week" min="1" max="36" style="width: 60px" onchange="load()"></div>
+  <label style="display:flex; align-items:center; font-size:13px; cursor:pointer;">Status Mode
+    <div class="switch"><input type="checkbox" id="statusToggle" onchange="refreshClasses()"><span class="slider"></span></div>
+  </label>
+  <button class="print-btn" onclick="printPage()">Print</button>
+</div>
+<div id="adminLink" style="display:none; text-align:right; margin-bottom: 16px; display:flex; justify-content:flex-end; gap:16px;">
+  <a id="parentAnchor" href="#" target="_blank"
+    style="font-size: 12px; color: #94a3b8; text-decoration: none;"
+    onmouseover="this.style.color='#475569'" 
+    onmouseout="this.style.color='#94a3b8'">
+    &#128203; Parents dashboard
+  </a>
+  <a id="adminAnchor" href="#" target="_blank"
+     style="font-size: 12px; color: #94a3b8; text-decoration: none;"
+     onmouseover="this.style.color='#475569'" 
+     onmouseout="this.style.color='#94a3b8'">
+    &#9881; Admin settings
+  </a>
+</div>
+<div id="content">Loading assignments...</div>
+
+<button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+
+<script>
+  const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
+  const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
+  const hideHeader = new URLSearchParams(window.location.search).get('hideheader') === 'true';
+
+  // ── ENVIRONMENT SETUP (runs immediately) ──────────
+  if (!hideHeader) document.getElementById('siteHeader').style.display = 'flex';
+
+  const adminLink = document.getElementById('adminLink');
+  if (adminLink) adminLink.style.display = 'flex';
+
+  const adminAnchor = document.getElementById('adminAnchor');
+  if (adminAnchor) {
+    adminAnchor.href = API_URL + '?page=config';
+  }
+
+  const parentAnchor = document.getElementById('parentAnchor');
+  if (parentAnchor) {
+    parentAnchor.href = isGAS
+      ? API_URL + '?page=parents'
+      : 'https://roseneedsgrace-a11y.github.io/the7/parents.html';
+  }
+
+
+
+  let lastData = null;
+  let cachedConfig = null;
+
+window.onload = function() {
+  fetch(API_URL + '?action=getConfig')
+    .then(r => r.json())
+    .then(function(config) {
+      cachedConfig = config;
+
+      // Populate student dropdown
+      const sel = document.getElementById('student');
+      sel.innerHTML = '';
+      config.students.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.name;
+        opt.textContent = s.name;
+        sel.appendChild(opt);
+      });
+
+      // Pre-select from URL parameter
+      const params = new URLSearchParams(window.location.search);
+      const preselect = params.get('student');
+      if (preselect) {
+        const match = Array.from(sel.options).find(o =>
+          o.value.toLowerCase() === preselect.toLowerCase()
+        );
+        if (match) sel.value = match.value;
+      }
+
+      // Apply shared design palette as default
+      if (config.sharedDesign) applySharedDesign(config.sharedDesign);
+
+      // Apply header
+      applyHeader(config.headerText, config.headerColor);
+
+      load(true);
+    })
+    .catch(function(err) {
+      document.getElementById('content').innerHTML = '<div style="color:red;">Failed to load config: ' + err + '</div>';
+    });
+};
+  window.addEventListener('scroll', function() {
+    const btn = document.getElementById('scrollTopBtn');
+    if (btn) btn.classList.toggle('visible', window.scrollY > 200);
+  });
+
+  function load(isInitial) {
+    const s = document.getElementById('student').value;
+    const w = isInitial ? '' : (document.getElementById('week').value || '');
+    document.getElementById('content').innerHTML = 'Updating...';
+    fetch(API_URL + '?action=getData&student=' + encodeURIComponent(s) + '&week=' + encodeURIComponent(w))
+      .then(r => r.json())
+      .then(function(data) {
+        lastData = data;
+        updateCSSPalette(data.palette);
+        drawGrid();
+      })
+      .catch(function(err) {
+        document.getElementById('content').innerHTML = '<div style="color:red;">Failed to load data: ' + err + '</div>';
+      });
+  }
+
+  function updateCSSPalette(palette) {
+    if (!palette) return;
+    const root = document.documentElement;
+    root.style.setProperty('--primary', palette.primary);
+    root.style.setProperty('--secondary', palette.secondary);
+    root.style.setProperty('--bg', palette.bg);
+  }
+
+  function drawGrid() {
+    const data = lastData;
+    if (!data || data.error) {
+      document.getElementById('content').innerHTML = '<div style="color:red;">' + (data ? data.error : 'No data') + '</div>';
+      return;
+    }
+    if (data.weekNum) document.getElementById('week').value = data.weekNum;
+    document.getElementById('headerTitle').innerText = data.student + "'s Work - Week " + data.weekNum;
+
+    const now = new Date();
+    const todayTimestamp = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    const currentHour = now.getHours();
+
+    function getStatusClass(rawDate) {
+      if (!rawDate) return '';
+      if (rawDate < todayTimestamp) return 'due-late';
+      if (rawDate === todayTimestamp) {
+        if (currentHour >= 15) return 'due-late';
+        if (currentHour >= 11) return 'due-warning';
+      }
+      return '';
+    }
+
+    // TABLE VIEW
+    let tableHtml = '<div class="table-view"><div id="tableContainer"><table><thead><tr><th>Subject</th>';
+    data.days.forEach(function(d) { tableHtml += '<th>' + d.day + '<br><small>' + d.date + '</small></th>'; });
+    tableHtml += '</tr></thead><tbody>';
+
+    data.grid.forEach(function(row) {
+      tableHtml += '<tr><td class="subject-cell">' + row.subject + (row.curriculum ? '<span class="curriculum-subtitle">' + row.curriculum + '</span>' : '') + '</td>';
+      row.tasks.forEach(function(t) {
+        if (!t.task && !t.imageUrl) {
+          tableHtml += '<td><div class="task-card" style="background:transparent;border:1px dashed #cbd5e1;cursor:default;"></div></td>';
+        } else {
+          const sc = getStatusClass(t.rawDate);
+          const isLinkOnly = t.imageUrl && t.imageUrl.includes('api.qrserver.com') && !t.task;
+          if (isLinkOnly) {
+            tableHtml += '<td><div class="task-card link-only ' + (t.done ? 'is-done' : '') + ' ' + sc + '">' +
+              renderMedia(t) +
+              '<input type="checkbox" class="link-check" ' + (t.done ? 'checked' : '') + ' onchange="toggleDirect(\'' + t.id + '\', this)">' +
+              '</div></td>';
+          } else {
+            tableHtml += '<td><label class="task-card ' + (t.done ? 'is-done' : '') + ' ' + sc + '">' +
+              '<div class="task-text">' + t.task + '</div>' +
+              renderMedia(t) +
+              '<div class="status-indicator"></div>' +
+              '<input type="checkbox" class="check-overlay" ' + (t.done ? 'checked' : '') + ' onchange="toggle(\'' + t.id + '\', this)">' +
+              '</label></td>';
+          }
+        }
+      });
+      tableHtml += '</tr>';
+    });
+    tableHtml += '</tbody></table></div></div>';
+
+    // LIST VIEW
+    let listHtml = '<div class="list-view"><div id="listContainer">';
+
+    if (data.days.length > 0) {
+      data.days.forEach(function(day, dayIdx) {
+        const dayTasks = [];
+        data.grid.forEach(function(row) {
+          const t = row.tasks[dayIdx];
+          if (t && (t.task || t.imageUrl)) {
+            dayTasks.push(Object.assign({}, t, { subject: row.subject, curriculum: row.curriculum }));
+          }
+        });
+
+        if (dayTasks.length === 0) return;
+
+        const doneCount = dayTasks.filter(function(t) { return t.done; }).length;
+
+        listHtml += '<div class="day-block"><div class="day-header">' +
+          '<span class="day-name">' + day.day + '</span>' +
+          '<span class="day-date">' + day.date + '</span>' +
+          '<span class="progress-pill" id="pill-' + dayIdx + '">' + doneCount + ' / ' + dayTasks.length + ' done</span>' +
+          '</div>';
+
+        dayTasks.forEach(function(t) {
+          const sc = getStatusClass(t.rawDate);
+          const isLinkOnly = t.imageUrl && t.imageUrl.includes('api.qrserver.com') && !t.task;
+          if (isLinkOnly) {
+            listHtml += '<div class="list-task-row link-only ' + (t.done ? 'is-done' : '') + ' ' + sc + '" id="lrow-' + t.id + '">' +
+              '<input type="checkbox" class="link-check-list" ' + (t.done ? 'checked' : '') + ' onchange="toggleList(\'' + t.id + '\', this, ' + dayIdx + ')" data-day="' + dayIdx + '">' +
+              '<div class="list-task-info">' +
+              '<div class="list-subject-name">' + t.subject + '</div>' +
+              (t.curriculum ? '<div class="list-curriculum">' + t.curriculum + '</div>' : '') +
+              renderMedia(t) +
+              '</div></div>';
+          } else {
+            listHtml += '<label class="list-task-row ' + (t.done ? 'is-done' : '') + ' ' + sc + '" id="lrow-' + t.id + '">' +
+              '<div class="list-checkbox"></div>' +
+              '<div class="list-task-info">' +
+              '<div class="list-subject-name">' + t.subject + '</div>' +
+              (t.curriculum ? '<div class="list-curriculum">' + t.curriculum + '</div>' : '') +
+              '<div class="list-task-text">' + t.task + '</div>' +
+              renderMedia(t) +
+              '</div>' +
+              '<input type="checkbox" class="list-check-overlay" ' + (t.done ? 'checked' : '') + ' onchange="toggleList(\'' + t.id + '\', this, ' + dayIdx + ')" data-day="' + dayIdx + '">' +
+              '</label>';
+          }
+        });
+
+        listHtml += '</div>';
+      });
+    }
+
+    listHtml += '</div></div>';
+    document.getElementById('content').innerHTML = tableHtml + listHtml;
+    refreshClasses();
+  }
+
+  function renderMedia(t) {
+    if (!t.imageUrl) return '';
+    if (t.imageUrl.includes('api.qrserver.com')) {
+      const match = t.imageUrl.match(/data=([^&]+)/);
+      const originalUrl = match ? decodeURIComponent(match[1]) : '#';
+      return '<a href="' + originalUrl + '" target="_blank" class="link-btn" onclick="event.stopPropagation(); event.stopImmediatePropagation();">Open Link</a>' +
+             '<img src="' + t.imageUrl + '" class="qr-img task-image" alt="QR code" style="display:none;">';
+    }
+    return '<img src="' + t.imageUrl + '" class="task-image">';
+  }
+
+  function refreshClasses() {
+    const isModeOn = document.getElementById('statusToggle').checked;
+    ['tableContainer', 'listContainer'].forEach(function(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        if (isModeOn) el.classList.add('status-mode');
+        else el.classList.remove('status-mode');
+      }
+    });
+  }
+  function applySharedDesign(design) {
+  const designs = {
+    orchid:    { primary: '#9988CC', secondary: '#87CEEB', bg: '#F0F8FF' },
+    slate:     { primary: '#708090', secondary: '#4682B4', bg: '#F0F8FF' },
+    forest:    { primary: '#5B7B4E', secondary: '#C17F3A', bg: '#F5F5EE' },
+    patriotic: { primary: '#B22234', secondary: '#002868', bg: '#F8F8FF' },
+    bookish:   { primary: '#7B4F2E', secondary: '#2E8B8B', bg: '#FDFAF5' }
+  };
+  const d = designs[design] || designs.orchid;
+  updateCSSPalette(d);
+}
+
+function applyHeader(text, color) {
+  const header = document.getElementById('siteHeader');
+  if (!header) return;
+  if (text) {
+    const h1 = header.querySelector('h1');
+    if (h1) {
+      // Split into two lines at the middle word boundary
+      const words = text.split(' ');
+      const mid = Math.ceil(words.length / 2);
+      h1.innerHTML = words.slice(0, mid).join(' ') + '<br>' + words.slice(mid).join(' ');
+    }
+  }
+  if (color) {
+    header.style.background = color;
+    // Auto-pick light or dark text based on background brightness
+    const r = parseInt(color.slice(1,3), 16);
+    const g = parseInt(color.slice(3,5), 16);
+    const b = parseInt(color.slice(5,7), 16);
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+    const h1 = header.querySelector('h1');
+    if (h1) h1.style.color = brightness > 128 ? '#2d1a10' : '#f9e7f0';
+  }
+}
+
+  function toggle(id, el) {
+    el.parentElement.classList.toggle('is-done', el.checked);
+    fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
+  }
+
+  function toggleDirect(id, el) {
+    const card = el.closest('.task-card');
+    if (card) card.classList.toggle('is-done', el.checked);
+    fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
+  }
+
+  function toggleList(id, el, dayIdx) {
+    const row = document.getElementById('lrow-' + id);
+    if (row) row.classList.toggle('is-done', el.checked);
+    const pill = document.getElementById('pill-' + dayIdx);
+    if (pill) {
+      const allRows = document.querySelectorAll('[data-day="' + dayIdx + '"]');
+      const doneCount = Array.from(allRows).filter(function(c) { return c.checked; }).length;
+      pill.textContent = doneCount + ' / ' + allRows.length + ' done';
+    }
+    fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
+  }
+  function printPage() {
+  try {
+    // If we're in an iframe, open self in new tab for printing
+    if (window.self !== window.top) {
+      window.open(window.location.href, '_blank');
+    } else {
+      window.print();
+    }
+  } catch(e) {
+    // Cross-origin iframe blocks even the check — just open a new tab
+    window.open(window.location.href, '_blank');
+  }
+}
+</script>
+</body>
+</html>
