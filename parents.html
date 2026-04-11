@@ -322,7 +322,11 @@
   <span class="current-day" id="currentDayLabel"></span>
   <button id="nextDay" onclick="changeDay(1)" disabled>Next &#8594;</button>
 </div>
-
+<div id="olderMsg" style="display:none; text-align:center; padding: 10px 20px;
+  font-size: 12px; color: #94a3b8; background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
+  To check further back, use each student's
+  <span id="olderLinks"></span> individual week view.
+</div>
 <div id="statsStrip" class="stats-strip"></div>
 
 <div class="nav-links">
@@ -354,12 +358,12 @@
       google.script.run
         .withSuccessHandler(function(data) { renderDashboard(data); })
         .withFailureHandler(function(e) { showError(e.message); })
-        .getWeekForAllStudents();
+        .getThreeWeeksForAllStudents();
     } else {
       fetch(API_URL + '?action=getConfig')
         .then(r => r.json())
         .then(function(config) { applyHeaderSettings(config); });
-      fetch(API_URL + '?action=getWeek')
+      fetch(API_URL + '?action=getThreeWeeks')
         .then(r => r.json())
         .then(function(data) { renderDashboard(data); })
         .catch(function(e) { showError(e.message); });
@@ -387,6 +391,17 @@
   function renderDashboard(data) {
     if (data.error) { showError(data.error); return; }
     allData = data;
+    const olderLinks = document.getElementById('olderLinks');
+    if (olderLinks && data.students) {
+      const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
+      olderLinks.innerHTML = data.students.map(function(s) {
+        const url = isGAS
+          ? API_URL + '?student=' + encodeURIComponent(s.student)
+          : 'index.html?student=' + encodeURIComponent(s.student);
+        return '<a href="' + url + '" target="_blank" style="color:#4682B4;text-decoration:none;">'
+          + s.student + '</a>';
+      }).join(', ');
+    }
     document.getElementById('dateBar').textContent = data.date;
 
     if (!data.students || data.students.length === 0) {
@@ -419,7 +434,6 @@
     }).filter(function(s) { return s.tasks.length > 0; });
 
     if (filtered.length === 0) {
-      // Find the nearest date that actually has tasks
       const allDates = new Set();
       allData.students.forEach(function(s) {
         s.tasks.forEach(function(t) {
@@ -429,7 +443,6 @@
       const sorted = Array.from(allDates).sort(function(a,b) { return a - b; });
       if (sorted.length > 0) {
         const currentTime = date.getTime();
-        // Find closest date
         let closest = sorted[0];
         let closestDist = Math.abs(sorted[0] - currentTime);
         sorted.forEach(function(d) {
@@ -438,7 +451,6 @@
         });
         const closestDate = new Date(closest);
         closestDate.setHours(0, 0, 0, 0);
-        // Re-filter to that nearest date
         filtered = allData.students.map(function(s) {
           const tasks = s.tasks.filter(function(t) {
             if (!t.rawDate) return false;
@@ -448,11 +460,13 @@
           });
           return Object.assign({}, s, { tasks: tasks });
         }).filter(function(s) { return s.tasks.length > 0; });
-        // Also snap currentDate to the nearest school day so the label is correct
-        currentDate = closestDate;
-        document.getElementById('currentDayLabel').textContent = closestDate.toLocaleDateString('en-US', {
-          weekday: 'long', month: 'long', day: 'numeric'
-        });
+
+        // Update label to show the nearest school day
+        // but DO NOT update currentDate — leave it on Saturday/Sunday
+        // so navigation continues stepping forward correctly
+        document.getElementById('currentDayLabel').textContent =
+          closestDate.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }) +
+          ' (nearest school day)';
       }
     }
 
@@ -485,27 +499,30 @@
   }
 
   function changeDay(direction) {
+    // Always step by one calendar day for navigation
     currentDate = new Date(currentDate.getTime() + direction * 24 * 60 * 60 * 1000);
     renderForDate(currentDate);
   }
 
-  function updateNavButtons() {
-    if (!allData) return;
-    const allDates = new Set();
-    allData.students.forEach(function(s) {
-      s.tasks.forEach(function(t) {
-        if (t.rawDate) {
-          const d = new Date(t.rawDate);
-          d.setHours(0, 0, 0, 0);
-          allDates.add(d.getTime());
-        }
-      });
+function updateNavButtons() {
+  if (!allData) return;
+  const allDates = new Set();
+  allData.students.forEach(function(s) {
+    s.tasks.forEach(function(t) {
+      if (t.rawDate) allDates.add(t.rawDate);
     });
-    const sorted = Array.from(allDates).sort(function(a,b) { return a - b; });
-    const currentTime = currentDate.getTime();
-    document.getElementById('prevDay').disabled = sorted.length === 0 || sorted[0] >= currentTime;
-    document.getElementById('nextDay').disabled = sorted.length === 0 || sorted[sorted.length - 1] <= currentTime;
-  }
+  });
+  const sorted = Array.from(allDates).sort(function(a,b) { return a - b; });
+  const currentTime = currentDate.getTime();
+  const atStart = sorted.length === 0 || currentTime <= sorted[0];
+  const atEnd = sorted.length === 0 || currentTime >= sorted[sorted.length - 1];
+
+  document.getElementById('prevDay').disabled = atStart;
+  document.getElementById('nextDay').disabled = atEnd;
+
+  const msg = document.getElementById('olderMsg');
+  if (msg) msg.style.display = atStart ? 'block' : 'none';
+}
 
   function statCard(num, label, color) {
     return '<div class="stat-card">' +
