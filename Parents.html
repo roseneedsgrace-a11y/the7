@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      padding-bottom: 60px;
+    }
+
+    /* HEADER */
+    .site-header {
+      background: #741b47;
+      width: 100%;
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin-bottom: 0;
+    }
+    .site-header h1 {
+      font-family: 'Cinzel Decorative', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+      color: #f9e7f0;
+      font-size: clamp(1.2rem, 10vw, 3.6rem);
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .site-header .page-label {
+      font-size: 12px;
+      color: #e8b4cc;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-top: 10px;
+    }
+
+    /* DATE BAR */
+    .date-bar {
+      background: #1e293b;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 28px;
+    }
+
+    /* OVERALL STATS */
+    .stats-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      padding: 0 24px;
+      margin-bottom: 28px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .stat-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 14px 16px;
+      text-align: center;
+    }
+    .stat-card .stat-num {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-card .stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #94a3b8;
+    }
+
+    /* STUDENT SECTIONS */
+    .students-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      padding: 0 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .student-card {
+      background: white;
+      border-radius: 14px;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+    }
+
+    .student-header {
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .student-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: white;
+      flex-shrink: 0;
+    }
+    .student-name {
+      font-size: 17px;
+      font-weight: 700;
+      flex: 1;
+    }
+    .student-pill {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.3);
+      color: white;
+    }
+    .student-progress-bar {
+      height: 4px;
+      background: #e2e8f0;
+    }
+    .student-progress-fill {
+      height: 100%;
+      transition: width 0.4s ease;
+    }
+
+    /* TASK LIST */
+    .task-list { padding: 8px 0; }
+
+    .task-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 18px;
+      border-bottom: 1px solid #f1f5f9;
+      cursor: pointer;
+      transition: background 0.12s;
+      position: relative;
+    }
+    .task-row:last-child { border-bottom: none; }
+    .task-row:hover { background: #fafafa; }
+    .task-row.is-done { opacity: 0.6; background: #f8fafc; }
+
+    .task-checkbox {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 2px solid #cbd5e1;
+      flex-shrink: 0;
+      margin-top: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+    }
+    .task-row.is-done .task-checkbox::after {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 9px;
+      border: 2px solid white;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+    .task-info { flex: 1; min-width: 0; }
+    .task-subject {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1px;
+    }
+    .task-curriculum { font-size: 11px; color: #94a3b8; margin-bottom: 2px; }
+    .task-text {
+      font-size: 13px;
+      color: #334155;
+      line-height: 1.4;
+    }
+    .task-row.is-done .task-text { text-decoration: line-through; color: #94a3b8; }
+
+    .task-check-input {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    /* LINK BUTTON */
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      margin-top: 4px;
+      position: relative;
+      z-index: 10;
+    }
+    .link-btn::before { content: '↗'; }
+    .link-btn:hover { opacity: 0.85; }
+
+    /* EMPTY STATE */
+    .no-tasks {
+      padding: 24px 18px;
+      font-size: 13px;
+      color: #94a3b8;
+      text-align: center;
+    }
+
+    /* NO SCHOOL TODAY */
+    .no-school {
+      text-align: center;
+      padding: 48px 20px;
+      color: #94a3b8;
+      font-size: 15px;
+    }
+    .no-school strong { display: block; font-size: 22px; color: #cbd5e1; margin-bottom: 8px; }
+
+    /* WEEK LINK */
+    .week-link {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      color: #94a3b8;
+      text-decoration: none;
+      border-top: 1px solid #f1f5f9;
+    }
+    .week-link:hover { color: #475569; background: #f8fafc; }
+
+    /* LOADING */
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .students-grid { padding: 0 12px; grid-template-columns: 1fr; }
+      .stats-strip { padding: 0 12px; }
+      .date-bar { font-size: 13px; }
+    }
+
+    @media print {
+      .site-header { height: 80px; }
+      .site-header h1 { font-size: 1rem; }
+      .task-check-input { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-header" id="siteHeader">
+  <h1 id="headerTitle">Thus Far the Lord<br>Has Helped Us</h1>
+  <div class="page-label">Parents Dashboard</div>
+</div>
+
+<div class="date-bar" id="dateBar">Loading...</div>
+
+<div id="statsStrip" class="stats-strip"></div>
+
+<div id="content" class="loading">Loading today's assignments...</div>
+
+<script>
+  const IS_GAS = typeof google !== 'undefined' && google.script;
+  const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
+
+  window.onload = function() {
+    if (IS_GAS) {
+      google.script.run
+        .withSuccessHandler(function(config) { applyHeaderSettings(config); })
+        .getStudentConfig();
+      google.script.run
+        .withSuccessHandler(renderDashboard)
+        .withFailureHandler(function(e) { showError(e.message); })
+        .getTodayData();
+    } else {
+      fetch(API_URL + '?action=getConfig')
+        .then(r => r.json())
+        .then(function(config) { applyHeaderSettings(config); });
+      fetch(API_URL + '?action=getToday')
+        .then(r => r.json())
+        .then(renderDashboard)
+        .catch(function(e) { showError(e.message); });
+    }
+  };
+
+  function applyHeaderSettings(config) {
+    if (config.headerText) {
+      const words = config.headerText.split(' ');
+      const mid = Math.ceil(words.length / 2);
+      document.getElementById('headerTitle').innerHTML =
+        words.slice(0, mid).join(' ') + '<br>' + words.slice(mid).join(' ');
+    }
+    if (config.headerColor) {
+      document.getElementById('siteHeader').style.background = config.headerColor;
+      const r = parseInt(config.headerColor.slice(1,3),16);
+      const g = parseInt(config.headerColor.slice(3,5),16);
+      const b = parseInt(config.headerColor.slice(5,7),16);
+      const bright = (r*299 + g*587 + b*114) / 1000;
+      document.getElementById('headerTitle').style.color = bright > 128 ? '#2d1a10' : '#f9e7f0';
+    }
+  }
+
+  function renderDashboard(data) {
+    if (data.error) { showError(data.error); return; }
+
+    document.getElementById('dateBar').textContent = data.date;
+
+    if (!data.students || data.students.length === 0) {
+      document.getElementById('content').innerHTML =
+        '<div class="no-school"><strong>No school today</strong>No assignments found for today.</div>';
+      return;
+    }
+
+    // Overall stats
+    let totalTasks = 0, totalDone = 0;
+    data.students.forEach(function(s) {
+      totalTasks += s.tasks.length;
+      totalDone += s.tasks.filter(function(t) { return t.done; }).length;
+    });
+    const totalRemaining = totalTasks - totalDone;
+    const pct = totalTasks > 0 ? Math.round((totalDone / totalTasks) * 100) : 0;
+
+    document.getElementById('statsStrip').innerHTML =
+      statCard(totalDone, 'Done Today', '#16a34a') +
+      statCard(totalRemaining, 'Remaining', '#dc2626') +
+      statCard(totalTasks, 'Total Tasks', '#475569') +
+      statCard(pct + '%', 'Complete', '#0284c7');
+
+    // Student cards
+    let html = '<div class="students-grid">';
+    data.students.forEach(function(s) {
+      html += buildStudentCard(s);
+    });
+    html += '</div>';
+    document.getElementById('content').innerHTML = html;
+  }
+
+  function statCard(num, label, color) {
+    return '<div class="stat-card">' +
+      '<div class="stat-num" style="color:' + color + ';">' + num + '</div>' +
+      '<div class="stat-label">' + label + '</div>' +
+      '</div>';
+  }
+
+  function buildStudentCard(s) {
+    const done = s.tasks.filter(function(t) { return t.done; }).length;
+    const total = s.tasks.length;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    const initials = s.student.slice(0, 2).toUpperCase();
+    const indexUrl = IS_GAS
+      ? API_URL + '?student=' + encodeURIComponent(s.student)
+      : 'index.html?student=' + encodeURIComponent(s.student);
+
+    let html = '<div class="student-card">';
+    const pctDisplay = pct === 100 ? '✓' : pct + '%';
+    // Header bar
+    html += '<div class="student-header" style="background:' + s.palette.primary + ';">' +
+      '<div class="student-avatar" style="background:rgba(0,0,0,0.2); font-size:12px; font-weight:700; line-height:1.1; text-align:center;">' + pctDisplay + '</div>' +
+      '<span class="student-name" style="color:white;">' + s.student + '</span>' +
+      '<span class="student-pill">' + done + ' / ' + total + '</span>' +
+      '</div>';
+
+    // Progress bar
+    html += '<div class="student-progress-bar">' +
+      '<div class="student-progress-fill" style="width:' + pct + '%; background:' + s.palette.secondary + ';"></div>' +
+      '</div>';
+
+    // Tasks
+    if (s.tasks.length === 0) {
+      html += '<div class="no-tasks">No tasks for today</div>';
+    } else {
+      html += '<div class="task-list">';
+      s.tasks.forEach(function(t) {
+        html += '<label class="task-row' + (t.done ? ' is-done' : '') + '" id="prow-' + t.id + '">' +
+          '<div class="task-checkbox" style="' + (t.done ? 'background:' + s.palette.secondary + ';border-color:' + s.palette.secondary + ';' : '') + '"></div>' +
+          '<div class="task-info">' +
+            '<div class="task-subject" style="color:' + s.palette.primary + ';">' + t.subject + '</div>' +
+            (t.curriculum ? '<div class="task-curriculum">' + t.curriculum + '</div>' : '') +
+            '<div class="task-text">' + t.task + '</div>' +
+            (t.imageUrl && t.imageUrl.includes('api.qrserver.com') ? renderLinkBtn(t.imageUrl, s.palette.primary) : '') +
+          '</div>' +
+          '<input type="checkbox" class="task-check-input" ' + (t.done ? 'checked' : '') +
+            ' onchange="toggleTask(\'' + t.id + '\', \'' + s.student + '\', this)">' +
+          '</label>';
+      });
+      html += '</div>';
+    }
+
+    // Link to full student week view
+    html += '<a class="week-link" href="' + indexUrl + '" target="_blank">View full week for ' + s.student + ' ↗</a>';
+    html += '</div>';
+    return html;
+  }
+
+  function renderLinkBtn(imageUrl, color) {
+    const match = imageUrl.match(/data=([^&]+)/);
+    const url = match ? decodeURIComponent(match[1]) : '#';
+    return '<a href="' + url + '" target="_blank" class="link-btn" style="background:' + color + ';" ' +
+      'onclick="event.stopPropagation(); event.stopImmediatePropagation();">Open Link</a>';
+  }
+
+  function toggleTask(id, studentName, el) {
+    const row = document.getElementById('prow-' + id);
+    const checkbox = row ? row.querySelector('.task-checkbox') : null;
+    if (row) {
+      row.classList.toggle('is-done', el.checked);
+      if (checkbox) {
+        if (el.checked) {
+          const card = row.closest('.student-card');
+          const fill = card ? card.querySelector('.student-progress-fill') : null;
+          const color = fill ? fill.style.background : '#87CEEB';
+          checkbox.style.background = color;
+          checkbox.style.borderColor = color;
+        } else {
+          checkbox.style.background = '';
+          checkbox.style.borderColor = '';
+        }
+      }
+      updateCardStats(row.closest('.student-card'));
+    }
+    if (IS_GAS) {
+      google.script.run.toggleProgress(id, el.checked);
+    } else {
+      fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
+    }
+  }
+
+  function updateCardStats(card) {
+    if (!card) return;
+    const rows = card.querySelectorAll('.task-row');
+    const total = rows.length;
+    const done = card.querySelectorAll('.task-row.is-done').length;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    const pill = card.querySelector('.student-pill');
+    if (pill) pill.textContent = done + ' / ' + total;
+    const fill = card.querySelector('.student-progress-fill');
+    if (fill) fill.style.width = pct + '%';
+    // Recalculate overall stats
+    recalcOverallStats();
+  }
+
+  function recalcOverallStats() {
+    const allRows = document.querySelectorAll('.task-row');
+    const total = allRows.length;
+    const done = document.querySelectorAll('.task-row.is-done').length;
+    const remaining = total - done;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    const strip = document.getElementById('statsStrip');
+    if (strip) {
+      strip.innerHTML =
+        statCard(done, 'Done Today', '#16a34a') +
+        statCard(remaining, 'Remaining', '#dc2626') +
+        statCard(total, 'Total Tasks', '#475569') +
+        statCard(pct + '%', 'Complete', '#0284c7');
+    }
+  }
+
+  function showError(msg) {
+    document.getElementById('content').innerHTML =
+      '<div style="color:#dc2626;padding:40px;text-align:center;">Error: ' + msg + '</div>';
+  }
+</script>
+</body>
+</html>
