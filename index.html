@@ -247,63 +247,125 @@
   let cachedConfig = null;
 
 window.onload = function() {
-  fetch(API_URL + '?action=getConfig')
-    .then(r => r.json())
-    .then(function(config) {
-      cachedConfig = config;
+  const params = new URLSearchParams(window.location.search);
+  const preselect = params.get('student') || '';
+  const hideHeader = params.get('hideheader') === 'true';
 
-      // Populate student dropdown
+  if (!hideHeader) document.getElementById('siteHeader').style.display = 'flex';
+
+  // Read from static JSON — instant load
+  fetch('data.json?t=' + Date.now())
+    .then(r => r.json())
+    .then(function(json) {
+      cachedConfig = json;
+      applyHeader(json.headerText, json.headerColor);
+      if (json.sharedDesign) applySharedDesign(json.sharedDesign);
+
+      // Populate dropdown
       const sel = document.getElementById('student');
       sel.innerHTML = '';
-      config.students.forEach(s => {
+      json.students.forEach(s => {
         const opt = document.createElement('option');
         opt.value = s.name;
         opt.textContent = s.name;
         sel.appendChild(opt);
       });
 
-      // Pre-select from URL parameter
-      const params = new URLSearchParams(window.location.search);
-      const preselect = params.get('student');
-      if (preselect) {
-        const match = Array.from(sel.options).find(o =>
-          o.value.toLowerCase() === preselect.toLowerCase()
-        );
-        if (match) sel.value = match.value;
-      }
+      // Pre-select
+      const targetStudent = preselect ||
+        (json.students.length ? json.students[0].name : '');
+      const match = Array.from(sel.options).find(o =>
+        o.value.toLowerCase() === targetStudent.toLowerCase()
+      );
+      if (match) sel.value = match.value;
 
-      // Apply shared design palette as default
-      if (config.sharedDesign) applySharedDesign(config.sharedDesign);
-
-      // Apply header
-      applyHeader(config.headerText, config.headerColor);
-
-      load(true);
+      loadFromJson(sel.value, null);
     })
-    .catch(function(err) {
-      document.getElementById('content').innerHTML = '<div style="color:red;">Failed to load config: ' + err + '</div>';
+    .catch(function() {
+      // Fallback to GAS if JSON not available
+      fetch(API_URL + '?action=getAll&student=' + encodeURIComponent(preselect) + '&week=')
+        .then(r => r.json())
+        .then(function(data) {
+          cachedConfig = data;
+          applyHeader(data.headerText, data.headerColor);
+          const sel = document.getElementById('student');
+          sel.innerHTML = '';
+          data.students.forEach(s => {
+            const opt = document.createElement('option');
+            opt.value = s.name;
+            opt.textContent = s.name;
+            sel.appendChild(opt);
+          });
+          lastData = data;
+          updateCSSPalette(data.palette);
+          drawGrid();
+        });
     });
 };
+
   window.addEventListener('scroll', function() {
     const btn = document.getElementById('scrollTopBtn');
     if (btn) btn.classList.toggle('visible', window.scrollY > 200);
   });
 
   function load(isInitial) {
-    const s = document.getElementById('student').value;
-    const w = isInitial ? '' : (document.getElementById('week').value || '');
-    document.getElementById('content').innerHTML = 'Updating...';
-    fetch(API_URL + '?action=getData&student=' + encodeURIComponent(s) + '&week=' + encodeURIComponent(w))
+  if (isInitial) return;
+  const s = document.getElementById('student').value;
+  const w = document.getElementById('week').value || '';
+  loadFromJson(s, w);
+}
+
+function loadFromJson(studentName, weekNum) {
+  if (!cachedConfig || !cachedConfig.studentData) {
+    // Fall back to GAS
+    fetch(API_URL + '?action=getData&student=' + encodeURIComponent(studentName) + '&week=' + encodeURIComponent(weekNum || ''))
       .then(r => r.json())
       .then(function(data) {
         lastData = data;
         updateCSSPalette(data.palette);
         drawGrid();
-      })
-      .catch(function(err) {
-        document.getElementById('content').innerHTML = '<div style="color:red;">Failed to load data: ' + err + '</div>';
       });
+    return;
   }
+
+  const studentData = cachedConfig.studentData.find(s => s.name === studentName);
+  if (!studentData) {
+    document.getElementById('content').innerHTML = '<div style="color:red;">Student not found in data.json</div>';
+    return;
+  }
+
+  // Find current week if not specified
+  if (!weekNum) {
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    // Find the week containing today or the most recent past week
+    let bestWeek = null;
+    Object.keys(studentData.weeks).forEach(function(w) {
+      const weekDays = studentData.weeks[w].days;
+      // weeks are keyed by week number, find best match
+      if (!bestWeek) bestWeek = w;
+      else if (parseInt(w) > parseInt(bestWeek)) bestWeek = w;
+    });
+    weekNum = bestWeek;
+  }
+
+  const weekData = studentData.weeks[String(weekNum)];
+  if (!weekData) {
+    document.getElementById('content').innerHTML = '<div style="color:red;">Week ' + weekNum + ' not found</div>';
+    return;
+  }
+
+  lastData = {
+    student: studentName,
+    weekNum: weekNum,
+    days: weekData.days,
+    grid: weekData.grid,
+    palette: studentData.palette
+  };
+
+  updateCSSPalette(studentData.palette);
+  drawGrid();
+}
 
   function updateCSSPalette(palette) {
     if (!palette) return;
@@ -482,28 +544,45 @@ function applyHeader(text, color) {
   }
 }
 
-  function toggle(id, el) {
-    el.parentElement.classList.toggle('is-done', el.checked);
-    fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
-  }
+function toggle(id, el) {
+  el.parentElement.classList.toggle('is-done', el.checked);
+  updateLocalCache(id, el.checked);
+  fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
+}
 
-  function toggleDirect(id, el) {
-    const card = el.closest('.task-card');
-    if (card) card.classList.toggle('is-done', el.checked);
-    fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
-  }
+function toggleDirect(id, el) {
+  const card = el.closest('.task-card');
+  if (card) card.classList.toggle('is-done', el.checked);
+  updateLocalCache(id, el.checked);
+  fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
+}
 
-  function toggleList(id, el, dayIdx) {
-    const row = document.getElementById('lrow-' + id);
-    if (row) row.classList.toggle('is-done', el.checked);
-    const pill = document.getElementById('pill-' + dayIdx);
-    if (pill) {
-      const allRows = document.querySelectorAll('[data-day="' + dayIdx + '"]');
-      const doneCount = Array.from(allRows).filter(function(c) { return c.checked; }).length;
-      pill.textContent = doneCount + ' / ' + allRows.length + ' done';
-    }
-    fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
+function toggleList(id, el, dayIdx) {
+  const row = document.getElementById('lrow-' + id);
+  if (row) row.classList.toggle('is-done', el.checked);
+  const pill = document.getElementById('pill-' + dayIdx);
+  if (pill) {
+    const allRows = document.querySelectorAll('[data-day="' + dayIdx + '"]');
+    const doneCount = Array.from(allRows).filter(function(c) { return c.checked; }).length;
+    pill.textContent = doneCount + ' / ' + allRows.length + ' done';
   }
+  updateLocalCache(id, el.checked);
+  fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(id) + '&status=' + el.checked);
+}
+
+function updateLocalCache(id, status) {
+  if (!cachedConfig || !cachedConfig.studentData) return;
+  cachedConfig.studentData.forEach(function(s) {
+    Object.keys(s.weeks).forEach(function(w) {
+      s.weeks[w].grid.forEach(function(row) {
+        row.tasks.forEach(function(t) {
+          if (t.id === id) t.done = status;
+        });
+      });
+    });
+  });
+}
+
   function printPage() {
   try {
     // If we're in an iframe, open self in new tab for printing
