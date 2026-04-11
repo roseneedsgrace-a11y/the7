@@ -418,9 +418,42 @@
       return Object.assign({}, s, { tasks: tasks });
     }).filter(function(s) { return s.tasks.length > 0; });
 
-    // If nothing matches this exact date, show all tasks for the nearest day
     if (filtered.length === 0) {
-      filtered = allData.students.filter(function(s) { return s.tasks.length > 0; });
+      // Find the nearest date that actually has tasks
+      const allDates = new Set();
+      allData.students.forEach(function(s) {
+        s.tasks.forEach(function(t) {
+          if (t.rawDate) allDates.add(t.rawDate);
+        });
+      });
+      const sorted = Array.from(allDates).sort(function(a,b) { return a - b; });
+      if (sorted.length > 0) {
+        const currentTime = date.getTime();
+        // Find closest date
+        let closest = sorted[0];
+        let closestDist = Math.abs(sorted[0] - currentTime);
+        sorted.forEach(function(d) {
+          const dist = Math.abs(d - currentTime);
+          if (dist < closestDist) { closestDist = dist; closest = d; }
+        });
+        const closestDate = new Date(closest);
+        closestDate.setHours(0, 0, 0, 0);
+        // Re-filter to that nearest date
+        filtered = allData.students.map(function(s) {
+          const tasks = s.tasks.filter(function(t) {
+            if (!t.rawDate) return false;
+            const td = new Date(t.rawDate);
+            td.setHours(0, 0, 0, 0);
+            return td.getTime() === closestDate.getTime();
+          });
+          return Object.assign({}, s, { tasks: tasks });
+        }).filter(function(s) { return s.tasks.length > 0; });
+        // Also snap currentDate to the nearest school day so the label is correct
+        currentDate = closestDate;
+        document.getElementById('currentDayLabel').textContent = closestDate.toLocaleDateString('en-US', {
+          weekday: 'long', month: 'long', day: 'numeric'
+        });
+      }
     }
 
     // Stats
