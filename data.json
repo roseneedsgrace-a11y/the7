@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-12T00:37:03.240Z",
+  "generated": "2026-04-12T00:38:07.395Z",
   "headerText": "Thus Far the Lord Has Helped Us",
   "headerColor": "#741b47",
   "sharedDesign": "orchid",
@@ -34,6 +34,10 @@
     },
     {
       "name": "Joy",
+      "gender": "girl"
+    },
+    {
+      "name": "Tom",
       "gender": "girl"
     }
   ],
@@ -75052,6 +75056,916 @@
         "bg": "#F0F8FF"
       },
       "weeks": {}
+    },
+    {
+      "name": "Tom",
+      "palette": {
+        "primary": "#9988CC",
+        "secondary": "#87CEEB",
+        "bg": "#F0F8FF"
+      },
+      "weeks": {
+        "1": {
+          "days": [
+            {
+              "day": "Sun",
+              "date": "8/2"
+            },
+            {
+              "day": "Mon",
+              "date": "8/3"
+            },
+            {
+              "day": "Tue",
+              "date": "8/4"
+            },
+            {
+              "day": "Wed",
+              "date": "8/5"
+            },
+            {
+              "day": "Thu",
+              "date": "8/6"
+            }
+          ],
+          "grid": []
+        },
+        "2": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "8/7"
+            },
+            {
+              "day": "Mon",
+              "date": "8/10"
+            },
+            {
+              "day": "Tue",
+              "date": "8/11"
+            },
+            {
+              "day": "Wed",
+              "date": "8/12"
+            },
+            {
+              "day": "Thu",
+              "date": "8/13"
+            }
+          ],
+          "grid": []
+        },
+        "3": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "8/14"
+            },
+            {
+              "day": "Mon",
+              "date": "8/17"
+            },
+            {
+              "day": "Tue",
+              "date": "8/18"
+            },
+            {
+              "day": "Wed",
+              "date": "8/19"
+            },
+            {
+              "day": "Thu",
+              "date": "8/20"
+            }
+          ],
+          "grid": []
+        },
+        "4": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "8/21"
+            },
+            {
+              "day": "Mon",
+              "date": "8/24"
+            },
+            {
+              "day": "Tue",
+              "date": "8/25"
+            },
+            {
+              "day": "Wed",
+              "date": "8/26"
+            },
+            {
+              "day": "Thu",
+              "date": "8/27"
+            }
+          ],
+          "grid": []
+        },
+        "5": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "8/28"
+            },
+            {
+              "day": "Mon",
+              "date": "8/31"
+            },
+            {
+              "day": "Tue",
+              "date": "9/1"
+            },
+            {
+              "day": "Wed",
+              "date": "9/2"
+            },
+            {
+              "day": "Thu",
+              "date": "9/3"
+            }
+          ],
+          "grid": []
+        },
+        "6": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "9/4"
+            },
+            {
+              "day": "Mon",
+              "date": "9/7"
+            },
+            {
+              "day": "Tue",
+              "date": "9/8"
+            },
+            {
+              "day": "Wed",
+              "date": "9/9"
+            },
+            {
+              "day": "Thu",
+              "date": "9/10"
+            }
+          ],
+          "grid": []
+        },
+        "7": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "9/11"
+            },
+            {
+              "day": "Mon",
+              "date": "9/14"
+            },
+            {
+              "day": "Tue",
+              "date": "9/15"
+            },
+            {
+              "day": "Wed",
+              "date": "9/16"
+            },
+            {
+              "day": "Thu",
+              "date": "9/17"
+            }
+          ],
+          "grid": []
+        },
+        "8": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "9/18"
+            },
+            {
+              "day": "Mon",
+              "date": "9/21"
+            },
+            {
+              "day": "Tue",
+              "date": "9/22"
+            },
+            {
+              "day": "Wed",
+              "date": "9/23"
+            },
+            {
+              "day": "Thu",
+              "date": "9/24"
+            }
+          ],
+          "grid": []
+        },
+        "9": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "9/25"
+            },
+            {
+              "day": "Mon",
+              "date": "9/28"
+            },
+            {
+              "day": "Tue",
+              "date": "9/29"
+            },
+            {
+              "day": "Wed",
+              "date": "9/30"
+            },
+            {
+              "day": "Thu",
+              "date": "10/1"
+            }
+          ],
+          "grid": []
+        },
+        "10": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "10/2"
+            },
+            {
+              "day": "Mon",
+              "date": "10/5"
+            },
+            {
+              "day": "Tue",
+              "date": "10/6"
+            },
+            {
+              "day": "Wed",
+              "date": "10/7"
+            },
+            {
+              "day": "Thu",
+              "date": "10/8"
+            }
+          ],
+          "grid": []
+        },
+        "11": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "10/9"
+            },
+            {
+              "day": "Mon",
+              "date": "10/12"
+            },
+            {
+              "day": "Tue",
+              "date": "10/13"
+            },
+            {
+              "day": "Wed",
+              "date": "10/14"
+            },
+            {
+              "day": "Thu",
+              "date": "10/15"
+            }
+          ],
+          "grid": []
+        },
+        "12": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "10/16"
+            },
+            {
+              "day": "Mon",
+              "date": "10/19"
+            },
+            {
+              "day": "Tue",
+              "date": "10/20"
+            },
+            {
+              "day": "Wed",
+              "date": "10/21"
+            },
+            {
+              "day": "Thu",
+              "date": "10/22"
+            }
+          ],
+          "grid": []
+        },
+        "13": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "10/23"
+            },
+            {
+              "day": "Mon",
+              "date": "10/26"
+            },
+            {
+              "day": "Tue",
+              "date": "10/27"
+            },
+            {
+              "day": "Wed",
+              "date": "10/28"
+            },
+            {
+              "day": "Thu",
+              "date": "10/29"
+            }
+          ],
+          "grid": []
+        },
+        "14": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "10/30"
+            },
+            {
+              "day": "Mon",
+              "date": "11/2"
+            },
+            {
+              "day": "Tue",
+              "date": "11/3"
+            },
+            {
+              "day": "Wed",
+              "date": "11/4"
+            },
+            {
+              "day": "Thu",
+              "date": "11/5"
+            }
+          ],
+          "grid": []
+        },
+        "15": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "11/6"
+            },
+            {
+              "day": "Mon",
+              "date": "11/9"
+            },
+            {
+              "day": "Tue",
+              "date": "11/10"
+            },
+            {
+              "day": "Wed",
+              "date": "11/11"
+            },
+            {
+              "day": "Thu",
+              "date": "11/12"
+            }
+          ],
+          "grid": []
+        },
+        "16": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "11/13"
+            },
+            {
+              "day": "Mon",
+              "date": "11/16"
+            },
+            {
+              "day": "Tue",
+              "date": "11/17"
+            },
+            {
+              "day": "Wed",
+              "date": "11/18"
+            },
+            {
+              "day": "Thu",
+              "date": "11/19"
+            }
+          ],
+          "grid": []
+        },
+        "17": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "11/20"
+            },
+            {
+              "day": "Mon",
+              "date": "11/23"
+            },
+            {
+              "day": "Tue",
+              "date": "11/24"
+            },
+            {
+              "day": "Wed",
+              "date": "11/25"
+            },
+            {
+              "day": "Thu",
+              "date": "11/26"
+            }
+          ],
+          "grid": []
+        },
+        "18": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "11/27"
+            },
+            {
+              "day": "Mon",
+              "date": "11/30"
+            },
+            {
+              "day": "Tue",
+              "date": "12/1"
+            },
+            {
+              "day": "Wed",
+              "date": "12/2"
+            },
+            {
+              "day": "Thu",
+              "date": "12/3"
+            }
+          ],
+          "grid": []
+        },
+        "19": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "12/4"
+            },
+            {
+              "day": "Mon",
+              "date": "12/7"
+            },
+            {
+              "day": "Tue",
+              "date": "12/8"
+            },
+            {
+              "day": "Wed",
+              "date": "12/9"
+            },
+            {
+              "day": "Thu",
+              "date": "12/10"
+            }
+          ],
+          "grid": []
+        },
+        "20": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "12/11"
+            },
+            {
+              "day": "Mon",
+              "date": "12/14"
+            },
+            {
+              "day": "Tue",
+              "date": "12/15"
+            },
+            {
+              "day": "Wed",
+              "date": "12/16"
+            },
+            {
+              "day": "Thu",
+              "date": "12/17"
+            }
+          ],
+          "grid": []
+        },
+        "21": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "12/18"
+            },
+            {
+              "day": "Mon",
+              "date": "12/21"
+            },
+            {
+              "day": "Tue",
+              "date": "12/22"
+            },
+            {
+              "day": "Wed",
+              "date": "12/23"
+            },
+            {
+              "day": "Thu",
+              "date": "12/24"
+            }
+          ],
+          "grid": []
+        },
+        "22": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "12/25"
+            },
+            {
+              "day": "Mon",
+              "date": "12/28"
+            },
+            {
+              "day": "Tue",
+              "date": "12/29"
+            },
+            {
+              "day": "Wed",
+              "date": "12/30"
+            },
+            {
+              "day": "Thu",
+              "date": "12/31"
+            }
+          ],
+          "grid": []
+        },
+        "23": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "1/1"
+            },
+            {
+              "day": "Mon",
+              "date": "1/4"
+            },
+            {
+              "day": "Tue",
+              "date": "1/5"
+            },
+            {
+              "day": "Wed",
+              "date": "1/6"
+            },
+            {
+              "day": "Thu",
+              "date": "1/7"
+            }
+          ],
+          "grid": []
+        },
+        "24": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "1/8"
+            },
+            {
+              "day": "Mon",
+              "date": "1/11"
+            },
+            {
+              "day": "Tue",
+              "date": "1/12"
+            },
+            {
+              "day": "Wed",
+              "date": "1/13"
+            },
+            {
+              "day": "Thu",
+              "date": "1/14"
+            }
+          ],
+          "grid": []
+        },
+        "25": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "1/15"
+            },
+            {
+              "day": "Mon",
+              "date": "1/18"
+            },
+            {
+              "day": "Tue",
+              "date": "1/19"
+            },
+            {
+              "day": "Wed",
+              "date": "1/20"
+            },
+            {
+              "day": "Thu",
+              "date": "1/21"
+            }
+          ],
+          "grid": []
+        },
+        "26": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "1/22"
+            },
+            {
+              "day": "Mon",
+              "date": "1/25"
+            },
+            {
+              "day": "Tue",
+              "date": "1/26"
+            },
+            {
+              "day": "Wed",
+              "date": "1/27"
+            },
+            {
+              "day": "Thu",
+              "date": "1/28"
+            }
+          ],
+          "grid": []
+        },
+        "27": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "1/29"
+            },
+            {
+              "day": "Mon",
+              "date": "2/1"
+            },
+            {
+              "day": "Tue",
+              "date": "2/2"
+            },
+            {
+              "day": "Wed",
+              "date": "2/3"
+            },
+            {
+              "day": "Thu",
+              "date": "2/4"
+            }
+          ],
+          "grid": []
+        },
+        "28": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "2/5"
+            },
+            {
+              "day": "Mon",
+              "date": "2/8"
+            },
+            {
+              "day": "Tue",
+              "date": "2/9"
+            },
+            {
+              "day": "Wed",
+              "date": "2/10"
+            },
+            {
+              "day": "Thu",
+              "date": "2/11"
+            }
+          ],
+          "grid": []
+        },
+        "29": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "2/12"
+            },
+            {
+              "day": "Mon",
+              "date": "2/15"
+            },
+            {
+              "day": "Tue",
+              "date": "2/16"
+            },
+            {
+              "day": "Wed",
+              "date": "2/17"
+            },
+            {
+              "day": "Thu",
+              "date": "2/18"
+            }
+          ],
+          "grid": []
+        },
+        "30": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "2/19"
+            },
+            {
+              "day": "Mon",
+              "date": "2/22"
+            },
+            {
+              "day": "Tue",
+              "date": "2/23"
+            },
+            {
+              "day": "Wed",
+              "date": "2/24"
+            },
+            {
+              "day": "Thu",
+              "date": "2/25"
+            }
+          ],
+          "grid": []
+        },
+        "31": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "2/26"
+            },
+            {
+              "day": "Mon",
+              "date": "3/1"
+            },
+            {
+              "day": "Tue",
+              "date": "3/2"
+            },
+            {
+              "day": "Wed",
+              "date": "3/3"
+            },
+            {
+              "day": "Thu",
+              "date": "3/4"
+            }
+          ],
+          "grid": []
+        },
+        "32": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "3/5"
+            },
+            {
+              "day": "Mon",
+              "date": "3/8"
+            },
+            {
+              "day": "Tue",
+              "date": "3/9"
+            },
+            {
+              "day": "Wed",
+              "date": "3/10"
+            },
+            {
+              "day": "Thu",
+              "date": "3/11"
+            }
+          ],
+          "grid": []
+        },
+        "33": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "3/12"
+            },
+            {
+              "day": "Mon",
+              "date": "3/15"
+            },
+            {
+              "day": "Tue",
+              "date": "3/16"
+            },
+            {
+              "day": "Wed",
+              "date": "3/17"
+            },
+            {
+              "day": "Thu",
+              "date": "3/18"
+            }
+          ],
+          "grid": []
+        },
+        "34": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "3/19"
+            },
+            {
+              "day": "Mon",
+              "date": "3/22"
+            },
+            {
+              "day": "Tue",
+              "date": "3/23"
+            },
+            {
+              "day": "Wed",
+              "date": "3/24"
+            },
+            {
+              "day": "Thu",
+              "date": "3/25"
+            }
+          ],
+          "grid": []
+        },
+        "35": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "3/26"
+            },
+            {
+              "day": "Mon",
+              "date": "3/29"
+            },
+            {
+              "day": "Tue",
+              "date": "3/30"
+            },
+            {
+              "day": "Wed",
+              "date": "3/31"
+            },
+            {
+              "day": "Thu",
+              "date": "4/1"
+            }
+          ],
+          "grid": []
+        },
+        "36": {
+          "days": [
+            {
+              "day": "Fri",
+              "date": "4/2"
+            },
+            {
+              "day": "Mon",
+              "date": "4/5"
+            },
+            {
+              "day": "Tue",
+              "date": "4/6"
+            },
+            {
+              "day": "Wed",
+              "date": "4/7"
+            },
+            {
+              "day": "Thu",
+              "date": "4/8"
+            }
+          ],
+          "grid": []
+        }
+      }
     }
   ]
 }
