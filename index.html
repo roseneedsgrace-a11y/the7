@@ -513,7 +513,7 @@ function loadFromJson(studentName, weekNum) {
       if (!rawDate) return '';
       if (rawDate < todayTimestamp) return 'due-late';
       if (rawDate === todayTimestamp) {
-        if (currentHour >= 15) return 'due-late';
+        if (currentHour >= 16) return 'due-late';
         if (currentHour >= 11) return 'due-warning';
       }
       return '';
