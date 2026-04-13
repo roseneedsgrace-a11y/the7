@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T01:15:27.008Z",
+  "generated": "2026-04-13T13:09:56.927Z",
   "students": [
     {
       "name": "Tabitha",
@@ -22,24 +22,8 @@
       "gender": "patriotic"
     },
     {
-      "name": "Knox",
-      "gender": "girl"
-    },
-    {
-      "name": "Roger",
-      "gender": "girl"
-    },
-    {
-      "name": "Brent",
-      "gender": "girl"
-    },
-    {
-      "name": "Tristan",
-      "gender": "girl"
-    },
-    {
       "name": "Joan",
-      "gender": "girl"
+      "gender": "patriotic"
     }
   ]
 }
