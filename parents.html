@@ -269,6 +269,19 @@
     }
     .link-btn::before { content: '↗'; }
     .link-btn:hover { opacity: 0.85; }
+    .approve-btn {
+      background: #741b47;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .approve-btn:hover { background: #5a1436; }
+    .approve-btn:disabled { background: #cbd5e1; cursor: default; }
 
     /* WEEK LINK */
     .week-link {
@@ -336,7 +349,9 @@
 <div id="content" class="loading">Loading assignments...</div>
 
 <script>
-  const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
+  // This value is injected by GAS on load
+  const INITIAL_WEEK = '<?!= initial_week ?>'; 
+  const API_URL = '<?= api_url ?>';
   const IS_GAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
 
   let currentDate = new Date();
@@ -362,36 +377,34 @@
     homeLink.href = isGAS ? API_URL : base + 'index.html';
   }
 
-  window.onload = function() {
-    if (IS_GAS) {
-      google.script.run
-        .withSuccessHandler(function(config) { applyHeaderSettings(config); })
-        .getStudentConfig();
-      google.script.run
-        .withSuccessHandler(function(data) { renderDashboard(data); })
-        .withFailureHandler(function(e) { showError(e.message); })
-        .getThreeWeeksForAllStudents();
-    } else {
-        fetch(API_URL + '?action=getConfig')
-          .then(r => r.json())
-          .then(function(config) { applyHeaderSettings(config); })
-          .catch(function() {});
+window.onload = function() {
+  // Always pull from the JSON file on GitHub
+  fetch('data.json')
+    .then(r => r.json())
+    .then(function(data) {
+      // Logic: If the JSON tells us what week it is, use it.
+      // Otherwise, the page defaults to "Today"
+      renderDashboard(data);
+    })
+    .catch(e => showError("Check if data.json is published."));
+};
 
-        fetch(API_URL + '?action=getThreeWeeks')
-          .then(r => r.json())
-          .then(function(data) { renderDashboard(data); })
-          .catch(function(e) {
-            document.getElementById('content').innerHTML =
-              '<div style="color:#dc2626;padding:40px;text-align:center;">' +
-              'Could not load assignments. This may be a connection issue.<br><br>' +
-              '<a href="' + API_URL + '?page=parents" target="_blank" ' +
-              'style="color:#4682B4;">Open Parents Dashboard directly ↗</a>' +
-              '</div>';
-            document.getElementById('dateBar').textContent = 'Connection error';
-          });
-      }
-  };
+function renderDashboard(data) {
+  if (data.error) { showError(data.error); return; }
+  allData = data;
+  
+  // TAILORED FOR GITHUB: 
+  // We jump to the date specified in the JSON's metadata
+  if (data.currentWeekDate) {
+    currentDate = new Date(data.currentWeekDate);
+  } else {
+    // Fallback: Find the first task date available in the JSON
+    const firstTask = data.students[0]?.tasks[0];
+    if (firstTask && firstTask.rawDate) currentDate = new Date(firstTask.rawDate);
+  }
 
+  renderForDate(currentDate);
+}
   function applyHeaderSettings(config) {
     if (config.headerText) {
       const words = config.headerText.split(' ');
@@ -410,31 +423,22 @@
     }
   }
 
-  function renderDashboard(data) {
-    if (data.error) { showError(data.error); return; }
-    allData = data;
-    const olderLinks = document.getElementById('olderLinks');
-    if (olderLinks && data.students) {
-      const base = getBaseUrl();
-      const isGAS = typeof google !== 'undefined' && typeof google.script !== 'undefined';
-      olderLinks.innerHTML = data.students.map(function(s) {
-        const url = isGAS
-          ? API_URL + '?student=' + encodeURIComponent(s.student)
-          : base + 'index.html?student=' + encodeURIComponent(s.student);
-        return '<a href="' + url + '" target="_blank" style="color:#4682B4;text-decoration:none;">'
-          + s.student + '</a>';
-      }).join(', ');
-    }
-    document.getElementById('dateBar').textContent = data.date;
-
-    if (!data.students || data.students.length === 0) {
-      document.getElementById('content').innerHTML =
-        '<div class="no-school"><strong>No school today</strong>No assignments found.</div>';
-      return;
-    }
-
-    renderForDate(currentDate);
+function renderDashboard(data) {
+  if (data.error) { showError(data.error); return; }
+  allData = data;
+  
+  // TAILORED FOR GITHUB: 
+  // We jump to the date specified in the JSON's metadata
+  if (data.currentWeekDate) {
+    currentDate = new Date(data.currentWeekDate);
+  } else {
+    // Fallback: Find the first task date available in the JSON
+    const firstTask = data.students[0]?.tasks[0];
+    if (firstTask && firstTask.rawDate) currentDate = new Date(firstTask.rawDate);
   }
+
+  renderForDate(currentDate);
+}
 
   function renderForDate(date) {
     if (!allData) return;
@@ -554,7 +558,7 @@ function updateNavButtons() {
       '</div>';
   }
 
-  function buildStudentCard(s) {
+function buildStudentCard(s) {
     const done = s.tasks.filter(function(t) { return t.done; }).length;
     const total = s.tasks.length;
     const pct = total > 0 ? Math.round((done / total) * 100) : 0;
@@ -576,6 +580,12 @@ function updateNavButtons() {
     html += '<div class="student-progress-bar">' +
       '<div class="student-progress-fill" style="width:' + pct + '%; background:' + s.palette.secondary + ';"></div>' +
       '</div>';
+    
+    // Updated Review Section with button ID
+    html += '<div style="padding: 10px 18px; background: #fdf2f8; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center;">';
+    html += '  <span style="font-size: 11px; font-weight: 700; color: #741b47; text-transform: uppercase;">Week ' + s.week + ' Review</span>';
+    html += '  <button class="approve-btn" id="approve-' + s.student.replace(/\s+/g, '') + '" onclick="approveEntireWeek(\'' + s.student + '\', ' + s.week + ')">Mark Week Complete</button>';
+    html += '</div>';
 
     if (s.tasks.length === 0) {
       html += '<div class="no-tasks">No tasks for this day</div>';
@@ -674,9 +684,81 @@ function updateNavButtons() {
       statCard(pct + '%', 'Complete', '#0284c7');
   }
 
-  function showError(msg) {
+function showError(msg) {
     document.getElementById('content').innerHTML =
       '<div style="color:#dc2626;padding:40px;text-align:center;">Error: ' + msg + '</div>';
+}
+
+function approveEntireWeek(studentName, weekNum) {
+    var studentObj = allData.students.find(function(s) { return s.student === studentName; });
+    if (!studentObj) return;
+
+    // Use studentObj.tasks directly as they are already filtered for the current view
+    var weekTasks = studentObj.tasks;
+
+    if (weekTasks.length === 0) {
+      alert('No tasks found for this day/week.');
+      return;
+    }
+
+    var undone = weekTasks.filter(function(t) { return !t.done; });
+    if (undone.length === 0) {
+      alert('All tasks for this view are already marked complete!');
+      return;
+    }
+
+    if (!confirm('Mark all ' + weekTasks.length + ' tasks complete for ' + studentName + '?')) return;
+
+    // Disable button while processing (using the ID we added above)
+    var btn = document.getElementById('approve-' + studentName.replace(/\s+/g, ''));
+    if (btn) { btn.disabled = true; btn.textContent = 'Saving...'; }
+
+    var saved = 0;
+    var total = undone.length;
+
+    undone.forEach(function(t) {
+      // Update DOM
+      var row = document.getElementById('prow-' + t.id);
+      if (row) {
+        row.classList.add('is-done');
+        var checkbox = row.querySelector('.task-checkbox');
+        if (checkbox) {
+          var card = row.closest('.student-card');
+          var fill = card ? card.querySelector('.student-progress-fill') : null;
+          var color = fill ? fill.style.background : '#87CEEB';
+          checkbox.style.background = color;
+          checkbox.style.borderColor = color;
+        }
+        var checkInput = row.querySelector('.task-check-input');
+        if (checkInput) checkInput.checked = true;
+      }
+
+      // Update local cache
+      t.done = true;
+
+      var onDone = function() {
+        saved++;
+        if (saved === total) {
+          var card = row ? row.closest('.student-card') : null;
+          if (card) updateCardStats(card);
+          if (btn) { 
+            btn.textContent = 'Week Complete \u2713'; 
+            btn.style.background = '#16a34a'; 
+          }
+        }
+      };
+
+      if (IS_GAS) {
+        google.script.run
+          .withSuccessHandler(onDone)
+          .withFailureHandler(onDone)
+          .toggleProgress(t.id, true);
+      } else {
+        fetch(API_URL + '?action=toggle&key=' + encodeURIComponent(t.id) + '&status=true')
+          .then(onDone)
+          .catch(onDone);
+      }
+    });
   }
 </script>
 </body>
