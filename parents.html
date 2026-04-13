@@ -251,13 +251,38 @@ function renderStats(filtered) {
     renderForDate(currentDate);
   }
 
-  function updateNavButtons() {
-    const availableDates = [];
-    allData.students.forEach(s => s.tasks.forEach(t => { if(t.rawDate) availableDates.push(new Date(t.rawDate).getTime()); }));
-    const sorted = [...new Set(availableDates)].sort((a,b) => a-b);
-    document.getElementById('prevDay').disabled = currentDate.getTime() <= sorted[0];
-    document.getElementById('nextDay').disabled = currentDate.getTime() >= sorted[sorted.length-1];
+function updateNavButtons() {
+  // 1. Safety check: if allData or allData.students is missing, stop here.
+  if (!allData || !allData.students) {
+    console.warn("Navigation buttons skipped: No student data found.");
+    return;
   }
+
+  const availableDates = [];
+  
+  // 2. We have to reach into the 'grid' to find the dates
+  allData.students.forEach(s => {
+    if (s.grid) {
+      s.grid.forEach(subjectGroup => {
+        if (subjectGroup.tasks) {
+          subjectGroup.tasks.forEach(t => {
+            if (t.rawDate) availableDates.push(new Date(t.rawDate).getTime());
+          });
+        }
+      });
+    }
+  });
+
+  if (availableDates.length === 0) return;
+
+  const sorted = [...new Set(availableDates)].sort((a,b) => a-b);
+  
+  const prevBtn = document.getElementById('prevDay');
+  const nextBtn = document.getElementById('nextDay');
+
+  if (prevBtn) prevBtn.disabled = currentDate.getTime() <= sorted[0];
+  if (nextBtn) nextBtn.disabled = currentDate.getTime() >= sorted[sorted.length-1];
+}
 
   function statCard(num, label, color) {
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
