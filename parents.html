@@ -139,30 +139,35 @@ window.onload = function() {
   }
 
   function renderDashboard(data) {
-    if (data.error) { showError(data.error); return; }
-    allData = data;
-    
-    const olderLinks = document.getElementById('olderLinks');
-    if (olderLinks && data.students) {
-      olderLinks.innerHTML = data.students.map(s => 
-        `<a href="index.html?student=${encodeURIComponent(s.student)}" style="color:#4682B4;text-decoration:none;">${s.student}</a>`
-      ).join(', ');
-    }
+  const container = document.getElementById('student-buttons');
+  container.innerHTML = '';
 
-    document.getElementById('dateBar').textContent = data.date || "School Planner";
-
-    // Date Discernment: Start on today, or jump to the first available date in the JSON
-    const availableDates = [];
-    data.students.forEach(s => s.tasks.forEach(t => { if(t.rawDate) availableDates.push(new Date(t.rawDate).getTime()); }));
-    const sorted = [...new Set(availableDates)].sort((a,b) => a - b);
-    
-    if (sorted.length > 0 && !sorted.includes(currentDate.getTime())) {
-      currentDate = new Date(sorted[0]);
-    }
-
-    renderForDate(currentDate);
+  // 1. Check if 'students' exists before looping
+  if (!data.students || !Array.isArray(data.students)) {
+    console.error("Students list missing in JSON");
+    return;
   }
 
+  // 2. Loop through the simple student list to build buttons
+  data.students.forEach(student => {
+    const btn = document.createElement('button');
+    // Note: The JSON uses 'name', so we use student.name
+    btn.innerText = student.name; 
+    btn.onclick = () => showStudentData(student.name, data.studentData);
+    container.appendChild(btn);
+  });
+}
+
+function showStudentData(targetName, allData) {
+  // 3. Find the matching detailed grid in 'studentData'
+  const details = allData.find(item => item.student === targetName);
+  
+  if (details) {
+    // Render your grid/table here using 'details.grid'
+    console.log("Loading data for:", details.student);
+    renderGrid(details);
+  }
+}
   function renderForDate(date) {
     if (!allData) return;
     const dateStr = date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
