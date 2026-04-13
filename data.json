@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T22:41:27.241Z",
+  "generated": "2026-04-13T22:41:49.545Z",
   "date": "Monday, April 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -289,9 +289,9 @@
         }
       ],
       "palette": {
-        "primary": "#708090",
+        "primary": "#B22234",
         "secondary": "#002868",
-        "bg": "#F0F8FF"
+        "bg": "#F8F8FF"
       }
     },
     {
@@ -2213,9 +2213,9 @@
         }
       ],
       "palette": {
-        "primary": "#708090",
+        "primary": "#B22234",
         "secondary": "#002868",
-        "bg": "#F0F8FF"
+        "bg": "#F8F8FF"
       }
     },
     {
