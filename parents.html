@@ -182,40 +182,81 @@ function showStudentData(targetName, allData) {
     renderGrid(details);
   }
 }
-  function renderForDate(date) {
-    if (!allData) return;
-    const dateStr = date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-    document.getElementById('currentDayLabel').textContent = dateStr;
 
-    const filtered = allData.students.map(function(s) {
-      const tasks = s.tasks.filter(function(t) {
-        const taskDate = new Date(t.rawDate);
-        taskDate.setHours(0, 0, 0, 0);
-        return taskDate.getTime() === date.getTime();
+function renderForDate(date) {
+  if (!allData || !allData.students) return;
+  
+  const dateStr = date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+  const dayLabelElement = document.getElementById('currentDayLabel');
+  if (dayLabelElement) dayLabelElement.textContent = dateStr;
+
+  // 1. Flatten and filter tasks
+  const filtered = allData.students.map(function(s) {
+    // We need to reach into s.grid to find the tasks
+    let allStudentTasks = [];
+    if (s.grid && Array.isArray(s.grid)) {
+      s.grid.forEach(subject => {
+        if (subject.tasks) {
+          // Add the subject name to each task so we know what it is!
+          subject.tasks.forEach(t => {
+            t.subject = subject.subject; 
+            allStudentTasks.push(t);
+          });
+        }
       });
-      return Object.assign({}, s, { tasks: tasks });
-    }).filter(s => s.tasks.length > 0);
+    }
 
-    let total = 0, done = 0;
-    filtered.forEach(s => { total += s.tasks.length; done += s.tasks.filter(t => t.done).length; });
-    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    const dailyTasks = allStudentTasks.filter(function(t) {
+      if (!t.rawDate) return false;
+      const taskDate = new Date(t.rawDate);
+      taskDate.setHours(0, 0, 0, 0);
+      return taskDate.getTime() === date.getTime();
+    });
 
-    document.getElementById('statsStrip').innerHTML = 
+    // Return a combined object for the student card
+    return {
+      student: s.student,
+      palette: s.palette,
+      week: s.weekNum,
+      tasks: dailyTasks
+    };
+  }).filter(s => s.tasks.length > 0);
+
+  // 2. Update Stats
+  renderStats(filtered);
+
+  // 3. Render Content
+  const contentDiv = document.getElementById('content');
+  if (filtered.length === 0) {
+    contentDiv.innerHTML = '<div class="no-school"><strong>Weekend / No School</strong>There are no assignments for this date.</div>';
+  } else {
+    let html = '<div class="students-grid">';
+    filtered.forEach(s => { html += buildStudentCard(s); });
+    html += '</div>';
+    contentDiv.innerHTML = html;
+  }
+  
+  if (document.getElementById('prevDay')) updateNavButtons();
+}
+
+function renderStats(filtered) {
+  let total = 0, done = 0;
+  filtered.forEach(s => { 
+    total += s.tasks.length; 
+    done += s.tasks.filter(t => t.done).length; 
+  });
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+  const statsStrip = document.getElementById('statsStrip');
+  if (statsStrip) {
+    statsStrip.innerHTML = 
       statCard(done, 'Done', '#16a34a') + 
       statCard(total - done, 'Remaining', '#dc2626') + 
       statCard(total, 'Total Tasks', '#475569') + 
       statCard(pct + '%', 'Complete', '#0284c7');
-
-    if (filtered.length === 0) {
-      document.getElementById('content').innerHTML = '<div class="no-school"><strong>Weekend / No School</strong>There are no assignments for this date.</div>';
-    } else {
-      let html = '<div class="students-grid">';
-      filtered.forEach(s => { html += buildStudentCard(s); });
-      html += '</div>';
-      document.getElementById('content').innerHTML = html;
-    }
-    updateNavButtons();
   }
+}
+  
 
   function changeDay(direction) {
     currentDate = new Date(currentDate.getTime() + direction * 24 * 60 * 60 * 1000);
