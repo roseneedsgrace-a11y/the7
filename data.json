@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-12T02:48:35.144Z",
+  "generated": "2026-04-13T00:35:39.979Z",
   "students": [
     {
       "name": "Tabitha",
@@ -20,10 +20,6 @@
     {
       "name": "Amos",
       "gender": "patriotic"
-    },
-    {
-      "name": "John",
-      "gender": "girl"
     }
   ]
 }
