@@ -353,19 +353,40 @@ function updateNavButtons() {
     if (display) display.textContent = pct + '%';
   }
 
-  function approveEntireDay(studentName) {
-    const s = allData.students.find(st => st.student === studentName);
-    if (!confirm(`Mark all tasks for ${studentName} as done?`)) return;
-    s.tasks.forEach(t => {
-      if (!t.done) {
-        t.done = true;
-        if (API_URL !== 'PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE') {
-          fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
+function approveEntireDay(studentName) {
+  // 1. Find the specific student's tasks for ONLY the day currently being viewed
+  const studentEntry = allData.students.find(st => st.student === studentName);
+  if (!studentEntry) return;
+
+  // Re-run the daily filter logic specifically for this student
+  let dailyTasks = [];
+  studentEntry.grid.forEach(subject => {
+    if (subject.tasks) {
+      subject.tasks.forEach(t => {
+        const taskDate = new Date(t.rawDate);
+        taskDate.setHours(0, 0, 0, 0);
+        if (taskDate.getTime() === currentDate.getTime()) {
+          dailyTasks.push(t);
         }
-      }
-    });
-    renderForDate(currentDate);
-  }
+      });
+    }
+  });
+
+  if (dailyTasks.length === 0) return;
+  if (!confirm(`Mark all ${dailyTasks.length} tasks for ${studentName} as done?`)) return;
+
+  // 2. Only toggle the tasks belonging to today
+  dailyTasks.forEach(t => {
+    if (!t.done) {
+      t.done = true;
+      // Send to Google Sheets
+      fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
+    }
+  });
+
+  // 3. Refresh the UI
+  renderForDate(currentDate);
+}
 
   function showError(msg) {
     document.getElementById('content').innerHTML = `<div style="color:#dc2626;padding:40px;text-align:center;">${msg}</div>`;
