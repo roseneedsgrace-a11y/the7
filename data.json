@@ -1,25 +1,30 @@
 {
-  "generated": "2026-04-13T13:25:08.578Z",
+  "generated": "2026-04-13T13:47:46.998Z",
   "students": [
     {
       "name": "Tabitha",
-      "gender": "female"
+      "palette": "female",
+      "currentWeek": 35
     },
     {
       "name": "Charity",
-      "gender": "bookish"
+      "palette": "bookish",
+      "currentWeek": 35
     },
     {
       "name": "Beth",
-      "gender": "outdoorsy"
+      "palette": "outdoorsy",
+      "currentWeek": 35
     },
     {
       "name": "Ezra",
-      "gender": "boy"
+      "palette": "boy",
+      "currentWeek": 35
     },
     {
       "name": "Amos",
-      "gender": "patriotic"
+      "palette": "patriotic",
+      "currentWeek": 35
     }
   ]
 }
