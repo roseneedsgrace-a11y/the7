@@ -62,6 +62,23 @@
 </head>
 <body>
 
+<header id="siteHeader">
+  <h1 id="headerTitle">School Dashboard</h1>
+</header>
+
+<div class="nav-controls">
+  <button id="prevDay" onclick="changeDay(-1)">Previous</button>
+  <span id="currentDayLabel"></span>
+  <button id="nextDay" onclick="changeDay(1)">Next</button>
+</div>
+
+<div id="statsStrip" style="display:flex; gap:10px; justify-content:center; margin:20px 0;"></div>
+
+<div id="content" class="loading">Loading assignments...</div>
+
+
+
+  
 <div class="site-header" id="siteHeader">
   <h1 id="headerTitle">Thus Far the Lord<br>Has Helped Us</h1>
   <div class="page-label">Parents Dashboard</div>
@@ -100,24 +117,34 @@
   let allData = null;
 
 window.onload = function() {
-    // Adding ?v= plus the time forces the browser to ignore the old cached version
     fetch('data.json?v=' + new Date().getTime())
       .then(r => {
         if (!r.ok) throw new Error("File not found on server");
         return r.json();
       })
       .then(function(data) {
-        if (data.config) applyHeaderSettings(data.config);
-        renderDashboard(data);
+        // 1. Assign the data to the global variable the rest of the script uses
+        // We map 'studentData' to 'students' so renderForDate works
+        allData = {
+          students: data.studentData,
+          config: data.config
+        };
+
+        // 2. Apply settings ONLY if the elements exist (Prevents the 'null' error)
+        if (data.config && document.getElementById('siteHeader')) {
+          applyHeaderSettings(data.config);
+        }
+
+        // 3. Start the dashboard
+        renderForDate(currentDate);
       })
       .catch(e => {
-        document.getElementById('content').innerHTML = `
-          <div style="padding:40px;text-align:center;">
-            <p style="color:#dc2626; font-weight:bold;">Cannot load data.json</p>
-            <p style="font-size:13px; color:#64748b; margin-top:10px;">
-              Error: ${e.message}
-            </p>
-          </div>`;
+        const content = document.getElementById('content');
+        if (content) {
+          content.innerHTML = `<div style="padding:40px;text-align:center;color:#dc2626;">
+            Error loading data: ${e.message}</div>`;
+        }
+        console.error(e);
       });
   };
 
