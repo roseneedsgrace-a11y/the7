@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T21:46:23.463Z",
+  "generated": "2026-04-13T21:49:10.674Z",
   "date": "Monday, April 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8,8 +8,337 @@
   "students": [
     {
       "student": "Amos",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "Old Testament",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Ology, BIble Reading w/ Journaling (turn in 5 entries)",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "History",
+          "curriculum": "American on 🧭",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "🧭 1.1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "🧭 1.2",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "🧭 1.3",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "🧭 1.4",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "🧭 1.5",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Physical Training",
+          "curriculum": "P.T.",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Science",
+          "curriculum": "Biology 🧭",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "How to Teach This Class Video for Teachers & Students",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Science-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Preface & Intro Videos",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Science-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Summary & Test Q.s",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Science-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Ch 1.1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Science-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W1-Science-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Math",
+          "curriculum": "Schormann – Algebra 2",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Shormann Math Intro",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Lesson 1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Lesson 2",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Lesson 3",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Review/Catch-up",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Citizenship",
+          "curriculum": "Logic (1st)\nEconomics🧭/Hills (2nd)",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Dr. Ransom Fallacy #1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Citizenship-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Dr. Ransom Fallacy #2",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Citizenship-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Dr. Ransom Fallacy #3",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Citizenship-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Dr. Ransom Fallacy #4",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Citizenship-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W1-Citizenship-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#B22234",
         "secondary": "#002868",
@@ -18,8 +347,439 @@
     },
     {
       "student": "Beth",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Nicole the Math Lady",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Bar Models in Addition and Subtraction, pp. 25-26",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Bar Models in Addition and Subtraction, pp. 27-28",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Order of Operations, pp. 29-30",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Making Bar Graphs, pp. 31-32",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Line Graphs, pp. 33-35",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "History",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "A Child's History of the World: Read Story 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Read Story 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Story 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Tell mom and Tabitha what you learned.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Music",
+          "curriculum": "listen & practice each day",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "He Keeps Me Singing (p. 4) - The Story & Hymn Study",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "He Keeps Me Singing (p. 4) - Bible Lesson",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "He Keeps Me Singing (p. 4) - Copywork & Music Theory",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "He Keeps Me Singing - Activity\n\nAudio files →",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "CellImage",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Literature",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Narnia Textbook: Read Introduction to the Magician's Nephew w/ Mom",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Read Chap. from Christian Heroes book.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Chapter 1: The Wrong Door",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Discuss chapter w/mom and Narnia book",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Reading & Grammar",
+          "curriculum": "User: grandlizard78\nPwd: Hadassah",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Shurley English Level 4:  Chapter 1, Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Chapter 1, Lesson 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Chapter 1, Lesson 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Chapter 1, Lesson 4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Writing & Rhetoric",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Science & Art At Co-Cop",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Introductory Lessons:** Read the book's Introduction; Discuss the purpose of fables and rhetoric.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Introductory Lessons:** Review the Introduction; Copy a key sentence from it.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Handwriting",
+          "curriculum": "Good & Beautiful",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Good & Beautiful: Level 3, p. 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Level 3, pp. 2-3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Level 3, p. 4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Level 3, pp. 5-6",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#708090",
         "secondary": "#002868",
@@ -28,8 +788,439 @@
     },
     {
       "student": "Charity",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "Old Testament 🧭",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "OT: Intro #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "OT: Intro #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "OT: Intro #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "OT: Intro #4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Seeng w/ New Eyes, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Health",
+          "curriculum": "Forms 1-4",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Intro Step 1 & 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Health-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "P1 L1 #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Health-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "P1 L1 #2-3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Health-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "P1 L1 #4",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Health-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "P1 L1 #5",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Health-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "History of Ideas",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Philosophy: Consequence of Ideas",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-History of Ideas-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "First things Step #1-2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-History of Ideas-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "First things Step #3-4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-History of Ideas-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "First things Step #4-5",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-History of Ideas-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "First things Step #6",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-History of Ideas-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Anatomy",
+          "curriculum": "& Physiology",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "☐ Read WHB pg 6-7\n ☐ Read Teacher Guide pg 4-5\n ☐ ACB (coloring book)pg6-7",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Anatomy-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "☐ Read WHB pg 8-14\n ☐  Wksht 1 (TG)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Anatomy-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "☐  Read WHB pg 15-18\n ☐ ACB 8-9",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Anatomy-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "☐ Wksht 2 (TG)",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Anatomy-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Anatomy-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Math",
+          "curriculum": "Calculus for Everyone",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Intro #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Math-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Intro #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Math-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Chap 1 #1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Math-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Chap 1 #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Math-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Chap 1 #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Math-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "English",
+          "curriculum": "/Lit",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Richest Man in Babylon Chapter & Day #1 \nGoP Lesson 1 - Introduction & Epiphany Chart",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-English-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Richest Man... Chapter & Day #2\nGoP Lesson 2 - How to Read Poetry",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-English-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Richest Man... Chapter & Day #3\nGoP Review Lessons 1 & 2 using your workbook.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-English-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Richest Man... Chapter & Day #4\nGoP Review Using Workbook",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-English-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Richest Man... Chapter & Day #5",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-English-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Electives – How Should We Then Live?",
+          "curriculum": "Electives – How Should We Then Live?",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Intro Step #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Intro Step #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Intro Step #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Intro Step #4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Financial Literacy",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Welcome to Consumer Math! Lesson 1.1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Financial Literacy-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Lesson 1.2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Financial Literacy-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Lesson 1.3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Financial Literacy-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Lesson 1.4",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Financial Literacy-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Financial Literacy-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#7B4F2E",
         "secondary": "#2E8B8B",
@@ -38,8 +1229,439 @@
     },
     {
       "student": "Ezra",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Ology, BIble Reading w/ Journaling (turn in 5 entries)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Hillsdale History",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Set up your online account with Hillsdale",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Ancient Christianity Lesson #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Ancient Christianity Lesson #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Creation Science",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "First Steps: How this Class Works",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "First Steps: Read \"Young Beginnings\"",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Read Genesis 1–11",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Lesson 1: ½ Is Genensis History Video",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Algebra 1",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Middle School Literature",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "1/2 of a Lecture",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "2nd 1/2 of the Lecture",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Assignment",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Latin 1",
+          "curriculum": "🧭/Logic",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Word Up Lesson",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "A Tutle Twins Logical Fallacy",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Electives",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Great Music: Instructions and Set Up",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Great Music Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Great Music Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Great Music Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Finish Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Music",
+          "curriculum": "listen & practice each day",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "He Keeps Me Singing (p. 4) - The Story & Hymn Study",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "He Keeps Me Singing (p. 4) - Bible Lesson",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "He Keeps Me Singing - Copywork & Music Theory",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "He Keeps Me Singing - Activity\n\nAudio files →",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "CellImage",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#708090",
         "secondary": "#002868",
@@ -48,8 +1670,439 @@
     },
     {
       "student": "Tabitha",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "Join Ezra when possible",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Saxon Math",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Lesson 10",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Saxon Math-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Assessment (after Lesson 10)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Saxon Math-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Drill Team",
+              "imageUrl": null,
+              "done": true,
+              "id": "Tabitha-W1-Saxon Math-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Lesson 11",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Saxon Math-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Saxon Math-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "History",
+          "curriculum": "Pages of History Reading",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Read Vol. 1, Ch. 1, pp. 17-21",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Read Vol. 1, Ch. 1, pp. 22-26",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Vol. 1, Ch. 1, pp. 27-31",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Read Vol. 1, pp. 32-37 (finishes Ch. 1, starts Ch. 2)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Vocabulary Expansion",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Day 1: Water Words – Watch Word Up! Video - Focus: Aqua (Latin for water) & Hydra (Greek for water)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Day 2: Review & Write - Vocabulary Words: aquarium, aqueduct, aquatic, hydrant, dehydrate, hydrogen",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Day 3: Game Day! - Play a game on ABCya!",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Day 4: Writing Assignment - Write a short story about a thirsty fish who leaves his aquarium to find a fire hydrant.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Literature",
+          "curriculum": "Narnia & Christian Heroes",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Narnia Textbook: Read Introduction to the Magician's Nephew w/ Mom",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Read Chap. from Christian Heroes book.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Chapter 1: The Wrong Door",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Discuss chapter w/mom and Narnia book",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Grammar",
+          "curriculum": "(Shurley Eng. Lev. 2)",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 1, Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 1, Lesson 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 1, Lesson 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 1, Lesson 4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "CellImage",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Science & Art",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "At Co-op",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Handwriting",
+          "curriculum": "(Good and Beautiful)",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Complete p. 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Complete p. 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Complete p. 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#9988CC",
         "secondary": "#87CEEB",
@@ -60,8 +2113,337 @@
   "studentData": [
     {
       "student": "Amos",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "Old Testament",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Ology, BIble Reading w/ Journaling (turn in 5 entries)",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "History",
+          "curriculum": "American on 🧭",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "🧭 1.1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "🧭 1.2",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "🧭 1.3",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "🧭 1.4",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "🧭 1.5",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Physical Training",
+          "curriculum": "P.T.",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Physical Training-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Science",
+          "curriculum": "Biology 🧭",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "How to Teach This Class Video for Teachers & Students",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Science-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Preface & Intro Videos",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Science-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Summary & Test Q.s",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Science-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Ch 1.1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Science-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W1-Science-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Math",
+          "curriculum": "Schormann – Algebra 2",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Shormann Math Intro",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Lesson 1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Lesson 2",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Lesson 3",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Review/Catch-up",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Math-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Citizenship",
+          "curriculum": "Logic (1st)\nEconomics🧭/Hills (2nd)",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Dr. Ransom Fallacy #1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Citizenship-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Dr. Ransom Fallacy #2",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Citizenship-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Dr. Ransom Fallacy #3",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Citizenship-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Dr. Ransom Fallacy #4",
+              "imageUrl": null,
+              "done": true,
+              "id": "Amos-W1-Citizenship-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W1-Citizenship-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#B22234",
         "secondary": "#002868",
@@ -70,8 +2452,439 @@
     },
     {
       "student": "Beth",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Nicole the Math Lady",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Bar Models in Addition and Subtraction, pp. 25-26",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Bar Models in Addition and Subtraction, pp. 27-28",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Order of Operations, pp. 29-30",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Making Bar Graphs, pp. 31-32",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Line Graphs, pp. 33-35",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Nicole the Math Lady-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "History",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "A Child's History of the World: Read Story 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Read Story 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Story 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Tell mom and Tabitha what you learned.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Music",
+          "curriculum": "listen & practice each day",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "He Keeps Me Singing (p. 4) - The Story & Hymn Study",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "He Keeps Me Singing (p. 4) - Bible Lesson",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "He Keeps Me Singing (p. 4) - Copywork & Music Theory",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "He Keeps Me Singing - Activity\n\nAudio files →",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "CellImage",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Music-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Literature",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Narnia Textbook: Read Introduction to the Magician's Nephew w/ Mom",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Read Chap. from Christian Heroes book.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Chapter 1: The Wrong Door",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Discuss chapter w/mom and Narnia book",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Literature-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Reading & Grammar",
+          "curriculum": "User: grandlizard78\nPwd: Hadassah",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Shurley English Level 4:  Chapter 1, Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Chapter 1, Lesson 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Chapter 1, Lesson 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Chapter 1, Lesson 4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Reading & Grammar-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Writing & Rhetoric",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Science & Art At Co-Cop",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Introductory Lessons:** Read the book's Introduction; Discuss the purpose of fables and rhetoric.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Introductory Lessons:** Review the Introduction; Copy a key sentence from it.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Writing & Rhetoric-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Handwriting",
+          "curriculum": "Good & Beautiful",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Good & Beautiful: Level 3, p. 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Level 3, pp. 2-3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Level 3, p. 4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Level 3, pp. 5-6",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W1-Handwriting-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#708090",
         "secondary": "#002868",
@@ -80,8 +2893,439 @@
     },
     {
       "student": "Charity",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "Old Testament 🧭",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "OT: Intro #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "OT: Intro #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "OT: Intro #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "OT: Intro #4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Seeng w/ New Eyes, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Health",
+          "curriculum": "Forms 1-4",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Intro Step 1 & 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Health-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "P1 L1 #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Health-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "P1 L1 #2-3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Health-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "P1 L1 #4",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Health-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "P1 L1 #5",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Health-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "History of Ideas",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Philosophy: Consequence of Ideas",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-History of Ideas-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "First things Step #1-2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-History of Ideas-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "First things Step #3-4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-History of Ideas-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "First things Step #4-5",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-History of Ideas-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "First things Step #6",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-History of Ideas-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Anatomy",
+          "curriculum": "& Physiology",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "☐ Read WHB pg 6-7\n ☐ Read Teacher Guide pg 4-5\n ☐ ACB (coloring book)pg6-7",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Anatomy-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "☐ Read WHB pg 8-14\n ☐  Wksht 1 (TG)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Anatomy-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "☐  Read WHB pg 15-18\n ☐ ACB 8-9",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Anatomy-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "☐ Wksht 2 (TG)",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Anatomy-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Anatomy-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Math",
+          "curriculum": "Calculus for Everyone",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Intro #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Math-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Intro #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Math-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Chap 1 #1",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Math-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Chap 1 #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Math-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Chap 1 #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Math-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "English",
+          "curriculum": "/Lit",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Richest Man in Babylon Chapter & Day #1 \nGoP Lesson 1 - Introduction & Epiphany Chart",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-English-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Richest Man... Chapter & Day #2\nGoP Lesson 2 - How to Read Poetry",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-English-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Richest Man... Chapter & Day #3\nGoP Review Lessons 1 & 2 using your workbook.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-English-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Richest Man... Chapter & Day #4\nGoP Review Using Workbook",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-English-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Richest Man... Chapter & Day #5",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-English-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Electives – How Should We Then Live?",
+          "curriculum": "Electives – How Should We Then Live?",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Intro Step #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Intro Step #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Intro Step #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Intro Step #4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Electives – How Should We Then Live?-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Financial Literacy",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Welcome to Consumer Math! Lesson 1.1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Financial Literacy-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Lesson 1.2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Financial Literacy-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Lesson 1.3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Financial Literacy-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Lesson 1.4",
+              "imageUrl": null,
+              "done": true,
+              "id": "Charity-W1-Financial Literacy-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W1-Financial Literacy-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#7B4F2E",
         "secondary": "#2E8B8B",
@@ -90,8 +3334,439 @@
     },
     {
       "student": "Ezra",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Ology, BIble Reading w/ Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Ology, BIble Reading w/ Journaling (turn in 5 entries)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Hillsdale History",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Set up your online account with Hillsdale",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Ancient Christianity Lesson #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Ancient Christianity Lesson #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Hillsdale History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Creation Science",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "First Steps: How this Class Works",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "First Steps: Read \"Young Beginnings\"",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Read Genesis 1–11",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Lesson 1: ½ Is Genensis History Video",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Creation Science-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Algebra 1",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Shormann Math",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Algebra 1-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Middle School Literature",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "1/2 of a Lecture",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "2nd 1/2 of the Lecture",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Assignment",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Middle School Literature-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Latin 1",
+          "curriculum": "🧭/Logic",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Word Up Lesson",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "A Tutle Twins Logical Fallacy",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Latin 1-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Electives",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Great Music: Instructions and Set Up",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Great Music Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Great Music Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Great Music Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "Finish Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Electives-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Music",
+          "curriculum": "listen & practice each day",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "He Keeps Me Singing (p. 4) - The Story & Hymn Study",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "He Keeps Me Singing (p. 4) - Bible Lesson",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "He Keeps Me Singing - Copywork & Music Theory",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "He Keeps Me Singing - Activity\n\nAudio files →",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "CellImage",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W1-Music-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#708090",
         "secondary": "#002868",
@@ -100,8 +3775,439 @@
     },
     {
       "student": "Tabitha",
-      "days": [],
-      "grid": [],
+      "weekNum": 1,
+      "days": [
+        {
+          "day": "Tue",
+          "date": "8/5"
+        },
+        {
+          "day": "Wed",
+          "date": "8/6"
+        },
+        {
+          "day": "Thu",
+          "date": "8/7"
+        },
+        {
+          "day": "Fri",
+          "date": "8/8"
+        },
+        {
+          "day": "Sat",
+          "date": "8/9"
+        }
+      ],
+      "grid": [
+        {
+          "subject": "Bible",
+          "curriculum": "Join Ezra when possible",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "The Ology, BIble Reading, Catechism Q1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Bible-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Saxon Math",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Lesson 10",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Saxon Math-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Assessment (after Lesson 10)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Saxon Math-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Drill Team",
+              "imageUrl": null,
+              "done": true,
+              "id": "Tabitha-W1-Saxon Math-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Lesson 11",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Saxon Math-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Saxon Math-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "History",
+          "curriculum": "Pages of History Reading",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Read Vol. 1, Ch. 1, pp. 17-21",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Read Vol. 1, Ch. 1, pp. 22-26",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Vol. 1, Ch. 1, pp. 27-31",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Read Vol. 1, pp. 32-37 (finishes Ch. 1, starts Ch. 2)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Vocabulary Expansion",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Day 1: Water Words – Watch Word Up! Video - Focus: Aqua (Latin for water) & Hydra (Greek for water)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Day 2: Review & Write - Vocabulary Words: aquarium, aqueduct, aquatic, hydrant, dehydrate, hydrogen",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Day 3: Game Day! - Play a game on ABCya!",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Day 4: Writing Assignment - Write a short story about a thirsty fish who leaves his aquarium to find a fire hydrant.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Vocabulary Expansion-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Literature",
+          "curriculum": "Narnia & Christian Heroes",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Narnia Textbook: Read Introduction to the Magician's Nephew w/ Mom",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Read Chap. from Christian Heroes book.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Read Chapter 1: The Wrong Door",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Discuss chapter w/mom and Narnia book",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Literature-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Grammar",
+          "curriculum": "(Shurley Eng. Lev. 2)",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 1, Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 1, Lesson 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 1, Lesson 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 1, Lesson 4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "CellImage",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Grammar-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Science & Art",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "At Co-op",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Science & Art-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Handwriting",
+          "curriculum": "(Good and Beautiful)",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "8/5",
+              "rawDate": 1754370000000,
+              "task": "Complete p. 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "8/6",
+              "rawDate": 1754456400000,
+              "task": "Complete p. 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "8/7",
+              "rawDate": 1754542800000,
+              "task": "Complete p. 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "8/8",
+              "rawDate": 1754629200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "8/9",
+              "rawDate": 1754715600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W1-Handwriting-Sat"
+            }
+          ]
+        }
+      ],
       "palette": {
         "primary": "#9988CC",
         "secondary": "#87CEEB",
