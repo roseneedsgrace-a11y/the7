@@ -62,35 +62,22 @@
 </head>
 <body>
 
-<header id="siteHeader">
-  <h1 id="headerTitle">School Dashboard</h1>
-</header>
+<div class="site-header" id="siteHeader">
+  <h1 id="headerTitle">Thus Far the Lord<br>Has Helped Us</h1>
+  <div class="page-label">Parents Dashboard</div>
+</div
 
 <div class="nav-controls">
-  <button id="prevDay" onclick="changeDay(-1)">Previous</button>
+  <button id="prevDay" onclick="changeDay(-1)">&#8592;  Previous</button>
   <span id="currentDayLabel"></span>
-  <button id="nextDay" onclick="changeDay(1)">Next</button>
+  <button id="nextDay" onclick="changeDay(1)">Next &#8594;</button>
 </div>
 
 <div id="statsStrip" style="display:flex; gap:10px; justify-content:center; margin:20px 0;"></div>
 
-<div id="content" class="loading">Loading assignments...</div>
-
-
-
-  
-<div class="site-header" id="siteHeader">
-  <h1 id="headerTitle">Thus Far the Lord<br>Has Helped Us</h1>
-  <div class="page-label">Parents Dashboard</div>
-</div>
 
 <div class="date-bar" id="dateBar">Loading...</div>
 
-<div class="day-nav">
-  <button id="prevDay" onclick="changeDay(-1)" disabled>&#8592; Previous</button>
-  <span class="current-day" id="currentDayLabel"></span>
-  <button id="nextDay" onclick="changeDay(1)" disabled>Next &#8594;</button>
-</div>
 
 <div id="olderMsg" style="display:none; text-align:center; padding: 10px 20px; font-size: 12px; color: #94a3b8; background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
   Check farther back using each student's <span id="olderLinks"></span> individual week view.
