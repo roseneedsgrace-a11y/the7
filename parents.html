@@ -99,10 +99,13 @@
   currentDate.setHours(0, 0, 0, 0);
   let allData = null;
 
-  window.onload = function() {
-    // Attempt to load the local data file
-    fetch('data.json')
-      .then(r => r.json())
+window.onload = function() {
+    // Adding ?v= plus the time forces the browser to ignore the old cached version
+    fetch('data.json?v=' + new Date().getTime())
+      .then(r => {
+        if (!r.ok) throw new Error("File not found on server");
+        return r.json();
+      })
       .then(function(data) {
         if (data.config) applyHeaderSettings(data.config);
         renderDashboard(data);
@@ -110,9 +113,9 @@
       .catch(e => {
         document.getElementById('content').innerHTML = `
           <div style="padding:40px;text-align:center;">
-            <p style="color:#dc2626; font-weight:bold;">data.json not found.</p>
+            <p style="color:#dc2626; font-weight:bold;">Cannot load data.json</p>
             <p style="font-size:13px; color:#64748b; margin-top:10px;">
-              Make sure you have run your Google Script to generate the data.json file in your GitHub repository.
+              Error: ${e.message}
             </p>
           </div>`;
       });
