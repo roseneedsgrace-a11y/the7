@@ -216,6 +216,18 @@
     size: landscape; 
     margin: 0.4in; 
   }
+  font-size: 18pt !important;
+    margin: 0;
+    display: flex;
+    align-items: baseline; /* Keeps "Student Planner" and "Name" aligned on their bottom edge */
+    justify-content: flex-start; 
+  }
+
+  #printStudentName {
+    text-decoration: underline;
+    margin-left: 8px;
+    font-weight: bold;
+  }
 }
 
   /* Rendering URLs from assignments  */  
@@ -326,7 +338,9 @@
 <div class="site-header" id="siteHeader">
   <h1 id="headerTitleH1">Thus Far the Lord<br>Has Helped Us</h1>
 </div>
-<div id="printHeader" class="page-header"><h1>Student Planner</h1></div>
+<div id="printHeader" class="page-header">
+  <h1>Student Planner: <span id="printStudentName"></span></h1>
+</div>
 
 <div class="controls">
   <div><strong>Student:</strong> <select id="studentSelect" onchange="updateWeekFromStudent(); render();"></select></div>
@@ -390,7 +404,8 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
   function render() {
     if (!allData) return;
     
-    const studentName = document.getElementById('studentSelect').value;
+    const studentName = document.getElementById('studentSelect').value;  
+    document.getElementById('printStudentName').textContent = studentName;
     const weekInput = document.getElementById('weekInput');
     const targetWeek = parseInt(weekInput.value);
     const isStatusMode = document.getElementById('statusToggle').checked;
