@@ -263,12 +263,18 @@
     if (!hideHeader) document.getElementById('siteHeader').style.display = 'flex';
 
     const jsonUrl = isGAS ? null : getBaseUrl() + 'data.json?t=' + Date.now();
-
+    console.log("Attempting to fetch JSON from:", jsonUrl); // <--- ADD THIS
+    
     if (jsonUrl) {
       fetch(jsonUrl)
-        .then(r => r.json())
+        .then(r => {
+          console.log("Fetch response received. Status:", r.status); // <--- ADD THIS
+          return r.json();
+        })
         .then(function(json) {
+          console.log("JSON successfully parsed:", json); // <--- ADD THIS
           cachedConfig = json;
+          
           applyHeader(json.headerText, json.headerColor);
           if (json.sharedDesign) applySharedDesign(json.sharedDesign);
 
