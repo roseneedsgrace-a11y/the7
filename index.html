@@ -231,7 +231,7 @@
 }
 
   /* Rendering URLs from assignments  */  
-  .link-btn {
+.link-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -245,12 +245,11 @@
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  z-index: 10;
+  z-index: 20; /* Ensure it stays above the card's click area */
   position: relative;
 }
 
 .link-btn:hover {
-  opacity: 0.9;
   filter: brightness(1.1);
 }
 
