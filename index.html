@@ -216,21 +216,25 @@
   const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
   let allData = null;
 
-  window.onload = function() {
-    fetch('data.json?v=' + Date.now())
-      .then(r => r.json())
-      .then(data => {
-        allData = data;
-        const sel = document.getElementById('studentSelect');
-        data.studentData.forEach(s => {
-          const opt = document.createElement('option');
-          opt.value = s.student; opt.textContent = s.student;
-          sel.appendChild(opt);
-        });
-        document.getElementById('weekInput').value = data.config.currentWeek || 1;
-        render();
+window.onload = function() {
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      allData = data;
+      const sel = document.getElementById('studentSelect');
+      data.studentData.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.student; opt.textContent = s.student;
+        sel.appendChild(opt);
       });
-  };
+      
+      // FIX: Set the input box to the current week from your spreadsheet
+      const weekInput = document.getElementById('weekInput');
+      weekInput.value = data.config.currentWeek || 1;
+      
+      render();
+    });
+};
 
 function render() {
     if (!allData) return;
