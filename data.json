@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T19:14:21.025Z",
+  "generated": "2026-04-14T19:45:35.730Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8,27 +8,27 @@
   "students": [
     {
       "name": "Amos",
-      "palette": "patriotic",
+      "palette": "",
       "currentWeek": 35
     },
     {
       "name": "Beth",
-      "palette": "girl",
+      "palette": "",
       "currentWeek": 35
     },
     {
       "name": "Charity",
-      "palette": "bookish",
+      "palette": "",
       "currentWeek": 35
     },
     {
       "name": "Ezra",
-      "palette": "boy",
+      "palette": "",
       "currentWeek": 35
     },
     {
       "name": "Tabitha",
-      "palette": "girl",
+      "palette": "",
       "currentWeek": 35
     }
   ],
@@ -36,9 +36,9 @@
     {
       "student": "Amos",
       "palette": {
-        "primary": "#B22234",
-        "secondary": "#002868",
-        "bg": "#F8F8FF"
+        "primary": "#9988CC",
+        "secondary": "#87CEEB",
+        "bg": "#F0F8FF"
       },
       "weekNum": 35,
       "grid": [
@@ -2700,9 +2700,9 @@
     {
       "student": "Charity",
       "palette": {
-        "primary": "#7B4F2E",
-        "secondary": "#2E8B8B",
-        "bg": "#FDFAF5"
+        "primary": "#9988CC",
+        "secondary": "#87CEEB",
+        "bg": "#F0F8FF"
       },
       "weekNum": 35,
       "grid": [
@@ -3908,8 +3908,8 @@
     {
       "student": "Ezra",
       "palette": {
-        "primary": "#708090",
-        "secondary": "#002868",
+        "primary": "#9988CC",
+        "secondary": "#87CEEB",
         "bg": "#F0F8FF"
       },
       "weekNum": 35,
