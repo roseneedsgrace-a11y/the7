@@ -241,19 +241,21 @@
 }
 
   /* Rendering URLs from assignments  */  
-a.link-btn, a.link-btn:visited {
-  display: inline-flex;
+a.link-btn,
+a.link-btn:link,
+a.link-btn:visited {
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
   gap: 5px;
   margin: 6px auto 4px;
   padding: 6px 14px;
-  background: var(--primary);
-  color: white;
+  background: var(--primary) !important;
+  color: white !important;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none !important;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -269,8 +271,8 @@ a.link-btn:hover {
   filter: brightness(1.12);
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 a.link-btn:active {
@@ -340,11 +342,7 @@ a.link-btn::before {
   .admin-links { display: none !important; }
 }
 
-/* Make sure the link button doesn't look like a tiny sliver */
-.link-btn {
-  min-width: 100px;
-  text-align: center;
-}
+
 
 /* Ensure QR codes only show up on the printed page, not the screen */
 @media screen {
