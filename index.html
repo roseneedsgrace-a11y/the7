@@ -100,14 +100,123 @@
       .site-header { height: 150px; }
     }
 
-    @media print {
-      .controls, .site-header { display: none !important; }
-      .page-header { display: block !important; }
-      .table-view { display: block !important; }
-      .list-view { display: none !important; }
-      .task-card { border: 1px solid #94a3b8 !important; page-break-inside: avoid; }
-      @page { size: landscape; margin: 0.5in; }
-    }
+/* PRINT STYLES - Optimized for ink-saving and landscape layout */
+@media print {
+  /* 1. Hide everything but the planner */
+  .controls, .site-header, .admin-links, .list-view, .link-btn, #scrollTopBtn { 
+    display: none !important; 
+  }
+  
+  .page-header { display: block !important; margin-bottom: 10px; border-bottom: 2px solid #000 !important; }
+  .table-view { display: block !important; width: 100%; }
+
+  /* 2. Reset page context */
+  html, body { 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    background: white !important; 
+    color: black !important;
+  }
+
+  /* 3. Tighten the table layout */
+  table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    border-spacing: 0;
+    table-layout: fixed; /* Prevents columns from jumping around */
+  }
+
+  th, td { 
+    border: 1px solid #000 !important; 
+    padding: 4px !important; 
+    border-radius: 0 !important; 
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  th { 
+    background: #f1f5f9 !important; /* Very light gray for headers */
+    -webkit-print-color-adjust: exact; 
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  /* 4. Subject Column */
+  .subject-cell { 
+    width: 15% !important; /* Fixed width for subjects */
+    background: white !important; 
+    color: black !important; 
+    font-size: 11px !important;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+
+  .subject-cell .curriculum-subtitle { 
+    font-size: 8px !important; 
+    color: #444 !important; 
+    display: block;
+  }
+
+  /* 5. Task Cards */
+  .task-card { 
+    border: none !important; 
+    min-height: 50px !important; 
+    background: transparent !important; 
+    opacity: 1 !important;
+  }
+
+  .task-text { 
+    font-size: 10px !important; 
+    line-height: 1.1 !important;
+    color: black !important;
+  }
+
+  /* 6. Media Handling */
+  .task-image { 
+    max-width: 50px !important; 
+    max-height: 50px !important; 
+    margin: 2px auto !important;
+  }
+
+  .qr-img { 
+    display: block !important; 
+    width: 45px !important; 
+    height: 45px !important; 
+    margin: 2px auto !important;
+  }
+
+  /* 7. Checkboxes for Print */
+  .status-indicator { 
+    display: block !important;
+    border: 1px solid #000 !important; 
+    width: 12px !important; 
+    height: 12px !important; 
+    position: absolute !important; 
+    bottom: 2px !important; 
+    right: 2px !important;
+    background: white !important;
+  }
+
+  .is-done .status-indicator::after { 
+    content: '✓' !important; 
+    color: black !important;
+    font-size: 10px !important;
+    font-weight: bold;
+  }
+
+  /* Strike-through for completed tasks on print */
+  .is-done .task-text { 
+    text-decoration: line-through !important; 
+    color: #888 !important;
+  }
+
+  /* 8. Page Setup */
+  @page { 
+    size: landscape; 
+    margin: 0.4in; 
+  }
+}
 
   /* Rendering URLs from assignments  */  
   .link-btn {
