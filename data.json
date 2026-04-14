@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T18:01:02.456Z",
+  "generated": "2026-04-14T18:54:11.236Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -222,7 +222,7 @@
               "date": "4/6",
               "rawDate": 1775451600000,
               "week": 34,
-              "task": "🧭 24.3",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -233,7 +233,7 @@
               "date": "4/7",
               "rawDate": 1775538000000,
               "week": 34,
-              "task": "🧭 24.4",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -244,7 +244,7 @@
               "date": "4/8",
               "rawDate": 1775624400000,
               "week": 34,
-              "task": "🧭 24.5",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -255,7 +255,7 @@
               "date": "4/9",
               "rawDate": 1775710800000,
               "week": 34,
-              "task": "🧭 25.1",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -277,7 +277,7 @@
               "date": "4/13",
               "rawDate": 1776056400000,
               "week": 35,
-              "task": "🧭 25.2",
+              "task": "🧭 11.1",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -288,7 +288,7 @@
               "date": "4/14",
               "rawDate": 1776142800000,
               "week": 35,
-              "task": "🧭 25.3",
+              "task": "🧭 11.2",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -299,7 +299,7 @@
               "date": "4/15",
               "rawDate": 1776229200000,
               "week": 35,
-              "task": "🧭 25.4",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -310,7 +310,7 @@
               "date": "4/16",
               "rawDate": 1776315600000,
               "week": 35,
-              "task": "🧭 25.5",
+              "task": "🧭 11.3",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -321,7 +321,7 @@
               "date": "4/17",
               "rawDate": 1776402000000,
               "week": 35,
-              "task": "",
+              "task": "🧭 11.4",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -332,7 +332,7 @@
               "date": "4/20",
               "rawDate": 1776661200000,
               "week": 36,
-              "task": "🧭 26.1",
+              "task": "🧭 11.5",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -343,7 +343,7 @@
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "🧭 26.2",
+              "task": "🧭 12.1",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -354,7 +354,7 @@
               "date": "4/22",
               "rawDate": 1776834000000,
               "week": 36,
-              "task": "🧭 26.3",
+              "task": "🧭 12.2",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -365,7 +365,7 @@
               "date": "4/23",
               "rawDate": 1776920400000,
               "week": 36,
-              "task": "🧭 26.4",
+              "task": "🧭 12.3",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -376,7 +376,7 @@
               "date": "4/24",
               "rawDate": 1777006800000,
               "week": 36,
-              "task": "",
+              "task": "Catch-Up Day",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -567,7 +567,7 @@
               "task": "Lesson 30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W34-Foreign Language-Mon"
             },
             {
@@ -578,7 +578,7 @@
               "task": "Lesson 30 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Tue"
             },
             {
@@ -4163,7 +4163,7 @@
               "task": "The Church & Genesis, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Creation Science-Tue"
             },
             {
@@ -4505,7 +4505,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Latin 1-Tue"
             },
             {
@@ -4847,7 +4847,7 @@
               "task": "My Country, 'Tis of Thee (p. 184) - The Story & Hymn Study & Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Music-Tue"
             },
             {
@@ -4858,7 +4858,7 @@
               "task": "My Country, 'Tis of Thee (p. 184) - Copywork & Music Theory & Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Music-Wed"
             },
             {
@@ -4869,7 +4869,7 @@
               "task": "My Country, 'Tis of Thee (p. 184) - Activity",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Music-Thu"
             },
             {
@@ -4880,7 +4880,7 @@
               "task": "CellImage",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Music-Fri"
             },
             {
