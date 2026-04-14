@@ -196,9 +196,15 @@ function renderForDate(date) {
 
     const dailyTasks = allStudentTasks.filter(function(t) {
       if (!t.rawDate) return false;
+      
+      // Create date objects for both
       const taskDate = new Date(t.rawDate);
-      taskDate.setHours(0, 0, 0, 0);
-      return taskDate.getTime() === date.getTime();
+      const viewDate = new Date(date);
+      
+      // Compare Year, Month, and Date specifically
+      return taskDate.getUTCFullYear() === viewDate.getUTCFullYear() &&
+             taskDate.getUTCMonth() === viewDate.getUTCMonth() &&
+             taskDate.getUTCDate() === viewDate.getUTCDate();
     });
 
     // Return a combined object for the student card
@@ -255,38 +261,31 @@ function updateNavButtons() {
   if (!allData || !allData.students) return;
 
   const availableDates = [];
-  
-  // Scan all students and all subjects for any task dates
   allData.students.forEach(s => {
     if (s.grid) {
-      s.grid.forEach(subjectGroup => {
-        if (subjectGroup.tasks) {
-          subjectGroup.tasks.forEach(t => {
-            if (t.rawDate) {
-              const d = new Date(t.rawDate);
-              d.setHours(0, 0, 0, 0);
-              availableDates.push(d.getTime());
-            }
-          });
-        }
+      s.grid.forEach(group => {
+        group.tasks.forEach(t => {
+          if (t.rawDate) {
+            // Normalize to midnight UTC to ensure consistency
+            const d = new Date(t.rawDate);
+            const normalized = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+            availableDates.push(normalized);
+          }
+        });
       });
     }
   });
 
   if (availableDates.length === 0) return;
 
-  // Find the unique dates and sort them
   const sorted = [...new Set(availableDates)].sort((a, b) => a - b);
-  
+  const currentNormalized = Date.UTC(currentDate.getUTCFullYear(), currentDate.getUTCMonth(), currentDate.getUTCDate());
+
   const prevBtn = document.getElementById('prevDay');
   const nextBtn = document.getElementById('nextDay');
-  const currentT = currentDate.getTime();
 
-  // Disable "Previous" if we are at the earliest date in the 3-week window
-  if (prevBtn) prevBtn.disabled = currentT <= sorted[0];
-  
-  // Disable "Next" if we are at the latest date in the 3-week window
-  if (nextBtn) nextBtn.disabled = currentT >= sorted[sorted.length - 1];
+  if (prevBtn) prevBtn.disabled = currentNormalized <= sorted[0];
+  if (nextBtn) nextBtn.disabled = currentNormalized >= sorted[sorted.length - 1];
 }
   
   function statCard(num, label, color) {
