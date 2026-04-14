@@ -457,16 +457,17 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
 
           if (hasContent) {
             const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
-            const mediaHtml = renderMedia(t);
+            const mediaHtml = renderMedia(t); // This now carries your link logic
             
             tableHtml += `<td>
-              <label class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
+              <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
                 ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
                 <div class="media-container">${mediaHtml}</div>
-                <div class="status-indicator"></div>
-                <input type="checkbox" class="check-overlay" ${t.done ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
-              </label>
-            </td>`;
+                <label class="status-indicator-wrap">
+                  <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
+                  <div class="status-indicator"></div>
+                </label>
+              </div>`;
 
             tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
           } else {
@@ -507,17 +508,19 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
     document.getElementById('content').innerHTML = tableHtml + listHtml;
   }
 
-  function renderMedia(t) {
-    let html = '';
-    if (t.linkUrl) {
-      html += `<a href="${t.linkUrl}" target="_blank" class="link-btn" onclick="event.stopPropagation();">Open Link</a>`;
-    }
-    if (t.imageUrl) {
-      const isQR = t.imageUrl.includes('api.qrserver.com');
-      html += `<img src="${t.imageUrl}" class="${isQR ? 'qr-img' : ''} task-image" alt="Task Media">`;
-    }
-    return html;
+function renderMedia(t) {
+  let html = '';
+  // If there's a link, create the button
+  if (t.linkUrl) {
+    html += `<a href="${t.linkUrl}" target="_blank" class="link-btn" onclick="event.stopPropagation();">Open Link</a>`;
   }
+  // If there's an image (or QR), show it
+  if (t.imageUrl) {
+    const isQR = t.imageUrl.includes('api.qrserver.com');
+    html += `<img src="${t.imageUrl}" class="${isQR ? 'qr-img' : ''} task-image" alt="Task Media">`;
+  }
+  return html;
+}
   
 function toggle(id, el) {
   const isDone = el.checked;
