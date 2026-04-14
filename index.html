@@ -642,7 +642,7 @@ function updateLocalCache(id, status) {
   if (!cachedConfig || !cachedConfig.studentData) return;
   
   cachedConfig.studentData.forEach(function(s) {
-    // Check if grid exists (since your JSON has s.grid, not s.weeks)
+    // Look directly at the grid instead of s.weeks
     if (s.grid) {
       s.grid.forEach(function(subjectRow) {
         if (subjectRow.tasks) {
