@@ -241,7 +241,7 @@
 }
 
   /* Rendering URLs from assignments  */  
-.link-btn {
+a.link-btn, a.link-btn:visited {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +250,7 @@
   padding: 6px 14px;
   background: var(--primary);
   color: white;
-  border-radius: 20px; /* pill shape */
+  border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 700;
   text-decoration: none;
@@ -261,22 +261,24 @@
   position: relative;
   z-index: 10;
   cursor: pointer;
-  border: 2px solid transparent;
+  min-width: 100px;
+  text-align: center;
 }
 
-.link-btn:hover {
+a.link-btn:hover {
   filter: brightness(1.12);
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+  color: white;
 }
 
-.link-btn:active {
+a.link-btn:active {
   transform: translateY(0px);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
   filter: brightness(0.95);
 }
 
-.link-btn::before {
+a.link-btn::before {
   content: '↗';
   font-size: 0.85rem;
 }
