@@ -102,10 +102,9 @@
     fetch(getBaseUrl() + 'data.json?t=' + Date.now())
       .then(r => r.json())
       .then(json => {
-        console.log("JSON object received:", json);
         cachedConfig = json;
         
-        // Setup Student Dropdown
+        // Setup Students
         const sel = document.getElementById('student');
         sel.innerHTML = '';
         (json.students || []).forEach(s => {
@@ -115,14 +114,15 @@
         });
         if (preselect) sel.value = preselect;
 
-        // Set initial week from JSON config
+        // Set Week Input to match JSON's weekNum
         if (json.config && json.config.currentWeek) {
           document.getElementById('week').value = json.config.currentWeek;
+        } else if (json.studentData && json.studentData[0]) {
+          document.getElementById('week').value = json.studentData[0].weekNum;
         }
 
         load(true);
 
-        // Fetch latest progress from GAS
         fetch(API_URL + '?action=getProgress')
           .then(r => r.json())
           .then(progressMap => {
@@ -130,7 +130,10 @@
             drawGrid();
           });
       })
-      .catch(err => console.error("Initial load failed:", err));
+      .catch(err => {
+          console.error("Failed to load JSON:", err);
+          document.getElementById('content').innerHTML = "Error loading initial data.";
+      });
   };
 
   function load(isInitial) {
@@ -139,42 +142,42 @@
     if (!cachedConfig) return;
 
     const studentData = cachedConfig.studentData.find(s => s.student === studentName);
-    const jsonStartWeek = (cachedConfig.config && cachedConfig.config.currentWeek) || weekNum;
     
-    // Check if the requested week is the one in our JSON (which handles ~3 weeks)
-    // Adjust logic if your JSON specifically nests weeks: studentData.weeks[weekNum]
-    if (weekNum >= (jsonStartWeek - 1) && weekNum <= (jsonStartWeek + 1)) {
-      console.log("Loading week " + weekNum + " from local JSON.");
+    // BOUNDARY CHECK: Does this student object match the week we want?
+    // Your JSON logic: lastData.weekNum is usually 35. 
+    if (studentData && studentData.weekNum === weekNum) {
+      console.log("Week " + weekNum + " found in JSON. Loading locally.");
       lastData = JSON.parse(JSON.stringify(studentData));
       lastData.currentDisplayWeek = weekNum;
       updateCSSPalette(studentData.palette);
       drawGrid();
     } else {
-      console.log("Week outside JSON range. Reverting to GAS...");
+      console.log("Week " + weekNum + " is outside this JSON's scope. Reverting to GAS.");
       fetchFromGAS(studentName, weekNum);
     }
   }
 
   function fetchFromGAS(studentName, weekNum) {
-    document.getElementById('content').innerHTML = "Fetching Week " + weekNum + " from GAS...";
+    document.getElementById('content').innerHTML = "Fetching Week " + weekNum + " from archives...";
     fetch(`${API_URL}?action=getWeekData&student=${encodeURIComponent(studentName)}&week=${weekNum}`)
       .then(r => r.json())
       .then(newData => {
+        if (!newData || !newData.grid) throw new Error("Invalid GAS data");
         lastData = newData;
         lastData.currentDisplayWeek = weekNum;
         drawGrid();
       })
       .catch(err => {
         console.error("GAS Fetch Error:", err);
-        document.getElementById('content').innerHTML = "Error loading from GAS.";
+        document.getElementById('content').innerHTML = "Week " + weekNum + " is not available on the server.";
       });
   }
 
   function drawGrid() {
     if (!lastData || !lastData.grid) return;
 
-    // Intelligence: Determine Dates
-    const selectedWeek = lastData.currentDisplayWeek || 1;
+    // Intelligence: Determine Dates based on the selected week
+    const selectedWeek = lastData.currentDisplayWeek || lastData.weekNum;
     const anchorDate = new Date((cachedConfig.date || "April 14, 2026") + ", 2026");
     const anchorWeek = (cachedConfig.config && cachedConfig.config.currentWeek) || 35;
     const weekDiff = selectedWeek - anchorWeek;
@@ -218,6 +221,7 @@
 
   function toggle(id, el) {
     el.parentElement.classList.toggle('is-done', el.checked);
+    // Silent background update to GAS
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
   }
 
@@ -225,7 +229,7 @@
     if (!cachedConfig) return;
     cachedConfig.studentData.forEach(s => {
       if (s.grid) s.grid.forEach(row => {
-        if (row.tasks) row.tasks.forEach(t => { t.done = progressMap[t.id] === true; });
+        if (row.tasks) row.tasks.forEach(t => { t.done = (progressMap[t.id] === true); });
       });
     });
   }
