@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T02:45:19.004Z",
+  "generated": "2026-04-14T02:49:28.470Z",
   "date": "Monday, April 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -45,7 +45,8 @@
               "id": "2026-04-06T05:00:00.000Z",
               "week": 34,
               "task": "🧭 24.3",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-06T05:00:00.000Z",
               "done": false
             }
           ]
@@ -57,7 +58,8 @@
               "id": "2026-04-07T05:00:00.000Z",
               "week": 34,
               "task": "🧭 24.4",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-07T05:00:00.000Z",
               "done": false
             }
           ]
@@ -69,7 +71,8 @@
               "id": "2026-04-08T05:00:00.000Z",
               "week": 34,
               "task": "🧭 24.5",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-08T05:00:00.000Z",
               "done": false
             }
           ]
@@ -81,7 +84,8 @@
               "id": "2026-04-09T05:00:00.000Z",
               "week": 34,
               "task": "🧭 25.1 ",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-09T05:00:00.000Z",
               "done": false
             }
           ]
@@ -93,21 +97,24 @@
               "id": "2026-04-10T05:00:00.000Z",
               "week": 34,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-10T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-17T05:00:00.000Z",
               "week": 35,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-17T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-24T05:00:00.000Z",
               "week": 36,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-24T05:00:00.000Z",
               "done": false
             }
           ]
@@ -119,7 +126,8 @@
               "id": "2026-04-13T05:00:00.000Z",
               "week": 35,
               "task": "🧭 25.2",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-13T05:00:00.000Z",
               "done": false
             }
           ]
@@ -131,7 +139,8 @@
               "id": "2026-04-14T05:00:00.000Z",
               "week": 35,
               "task": "🧭 25.3",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-14T05:00:00.000Z",
               "done": false
             }
           ]
@@ -143,7 +152,8 @@
               "id": "2026-04-15T05:00:00.000Z",
               "week": 35,
               "task": "🧭 25.4",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-15T05:00:00.000Z",
               "done": false
             }
           ]
@@ -155,7 +165,8 @@
               "id": "2026-04-16T05:00:00.000Z",
               "week": 35,
               "task": "🧭 25.5",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-16T05:00:00.000Z",
               "done": false
             }
           ]
@@ -167,7 +178,8 @@
               "id": "2026-04-20T05:00:00.000Z",
               "week": 36,
               "task": "🧭 26.1 ",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-20T05:00:00.000Z",
               "done": false
             }
           ]
@@ -179,7 +191,8 @@
               "id": "2026-04-21T05:00:00.000Z",
               "week": 36,
               "task": "🧭 26.2",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-21T05:00:00.000Z",
               "done": false
             }
           ]
@@ -191,7 +204,8 @@
               "id": "2026-04-22T05:00:00.000Z",
               "week": 36,
               "task": "🧭 26.3",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-22T05:00:00.000Z",
               "done": false
             }
           ]
@@ -203,7 +217,8 @@
               "id": "2026-04-23T05:00:00.000Z",
               "week": 36,
               "task": "🧭 26.4",
-              "rawDate": "Lesson & Paper",
+              "notes": "Lesson & Paper",
+              "date": "2026-04-23T05:00:00.000Z",
               "done": false
             }
           ]
@@ -222,35 +237,40 @@
               "id": "2026-04-07T05:00:00.000Z",
               "week": 34,
               "task": "Drill Team & Lesson 49",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-07T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-08T05:00:00.000Z",
               "week": 34,
               "task": "Drill Team & Lesson 50",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-08T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-09T05:00:00.000Z",
               "week": 34,
               "task": "Drill Team & Investigation 5",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-09T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-10T05:00:00.000Z",
               "week": 34,
               "task": "Drill Team & Lesson 51",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-10T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-11T05:00:00.000Z",
               "week": 34,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-11T05:00:00.000Z",
               "done": false
             }
           ]
@@ -262,7 +282,8 @@
               "id": "2026-04-13T05:00:00.000Z",
               "week": 35,
               "task": "Drill Team & Lesson 52",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-13T05:00:00.000Z",
               "done": false
             }
           ]
@@ -274,35 +295,40 @@
               "id": "2026-04-14T05:00:00.000Z",
               "week": 35,
               "task": "",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-14T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-15T05:00:00.000Z",
               "week": 35,
               "task": "Drill Team & Lesson 53",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-15T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-16T05:00:00.000Z",
               "week": 35,
               "task": "Drill Team & Lesson 54",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-16T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-17T05:00:00.000Z",
               "week": 35,
               "task": "Drill Team & Lesson 55",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-17T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-18T05:00:00.000Z",
               "week": 35,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-18T05:00:00.000Z",
               "done": false
             }
           ]
@@ -314,35 +340,40 @@
               "id": "2026-04-21T05:00:00.000Z",
               "week": 36,
               "task": "Drill Team & Lesson 56",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-21T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-22T05:00:00.000Z",
               "week": 36,
               "task": "Drill Team & Lesson 57",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-22T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-23T05:00:00.000Z",
               "week": 36,
               "task": "Drill Team & Lesson 58",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-23T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-24T05:00:00.000Z",
               "week": 36,
               "task": "Drill Team & Lesson 59",
-              "rawDate": "Tell mom and Tabitha what you learned.",
+              "notes": "Tell mom and Tabitha what you learned.",
+              "date": "2026-04-24T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-25T05:00:00.000Z",
               "week": 36,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-25T05:00:00.000Z",
               "done": false
             }
           ]
@@ -361,28 +392,32 @@
               "id": "2026-04-07T05:00:00.000Z",
               "week": 34,
               "task": "P4 L1 #1-2",
-              "rawDate": "S&H Step #5",
+              "notes": "S&H Step #5",
+              "date": "2026-04-07T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-08T05:00:00.000Z",
               "week": 34,
               "task": "P4 L1 #3",
-              "rawDate": "S&H Step #6",
+              "notes": "S&H Step #6",
+              "date": "2026-04-08T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-09T05:00:00.000Z",
               "week": 34,
               "task": "P4 L1 #4",
-              "rawDate": "Quiz",
+              "notes": "Quiz",
+              "date": "2026-04-09T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-10T05:00:00.000Z",
               "week": 34,
               "task": "P4 L1 #5",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-10T05:00:00.000Z",
               "done": false
             }
           ]
@@ -394,21 +429,24 @@
               "id": "2026-04-11T05:00:00.000Z",
               "week": 34,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-11T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-17T05:00:00.000Z",
               "week": 35,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-17T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-24T05:00:00.000Z",
               "week": 36,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-24T05:00:00.000Z",
               "done": false
             }
           ]
@@ -420,7 +458,8 @@
               "id": "2026-04-13T05:00:00.000Z",
               "week": 35,
               "task": "P4 L1 #6",
-              "rawDate": "Russell & Modern Philospohers Step #1",
+              "notes": "Russell & Modern Philospohers Step #1",
+              "date": "2026-04-13T05:00:00.000Z",
               "done": false
             }
           ]
@@ -432,7 +471,8 @@
               "id": "2026-04-14T05:00:00.000Z",
               "week": 35,
               "task": "P4 L1 #7 & Quiz",
-              "rawDate": "Russell & Modern Philospohers Step #2",
+              "notes": "Russell & Modern Philospohers Step #2",
+              "date": "2026-04-14T05:00:00.000Z",
               "done": false
             }
           ]
@@ -444,7 +484,8 @@
               "id": "2026-04-15T05:00:00.000Z",
               "week": 35,
               "task": "P4 L2 #1-2",
-              "rawDate": "Russell & Modern Philospohers Step #3",
+              "notes": "Russell & Modern Philospohers Step #3",
+              "date": "2026-04-15T05:00:00.000Z",
               "done": false
             }
           ]
@@ -456,7 +497,8 @@
               "id": "2026-04-16T05:00:00.000Z",
               "week": 35,
               "task": "P4 L2 #3",
-              "rawDate": "Russell & Modern Philospohers Step #4",
+              "notes": "Russell & Modern Philospohers Step #4",
+              "date": "2026-04-16T05:00:00.000Z",
               "done": false
             }
           ]
@@ -468,7 +510,8 @@
               "id": "2026-04-20T05:00:00.000Z",
               "week": 36,
               "task": "P4 L2 #4",
-              "rawDate": "Russell & Modern Philospohers Step #5",
+              "notes": "Russell & Modern Philospohers Step #5",
+              "date": "2026-04-20T05:00:00.000Z",
               "done": false
             }
           ]
@@ -480,7 +523,8 @@
               "id": "2026-04-21T05:00:00.000Z",
               "week": 36,
               "task": "P4 L2 #5",
-              "rawDate": "Russell & Modern Philospohers Step #6",
+              "notes": "Russell & Modern Philospohers Step #6",
+              "date": "2026-04-21T05:00:00.000Z",
               "done": false
             }
           ]
@@ -492,7 +536,8 @@
               "id": "2026-04-22T05:00:00.000Z",
               "week": 36,
               "task": "P4 L2 #6",
-              "rawDate": "Russell & Modern Philospohers Step #7",
+              "notes": "Russell & Modern Philospohers Step #7",
+              "date": "2026-04-22T05:00:00.000Z",
               "done": false
             }
           ]
@@ -504,7 +549,8 @@
               "id": "2026-04-23T05:00:00.000Z",
               "week": 36,
               "task": "P4 L2 #7 & Quiz",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-23T05:00:00.000Z",
               "done": false
             }
           ]
@@ -523,105 +569,120 @@
               "id": "2026-04-07T05:00:00.000Z",
               "week": 34,
               "task": "American Heritage #8",
-              "rawDate": "The Culture of Genesis, Lesson 4",
+              "notes": "The Culture of Genesis, Lesson 4",
+              "date": "2026-04-07T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-08T05:00:00.000Z",
               "week": 34,
               "task": "",
-              "rawDate": "The Culture of Genesis, Lesson 5 & Quiz",
+              "notes": "The Culture of Genesis, Lesson 5 & Quiz",
+              "date": "2026-04-08T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-09T05:00:00.000Z",
               "week": 34,
               "task": "American Heritage #9",
-              "rawDate": "The Church & Genesis, Lessons 1 & 2",
+              "notes": "The Church & Genesis, Lessons 1 & 2",
+              "date": "2026-04-09T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-10T05:00:00.000Z",
               "week": 34,
               "task": "American Heritage #10",
-              "rawDate": "The Church & Genesis, Lessons 3 & 4",
+              "notes": "The Church & Genesis, Lessons 3 & 4",
+              "date": "2026-04-10T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-11T05:00:00.000Z",
               "week": 34,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-11T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-13T05:00:00.000Z",
               "week": 35,
               "task": "American Heritage #11",
-              "rawDate": "The Church & Genesis, Lesson 5",
+              "notes": "The Church & Genesis, Lesson 5",
+              "date": "2026-04-13T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-14T05:00:00.000Z",
               "week": 35,
               "task": "",
-              "rawDate": "The Church & Genesis, Lesson 6",
+              "notes": "The Church & Genesis, Lesson 6",
+              "date": "2026-04-14T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-15T05:00:00.000Z",
               "week": 35,
               "task": "Review Course Material",
-              "rawDate": "The Church & Genesis, Quiz",
+              "notes": "The Church & Genesis, Quiz",
+              "date": "2026-04-15T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-16T05:00:00.000Z",
               "week": 35,
               "task": "Take Final Quiz",
-              "rawDate": "Final Advanced Topics, Lesson 1",
+              "notes": "Final Advanced Topics, Lesson 1",
+              "date": "2026-04-16T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-17T05:00:00.000Z",
               "week": 35,
               "task": "Take Final Quiz",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-17T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-20T05:00:00.000Z",
               "week": 36,
               "task": "The Second World Wars #1",
-              "rawDate": "Final Advanced Topics, Lesson 2",
+              "notes": "Final Advanced Topics, Lesson 2",
+              "date": "2026-04-20T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-21T05:00:00.000Z",
               "week": 36,
               "task": "",
-              "rawDate": "Final Advanced Topics, Lesson 3",
+              "notes": "Final Advanced Topics, Lesson 3",
+              "date": "2026-04-21T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-22T05:00:00.000Z",
               "week": 36,
               "task": "The Second World Wars #2",
-              "rawDate": "Final Advanced Topics, Lesson 4",
+              "notes": "Final Advanced Topics, Lesson 4",
+              "date": "2026-04-22T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-23T05:00:00.000Z",
               "week": 36,
               "task": "The Second World Wars #3",
-              "rawDate": "Course Complete! 🎉",
+              "notes": "Course Complete! 🎉",
+              "date": "2026-04-23T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-24T05:00:00.000Z",
               "week": 36,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-24T05:00:00.000Z",
               "done": false
             }
           ]
@@ -640,35 +701,40 @@
               "id": "2026-04-07T05:00:00.000Z",
               "week": 34,
               "task": "Lesson 116",
-              "rawDate": "Read Vol. 2, Ch. 13, pp. 256-260",
+              "notes": "Read Vol. 2, Ch. 13, pp. 256-260",
+              "date": "2026-04-07T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-08T05:00:00.000Z",
               "week": 34,
               "task": "Lesson 117",
-              "rawDate": "Read Vol. 2, Ch. 13, pp. 261-265",
+              "notes": "Read Vol. 2, Ch. 13, pp. 261-265",
+              "date": "2026-04-08T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-09T05:00:00.000Z",
               "week": 34,
               "task": "Lesson 118",
-              "rawDate": "Read Vol. 2, Ch. 13, pp. 266-271 (finishes Ch. 13, starts Ch. 14)",
+              "notes": "Read Vol. 2, Ch. 13, pp. 266-271 (finishes Ch. 13, starts Ch. 14)",
+              "date": "2026-04-09T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-10T05:00:00.000Z",
               "week": 34,
               "task": "Lesson 119",
-              "rawDate": "Read Vol. 2, Ch. 14, pp. 272-277",
+              "notes": "Read Vol. 2, Ch. 14, pp. 272-277",
+              "date": "2026-04-10T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-13T05:00:00.000Z",
               "week": 35,
               "task": "Lesson 120",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-13T05:00:00.000Z",
               "done": false
             }
           ]
@@ -680,35 +746,40 @@
               "id": "2026-04-14T05:00:00.000Z",
               "week": 35,
               "task": "",
-              "rawDate": "Read Vol. 2, Ch. 14, pp. 278-282",
+              "notes": "Read Vol. 2, Ch. 14, pp. 278-282",
+              "date": "2026-04-14T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-15T05:00:00.000Z",
               "week": 35,
               "task": "Assessment (after Lesson 120)",
-              "rawDate": "Read Vol. 2, Ch. 14, pp. 283-287",
+              "notes": "Read Vol. 2, Ch. 14, pp. 283-287",
+              "date": "2026-04-15T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-16T05:00:00.000Z",
               "week": 35,
               "task": "Lesson 121",
-              "rawDate": "Read Vol. 2, Ch. 14, pp. 288-292",
+              "notes": "Read Vol. 2, Ch. 14, pp. 288-292",
+              "date": "2026-04-16T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-17T05:00:00.000Z",
               "week": 35,
               "task": "Lesson 122",
-              "rawDate": "Read Vol. 2, pp. 293-298 (finishes Ch. 14, starts Ch. 15)",
+              "notes": "Read Vol. 2, pp. 293-298 (finishes Ch. 14, starts Ch. 15)",
+              "date": "2026-04-17T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-20T05:00:00.000Z",
               "week": 35,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-20T05:00:00.000Z",
               "done": false
             }
           ]
@@ -720,35 +791,40 @@
               "id": "2026-04-21T05:00:00.000Z",
               "week": 36,
               "task": "Lesson 123",
-              "rawDate": "Read Vol. 2, Ch. 15, pp. 299-303",
+              "notes": "Read Vol. 2, Ch. 15, pp. 299-303",
+              "date": "2026-04-21T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-22T05:00:00.000Z",
               "week": 36,
               "task": "Lesson 124",
-              "rawDate": "Read Vol. 2, Ch. 15, pp. 304-308",
+              "notes": "Read Vol. 2, Ch. 15, pp. 304-308",
+              "date": "2026-04-22T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-23T05:00:00.000Z",
               "week": 36,
               "task": "Lesson 125",
-              "rawDate": "Read Vol. 2, Ch. 15, pp. 309-313",
+              "notes": "Read Vol. 2, Ch. 15, pp. 309-313",
+              "date": "2026-04-23T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-24T05:00:00.000Z",
               "week": 36,
               "task": "Drill Team Practice",
-              "rawDate": "Read Vol. 2, Ch. 15, pp. 314-319 (finishes Ch. 15, starts Ch. 16)",
+              "notes": "Read Vol. 2, Ch. 15, pp. 314-319 (finishes Ch. 15, starts Ch. 16)",
+              "date": "2026-04-24T05:00:00.000Z",
               "done": false
             },
             {
               "id": "2026-04-27T05:00:00.000Z",
               "week": 36,
               "task": "",
-              "rawDate": "",
+              "notes": "",
+              "date": "2026-04-27T05:00:00.000Z",
               "done": false
             }
           ]
