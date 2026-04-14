@@ -173,8 +173,8 @@
 <div id="content">Loading assignments...</div>
 <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<script>
-  const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
+<script>  
+const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
   let lastData = null;
   let cachedConfig = null;
 
@@ -186,183 +186,147 @@
   window.onload = function() {
     const params = new URLSearchParams(window.location.search);
     const preselect = params.get('student') || '';
+    
     if (params.get('hideheader') !== 'true') document.getElementById('siteHeader').style.display = 'flex';
     document.getElementById('adminLink').style.display = 'flex';
     
-    // Set dynamic links
     document.getElementById('adminAnchor').href = API_URL + '?page=config';
     document.getElementById('parentAnchor').href = getBaseUrl() + 'parents on gituhub.html';
 
     const jsonUrl = getBaseUrl() + 'data.json?t=' + Date.now();
-    console.log("Fetching data from:", jsonUrl);
+    console.log("Fetching from:", jsonUrl);
 
     fetch(jsonUrl)
       .then(r => r.json())
       .then(json => {
-        console.log("JSON loaded successfully");
+        console.log("JSON object received:", json);
         cachedConfig = json;
-        setupStudentSelector(json, preselect);
-        load(true);
+        
+        // Populate Student Dropdown
+        const sel = document.getElementById('student');
+        sel.innerHTML = '';
+        
+        // Check if students array exists
+        const students = json.students || [];
+        students.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.name;
+          opt.textContent = s.name;
+          sel.appendChild(opt);
+        });
+        
+        if (preselect) sel.value = preselect;
 
-        // Load progress after UI is ready
+        // Start initial load
+        load();
+
+        // Sync progress from GAS
         fetch(API_URL + '?action=getProgress')
           .then(r => r.json())
           .then(progressMap => {
-            console.log("Progress synced");
-            syncProgress(progressMap);
-          });
+            console.log("Progress map loaded");
+            applyProgressToCache(progressMap);
+            drawGrid(); // Redraw with checkmarks
+          })
+          .catch(e => console.warn("Progress sync failed", e));
       })
       .catch(err => {
-        console.error("Local JSON failed, trying GAS:", err);
-        fallbackToGAS(preselect);
+        console.error("JSON fetch/parse error:", err);
       });
   };
 
-  function setupStudentSelector(json, preselect) {
-    const sel = document.getElementById('student');
-    sel.innerHTML = '';
-    json.students.forEach(s => {
-      const opt = document.createElement('option');
-      opt.value = s.name;
-      opt.textContent = s.name;
-      sel.appendChild(opt);
-    });
-    if (preselect) sel.value = preselect;
+  function load() {
+    const studentName = document.getElementById('student').value;
+    console.log("Loading data for:", studentName);
+
+    if (!cachedConfig || !cachedConfig.studentData) {
+      console.error("No studentData found in cachedConfig");
+      return;
+    }
+
+    const studentData = cachedConfig.studentData.find(s => s.student === studentName);
+    
+    if (studentData) {
+      lastData = studentData;
+      console.log("lastData set to:", lastData);
+      updateCSSPalette(studentData.palette);
+      drawGrid();
+    } else {
+      console.error("Could not find data for student:", studentName);
+      document.getElementById('content').innerHTML = "Student data not found.";
+    }
   }
 
-  function syncProgress(progressMap) {
+  function drawGrid() {
+    if (!lastData || !lastData.days || !lastData.grid) {
+      console.error("drawGrid called but lastData.days or lastData.grid is missing", lastData);
+      return;
+    }
+
+    document.getElementById('headerTitle').innerText = lastData.student + "'s Work - Week " + lastData.weekNum;
+    
+    // TABLE VIEW
+    let html = '<div class="table-view"><table><thead><tr><th>Subject</th>';
+    lastData.days.forEach(d => {
+      html += `<th>${d.day}<br><small>${d.date}</small></th>`;
+    });
+    html += '</tr></thead><tbody>';
+
+    lastData.grid.forEach(row => {
+      html += `<tr><td class="subject-cell">${row.subject}</td>`;
+      row.tasks.forEach(t => {
+        const isDone = t.done ? 'is-done' : '';
+        const checked = t.done ? 'checked' : '';
+        html += `<td>
+          <label class="task-card ${isDone}">
+            <div class="task-text">${t.task || ''}</div>
+            <div class="status-indicator"></div>
+            <input type="checkbox" class="check-overlay" ${checked} onchange="toggle('${t.id}', this)">
+          </label>
+        </td>`;
+      });
+      html += '</tr>';
+    });
+    html += '</tbody></table></div>';
+
+    document.getElementById('content').innerHTML = html;
+  }
+
+  function applyProgressToCache(progressMap) {
     if (!cachedConfig || !cachedConfig.studentData) return;
     cachedConfig.studentData.forEach(s => {
       if (s.grid) {
         s.grid.forEach(row => {
           row.tasks.forEach(t => {
-            t.done = progressMap[t.id] === true;
+            t.done = (progressMap[t.id] === true);
           });
         });
       }
     });
-    patchProgressInDom(progressMap);
-  }
-
-  function load(isInitial) {
-    const studentName = document.getElementById('student').value;
-    const weekNum = document.getElementById('week').value;
-
-    if (!cachedConfig || !cachedConfig.studentData) return;
-
-    const studentData = cachedConfig.studentData.find(s => s.student === studentName);
-    if (studentData) {
-      lastData = { ...studentData };
-      updateCSSPalette(studentData.palette);
-      drawGrid();
-    }
-  }
-
-  function drawGrid() {
-    const data = lastData;
-    if (!data) return;
-
-    document.getElementById('headerTitle').innerText = data.student + "'s Work - Week " + data.weekNum;
-    if (data.weekNum) document.getElementById('week').value = data.weekNum;
-
-    // Table Generation
-    let tableHtml = '<div class="table-view"><table><thead><tr><th>Subject</th>';
-    data.days.forEach(d => tableHtml += `<th>${d.day}<br><small>${d.date}</small></th>`);
-    tableHtml += '</tr></thead><tbody>';
-
-    data.grid.forEach(row => {
-      tableHtml += `<tr><td class="subject-cell">${row.subject}${row.curriculum ? `<span class="curriculum-subtitle">${row.curriculum}</span>` : ''}</td>`;
-      row.tasks.forEach(t => {
-        if (!t.task && !t.imageUrl) {
-          tableHtml += '<td><div class="task-card" style="border:1px dashed #cbd5e1;"></div></td>';
-        } else {
-          tableHtml += `<td><label class="task-card ${t.done ? 'is-done' : ''}">
-            <div class="task-text">${t.task || ''}</div>
-            ${renderMedia(t)}
-            <div class="status-indicator"></div>
-            <input type="checkbox" class="check-overlay" ${t.done ? 'checked' : ''} onchange="toggle('${t.id}', this)">
-          </label></td>`;
-        }
-      });
-      tableHtml += '</tr>';
-    });
-    tableHtml += '</tbody></table></div>';
-
-    // List View Generation (Simple version for mobile)
-    let listHtml = '<div class="list-view">';
-    data.days.forEach((day, idx) => {
-      listHtml += `<div class="day-block"><div class="day-header"><span class="day-name">${day.day}</span></div>`;
-      data.grid.forEach(row => {
-        const t = row.tasks[idx];
-        if (t && (t.task || t.imageUrl)) {
-          listHtml += `<label class="list-task-row ${t.done ? 'is-done' : ''}">
-            <div class="list-checkbox"></div>
-            <div class="list-task-info">
-              <div class="list-subject-name">${row.subject}</div>
-              <div class="list-task-text">${t.task || ''}</div>
-            </div>
-            <input type="checkbox" class="list-check-overlay" ${t.done ? 'checked' : ''} onchange="toggle('${t.id}', this)">
-          </label>`;
-        }
-      });
-      listHtml += '</div>';
-    });
-    listHtml += '</div>';
-
-    document.getElementById('content').innerHTML = tableHtml + listHtml;
-  }
-
-  function renderMedia(t) {
-    if (!t.imageUrl) return '';
-    return `<img src="${t.imageUrl}" class="task-image">`;
   }
 
   function toggle(id, el) {
     const isDone = el.checked;
-    // UI Update
     el.parentElement.classList.toggle('is-done', isDone);
-    // Local Cache Update
-    updateLocalCache(id, isDone);
-    // Remote Update
+    
+    // Update cache
+    applyProgressToCache({ [id]: isDone });
+    
+    // Update GAS
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
-  }
-
-  function updateLocalCache(id, status) {
-    if (!cachedConfig) return;
-    cachedConfig.studentData.forEach(s => {
-      if (s.grid) {
-        s.grid.forEach(row => {
-          row.tasks.forEach(t => { if (t.id === id) t.done = status; });
-        });
-      }
-    });
   }
 
   function updateCSSPalette(palette) {
     if (!palette) return;
     const root = document.documentElement;
-    root.style.setProperty('--primary', palette.primary);
-    root.style.setProperty('--secondary', palette.secondary);
-    root.style.setProperty('--bg', palette.bg);
-  }
-
-  function refreshClasses() {
-    const isModeOn = document.getElementById('statusToggle').checked;
-    document.getElementById('content').classList.toggle('status-mode', isModeOn);
-  }
-
-  function patchProgressInDom(progressMap) {
-    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-        // Simple refresh by re-drawing
-    });
-    drawGrid(); 
+    root.style.setProperty('--primary', palette.primary || '#94a3b8');
+    root.style.setProperty('--secondary', palette.secondary || '#cbd5e1');
+    root.style.setProperty('--bg', palette.bg || '#f8fafc');
   }
 
   function printPage() { window.print(); }
 
-  window.onscroll = function() {
-    document.getElementById('scrollTopBtn').classList.toggle('visible', window.scrollY > 200);
-  };
 </script>
+
 </body>
 </html>
