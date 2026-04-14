@@ -195,18 +195,17 @@ function renderForDate(date) {
     }
 
     const dailyTasks = allStudentTasks.filter(function(t) {
-      if (!t.rawDate) return false;
+      if (!t.date) return false;
       
-      // Create date objects for both
-      const taskDate = new Date(t.rawDate);
-      const viewDate = new Date(date);
-      
-      // Compare Year, Month, and Date specifically
-      return taskDate.getUTCFullYear() === viewDate.getUTCFullYear() &&
-             taskDate.getUTCMonth() === viewDate.getUTCMonth() &&
-             taskDate.getUTCDate() === viewDate.getUTCDate();
+      const tDate = new Date(t.date);
+      const dDate = new Date(date);
+    
+      // Robust comparison
+      return tDate.getUTCFullYear() === dDate.getUTCFullYear() &&
+             tDate.getUTCMonth() === dDate.getUTCMonth() &&
+             tDate.getUTCDate() === dDate.getUTCDate();
     });
-
+    
     // Return a combined object for the student card
     return {
       student: s.student,
