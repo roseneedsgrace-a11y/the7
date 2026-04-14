@@ -402,39 +402,37 @@ function patchProgressInDom(progressMap) {
 }
 
 function loadFromJson(studentName, weekNum) {
-  if (!cachedConfig || !cachedConfig.studentData) {
-    // Fall back to GAS if JSON isn't available
-    fetch(API_URL + '?action=getData&student=' + encodeURIComponent(studentName) + '&week=' + encodeURIComponent(weekNum || ''))
-      .then(r => r.json())
-      .then(function(data) {
-        lastData = data;
-        updateCSSPalette(data.palette);
-        drawGrid();
-      });
-    return;
-  }
+  if (!cachedConfig || !cachedConfig.students) return;
 
-  // Find the student in the new flat structure
-  const studentData = cachedConfig.studentData.find(s => s.student === studentName);
+  // 1. Find the student by name
+  const studentEntry = cachedConfig.students.find(s => s.name === studentName);
   
-  if (!studentData) {
+  if (!studentEntry) {
     document.getElementById('content').innerHTML = '<div style="color:red;">Student not found</div>';
     return;
   }
 
-  // In your new JSON, studentData IS the week's data
+  // 2. Determine which week to show (default to 1 if not specified)
+  const targetWeek = weekNum || "1";
+  const weekData = studentEntry.weeks[targetWeek];
+
+  if (!weekData) {
+    document.getElementById('content').innerHTML = '<div style="color:red;">Week ' + targetWeek + ' not found for this student.</div>';
+    return;
+  }
+
+  // 3. Map the nested data to the flat "lastData" object the rest of the script expects
   lastData = {
-    student: studentData.student,
-    weekNum: studentData.weekNum,
-    days: studentData.days,
-    grid: studentData.grid,
-    palette: studentData.palette
+    student: studentEntry.name,
+    weekNum: targetWeek,
+    days: weekData.days,
+    grid: weekData.grid,
+    palette: studentEntry.palette || cachedConfig.palette // Use student palette or global
   };
 
-  updateCSSPalette(studentData.palette);
+  updateCSSPalette(lastData.palette);
   drawGrid();
 }
-
   function updateCSSPalette(palette) {
     if (!palette) return;
     const root = document.documentElement;
