@@ -184,7 +184,7 @@
 <div id="printHeader" class="page-header"><h1>Student Planner</h1></div>
 
 <div class="controls">
-  <div><strong>Student:</strong> <select id="studentSelect" onchange="render()"></select></div>
+  <div><strong>Student:</strong> <select id="studentSelect" onchange="updateWeekFromStudent()"></select></div>
   <div><strong>Week:</strong> <input type="number" id="weekInput" min="1" max="36" style="width: 60px" onchange="render()"></div>
   <label style="display:flex; align-items:center; font-size:13px; cursor:pointer;">Status Mode
     <div class="switch"><input type="checkbox" id="statusToggle" onchange="render()"><span class="slider"></span></div>
