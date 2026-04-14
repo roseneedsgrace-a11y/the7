@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T19:07:41.568Z",
+  "generated": "2026-04-14T19:12:05.223Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1157,7 +1157,7 @@
               "task": "Quiz 29",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Math-Wed"
             },
             {
@@ -1168,7 +1168,7 @@
               "task": "Final Review",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Math-Thu"
             },
             {
@@ -1179,7 +1179,7 @@
               "task": "Exam 4 & Print Certificate of Completion*",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Math-Fri"
             },
             {
@@ -1306,7 +1306,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Mon"
             },
             {
@@ -1317,7 +1317,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Tue"
             },
             {
@@ -1328,7 +1328,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Wed"
             },
             {
@@ -1339,7 +1339,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Thu"
             },
             {
@@ -1350,7 +1350,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Fri"
             },
             {
