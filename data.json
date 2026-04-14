@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T19:07:17.760Z",
+  "generated": "2026-04-14T19:07:36.348Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -120,7 +120,7 @@
               "task": "Chap. from God w/o Passions",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Bible-Tue"
             },
             {
@@ -1306,7 +1306,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Citizenship-Mon"
             },
             {
@@ -1317,7 +1317,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Citizenship-Tue"
             },
             {
@@ -1328,7 +1328,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Citizenship-Wed"
             },
             {
@@ -1339,7 +1339,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Citizenship-Thu"
             },
             {
@@ -1350,7 +1350,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Citizenship-Fri"
             },
             {
