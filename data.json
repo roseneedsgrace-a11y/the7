@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T00:25:48.580Z",
+  "generated": "2026-04-14T00:27:45.371Z",
   "date": "Monday, April 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1204,7 +1204,7 @@
               "rawDate": 1776056400000,
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Mon"
             },
             {
