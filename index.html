@@ -272,7 +272,12 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
         );
         
         if (t) {
+          // NEW: Check local storage for real-time overrides
+          const localProgress = JSON.parse(localStorage.getItem('local_progress') || '{}');
+          const isTaskDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
+        
           const taskDate = new Date(t.rawDate).getTime();
+
           let statusClass = '';
           if (taskDate < todayTs) statusClass = 'due-late';
           else if (taskDate === todayTs) statusClass = 'due-warning';
@@ -343,14 +348,24 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
     return html;
   }
   
-  function toggle(id, el) {
-    const isDone = el.checked;
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
-    document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
-      input.checked = isDone;
-      input.parentElement.classList.toggle('is-done', isDone);
-    });
-  }
+function toggle(id, el) {
+  const isDone = el.checked;
+  
+  // 1. Send to Google Sheets (Background)
+  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+  
+  // 2. Save to Local Storage (Real-time)
+  // We store a list of IDs that have been manually toggled
+  let localProgress = JSON.parse(localStorage.getItem('local_progress') || '{}');
+  localProgress[id] = isDone;
+  localStorage.setItem('local_progress', JSON.stringify(localProgress));
+
+  // 3. Update all instances on the screen
+  document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
+    input.checked = isDone;
+    input.parentElement.classList.toggle('is-done', isDone);
+  });
+}
 
   function updateColors(palette) {
     if (!palette) return;
