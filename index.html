@@ -403,87 +403,27 @@ function patchProgressInDom(progressMap) {
 
 function loadFromJson(studentName, weekNum) {
   if (!cachedConfig || !cachedConfig.studentData) {
-    // Fall back to GAS
     // Fall back to GAS if JSON isn't available
     fetch(API_URL + '?action=getData&student=' + encodeURIComponent(studentName) + '&week=' + encodeURIComponent(weekNum || ''))
       .then(r => r.json())
       .then(function(data) {
-@@ -414,94 +414,41 @@
+        lastData = data;
+        updateCSSPalette(data.palette);
+        drawGrid();
+      });
     return;
   }
 
-  const studentData = cachedConfig.studentData.find(s => s.name === studentName);
   // Find the student in the new flat structure
   const studentData = cachedConfig.studentData.find(s => s.student === studentName);
   
   if (!studentData) {
-    document.getElementById('content').innerHTML = '<div style="color:red;">Student not found in data.json</div>';
-    return;
-  }
-
-  // Find current week if not specified
-  if (!weekNum) {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-
-    // Build date ranges for each week from the grid data
-    const weekRanges = {};
-    Object.keys(studentData.weeks).forEach(function(w) {
-      studentData.weeks[w].grid.forEach(function(row) {
-        row.tasks.forEach(function(t) {
-          if (!t.rawDate) return;
-          const d = new Date(t.rawDate);
-          d.setHours(0, 0, 0, 0);
-          const ts = d.getTime();
-          if (!weekRanges[w]) weekRanges[w] = { min: ts, max: ts };
-          if (ts < weekRanges[w].min) weekRanges[w].min = ts;
-          if (ts > weekRanges[w].max) weekRanges[w].max = ts;
-        });
-      });
-    });
-
-    let bestWeek = null;
-
-    // First check if today falls within any week
-    for (const w in weekRanges) {
-      const { min, max } = weekRanges[w];
-      if (today.getTime() >= min && today.getTime() <= max) {
-        bestWeek = w;
-        break;
-      }
-    }
-
-    // Otherwise find nearest week
-    if (!bestWeek) {
-      let closestDist = Infinity;
-      for (const w in weekRanges) {
-        const { min, max } = weekRanges[w];
-        const dist = today.getTime() < min
-          ? min - today.getTime()
-          : today.getTime() - max;
-        if (dist < closestDist) {
-          closestDist = dist;
-          bestWeek = w;
-        }
-      }
-    }
-
-    weekNum = bestWeek || Object.keys(studentData.weeks)[0];
-  }
-
-  const weekData = studentData.weeks[String(weekNum)];
-  if (!weekData) {
-    document.getElementById('content').innerHTML = '<div style="color:red;">Week ' + weekNum + ' not found</div>';
     document.getElementById('content').innerHTML = '<div style="color:red;">Student not found</div>';
     return;
   }
 
   // In your new JSON, studentData IS the week's data
   lastData = {
-    student: studentName,
-    weekNum: weekNum,
-    days: weekData.days,
-    grid: weekData.grid,
     student: studentData.student,
     weekNum: studentData.weekNum,
     days: studentData.days,
@@ -494,7 +434,7 @@ function loadFromJson(studentName, weekNum) {
   updateCSSPalette(studentData.palette);
   drawGrid();
 }
-  
+
   function updateCSSPalette(palette) {
     if (!palette) return;
     const root = document.documentElement;
@@ -724,6 +664,6 @@ function updateLocalCache(id, status) {
     window.open(window.location.href, '_blank');
   }
 }
-</script>
+</>
 </body>
 </html>
