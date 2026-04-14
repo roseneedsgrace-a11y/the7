@@ -80,46 +80,36 @@
 <div id="content" class="loading">Loading assignments...</div>
 
 <script>
-  /**
-   * CONFIGURATION
-   * Paste your Google Apps Script Web App URL below.
-   * To get this: GAS Editor > Deploy > Manage Deploys > Web App URL.
-   */
   const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec'; 
 
   let currentDate = new Date();
   currentDate.setHours(0, 0, 0, 0);
   let allData = null;
 
-window.onload = function() {
+  window.onload = function() {
     fetch('data.json?v=' + new Date().getTime())
       .then(r => {
         if (!r.ok) throw new Error("File not found on server");
         return r.json();
       })
       .then(function(data) {
-        // 1. Assign the data to the global variable the rest of the script uses
-        // We map 'studentData' to 'students' so renderForDate works
+        // Map studentData to the format the dashboard expects
         allData = {
           students: data.studentData,
           config: data.config
         };
 
-        // 2. Apply settings ONLY if the elements exist (Prevents the 'null' error)
-        if (data.config && document.getElementById('siteHeader')) {
+        if (data.config) {
           applyHeaderSettings(data.config);
         }
 
-        // 3. Start the dashboard
         renderForDate(currentDate);
       })
       .catch(e => {
         const content = document.getElementById('content');
         if (content) {
-          content.innerHTML = `<div style="padding:40px;text-align:center;color:#dc2626;">
-            Error loading data: ${e.message}</div>`;
+          content.innerHTML = `<div style="padding:40px;text-align:center;color:#dc2626;">Error loading data: ${e.message}</div>`;
         }
-        console.error(e);
       });
   };
 
@@ -131,164 +121,77 @@ window.onload = function() {
     }
     if (config.headerColor) {
       document.getElementById('siteHeader').style.background = config.headerColor;
-      // Simple contrast check for text visibility
-      const r = parseInt(config.headerColor.slice(1,3), 16);
-      const g = parseInt(config.headerColor.slice(3,5), 16);
-      const b = parseInt(config.headerColor.slice(5,7), 16);
-      const bright = (r*299 + g*587 + b*114) / 1000;
-      document.getElementById('headerTitle').style.color = bright > 128 ? '#2d1a10' : '#f9e7f0';
     }
   }
 
-  function renderDashboard(data) {
-  const container = document.getElementById('student-buttons');
-  container.innerHTML = '';
+  function renderForDate(date) {
+    if (!allData || !allData.students) return;
+    
+    // Normalize target date to midnight for comparison
+    const targetTime = new Date(date).setHours(0,0,0,0);
+    const dateStr = date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    document.getElementById('currentDayLabel').textContent = dateStr;
 
-  // 1. Check if 'students' exists before looping
-  if (!data.students || !Array.isArray(data.students)) {
-    console.error("Students list missing in JSON");
-    return;
-  }
-
-  // 2. Loop through the simple student list to build buttons
-  data.students.forEach(student => {
-    const btn = document.createElement('button');
-    // Note: The JSON uses 'name', so we use student.name
-    btn.innerText = student.name; 
-    btn.onclick = () => showStudentData(student.name, data.studentData);
-    container.appendChild(btn);
-  });
-}
-
-function showStudentData(targetName, allData) {
-  // 3. Find the matching detailed grid in 'studentData'
-  const details = allData.find(item => item.student === targetName);
-  
-  if (details) {
-    // Render your grid/table here using 'details.grid'
-    console.log("Loading data for:", details.student);
-    renderGrid(details);
-  }
-}
-
-function renderForDate(date) {
-  if (!allData || !allData.students) return;
-  
-  const dateStr = date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-  const dayLabelElement = document.getElementById('currentDayLabel');
-  if (dayLabelElement) dayLabelElement.textContent = dateStr;
-
-  // 1. Flatten and filter tasks
-  const filtered = allData.students.map(function(s) {
-    // We need to reach into s.grid to find the tasks
-    let allStudentTasks = [];
-    if (s.grid && Array.isArray(s.grid)) {
-      s.grid.forEach(subject => {
-        if (subject.tasks) {
-          // Add the subject name to each task so we know what it is!
-          subject.tasks.forEach(t => {
-            t.subject = subject.subject; 
-            allStudentTasks.push(t);
-          });
-        }
-      });
-    }
-
-    const dailyTasks = allStudentTasks.filter(function(t) {
-      if (!t.date) return false;
+    const filtered = allData.students.map(function(s) {
+      let dailyTasks = [];
       
-      const tDate = new Date(t.date);
-      const dDate = new Date(date);
-    
-      // Robust comparison
-      return tDate.getUTCFullYear() === dDate.getUTCFullYear() &&
-             tDate.getUTCMonth() === dDate.getUTCMonth() &&
-             tDate.getUTCDate() === dDate.getUTCDate();
-    });
-    
-    // Return a combined object for the student card
-    return {
-      student: s.student,
-      palette: s.palette,
-      week: s.weekNum,
-      tasks: dailyTasks
-    };
-  }).filter(s => s.tasks.length > 0);
-
-  // 2. Update Stats
-  renderStats(filtered);
-
-  // 3. Render Content
-  const contentDiv = document.getElementById('content');
-  if (filtered.length === 0) {
-    contentDiv.innerHTML = '<div class="no-school"><strong>Weekend / No School</strong>There are no assignments for this date.</div>';
-  } else {
-    let html = '<div class="students-grid">';
-    filtered.forEach(s => { html += buildStudentCard(s); });
-    html += '</div>';
-    contentDiv.innerHTML = html;
-  }
-  
-  if (document.getElementById('prevDay')) updateNavButtons();
-}
-
-function renderStats(filtered) {
-  let total = 0, done = 0;
-  filtered.forEach(s => { 
-    total += s.tasks.length; 
-    done += s.tasks.filter(t => t.done).length; 
-  });
-  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
-
-  const statsStrip = document.getElementById('statsStrip');
-  if (statsStrip) {
-    statsStrip.innerHTML = 
-      statCard(done, 'Done', '#16a34a') + 
-      statCard(total - done, 'Remaining', '#dc2626') + 
-      statCard(total, 'Total Tasks', '#475569') + 
-      statCard(pct + '%', 'Complete', '#0284c7');
-  }
-}
-  
-
-  function changeDay(direction) {
-    currentDate = new Date(currentDate.getTime() + direction * 24 * 60 * 60 * 1000);
-    renderForDate(currentDate);
-  }
-
-function updateNavButtons() {
-  if (!allData || !allData.students) return;
-
-  const availableDates = [];
-  allData.students.forEach(s => {
-    if (s.grid) {
-      s.grid.forEach(group => {
-        group.tasks.forEach(t => {
-          if (t.rawDate) {
-            // Normalize to midnight UTC to ensure consistency
-            const d = new Date(t.rawDate);
-            const normalized = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
-            availableDates.push(normalized);
-          }
+      // Dig into the grid to find tasks matching the current date
+      if (s.grid) {
+        s.grid.forEach(row => {
+          row.tasks.forEach(t => {
+            // Compare the rawDate (timestamp) from JSON to our current viewing date
+            const taskTime = new Date(t.rawDate).setHours(0,0,0,0);
+            if (taskTime === targetTime) {
+              // Attach subject and curriculum info to the task for display
+              dailyTasks.push({
+                ...t,
+                subject: row.subject,
+                curriculum: row.curriculum
+              });
+            }
+          });
         });
-      });
+      }
+
+      return {
+        student: s.student,
+        palette: s.palette,
+        week: s.weekNum,
+        tasks: dailyTasks
+      };
+    }).filter(s => s.tasks.length > 0);
+
+    renderStats(filtered);
+
+    const contentDiv = document.getElementById('content');
+    if (filtered.length === 0) {
+      contentDiv.innerHTML = '<div class="no-school"><strong>Weekend / No School</strong>There are no assignments for this date.</div>';
+    } else {
+      let html = '<div class="students-grid">';
+      filtered.forEach(s => { html += buildStudentCard(s); });
+      html += '</div>';
+      contentDiv.innerHTML = html;
     }
-  });
+    
+    updateNavButtons();
+  }
 
-  if (availableDates.length === 0) return;
+  function renderStats(filtered) {
+    let total = 0, done = 0;
+    filtered.forEach(s => { 
+      total += s.tasks.length; 
+      done += s.tasks.filter(t => t.done).length; 
+    });
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
 
-  const sorted = [...new Set(availableDates)].sort((a, b) => a - b);
-  const currentNormalized = Date.UTC(currentDate.getUTCFullYear(), currentDate.getUTCMonth(), currentDate.getUTCDate());
-
-  const prevBtn = document.getElementById('prevDay');
-  const nextBtn = document.getElementById('nextDay');
-
-  if (prevBtn) prevBtn.disabled = currentNormalized <= sorted[0];
-  if (nextBtn) nextBtn.disabled = currentNormalized >= sorted[sorted.length - 1];
-}
-  
-  function statCard(num, label, color) {
-    return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
+    const statsStrip = document.getElementById('statsStrip');
+    if (statsStrip) {
+      statsStrip.innerHTML = 
+        statCard(done, 'Done', '#16a34a') + 
+        statCard(total - done, 'Remaining', '#dc2626') + 
+        statCard(total, 'Total Tasks', '#475569') + 
+        statCard(pct + '%', 'Complete', '#0284c7');
+    }
   }
 
   function buildStudentCard(s) {
@@ -314,7 +217,7 @@ function updateNavButtons() {
         <div class="task-checkbox" style="${t.done ? 'background:'+s.palette.secondary+';border-color:'+s.palette.secondary : ''}"></div>
         <div class="task-info">
           <div class="task-subject" style="color:${s.palette.primary};">${t.subject}</div>
-          <div class="task-text">${t.task}</div>
+          <div class="task-text">${t.task || (t.imageUrl ? '<i>Image/Link Task</i>' : '')}</div>
         </div>
         <input type="checkbox" class="task-check-input" ${t.done ? 'checked' : ''} onchange="toggleTask('${t.id}', this)">
       </label>`;
@@ -328,14 +231,15 @@ function updateNavButtons() {
     const row = document.getElementById('prow-' + id);
     if (row) row.classList.toggle('is-done', el.checked);
     
-    // Update local data cache
-    allData.students.forEach(s => s.tasks.forEach(t => { if(t.id === id) t.done = el.checked; }));
+    // Update local data cache immediately
+    allData.students.forEach(s => {
+      s.grid.forEach(row => {
+        row.tasks.forEach(t => { if(t.id === id) t.done = el.checked; });
+      });
+    });
+    
     updateCardStats(row.closest('.student-card'));
-
-    // Send update back to GAS Spreadsheet
-    if (API_URL !== 'PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE') {
-      fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
-    }
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
   }
 
   function updateCardStats(card) {
@@ -345,54 +249,49 @@ function updateNavButtons() {
     card.querySelector('.student-pill').textContent = done + '/' + total;
     card.querySelector('.student-avatar').textContent = pct === 100 ? '✓' : pct + '%';
     card.querySelector('.student-progress-fill').style.width = pct + '%';
-    recalcOverallStats();
+    
+    // Recalculate top stats strip
+    const allTotal = document.querySelectorAll('.task-row').length;
+    const allDone = document.querySelectorAll('.task-row.is-done').length;
+    const allPct = Math.round((allDone / allTotal) * 100);
+    const statCards = document.getElementById('statsStrip').querySelectorAll('.stat-num');
+    statCards[0].textContent = allDone;
+    statCards[1].textContent = allTotal - allDone;
+    statCards[3].textContent = allPct + '%';
   }
 
-  function recalcOverallStats() {
-    const all = document.querySelectorAll('.task-row').length;
-    const done = document.querySelectorAll('.task-row.is-done').length;
-    const pct = total > 0 ? Math.round((done / all) * 100) : 0;
-    const display = document.getElementById('statsStrip').querySelectorAll('.stat-num')[3];
-    if (display) display.textContent = pct + '%';
+  function changeDay(direction) {
+    currentDate = new Date(currentDate.getTime() + direction * 24 * 60 * 60 * 1000);
+    renderForDate(currentDate);
   }
 
-function approveEntireDay(studentName) {
-  // 1. Find the specific student's tasks for ONLY the day currently being viewed
-  const studentEntry = allData.students.find(st => st.student === studentName);
-  if (!studentEntry) return;
+  function updateNavButtons() {
+    const prevBtn = document.getElementById('prevDay');
+    const nextBtn = document.getElementById('nextDay');
+    // Basic behavior: let them click. To strictly limit to available dates, 
+    // you would scan allData.students for min/max rawDates.
+  }
 
-  // Re-run the daily filter logic specifically for this student
-  let dailyTasks = [];
-  studentEntry.grid.forEach(subject => {
-    if (subject.tasks) {
-      subject.tasks.forEach(t => {
-        const taskDate = new Date(t.rawDate);
-        taskDate.setHours(0, 0, 0, 0);
-        if (taskDate.getTime() === currentDate.getTime()) {
-          dailyTasks.push(t);
-        }
+  function approveEntireDay(studentName) {
+    const student = allData.students.find(s => s.student === studentName);
+    const targetTime = currentDate.getTime();
+    
+    if (student && confirm(`Mark everything today for ${studentName} as done?`)) {
+      student.grid.forEach(row => {
+        row.tasks.forEach(t => {
+          const taskTime = new Date(t.rawDate).setHours(0,0,0,0);
+          if (taskTime === targetTime && !t.done) {
+            t.done = true;
+            fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
+          }
+        });
       });
+      renderForDate(currentDate);
     }
-  });
+  }
 
-  if (dailyTasks.length === 0) return;
-  if (!confirm(`Mark all ${dailyTasks.length} tasks for ${studentName} as done?`)) return;
-
-  // 2. Only toggle the tasks belonging to today
-  dailyTasks.forEach(t => {
-    if (!t.done) {
-      t.done = true;
-      // Send to Google Sheets
-      fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
-    }
-  });
-
-  // 3. Refresh the UI
-  renderForDate(currentDate);
-}
-
-  function showError(msg) {
-    document.getElementById('content').innerHTML = `<div style="color:#dc2626;padding:40px;text-align:center;">${msg}</div>`;
+  function statCard(num, label, color) {
+    return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
 </script>
 </body>
