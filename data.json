@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T02:52:59.444Z",
+  "generated": "2026-04-14T02:57:39.720Z",
   "date": "Monday, April 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -35,191 +35,287 @@
   "studentData": [
     {
       "student": "Amos",
-      "palette": "patriotic",
+      "palette": {
+        "primary": "#B22234",
+        "secondary": "#002868",
+        "bg": "#F8F8FF"
+      },
       "weekNum": 35,
+      "days": [
+        {
+          "day": "Mon",
+          "date": "4/13"
+        },
+        {
+          "day": "Tue",
+          "date": "4/14"
+        },
+        {
+          "day": "Wed",
+          "date": "4/15"
+        },
+        {
+          "day": "Thu",
+          "date": "4/16"
+        },
+        {
+          "day": "Fri",
+          "date": "4/17"
+        }
+      ],
       "grid": [
         {
-          "subject": "Read \"Relationships\": Ch. 3 (pp. 17-28)",
+          "subject": "Bible",
+          "curriculum": "Old Testament",
           "tasks": [
             {
-              "id": "2026-04-06T05:00:00.000Z",
-              "week": 34,
-              "task": "🧭 24.3",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-06T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 4 (pp. 29-39)",
-          "tasks": [
-            {
-              "id": "2026-04-07T05:00:00.000Z",
-              "week": 34,
-              "task": "🧭 24.4",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-07T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 5 (pp. 40-50)",
-          "tasks": [
-            {
-              "id": "2026-04-08T05:00:00.000Z",
-              "week": 34,
-              "task": "🧭 24.5",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-08T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 6 (pp. 51-62)",
-          "tasks": [
-            {
-              "id": "2026-04-09T05:00:00.000Z",
-              "week": 34,
-              "task": "🧭 25.1 ",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-09T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Write 10 key details from the chapters.",
-          "tasks": [
-            {
-              "id": "2026-04-10T05:00:00.000Z",
-              "week": 34,
-              "task": "",
-              "notes": "",
-              "date": "2026-04-10T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Read \"Relationships\": Ch. 7 (pp. 63-71)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Bible-Mon"
             },
             {
-              "id": "2026-04-17T05:00:00.000Z",
-              "week": 35,
-              "task": "",
-              "notes": "",
-              "date": "2026-04-17T05:00:00.000Z",
-              "done": false
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Read \"Relationships\": Ch. 8 (pp. 72-84)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Bible-Tue"
             },
             {
-              "id": "2026-04-24T05:00:00.000Z",
-              "week": 36,
-              "task": "",
-              "notes": "",
-              "date": "2026-04-24T05:00:00.000Z",
-              "done": false
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Read \"Relationships\": Ch. 9 (pp. 85-97)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Read \"Relationships\": Ch. 10 (pp. 98-108)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Write 10 key details from the chapters.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Bible-Fri"
             }
           ]
         },
         {
-          "subject": "Read \"Relationships\": Ch. 7 (pp. 63-71)",
+          "subject": "History",
+          "curriculum": "American on 🧭",
           "tasks": [
             {
-              "id": "2026-04-13T05:00:00.000Z",
-              "week": 35,
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
               "task": "🧭 25.2",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-13T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 8 (pp. 72-84)",
-          "tasks": [
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-History-Mon"
+            },
             {
-              "id": "2026-04-14T05:00:00.000Z",
-              "week": 35,
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
               "task": "🧭 25.3",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-14T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 9 (pp. 85-97)",
-          "tasks": [
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-History-Tue"
+            },
             {
-              "id": "2026-04-15T05:00:00.000Z",
-              "week": 35,
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
               "task": "🧭 25.4",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-15T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 10 (pp. 98-108)",
-          "tasks": [
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-History-Wed"
+            },
             {
-              "id": "2026-04-16T05:00:00.000Z",
-              "week": 35,
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
               "task": "🧭 25.5",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-16T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-History-Fri"
             }
           ]
         },
         {
-          "subject": "Read \"Relationships\": Ch. 11 (pp. 109-121)",
+          "subject": "English",
+          "curriculum": "Creative Writing on 🧭",
           "tasks": [
             {
-              "id": "2026-04-20T05:00:00.000Z",
-              "week": 36,
-              "task": "🧭 26.1 ",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-20T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Lesson & Paper",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-English-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Lesson & Paper",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-English-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Lesson & Paper",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-English-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Lesson & Paper",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-English-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-English-Fri"
             }
           ]
         },
         {
-          "subject": "Read \"Relationships\": Ch. 12 (pp. 122-131)",
+          "subject": "Physical Training",
+          "curriculum": "P.T.",
           "tasks": [
             {
-              "id": "2026-04-21T05:00:00.000Z",
-              "week": 36,
-              "task": "🧭 26.2",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-21T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Physical Training-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Physical Training-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Physical Training-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Physical Training-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Physical Training-Fri"
             }
           ]
         },
         {
-          "subject": "Review \"Relationships\" Ch. 1-12 / Catch-up",
+          "subject": "Citizenship",
+          "curriculum": "Logic (1st)\nEconomics🧭/Hills (2nd)",
           "tasks": [
             {
-              "id": "2026-04-22T05:00:00.000Z",
-              "week": 36,
-              "task": "🧭 26.3",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-22T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 13 (pp. 132-143)",
-          "tasks": [
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Supply Side Economics: Lesson/Quiz #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Citizenship-Mon"
+            },
             {
-              "id": "2026-04-23T05:00:00.000Z",
-              "week": 36,
-              "task": "🧭 26.4",
-              "notes": "Lesson & Paper",
-              "date": "2026-04-23T05:00:00.000Z",
-              "done": false
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Supply Side Economics: Lesson/Quiz #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Citizenship-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Supply Side Economics: Lesson/Quiz #4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Citizenship-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Supply Side Economics: Lesson/Quiz #5",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Citizenship-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Supply Side Economics: Lesson/Quiz #6",
+              "imageUrl": null,
+              "done": false,
+              "id": "Amos-W35-Citizenship-Fri"
             }
           ]
         }
@@ -227,154 +323,456 @@
     },
     {
       "student": "Beth",
-      "palette": "girl",
+      "palette": {
+        "primary": "#9988CC",
+        "secondary": "#87CEEB",
+        "bg": "#F0F8FF"
+      },
       "weekNum": 35,
+      "days": [
+        {
+          "day": "Mon",
+          "date": "4/13"
+        },
+        {
+          "day": "Tue",
+          "date": "4/14"
+        },
+        {
+          "day": "Wed",
+          "date": "4/15"
+        },
+        {
+          "day": "Thu",
+          "date": "4/16"
+        },
+        {
+          "day": "Fri",
+          "date": "4/17"
+        },
+        {
+          "day": "Sat",
+          "date": "4/18"
+        }
+      ],
       "grid": [
         {
-          "subject": "The Ology, BIble Reading, Catechism Q32",
+          "subject": "Bible",
+          "curriculum": "",
           "tasks": [
             {
-              "id": "2026-04-07T05:00:00.000Z",
-              "week": 34,
-              "task": "Drill Team & Lesson 49",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-07T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-08T05:00:00.000Z",
-              "week": 34,
-              "task": "Drill Team & Lesson 50",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-08T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-09T05:00:00.000Z",
-              "week": 34,
-              "task": "Drill Team & Investigation 5",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-09T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-10T05:00:00.000Z",
-              "week": 34,
-              "task": "Drill Team & Lesson 51",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-10T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-11T05:00:00.000Z",
-              "week": 34,
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
               "task": "",
-              "notes": "",
-              "date": "2026-04-11T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Bible-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "The Ology, BIble Reading, Catechism Q33",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Bible-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "The Ology, BIble Reading, Catechism Q33",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Bible-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "The Ology, BIble Reading, Catechism Q33",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "The Ology, BIble Reading, Catechism Q33",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Bible-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/18",
+              "rawDate": 1776488400000,
+              "task": "The Ology, BIble Reading, Catechism Q33",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Bible-Sat"
             }
           ]
         },
         {
-          "subject": "",
+          "subject": "Nicole the Math Lady",
+          "curriculum": "",
           "tasks": [
             {
-              "id": "2026-04-13T05:00:00.000Z",
-              "week": 35,
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
               "task": "Drill Team & Lesson 52",
-              "notes": "",
-              "date": "2026-04-13T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "The Ology, BIble Reading, Catechism Q33",
-          "tasks": [
-            {
-              "id": "2026-04-14T05:00:00.000Z",
-              "week": 35,
-              "task": "",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-14T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Nicole the Math Lady-Mon"
             },
             {
-              "id": "2026-04-15T05:00:00.000Z",
-              "week": 35,
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Nicole the Math Lady-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
               "task": "Drill Team & Lesson 53",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-15T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Nicole the Math Lady-Wed"
             },
             {
-              "id": "2026-04-16T05:00:00.000Z",
-              "week": 35,
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
               "task": "Drill Team & Lesson 54",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-16T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Nicole the Math Lady-Thu"
             },
             {
-              "id": "2026-04-17T05:00:00.000Z",
-              "week": 35,
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
               "task": "Drill Team & Lesson 55",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-17T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Nicole the Math Lady-Fri"
             },
             {
-              "id": "2026-04-18T05:00:00.000Z",
-              "week": 35,
+              "day": "Sat",
+              "date": "4/18",
+              "rawDate": 1776488400000,
               "task": "",
-              "notes": "",
-              "date": "2026-04-18T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Nicole the Math Lady-Sat"
             }
           ]
         },
         {
-          "subject": "The Ology, BIble Reading, Catechism Q34",
+          "subject": "History",
+          "curriculum": "",
           "tasks": [
             {
-              "id": "2026-04-21T05:00:00.000Z",
-              "week": 36,
-              "task": "Drill Team & Lesson 56",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-21T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-22T05:00:00.000Z",
-              "week": 36,
-              "task": "Drill Team & Lesson 57",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-22T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-23T05:00:00.000Z",
-              "week": 36,
-              "task": "Drill Team & Lesson 58",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-23T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-24T05:00:00.000Z",
-              "week": 36,
-              "task": "Drill Team & Lesson 59",
-              "notes": "Tell mom and Tabitha what you learned.",
-              "date": "2026-04-24T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-25T05:00:00.000Z",
-              "week": 36,
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
               "task": "",
-              "notes": "",
-              "date": "2026-04-25T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-History-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Tell mom and Tabitha what you learned.",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Tell mom and Tabitha what you learned.",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Tell mom and Tabitha what you learned.",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Tell mom and Tabitha what you learned.",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-History-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/18",
+              "rawDate": 1776488400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-History-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Music",
+          "curriculum": "listen & practice each day",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Music-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "When We All Get to Heaven (p. 172) - The Story & Hymn Study",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Music-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "When We All Get to Heaven (p. 172) - Bible Lesson",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Music-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "When We All Get to Heaven (p. 172) - Copywork & Music Theory",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Music-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "When We All Get to Heaven (p. 172) - Activity",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Music-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/18",
+              "rawDate": 1776488400000,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
+              "done": false,
+              "id": "Beth-W35-Music-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Reading & Grammar",
+          "curriculum": "User: grandlizard78\nPwd: Hadassah",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "done": true,
+              "id": "Beth-W35-Reading & Grammar-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "done": false,
+              "id": "Beth-W35-Reading & Grammar-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Reading & Grammar-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutube.com%2Fplaylist%3Flist%3DPLKTUEjoI9EhsLRrAQwC9hOp9MJMcXOG54%26si%3D6FZOxg_OFmfRAzEg",
+              "done": false,
+              "id": "Beth-W35-Reading & Grammar-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
+              "done": false,
+              "id": "Beth-W35-Reading & Grammar-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/18",
+              "rawDate": 1776488400000,
+              "task": "Chapter 13, Lesson 11",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Reading & Grammar-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Handwriting",
+          "curriculum": "Good & Beautiful",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Handwriting.... very carefully. Pgs. 97-100",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Handwriting-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Level 4, p. 97",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Handwriting-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Level 4, p. 98",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Handwriting-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Level 4, p. 99",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Handwriting-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Level 4, p. 100",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Handwriting-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/18",
+              "rawDate": 1776488400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Handwriting-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Latin",
+          "curriculum": "with Sally",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Quiz... on the printer",
+              "imageUrl": null,
+              "done": true,
+              "id": "Beth-W35-Latin-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Latin Homework",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Latin-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Latin Class!",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Latin-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Review Latin Flash Cards",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Latin-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Latin Homework",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Latin-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/18",
+              "rawDate": 1776488400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Beth-W35-Latin-Sat"
             }
           ]
         }
@@ -382,176 +780,389 @@
     },
     {
       "student": "Charity",
-      "palette": "bookish",
+      "palette": {
+        "primary": "#7B4F2E",
+        "secondary": "#2E8B8B",
+        "bg": "#FDFAF5"
+      },
       "weekNum": 35,
+      "days": [
+        {
+          "day": "Mon",
+          "date": "4/13"
+        },
+        {
+          "day": "Tue",
+          "date": "4/14"
+        },
+        {
+          "day": "Wed",
+          "date": "4/15"
+        },
+        {
+          "day": "Thu",
+          "date": "4/16"
+        },
+        {
+          "day": "Fri",
+          "date": "4/17"
+        }
+      ],
       "grid": [
         {
-          "subject": "Chap. from God w/o Passions, Bible Journaling",
+          "subject": "Bible",
+          "curriculum": "Old Testament 🧭",
           "tasks": [
             {
-              "id": "2026-04-07T05:00:00.000Z",
-              "week": 34,
-              "task": "P4 L1 #1-2",
-              "notes": "S&H Step #5",
-              "date": "2026-04-07T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Read \"Relationships\": Ch. 1-2 (pp. 3-16), Bible Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Bible-Mon"
             },
             {
-              "id": "2026-04-08T05:00:00.000Z",
-              "week": 34,
-              "task": "P4 L1 #3",
-              "notes": "S&H Step #6",
-              "date": "2026-04-08T05:00:00.000Z",
-              "done": false
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Read \"Relationships\": Ch. 3 (pp. 17-28), Bible Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Bible-Tue"
             },
             {
-              "id": "2026-04-09T05:00:00.000Z",
-              "week": 34,
-              "task": "P4 L1 #4",
-              "notes": "Quiz",
-              "date": "2026-04-09T05:00:00.000Z",
-              "done": false
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Read \"Relationships\": Ch. 4 (pp. 29-39), Bible Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Bible-Wed"
             },
             {
-              "id": "2026-04-10T05:00:00.000Z",
-              "week": 34,
-              "task": "P4 L1 #5",
-              "notes": "",
-              "date": "2026-04-10T05:00:00.000Z",
-              "done": false
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Read \"Relationships\": Ch. 5 (pp. 40-50), Bible Journaling",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Bible-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Bible-Fri"
             }
           ]
         },
         {
-          "subject": "",
+          "subject": "Health",
+          "curriculum": "Forms 1-4",
           "tasks": [
             {
-              "id": "2026-04-11T05:00:00.000Z",
-              "week": 34,
-              "task": "",
-              "notes": "",
-              "date": "2026-04-11T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-17T05:00:00.000Z",
-              "week": 35,
-              "task": "",
-              "notes": "",
-              "date": "2026-04-17T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-24T05:00:00.000Z",
-              "week": 36,
-              "task": "",
-              "notes": "",
-              "date": "2026-04-24T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 1-2 (pp. 3-16), Bible Journaling",
-          "tasks": [
-            {
-              "id": "2026-04-13T05:00:00.000Z",
-              "week": 35,
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
               "task": "P4 L1 #6",
-              "notes": "Russell & Modern Philospohers Step #1",
-              "date": "2026-04-13T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 3 (pp. 17-28), Bible Journaling",
-          "tasks": [
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Health-Mon"
+            },
             {
-              "id": "2026-04-14T05:00:00.000Z",
-              "week": 35,
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
               "task": "P4 L1 #7 & Quiz",
-              "notes": "Russell & Modern Philospohers Step #2",
-              "date": "2026-04-14T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 4 (pp. 29-39), Bible Journaling",
-          "tasks": [
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Health-Tue"
+            },
             {
-              "id": "2026-04-15T05:00:00.000Z",
-              "week": 35,
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
               "task": "P4 L2 #1-2",
-              "notes": "Russell & Modern Philospohers Step #3",
-              "date": "2026-04-15T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "Read \"Relationships\": Ch. 5 (pp. 40-50), Bible Journaling",
-          "tasks": [
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Health-Wed"
+            },
             {
-              "id": "2026-04-16T05:00:00.000Z",
-              "week": 35,
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
               "task": "P4 L2 #3",
-              "notes": "Russell & Modern Philospohers Step #4",
-              "date": "2026-04-16T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Health-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Health-Fri"
             }
           ]
         },
         {
-          "subject": "Read \"Relationships\": Ch. 6 (pp. 51-62), Bible Journaling, Journal Entries Due",
+          "subject": "History of Ideas",
+          "curriculum": "",
           "tasks": [
             {
-              "id": "2026-04-20T05:00:00.000Z",
-              "week": 36,
-              "task": "P4 L2 #4",
-              "notes": "Russell & Modern Philospohers Step #5",
-              "date": "2026-04-20T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Russell & Modern Philospohers Step #1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-History of Ideas-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Russell & Modern Philospohers Step #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-History of Ideas-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Russell & Modern Philospohers Step #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-History of Ideas-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Russell & Modern Philospohers Step #4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-History of Ideas-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-History of Ideas-Fri"
             }
           ]
         },
         {
-          "subject": "Read \"Relationships\": Ch. 7 (pp. 63-71), Bible Journaling",
+          "subject": "Anatomy",
+          "curriculum": "& Physiology",
           "tasks": [
             {
-              "id": "2026-04-21T05:00:00.000Z",
-              "week": 36,
-              "task": "P4 L2 #5",
-              "notes": "Russell & Modern Philospohers Step #6",
-              "date": "2026-04-21T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "☐ Read WHB pg 286-287\n☐ Color ABC 182-183",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Anatomy-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "☐ Worksheet 55 front",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Anatomy-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "☐ Worksheet 55 back",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Anatomy-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "☐ Read pg 187-191",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Anatomy-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Anatomy-Fri"
             }
           ]
         },
         {
-          "subject": "Read \"Relationships\": Ch. 8 (pp. 72-84), Bible Journaling",
+          "subject": "Math",
+          "curriculum": "Calculus for Everyone",
           "tasks": [
             {
-              "id": "2026-04-22T05:00:00.000Z",
-              "week": 36,
-              "task": "P4 L2 #6",
-              "notes": "Russell & Modern Philospohers Step #7",
-              "date": "2026-04-22T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Chap 25 #1 (Part 1)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Math-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Chap 25 #1 (Part 2)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Math-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Chap 25 #2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Math-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Chap 25 #3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Math-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Math-Fri"
             }
           ]
         },
         {
-          "subject": "Read \"Relationships\": Ch. 9 (pp. 85-97), Bible Journaling",
+          "subject": "English",
+          "curriculum": "/Lit",
           "tasks": [
             {
-              "id": "2026-04-23T05:00:00.000Z",
-              "week": 36,
-              "task": "P4 L2 #7 & Quiz",
-              "notes": "",
-              "date": "2026-04-23T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "The Book Thief Chap 37-42 & Day 10",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-English-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "The Book Thief Chap 43-48 & Day 11",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-English-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "The Book Thief Chap 49-54 & Day 12",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-English-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "The Book Thief Chap 55-60 & Day 13-14",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-English-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-English-Fri"
+            }
+          ]
+        },
+        {
+          "subject": "Financial Literacy",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Lessonn 15.3-4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Financial Literacy-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Lessonn 15.5 Project",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Financial Literacy-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Lessonn 15.5 Project",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Financial Literacy-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Lessonn 15.5 Project",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Financial Literacy-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Charity-W35-Financial Literacy-Fri"
             }
           ]
         }
@@ -559,131 +1170,389 @@
     },
     {
       "student": "Ezra",
-      "palette": "boy",
+      "palette": {
+        "primary": "#708090",
+        "secondary": "#002868",
+        "bg": "#F0F8FF"
+      },
       "weekNum": 35,
+      "days": [
+        {
+          "day": "Mon",
+          "date": "4/13"
+        },
+        {
+          "day": "Tue",
+          "date": "4/14"
+        },
+        {
+          "day": "Wed",
+          "date": "4/15"
+        },
+        {
+          "day": "Thu",
+          "date": "4/16"
+        },
+        {
+          "day": "Fri",
+          "date": "4/17"
+        }
+      ],
       "grid": [
         {
-          "subject": "The Ology\nProv. Lesson\nBible Reading ",
+          "subject": "Bible",
+          "curriculum": "",
           "tasks": [
             {
-              "id": "2026-04-07T05:00:00.000Z",
-              "week": 34,
-              "task": "American Heritage #8",
-              "notes": "The Culture of Genesis, Lesson 4",
-              "date": "2026-04-07T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "The Ology\nProv. Lesson\nBible Reading",
+              "imageUrl": null,
+              "done": true,
+              "id": "Ezra-W35-Bible-Mon"
             },
             {
-              "id": "2026-04-08T05:00:00.000Z",
-              "week": 34,
-              "task": "",
-              "notes": "The Culture of Genesis, Lesson 5 & Quiz",
-              "date": "2026-04-08T05:00:00.000Z",
-              "done": false
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "The Ology\nProv. Lesson\nBible Reading",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Bible-Tue"
             },
             {
-              "id": "2026-04-09T05:00:00.000Z",
-              "week": 34,
-              "task": "American Heritage #9",
-              "notes": "The Church & Genesis, Lessons 1 & 2",
-              "date": "2026-04-09T05:00:00.000Z",
-              "done": false
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "The Ology\nProv. Lesson\nBible Reading",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Bible-Wed"
             },
             {
-              "id": "2026-04-10T05:00:00.000Z",
-              "week": 34,
-              "task": "American Heritage #10",
-              "notes": "The Church & Genesis, Lessons 3 & 4",
-              "date": "2026-04-10T05:00:00.000Z",
-              "done": false
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "The Ology\nProv. Lesson\nBible Reading",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Bible-Thu"
             },
             {
-              "id": "2026-04-11T05:00:00.000Z",
-              "week": 34,
-              "task": "",
-              "notes": "",
-              "date": "2026-04-11T05:00:00.000Z",
-              "done": false
-            },
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "The Ology\nProv. Lesson\nBible Reading",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Bible-Fri"
+            }
+          ]
+        },
+        {
+          "subject": "Hillsdale History",
+          "curriculum": "",
+          "tasks": [
             {
-              "id": "2026-04-13T05:00:00.000Z",
-              "week": 35,
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
               "task": "American Heritage #11",
-              "notes": "The Church & Genesis, Lesson 5",
-              "date": "2026-04-13T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": true,
+              "id": "Ezra-W35-Hillsdale History-Mon"
             },
             {
-              "id": "2026-04-14T05:00:00.000Z",
-              "week": 35,
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
               "task": "",
-              "notes": "The Church & Genesis, Lesson 6",
-              "date": "2026-04-14T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Hillsdale History-Tue"
             },
             {
-              "id": "2026-04-15T05:00:00.000Z",
-              "week": 35,
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
               "task": "Review Course Material",
-              "notes": "The Church & Genesis, Quiz",
-              "date": "2026-04-15T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Hillsdale History-Wed"
             },
             {
-              "id": "2026-04-16T05:00:00.000Z",
-              "week": 35,
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
               "task": "Take Final Quiz",
-              "notes": "Final Advanced Topics, Lesson 1",
-              "date": "2026-04-16T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Hillsdale History-Thu"
             },
             {
-              "id": "2026-04-17T05:00:00.000Z",
-              "week": 35,
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
               "task": "Take Final Quiz",
-              "notes": "",
-              "date": "2026-04-17T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Hillsdale History-Fri"
+            }
+          ]
+        },
+        {
+          "subject": "Creation Science",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "The Church & Genesis, Lesson 5",
+              "imageUrl": null,
+              "done": true,
+              "id": "Ezra-W35-Creation Science-Mon"
             },
             {
-              "id": "2026-04-20T05:00:00.000Z",
-              "week": 36,
-              "task": "The Second World Wars #1",
-              "notes": "Final Advanced Topics, Lesson 2",
-              "date": "2026-04-20T05:00:00.000Z",
-              "done": false
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "The Church & Genesis, Lesson 6",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Creation Science-Tue"
             },
             {
-              "id": "2026-04-21T05:00:00.000Z",
-              "week": 36,
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "The Church & Genesis, Quiz",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Creation Science-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Final Advanced Topics, Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Creation Science-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
               "task": "",
-              "notes": "Final Advanced Topics, Lesson 3",
-              "date": "2026-04-21T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Creation Science-Fri"
+            }
+          ]
+        },
+        {
+          "subject": "Algebra 1",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Shormann Math\nWeek 27 Quiz",
+              "imageUrl": null,
+              "done": true,
+              "id": "Ezra-W35-Algebra 1-Mon"
             },
             {
-              "id": "2026-04-22T05:00:00.000Z",
-              "week": 36,
-              "task": "The Second World Wars #2",
-              "notes": "Final Advanced Topics, Lesson 4",
-              "date": "2026-04-22T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-23T05:00:00.000Z",
-              "week": 36,
-              "task": "The Second World Wars #3",
-              "notes": "Course Complete! 🎉",
-              "date": "2026-04-23T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-24T05:00:00.000Z",
-              "week": 36,
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
               "task": "",
-              "notes": "",
-              "date": "2026-04-24T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Algebra 1-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Shormann Math\nLesson 93 Practice Set",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Algebra 1-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Algebra 1-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Shormann Math\nLesson 94 Practice Set",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Algebra 1-Fri"
+            }
+          ]
+        },
+        {
+          "subject": "Latin 1",
+          "curriculum": "🧭/Logic",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "A Tutle Twins Logical Fallacy",
+              "imageUrl": null,
+              "done": true,
+              "id": "Ezra-W35-Latin 1-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Latin 1-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Latin 1-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Sherlock Holmes Cunundrum",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Latin 1-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Latin 1-Fri"
+            }
+          ]
+        },
+        {
+          "subject": "Electives",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "Biblical Arch. Lesson 16 Watch",
+              "imageUrl": null,
+              "done": true,
+              "id": "Ezra-W35-Electives-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Biblical Arch. Lesson 16 Quiz",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Electives-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Read",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Electives-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Discuss",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Electives-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Biblical Archeology Project #4",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Electives-Fri"
+            }
+          ]
+        },
+        {
+          "subject": "Music",
+          "curriculum": "listen & practice each day",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "The Star-Spangled Banner (p. 178) - Activity & Practice",
+              "imageUrl": null,
+              "done": true,
+              "id": "Ezra-W35-Music-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "My Country, 'Tis of Thee (p. 184) - The Story & Hymn Study & Bible Lesson",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Music-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "My Country, 'Tis of Thee (p. 184) - Copywork & Music Theory & Practice",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Music-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "My Country, 'Tis of Thee (p. 184) - Activity",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Music-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "CellImage",
+              "imageUrl": null,
+              "done": false,
+              "id": "Ezra-W35-Music-Fri"
             }
           ]
         }
@@ -691,141 +1560,396 @@
     },
     {
       "student": "Tabitha",
-      "palette": "girl",
+      "palette": {
+        "primary": "#9988CC",
+        "secondary": "#87CEEB",
+        "bg": "#F0F8FF"
+      },
       "weekNum": 35,
+      "days": [
+        {
+          "day": "Mon",
+          "date": "4/13"
+        },
+        {
+          "day": "Tue",
+          "date": "4/14"
+        },
+        {
+          "day": "Wed",
+          "date": "4/15"
+        },
+        {
+          "day": "Thu",
+          "date": "4/16"
+        },
+        {
+          "day": "Fri",
+          "date": "4/17"
+        },
+        {
+          "day": "Mon",
+          "date": "4/20"
+        }
+      ],
       "grid": [
         {
-          "subject": "The Ology, BIble Reading, Catechism Q34",
+          "subject": "Bible",
+          "curriculum": "Join Ezra when possible",
           "tasks": [
             {
-              "id": "2026-04-07T05:00:00.000Z",
-              "week": 34,
-              "task": "Lesson 116",
-              "notes": "Read Vol. 2, Ch. 13, pp. 256-260",
-              "date": "2026-04-07T05:00:00.000Z",
-              "done": false
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "The Ology, BIble Reading, Catechism Q34",
+              "imageUrl": null,
+              "done": true,
+              "id": "Tabitha-W35-Bible-Mon"
             },
             {
-              "id": "2026-04-08T05:00:00.000Z",
-              "week": 34,
-              "task": "Lesson 117",
-              "notes": "Read Vol. 2, Ch. 13, pp. 261-265",
-              "date": "2026-04-08T05:00:00.000Z",
-              "done": false
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "The Ology, BIble Reading, Catechism Q35",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Bible-Tue"
             },
             {
-              "id": "2026-04-09T05:00:00.000Z",
-              "week": 34,
-              "task": "Lesson 118",
-              "notes": "Read Vol. 2, Ch. 13, pp. 266-271 (finishes Ch. 13, starts Ch. 14)",
-              "date": "2026-04-09T05:00:00.000Z",
-              "done": false
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "The Ology, BIble Reading, Catechism Q35",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Bible-Wed"
             },
             {
-              "id": "2026-04-10T05:00:00.000Z",
-              "week": 34,
-              "task": "Lesson 119",
-              "notes": "Read Vol. 2, Ch. 14, pp. 272-277",
-              "date": "2026-04-10T05:00:00.000Z",
-              "done": false
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "The Ology, BIble Reading, Catechism Q35",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Bible-Thu"
             },
             {
-              "id": "2026-04-13T05:00:00.000Z",
-              "week": 35,
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "The Ology, BIble Reading, Catechism Q35",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Bible-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "task": "The Ology, BIble Reading, Catechism Q35",
+              "imageUrl": null,
+              "done": true,
+              "id": "Tabitha-W35-Bible-Mon"
+            }
+          ]
+        },
+        {
+          "subject": "Saxon Math",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
               "task": "Lesson 120",
-              "notes": "",
-              "date": "2026-04-13T05:00:00.000Z",
-              "done": false
-            }
-          ]
-        },
-        {
-          "subject": "The Ology, BIble Reading, Catechism Q35",
-          "tasks": [
-            {
-              "id": "2026-04-14T05:00:00.000Z",
-              "week": 35,
-              "task": "",
-              "notes": "Read Vol. 2, Ch. 14, pp. 278-282",
-              "date": "2026-04-14T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": true,
+              "id": "Tabitha-W35-Saxon Math-Mon"
             },
             {
-              "id": "2026-04-15T05:00:00.000Z",
-              "week": 35,
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "",
+              "imageUrl": null,
+              "done": true,
+              "id": "Tabitha-W35-Saxon Math-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
               "task": "Assessment (after Lesson 120)",
-              "notes": "Read Vol. 2, Ch. 14, pp. 283-287",
-              "date": "2026-04-15T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Saxon Math-Wed"
             },
             {
-              "id": "2026-04-16T05:00:00.000Z",
-              "week": 35,
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
               "task": "Lesson 121",
-              "notes": "Read Vol. 2, Ch. 14, pp. 288-292",
-              "date": "2026-04-16T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Saxon Math-Thu"
             },
             {
-              "id": "2026-04-17T05:00:00.000Z",
-              "week": 35,
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
               "task": "Lesson 122",
-              "notes": "Read Vol. 2, pp. 293-298 (finishes Ch. 14, starts Ch. 15)",
-              "date": "2026-04-17T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Saxon Math-Fri"
             },
             {
-              "id": "2026-04-20T05:00:00.000Z",
-              "week": 35,
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
               "task": "",
-              "notes": "",
-              "date": "2026-04-20T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": true,
+              "id": "Tabitha-W35-Saxon Math-Mon"
             }
           ]
         },
         {
-          "subject": "The Ology, BIble Reading, Catechism Q36",
+          "subject": "History",
+          "curriculum": "Pages of History Reading",
           "tasks": [
             {
-              "id": "2026-04-21T05:00:00.000Z",
-              "week": 36,
-              "task": "Lesson 123",
-              "notes": "Read Vol. 2, Ch. 15, pp. 299-303",
-              "date": "2026-04-21T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-22T05:00:00.000Z",
-              "week": 36,
-              "task": "Lesson 124",
-              "notes": "Read Vol. 2, Ch. 15, pp. 304-308",
-              "date": "2026-04-22T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-23T05:00:00.000Z",
-              "week": 36,
-              "task": "Lesson 125",
-              "notes": "Read Vol. 2, Ch. 15, pp. 309-313",
-              "date": "2026-04-23T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-24T05:00:00.000Z",
-              "week": 36,
-              "task": "Drill Team Practice",
-              "notes": "Read Vol. 2, Ch. 15, pp. 314-319 (finishes Ch. 15, starts Ch. 16)",
-              "date": "2026-04-24T05:00:00.000Z",
-              "done": false
-            },
-            {
-              "id": "2026-04-27T05:00:00.000Z",
-              "week": 36,
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
               "task": "",
-              "notes": "",
-              "date": "2026-04-27T05:00:00.000Z",
-              "done": false
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-History-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Read Vol. 2, Ch. 14, pp. 278-282",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-History-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Read Vol. 2, Ch. 14, pp. 283-287",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-History-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Read Vol. 2, Ch. 14, pp. 288-292",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-History-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Read Vol. 2, pp. 293-298 (finishes Ch. 14, starts Ch. 15)",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-History-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-History-Mon"
+            }
+          ]
+        },
+        {
+          "subject": "Literature",
+          "curriculum": "Narnia & Christian Heroes",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Literature-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Read Chap. from Christian Heroes book.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Literature-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Read Chap. from Christian Heroes book.",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Literature-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Read Chapter 17: The Hunting of the White Stag",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Literature-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Discuss chapter w/mom and Narnia book",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Literature-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Literature-Mon"
+            }
+          ]
+        },
+        {
+          "subject": "Grammar",
+          "curriculum": "(Shurley Eng. Lev. 2)",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
+              "done": false,
+              "id": "Tabitha-W35-Grammar-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 22, Lesson 6",
+              "imageUrl": null,
+              "done": true,
+              "id": "Tabitha-W35-Grammar-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 1",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Grammar-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 2",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Grammar-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 3",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Grammar-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
+              "done": false,
+              "id": "Tabitha-W35-Grammar-Mon"
+            }
+          ]
+        },
+        {
+          "subject": "Handwriting",
+          "curriculum": "(Good and Beautiful)",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Handwriting-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "task": "Complete p. 99",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Handwriting-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "task": "Complete p. 100",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Handwriting-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "task": "Complete p. 101",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Handwriting-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Handwriting-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "task": "",
+              "imageUrl": null,
+              "done": false,
+              "id": "Tabitha-W35-Handwriting-Mon"
             }
           ]
         }
