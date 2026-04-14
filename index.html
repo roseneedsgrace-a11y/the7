@@ -385,34 +385,36 @@ a.link-btn::before {
 const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
   let allData = null;
 
-    window.onload = function() {
-      fetch('data.json?v=' + Date.now())
-        .then(r => r.json())
-        .then(data => {
-          allData = data;
-          const sel = document.getElementById('studentSelect');
-          
-          if (allData.students) {
-            allData.students.forEach(s => {
-              const opt = document.createElement('option');
-              opt.value = s.name; 
-              opt.textContent = s.name;
-              opt.setAttribute('data-week', s.currentWeek);
-              sel.appendChild(opt);
-            });
-          }
-    
-          // Check URL param FIRST, before calling updateWeekFromStudent
-          const urlStudent = getStudentFromUrl();
-          if (urlStudent) {
-            sel.value = urlStudent;
-          }
-    
-          // NOW set the week and render — dropdown is already on the right student
-          updateWeekFromStudent();
-        })
-        .catch(err => console.error("Data load failed:", err));
-    };
+window.onload = function() {
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      allData = data;
+      const sel = document.getElementById('studentSelect');
+      
+      if (allData.students) {
+        allData.students.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.name; 
+          opt.textContent = s.name;
+          opt.setAttribute('data-week', s.currentWeek);
+          sel.appendChild(opt);
+        });
+      }
+
+      // Case-insensitive match against the populated options
+      const urlStudent = getStudentFromUrl();
+      if (urlStudent) {
+        const match = Array.from(sel.options).find(
+          opt => opt.value.toLowerCase() === urlStudent.toLowerCase()
+        );
+        if (match) sel.value = match.value;
+      }
+
+      updateWeekFromStudent();
+    })
+    .catch(err => console.error("Data load failed:", err));
+};
 
   function updateWeekFromStudent() {
     const sel = document.getElementById('studentSelect');
