@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root { 
-      --primary: #94a3b8;
+      --primary: #741b47;
       --secondary: #cbd5e1;
       --bg: #f8fafc;
       --panel: #ffffff;
@@ -16,280 +16,249 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-      background-color: var(--bg); 
-      padding: 0 20px 200px 20px;
+      background: var(--bg); 
       color: var(--text);
+      padding-bottom: 60px;
     }
-    
-    .page-header { display: none; margin-bottom: 20px; border-bottom: 2px solid #334155; padding-bottom: 10px; }
-    .page-header h1 { margin: 0; color: var(--text); font-size: 24px; }
 
     .site-header {
       background: #741b47;
-      width: calc(100% + 40px);
-      margin: 0 -20px 20px -20px;
-      box-sizing: border-box;
-      height: 240px;
+      width: 100%;
+      height: 180px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 20px;
     }
+
     .site-header h1 {
-      font-family: 'Cinzel Decorative', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+      font-family: 'Cinzel Decorative', serif;
       color: #f9e7f0;
-      font-size: clamp(1.2rem, 10vw, 3.6rem);
+      font-size: clamp(1.2rem, 5vw, 2.5rem);
       text-align: center;
       font-weight: 400;
-      line-height: 1.5;
-      margin: 0;
-      letter-spacing: 2px;
+      line-height: 1.3;
     }
 
-    .controls { display: flex; gap: 20px; margin-bottom: 25px; background: var(--panel); padding: 15px 25px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); align-items: center; flex-wrap: wrap; }
-    select, input[type="number"] { padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 16px; color: var(--text); }
-    .print-btn { background: #475569; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-left: auto; transition: background 0.2s; }
-    .print-btn:hover { background: #1e293b; }
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      flex-wrap: wrap;
+    }
 
-    .table-view table { width: 100%; border-collapse: separate; border-spacing: 10px; table-layout: fixed; }
-    .table-view th { background: #e2e8f0; padding: 10px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; color: #475569; }
-    .subject-cell { width: 180px; background: var(--primary); color: white; font-weight: bold; font-size: 0.95rem; text-transform: uppercase; padding: 20px 15px; border-radius: 8px; vertical-align: middle; }
-    
-    .task-card { background: var(--panel); border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px; min-height: 100px; display: flex; flex-direction: column; position: relative; cursor: pointer; }
-    .status-indicator { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; position: absolute; bottom: 10px; right: 10px; display: flex; align-items: center; justify-content: center; }
-    .is-done { background: #f1f5f9; opacity: 0.7; }
-    .is-done .status-indicator { background: var(--secondary); border-color: var(--secondary); color: white; }
-    .is-done .status-indicator::after { content: '✓'; }
-    .check-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 2; }
-    .task-text { font-size: 0.8rem; line-height: 1.3; pointer-events: none; }
-    .task-image { width: 60px; height: 60px; margin: 5px auto; display: block; object-fit: contain; }
+    select, input {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      font-size: 14px;
+    }
 
-    #scrollTopBtn { position: fixed; bottom: 24px; right: 16px; width: 44px; height: 44px; border-radius: 50%; background: var(--primary); color: white; border: none; cursor: pointer; opacity: 0; transition: 0.3s; z-index: 999; }
-    #scrollTopBtn.visible { opacity: 1; }
+    .week-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      padding: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-    @media print { .controls, .site-header { display: none !important; } .page-header { display: block !important; } }
+    /* Mobile Responsive */
+    @media (max-width: 1000px) {
+      .week-grid { grid-template-columns: 1fr; }
+    }
+
+    .day-column {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding-bottom: 10px;
+      min-height: 200px;
+    }
+
+    .day-header {
+      background: var(--primary);
+      color: white;
+      padding: 12px;
+      border-radius: 12px 12px 0 0;
+      text-align: center;
+    }
+
+    .day-header h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+    .day-header span { font-size: 12px; opacity: 0.8; }
+
+    .task-card {
+      background: white;
+      margin: 10px;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    .task-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .task-card.is-done { opacity: 0.5; background: #f8fafc; }
+
+    .task-subject { font-size: 10px; font-weight: 800; text-transform: uppercase; color: var(--primary); margin-bottom: 4px; }
+    .task-text { font-size: 13px; color: #334155; line-height: 1.4; }
+    .task-card.is-done .task-text { text-decoration: line-through; }
+
+    .task-check { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+
+    .print-btn {
+      background: #475569;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    @media print {
+      .controls, .site-header { display: none; }
+      .week-grid { grid-template-columns: repeat(5, 1fr); gap: 5px; }
+      .day-column { border: 1px solid #ccc; }
+    }
   </style>
 </head>
 <body>
 
-<div class="site-header" id="siteHeader" style="display:none;">
-  <h1>Thus Far the Lord<br>Has Helped Us</h1>
+<div class="site-header">
+  <h1 id="headerTitle">Thus Far the Lord<br>Has Helped Us</h1>
 </div>
 
 <div class="controls">
-  <div><strong>Student:</strong> <select id="student" onchange="load()"><option>Loading...</option></select></div>
-  <div><strong>Week:</strong> <input type="number" id="week" min="1" max="36" onchange="load()"></div>
-  <button class="print-btn" onclick="window.print()">Print</button>
+  <select id="studentSelect" onchange="renderWeek()"></select>
+  <div style="display:flex; align-items:center; gap:8px;">
+    <strong>Week:</strong>
+    <input type="number" id="weekInput" min="1" max="36" onchange="renderWeek()">
+  </div>
+  <button class="print-btn" onclick="window.print()">Print Week</button>
+  <a href="parents.html" style="font-size: 12px; color: #64748b;">Parent Dashboard</a>
 </div>
 
-<div id="content">Loading assignments...</div>
-<button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div id="content" class="week-grid"></div>
 
 <script>
   const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
-  let lastData = null;
-  let cachedConfig = null;
-
-  function getBaseUrl() {
-    return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
-  }
+  let allData = null;
 
   window.onload = function() {
-    const params = new URLSearchParams(window.location.search);
-    const preselect = params.get('student') || '';
-    document.getElementById('siteHeader').style.display = 'flex';
-
-    fetch(getBaseUrl() + 'data.json?t=' + Date.now())
+    fetch('data.json?v=' + new Date().getTime())
       .then(r => r.json())
-      .then(json => {
-        cachedConfig = json;
+      .then(data => {
+        allData = data;
         
-        // Setup Students
-        const sel = document.getElementById('student');
-        sel.innerHTML = '';
-        (json.students || []).forEach(s => {
+        // Populate Student Dropdown
+        const sel = document.getElementById('studentSelect');
+        data.studentData.forEach(s => {
           const opt = document.createElement('option');
-          opt.value = s.name; opt.textContent = s.name;
+          opt.value = s.student; opt.textContent = s.student;
           sel.appendChild(opt);
         });
-        if (preselect) sel.value = preselect;
 
-        // Set Week Input carefully to avoid NaN
-        const weekInput = document.getElementById('week');
-        if (json.config && json.config.currentWeek) {
-          weekInput.value = json.config.currentWeek;
-        } else if (json.studentData && json.studentData[0]) {
-          weekInput.value = json.studentData[0].weekNum;
-        } else {
-          weekInput.value = 35; // Ultimate fallback
-        }
-
-        load(true);
-
-        fetch(API_URL + '?action=getProgress')
-          .then(r => r.json())
-          .then(progressMap => {
-            syncProgress(progressMap);
-            drawGrid();
-          });
-      })
-      .catch(err => {
-          console.error("JSON Error:", err);
-          document.getElementById('content').innerHTML = "Check data.json formatting.";
+        // Set initial week
+        document.getElementById('weekInput').value = data.config.currentWeek || 35;
+        
+        renderWeek();
       });
   };
 
-  function load(isInitial) {
-    if (!cachedConfig) return;
+  function renderWeek() {
+    if (!allData) return;
     
-    const studentName = document.getElementById('student').value;
-    let weekVal = document.getElementById('week').value;
+    const studentName = document.getElementById('studentSelect').value;
+    const weekNum = parseInt(document.getElementById('weekInput').value);
+    const content = document.getElementById('content');
     
-    // SAFETY: If week is blank or NaN, force it to the current week
-    if (!weekVal || isNaN(weekVal)) {
-      weekVal = (cachedConfig.config && cachedConfig.config.currentWeek) || 35;
-      document.getElementById('week').value = weekVal;
-    }
+    const student = allData.studentData.find(s => s.student === studentName);
+    if (!student) return;
+
+    // Update colors based on student palette
+    document.documentElement.style.setProperty('--primary', student.palette.primary);
+    document.documentElement.style.setProperty('--secondary', student.palette.secondary);
+
+    // Calculate Monday of this week
+    // We use the "anchor" date from the JSON to find the Monday of the selected week
+    const anchorDate = new Date(allData.date + ", 2026");
+    const anchorWeek = allData.config.currentWeek || 35;
+    const weekDiff = weekNum - anchorWeek;
     
-    const weekNum = parseInt(weekVal);
-    const studentData = cachedConfig.studentData.find(s => s.student === studentName);
-    
-    // Match local data if the week requested matches the week in the JSON file
-    if (studentData && (studentData.weekNum === weekNum)) {
-      lastData = JSON.parse(JSON.stringify(studentData));
-      lastData.currentDisplayWeek = weekNum;
-      updateCSSPalette(studentData.palette);
-      drawGrid();
-    } else {
-      fetchFromGAS(studentName, weekNum);
-    }
-  }
-
-  function fetchFromGAS(studentName, weekNum) {
-    // If weekNum is still NaN here, something is very wrong, so we stop.
-    if (isNaN(weekNum)) return;
-
-    document.getElementById('content').innerHTML = "Fetching Week " + weekNum + " from archives...";
-    fetch(`${API_URL}?action=getWeekData&student=${encodeURIComponent(studentName)}&week=${weekNum}`)
-      .then(r => r.json())
-      .then(newData => {
-        if (!newData || !newData.grid) throw new Error();
-        lastData = newData;
-        lastData.currentDisplayWeek = weekNum;
-        drawGrid();
-      })
-      .catch(() => {
-        document.getElementById('content').innerHTML = "Week " + weekNum + " not found on server.";
-      });
-  }
-
-  function drawGrid() {
-    if (!lastData || !lastData.grid) return;
-
-    const selectedWeek = lastData.currentDisplayWeek || lastData.weekNum || 35;
-    const anchorDate = new Date((cachedConfig.date || "April 14, 2026") + ", 2026");
-    const anchorWeek = (cachedConfig.config && cachedConfig.config.currentWeek) || 35;
-    const weekDiff = selectedWeek - anchorWeek;
-
     const dayIdx = anchorDate.getDay();
-    const diffToMon = dayIdx === 0 ? -6 : 1 - dayIdx;
-    const targetMonday = new Date(anchorDate);
-    targetMonday.setDate(anchorDate.getDate() + diffToMon + (weekDiff * 7));
+    const diffToMon = (dayIdx === 0 ? -6 : 1 - dayIdx);
+    const monday = new Date(anchorDate);
+    monday.setDate(anchorDate.getDate() + diffToMon + (weekDiff * 7));
 
-    let html = '<div class="table-view"><table><thead><tr><th>Subject</th>';
+    let html = '';
     const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-    dayNames.forEach((name, i) => {
-      const d = new Date(targetMonday); d.setDate(targetMonday.getDate() + i);
-      const dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      html += `<th>${name}<br><small>${dateStr}</small></th>`;
-    });
-    html += '</tr></thead><tbody>';
 
-    lastData.grid.forEach(row => {
-      html += `<tr><td class="subject-cell">${row.subject}</td>`;
-      const tasks = row.tasks || [];
-      for (let i = 0; i < 5; i++) {
-        const t = tasks[i];
-        if (t && (t.task || t.imageUrl)) {
-          const isDone = t.done ? 'is-done' : '';
-          html += `<td><label class="task-card ${isDone}">
-            <div class="task-text">${t.task || ''}</div>
-            ${t.imageUrl ? `<img src="${t.imageUrl}" class="task-image">` : ''}
-            <div class="status-indicator"></div>
-            <input type="checkbox" class="check-overlay" ${t.done ? 'checked' : ''} onchange="toggle('${t.id}', this)">
-          </label></td>`;
-        } else {
-          html += '<td><div class="task-card" style="border:1px dashed #cbd5e1; opacity:0.3;"></div></td>';
-        }
+    for (let i = 0; i < 5; i++) {
+      const currentDay = new Date(monday);
+      currentDay.setDate(monday.getDate() + i);
+      const targetMidnight = Date.UTC(currentDay.getFullYear(), currentDay.getMonth(), currentDay.getDate());
+      
+      const dateLabel = currentDay.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+      html += `<div class="day-column">
+        <div class="day-header" style="background:${student.palette.primary}">
+          <h2>${dayNames[i]}</h2>
+          <span>${dateLabel}</span>
+        </div>
+        <div class="day-tasks">`;
+
+      // Filter tasks for THIS student and THIS day
+      let dailyTasks = [];
+      student.grid.forEach(subject => {
+        subject.tasks.forEach(t => {
+          const d = new Date(t.rawDate);
+          const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+          
+          if (taskMidnight === targetMidnight && t.task && t.task.trim() !== "") {
+            dailyTasks.push({ ...t, subject: subject.subject });
+          }
+        });
+      });
+
+      if (dailyTasks.length === 0) {
+        html += `<div style="padding:20px; text-align:center; color:#94a3b8; font-size:12px;">No tasks</div>`;
+      } else {
+        dailyTasks.forEach(t => {
+          html += `
+            <div class="task-card ${t.done ? 'is-done' : ''}" id="card-${t.id}">
+              <div class="task-subject">${t.subject}</div>
+              <div class="task-text">${t.task}</div>
+              <input type="checkbox" class="task-check" ${t.done ? 'checked' : ''} 
+                onchange="toggleTask('${t.id}', this)">
+            </div>`;
+        });
       }
-      html += '</tr>';
-    });
-    html += '</tbody></table></div>';
-    document.getElementById('content').innerHTML = html;
+
+      html += `</div></div>`;
+    }
+    
+    content.innerHTML = html;
   }
 
-  function toggle(id, el) {
-    el.parentElement.classList.toggle('is-done', el.checked);
+  function toggleTask(id, el) {
+    const card = document.getElementById('card-' + id);
+    if (card) card.classList.toggle('is-done', el.checked);
+    
+    // Update local data
+    allData.studentData.forEach(s => {
+      s.grid.forEach(row => {
+        row.tasks.forEach(t => { if(t.id === id) t.done = el.checked; });
+      });
+    });
+    
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
   }
-
-  function syncProgress(progressMap) {
-    if (!cachedConfig) return;
-    cachedConfig.studentData.forEach(s => {
-      if (s.grid) s.grid.forEach(row => {
-        if (row.tasks) row.tasks.forEach(t => { t.done = (progressMap[t.id] === true); });
-      });
-    });
-  }
-
-  function updateCSSPalette(palette) {
-    if (!palette) return;
-    const root = document.documentElement;
-    root.style.setProperty('--primary', palette.primary || '#94a3b8');
-    root.style.setProperty('--bg', palette.bg || '#f8fafc');
-  }
-
-  window.onscroll = function() {
-    document.getElementById('scrollTopBtn').classList.toggle('visible', window.scrollY > 200);
-  };
-
-function loadFromJson(studentName, weekNum) {
-  if (!cachedConfig || !cachedConfig.studentData) {
-    // Fall back to GAS if JSON isn't available
-    fetch(API_URL + '?action=getData&student=' + encodeURIComponent(studentName) + '&week=' + encodeURIComponent(weekNum || ''))
-      .then(r => r.json())
-      .then(function(data) {
-        lastData = data;
-        updateCSSPalette(data.palette);
-        drawGrid();
-      });
-    return;
-  }
-
-  const studentEntry = cachedConfig.studentData.find(s => s.student === studentName);
-  if (!studentEntry) return;
-
-  // If no week is specified, default to the one marked in config (35)
-  const targetWeek = weekNum || cachedConfig.config.currentWeek || "35";
-  
-  // Look into the 'weeks' object for the specific data
-  const weekData = studentEntry.weeks[targetWeek];
-
-  if (weekData) {
-    lastData = {
-      student: studentEntry.student,
-      weekNum: targetWeek,
-      days: weekData.days,
-      grid: weekData.grid,
-      palette: studentEntry.palette
-    };
-    updateCSSPalette(studentEntry.palette);
-    drawGrid();
-  } else {
-    // If Week 34 or 36 isn't in this specific JSON, then go to GAS
-    fetchFromGAS(studentName, targetWeek);
-  }
-}
 </script>
 </body>
 </html>
