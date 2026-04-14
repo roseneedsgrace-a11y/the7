@@ -184,12 +184,30 @@
 <div id="printHeader" class="page-header"><h1>Student Planner</h1></div>
 
 <div class="controls">
-  <div><strong>Student:</strong> <select id="studentSelect" onchange="render()"></select></div>
-  <div><strong>Week:</strong> <input type="number" id="weekInput" min="1" max="36" style="width: 60px" onchange="render()"></div>
+  <div><strong>Student:</strong>
+    <select id="student" onchange="load()">
+      <option>Loading...</option>
+    </select>
+  </div>
+  <div><strong>Week:</strong><input type="number" id="week" min="1" max="36" style="width: 60px" onchange="load()"></div>
   <label style="display:flex; align-items:center; font-size:13px; cursor:pointer;">Status Mode
-    <div class="switch"><input type="checkbox" id="statusToggle" onchange="render()"><span class="slider"></span></div>
+    <div class="switch"><input type="checkbox" id="statusToggle" onchange="refreshClasses()"><span class="slider"></span></div>
   </label>
-  <button class="print-btn" onclick="window.print()">Print</button>
+  <button class="print-btn" onclick="printPage()">Print</button>
+</div>
+<div id="adminLink" style="display:none; text-align:right; margin-bottom: 16px; display:flex; justify-content:flex-end; gap:16px;">
+  <a id="parentAnchor" href="parents.html" target="_blank"
+    style="font-size: 12px; color: #94a3b8; text-decoration: none;"
+    onmouseover="this.style.color='#475569'" 
+    onmouseout="this.style.color='#94a3b8'">
+    &#128203; Parents dashboard
+  </a>
+  <a id="adminAnchor" href="#" target="_blank"
+     style="font-size: 12px; color: #94a3b8; text-decoration: none;"
+     onmouseover="this.style.color='#475569'" 
+     onmouseout="this.style.color='#94a3b8'">
+    &#9881; Admin settings
+  </a>
 </div>
 
 <div id="content">Loading assignments...</div>
