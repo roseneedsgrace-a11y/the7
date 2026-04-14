@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T16:24:12.335Z",
+  "generated": "2026-04-14T17:17:44.469Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -76,7 +76,7 @@
               "task": "Read \"Relationships\": Ch. 5 (pp. 40-50)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Bible-Wed"
             },
             {
@@ -109,7 +109,7 @@
               "task": "Read \"Relationships\": Ch. 7 (pp. 63-71)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Bible-Mon"
             },
             {
@@ -396,7 +396,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-English-Mon"
             },
             {
@@ -407,7 +407,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-English-Tue"
             },
             {
@@ -418,7 +418,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-English-Wed"
             },
             {
@@ -429,7 +429,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-English-Thu"
             },
             {
@@ -738,7 +738,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Physical Training-Mon"
             },
             {
@@ -749,7 +749,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Physical Training-Tue"
             },
             {
@@ -760,7 +760,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Physical Training-Wed"
             },
             {
@@ -771,7 +771,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Physical Training-Thu"
             },
             {
@@ -782,7 +782,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Physical Training-Fri"
             },
             {
@@ -793,7 +793,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Physical Training-Mon"
             },
             {
@@ -909,7 +909,7 @@
               "task": "Final Review",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Math-Mon"
             },
             {
@@ -920,7 +920,7 @@
               "task": "Exam 4 & Print Certificate of Completion*",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Math-Tue"
             },
             {
