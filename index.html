@@ -291,21 +291,24 @@
           loadFromJson(sel.value, null);
 
           fetch(API_URL + '?action=getProgress')
-            .then(r => r.json())
-            .then(function(progressMap) {
-              if (cachedConfig && cachedConfig.studentData) {
-                cachedConfig.studentData.forEach(function(s) {
-                  Object.keys(s.weeks).forEach(function(w) {
-                    s.weeks[w].grid.forEach(function(row) {
+          .then(r => r.json())
+          .then(function(progressMap) {
+            if (cachedConfig && cachedConfig.studentData) {
+              cachedConfig.studentData.forEach(function(s) {
+                // Look at s.grid directly, just like you did in the cache function
+                if (s.grid) {
+                  s.grid.forEach(function(row) {
+                    if (row.tasks) {
                       row.tasks.forEach(function(t) {
                         t.done = progressMap[t.id] === true;
                       });
-                    });
+                    }
                   });
-                });
-              }
-              patchProgressInDom(progressMap);
-            })
+                }
+              });
+            }
+            patchProgressInDom(progressMap);
+          })
             .catch(function() {});
         })
         .catch(function() { fallbackToGAS(preselect); });
