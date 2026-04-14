@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root { 
-      --primary: #741b47;
+      --primary: #94a3b8;
       --secondary: #cbd5e1;
       --bg: #f8fafc;
       --panel: #ffffff;
@@ -16,249 +16,334 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-      background: var(--bg); 
+      background-color: var(--bg); 
+      padding: 0 20px 200px 20px;
       color: var(--text);
-      padding-bottom: 60px;
     }
+    
+    .page-header { display: none; margin-bottom: 20px; border-bottom: 2px solid #334155; padding-bottom: 10px; }
+    .page-header h1 { margin: 0; color: var(--text); font-size: 24px; }
 
     .site-header {
       background: #741b47;
-      width: 100%;
-      height: 180px;
+      width: calc(100% + 40px);
+      margin: 0 -20px 20px -20px;
+      box-sizing: border-box;
+      height: 200px;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 20px;
     }
-
     .site-header h1 {
       font-family: 'Cinzel Decorative', serif;
       color: #f9e7f0;
-      font-size: clamp(1.2rem, 5vw, 2.5rem);
+      font-size: clamp(1.2rem, 8vw, 3rem);
       text-align: center;
       font-weight: 400;
-      line-height: 1.3;
+      line-height: 1.5;
+      margin: 0;
+      letter-spacing: 2px;
     }
 
-    .controls {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      padding: 20px;
-      background: white;
-      border-bottom: 1px solid #e2e8f0;
-      flex-wrap: wrap;
+    .controls { display: flex; gap: 20px; margin-bottom: 25px; background: var(--panel); padding: 15px 25px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); align-items: center; flex-wrap: wrap; }
+    select, input[type="number"] { padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 16px; color: var(--text); }
+    .print-btn { background: #475569; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-left: auto; }
+
+    /* TABLE VIEW (Desktop & Print) */
+    .table-view table { width: 100%; border-collapse: separate; border-spacing: 10px; table-layout: fixed; }
+    .table-view th { background: #e2e8f0; padding: 10px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; color: #475569; }
+    .subject-cell { 
+      width: 180px; background: var(--primary); color: white; font-weight: bold; 
+      font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;
+      padding: 20px 15px; border-radius: 8px; vertical-align: middle;
     }
+    .subject-cell .curriculum-subtitle { display: block; font-weight: normal; font-size: 0.7rem; color: #F8FAFC; text-transform: none; margin-top: 5px; }
+    
+    .task-card { background: var(--panel); border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px; min-height: 100px; display: flex; flex-direction: column; position: relative; cursor: pointer; transition: transform 0.1s; }
+    .task-text { font-size: 0.8rem; line-height: 1.3; margin-bottom: 5px; flex-grow: 1; pointer-events: none; }
+    .task-image { width: 60px; height: 60px; margin: 5px auto; display: block; object-fit: contain; }
+    .status-indicator { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; position: absolute; bottom: 10px; right: 10px; display: flex; align-items: center; justify-content: center; color: transparent; }
+    .is-done .status-indicator { background: var(--secondary); border-color: var(--secondary); color: white; }
+    .is-done .status-indicator::after { content: '✓'; font-size: 12px; }
+    .check-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 2; }
 
-    select, input {
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #cbd5e1;
-      font-size: 14px;
-    }
+    /* STATUS MODE COLORS */
+    .status-mode .due-late:not(.is-done) { background-color: #fdf2f8 !important; border-color: #fca5a5; }
+    .status-mode .due-warning:not(.is-done) { background-color: #ecfeff !important; border-color: #fde047; }
+    .task-card.is-done { opacity: 0.6; background: #f8fafc !important; }
+    .task-card.is-done .task-text { text-decoration: line-through; color: #94a3b8; }
 
-    .week-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 15px;
-      padding: 20px;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
+    /* LIST VIEW (Mobile) */
+    .list-view { display: none; flex-direction: column; gap: 14px; }
+    .day-block { background: var(--panel); border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; }
+    .day-header { padding: 12px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e2e8f0; background: #f8fafc; }
+    .day-header .day-name { font-size: 16px; font-weight: 700; }
+    .progress-pill { margin-left: auto; font-size: 11px; background: #f1f5f9; padding: 3px 9px; border-radius: 20px; color: #64748b; }
+    .list-task-row { display: flex; align-items: flex-start; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #f1f5f9; position: relative; }
+    .list-checkbox { width: 20px; height: 20px; border: 2px solid #cbd5e1; border-radius: 5px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+    .list-task-row.is-done .list-checkbox { background: var(--secondary); border-color: var(--secondary); }
+    .list-task-row.is-done .list-checkbox::after { content: '✓'; color: white; font-size: 12px; }
 
-    /* Mobile Responsive */
-    @media (max-width: 1000px) {
-      .week-grid { grid-template-columns: 1fr; }
-    }
+    /* SWITCH COMPONENT */
+    .switch { position: relative; display: inline-block; width: 40px; height: 20px; margin: 0 10px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #cbd5e1; transition: .4s; border-radius: 20px; }
+    .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+    input:checked + .slider { background-color: #741b47; }
+    input:checked + .slider:before { transform: translateX(20px); }
 
-    .day-column {
-      background: #f1f5f9;
-      border-radius: 12px;
-      padding-bottom: 10px;
-      min-height: 200px;
-    }
-
-    .day-header {
-      background: var(--primary);
-      color: white;
-      padding: 12px;
-      border-radius: 12px 12px 0 0;
-      text-align: center;
-    }
-
-    .day-header h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
-    .day-header span { font-size: 12px; opacity: 0.8; }
-
-    .task-card {
-      background: white;
-      margin: 10px;
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #e2e8f0;
-      position: relative;
-      cursor: pointer;
-      transition: transform 0.1s;
-    }
-
-    .task-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
-    .task-card.is-done { opacity: 0.5; background: #f8fafc; }
-
-    .task-subject { font-size: 10px; font-weight: 800; text-transform: uppercase; color: var(--primary); margin-bottom: 4px; }
-    .task-text { font-size: 13px; color: #334155; line-height: 1.4; }
-    .task-card.is-done .task-text { text-decoration: line-through; }
-
-    .task-check { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
-
-    .print-btn {
-      background: #475569;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
+    /* MEDIA QUERIES */
+    @media (max-width: 700px) {
+      .table-view { display: none; }
+      .list-view { display: flex; }
+      .site-header { height: 150px; }
     }
 
     @media print {
-      .controls, .site-header { display: none; }
-      .week-grid { grid-template-columns: repeat(5, 1fr); gap: 5px; }
-      .day-column { border: 1px solid #ccc; }
+      .controls, .site-header { display: none !important; }
+      .page-header { display: block !important; }
+      .table-view { display: block !important; }
+      .list-view { display: none !important; }
+      .task-card { border: 1px solid #94a3b8 !important; page-break-inside: avoid; }
+      @page { size: landscape; margin: 0.5in; }
     }
+
+  /* Rendering URLs from assignments  */  
+  .link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 8px auto 4px;
+  padding: 8px 16px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.link-btn:hover {
+  opacity: 0.9;
+  filter: brightness(1.1);
+}
+
+.link-btn::before {
+  content: '↗';
+  font-size: 0.9rem;
+}
+
+/* Ensure the card has a footprint when it only contains a link */
+.task-card.link-only {
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.media-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-card {
+  background: transparent;
+  border: 1px dashed #cbd5e1;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Make sure the link button doesn't look like a tiny sliver */
+.link-btn {
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Ensure QR codes only show up on the printed page, not the screen */
+@media screen {
+  .qr-img { display: none; }
+}
+
+@media print {
+  .link-btn { display: none !important; }
+  .qr-img { display: block !important; margin: 5px auto; width: 50px; height: 50px; }
+}
   </style>
 </head>
 <body>
 
-<div class="site-header">
-  <h1 id="headerTitle">Thus Far the Lord<br>Has Helped Us</h1>
+<div class="site-header" id="siteHeader">
+  <h1 id="headerTitleH1">Thus Far the Lord<br>Has Helped Us</h1>
 </div>
+<div id="printHeader" class="page-header"><h1>Student Planner</h1></div>
 
 <div class="controls">
-  <select id="studentSelect" onchange="renderWeek()"></select>
-  <div style="display:flex; align-items:center; gap:8px;">
-    <strong>Week:</strong>
-    <input type="number" id="weekInput" min="1" max="36" onchange="renderWeek()">
-  </div>
-  <button class="print-btn" onclick="window.print()">Print Week</button>
-  <a href="parents.html" style="font-size: 12px; color: #64748b;">Parent Dashboard</a>
+  <div><strong>Student:</strong> <select id="studentSelect" onchange="()"></select></div>
+  <div><strong>Week:</strong> <input type="number" id="weekInput" min="1" max="36" style="width: 60px" onchange="()"></div>
+  <label style="display:flex; align-items:center; font-size:13px; cursor:pointer;">Status Mode
+    <div class="switch"><input type="checkbox" id="statusToggle" onchange="render()"><span class="slider"></span></div>
+  </label>
+  <button class="print-btn" onclick="window.print()">Print</button>
 </div>
 
-<div id="content" class="week-grid"></div>
+<div id="content">Loading assignments...</div>
 
 <script>
   const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
   let allData = null;
 
   window.onload = function() {
-    fetch('data.json?v=' + new Date().getTime())
+    fetch('data.json?v=' + Date.now())
       .then(r => r.json())
       .then(data => {
         allData = data;
-        
-        // Populate Student Dropdown
         const sel = document.getElementById('studentSelect');
         data.studentData.forEach(s => {
           const opt = document.createElement('option');
           opt.value = s.student; opt.textContent = s.student;
           sel.appendChild(opt);
         });
-
-        // Set initial week
-        document.getElementById('weekInput').value = data.config.currentWeek || 35;
-        
-        renderWeek();
+        document.getElementById('weekInput').value = data.config.currentWeek || 1;
+        render();
       });
   };
 
-  function renderWeek() {
-    if (!allData) return;
+function render() {
+  if (!allData) return;
+  const studentName = document.getElementById('studentSelect').value;
+  const student = allData.studentData.find(s => s.student === studentName);
+  const isStatusMode = document.getElementById('statusToggle').checked;
+  
+  updateColors(student.palette);
+  
+  // 1. Expand days if you want to see Saturday
+  const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; 
+  const now = new Date();
+  const todayTs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+
+  let tableHtml = `<div class="table-view"><div class="${isStatusMode ? 'status-mode' : ''}"><table><thead><tr><th>Subject</th>`;
+  days.forEach(d => tableHtml += `<th>${d}</th>`);
+  tableHtml += `</tr></thead><tbody>`;
+
+  let listHtml = `<div class="list-view"><div class="${isStatusMode ? 'status-mode' : ''}">`;
+  const tasksByDay = days.map(() => []); // Creates an array for each day in our list
+
+  student.grid.forEach(row => {
+    tableHtml += `<tr><td class="subject-cell">${row.subject}<span class="curriculum-subtitle">${row.curriculum || ''}</span></td>`;
     
-    const studentName = document.getElementById('studentSelect').value;
-    const weekNum = parseInt(document.getElementById('weekInput').value);
-    const content = document.getElementById('content');
-    
-    const student = allData.studentData.find(s => s.student === studentName);
-    if (!student) return;
-
-    // Update colors based on student palette
-    document.documentElement.style.setProperty('--primary', student.palette.primary);
-    document.documentElement.style.setProperty('--secondary', student.palette.secondary);
-
-    // Calculate Monday of this week
-    // We use the "anchor" date from the JSON to find the Monday of the selected week
-    const anchorDate = new Date(allData.date + ", 2026");
-    const anchorWeek = allData.config.currentWeek || 35;
-    const weekDiff = weekNum - anchorWeek;
-    
-    const dayIdx = anchorDate.getDay();
-    const diffToMon = (dayIdx === 0 ? -6 : 1 - dayIdx);
-    const monday = new Date(anchorDate);
-    monday.setDate(anchorDate.getDate() + diffToMon + (weekDiff * 7));
-
-    let html = '';
-    const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-
-    for (let i = 0; i < 5; i++) {
-      const currentDay = new Date(monday);
-      currentDay.setDate(monday.getDate() + i);
-      const targetMidnight = Date.UTC(currentDay.getFullYear(), currentDay.getMonth(), currentDay.getDate());
+    // 2. Instead of row.tasks.forEach((t, idx)...), we match by day name
+    days.forEach((dayName, dayIdx) => {
+      const t = row.tasks.find(task => task.day === dayName);
       
-      const dateLabel = currentDay.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      if (t) {
+        const taskDate = new Date(t.rawDate).getTime();
+        let statusClass = '';
+        if (taskDate < todayTs) statusClass = 'due-late';
+        else if (taskDate === todayTs) statusClass = 'due-warning';
 
-      html += `<div class="day-column">
-        <div class="day-header" style="background:${student.palette.primary}">
-          <h2>${dayNames[i]}</h2>
-          <span>${dateLabel}</span>
-        </div>
-        <div class="day-tasks">`;
+        // Valid content check: Task text, Image, OR LinkUrl
+        const hasContent = (t.task && t.task.trim().length > 0) || t.imageUrl || t.linkUrl;
 
-      // Filter tasks for THIS student and THIS day
-      let dailyTasks = [];
-      student.grid.forEach(subject => {
-        subject.tasks.forEach(t => {
-          const d = new Date(t.rawDate);
-          const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+        if (hasContent) {
+          const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
+          const mediaHtml = renderMedia(t);
           
-          if (taskMidnight === targetMidnight && t.task && t.task.trim() !== "") {
-            dailyTasks.push({ ...t, subject: subject.subject });
-          }
-        });
-      });
+          tableHtml += `<td>
+            <label class="task-card ${t.done ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
+              ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
+              <div class="media-container">${mediaHtml}</div>
+              <div class="status-indicator"></div>
+              <input type="checkbox" class="check-overlay" ${t.done ? 'checked' : ''} onchange="toggle('${t.id}', this)">
+            </label>
+          </td>`;
 
-      if (dailyTasks.length === 0) {
-        html += `<div style="padding:20px; text-align:center; color:#94a3b8; font-size:12px;">No tasks</div>`;
+          tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
+        } else {
+          tableHtml += `<td><div class="task-card empty-card"></div></td>`;
+        }
       } else {
-        dailyTasks.forEach(t => {
-          html += `
-            <div class="task-card ${t.done ? 'is-done' : ''}" id="card-${t.id}">
-              <div class="task-subject">${t.subject}</div>
-              <div class="task-text">${t.task}</div>
-              <input type="checkbox" class="task-check" ${t.done ? 'checked' : ''} 
-                onchange="toggleTask('${t.id}', this)">
-            </div>`;
-        });
+        tableHtml += `<td><div class="task-card empty-card"></div></td>`;
       }
-
-      html += `</div></div>`;
-    }
-    
-    content.innerHTML = html;
-  }
-
-  function toggleTask(id, el) {
-    const card = document.getElementById('card-' + id);
-    if (card) card.classList.toggle('is-done', el.checked);
-    
-    // Update local data
-    allData.studentData.forEach(s => {
-      s.grid.forEach(row => {
-        row.tasks.forEach(t => { if(t.id === id) t.done = el.checked; });
-      });
     });
-    
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
+    tableHtml += `</tr>`;
+  });
+
+  // Build List View (Mobile)
+  tasksByDay.forEach((dayTasks, idx) => {
+    if (dayTasks.length === 0) return;
+    const doneCount = dayTasks.filter(t => t.done).length;
+    listHtml += `<div class="day-block"><div class="day-header"><span class="day-name">${days[idx]}</span><span class="progress-pill">${doneCount} / ${dayTasks.length} done</span></div>`;
+
+    dayTasks.forEach(t => {
+      const hasTaskText = t.task && t.task.trim().length > 0;
+      listHtml += `
+        <label class="list-task-row ${t.done ? 'is-done' : ''} ${t.statusClass}">
+          <div class="list-checkbox"></div>
+          <div style="flex:1">
+            <div style="font-size:10px; font-weight:bold; color:var(--primary); text-transform:uppercase;">${t.subject}</div>
+            ${t.curriculum ? `<div style="font-size:10px; color:#94a3b8; margin-bottom:4px;">${t.curriculum}</div>` : ''}
+            ${hasTaskText ? `<div class="task-text" style="font-size:14px;">${t.task}</div>` : ''}
+            ${renderMedia(t)}
+          </div>
+          <input type="checkbox" class="check-overlay" ${t.done ? 'checked' : ''} onchange="toggle('${t.id}', this)">
+        </label>`;
+    });
+    listHtml += `</div>`;
+  });
+
+  tableHtml += `</tbody></table></div></div>`;
+  listHtml += `</div></div>`;
+  document.getElementById('content').innerHTML = tableHtml + listHtml;
+}
+
+function renderMedia(t) {
+  let html = '';
+
+  // 1. If there's a specific link provided, create the button
+  if (t.linkUrl) {
+    html += `
+      <a href="${t.linkUrl}" target="_blank" class="link-btn" onclick="event.stopPropagation();">
+        Open Link
+      </a>`;
   }
+
+  // 2. If there's an image (QR or otherwise), include it
+  // The 'qr-img' class keeps it hidden on screen but visible for printing
+  if (t.imageUrl) {
+    const isQR = t.imageUrl.includes('api.qrserver.com');
+    html += `<img src="${t.imageUrl}" class="${isQR ? 'qr-img' : ''} task-image" alt="Task Media">`;
+  }
+
+  return html;
+}
+  
+function toggle(id, el) {
+    const isDone = el.checked;
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+    // Instant UI feedback: update all instances of this task ID
+    document.querySelectorAll('input').forEach(input => {
+      if (input.getAttribute('onchange')?.includes(`'${id}'`)) {
+        input.checked = isDone;
+        input.parentElement.classList.toggle('is-done', isDone);
+      }
+    });
+  }
+
+  function updateColors(palette) {
+    if (!palette) return;
+    const root = document.documentElement;
+    root.style.setProperty('--primary', palette.primary);
+    root.style.setProperty('--secondary', palette.secondary);
+    root.style.setProperty('--bg', palette.bg || '#f8fafc');
+  }
+
+
 </script>
 </body>
 </html>
