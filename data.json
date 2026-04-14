@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T19:02:58.604Z",
+  "generated": "2026-04-14T19:03:31.089Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -894,6 +894,177 @@
               "linkUrl": null,
               "done": false,
               "id": "Amos-W36-Physical Training-Fri"
+            }
+          ]
+        },
+        {
+          "subject": "Science",
+          "curriculum": "Biology 🧭",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "4/6",
+              "rawDate": 1775451600000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Science-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/7",
+              "rawDate": 1775538000000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Science-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/8",
+              "rawDate": 1775624400000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Science-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/9",
+              "rawDate": 1775710800000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Science-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/10",
+              "rawDate": 1775797200000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Science-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "week": 35,
+              "task": "Chapter 7.1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Science-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "week": 35,
+              "task": "Chapter 7.2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Science-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "week": 35,
+              "task": "Chapter 7.3",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Science-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "week": 35,
+              "task": "Chapter 7.4",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Science-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "week": 35,
+              "task": "Chapter 7.5",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Science-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "Labs for Chapter 2-6",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Science-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "Continue Labs",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Science-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/22",
+              "rawDate": 1776834000000,
+              "week": 36,
+              "task": "Continue Labs",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Science-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/23",
+              "rawDate": 1776920400000,
+              "week": 36,
+              "task": "Chapter 7 test",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Science-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/24",
+              "rawDate": 1777006800000,
+              "week": 36,
+              "task": "Chapter 8.1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Science-Fri"
             }
           ]
         },
