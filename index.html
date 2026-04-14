@@ -401,41 +401,38 @@ function patchProgressInDom(progressMap) {
   });
 }
 
-function loadFromJSON(studentName, weekNum) {
-  if (allData && allData.studentData) {
-    const studentInfo = allData.studentData.find(s => s.student === studentName);
-    
-    if (studentInfo) {
-      const displayWeek = weekNum || studentInfo.weekNum;
-      
-      const filteredGrid = studentInfo.grid.map(subject => {
-        return {
-          subject: subject.subject,
-          curriculum: subject.curriculum,
-          tasks: subject.tasks.filter(t => t.week == displayWeek)
-        };
-      }).filter(subject => subject.tasks.length > 0);
-
-      const dataToRender = {
-        student: studentInfo.student,
-        palette: studentInfo.palette,
-        weekNum: displayWeek,
-        grid: filteredGrid
-      };
-
-      renderDashboard(dataToRender);
-      return;
-    }
+function loadFromJson(studentName, weekNum) {
+  if (!cachedConfig || !cachedConfig.studentData) {
+    // Fall back to GAS if JSON isn't available
+    fetch(API_URL + '?action=getData&student=' + encodeURIComponent(studentName) + '&week=' + encodeURIComponent(weekNum || ''))
+      .then(r => r.json())
+      .then(function(data) {
+        lastData = data;
+        updateCSSPalette(data.palette);
+        drawGrid();
+      });
+    return;
   }
 
-  const fetchUrl = API_URL + '?action=getData&student=' + encodeURIComponent(studentName) + '&week=' + encodeURIComponent(weekNum || '');
+  // Find the student in the new flat structure
+  const studentData = cachedConfig.studentData.find(s => s.student === studentName);
   
-  fetch(fetchUrl)
-    .then(r => r.json())
-    .then(function(data) {
-      renderDashboard(data);
-    })
-    .catch(err => console.error("GAS Fallback Error:", err));
+  if (!studentData) {
+    document.getElementById('content').innerHTML = '<div style="color:red;">Student not found</div>';
+    return;
+  }
+
+  // In your new JSON, studentData IS the week's data
+  lastData = {
+    student: studentData.student,
+    weekNum: studentData.weekNum,
+    days: studentData.days,
+    grid: studentData.grid,
+    palette: studentData.palette
+  };
+
+  updateCSSPalette(studentData.palette);
+  drawGrid();
 }
 
   function updateCSSPalette(palette) {
