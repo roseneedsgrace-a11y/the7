@@ -538,11 +538,12 @@ window.onload = function() {
 
 function renderMedia(t) {
   let html = '';
-  // If there's a link, create the button
   if (t.linkUrl) {
-    html += `<a href="${t.linkUrl}" target="_blank" class="link-btn" onclick="event.stopPropagation();">Open Link</a>`;
+    html += `<a href="${t.linkUrl}" target="_blank" 
+      class="link-btn" 
+      style="background:red !important; color:white !important; display:inline-flex !important; text-decoration:none !important; padding:8px 16px; border-radius:20px;"
+      onclick="event.stopPropagation();">Open Link</a>`;
   }
-  // If there's an image (or QR), show it
   if (t.imageUrl) {
     const isQR = t.imageUrl.includes('api.qrserver.com');
     html += `<img src="${t.imageUrl}" class="${isQR ? 'qr-img' : ''} task-image" alt="Task Media">`;
