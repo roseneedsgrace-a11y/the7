@@ -272,9 +272,11 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
         );
         
         if (t) {
-          // NEW: Check local storage for real-time overrides
+          // --- OVERRIDE SECTION ---
           const localProgress = JSON.parse(localStorage.getItem('local_progress') || '{}');
+          // If the ID exists in local storage, use that. Otherwise, use the JSON 'done' status.
           const isTaskDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
+          // ---------------------------------
         
           const taskDate = new Date(t.rawDate).getTime();
 
