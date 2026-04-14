@@ -259,11 +259,12 @@ function render() {
     student.grid.forEach(row => {
       tableHtml += `<tr><td class="subject-cell">${row.subject}<span class="curriculum-subtitle">${row.curriculum || ''}</span></td>`;
       
-      days.forEach((dayName, dayIdx) => {
-        // Updated search to look for the SPECIFIC week selected in the UI
-        const t = row.tasks.find(task => task.day === dayName && task.week === targetWeek);
-        
-        if (t) {
+    days.forEach((dayName, dayIdx) => {
+      // FIX: Match by both Day and the Week Number currently in the input box
+      const targetWeek = parseInt(document.getElementById('weekInput').value);
+      const t = row.tasks.find(task => task.day === dayName && task.week === targetWeek);
+      
+      if (t) {
           const taskDate = new Date(t.rawDate).getTime();
           let statusClass = '';
           if (taskDate < todayTs) statusClass = 'due-late';
