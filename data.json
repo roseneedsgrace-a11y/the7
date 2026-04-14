@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T20:05:09.722Z",
+  "generated": "2026-04-14T20:06:02.654Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2249,7 +2249,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutube.com%2Fplaylist%3Flist%3DPLKTUEjoI9EhsLRrAQwC9hOp9MJMcXOG54%26si%3D6FZOxg_OFmfRAzEg",
               "linkUrl": "https://youtube.com/playlist?list=PLKTUEjoI9EhsLRrAQwC9hOp9MJMcXOG54&si=6FZOxg_OFmfRAzEg",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Thu"
             },
             {
