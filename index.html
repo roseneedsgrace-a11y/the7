@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -235,58 +235,108 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
       });
   };
 
-  function load() {
-    const studentName = document.getElementById('student').value;
-    console.log("Loading data for:", studentName);
+function load(isInitial) {
+  const studentName = document.getElementById('student').value;
+  const weekNum = parseInt(document.getElementById('week').value);
 
-    if (!cachedConfig || !cachedConfig.studentData) {
-      console.error("No studentData found in cachedConfig");
-      return;
-    }
+  if (!cachedConfig) return;
 
-    const studentData = cachedConfig.studentData.find(s => s.student === studentName);
-    
-    if (studentData) {
-      lastData = studentData;
-      console.log("lastData set to:", lastData);
-      updateCSSPalette(studentData.palette);
-      drawGrid();
-    } else {
-      console.error("Could not find data for student:", studentName);
-      document.getElementById('content').innerHTML = "Student data not found.";
-    }
+  // 1. Check if the requested week is already in our cached JSON
+  // We assume your JSON structure has an array or object of weeks
+  const studentData = cachedConfig.studentData.find(s => s.student === studentName);
+  
+  // Logic: If the requested week is within the 3-week buffer of the JSON
+  // (Adjust the min/max based on what your current JSON file actually contains)
+  const jsonStartWeek = cachedConfig.config.startWeek || 34;
+  const jsonEndWeek = jsonStartWeek + 2; // Covers 3 weeks total
+
+  if (weekNum >= jsonStartWeek && weekNum <= jsonEndWeek) {
+    console.log("Loading from local JSON buffer...");
+    processAndDraw(studentData, weekNum);
+  } else {
+    console.log("Week outside JSON range. Reverting to GAS...");
+    fetchFromGAS(studentName, weekNum);
   }
+}
 
-  function drawGrid() {
+// Helper to handle the actual drawing
+function processAndDraw(studentData, weekNum) {
+  if (studentData) {
+    lastData = JSON.parse(JSON.stringify(studentData)); // Deep copy
+    lastData.currentDisplayWeek = weekNum;
+    updateCSSPalette(studentData.palette);
+    drawGrid();
+  }
+}
+
+  function fetchFromGAS(studentName, weekNum) {
+  const contentDiv = document.getElementById('content');
+  contentDiv.innerHTML = `<div style="text-align:center; padding: 50px; color: var(--primary);">
+    Searching the archives for Week ${weekNum}...</div>`;
+
+  // Call GAS with the specific week requested
+  const fetchUrl = `${API_URL}?action=getWeekData&student=${encodeURIComponent(studentName)}&week=${weekNum}`;
+
+  fetch(fetchUrl)
+    .then(r => r.json())
+    .then(newData => {
+      console.log("Received data from GAS:", newData);
+      
+      // Append this new data to our local cache so we don't have to fetch it again
+      if (cachedConfig && cachedConfig.studentData) {
+        const sIdx = cachedConfig.studentData.findIndex(s => s.student === studentName);
+        if (sIdx !== -1) {
+          // If your JSON uses a 'weeks' object, append it there
+          if (!cachedConfig.studentData[sIdx].weeks) cachedConfig.studentData[sIdx].weeks = {};
+          cachedConfig.studentData[sIdx].weeks[weekNum] = newData;
+        }
+      }
+
+      // Update the display with the new data
+      lastData = newData;
+      lastData.currentDisplayWeek = weekNum;
+      drawGrid();
+    })
+    .catch(err => {
+      console.error("GAS Retrieval failed:", err);
+      contentDiv.innerHTML = "Unable to load data from server. Please check your connection.";
+    });
+}
+
+  
+function drawGrid() {
   if (!lastData || !lastData.grid) return;
 
-  // 1. Intelligence: Determine the "Monday" of this week
-  // We use the top-level 'date' from the JSON as the anchor
-  const fileDateStr = cachedConfig.date; // e.g., "Tuesday, April 14"
-  const anchorDate = new Date(fileDateStr + ", 2026"); 
+  const selectedWeek = lastData.currentDisplayWeek || lastData.weekNum;
   
-  // Find Monday by subtracting the current day index (Mon=1, Tue=2...)
-  const dayIndex = anchorDate.getDay(); // Sun=0, Mon=1...
+  // Anchor Date Intelligence
+  const fileDateStr = cachedConfig.date; 
+  const anchorDate = new Date(fileDateStr + ", 2026");
+  const anchorWeek = cachedConfig.config.currentWeek || 35;
+  
+  const weekDiff = selectedWeek - anchorWeek;
+  
+  const dayIndex = anchorDate.getDay(); 
   const diffToMonday = dayIndex === 0 ? -6 : 1 - dayIndex;
-  const monday = new Date(anchorDate);
-  monday.setDate(anchorDate.getDate() + diffToMonday);
+  const anchorMonday = new Date(anchorDate);
+  anchorMonday.setDate(anchorDate.getDate() + diffToMonday);
 
-  // 2. Build the days array dynamically if it's missing
-  let days = lastData.days || [];
-  if (days.length === 0) {
-    const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-    for (let i = 0; i < 5; i++) {
-      const d = new Date(monday);
-      d.setDate(monday.getDate() + i);
-      days.push({
-        day: dayNames[i],
-        date: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-      });
-    }
+  const targetMonday = new Date(anchorMonday);
+  targetMonday.setDate(anchorMonday.getDate() + (weekDiff * 7));
+
+  // Generate Headers
+  let days = [];
+  const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+  for (let i = 0; i < 5; i++) {
+    const d = new Date(targetMonday);
+    d.setDate(targetMonday.getDate() + i);
+    days.push({
+      day: dayNames[i],
+      date: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+    });
   }
 
-  document.getElementById('headerTitle').innerText = 
-    lastData.student + "'s Work - Week " + (lastData.weekNum || "");
+  document.getElementById('headerTitle').innerText = lastData.student + "'s Work - Week " + selectedWeek;
   
   // 3. Build Table
   let tableHtml = '<div class="table-view"><table><thead><tr><th>Subject</th>';
