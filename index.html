@@ -258,33 +258,45 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
   }
 
   function drawGrid() {
-    if (!lastData || !lastData.days || !lastData.grid) {
-      console.error("drawGrid called but lastData.days or lastData.grid is missing", lastData);
+    // 1. Check if grid exists (this is mandatory)
+    if (!lastData || !lastData.grid) {
+      console.error("drawGrid: grid is missing", lastData);
       return;
     }
 
-    document.getElementById('headerTitle').innerText = lastData.student + "'s Work - Week " + lastData.weekNum;
+    // 2. Identify the days. If the student doesn't have them, 
+    // we check the top level of cachedConfig or use a default.
+    const days = lastData.days || (cachedConfig && cachedConfig.days) || [];
+    
+    document.getElementById('headerTitle').innerText = lastData.student + "'s Work - Week " + (lastData.weekNum || "");
     
     // TABLE VIEW
     let html = '<div class="table-view"><table><thead><tr><th>Subject</th>';
-    lastData.days.forEach(d => {
-      html += `<th>${d.day}<br><small>${d.date}</small></th>`;
-    });
+    
+    // If we have days, draw the headers. If not, just draw 5 empty headers for a standard week.
+    if (days.length > 0) {
+      days.forEach(d => { html += `<th>${d.day}<br><small>${d.date || ''}</small></th>`; });
+    } else {
+      ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].forEach(d => { html += `<th>${d}</th>`; });
+    }
+    
     html += '</tr></thead><tbody>';
 
     lastData.grid.forEach(row => {
       html += `<tr><td class="subject-cell">${row.subject}</td>`;
-      row.tasks.forEach(t => {
-        const isDone = t.done ? 'is-done' : '';
-        const checked = t.done ? 'checked' : '';
-        html += `<td>
-          <label class="task-card ${isDone}">
-            <div class="task-text">${t.task || ''}</div>
-            <div class="status-indicator"></div>
-            <input type="checkbox" class="check-overlay" ${checked} onchange="toggle('${t.id}', this)">
-          </label>
-        </td>`;
-      });
+      if (row.tasks) {
+        row.tasks.forEach(t => {
+          const isDone = t.done ? 'is-done' : '';
+          const checked = t.done ? 'checked' : '';
+          html += `<td>
+            <label class="task-card ${isDone}">
+              <div class="task-text">${t.task || ''}</div>
+              <div class="status-indicator"></div>
+              <input type="checkbox" class="check-overlay" ${checked} onchange="toggle('${t.id}', this)">
+            </label>
+          </td>`;
+        });
+      }
       html += '</tr>';
     });
     html += '</tbody></table></div>';
