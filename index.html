@@ -66,7 +66,17 @@
     .status-indicator { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; position: absolute; bottom: 10px; right: 10px; display: flex; align-items: center; justify-content: center; color: transparent; }
     .is-done .status-indicator { background: var(--secondary); border-color: var(--secondary); color: white; }
     .is-done .status-indicator::after { content: '✓'; font-size: 12px; }
-    .check-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 2; }
+    .check-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  margin: 0;
+}
 
     /* STATUS MODE COLORS */
     .status-mode .due-late:not(.is-done) { background-color: #fdf2f8 !important; border-color: #fca5a5; }
@@ -462,10 +472,14 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
               <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
                 ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
                 <div class="media-container">${mediaHtml}</div>
-                <label class="status-indicator-wrap">
-                  <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
+                <div class="status-indicator-wrap" style="position:absolute; bottom:10px; right:10px; z-index:5;">
+                  <input type="checkbox" 
+                    style="position:absolute; opacity:0; width:18px; height:18px; cursor:pointer; z-index:6; margin:0;"
+                    ${isTaskDone ? 'checked' : ''} 
+                    data-id="${t.id}" 
+                    onchange="toggle('${t.id}', this)">
                   <div class="status-indicator"></div>
-                </label>
+                </div>
               </div>`;
 
             tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
