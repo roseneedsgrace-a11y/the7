@@ -538,15 +538,16 @@ function toggle(id, el) {
   });
 }
 
-  function updateColors(palette) {
-    if (!palette) return;
-    const root = document.documentElement;
-    root.style.setProperty('--primary', palette.primary);
-    root.style.setProperty('--secondary', palette.secondary);
-    root.style.setProperty('--bg', palette.bg || '#f8fafc');
-    const header = document.getElementById('siteHeader');
-    if (header) header.style.background = palette.primary;
-  }
+function updateColors(palette) {
+  console.log("Applying palette:", palette); // This will show up in your F12 Console
+  if (!palette) return;
+  const root = document.documentElement;
+  root.style.setProperty('--primary', palette.primary);
+  root.style.setProperty('--secondary', palette.secondary);
+  root.style.setProperty('--bg', palette.bg || '#f8fafc');
+  const header = document.getElementById('siteHeader');
+  if (header) header.style.background = palette.primary;
+}
     
 function getStudentFromUrl() {
   const params = new URLSearchParams(window.location.search);
