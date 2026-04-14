@@ -1,4 +1,4 @@
-e<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,362 +51,195 @@ e<!DOCTYPE html>
     .print-btn { background: #475569; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-left: auto; transition: background 0.2s; }
     .print-btn:hover { background: #1e293b; }
 
-    /* TABLE VIEW */
     .table-view table { width: 100%; border-collapse: separate; border-spacing: 10px; table-layout: fixed; }
     .table-view th { background: #e2e8f0; padding: 10px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; color: #475569; }
-    .subject-cell { 
-      width: 180px; background: var(--primary); color: white; font-weight: bold; 
-      font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;
-      padding: 20px 15px; border-radius: 8px; vertical-align: middle; text-align: left;
-    }
-    .subject-cell .curriculum-subtitle { 
-      display: block; font-weight: normal; font-size: 0.7rem; color: #F8FAFC; 
-      text-transform: none; letter-spacing: normal; margin-top: 5px; 
-    }
-    .task-card { background: var(--panel); border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px; min-height: 100px; display: flex; flex-direction: column; position: relative; cursor: pointer; transition: transform 0.1s; }
-    .task-card:active { transform: scale(0.98); }
-    .task-image { width: 60px; height: 60px; margin: 5px auto; display: block; object-fit: contain; }
-    .status-indicator { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: transparent; position: absolute; bottom: 10px; right: 10px; }
-    .is-done .status-indicator { border-color: var(--secondary); background: var(--secondary); color: white; }
-    .is-done .status-indicator::after { content: '✓'; }
-    .check-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 2; margin: 0; }
-    .status-mode .due-late:not(.is-done) { background-color: #fdf2f8 !important; border-color: #fca5a5; } 
-    .status-mode .due-warning:not(.is-done) { background-color: #ecfeff !important; border-color: #fde047; } 
-    .task-card.is-done { background: #f1f5f9 !important; opacity: 0.7; border-color: #cbd5e1; }
-    .task-card.is-done .task-text { text-decoration: line-through; color: #64748b; }
-    .task-text { font-size: 0.8rem; line-height: 1.3; white-space: pre-wrap; margin-bottom: 5px; flex-grow: 1; pointer-events: none; }
-
-    /* LIST VIEW */
-    .list-view { display: flex; flex-direction: column; gap: 14px; }
-    .day-block { background: var(--panel); border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; }
-    .day-header { padding: 12px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e2e8f0; background: #f8fafc; }
-    .day-header .day-name { font-size: 16px; font-weight: 700; color: var(--text); }
-    .day-header .day-date { font-size: 12px; color: #94a3b8; }
-    .day-header .progress-pill { margin-left: auto; font-size: 11px; background: #f1f5f9; color: #64748b; padding: 3px 9px; border-radius: 20px; white-space: nowrap; }
-    .list-task-row { display: flex; align-items: flex-start; gap: 12px; padding: 11px 16px; border-bottom: 1px solid #f1f5f9; position: relative; cursor: pointer; transition: background 0.15s; }
-    .list-task-row:last-child { border-bottom: none; }
-    .list-task-row:active { background: #f8fafc; }
-    .list-task-row.is-done { background: #f8fafc; opacity: 0.7; }
-    .list-task-row.is-done .list-task-text { text-decoration: line-through; color: #94a3b8; }
-    .status-mode .list-task-row.due-late:not(.is-done) { background: #fdf2f8; border-left: 3px solid #fca5a5; padding-left: 13px; }
-    .status-mode .list-task-row.due-warning:not(.is-done) { background: #ecfeff; border-left: 3px solid #fde047; padding-left: 13px; }
-    .list-checkbox { width: 20px; height: 20px; border-radius: 5px; border: 2px solid #cbd5e1; flex-shrink: 0; margin-top: 2px; display: flex; align-items: center; justify-content: center; transition: background 0.15s, border-color 0.15s; }
-    .list-task-row.is-done .list-checkbox { background: var(--secondary); border-color: var(--secondary); }
-    .list-checkbox::after { content: ''; display: none; width: 5px; height: 9px; border: 2px solid white; border-top: none; border-left: none; transform: rotate(45deg) translate(-1px, -1px); }
-    .list-task-row.is-done .list-checkbox::after { display: block; }
-    .list-task-info { flex: 1; min-width: 0; }
-    .list-subject-name { font-size: 11px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 1px; }
-    .list-curriculum { font-size: 11px; color: #94a3b8; margin-bottom: 3px; }
-    .list-task-text { font-size: 14px; color: #334155; line-height: 1.4; }
-    .list-task-image { width: 50px; height: 50px; object-fit: contain; flex-shrink: 0; border-radius: 4px; }
-    .list-check-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 2; margin: 0; }
-
-    /* LINK BUTTON */
-    .link-btn { display: inline-flex; align-items: center; gap: 6px; margin: 6px auto 4px; padding: 7px 14px; background: var(--primary); color: white; border-radius: 8px; font-size: 0.8rem; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: opacity 0.15s; z-index: 10; position: relative; }
-    .link-btn:hover { opacity: 0.85; }
-    .link-btn::before { content: '↗'; font-size: 0.9rem; }
-    .qr-img { display: none; width: 50px; height: 50px; }
-
-    /* SWITCH */
-    .switch { position: relative; display: inline-block; width: 40px; height: 20px; margin: 0 10px; }
-    .switch input { opacity: 0; width: 0; height: 0; }
-    .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #cbd5e1; transition: .4s; border-radius: 20px; }
-    .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
-    input:checked + .slider { background-color: var(--secondary); }
-    input:checked + .slider:before { transform: translateX(20px); }
-
-    /* RESPONSIVE */
-    .table-view { display: block; }
-    .list-view { display: none; }
-    @media (max-width: 700px) {
-      .table-view { display: none; }
-      .list-view { display: flex; }
-    }
+    .subject-cell { width: 180px; background: var(--primary); color: white; font-weight: bold; font-size: 0.95rem; text-transform: uppercase; padding: 20px 15px; border-radius: 8px; vertical-align: middle; }
     
-    #scrollTopBtn {
-        display: flex; align-items: center; justify-content: center;
-        position: fixed; bottom: 24px; right: 16px;
-        width: 44px; height: 44px; border-radius: 50%;
-        background: var(--primary); color: white; font-size: 20px;
-        border: none; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        opacity: 0; pointer-events: none; transition: opacity 0.25s; z-index: 999;
-    }
-    #scrollTopBtn.visible { opacity: 1; pointer-events: auto; }
+    .task-card { background: var(--panel); border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px; min-height: 100px; display: flex; flex-direction: column; position: relative; cursor: pointer; }
+    .status-indicator { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; position: absolute; bottom: 10px; right: 10px; display: flex; align-items: center; justify-content: center; }
+    .is-done { background: #f1f5f9; opacity: 0.7; }
+    .is-done .status-indicator { background: var(--secondary); border-color: var(--secondary); color: white; }
+    .is-done .status-indicator::after { content: '✓'; }
+    .check-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 2; }
+    .task-text { font-size: 0.8rem; line-height: 1.3; pointer-events: none; }
+    .task-image { width: 60px; height: 60px; margin: 5px auto; display: block; object-fit: contain; }
 
-    @media print {
-      .controls, .site-header, #adminLink, #scrollTopBtn { display: none !important; }
-      .page-header { display: block !important; }
-      @page { size: landscape; margin: 0.25in; }
-    }
+    #scrollTopBtn { position: fixed; bottom: 24px; right: 16px; width: 44px; height: 44px; border-radius: 50%; background: var(--primary); color: white; border: none; cursor: pointer; opacity: 0; transition: 0.3s; z-index: 999; }
+    #scrollTopBtn.visible { opacity: 1; }
+
+    @media print { .controls, .site-header { display: none !important; } .page-header { display: block !important; } }
   </style>
 </head>
 <body>
+
 <div class="site-header" id="siteHeader" style="display:none;">
   <h1>Thus Far the Lord<br>Has Helped Us</h1>
 </div>
-<div id="printHeader" class="page-header"><h1 id="headerTitle">Planner</h1></div>
 
 <div class="controls">
-  <div><strong>Student:</strong>
-    <select id="student" onchange="load()">
-      <option>Loading...</option>
-    </select>
-  </div>
-  <div><strong>Week:</strong><input type="number" id="week" min="1" max="36" style="width: 60px" onchange="load()"></div>
-  <label style="display:flex; align-items:center; font-size:13px; cursor:pointer;">Status Mode
-    <div class="switch"><input type="checkbox" id="statusToggle" onchange="refreshClasses()"><span class="slider"></span></div>
-  </label>
-  <button class="print-btn" onclick="printPage()">Print</button>
-</div>
-
-<div id="adminLink" style="display:none; text-align:right; margin-bottom: 16px; display:flex; justify-content:flex-end; gap:16px;">
-  <a id="parentAnchor" href="parents.html" 
-    style="font-size: 12px; color: #94a3b8; text-decoration: none;">
-    📋 Parents dashboard
-  </a>
-  <a id="adminAnchor" href="#" target="_blank"
-     style="font-size: 12px; color: #94a3b8; text-decoration: none;">
-    ⚙️ Admin settings
-  </a>
+  <div><strong>Student:</strong> <select id="student" onchange="load()"><option>Loading...</option></select></div>
+  <div><strong>Week:</strong> <input type="number" id="week" min="1" max="36" onchange="load()"></div>
+  <button class="print-btn" onclick="window.print()">Print</button>
 </div>
 
 <div id="content">Loading assignments...</div>
 <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<script>  
-const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
+<script>
+  const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
   let lastData = null;
   let cachedConfig = null;
 
   function getBaseUrl() {
-    const path = window.location.pathname.replace(/\/[^/]*$/, '/');
-    return window.location.origin + path;
+    return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
   }
 
   window.onload = function() {
     const params = new URLSearchParams(window.location.search);
     const preselect = params.get('student') || '';
-    
-    if (params.get('hideheader') !== 'true') document.getElementById('siteHeader').style.display = 'flex';
-    document.getElementById('adminLink').style.display = 'flex';
-    
-    document.getElementById('adminAnchor').href = API_URL + '?page=config';
-    document.getElementById('parentAnchor').href = getBaseUrl() + 'parents on gituhub.html';
+    document.getElementById('siteHeader').style.display = 'flex';
 
-    const jsonUrl = getBaseUrl() + 'data.json?t=' + Date.now();
-    console.log("Fetching from:", jsonUrl);
-
-    fetch(jsonUrl)
+    fetch(getBaseUrl() + 'data.json?t=' + Date.now())
       .then(r => r.json())
       .then(json => {
         console.log("JSON object received:", json);
         cachedConfig = json;
         
-        // Populate Student Dropdown
+        // Setup Student Dropdown
         const sel = document.getElementById('student');
         sel.innerHTML = '';
-        
-        // Check if students array exists
-        const students = json.students || [];
-        students.forEach(s => {
+        (json.students || []).forEach(s => {
           const opt = document.createElement('option');
-          opt.value = s.name;
-          opt.textContent = s.name;
+          opt.value = s.name; opt.textContent = s.name;
           sel.appendChild(opt);
         });
-        
         if (preselect) sel.value = preselect;
 
-        // Start initial load
-        load();
+        // Set initial week from JSON config
+        if (json.config && json.config.currentWeek) {
+          document.getElementById('week').value = json.config.currentWeek;
+        }
 
-        // Sync progress from GAS
+        load(true);
+
+        // Fetch latest progress from GAS
         fetch(API_URL + '?action=getProgress')
           .then(r => r.json())
           .then(progressMap => {
-            console.log("Progress map loaded");
-            applyProgressToCache(progressMap);
-            drawGrid(); // Redraw with checkmarks
-          })
-          .catch(e => console.warn("Progress sync failed", e));
+            syncProgress(progressMap);
+            drawGrid();
+          });
       })
-      .catch(err => {
-        console.error("JSON fetch/parse error:", err);
-      });
+      .catch(err => console.error("Initial load failed:", err));
   };
 
-function load(isInitial) {
-  const studentName = document.getElementById('student').value;
-  const weekNum = parseInt(document.getElementById('week').value);
+  function load(isInitial) {
+    const studentName = document.getElementById('student').value;
+    const weekNum = parseInt(document.getElementById('week').value);
+    if (!cachedConfig) return;
 
-  if (!cachedConfig) return;
-
-  // 1. Check if the requested week is already in our cached JSON
-  // We assume your JSON structure has an array or object of weeks
-  const studentData = cachedConfig.studentData.find(s => s.student === studentName);
-  
-  // Logic: If the requested week is within the 3-week buffer of the JSON
-  // (Adjust the min/max based on what your current JSON file actually contains)
-  const jsonStartWeek = cachedConfig.config.startWeek || 34;
-  const jsonEndWeek = jsonStartWeek + 2; // Covers 3 weeks total
-
-  if (weekNum >= jsonStartWeek && weekNum <= jsonEndWeek) {
-    console.log("Loading from local JSON buffer...");
-    processAndDraw(studentData, weekNum);
-  } else {
-    console.log("Week outside JSON range. Reverting to GAS...");
-    fetchFromGAS(studentName, weekNum);
+    const studentData = cachedConfig.studentData.find(s => s.student === studentName);
+    const jsonStartWeek = (cachedConfig.config && cachedConfig.config.currentWeek) || weekNum;
+    
+    // Check if the requested week is the one in our JSON (which handles ~3 weeks)
+    // Adjust logic if your JSON specifically nests weeks: studentData.weeks[weekNum]
+    if (weekNum >= (jsonStartWeek - 1) && weekNum <= (jsonStartWeek + 1)) {
+      console.log("Loading week " + weekNum + " from local JSON.");
+      lastData = JSON.parse(JSON.stringify(studentData));
+      lastData.currentDisplayWeek = weekNum;
+      updateCSSPalette(studentData.palette);
+      drawGrid();
+    } else {
+      console.log("Week outside JSON range. Reverting to GAS...");
+      fetchFromGAS(studentName, weekNum);
+    }
   }
-}
-
-// Helper to handle the actual drawing
-function processAndDraw(studentData, weekNum) {
-  if (studentData) {
-    lastData = JSON.parse(JSON.stringify(studentData)); // Deep copy
-    lastData.currentDisplayWeek = weekNum;
-    updateCSSPalette(studentData.palette);
-    drawGrid();
-  }
-}
 
   function fetchFromGAS(studentName, weekNum) {
-  const contentDiv = document.getElementById('content');
-  contentDiv.innerHTML = `<div style="text-align:center; padding: 50px; color: var(--primary);">
-    Searching the archives for Week ${weekNum}...</div>`;
-
-  // Call GAS with the specific week requested
-  const fetchUrl = `${API_URL}?action=getWeekData&student=${encodeURIComponent(studentName)}&week=${weekNum}`;
-
-  fetch(fetchUrl)
-    .then(r => r.json())
-    .then(newData => {
-      console.log("Received data from GAS:", newData);
-      
-      // Append this new data to our local cache so we don't have to fetch it again
-      if (cachedConfig && cachedConfig.studentData) {
-        const sIdx = cachedConfig.studentData.findIndex(s => s.student === studentName);
-        if (sIdx !== -1) {
-          // If your JSON uses a 'weeks' object, append it there
-          if (!cachedConfig.studentData[sIdx].weeks) cachedConfig.studentData[sIdx].weeks = {};
-          cachedConfig.studentData[sIdx].weeks[weekNum] = newData;
-        }
-      }
-
-      // Update the display with the new data
-      lastData = newData;
-      lastData.currentDisplayWeek = weekNum;
-      drawGrid();
-    })
-    .catch(err => {
-      console.error("GAS Retrieval failed:", err);
-      contentDiv.innerHTML = "Unable to load data from server. Please check your connection.";
-    });
-}
-
-  
-function drawGrid() {
-  if (!lastData || !lastData.grid) return;
-
-  const selectedWeek = lastData.currentDisplayWeek || lastData.weekNum;
-  
-  // Anchor Date Intelligence
-  const fileDateStr = cachedConfig.date; 
-  const anchorDate = new Date(fileDateStr + ", 2026");
-  const anchorWeek = cachedConfig.config.currentWeek || 35;
-  
-  const weekDiff = selectedWeek - anchorWeek;
-  
-  const dayIndex = anchorDate.getDay(); 
-  const diffToMonday = dayIndex === 0 ? -6 : 1 - dayIndex;
-  const anchorMonday = new Date(anchorDate);
-  anchorMonday.setDate(anchorDate.getDate() + diffToMonday);
-
-  const targetMonday = new Date(anchorMonday);
-  targetMonday.setDate(anchorMonday.getDate() + (weekDiff * 7));
-
-  // Generate Headers
-  let days = [];
-  const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-  for (let i = 0; i < 5; i++) {
-    const d = new Date(targetMonday);
-    d.setDate(targetMonday.getDate() + i);
-    days.push({
-      day: dayNames[i],
-      date: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-    });
+    document.getElementById('content').innerHTML = "Fetching Week " + weekNum + " from GAS...";
+    fetch(`${API_URL}?action=getWeekData&student=${encodeURIComponent(studentName)}&week=${weekNum}`)
+      .then(r => r.json())
+      .then(newData => {
+        lastData = newData;
+        lastData.currentDisplayWeek = weekNum;
+        drawGrid();
+      })
+      .catch(err => {
+        console.error("GAS Fetch Error:", err);
+        document.getElementById('content').innerHTML = "Error loading from GAS.";
+      });
   }
 
-  document.getElementById('headerTitle').innerText = lastData.student + "'s Work - Week " + selectedWeek;
-  
-  // 3. Build Table
-  let tableHtml = '<div class="table-view"><table><thead><tr><th>Subject</th>';
-  days.forEach(d => {
-    tableHtml += `<th>${d.day}<br><small>${d.date}</small></th>`;
-  });
-  tableHtml += '</tr></thead><tbody>';
+  function drawGrid() {
+    if (!lastData || !lastData.grid) return;
 
-  lastData.grid.forEach(row => {
-    tableHtml += `<tr><td class="subject-cell">${row.subject}</td>`;
-    const tasks = row.tasks || [];
-    // Ensure we always draw exactly as many columns as we have 'days'
-    for (let i = 0; i < days.length; i++) {
-      const t = tasks[i];
-      if (t && (t.task || t.imageUrl)) {
-        const isDone = t.done ? 'is-done' : '';
-        tableHtml += `<td>
-          <label class="task-card ${isDone}">
+    // Intelligence: Determine Dates
+    const selectedWeek = lastData.currentDisplayWeek || 1;
+    const anchorDate = new Date((cachedConfig.date || "April 14, 2026") + ", 2026");
+    const anchorWeek = (cachedConfig.config && cachedConfig.config.currentWeek) || 35;
+    const weekDiff = selectedWeek - anchorWeek;
+
+    const dayIdx = anchorDate.getDay();
+    const diffToMon = dayIdx === 0 ? -6 : 1 - dayIdx;
+    const targetMonday = new Date(anchorDate);
+    targetMonday.setDate(anchorDate.getDate() + diffToMon + (weekDiff * 7));
+
+    let html = '<div class="table-view"><table><thead><tr><th>Subject</th>';
+    const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+    dayNames.forEach((name, i) => {
+      const d = new Date(targetMonday); d.setDate(targetMonday.getDate() + i);
+      const dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      html += `<th>${name}<br><small>${dateStr}</small></th>`;
+    });
+    html += '</tr></thead><tbody>';
+
+    lastData.grid.forEach(row => {
+      html += `<tr><td class="subject-cell">${row.subject}</td>`;
+      const tasks = row.tasks || [];
+      for (let i = 0; i < 5; i++) {
+        const t = tasks[i];
+        if (t && (t.task || t.imageUrl)) {
+          const isDone = t.done ? 'is-done' : '';
+          html += `<td><label class="task-card ${isDone}">
             <div class="task-text">${t.task || ''}</div>
             ${t.imageUrl ? `<img src="${t.imageUrl}" class="task-image">` : ''}
             <div class="status-indicator"></div>
             <input type="checkbox" class="check-overlay" ${t.done ? 'checked' : ''} onchange="toggle('${t.id}', this)">
-          </label>
-        </td>`;
-      } else {
-        tableHtml += '<td><div class="task-card" style="border:1px dashed #cbd5e1; opacity:0.3;"></div></td>';
+          </label></td>`;
+        } else {
+          html += '<td><div class="task-card" style="border:1px dashed #cbd5e1; opacity:0.3;"></div></td>';
+        }
       }
-    }
-    tableHtml += '</tr>';
-  });
-  tableHtml += '</tbody></table></div>';
-
-  // 4. Update UI
-  document.getElementById('content').innerHTML = tableHtml;
-}
-  function applyProgressToCache(progressMap) {
-    if (!cachedConfig || !cachedConfig.studentData) return;
-    cachedConfig.studentData.forEach(s => {
-      if (s.grid) {
-        s.grid.forEach(row => {
-          row.tasks.forEach(t => {
-            t.done = (progressMap[t.id] === true);
-          });
-        });
-      }
+      html += '</tr>';
     });
+    html += '</tbody></table></div>';
+    document.getElementById('content').innerHTML = html;
   }
 
   function toggle(id, el) {
-    const isDone = el.checked;
-    el.parentElement.classList.toggle('is-done', isDone);
-    
-    // Update cache
-    applyProgressToCache({ [id]: isDone });
-    
-    // Update GAS
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+    el.parentElement.classList.toggle('is-done', el.checked);
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
+  }
+
+  function syncProgress(progressMap) {
+    if (!cachedConfig) return;
+    cachedConfig.studentData.forEach(s => {
+      if (s.grid) s.grid.forEach(row => {
+        if (row.tasks) row.tasks.forEach(t => { t.done = progressMap[t.id] === true; });
+      });
+    });
   }
 
   function updateCSSPalette(palette) {
     if (!palette) return;
     const root = document.documentElement;
     root.style.setProperty('--primary', palette.primary || '#94a3b8');
-    root.style.setProperty('--secondary', palette.secondary || '#cbd5e1');
     root.style.setProperty('--bg', palette.bg || '#f8fafc');
   }
 
-  function printPage() { window.print(); }
-
+  window.onscroll = function() {
+    document.getElementById('scrollTopBtn').classList.toggle('visible', window.scrollY > 200);
+  };
 </script>
-
 </body>
 </html>
