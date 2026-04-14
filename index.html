@@ -114,11 +114,14 @@
         });
         if (preselect) sel.value = preselect;
 
-        // Set Week Input to match JSON's weekNum
+        // Set Week Input carefully to avoid NaN
+        const weekInput = document.getElementById('week');
         if (json.config && json.config.currentWeek) {
-          document.getElementById('week').value = json.config.currentWeek;
+          weekInput.value = json.config.currentWeek;
         } else if (json.studentData && json.studentData[0]) {
-          document.getElementById('week').value = json.studentData[0].weekNum;
+          weekInput.value = json.studentData[0].weekNum;
+        } else {
+          weekInput.value = 35; // Ultimate fallback
         }
 
         load(true);
@@ -131,53 +134,59 @@
           });
       })
       .catch(err => {
-          console.error("Failed to load JSON:", err);
-          document.getElementById('content').innerHTML = "Error loading initial data.";
+          console.error("JSON Error:", err);
+          document.getElementById('content').innerHTML = "Check data.json formatting.";
       });
   };
 
   function load(isInitial) {
-    const studentName = document.getElementById('student').value;
-    const weekNum = parseInt(document.getElementById('week').value);
     if (!cachedConfig) return;
-
+    
+    const studentName = document.getElementById('student').value;
+    let weekVal = document.getElementById('week').value;
+    
+    // SAFETY: If week is blank or NaN, force it to the current week
+    if (!weekVal || isNaN(weekVal)) {
+      weekVal = (cachedConfig.config && cachedConfig.config.currentWeek) || 35;
+      document.getElementById('week').value = weekVal;
+    }
+    
+    const weekNum = parseInt(weekVal);
     const studentData = cachedConfig.studentData.find(s => s.student === studentName);
     
-    // BOUNDARY CHECK: Does this student object match the week we want?
-    // Your JSON logic: lastData.weekNum is usually 35. 
-    if (studentData && studentData.weekNum === weekNum) {
-      console.log("Week " + weekNum + " found in JSON. Loading locally.");
+    // Match local data if the week requested matches the week in the JSON file
+    if (studentData && (studentData.weekNum === weekNum)) {
       lastData = JSON.parse(JSON.stringify(studentData));
       lastData.currentDisplayWeek = weekNum;
       updateCSSPalette(studentData.palette);
       drawGrid();
     } else {
-      console.log("Week " + weekNum + " is outside this JSON's scope. Reverting to GAS.");
       fetchFromGAS(studentName, weekNum);
     }
   }
 
   function fetchFromGAS(studentName, weekNum) {
+    // If weekNum is still NaN here, something is very wrong, so we stop.
+    if (isNaN(weekNum)) return;
+
     document.getElementById('content').innerHTML = "Fetching Week " + weekNum + " from archives...";
     fetch(`${API_URL}?action=getWeekData&student=${encodeURIComponent(studentName)}&week=${weekNum}`)
       .then(r => r.json())
       .then(newData => {
-        if (!newData || !newData.grid) throw new Error("Invalid GAS data");
+        if (!newData || !newData.grid) throw new Error();
         lastData = newData;
         lastData.currentDisplayWeek = weekNum;
         drawGrid();
       })
-      .catch(err => {
-        console.error("GAS Fetch Error:", err);
-        document.getElementById('content').innerHTML = "Week " + weekNum + " is not available on the server.";
+      .catch(() => {
+        document.getElementById('content').innerHTML = "Week " + weekNum + " not found on server.";
       });
   }
 
   function drawGrid() {
     if (!lastData || !lastData.grid) return;
 
-    // Intelligence: Determine Dates based on the selected week
-    const selectedWeek = lastData.currentDisplayWeek || lastData.weekNum;
+    const selectedWeek = lastData.currentDisplayWeek || lastData.weekNum || 35;
     const anchorDate = new Date((cachedConfig.date || "April 14, 2026") + ", 2026");
     const anchorWeek = (cachedConfig.config && cachedConfig.config.currentWeek) || 35;
     const weekDiff = selectedWeek - anchorWeek;
@@ -221,7 +230,6 @@
 
   function toggle(id, el) {
     el.parentElement.classList.toggle('is-done', el.checked);
-    // Silent background update to GAS
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
   }
 
@@ -244,6 +252,49 @@
   window.onscroll = function() {
     document.getElementById('scrollTopBtn').classList.toggle('visible', window.scrollY > 200);
   };
+
+function loadFromJson(studentName, weekNum) {
+  if (!cachedConfig || !cachedConfig.studentData) {
+    // Fall back to GAS if JSON isn't available
+    fetch(API_URL + '?action=getData&student=' + encodeURIComponent(studentName) + '&week=' + encodeURIComponent(weekNum || ''))
+      .then(r => r.json())
+      .then(function(data) {
+        lastData = data;
+        updateCSSPalette(data.palette);
+        drawGrid();
+      });
+    return;
+  }
+
+  // 1. Find the student
+  const studentEntry = cachedConfig.studentData.find(s => s.student === studentName);
+  
+  if (!studentEntry) {
+    document.getElementById('content').innerHTML = '<div style="color:red;">Student not found</div>';
+    return;
+  }
+
+  // 2. Determine which week to show (default to 35 if not specified)
+  const targetWeek = weekNum || "35"; 
+  const weekData = studentEntry.weeks[targetWeek];
+
+  if (!weekData) {
+    document.getElementById('content').innerHTML = '<div style="color:red;">Week ' + targetWeek + ' data not found in JSON</div>';
+    return;
+  }
+
+  // 3. Map the nested data to lastData
+  lastData = {
+    student: studentEntry.student,
+    weekNum: targetWeek,
+    days: weekData.days,
+    grid: weekData.grid,
+    palette: studentEntry.palette
+  };
+
+  updateCSSPalette(studentEntry.palette);
+  drawGrid();
+}
 </script>
 </body>
 </html>
