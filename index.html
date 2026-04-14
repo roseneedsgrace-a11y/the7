@@ -258,52 +258,70 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
   }
 
   function drawGrid() {
-    // 1. Check if grid exists (this is mandatory)
-    if (!lastData || !lastData.grid) {
-      console.error("drawGrid: grid is missing", lastData);
-      return;
+  if (!lastData || !lastData.grid) return;
+
+  // 1. Intelligence: Determine the "Monday" of this week
+  // We use the top-level 'date' from the JSON as the anchor
+  const fileDateStr = cachedConfig.date; // e.g., "Tuesday, April 14"
+  const anchorDate = new Date(fileDateStr + ", 2026"); 
+  
+  // Find Monday by subtracting the current day index (Mon=1, Tue=2...)
+  const dayIndex = anchorDate.getDay(); // Sun=0, Mon=1...
+  const diffToMonday = dayIndex === 0 ? -6 : 1 - dayIndex;
+  const monday = new Date(anchorDate);
+  monday.setDate(anchorDate.getDate() + diffToMonday);
+
+  // 2. Build the days array dynamically if it's missing
+  let days = lastData.days || [];
+  if (days.length === 0) {
+    const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+    for (let i = 0; i < 5; i++) {
+      const d = new Date(monday);
+      d.setDate(monday.getDate() + i);
+      days.push({
+        day: dayNames[i],
+        date: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+      });
     }
-
-    // 2. Identify the days. If the student doesn't have them, 
-    // we check the top level of cachedConfig or use a default.
-    const days = lastData.days || (cachedConfig && cachedConfig.days) || [];
-    
-    document.getElementById('headerTitle').innerText = lastData.student + "'s Work - Week " + (lastData.weekNum || "");
-    
-    // TABLE VIEW
-    let html = '<div class="table-view"><table><thead><tr><th>Subject</th>';
-    
-    // If we have days, draw the headers. If not, just draw 5 empty headers for a standard week.
-    if (days.length > 0) {
-      days.forEach(d => { html += `<th>${d.day}<br><small>${d.date || ''}</small></th>`; });
-    } else {
-      ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].forEach(d => { html += `<th>${d}</th>`; });
-    }
-    
-    html += '</tr></thead><tbody>';
-
-    lastData.grid.forEach(row => {
-      html += `<tr><td class="subject-cell">${row.subject}</td>`;
-      if (row.tasks) {
-        row.tasks.forEach(t => {
-          const isDone = t.done ? 'is-done' : '';
-          const checked = t.done ? 'checked' : '';
-          html += `<td>
-            <label class="task-card ${isDone}">
-              <div class="task-text">${t.task || ''}</div>
-              <div class="status-indicator"></div>
-              <input type="checkbox" class="check-overlay" ${checked} onchange="toggle('${t.id}', this)">
-            </label>
-          </td>`;
-        });
-      }
-      html += '</tr>';
-    });
-    html += '</tbody></table></div>';
-
-    document.getElementById('content').innerHTML = html;
   }
 
+  document.getElementById('headerTitle').innerText = 
+    lastData.student + "'s Work - Week " + (lastData.weekNum || "");
+  
+  // 3. Build Table
+  let tableHtml = '<div class="table-view"><table><thead><tr><th>Subject</th>';
+  days.forEach(d => {
+    tableHtml += `<th>${d.day}<br><small>${d.date}</small></th>`;
+  });
+  tableHtml += '</tr></thead><tbody>';
+
+  lastData.grid.forEach(row => {
+    tableHtml += `<tr><td class="subject-cell">${row.subject}</td>`;
+    const tasks = row.tasks || [];
+    // Ensure we always draw exactly as many columns as we have 'days'
+    for (let i = 0; i < days.length; i++) {
+      const t = tasks[i];
+      if (t && (t.task || t.imageUrl)) {
+        const isDone = t.done ? 'is-done' : '';
+        tableHtml += `<td>
+          <label class="task-card ${isDone}">
+            <div class="task-text">${t.task || ''}</div>
+            ${t.imageUrl ? `<img src="${t.imageUrl}" class="task-image">` : ''}
+            <div class="status-indicator"></div>
+            <input type="checkbox" class="check-overlay" ${t.done ? 'checked' : ''} onchange="toggle('${t.id}', this)">
+          </label>
+        </td>`;
+      } else {
+        tableHtml += '<td><div class="task-card" style="border:1px dashed #cbd5e1; opacity:0.3;"></div></td>';
+      }
+    }
+    tableHtml += '</tr>';
+  });
+  tableHtml += '</tbody></table></div>';
+
+  // 4. Update UI
+  document.getElementById('content').innerHTML = tableHtml;
+}
   function applyProgressToCache(progressMap) {
     if (!cachedConfig || !cachedConfig.studentData) return;
     cachedConfig.studentData.forEach(s => {
