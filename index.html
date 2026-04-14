@@ -266,34 +266,29 @@ function loadFromJson(studentName, weekNum) {
     return;
   }
 
-  // 1. Find the student
   const studentEntry = cachedConfig.studentData.find(s => s.student === studentName);
-  
-  if (!studentEntry) {
-    document.getElementById('content').innerHTML = '<div style="color:red;">Student not found</div>';
-    return;
-  }
+  if (!studentEntry) return;
 
-  // 2. Determine which week to show (default to 35 if not specified)
-  const targetWeek = weekNum || "35"; 
+  // If no week is specified, default to the one marked in config (35)
+  const targetWeek = weekNum || cachedConfig.config.currentWeek || "35";
+  
+  // Look into the 'weeks' object for the specific data
   const weekData = studentEntry.weeks[targetWeek];
 
-  if (!weekData) {
-    document.getElementById('content').innerHTML = '<div style="color:red;">Week ' + targetWeek + ' data not found in JSON</div>';
-    return;
+  if (weekData) {
+    lastData = {
+      student: studentEntry.student,
+      weekNum: targetWeek,
+      days: weekData.days,
+      grid: weekData.grid,
+      palette: studentEntry.palette
+    };
+    updateCSSPalette(studentEntry.palette);
+    drawGrid();
+  } else {
+    // If Week 34 or 36 isn't in this specific JSON, then go to GAS
+    fetchFromGAS(studentName, targetWeek);
   }
-
-  // 3. Map the nested data to lastData
-  lastData = {
-    student: studentEntry.student,
-    weekNum: targetWeek,
-    days: weekData.days,
-    grid: weekData.grid,
-    palette: studentEntry.palette
-  };
-
-  updateCSSPalette(studentEntry.palette);
-  drawGrid();
 }
 </script>
 </body>
