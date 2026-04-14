@@ -255,7 +255,12 @@ const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUr
             sel.appendChild(opt);
           });
         }
-
+        // Check if a student is specified in the URL
+              const urlStudent = getStudentFromUrl();
+              if (urlStudent) {
+                sel.value = urlStudent;
+              }
+        
         // 2. Set initial week and draw
         updateWeekFromStudent();
       })
@@ -418,7 +423,11 @@ function toggle(id, el) {
     const header = document.getElementById('siteHeader');
     if (header) header.style.background = palette.primary;
   }
-
+    
+function getStudentFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('student'); // Returns "Beth" or null
+}
   
 </script>
 </body>
