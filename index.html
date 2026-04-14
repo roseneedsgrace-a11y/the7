@@ -402,9 +402,13 @@ function patchProgressInDom(progressMap) {
 }
 
 function loadFromJson(studentName, weekNum) {
-  if (!cachedConfig || !cachedConfig.students) return;
+  // 1. Safety check: make sure the JSON loaded and has the 'students' array
+  if (!cachedConfig || !cachedConfig.students) {
+    console.error("JSON data not loaded or 'students' array missing");
+    return;
+  }
 
-  // 1. Find the student by name
+  // 2. Find the specific student
   const studentEntry = cachedConfig.students.find(s => s.name === studentName);
   
   if (!studentEntry) {
@@ -412,22 +416,24 @@ function loadFromJson(studentName, weekNum) {
     return;
   }
 
-  // 2. Determine which week to show (default to 1 if not specified)
+  // 3. Get the week (default to week 1 if the input is empty)
   const targetWeek = weekNum || "1";
   const weekData = studentEntry.weeks[targetWeek];
 
   if (!weekData) {
-    document.getElementById('content').innerHTML = '<div style="color:red;">Week ' + targetWeek + ' not found for this student.</div>';
+    document.getElementById('content').innerHTML = `
+      <div style="color:red;">Week ${targetWeek} data is missing for ${studentName}</div>
+    `;
     return;
   }
 
-  // 3. Map the nested data to the flat "lastData" object the rest of the script expects
+  // 4. Flatten the data so drawGrid() can read it
   lastData = {
     student: studentEntry.name,
     weekNum: targetWeek,
     days: weekData.days,
     grid: weekData.grid,
-    palette: studentEntry.palette || cachedConfig.palette // Use student palette or global
+    palette: studentEntry.palette || { primary: '#94a3b8', secondary: '#cbd5e1', bg: '#f8fafc' }
   };
 
   updateCSSPalette(lastData.palette);
