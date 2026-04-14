@@ -402,43 +402,99 @@ function patchProgressInDom(progressMap) {
 }
 
 function loadFromJson(studentName, weekNum) {
-  // 1. Safety check: make sure the JSON loaded and has the 'students' array
-  if (!cachedConfig || !cachedConfig.students) {
-    console.error("JSON data not loaded or 'students' array missing");
+  if (!cachedConfig || !cachedConfig.studentData) {
+    // Fall back to GAS
+    // Fall back to GAS if JSON isn't available
+    fetch(API_URL + '?action=getData&student=' + encodeURIComponent(studentName) + '&week=' + encodeURIComponent(weekNum || ''))
+      .then(r => r.json())
+      .then(function(data) {
+@@ -414,94 +414,41 @@
     return;
   }
 
-  // 2. Find the specific student
-  const studentEntry = cachedConfig.students.find(s => s.name === studentName);
+  const studentData = cachedConfig.studentData.find(s => s.name === studentName);
+  // Find the student in the new flat structure
+  const studentData = cachedConfig.studentData.find(s => s.student === studentName);
   
-  if (!studentEntry) {
+  if (!studentData) {
+    document.getElementById('content').innerHTML = '<div style="color:red;">Student not found in data.json</div>';
+    return;
+  }
+
+  // Find current week if not specified
+  if (!weekNum) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    // Build date ranges for each week from the grid data
+    const weekRanges = {};
+    Object.keys(studentData.weeks).forEach(function(w) {
+      studentData.weeks[w].grid.forEach(function(row) {
+        row.tasks.forEach(function(t) {
+          if (!t.rawDate) return;
+          const d = new Date(t.rawDate);
+          d.setHours(0, 0, 0, 0);
+          const ts = d.getTime();
+          if (!weekRanges[w]) weekRanges[w] = { min: ts, max: ts };
+          if (ts < weekRanges[w].min) weekRanges[w].min = ts;
+          if (ts > weekRanges[w].max) weekRanges[w].max = ts;
+        });
+      });
+    });
+
+    let bestWeek = null;
+
+    // First check if today falls within any week
+    for (const w in weekRanges) {
+      const { min, max } = weekRanges[w];
+      if (today.getTime() >= min && today.getTime() <= max) {
+        bestWeek = w;
+        break;
+      }
+    }
+
+    // Otherwise find nearest week
+    if (!bestWeek) {
+      let closestDist = Infinity;
+      for (const w in weekRanges) {
+        const { min, max } = weekRanges[w];
+        const dist = today.getTime() < min
+          ? min - today.getTime()
+          : today.getTime() - max;
+        if (dist < closestDist) {
+          closestDist = dist;
+          bestWeek = w;
+        }
+      }
+    }
+
+    weekNum = bestWeek || Object.keys(studentData.weeks)[0];
+  }
+
+  const weekData = studentData.weeks[String(weekNum)];
+  if (!weekData) {
+    document.getElementById('content').innerHTML = '<div style="color:red;">Week ' + weekNum + ' not found</div>';
     document.getElementById('content').innerHTML = '<div style="color:red;">Student not found</div>';
     return;
   }
 
-  // 3. Get the week (default to week 1 if the input is empty)
-  const targetWeek = weekNum || "1";
-  const weekData = studentEntry.weeks[targetWeek];
-
-  if (!weekData) {
-    document.getElementById('content').innerHTML = `
-      <div style="color:red;">Week ${targetWeek} data is missing for ${studentName}</div>
-    `;
-    return;
-  }
-
-  // 4. Flatten the data so drawGrid() can read it
+  // In your new JSON, studentData IS the week's data
   lastData = {
-    student: studentEntry.name,
-    weekNum: targetWeek,
+    student: studentName,
+    weekNum: weekNum,
     days: weekData.days,
     grid: weekData.grid,
-    palette: studentEntry.palette || { primary: '#94a3b8', secondary: '#cbd5e1', bg: '#f8fafc' }
+    student: studentData.student,
+    weekNum: studentData.weekNum,
+    days: studentData.days,
+    grid: studentData.grid,
+    palette: studentData.palette
   };
 
-  updateCSSPalette(lastData.palette);
+  updateCSSPalette(studentData.palette);
   drawGrid();
 }
+  
   function updateCSSPalette(palette) {
     if (!palette) return;
     const root = document.documentElement;
