@@ -640,14 +640,18 @@ function toggleList(id, el, dayIdx) {
 
 function updateLocalCache(id, status) {
   if (!cachedConfig || !cachedConfig.studentData) return;
+  
   cachedConfig.studentData.forEach(function(s) {
-    Object.keys(s.weeks).forEach(function(w) {
-      s.weeks[w].grid.forEach(function(row) {
-        row.tasks.forEach(function(t) {
-          if (t.id === id) t.done = status;
-        });
+    // Check if the student has a grid directly
+    if (s.grid) {
+      s.grid.forEach(function(row) {
+        if (row.tasks) {
+          row.tasks.forEach(function(t) {
+            if (t.id === id) t.done = status;
+          });
+        }
       });
-    });
+    }
   });
 }
 
