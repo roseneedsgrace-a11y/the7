@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T19:45:35.730Z",
+  "generated": "2026-04-14T20:05:09.722Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8,27 +8,27 @@
   "students": [
     {
       "name": "Amos",
-      "palette": "",
+      "palette": "patriotic",
       "currentWeek": 35
     },
     {
       "name": "Beth",
-      "palette": "",
+      "palette": "original",
       "currentWeek": 35
     },
     {
       "name": "Charity",
-      "palette": "",
+      "palette": "safari",
       "currentWeek": 35
     },
     {
       "name": "Ezra",
-      "palette": "",
+      "palette": "boy",
       "currentWeek": 35
     },
     {
       "name": "Tabitha",
-      "palette": "",
+      "palette": "original",
       "currentWeek": 35
     }
   ],
@@ -36,9 +36,9 @@
     {
       "student": "Amos",
       "palette": {
-        "primary": "#9988CC",
-        "secondary": "#87CEEB",
-        "bg": "#F0F8FF"
+        "primary": "#B22234",
+        "secondary": "#002868",
+        "bg": "#F8F8FF"
       },
       "weekNum": 35,
       "grid": [
@@ -1863,7 +1863,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-History-Tue"
             },
             {
@@ -2045,7 +2045,7 @@
               "task": "When We All Get to Heaven (p. 172) - The Story & Hymn Study",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Tue"
             },
             {
@@ -2227,7 +2227,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Tue"
             },
             {
@@ -2700,9 +2700,9 @@
     {
       "student": "Charity",
       "palette": {
-        "primary": "#9988CC",
-        "secondary": "#87CEEB",
-        "bg": "#F0F8FF"
+        "primary": "#6B8E23",
+        "secondary": "#BDB76B",
+        "bg": "#FCF5E5"
       },
       "weekNum": 35,
       "grid": [
@@ -3908,8 +3908,8 @@
     {
       "student": "Ezra",
       "palette": {
-        "primary": "#9988CC",
-        "secondary": "#87CEEB",
+        "primary": "#708090",
+        "secondary": "#4682B4",
         "bg": "#F0F8FF"
       },
       "weekNum": 35,
