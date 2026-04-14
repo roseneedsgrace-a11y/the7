@@ -199,44 +199,50 @@
   let allData = null;
 
 window.onload = function() {
-    fetch('data.json?v=' + Date.now())
-      .then(r => r.json())
-      .then(data => {
-        allData = data;
-        
-        // 1. Populate Student Dropdown
-        const sel = document.getElementById('studentSelect');
-        data.studentData.forEach(s => {
-          const opt = document.createElement('option');
-          opt.value = s.student; opt.textContent = s.student;
-          sel.appendChild(opt);
-        });
-
-        // 2. Set the initial week from the config
-        const weekInput = document.getElementById('weekInput');
-        if (data.config && data.config.currentWeek) {
-          weekInput.value = data.config.currentWeek;
-        }
-
-        render();
-      })
-      .catch(err => {
-        document.getElementById('content').innerHTML = "Error loading data. Check data.json.";
-        console.error(err);
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      allData = data;
+      const sel = document.getElementById('studentSelect');
+      
+      // 1. Load names from the "students" array in your JSON
+      data.students.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.name; 
+        opt.textContent = s.name;
+        // Store the student's current week as a hidden attribute
+        opt.setAttribute('data-week', s.currentWeek);
+        sel.appendChild(opt);
       });
-  };
 
+      // 2. Trigger the week update for the first student
+      updateWeekFromStudent();
+    });
+};
+
+function updateWeekFromStudent() {
+  const sel = document.getElementById('studentSelect');
+  const selectedOption = sel.options[sel.selectedIndex];
+  const weekInput = document.getElementById('weekInput');
   
+  // Set the week input to whatever the JSON says is current for that specific student
+  if (selectedOption) {
+    weekInput.value = selectedOption.getAttribute('data-week');
+  }
+  render();
+}
+
 function render() {
   if (!allData) return;
-
+  
   const studentName = document.getElementById('studentSelect').value;
-  const student = allData.studentData.find(s => s.student === studentName);
-  const targetWeek = parseInt(document.getElementById('weekInput').value) || 1;
+  // This looks in the "studentData" section for the grid
+  const studentDetails = allData.studentData.find(s => s.student === studentName);
+  const targetWeek = parseInt(document.getElementById('weekInput').value);
   const isStatusMode = document.getElementById('statusToggle').checked;
   
-  if (!student) return;
-  updateColors(student.palette);
+  if (!studentDetails) return;
+  updateColors(studentDetails.palette);
   
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; 
   const now = new Date();
