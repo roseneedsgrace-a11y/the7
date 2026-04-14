@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T19:07:36.348Z",
+  "generated": "2026-04-14T19:07:41.568Z",
   "date": "Tuesday, April 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -793,7 +793,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Physical Training-Mon"
             },
             {
