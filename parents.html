@@ -65,14 +65,14 @@
 <div class="site-header" id="siteHeader">
   <h1 id="headerTitle">Thus Far the Lord<br>Has Helped Us</h1>
   <div class="page-label">Parents Dashboard</div>
-</div> <div class="nav-controls nav-links" style="text-align:center; padding: 20px;">
-  <button id="prevDay" onclick="changeDay(-1)">&#8592; Previous</button>
-  <span id="currentDayLabel" style="margin: 0 15px; font-weight: bold;"></span>
-  <button id="nextDay" onclick="changeDay(1)">Next &#8594;</button>
+</div> <div class="day-nav">
+  <button id="prevDay" onclick="changeDay(-1)">← Previous</button>
+  <div class="current-day" id="currentDayLabel">Loading Date...</div>
+  <button id="nextDay" onclick="changeDay(1)">Next →</button>
 </div>
 
 <div id="statsStrip" class="stats-strip"></div>
-
+  
 <div class="date-bar" id="dateBar" style="display:none;"></div> <div class="nav-links">
   <a id="homeLink" href="index.html">&#8592; Assignments</a>
 </div>
@@ -252,21 +252,21 @@ function renderStats(filtered) {
   }
 
 function updateNavButtons() {
-  // 1. Safety check: if allData or allData.students is missing, stop here.
-  if (!allData || !allData.students) {
-    console.warn("Navigation buttons skipped: No student data found.");
-    return;
-  }
+  if (!allData || !allData.students) return;
 
   const availableDates = [];
   
-  // 2. We have to reach into the 'grid' to find the dates
+  // Scan all students and all subjects for any task dates
   allData.students.forEach(s => {
     if (s.grid) {
       s.grid.forEach(subjectGroup => {
         if (subjectGroup.tasks) {
           subjectGroup.tasks.forEach(t => {
-            if (t.rawDate) availableDates.push(new Date(t.rawDate).getTime());
+            if (t.rawDate) {
+              const d = new Date(t.rawDate);
+              d.setHours(0, 0, 0, 0);
+              availableDates.push(d.getTime());
+            }
           });
         }
       });
@@ -275,15 +275,20 @@ function updateNavButtons() {
 
   if (availableDates.length === 0) return;
 
-  const sorted = [...new Set(availableDates)].sort((a,b) => a-b);
+  // Find the unique dates and sort them
+  const sorted = [...new Set(availableDates)].sort((a, b) => a - b);
   
   const prevBtn = document.getElementById('prevDay');
   const nextBtn = document.getElementById('nextDay');
+  const currentT = currentDate.getTime();
 
-  if (prevBtn) prevBtn.disabled = currentDate.getTime() <= sorted[0];
-  if (nextBtn) nextBtn.disabled = currentDate.getTime() >= sorted[sorted.length-1];
+  // Disable "Previous" if we are at the earliest date in the 3-week window
+  if (prevBtn) prevBtn.disabled = currentT <= sorted[0];
+  
+  // Disable "Next" if we are at the latest date in the 3-week window
+  if (nextBtn) nextBtn.disabled = currentT >= sorted[sorted.length - 1];
 }
-
+  
   function statCard(num, label, color) {
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
