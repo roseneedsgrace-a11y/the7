@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-14T20:06:02.654Z",
-  "date": "Tuesday, April 14",
+  "generated": "2026-04-15T21:40:28.709Z",
+  "date": "Wednesday, April 15",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47"
@@ -109,7 +109,7 @@
               "task": "Chap. from God w/o Passions",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Bible-Mon"
             },
             {
@@ -131,7 +131,7 @@
               "task": "Chap. from God w/o Passions",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Bible-Wed"
             },
             {
@@ -142,7 +142,7 @@
               "task": "Read \"Relationships\": Ch. 1-2 (pp. 3-16)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Bible-Thu"
             },
             {
@@ -164,7 +164,7 @@
               "task": "Read \"Relationships\": Ch. 3 (pp. 17-28)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Mon"
             },
             {
@@ -175,7 +175,7 @@
               "task": "Read \"Relationships\": Ch. 4 (pp. 29-39)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Tue"
             },
             {
@@ -186,7 +186,7 @@
               "task": "Read \"Relationships\": Ch. 5 (pp. 40-50)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Wed"
             },
             {
@@ -197,7 +197,7 @@
               "task": "Read \"Relationships\": Ch. 6 (pp. 51-62)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Thu"
             },
             {
@@ -313,7 +313,7 @@
               "task": "Lesson 11 - Tes",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-History-Thu"
             },
             {
@@ -451,7 +451,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Mon"
             },
             {
@@ -462,7 +462,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Tue"
             },
             {
@@ -473,7 +473,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Wed"
             },
             {
@@ -622,7 +622,7 @@
               "task": "Lesson 24",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Mon"
             },
             {
@@ -633,7 +633,7 @@
               "task": "Lesson 24 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Tue"
             },
             {
@@ -644,7 +644,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Wed"
             },
             {
@@ -655,7 +655,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Thu"
             },
             {
@@ -666,7 +666,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Fri"
             },
             {
@@ -677,7 +677,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Mon"
             },
             {
@@ -688,7 +688,7 @@
               "task": "Lesson 25 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Tue"
             },
             {
@@ -793,7 +793,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Physical Training-Mon"
             },
             {
@@ -804,7 +804,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Physical Training-Tue"
             },
             {
@@ -815,7 +815,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Physical Training-Wed"
             },
             {
@@ -964,7 +964,7 @@
               "task": "Chapter 7.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Mon"
             },
             {
@@ -975,7 +975,7 @@
               "task": "Chapter 7.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Tue"
             },
             {
@@ -986,7 +986,7 @@
               "task": "Chapter 7.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Wed"
             },
             {
@@ -1361,7 +1361,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Mon"
             },
             {
@@ -1372,7 +1372,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Tue"
             },
             {
@@ -1383,7 +1383,7 @@
               "task": "Supply Side Economics: Take Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Wed"
             },
             {
@@ -1394,7 +1394,7 @@
               "task": "Record overall class score: _______",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Thu"
             },
             {
@@ -1405,7 +1405,7 @@
               "task": "Average all three Hillsdale Course scores together: ________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Fri"
             }
           ]
@@ -1499,7 +1499,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Tue"
             },
             {
@@ -1510,7 +1510,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Wed"
             },
             {
@@ -1681,7 +1681,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Nicole the Math Lady-Tue"
             },
             {
@@ -2056,7 +2056,7 @@
               "task": "When We All Get to Heaven (p. 172) - Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Wed"
             },
             {
@@ -2067,7 +2067,7 @@
               "task": "When We All Get to Heaven (p. 172) - Copywork & Music Theory",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Thu"
             },
             {
@@ -2078,7 +2078,7 @@
               "task": "When We All Get to Heaven (p. 172) - Activity",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Fri"
             },
             {
@@ -2216,7 +2216,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": true,
+              "done": false,
               "id": "Beth-W35-Reading & Grammar-Mon"
             },
             {
@@ -2227,7 +2227,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": true,
+              "done": false,
               "id": "Beth-W35-Reading & Grammar-Tue"
             },
             {
@@ -2398,7 +2398,7 @@
               "task": "Handwriting.... very carefully. Pgs. 97-100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Beth-W35-Handwriting-Mon"
             },
             {
@@ -2580,7 +2580,7 @@
               "task": "Quiz... on the printer",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Beth-W35-Latin-Mon"
             },
             {
@@ -2591,7 +2591,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Tue"
             },
             {
@@ -2602,7 +2602,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Wed"
             },
             {
@@ -2773,7 +2773,7 @@
               "task": "Read \"Relationships\": Ch. 1-2 (pp. 3-16), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Bible-Mon"
             },
             {
@@ -2944,7 +2944,7 @@
               "task": "P4 L1 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Health-Mon"
             },
             {
@@ -2955,7 +2955,7 @@
               "task": "P4 L1 #7 & Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Health-Tue"
             },
             {
@@ -3115,7 +3115,7 @@
               "task": "Russell & Modern Philospohers Step #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-History of Ideas-Mon"
             },
             {
@@ -3286,7 +3286,7 @@
               "task": "☐ Read WHB pg 286-287\n☐ Color ABC 182-183",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Anatomy-Mon"
             },
             {
@@ -3457,7 +3457,7 @@
               "task": "Chap 25 #1 (Part 1)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Math-Mon"
             },
             {
@@ -3628,7 +3628,7 @@
               "task": "The Book Thief Chap 37-42 & Day 10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-English-Mon"
             },
             {
@@ -3799,7 +3799,7 @@
               "task": "Lessonn 15.3-4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Financial Literacy-Mon"
             },
             {
@@ -3970,7 +3970,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Bible-Sat"
             },
             {
@@ -4003,7 +4003,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Wed"
             },
             {
@@ -4174,7 +4174,7 @@
               "task": "Review Course Material",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Hillsdale History-Wed"
             },
             {
@@ -4345,7 +4345,7 @@
               "task": "The Church & Genesis, Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Creation Science-Wed"
             },
             {
@@ -4687,7 +4687,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Latin 1-Wed"
             },
             {
@@ -4858,7 +4858,7 @@
               "task": "Read",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Electives-Wed"
             },
             {
@@ -5189,7 +5189,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Bible-Tue"
             },
             {
@@ -5531,7 +5531,7 @@
               "task": "Read Vol. 2, Ch. 14, pp. 278-282",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-History-Tue"
             },
             {
@@ -5542,7 +5542,7 @@
               "task": "Read Vol. 2, Ch. 14, pp. 283-287",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-History-Wed"
             },
             {
@@ -5702,7 +5702,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Literature-Tue"
             },
             {
@@ -5713,7 +5713,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Literature-Wed"
             },
             {
@@ -5724,7 +5724,7 @@
               "task": "Read Chapter 17: The Hunting of the White Stag",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Literature-Thu"
             },
             {
@@ -6044,7 +6044,7 @@
               "task": "Complete p. 99",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Handwriting-Tue"
             },
             {
@@ -6055,7 +6055,7 @@
               "task": "Complete p. 100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Handwriting-Wed"
             },
             {
