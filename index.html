@@ -430,10 +430,9 @@ window.onload = function() {
 };
 
 let syncCountdown = null;
-const SYNC_DELAY = 30; // seconds to wait before JSON is likely updated
+const SYNC_DELAY = 10;
 
 function startSyncTimer() {
-  // Clear any existing countdown
   if (syncCountdown) clearInterval(syncCountdown);
 
   const timerEl = document.getElementById('syncTimer');
@@ -441,8 +440,11 @@ function startSyncTimer() {
   
   let seconds = SYNC_DELAY;
   timerEl.style.display = 'inline';
+  timerEl.textContent = `Wait for it... ${seconds}s`;
   btn.style.borderColor = '#e2e8f0';
   btn.style.color = '#64748b';
+  btn.style.fontWeight = 'normal';
+  btn.textContent = '↻ Check for Updates';
 
   syncCountdown = setInterval(() => {
     seconds--;
@@ -453,16 +455,38 @@ function startSyncTimer() {
       syncCountdown = null;
       timerEl.style.display = 'none';
 
-      // Make the button glow to signal it's ready
-      btn.style.borderColor = '#16a34a';
-      btn.style.color = '#16a34a';
+      // Swap to a "Push Now" button
+      btn.style.borderColor = '#741b47';
+      btn.style.color = '#741b47';
       btn.style.fontWeight = '700';
-      btn.textContent = '↻ New Data Ready';
+      btn.textContent = '⬆ Push to GitHub';
+      btn.onclick = pushAndRefresh;
     }
   }, 1000);
 }
+
+function pushAndRefresh() {
+  const btn = document.getElementById('refreshBtn');
+  btn.textContent = 'Pushing...';
+  btn.disabled = true;
+
+  // Call GAS to push to GitHub
+  fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
+    .then(() => {
+      // GAS push takes a few seconds, wait then fetch new JSON
+      btn.textContent = 'Waiting for GitHub...';
+      setTimeout(() => forceRefresh(), 8000);
+    })
+    .catch(() => {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+    });
+
+  // Reset button onclick back to forceRefresh for future use
+  btn.onclick = forceRefresh;
+}
   
-  function updateWeekFromStudent() {
+function updateWeekFromStudent() {
     const sel = document.getElementById('studentSelect');
     const selectedOption = sel.options[sel.selectedIndex];
     const weekInput = document.getElementById('weekInput');
