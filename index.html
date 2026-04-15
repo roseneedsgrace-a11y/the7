@@ -389,6 +389,7 @@ a.link-btn::before {
   <a href="parents.html" class="nav-link">Parent Dashboard</a>
   <a href="https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec?page=config" target="_blank" class="nav-link">System Config</a>
   <span id="lastUpdated" class="timestamp"></span>
+<button onclick="forceRefresh()" style="font-size:11px; color:#64748b; background:#f1f5f9; border:1px solid #e2e8f0; padding:4px 10px; border-radius:6px; cursor:pointer;">↻ Check for Updates</button>
 </div>
 <div id="content">Loading assignments...</div>
 
@@ -611,6 +612,45 @@ function handleCheck(id, el) {
 
   // Send to Google Sheets in background
   fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+}
+
+function forceRefresh() {
+  const btn = document.querySelector('[onclick="forceRefresh()"]');
+  btn.textContent = 'Checking...';
+  btn.disabled = true;
+
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      // Check if the new data is actually newer
+      const newTime = new Date(data.generated).getTime();
+      const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
+
+      if (newTime > oldTime) {
+        allData = data;
+        updateWeekFromStudent();
+        showTimestamp(data.generated);
+        btn.textContent = '✓ Updated!';
+      } else {
+        btn.textContent = '✓ Already current';
+      }
+
+      setTimeout(() => {
+        btn.textContent = '↻ Check for Updates';
+        btn.disabled = false;
+      }, 2000);
+    })
+    .catch(() => {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+    });
+}
+
+function showTimestamp(isoString) {
+  const el = document.getElementById('lastUpdated');
+  if (!el || !isoString) return;
+  const d = new Date(isoString);
+  el.textContent = 'Data as of: ' + d.toLocaleString();
 }
   
 </script>
