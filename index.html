@@ -388,9 +388,9 @@ a.link-btn::before {
 <div class="admin-links">
   <a href="parents.html" class="nav-link">Parent Dashboard</a>
   <a href="https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec?page=config" target="_blank" class="nav-link">System Config</a>
-  <span id="lastUpdated" class="timestamp"></span>
-<button onclick="forceRefresh()" style="font-size:11px; color:#64748b; background:#f1f5f9; border:1px solid #e2e8f0; padding:4px 10px; border-radius:6px; cursor:pointer;">↻ Check for Updates</button>
-</div>
+    <span id="lastUpdated" class="timestamp"></span>
+    <span id="syncTimer" style="display:none; font-size:11px; color:#f59e0b; font-weight:600;"></span>
+<button id="refreshBtn" onclick="forceRefresh()" style="font-size:11px; color:#64748b; background:#f1f5f9; border:1px solid #e2e8f0; padding:4px 10px; border-radius:6px; cursor:pointer;">↻ Check for Updates</button></div>
 <div id="content">Loading assignments...</div>
 
 <script>
@@ -429,6 +429,39 @@ window.onload = function() {
     .catch(err => console.error("Data load failed:", err));
 };
 
+let syncCountdown = null;
+const SYNC_DELAY = 30; // seconds to wait before JSON is likely updated
+
+function startSyncTimer() {
+  // Clear any existing countdown
+  if (syncCountdown) clearInterval(syncCountdown);
+
+  const timerEl = document.getElementById('syncTimer');
+  const btn = document.getElementById('refreshBtn');
+  
+  let seconds = SYNC_DELAY;
+  timerEl.style.display = 'inline';
+  btn.style.borderColor = '#e2e8f0';
+  btn.style.color = '#64748b';
+
+  syncCountdown = setInterval(() => {
+    seconds--;
+    timerEl.textContent = `Syncing... ${seconds}s`;
+
+    if (seconds <= 0) {
+      clearInterval(syncCountdown);
+      syncCountdown = null;
+      timerEl.style.display = 'none';
+
+      // Make the button glow to signal it's ready
+      btn.style.borderColor = '#16a34a';
+      btn.style.color = '#16a34a';
+      btn.style.fontWeight = '700';
+      btn.textContent = '↻ New Data Ready';
+    }
+  }, 1000);
+}
+  
   function updateWeekFromStudent() {
     const sel = document.getElementById('studentSelect');
     const selectedOption = sel.options[sel.selectedIndex];
@@ -653,6 +686,12 @@ function showTimestamp(isoString) {
   const d = new Date(isoString);
   el.textContent = 'Data as of: ' + d.toLocaleString();
 }
+window.addEventListener('storage', function(e) {
+  if (e.key === 'local_progress') {
+    render();
+    startSyncTimer(); // Start the countdown
+  }
+});
   
 </script>
 </body>
