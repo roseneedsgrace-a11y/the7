@@ -63,7 +63,20 @@
     .task-card { background: var(--panel); border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px; min-height: 100px; display: flex; flex-direction: column; position: relative; cursor: pointer; transition: transform 0.1s; }
     .task-text { font-size: 0.8rem; line-height: 1.3; margin-bottom: 5px; flex-grow: 1; pointer-events: none; }
     .task-image { width: 60px; height: 60px; margin: 5px auto; display: block; object-fit: contain; }
-    .status-indicator { width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px; position: absolute; bottom: 10px; right: 10px; display: flex; align-items: center; justify-content: center; color: transparent; }
+.status-indicator { 
+  width: 18px; 
+  height: 18px; 
+  border: 2px solid #cbd5e1; 
+  border-radius: 4px; 
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer;
+  z-index: 10;
+}
     .is-done .status-indicator { background: var(--secondary); border-color: var(--secondary); color: white; }
     .is-done .status-indicator::after { content: '✓'; font-size: 12px; }
     .check-overlay {
@@ -483,19 +496,15 @@ window.onload = function() {
             const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
             const mediaHtml = renderMedia(t); // This now carries your link logic
             
-            tableHtml += `<td>
-              <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
-                ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
-                <div class="media-container">${mediaHtml}</div>
-                <div class="status-indicator-wrap" style="position:absolute; bottom:10px; right:10px; z-index:5;">
-                  <input type="checkbox" 
-                    style="position:absolute; opacity:0; width:18px; height:18px; cursor:pointer; z-index:6; margin:0;"
-                    ${isTaskDone ? 'checked' : ''} 
-                    data-id="${t.id}" 
-                    onchange="toggle('${t.id}', this)">
-                  <div class="status-indicator"></div>
-                </div>
-              </div>`;
+          tableHtml += `<td>
+            <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
+              ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
+              <div class="media-container">${mediaHtml}</div>
+              <label class="status-indicator-wrap">
+                <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
+                <div class="status-indicator"></div>
+              </label>
+            </div>`;
 
             tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
           } else {
@@ -554,20 +563,20 @@ function renderMedia(t) {
 function toggle(id, el) {
   const isDone = el.checked;
   
-  // 1. Send to Google Sheets (Background)
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
-  
-  // 2. Save to Local Storage (Real-time)
-  // We store a list of IDs that have been manually toggled
+  // 1. Save to Local Storage
   let localProgress = JSON.parse(localStorage.getItem('local_progress') || '{}');
   localProgress[id] = isDone;
   localStorage.setItem('local_progress', JSON.stringify(localProgress));
 
-  // 3. Update all instances on the screen
+  // 2. Update the card (go up TWO levels: input → label → card)
   document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
     input.checked = isDone;
-    input.parentElement.classList.toggle('is-done', isDone);
+    const card = input.closest('.task-card, .list-task-row');
+    if (card) card.classList.toggle('is-done', isDone);
   });
+
+  // 3. Send to Google Sheets in background
+  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
 }
 
 function updateColors(palette) {
@@ -584,6 +593,24 @@ function updateColors(palette) {
 function getStudentFromUrl() {
   const params = new URLSearchParams(window.location.search);
   return params.get('student'); // Returns "Beth" or null
+}
+
+function handleCheck(id, el) {
+  const card = document.getElementById('card-' + id);
+  const isDone = !card.classList.contains('is-done');
+  
+  // Update all cards with this ID
+  document.querySelectorAll(`[id="card-${id}"]`).forEach(c => {
+    c.classList.toggle('is-done', isDone);
+  });
+
+  // Save to local storage
+  let localProgress = JSON.parse(localStorage.getItem('local_progress') || '{}');
+  localProgress[id] = isDone;
+  localStorage.setItem('local_progress', JSON.stringify(localProgress));
+
+  // Send to Google Sheets in background
+  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
 }
   
 </script>
