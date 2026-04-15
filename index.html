@@ -389,9 +389,8 @@ a.link-btn::before {
   <a href="parents.html" class="nav-link">Parent Dashboard</a>
   <a href="https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec?page=config" target="_blank" class="nav-link">System Config</a>
     <span id="lastUpdated" class="timestamp"></span>
-    <span id="syncTimer" style="display:none; font-size:11px; color:#f59e0b; font-weight:600;"></span>
-<button id="refreshBtn" onclick="forceRefresh()" style="font-size:11px; color:#64748b; background:#f1f5f9; border:1px solid #e2e8f0; padding:4px 10px; border-radius:6px; cursor:pointer;">↻ Check for Updates</button></div>
-<div id="content">Loading assignments...</div>
+    <span id="syncTimer" style="display:none; font-size:11px; color:#94a3b8; font-style:italic;"></span>
+    <button id="refreshBtn" onclick="forceRefresh()" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">↻</button><div id="content">Loading assignments...</div>
 
 <script>
 const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
@@ -440,26 +439,21 @@ function startSyncTimer() {
   
   let seconds = SYNC_DELAY;
   timerEl.style.display = 'inline';
-  timerEl.textContent = `Wait for it... ${seconds}s`;
-  btn.style.borderColor = '#e2e8f0';
-  btn.style.color = '#64748b';
-  btn.style.fontWeight = 'normal';
-  btn.textContent = '↻ Check for Updates';
+  timerEl.textContent = `syncing... ${seconds}s`;
 
   syncCountdown = setInterval(() => {
     seconds--;
-    timerEl.textContent = `Syncing... ${seconds}s`;
+    timerEl.textContent = `syncing... ${seconds}s`;
 
     if (seconds <= 0) {
       clearInterval(syncCountdown);
       syncCountdown = null;
       timerEl.style.display = 'none';
 
-      // Swap to a "Push Now" button
-      btn.style.borderColor = '#741b47';
-      btn.style.color = '#741b47';
-      btn.style.fontWeight = '700';
-      btn.textContent = '⬆ Push to GitHub';
+      // Just a subtle glow on the existing refresh icon
+      btn.style.opacity = '1';
+      btn.style.color = '#16a34a';
+      btn.title = 'New data may be available';
       btn.onclick = pushAndRefresh;
     }
   }, 1000);
