@@ -612,6 +612,7 @@ function toggle(id, el) {
 
   // 3. Send to Google Sheets in background
   fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+  startSyncTimer(); 
 }
 
 function updateColors(palette) {
@@ -649,25 +650,29 @@ function handleCheck(id, el) {
 }
 
 function forceRefresh() {
-  const btn = document.querySelector('[onclick="forceRefresh()"]');
+  const btn = document.getElementById('refreshBtn');
   btn.textContent = 'Checking...';
   btn.disabled = true;
 
   fetch('data.json?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
-      // Check if the new data is actually newer
       const newTime = new Date(data.generated).getTime();
       const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
 
       if (newTime > oldTime) {
         allData = data;
-        updateWeekFromStudent();
+        updateWeekFromStudent(); // or renderForDate(currentDate) on parents.html
         showTimestamp(data.generated);
         btn.textContent = '✓ Updated!';
       } else {
         btn.textContent = '✓ Already current';
       }
+
+      // Reset button styling
+      btn.style.borderColor = '#e2e8f0';
+      btn.style.color = '#64748b';
+      btn.style.fontWeight = 'normal';
 
       setTimeout(() => {
         btn.textContent = '↻ Check for Updates';
