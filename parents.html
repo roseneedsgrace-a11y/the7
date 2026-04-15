@@ -296,6 +296,13 @@ function buildStudentCard(s) {
     }
   }
 
+  window.addEventListener('storage', function(e) {
+  if (e.key === 'local_progress') {
+    renderForDate(currentDate);
+    startSyncTimer();
+  }
+});
+  
   function statCard(num, label, color) {
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
