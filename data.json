@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-15T22:51:46.795Z",
+  "generated": "2026-04-15T23:02:22.969Z",
   "date": "Wednesday, April 15",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -567,7 +567,7 @@
               "task": "Lesson 24",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Mon"
             },
             {
@@ -589,7 +589,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Wed"
             },
             {
@@ -600,7 +600,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Thu"
             },
             {
@@ -611,7 +611,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Fri"
             },
             {
@@ -644,7 +644,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Foreign Language-Wed"
             },
             {
@@ -655,7 +655,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Foreign Language-Thu"
             },
             {
@@ -666,7 +666,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W35-Foreign Language-Fri"
             },
             {
@@ -677,7 +677,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W36-Foreign Language-Mon"
             },
             {
@@ -688,7 +688,7 @@
               "task": "Lesson 26 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W36-Foreign Language-Tue"
             },
             {
@@ -997,7 +997,7 @@
               "task": "Chapter 7.4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Thu"
             },
             {
@@ -1008,7 +1008,7 @@
               "task": "Chapter 7.5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Fri"
             },
             {
