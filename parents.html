@@ -246,6 +246,7 @@ function buildStudentCard(s) {
     
     updateCardStats(row.closest('.student-card'));
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
+    startSyncTimer(); 
   }
 
   function updateCardStats(card) {
