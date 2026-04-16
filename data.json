@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-16T01:56:46.292Z",
+  "generated": "2026-04-16T02:13:50.584Z",
   "date": "Wednesday, April 15",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2216,7 +2216,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Mon"
             },
             {
@@ -2398,7 +2398,7 @@
               "task": "Handwriting.... very carefully. Pgs. 97-100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Handwriting-Mon"
             },
             {
@@ -2580,7 +2580,7 @@
               "task": "Quiz... on the printer",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Mon"
             },
             {
