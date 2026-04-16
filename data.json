@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-16T16:01:58.530Z",
+  "generated": "2026-04-16T16:08:33.523Z",
   "date": "Thursday, April 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -36,9 +36,9 @@
     {
       "student": "Amos",
       "palette": {
-        "primary": "#4a647c",
-        "secondary": "#7c2d2d",
-        "bg": "#f2e8cf"
+        "primary": "#3a5a8c",
+        "secondary": "#a63d40",
+        "bg": "#fffcf2"
       },
       "weekNum": 35,
       "grid": [
