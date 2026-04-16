@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-16T21:20:46.193Z",
+  "generated": "2026-04-16T21:26:36.526Z",
   "date": "Thursday, April 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -13,7 +13,7 @@
     },
     {
       "name": "Beth",
-      "palette": "springtime",
+      "palette": "ocean",
       "currentWeek": 35
     },
     {
@@ -1415,9 +1415,9 @@
     {
       "student": "Beth",
       "palette": {
-        "primary": "#A3318C",
-        "secondary": "#F4D35E",
-        "bg": "#F7FDF9"
+        "primary": "#0077BE",
+        "secondary": "#20B2AA",
+        "bg": "#E0F7FA"
       },
       "weekNum": 35,
       "grid": [
