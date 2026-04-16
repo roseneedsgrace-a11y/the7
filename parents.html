@@ -242,14 +242,18 @@ function buildStudentCard(s) {
     <div class="task-list">`;
 
   s.tasks.forEach(t => {
-    html += `<label class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}">
-      <div class="task-checkbox" style="${t.done ? 'background:'+s.palette.secondary+';border-color:'+s.palette.secondary : ''}"></div>
+   html += `
+    <div class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}" 
+      onclick="toggleTask('${t.id}', '${s.palette.primary}', '${s.palette.secondary}')">
+      <div class="task-checkbox" style="${t.done ? `background:${s.palette.secondary};border-color:${s.palette.secondary}` : ''}">
+        ${t.done ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
+      </div>
       <div class="task-info">
         <div class="task-subject" style="color:${s.palette.primary};">${t.subject}</div>
+        ${t.curriculum ? `<div class="task-curriculum">${t.curriculum}</div>` : ''}
         <div class="task-text">${t.task}</div>
       </div>
-      <input type="checkbox" class="task-check-input" ${t.done ? 'checked' : ''} onchange="toggleTask('${t.id}', this)">
-    </label>`;
+    </div>`;
   });
 
   html += `</div><a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">Full Week View ↗</a></div>`;
@@ -273,21 +277,39 @@ function buildStudentCard(s) {
     }
   }
 
-  function toggleTask(id, el) {
-    const row = document.getElementById('prow-' + id);
-    if (row) row.classList.toggle('is-done', el.checked);
-    
-    // Update local data cache immediately
-    allData.students.forEach(s => {
-      s.grid.forEach(row => {
-        row.tasks.forEach(t => { if(t.id === id) t.done = el.checked; });
-      });
-    });
-    
-    updateCardStats(row.closest('.student-card'));
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${el.checked}`, { mode: 'no-cors' });
-    startSyncTimer(); 
+function toggleTask(id, palettePrimary, paletteSecondary) {
+  const row = document.getElementById('prow-' + id);
+  if (!row) return;
+  
+  const isDone = !row.classList.contains('is-done');
+  row.classList.toggle('is-done', isDone);
+
+  // Update the checkbox div appearance
+  const checkbox = row.querySelector('.task-checkbox');
+  if (checkbox) {
+    if (isDone) {
+      checkbox.style.background = paletteSecondary;
+      checkbox.style.borderColor = paletteSecondary;
+      checkbox.innerHTML = `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>`;
+    } else {
+      checkbox.style.background = '';
+      checkbox.style.borderColor = '';
+      checkbox.innerHTML = '';
+    }
   }
+
+  setLocalProgress(id, isDone);
+
+  allData.students.forEach(s => {
+    s.grid.forEach(subj => {
+      subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
+    });
+  });
+
+  updateCardStats(row.closest('.student-card'));
+  startSyncTimer();
+  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+}
 
   function updateCardStats(card) {
     const total = card.querySelectorAll('.task-row').length;
