@@ -58,6 +58,45 @@
     .no-school { text-align: center; padding: 48px 20px; color: #94a3b8; font-size: 15px; }
     .no-school strong { display: block; font-size: 22px; color: #cbd5e1; margin-bottom: 8px; }
     .loading { text-align: center; padding: 60px 20px; color: #94a3b8; font-size: 14px; }
+
+.admin-section { margin-bottom: 4px; }
+.admin-section-label { 
+  font-size: 10px; 
+  font-weight: 700; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  color: #94a3b8; 
+  margin-bottom: 6px; 
+  padding-bottom: 4px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.admin-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.admin-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  min-width: 130px;
+  text-align: left;
+}
+.admin-btn:hover { background: #f1f5f9; border-color: #cbd5e1; }
+.admin-btn.danger { color: #dc2626; }
+.admin-btn.danger:hover { background: #fef2f2; border-color: #fca5a5; }
+.admin-btn-sub { 
+  font-size: 10px; 
+  font-weight: 400; 
+  color: #94a3b8; 
+  margin-top: 2px; 
+}
+    
   </style>
 </head>
 <body>
@@ -176,6 +215,7 @@ function renderForDate(date) {
   } else {
     let html = '<div class="students-grid">';
     filtered.forEach(s => { html += buildStudentCard(s); });
+    html += buildAdminCard(); 
     html += '</div>';
     contentDiv.innerHTML = html;
   }
@@ -279,34 +319,166 @@ function buildStudentCard(s) {
     // you would scan allData.students for min/max rawDates.
   }
 
-  function approveEntireDay(studentName) {
-    const student = allData.students.find(s => s.student === studentName);
-    const targetTime = currentDate.getTime();
-    
-    if (student && confirm(`Mark everything today for ${studentName} as done?`)) {
-      student.grid.forEach(row => {
-        row.tasks.forEach(t => {
-          const taskTime = new Date(t.rawDate).setHours(0,0,0,0);
-          if (taskTime === targetTime && !t.done) {
-            t.done = true;
-            fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
-          }
-        });
-      });
-      renderForDate(currentDate);
-    }
-  }
+function approveEntireDay(studentName, silent) {
+  const student = allData.students.find(s => s.student === studentName);
+  if (!student) return;
+  
+  if (!silent && !confirm(`Mark everything today for ${studentName} as done?`)) return;
 
-  window.addEventListener('storage', function(e) {
-  if (e.key === 'local_progress') {
-    renderForDate(currentDate);
-    startSyncTimer();
-  }
-});
+  const targetMidnight = Date.UTC(
+    currentDate.getFullYear(), 
+    currentDate.getMonth(), 
+    currentDate.getDate()
+  );
+
+  student.grid.forEach(subj => {
+    subj.tasks.forEach(t => {
+      const d = new Date(t.rawDate);
+      const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+      if (taskMidnight === targetMidnight && !t.done) {
+        t.done = true;
+        setLocalProgress(t.id, true);
+        const row = document.getElementById('prow-' + t.id);
+        if (row) {
+          row.classList.add('is-done');
+          const checkbox = row.querySelector('.task-checkbox');
+          if (checkbox) {
+            checkbox.style.background = student.palette.secondary;
+            checkbox.style.borderColor = student.palette.secondary;
+          }
+        }
+        fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
+      }
+    });
+  });
+
+  if (!silent) renderForDate(currentDate);
+}
   
   function statCard(num, label, color) {
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
+
+  function buildAdminCard() {
+  return `<div class="student-card">
+    <div class="student-header" style="background:#334155;">
+      <div class="student-avatar" style="font-size:18px;">⚙</div>
+      <span class="student-name">Admin</span>
+    </div>
+    <div class="task-list" style="padding: 12px 18px; display:flex; flex-direction:column; gap:10px;">
+      
+      <div class="admin-section">
+        <div class="admin-section-label">Data</div>
+        <div class="admin-actions">
+          <button class="admin-btn" onclick="adminPush()">
+            ⬆ Push to GitHub
+            <span class="admin-btn-sub">Force a data.json update</span>
+          </button>
+          <button class="admin-btn" onclick="adminRefresh()">
+            ↻ Reload Local Data
+            <span class="admin-btn-sub">Fetch latest data.json</span>
+          </button>
+          <button class="admin-btn danger" onclick="adminClearProgress()">
+            ✕ Clear Local Cache
+            <span class="admin-btn-sub">Wipe localStorage progress</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="admin-section">
+        <div class="admin-section-label">Navigation</div>
+        <div class="admin-actions">
+          <button class="admin-btn" onclick="window.location.href='index.html'">
+            📋 Student Planner
+            <span class="admin-btn-sub">Full week view</span>
+          </button>
+          <button class="admin-btn" onclick="window.open('${API_URL}?page=config', '_blank')">
+            🔧 System Config
+            <span class="admin-btn-sub">Edit students & palettes</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="admin-section">
+        <div class="admin-section-label">View</div>
+        <div class="admin-actions">
+          <button class="admin-btn" onclick="adminGoToToday()">
+            📅 Jump to Today
+            <span class="admin-btn-sub">Reset day navigation</span>
+          </button>
+          <button class="admin-btn" onclick="adminApproveAll()">
+            ✓ Mark All Done Today
+            <span class="admin-btn-sub">Approve every student</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="adminStatus" style="font-size:11px; color:#94a3b8; font-style:italic; text-align:center; min-height:16px;"></div>
+
+    </div>
+  </div>`;
+}
+
+function adminStatus(msg, color) {
+  const el = document.getElementById('adminStatus');
+  if (!el) return;
+  el.textContent = msg;
+  el.style.color = color || '#94a3b8';
+  setTimeout(() => { el.textContent = ''; }, 4000);
+}
+
+function adminPush() {
+  adminStatus('Pushing to GitHub...', '#f59e0b');
+  fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
+    .then(() => {
+      adminStatus('Push sent! Waiting for GitHub...', '#f59e0b');
+      setTimeout(() => adminRefresh(), 8000);
+    })
+    .catch(() => adminStatus('Push failed — try again', '#dc2626'));
+}
+
+function adminRefresh() {
+  adminStatus('Fetching latest data...', '#f59e0b');
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      const newTime = new Date(data.generated).getTime();
+      const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
+      if (newTime > oldTime) {
+        allData = { students: data.studentData, config: data.config, generated: data.generated };
+        renderForDate(currentDate);
+        adminStatus('✓ Data updated!', '#16a34a');
+        showTimestamp(data.generated);
+      } else {
+        adminStatus('Already up to date.', '#94a3b8');
+      }
+    })
+    .catch(() => adminStatus('Fetch failed — try again', '#dc2626'));
+}
+
+function adminClearProgress() {
+  if (confirm('Clear all locally cached progress? This won\'t affect the spreadsheet.')) {
+    localStorage.removeItem('local_progress');
+    renderForDate(currentDate);
+    adminStatus('✓ Local cache cleared.', '#16a34a');
+  }
+}
+
+function adminGoToToday() {
+  currentDate = new Date();
+  currentDate.setHours(0, 0, 0, 0);
+  renderForDate(currentDate);
+  adminStatus('✓ Jumped to today.', '#16a34a');
+}
+
+function adminApproveAll() {
+  if (!confirm('Mark ALL tasks today as done for every student?')) return;
+  allData.students.forEach(s => {
+    approveEntireDay(s.student, true); // pass silent=true to skip individual confirms
+  });
+  adminStatus('✓ All tasks marked done.', '#16a34a');
+}
+  
 </script>
 </body>
 </html>
