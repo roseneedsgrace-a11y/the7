@@ -666,7 +666,7 @@ function forceRefresh() {
         showTimestamp(data.generated);
         btn.textContent = '✓ Updated!';
       } else {
-        btn.textContent = '✓ Already current';
+        btn.textContent = '✓ Current';
       }
 
       // Reset button styling
@@ -675,7 +675,7 @@ function forceRefresh() {
       btn.style.fontWeight = 'normal';
 
       setTimeout(() => {
-        btn.textContent = '↻ Check for Updates';
+        btn.textContent = '↻';
         btn.disabled = false;
       }, 2000);
     })
@@ -688,15 +688,26 @@ function forceRefresh() {
 function showTimestamp(isoString) {
   const el = document.getElementById('lastUpdated');
   if (!el || !isoString) return;
+
   const d = new Date(isoString);
-  el.textContent = 'Data as of: ' + d.toLocaleString();
-}
-window.addEventListener('storage', function(e) {
-  if (e.key === 'local_progress') {
-    render();
-    startSyncTimer(); // Start the countdown
+  const now = new Date();
+  
+  // Calculate difference in milliseconds
+  const diffInMs = now - d;
+  // Convert 23 hours to milliseconds (23 * 60 * 60 * 1000)
+  const twentyThreeHoursInMs = 82800000;
+
+  if (diffInMs < twentyThreeHoursInMs) {
+    // Show only the time (e.g., "10:30 AM")
+    el.textContent = 'Data as of: ' + d.toLocaleTimeString([], { 
+      hour: '2-digit', 
+      minute: '2-digit' 
+    });
+  } else {
+    // Show full date and time if older than 23 hours
+    el.textContent = 'Data as of: ' + d.toLocaleString();
   }
-});
+}
   
 </script>
 </body>
