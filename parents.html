@@ -9,8 +9,8 @@
     /* ... [Keeping your existing CSS] ... */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #1e293b; padding-bottom: 60px; }
-    .site-header { background: #741b47; width: 100%; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; margin-bottom: 0; }
-    .site-header h1 { font-family: 'Cinzel Decorative', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; color: #f9e7f0; font-size: clamp(1rem, 3.5vw, 2rem); text-align: center; font-weight: 400; line-height: 1.5; letter-spacing: 2px; }
+    .site-header { background: url("data:image/svg+xml,%3Csvg width='1920' height='1080' viewBox='0 0 1920 1080' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='20%25' style='stop-color:%23F3EDD8;stop-opacity:1'%3E%3C/stop%3E%3Cstop offset='70%25' style='stop-color:%235D87A0;stop-opacity:1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1920' height='1080' fill='url(%23grad)'%3E%3C/rect%3E%3C/svg%3E") center/cover no-repeat; width: 100%; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; margin-bottom: 0; }
+    .site-header h1 { font-family: 'Cinzel Decorative', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; color: #f9e7f0; text-shadow: 0 1px 4px rgba(0,0,0,0.3);font-size: clamp(1rem, 3.5vw, 2rem); text-align: center; font-weight: 400; line-height: 1.5; letter-spacing: 2px; }
     .site-header .page-label { font-size: 12px; color: #e8b4cc; text-transform: uppercase; letter-spacing: 3px; margin-top: 10px; }
     .date-bar { background: #1e293b; color: #e2e8f0; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; letter-spacing: 1px; }
     .day-nav { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 14px 24px; background: white; border-bottom: 1px solid #e2e8f0; margin-bottom: 24px; }
@@ -497,6 +497,30 @@ function adminApproveAll() {
     approveEntireDay(s.student, true); // pass silent=true to skip individual confirms
   });
   adminStatus('✓ All tasks marked done.', '#16a34a');
+}
+function updateColors(palette) {
+  if (!palette) return;
+  const root = document.documentElement;
+  root.style.setProperty('--primary', palette.primary);
+  root.style.setProperty('--secondary', palette.secondary);
+  root.style.setProperty('--bg', palette.bg || '#f8fafc');
+
+  // Build gradient from palette colors
+  const header = document.getElementById('siteHeader');
+  if (header) {
+    const svg = `<svg width='1920' height='1080' viewBox='0 0 1920 1080' xmlns='http://www.w3.org/2000/svg'>
+      <defs>
+        <linearGradient id='grad' x1='0%' y1='0%' x2='0%' y2='100%'>
+          <stop offset='0%' style='stop-color:${palette.bg || '#f8fafc'};stop-opacity:1'/>
+          <stop offset='70%' style='stop-color:${palette.primary};stop-opacity:1'/>
+        </linearGradient>
+      </defs>
+      <rect width='1920' height='1080' fill='url(%23grad)'/>
+    </svg>`;
+
+    const encoded = 'url("data:image/svg+xml,' + encodeURIComponent(svg) + '") center/cover no-repeat';
+    header.style.background = encoded;
+  }
 }
   
 </script>
