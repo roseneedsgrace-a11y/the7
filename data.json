@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-16T02:14:01.711Z",
-  "date": "Wednesday, April 15",
+  "generated": "2026-04-16T13:02:26.652Z",
+  "date": "Thursday, April 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47"
@@ -1521,7 +1521,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Thu"
             },
             {
@@ -1692,7 +1692,7 @@
               "task": "Drill Team & Lesson 53",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Nicole the Math Lady-Wed"
             },
             {
@@ -2227,7 +2227,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Tue"
             },
             {
@@ -2613,7 +2613,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Thu"
             },
             {
@@ -2966,7 +2966,7 @@
               "task": "P4 L2 #1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Health-Wed"
             },
             {
@@ -4185,7 +4185,7 @@
               "task": "Take Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Hillsdale History-Thu"
             },
             {
@@ -4356,7 +4356,7 @@
               "task": "Final Advanced Topics, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Creation Science-Thu"
             },
             {
@@ -4698,7 +4698,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Latin 1-Thu"
             },
             {
@@ -4869,7 +4869,7 @@
               "task": "Discuss",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Electives-Thu"
             },
             {
@@ -5371,7 +5371,7 @@
               "task": "Assessment (after Lesson 120)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Saxon Math-Wed"
             },
             {
@@ -5553,7 +5553,7 @@
               "task": "Read Vol. 2, Ch. 14, pp. 288-292",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-History-Thu"
             },
             {
@@ -5895,7 +5895,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Grammar-Thu"
             },
             {
