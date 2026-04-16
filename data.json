@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-16T21:13:55.542Z",
+  "generated": "2026-04-16T21:20:46.193Z",
   "date": "Thursday, April 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1416,8 +1416,8 @@
       "student": "Beth",
       "palette": {
         "primary": "#A3318C",
-        "secondary": "#D6CE93",
-        "bg": "#e8eddf"
+        "secondary": "#F4D35E",
+        "bg": "#F7FDF9"
       },
       "weekNum": 35,
       "grid": [
@@ -1703,7 +1703,7 @@
               "task": "Drill Team & Lesson 54",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Nicole the Math Lady-Thu"
             },
             {
@@ -5200,7 +5200,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Bible-Wed"
             },
             {
@@ -5211,7 +5211,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Bible-Thu"
             },
             {
