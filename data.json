@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-16T21:26:36.526Z",
-  "date": "Thursday, April 16",
+  "generated": "2026-04-17T12:52:01.664Z",
+  "date": "Friday, April 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47"
@@ -484,7 +484,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Thu"
             },
             {
@@ -655,7 +655,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Thu"
             },
             {
@@ -826,7 +826,7 @@
               "task": "5 sets: 🔲 \n5 pushups, 10 sit-ups, 2 pull-ups, 5 curls",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Physical Training-Thu"
             },
             {
