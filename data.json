@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T16:28:33.607Z",
+  "generated": "2026-04-18T16:36:04.427Z",
   "date": "Saturday, April 18",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -946,7 +946,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-English-Mon"
             },
             {
@@ -957,7 +957,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-English-Tue"
             },
             {
@@ -968,7 +968,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-English-Wed"
             },
             {
@@ -979,7 +979,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-English-Thu"
             },
             {
@@ -2009,7 +2009,7 @@
               "task": "Lesson 92",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Math-Mon"
             },
             {
@@ -2020,7 +2020,7 @@
               "task": "Quiz 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Math-Tue"
             },
             {
@@ -2031,7 +2031,7 @@
               "task": "Lesson 93",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Math-Wed"
             },
             {
@@ -2042,7 +2042,7 @@
               "task": "Lesson 94",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Math-Thu"
             },
             {
@@ -2053,7 +2053,7 @@
               "task": "Lesson 95",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Math-Fri"
             },
             {
@@ -2064,7 +2064,7 @@
               "task": "Lesson 96",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Mon"
             },
             {
@@ -2075,7 +2075,7 @@
               "task": "Review/Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Tue"
             },
             {
@@ -2086,7 +2086,7 @@
               "task": "Lesson 96 (Part 2)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Wed"
             },
             {
@@ -2097,7 +2097,7 @@
               "task": "Quiz 28",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Thu"
             },
             {
@@ -2108,7 +2108,7 @@
               "task": "Lesson 97",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Fri"
             },
             {
@@ -2119,7 +2119,7 @@
               "task": "Lesson 98",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Math-Mon"
             },
             {
@@ -2130,7 +2130,7 @@
               "task": "Review/Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Math-Tue"
             },
             {
@@ -2141,7 +2141,7 @@
               "task": "Lesson 99",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Math-Wed"
             },
             {
@@ -2152,7 +2152,7 @@
               "task": "Lesson 100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Math-Thu"
             },
             {
@@ -2400,7 +2400,7 @@
               "task": "Economics 101: Lesson/Quiz #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Citizenship-Mon"
             },
             {
@@ -2411,7 +2411,7 @@
               "task": "Economics 101: Lesson/Quiz #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Citizenship-Tue"
             },
             {
@@ -2422,7 +2422,7 @@
               "task": "Economics 101: Lesson/Quiz #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Citizenship-Wed"
             },
             {
@@ -2433,7 +2433,7 @@
               "task": "Economics 101: Lesson/Quiz #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W31-Citizenship-Thu"
             },
             {
@@ -2455,7 +2455,7 @@
               "task": "Economics 101: Lesson/Quiz #8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Mon"
             },
             {
@@ -2466,7 +2466,7 @@
               "task": "Economics 101: Lesson/Quiz #9",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Tue"
             },
             {
@@ -2477,7 +2477,7 @@
               "task": "Economics 101: Lesson/Quiz #10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Wed"
             },
             {
@@ -2488,7 +2488,7 @@
               "task": "Economics 101: Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Thu"
             },
             {
@@ -2499,7 +2499,7 @@
               "task": "Record your class overall score __________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Fri"
             },
             {
@@ -2510,7 +2510,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Mon"
             },
             {
@@ -2521,7 +2521,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Tue"
             },
             {
@@ -2532,7 +2532,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Wed"
             },
             {
@@ -2543,7 +2543,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Thu"
             },
             {
@@ -2554,7 +2554,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Fri"
             },
             {
@@ -5087,7 +5087,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Sat"
             },
             {
@@ -9179,7 +9179,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Bible-Tue"
             },
             {
@@ -9190,7 +9190,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Bible-Wed"
             },
             {
@@ -9201,7 +9201,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Bible-Thu"
             },
             {
@@ -9961,7 +9961,7 @@
               "task": "Competing Cosmologies, Lessons 3 & 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Creation Science-Tue"
             },
             {
@@ -9972,7 +9972,7 @@
               "task": "Competing Cosmologies, Lesson 5 & Advanced Topic 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Creation Science-Wed"
             },
             {
@@ -9983,7 +9983,7 @@
               "task": "Advanced Topics 2 & 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Creation Science-Thu"
             },
             {
@@ -9994,7 +9994,7 @@
               "task": "Advanced Topics 4 & 5, Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Creation Science-Fri"
             },
             {
@@ -10016,7 +10016,7 @@
               "task": "The Tower of Babel, Lessons 1 & 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Creation Science-Tue"
             },
             {
@@ -10027,7 +10027,7 @@
               "task": "The Tower of Babel, Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Creation Science-Wed"
             },
             {
@@ -10038,7 +10038,7 @@
               "task": "The Tower of Babel, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Creation Science-Thu"
             },
             {
@@ -10049,7 +10049,7 @@
               "task": "The Tower of Babel, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Creation Science-Fri"
             },
             {
@@ -10071,7 +10071,7 @@
               "task": "The Tower of Babel, Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Creation Science-Tue"
             },
             {
@@ -10082,7 +10082,7 @@
               "task": "The Culture of Genesis, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Creation Science-Wed"
             },
             {
@@ -10093,7 +10093,7 @@
               "task": "The Culture of Genesis, Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Creation Science-Thu"
             },
             {
@@ -10104,7 +10104,7 @@
               "task": "The Culture of Genesis, Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Creation Science-Fri"
             },
             {
@@ -11134,7 +11134,7 @@
               "task": "Biblical Arch. Lesson 12 Watch",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Electives-Tue"
             },
             {
@@ -11145,7 +11145,7 @@
               "task": "Biblical Arch. Lesson 12 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Electives-Wed"
             },
             {
@@ -11156,7 +11156,7 @@
               "task": "Read",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Electives-Thu"
             },
             {
@@ -11167,7 +11167,7 @@
               "task": "Discuss",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Electives-Fri"
             },
             {
@@ -11178,7 +11178,7 @@
               "task": "Project #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W31-Electives-Sat"
             },
             {
@@ -11189,7 +11189,7 @@
               "task": "Biblical Arch. Lesson 13 Watch",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Electives-Tue"
             },
             {
@@ -11200,7 +11200,7 @@
               "task": "Biblical Arch. Lesson 13 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Electives-Wed"
             },
             {
@@ -11211,7 +11211,7 @@
               "task": "Read",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Electives-Thu"
             },
             {
@@ -11222,7 +11222,7 @@
               "task": "Discuss",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Electives-Fri"
             },
             {
@@ -11244,7 +11244,7 @@
               "task": "Biblical Arch. Lesson 14 Watch",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Electives-Tue"
             },
             {
@@ -11255,7 +11255,7 @@
               "task": "Biblical Arch. Lesson 14 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Electives-Wed"
             },
             {
@@ -11266,7 +11266,7 @@
               "task": "Read",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Electives-Thu"
             },
             {
@@ -11277,7 +11277,7 @@
               "task": "Discuss",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Electives-Fri"
             },
             {
@@ -11365,7 +11365,7 @@
               "task": "Biblical Arch. Lesson 16 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Ezra-W35-Electives-Tue"
             },
             {
