@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T02:45:07.868Z",
+  "generated": "2026-04-18T02:45:12.851Z",
   "date": "Friday, April 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2268,7 +2268,7 @@
               "date": "4/18",
               "rawDate": 1776488400000,
               "week": 35,
-              "task": "Chapter 13, Lesson 11,",
+              "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
@@ -2279,9 +2279,9 @@
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "Chapter 14, Lesson 1",
-              "imageUrl": null,
-              "linkUrl": null,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
               "id": "Beth-W36-Reading & Grammar-Tue"
             },
@@ -2290,9 +2290,9 @@
               "date": "4/22",
               "rawDate": 1776834000000,
               "week": 36,
-              "task": "Chapter 14, Lesson 2",
-              "imageUrl": null,
-              "linkUrl": null,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
               "id": "Beth-W36-Reading & Grammar-Wed"
             },
