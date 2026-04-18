@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T02:51:21.732Z",
+  "generated": "2026-04-18T03:01:10.159Z",
   "date": "Friday, April 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2328,6 +2328,188 @@
               "linkUrl": null,
               "done": false,
               "id": "Beth-W36-Reading & Grammar-Sat"
+            }
+          ]
+        },
+        {
+          "subject": "Writing & Rhetoric",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Tue",
+              "date": "4/7",
+              "rawDate": 1775538000000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": true,
+              "id": "Beth-W34-Writing & Rhetoric-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/8",
+              "rawDate": 1775624400000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": true,
+              "id": "Beth-W34-Writing & Rhetoric-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/9",
+              "rawDate": 1775710800000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": true,
+              "id": "Beth-W34-Writing & Rhetoric-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/10",
+              "rawDate": 1775797200000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": true,
+              "id": "Beth-W34-Writing & Rhetoric-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/11",
+              "rawDate": 1775883600000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W34-Writing & Rhetoric-Sat"
+            },
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "week": 35,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W35-Writing & Rhetoric-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "week": 35,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W35-Writing & Rhetoric-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "week": 35,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W35-Writing & Rhetoric-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "week": 35,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W35-Writing & Rhetoric-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "week": 35,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W35-Writing & Rhetoric-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/18",
+              "rawDate": 1776488400000,
+              "week": 35,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W35-Writing & Rhetoric-Sat"
+            },
+            {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "Chapter 13 & 14 Transition:** Create an outline, draft, write final copy, and \"Speak It\" for \"The Wolf in Sheep's Clothing.\"",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Writing & Rhetoric-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/22",
+              "rawDate": 1776834000000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Writing & Rhetoric-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/23",
+              "rawDate": 1776920400000,
+              "week": 36,
+              "task": "Chapter 13 & 14 Transition:** Read \"The Lion & the Mouse.\"",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Writing & Rhetoric-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/24",
+              "rawDate": 1777006800000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Writing & Rhetoric-Fri"
+            },
+            {
+              "day": "Sat",
+              "date": "4/25",
+              "rawDate": 1777093200000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Writing & Rhetoric-Sat"
             }
           ]
         },
