@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17T12:52:01.664Z",
+  "generated": "2026-04-18T01:55:05.158Z",
   "date": "Friday, April 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1532,7 +1532,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Fri"
             },
             {
@@ -1711,7 +1711,7 @@
               "date": "4/17",
               "rawDate": 1776402000000,
               "week": 35,
-              "task": "Drill Team & Lesson 55",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -1722,7 +1722,7 @@
               "date": "4/18",
               "rawDate": 1776488400000,
               "week": 35,
-              "task": "",
+              "task": "Drill Team & Lesson 55",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -1733,7 +1733,7 @@
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "Drill Team & Lesson 56",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -1744,7 +1744,7 @@
               "date": "4/22",
               "rawDate": 1776834000000,
               "week": 36,
-              "task": "Drill Team & Lesson 57",
+              "task": "Drill Team & Lesson 56",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -1755,7 +1755,7 @@
               "date": "4/23",
               "rawDate": 1776920400000,
               "week": 36,
-              "task": "Drill Team & Lesson 58",
+              "task": "Drill Team & Lesson 57",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -1766,7 +1766,7 @@
               "date": "4/24",
               "rawDate": 1777006800000,
               "week": 36,
-              "task": "Drill Team & Lesson 59",
+              "task": "Drill Team & Lesson 58",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -1777,7 +1777,7 @@
               "date": "4/25",
               "rawDate": 1777093200000,
               "week": 36,
-              "task": "",
+              "task": "Drill Team & Lesson 59",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -2089,7 +2089,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Sat"
             },
             {
@@ -2260,7 +2260,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
               "linkUrl": "https://youtu.be/GLmjfJyZ-iM?si=FGqogPFs1XasxyEC",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Fri"
             },
             {
@@ -2806,7 +2806,7 @@
               "task": "Read \"Relationships\": Ch. 5 (pp. 40-50), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Bible-Thu"
             },
             {
@@ -2977,7 +2977,7 @@
               "task": "P4 L2 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Health-Thu"
             },
             {
@@ -3148,7 +3148,7 @@
               "task": "Russell & Modern Philospohers Step #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-History of Ideas-Thu"
             },
             {
@@ -3319,7 +3319,7 @@
               "task": "☐ Read pg 187-191",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Anatomy-Thu"
             },
             {
@@ -3490,7 +3490,7 @@
               "task": "Chap 25 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Math-Thu"
             },
             {
@@ -3650,7 +3650,7 @@
               "task": "The Book Thief Chap 49-54 & Day 12",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-English-Wed"
             },
             {
@@ -3661,7 +3661,7 @@
               "task": "The Book Thief Chap 55-60 & Day 13-14",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-English-Thu"
             },
             {
@@ -3683,7 +3683,7 @@
               "task": "The Book Thief Chap 61-66 & Day 15-16",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-English-Mon"
             },
             {
@@ -3832,7 +3832,7 @@
               "task": "Lessonn 15.5 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Financial Literacy-Thu"
             },
             {
@@ -4014,7 +4014,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Thu"
             },
             {
@@ -4025,7 +4025,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Fri"
             },
             {
@@ -4196,7 +4196,7 @@
               "task": "Take Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Hillsdale History-Fri"
             },
             {
@@ -4538,7 +4538,7 @@
               "task": "Shormann Math\nLesson 94 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Algebra 1-Fri"
             },
             {
@@ -4880,7 +4880,7 @@
               "task": "Biblical Archeology Project #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Electives-Fri"
             },
             {
@@ -5906,7 +5906,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Grammar-Fri"
             },
             {
