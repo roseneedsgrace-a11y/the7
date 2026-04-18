@@ -124,6 +124,8 @@
   let currentDate = new Date();
   currentDate.setHours(0, 0, 0, 0);
   let allData = null;
+  const cardViewState = {}; // studentName -> 'today' | 'both' | 'pastdue'
+  let globalViewMode = 'auto'; // 'auto' | 'pastdue'
 
   window.onload = function() {
     fetch('data.json?v=' + new Date().getTime())
@@ -168,16 +170,16 @@ function renderForDate(date) {
   
   const targetDate = new Date(date);
   const targetMidnight = Date.UTC(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate());
+  const nowMidnight = Date.UTC(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
   
-  // Get the Day Name for the sub-header (e.g., "Monday")
-  const dayName = targetDate.toLocaleDateString('en-US', { weekday: 'long' });
   const dateStr = targetDate.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-  
+  const dayName = targetDate.toLocaleDateString('en-US', { weekday: 'long' });
   document.getElementById('currentDayLabel').textContent = dateStr;
 
   const filtered = allData.students.map(function(s) {
     let dailyTasks = [];
-    
+    let pastDueTasks = {}; // keyed by subject
+
     if (s.grid && Array.isArray(s.grid)) {
       s.grid.forEach(subject => {
         if (subject.tasks) {
@@ -185,37 +187,74 @@ function renderForDate(date) {
             const d = new Date(t.rawDate);
             const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
 
-            // FIX: Check if date matches AND ensure the task text isn't empty/whitespace
-            if (taskMidnight === targetMidnight && t.task && t.task.trim() !== "") {
-              dailyTasks.push({
-                ...t,
-                subject: subject.subject,
-                curriculum: subject.curriculum
-              });
+            // Today's tasks
+            if (taskMidnight === targetMidnight && t.task && t.task.trim() !== '') {
+              const localProgress = getLocalProgress();
+              const isDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
+              dailyTasks.push({ ...t, done: isDone, subject: subject.subject, curriculum: subject.curriculum });
+            }
+
+            // Past due: before today, not done, has content
+            if (taskMidnight < nowMidnight && t.task && t.task.trim() !== '') {
+              const localProgress = getLocalProgress();
+              const isDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
+              if (!isDone) {
+                if (!pastDueTasks[subject.subject]) {
+                  pastDueTasks[subject.subject] = {
+                    curriculum: subject.curriculum,
+                    tasks: [],
+                    oldestDate: Infinity
+                  };
+                }
+                pastDueTasks[subject.subject].tasks.push({ ...t, done: isDone, subject: subject.subject, curriculum: subject.curriculum });
+                // Track oldest date for sorting subjects
+                if (taskMidnight < pastDueTasks[subject.subject].oldestDate) {
+                  pastDueTasks[subject.subject].oldestDate = taskMidnight;
+                }
+              }
             }
           });
         }
       });
     }
 
+    // Sort each subject's tasks by date ascending
+    Object.values(pastDueTasks).forEach(subj => {
+      subj.tasks.sort((a, b) => a.rawDate - b.rawDate);
+    });
+
+    // Sort subjects by oldest task (most overdue first)
+    const sortedPastDue = Object.entries(pastDueTasks)
+      .sort((a, b) => a[1].oldestDate - b[1].oldestDate)
+      .map(([subject, data]) => ({ subject, ...data }));
+
+    // Determine auto view mode
+    const incompleteToday = dailyTasks.filter(t => !t.done).length;
+    let autoView;
+    if (incompleteToday >= 3) autoView = 'today';
+    else if (incompleteToday > 0) autoView = 'both';
+    else autoView = 'pastdue';
+
     return {
       student: s.student,
       palette: s.palette,
       week: s.weekNum,
-      dayName: dayName, // Pass day name to the card builder
-      tasks: dailyTasks
+      dayName,
+      tasks: dailyTasks,
+      pastDue: sortedPastDue,
+      autoView
     };
-  }).filter(s => s.tasks.length > 0);
+  }).filter(s => s.tasks.length > 0 || s.pastDue.length > 0);
 
   renderStats(filtered);
 
   const contentDiv = document.getElementById('content');
   if (filtered.length === 0) {
-    contentDiv.innerHTML = '<div class="no-school"><strong>No Assignments Found</strong>There are no tasks scheduled for this specific date.</div>';
+    contentDiv.innerHTML = '<div class="no-school"><strong>No Assignments Found</strong>There are no tasks scheduled near this date.</div>';
   } else {
     let html = '<div class="students-grid">';
     filtered.forEach(s => { html += buildStudentCard(s); });
-    html += buildAdminCard(); 
+    html += buildAdminCard();
     html += '</div>';
     contentDiv.innerHTML = html;
   }
@@ -227,37 +266,88 @@ function buildStudentCard(s) {
   const done = s.tasks.filter(t => t.done).length;
   const total = s.tasks.length;
   const pct = total > 0 ? Math.round((done / total) * 100) : 0;
-  
-  let html = `<div class="student-card">
+
+  // Determine view mode
+  const viewMode = cardViewState[s.student] || 
+    (globalViewMode === 'pastdue' ? 'pastdue' : s.autoView);
+
+  const viewStates = ['today', 'both', 'pastdue'];
+  const viewLabels = { today: 'Today', both: 'Today + Past Due', pastdue: 'Past Due' };
+  const nextView = viewStates[(viewStates.indexOf(viewMode) + 1) % viewStates.length];
+
+  let html = `<div class="student-card" id="scard-${s.student}">
     <div class="student-header" style="background:${s.palette.primary};">
       <div class="student-avatar">${pct === 100 ? '✓' : pct + '%'}</div>
       <span class="student-name">${s.student}</span>
       <span class="student-pill">${done}/${total}</span>
+      <button class="view-toggle-pill" onclick="cycleCardView('${s.student}', event)"
+        title="Switch view">${viewLabels[viewMode]}</button>
     </div>
-    <div class="student-progress-bar"><div class="student-progress-fill" style="width:${pct}%; background:${s.palette.secondary};"></div></div>
-    <div style="padding: 10px 18px; background: #fdf2f8; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee;">
-      <span style="font-size: 11px; font-weight: 700; color: #741b47;">${s.dayName.toUpperCase()}'S TASKS</span>
+    <div class="student-progress-bar">
+      <div class="student-progress-fill" style="width:${pct}%; background:${s.palette.secondary};"></div>
+    </div>`;
+
+  // TODAY SECTION
+  if (viewMode === 'today' || viewMode === 'both') {
+    html += `
+    <div class="task-section-label" style="color:${s.palette.primary};">
+      ${s.dayName.toUpperCase()}'S TASKS
       <button class="approve-btn" onclick="approveEntireDay('${s.student}')">Mark All Done</button>
     </div>
     <div class="task-list">`;
 
-  s.tasks.forEach(t => {
-   html += `
-    <div class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}" 
-      onclick="toggleTask('${t.id}', '${s.palette.primary}', '${s.palette.secondary}')">
-      <div class="task-checkbox" style="${t.done ? `background:${s.palette.secondary};border-color:${s.palette.secondary}` : ''}">
+    if (s.tasks.length === 0) {
+      html += `<div class="no-tasks">No tasks today</div>`;
+    } else {
+      s.tasks.forEach(t => {
+        html += buildTaskRow(t, s.palette);
+      });
+    }
+    html += `</div>`;
+  }
+
+  // PAST DUE SECTION
+  if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length > 0) {
+    html += `<div class="task-section-label past-due-label">PAST DUE</div>`;
+
+    s.pastDue.forEach(subj => {
+      html += `<div class="past-due-subject-header" style="color:${s.palette.primary};">
+        ${subj.subject}
+        ${subj.curriculum ? `<span class="past-due-curriculum">${subj.curriculum}</span>` : ''}
+      </div>
+      <div class="task-list">`;
+      subj.tasks.forEach(t => {
+        html += buildTaskRow(t, s.palette, true);
+      });
+      html += `</div>`;
+    });
+  }
+
+  if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length === 0) {
+    html += `<div class="no-tasks" style="color:#16a34a;">✓ No past due assignments</div>`;
+  }
+
+  html += `<a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">
+    Full Week View ↗
+  </a></div>`;
+
+  return html;
+}
+
+// Extracted task row builder used by both today and past due
+function buildTaskRow(t, palette, isPastDue) {
+  const dateLabel = isPastDue ? `<span class="past-due-date">${t.date}</span>` : '';
+  return `
+    <div class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}"
+      onclick="toggleTask('${t.id}', '${palette.primary}', '${palette.secondary}')">
+      <div class="task-checkbox" style="${t.done ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
         ${t.done ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
       </div>
       <div class="task-info">
-        <div class="task-subject" style="color:${s.palette.primary};">${t.subject}</div>
-        ${t.curriculum ? `<div class="task-curriculum">${t.curriculum}</div>` : ''}
-        <div class="task-text">${t.task}</div>
+        ${isPastDue ? '' : `<div class="task-subject" style="color:${palette.primary};">${t.subject}</div>`}
+        <div class="task-text">${t.task}${dateLabel}</div>
       </div>
     </div>`;
-  });
-
-  html += `</div><a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">Full Week View ↗</a></div>`;
-  return html;
 }
   function renderStats(filtered) {
     let total = 0, done = 0;
@@ -430,6 +520,14 @@ function approveEntireDay(studentName, silent) {
             ✓ Today Complete
             <span class="admin-btn-sub">Mark Remining Tasks</span>
           </button>
+           <button class="admin-btn" onclick="setGlobalView('auto')">
+            ⚡ Auto View
+            <span class="admin-btn-sub">Smart today/past due</span>
+          </button>
+          <button class="admin-btn" onclick="setGlobalView('pastdue')">
+            ⏰ All Past Due
+            <span class="admin-btn-sub">Show overdue for all</span>
+          </button>
         </div>
       </div>
       
@@ -504,6 +602,22 @@ function adminApproveAll() {
     approveEntireDay(s.student, true); // pass silent=true to skip individual confirms
   });
   adminStatus('✓ All tasks marked done.', '#16a34a');
+}
+
+function cycleCardView(studentName, event) {
+  event.stopPropagation();
+  const viewStates = ['today', 'both', 'pastdue'];
+  const current = cardViewState[studentName] || 'today';
+  const next = viewStates[(viewStates.indexOf(current) + 1) % viewStates.length];
+  cardViewState[studentName] = next;
+  renderForDate(currentDate);
+}
+
+function setGlobalView(mode) {
+  globalViewMode = mode;
+  // Clear all per-card overrides so global takes effect
+  Object.keys(cardViewState).forEach(k => delete cardViewState[k]);
+  renderForDate(currentDate);
 }
 
   
