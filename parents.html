@@ -461,9 +461,17 @@ function toggleTask(id, palettePrimary, paletteSecondary) {
     });
   });
 
-  updateCardStats(row.closest('.student-card'));
-  startSyncTimer();
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+    try {
+      const card = row.closest('.student-card');
+      if (card) updateCardStats(card);
+    } catch(e) {
+        console.warn('updateCardStats failed:', e);
+    }
+  // Log to confirm fetch is firing
+  console.log('Toggling:', id, '→', isDone);
+  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' })
+    .then(() => console.log('Fetch sent for:', id))
+    .catch(e => console.error('Fetch failed:', e));
 }
 
   function updateCardStats(card) {
