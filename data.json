@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T02:46:18.467Z",
+  "generated": "2026-04-18T02:50:58.370Z",
   "date": "Friday, April 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1711,7 +1711,7 @@
               "date": "4/17",
               "rawDate": 1776402000000,
               "week": 35,
-              "task": "",
+              "task": "Drill Team",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -1722,7 +1722,7 @@
               "date": "4/18",
               "rawDate": 1776488400000,
               "week": 35,
-              "task": "Drill Team & Lesson 55",
+              "task": "Lesson 55",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
