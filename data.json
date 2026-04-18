@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T02:15:46.332Z",
+  "generated": "2026-04-18T02:45:07.868Z",
   "date": "Friday, April 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2268,9 +2268,9 @@
               "date": "4/18",
               "rawDate": 1776488400000,
               "week": 35,
-              "task": "Chapter 13, Lesson 11",
-              "imageUrl": null,
-              "linkUrl": null,
+              "task": "Chapter 13, Lesson 11,",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
               "id": "Beth-W35-Reading & Grammar-Sat"
             },
