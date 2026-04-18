@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T02:45:39.741Z",
+  "generated": "2026-04-18T02:45:53.737Z",
   "date": "Friday, April 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2302,8 +2302,8 @@
               "rawDate": 1776920400000,
               "week": 36,
               "task": "",
-              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
-              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
+              "imageUrl": null,
+              "linkUrl": null,
               "done": false,
               "id": "Beth-W36-Reading & Grammar-Thu"
             },
@@ -2324,8 +2324,8 @@
               "rawDate": 1777093200000,
               "week": 36,
               "task": "",
-              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
-              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
+              "imageUrl": null,
+              "linkUrl": null,
               "done": false,
               "id": "Beth-W36-Reading & Grammar-Sat"
             }
