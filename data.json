@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T01:55:43.496Z",
+  "generated": "2026-04-18T02:15:46.332Z",
   "date": "Friday, April 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2621,7 +2621,7 @@
               "date": "4/17",
               "rawDate": 1776402000000,
               "week": 35,
-              "task": "Latin Homework",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -2632,7 +2632,7 @@
               "date": "4/18",
               "rawDate": 1776488400000,
               "week": 35,
-              "task": "",
+              "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
