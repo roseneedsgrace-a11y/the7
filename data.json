@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-18T20:39:56.633Z",
-  "date": "Saturday, April 18",
+  "generated": "2026-04-19T23:24:26.782Z",
+  "date": "Sunday, April 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47"
@@ -5489,7 +5489,7 @@
               "task": "I love you, Beth!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Writing & Rhetoric-Sat"
             },
             {
@@ -6293,7 +6293,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Sat"
             },
             {
