@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-19T23:24:26.782Z",
+  "generated": "2026-04-19T23:29:49.456Z",
   "date": "Sunday, April 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2778,6 +2778,397 @@
               "id": "Amos-W37-Citizenship-Fri"
             }
           ]
+        },
+        {
+          "subject": "Jump to Nearest Workday",
+          "curriculum": "",
+          "tasks": [
+            {
+              "day": "Mon",
+              "date": "3/16",
+              "rawDate": 1773637200000,
+              "week": 31,
+              "task": "Snowday Assignment",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W31-Jump to Nearest Workday-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "3/17",
+              "rawDate": 1773723600000,
+              "week": 31,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W31-Jump to Nearest Workday-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "3/18",
+              "rawDate": 1773810000000,
+              "week": 31,
+              "task": "To Kill a Mockingbird #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W31-Jump to Nearest Workday-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "3/19",
+              "rawDate": 1773896400000,
+              "week": 31,
+              "task": "To Kill a Mockingbird #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W31-Jump to Nearest Workday-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "3/20",
+              "rawDate": 1773982800000,
+              "week": 31,
+              "task": "To Kill a Mockingbird #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W31-Jump to Nearest Workday-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "3/23",
+              "rawDate": 1774242000000,
+              "week": 32,
+              "task": "To Kill a Mockingbird #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W32-Jump to Nearest Workday-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "3/24",
+              "rawDate": 1774328400000,
+              "week": 32,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W32-Jump to Nearest Workday-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "3/25",
+              "rawDate": 1774414800000,
+              "week": 32,
+              "task": "Short Stories",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W32-Jump to Nearest Workday-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "3/26",
+              "rawDate": 1774501200000,
+              "week": 32,
+              "task": "Short Stories",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W32-Jump to Nearest Workday-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "3/27",
+              "rawDate": 1774587600000,
+              "week": 32,
+              "task": "Short Stories",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W32-Jump to Nearest Workday-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "3/30",
+              "rawDate": 1774846800000,
+              "week": 33,
+              "task": "Short Stories",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W33-Jump to Nearest Workday-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "3/31",
+              "rawDate": 1774933200000,
+              "week": 33,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W33-Jump to Nearest Workday-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/1",
+              "rawDate": 1775019600000,
+              "week": 33,
+              "task": "Travels W/ Charley #1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W33-Jump to Nearest Workday-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/2",
+              "rawDate": 1775106000000,
+              "week": 33,
+              "task": "Travels W/ Charley #1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W33-Jump to Nearest Workday-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/3",
+              "rawDate": 1775192400000,
+              "week": 33,
+              "task": "Travels W/ Charley #1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W33-Jump to Nearest Workday-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/6",
+              "rawDate": 1775451600000,
+              "week": 34,
+              "task": "Travels W/ Charley #1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Jump to Nearest Workday-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/7",
+              "rawDate": 1775538000000,
+              "week": 34,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Jump to Nearest Workday-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/8",
+              "rawDate": 1775624400000,
+              "week": 34,
+              "task": "Travels W/ Charley #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Jump to Nearest Workday-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/9",
+              "rawDate": 1775710800000,
+              "week": 34,
+              "task": "Travels W/ Charley #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Jump to Nearest Workday-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/10",
+              "rawDate": 1775797200000,
+              "week": 34,
+              "task": "Travels W/ Charley #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W34-Jump to Nearest Workday-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/13",
+              "rawDate": 1776056400000,
+              "week": 35,
+              "task": "Travels W/ Charley #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Jump to Nearest Workday-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/14",
+              "rawDate": 1776142800000,
+              "week": 35,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Jump to Nearest Workday-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/15",
+              "rawDate": 1776229200000,
+              "week": 35,
+              "task": "Travels W/ Charley #3",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Jump to Nearest Workday-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/16",
+              "rawDate": 1776315600000,
+              "week": 35,
+              "task": "Travels W/ Charley #3",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Jump to Nearest Workday-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/17",
+              "rawDate": 1776402000000,
+              "week": 35,
+              "task": "Travels W/ Charley #3",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W35-Jump to Nearest Workday-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "Travels W/ Charley #3",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Jump to Nearest Workday-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Jump to Nearest Workday-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/22",
+              "rawDate": 1776834000000,
+              "week": 36,
+              "task": "Peace Like a Rive #1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Jump to Nearest Workday-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/23",
+              "rawDate": 1776920400000,
+              "week": 36,
+              "task": "Peace Like a Rive #1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Jump to Nearest Workday-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "4/24",
+              "rawDate": 1777006800000,
+              "week": 36,
+              "task": "Peace Like a Rive #1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W36-Jump to Nearest Workday-Fri"
+            },
+            {
+              "day": "Mon",
+              "date": "4/27",
+              "rawDate": 1777266000000,
+              "week": 37,
+              "task": "Peace Like a Rive #1",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W37-Jump to Nearest Workday-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/28",
+              "rawDate": 1777352400000,
+              "week": 37,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W37-Jump to Nearest Workday-Tue"
+            },
+            {
+              "day": "Wed",
+              "date": "4/29",
+              "rawDate": 1777438800000,
+              "week": 37,
+              "task": "Peace Like a Rive #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W37-Jump to Nearest Workday-Wed"
+            },
+            {
+              "day": "Thu",
+              "date": "4/30",
+              "rawDate": 1777525200000,
+              "week": 37,
+              "task": "Peace Like a Rive #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W37-Jump to Nearest Workday-Thu"
+            },
+            {
+              "day": "Fri",
+              "date": "5/1",
+              "rawDate": 1777611600000,
+              "week": 37,
+              "task": "Peace Like a Rive #2",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Amos-W37-Jump to Nearest Workday-Fri"
+            }
+          ]
         }
       ]
     },
@@ -3081,6 +3472,17 @@
               "id": "Beth-W35-Bible-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "The Ology, BIble Reading, Catechism Q34",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Bible-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
@@ -3128,12 +3530,12 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
-              "task": "The Ology, BIble Reading, Catechism Q34",
+              "week": 37,
+              "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W36-Bible-Sat"
+              "id": "Beth-W37-Bible-Sat"
             },
             {
               "day": "Tue",
@@ -3178,17 +3580,6 @@
               "linkUrl": null,
               "done": false,
               "id": "Beth-W37-Bible-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
-              "task": "The Ology, BIble Reading, Catechism Q35",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-Bible-Sat"
             }
           ]
         },
@@ -3483,11 +3874,22 @@
               "id": "Beth-W35-Nicole the Math Lady-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "Lesson 56",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Nicole the Math Lady-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "Lesson 56",
+              "task": "Drill Team",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -3498,7 +3900,7 @@
               "date": "4/22",
               "rawDate": 1776834000000,
               "week": 36,
-              "task": "Drill Team",
+              "task": "Drill Team & Lesson 57",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -3509,7 +3911,7 @@
               "date": "4/23",
               "rawDate": 1776920400000,
               "week": 36,
-              "task": "Drill Team & Lesson 57",
+              "task": "Drill Team & Lesson 58",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -3520,7 +3922,7 @@
               "date": "4/24",
               "rawDate": 1777006800000,
               "week": 36,
-              "task": "Drill Team & Lesson 58",
+              "task": "Drill Team & Lesson 59",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -3530,19 +3932,19 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
-              "task": "Drill Team & Lesson 59",
+              "week": 37,
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W36-Nicole the Math Lady-Sat"
+              "id": "Beth-W37-Nicole the Math Lady-Sat"
             },
             {
               "day": "Tue",
               "date": "4/28",
               "rawDate": 1777352400000,
               "week": 37,
-              "task": "",
+              "task": "Drill Team & Lesson 60",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -3553,7 +3955,7 @@
               "date": "4/29",
               "rawDate": 1777438800000,
               "week": 37,
-              "task": "Drill Team & Lesson 60",
+              "task": "Drill Team & Investigation 6",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -3564,7 +3966,7 @@
               "date": "4/30",
               "rawDate": 1777525200000,
               "week": 37,
-              "task": "Drill Team & Investigation 6",
+              "task": "Drill Team & Lesson 61",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -3575,22 +3977,11 @@
               "date": "5/1",
               "rawDate": 1777611600000,
               "week": 37,
-              "task": "Drill Team & Lesson 61",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-Nicole the Math Lady-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
               "task": "Drill Team & Lesson 62",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W37-Nicole the Math Lady-Sat"
+              "id": "Beth-W37-Nicole the Math Lady-Fri"
             }
           ]
         },
@@ -3885,6 +4276,17 @@
               "id": "Beth-W35-History-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-History-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
@@ -3932,12 +4334,12 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
+              "week": 37,
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W36-History-Sat"
+              "id": "Beth-W37-History-Sat"
             },
             {
               "day": "Tue",
@@ -3982,17 +4384,6 @@
               "linkUrl": null,
               "done": false,
               "id": "Beth-W37-History-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-History-Sat"
             }
           ]
         },
@@ -4287,11 +4678,22 @@
               "id": "Beth-W35-Music-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "When We All Get to Heaven (p. 172) - Practice",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Music-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "When We All Get to Heaven (p. 172) - Practice",
+              "task": "The Star-Spangled Banner (p. 178) - The Story & Hymn Study & Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -4302,7 +4704,7 @@
               "date": "4/22",
               "rawDate": 1776834000000,
               "week": 36,
-              "task": "The Star-Spangled Banner (p. 178) - The Story & Hymn Study & Bible Lesson",
+              "task": "The Star-Spangled Banner (p. 178) - Copywork",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -4313,7 +4715,7 @@
               "date": "4/23",
               "rawDate": 1776920400000,
               "week": 36,
-              "task": "The Star-Spangled Banner (p. 178) - Copywork",
+              "task": "The Star-Spangled Banner (p. 178) - Music Theory",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -4324,9 +4726,9 @@
               "date": "4/24",
               "rawDate": 1777006800000,
               "week": 36,
-              "task": "The Star-Spangled Banner (p. 178) - Music Theory",
-              "imageUrl": null,
-              "linkUrl": null,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
+              "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "done": false,
               "id": "Beth-W36-Music-Fri"
             },
@@ -4334,19 +4736,19 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
-              "task": "",
-              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
-              "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
+              "week": 37,
+              "task": "The Star-Spangled Banner (p. 178) - Activity & Practice",
+              "imageUrl": null,
+              "linkUrl": null,
               "done": false,
-              "id": "Beth-W36-Music-Sat"
+              "id": "Beth-W37-Music-Sat"
             },
             {
               "day": "Tue",
               "date": "4/28",
               "rawDate": 1777352400000,
               "week": 37,
-              "task": "The Star-Spangled Banner (p. 178) - Activity & Practice",
+              "task": "My Country, 'Tis of Thee (p. 184) - The Story & Hymn Study & Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -4357,7 +4759,7 @@
               "date": "4/29",
               "rawDate": 1777438800000,
               "week": 37,
-              "task": "My Country, 'Tis of Thee (p. 184) - The Story & Hymn Study & Bible Lesson",
+              "task": "My Country, 'Tis of Thee (p. 184) - Copywork & Music Theory & Practice",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -4368,7 +4770,7 @@
               "date": "4/30",
               "rawDate": 1777525200000,
               "week": 37,
-              "task": "My Country, 'Tis of Thee (p. 184) - Copywork & Music Theory & Practice",
+              "task": "My Country, 'Tis of Thee (p. 184) - Activity",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -4379,22 +4781,11 @@
               "date": "5/1",
               "rawDate": 1777611600000,
               "week": 37,
-              "task": "My Country, 'Tis of Thee (p. 184) - Activity",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-Music-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "done": false,
-              "id": "Beth-W37-Music-Sat"
+              "id": "Beth-W37-Music-Fri"
             }
           ]
         },
@@ -4689,6 +5080,17 @@
               "id": "Beth-W35-Literature-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Literature-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
@@ -4736,12 +5138,12 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
+              "week": 37,
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W36-Literature-Sat"
+              "id": "Beth-W37-Literature-Sat"
             },
             {
               "day": "Tue",
@@ -4786,17 +5188,6 @@
               "linkUrl": null,
               "done": false,
               "id": "Beth-W37-Literature-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-Literature-Sat"
             }
           ]
         },
@@ -5091,11 +5482,22 @@
               "id": "Beth-W35-Reading & Grammar-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "Challenge yourself: See how much you can write.",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
+              "done": false,
+              "id": "Beth-W36-Reading & Grammar-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "Challenge yourself: See how much you can write.",
+              "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
@@ -5107,8 +5509,8 @@
               "rawDate": 1776834000000,
               "week": 36,
               "task": "",
-              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
-              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
+              "imageUrl": null,
+              "linkUrl": null,
               "done": false,
               "id": "Beth-W36-Reading & Grammar-Wed"
             },
@@ -5118,8 +5520,8 @@
               "rawDate": 1776920400000,
               "week": 36,
               "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
               "id": "Beth-W36-Reading & Grammar-Thu"
             },
@@ -5129,8 +5531,8 @@
               "rawDate": 1777006800000,
               "week": 36,
               "task": "",
-              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
-              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
+              "imageUrl": null,
+              "linkUrl": null,
               "done": false,
               "id": "Beth-W36-Reading & Grammar-Fri"
             },
@@ -5138,12 +5540,12 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
+              "week": 37,
               "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
-              "id": "Beth-W36-Reading & Grammar-Sat"
+              "id": "Beth-W37-Reading & Grammar-Sat"
             },
             {
               "day": "Tue",
@@ -5151,8 +5553,8 @@
               "rawDate": 1777352400000,
               "week": 37,
               "task": "",
-              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
-              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
+              "imageUrl": null,
+              "linkUrl": null,
               "done": false,
               "id": "Beth-W37-Reading & Grammar-Tue"
             },
@@ -5162,8 +5564,8 @@
               "rawDate": 1777438800000,
               "week": 37,
               "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
+              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
               "id": "Beth-W37-Reading & Grammar-Wed"
             },
@@ -5173,8 +5575,8 @@
               "rawDate": 1777525200000,
               "week": 37,
               "task": "",
-              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
-              "linkUrl": "https://app.nightzookeeper.com/zoo/map",
+              "imageUrl": null,
+              "linkUrl": null,
               "done": false,
               "id": "Beth-W37-Reading & Grammar-Thu"
             },
@@ -5184,21 +5586,10 @@
               "rawDate": 1777611600000,
               "week": 37,
               "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-Reading & Grammar-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
-              "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
-              "id": "Beth-W37-Reading & Grammar-Sat"
+              "id": "Beth-W37-Reading & Grammar-Fri"
             }
           ]
         },
@@ -5493,11 +5884,22 @@
               "id": "Beth-W35-Writing & Rhetoric-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "Chapter 13 & 14 Transition:** Create an outline, draft, write final copy, and \"Speak It\" for \"The Wolf in Sheep's Clothing.\"",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Writing & Rhetoric-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "Chapter 13 & 14 Transition:** Create an outline, draft, write final copy, and \"Speak It\" for \"The Wolf in Sheep's Clothing.\"",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5508,7 +5910,7 @@
               "date": "4/22",
               "rawDate": 1776834000000,
               "week": 36,
-              "task": "",
+              "task": "Chapter 13 & 14 Transition:** Read \"The Lion & the Mouse.\"",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5519,7 +5921,7 @@
               "date": "4/23",
               "rawDate": 1776920400000,
               "week": 36,
-              "task": "Chapter 13 & 14 Transition:** Read \"The Lion & the Mouse.\"",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5540,19 +5942,19 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
+              "week": 37,
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W36-Writing & Rhetoric-Sat"
+              "id": "Beth-W37-Writing & Rhetoric-Sat"
             },
             {
               "day": "Tue",
               "date": "4/28",
               "rawDate": 1777352400000,
               "week": 37,
-              "task": "",
+              "task": "Chapter 13 & 14 Transition:** Work on \"Talk About It\" questions.",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5563,7 +5965,7 @@
               "date": "4/29",
               "rawDate": 1777438800000,
               "week": 37,
-              "task": "Chapter 13 & 14 Transition:** Work on \"Talk About It\" questions.",
+              "task": "Chapter 13 & 14 Transition:** Practice Narration and work on the \"Go Deeper\" section.",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5574,7 +5976,7 @@
               "date": "4/30",
               "rawDate": 1777525200000,
               "week": 37,
-              "task": "Chapter 13 & 14 Transition:** Practice Narration and work on the \"Go Deeper\" section.",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5590,17 +5992,6 @@
               "linkUrl": null,
               "done": false,
               "id": "Beth-W37-Writing & Rhetoric-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-Writing & Rhetoric-Sat"
             }
           ]
         },
@@ -5895,11 +6286,22 @@
               "id": "Beth-W35-Handwriting-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "Level 4, p. 101",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Handwriting-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "Level 4, p. 101",
+              "task": "Level 4, p. 102 (Last page)",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5910,7 +6312,7 @@
               "date": "4/22",
               "rawDate": 1776834000000,
               "week": 36,
-              "task": "Level 4, p. 102 (Last page)",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5942,12 +6344,12 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
+              "week": 37,
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W36-Handwriting-Sat"
+              "id": "Beth-W37-Handwriting-Sat"
             },
             {
               "day": "Tue",
@@ -5992,17 +6394,6 @@
               "linkUrl": null,
               "done": false,
               "id": "Beth-W37-Handwriting-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-Handwriting-Sat"
             }
           ]
         },
@@ -6297,11 +6688,22 @@
               "id": "Beth-W35-Latin-Sat"
             },
             {
+              "day": "Mon",
+              "date": "4/20",
+              "rawDate": 1776661200000,
+              "week": 36,
+              "task": "Latin Homework",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Latin-Mon"
+            },
+            {
               "day": "Tue",
               "date": "4/21",
               "rawDate": 1776747600000,
               "week": 36,
-              "task": "Latin Homework",
+              "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6312,7 +6714,7 @@
               "date": "4/22",
               "rawDate": 1776834000000,
               "week": 36,
-              "task": "Latin Class!",
+              "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6323,7 +6725,7 @@
               "date": "4/23",
               "rawDate": 1776920400000,
               "week": 36,
-              "task": "Review Latin Flash Cards",
+              "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6334,7 +6736,7 @@
               "date": "4/24",
               "rawDate": 1777006800000,
               "week": 36,
-              "task": "Latin Homework",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6344,19 +6746,19 @@
               "day": "Sat",
               "date": "4/25",
               "rawDate": 1777093200000,
-              "week": 36,
-              "task": "",
+              "week": 37,
+              "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W36-Latin-Sat"
+              "id": "Beth-W37-Latin-Sat"
             },
             {
               "day": "Tue",
               "date": "4/28",
               "rawDate": 1777352400000,
               "week": 37,
-              "task": "Latin Homework",
+              "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6367,7 +6769,7 @@
               "date": "4/29",
               "rawDate": 1777438800000,
               "week": 37,
-              "task": "Latin Class!",
+              "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6378,7 +6780,7 @@
               "date": "4/30",
               "rawDate": 1777525200000,
               "week": 37,
-              "task": "Review Latin Flash Cards",
+              "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6389,22 +6791,11 @@
               "date": "5/1",
               "rawDate": 1777611600000,
               "week": 37,
-              "task": "Latin Homework",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W37-Latin-Fri"
-            },
-            {
-              "day": "Sat",
-              "date": "5/2",
-              "rawDate": 1777698000000,
-              "week": 37,
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Beth-W37-Latin-Sat"
+              "id": "Beth-W37-Latin-Fri"
             }
           ]
         }
