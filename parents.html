@@ -312,6 +312,27 @@
       }
     }, 1000);
   }
+function updateColors(palette) {
+  if (!palette) return;
+  const root = document.documentElement;
+  root.style.setProperty('--primary', palette.primary);
+  root.style.setProperty('--secondary', palette.secondary);
+  root.style.setProperty('--bg', palette.bg || '#f8fafc');
+
+  const header = document.getElementById('siteHeader');
+  if (header) {
+    const svg = `<svg width='1920' height='1080' viewBox='0 0 1920 1080' xmlns='http://www.w3.org/2000/svg'>
+      <defs>
+        <linearGradient id='grad' x1='0%' y1='0%' x2='0%' y2='100%'>
+          <stop offset='0%' style='stop-color:${palette.bg || '#f8fafc'};stop-opacity:1'/>
+          <stop offset='70%' style='stop-color:${palette.primary};stop-opacity:1'/>
+        </linearGradient>
+      </defs>
+      <rect width='1920' height='1080' fill='url(%23grad)'/>
+    </svg>`;
+    header.style.background = 'url("data:image/svg+xml,' + encodeURIComponent(svg) + '") center/cover no-repeat';
+  }
+}
 
   // 5. Everything else
   window.onload = function() {
