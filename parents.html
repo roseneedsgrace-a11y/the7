@@ -320,18 +320,36 @@
         if (!r.ok) throw new Error("File not found on server");
         return r.json();
       })
-      .then(function(data) {
-        allData = {
-          students: data.studentData,
-          config: data.config
-        };
-
-        if (data.config) {
-          applyHeaderSettings(data.config);
-        }
-
-        renderForDate(currentDate);
-      })
+    .then(function(data) {
+      // Build a chore lookup from the config students array
+      const choreMap = {};
+      if (data.students) {
+        data.students.forEach(s => {
+          choreMap[s.name] = s.chore || '';
+        });
+      }
+    
+      // Merge chore into each studentData entry
+      const studentDataWithChores = (data.studentData || []).map(s => ({
+        ...s,
+        chore: choreMap[s.student] || ''
+      }));
+    
+      allData = {
+        students: studentDataWithChores,
+        config: data.config,
+        generated: data.generated
+      };
+    
+      if (data.config) applyHeaderSettings(data.config);
+    
+      if (studentDataWithChores.length > 0) {
+        updateColors(studentDataWithChores[0].palette);
+      }
+    
+      showTimestamp(data.generated);
+      renderForDate(currentDate);
+    })
       .catch(e => {
         const content = document.getElementById('content');
         if (content) {
