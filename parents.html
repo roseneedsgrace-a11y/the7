@@ -230,6 +230,17 @@
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
 
+  function mergeChoresIntoStudentData(data) {
+    const choreMap = {};
+    if (data.students) {
+      data.students.forEach(s => { choreMap[s.name] = s.chore || ''; });
+    }
+    return (data.studentData || []).map(s => ({
+      ...s,
+      chore: choreMap[s.student] || ''
+    }));
+  }
+
   // 3. Sync Actions
   function pushAndRefresh() {
     const btn = document.getElementById('refreshBtn');
@@ -249,41 +260,39 @@
     btn.onclick = forceRefresh;
   }
 
-  function forceRefresh() {
-    const btn = document.getElementById('refreshBtn');
-    btn.textContent = 'Checking...';
-    btn.disabled = true;
+function forceRefresh() {
+  const btn = document.getElementById('refreshBtn');
+  btn.textContent = 'Checking...';
+  btn.disabled = true;
 
-    fetch('data.json?v=' + Date.now())
-      .then(r => r.json())
-      .then(data => {
-        const newTime = new Date(data.generated).getTime();
-        const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      const newTime = new Date(data.generated).getTime();
+      const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
 
-        if (newTime > oldTime) {
-          allData = { students: data.studentData, config: data.config, generated: data.generated };
-          renderForDate(currentDate);
-          showTimestamp(data.generated);
-          btn.textContent = '✓ Updated!';
-        } else {
-          btn.textContent = '✓ Already current';
-        }
+      if (newTime > oldTime) {
+        const studentDataWithChores = mergeChoresIntoStudentData(data);
+        allData = { students: studentDataWithChores, config: data.config, generated: data.generated };
+        renderForDate(currentDate);
+        showTimestamp(data.generated);
+        btn.textContent = '✓ Updated!';
+      }
+      btn.style.opacity = '0.6';
+      btn.style.color = '#94a3b8';
+      btn.style.fontWeight = 'normal';
+      btn.onclick = forceRefresh;
 
-        btn.style.opacity = '0.6';
-        btn.style.color = '#94a3b8';
-        btn.style.fontWeight = 'normal';
-        btn.onclick = forceRefresh;
-
-        setTimeout(() => {
-          btn.textContent = '↻';
-          btn.disabled = false;
-        }, 2000);
-      })
-      .catch(() => {
-        btn.textContent = 'Error — try again';
+      setTimeout(() => {
+        btn.textContent = '↻';
         btn.disabled = false;
-      });
-  }
+      }, 2000);
+    })
+    .catch(() => {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+    });
+}
 
   // 4. startSyncTimer (References pushAndRefresh)
   function startSyncTimer() {
@@ -344,23 +353,11 @@ function updateColors(palette, headerColor) {
       })
     .then(function(data) {
       // Build a chore lookup from the config students array
-      const choreMap = {};
-      if (data.students) {
-        data.students.forEach(s => {
-          choreMap[s.name] = s.chore || '';
-        });
-      }
-    
-      // Merge chore into each studentData entry
-      const studentDataWithChores = (data.studentData || []).map(s => ({
-        ...s,
-        chore: choreMap[s.student] || ''
-      }));
-    
-      allData = {
-        students: studentDataWithChores,
-        config: data.config,
-        generated: data.generated
+      const studentDataWithChores = mergeChoresIntoStudentData(data);
+      allData = { 
+        students: studentDataWithChores, 
+        config: data.config, 
+        generated: data.generated 
       };
     
       if (data.config) applyHeaderSettings(data.config);
@@ -385,9 +382,6 @@ function updateColors(palette, headerColor) {
       const words = config.headerText.split(' ');
       const mid = Math.ceil(words.length / 2);
       document.getElementById('headerTitle').innerHTML = words.slice(0, mid).join(' ') + '<br>' + words.slice(mid).join(' ');
-    }
-    if (config.headerColor) {
-      document.getElementById('siteHeader').style.background = config.headerColor;
     }
   }
 
@@ -749,24 +743,30 @@ function updateColors(palette, headerColor) {
       .catch(() => adminStatus('Push failed — try again', '#dc2626'));
   }
 
-  function adminRefresh() {
-    adminStatus('Fetching latest data...', '#f59e0b');
-    fetch('data.json?v=' + Date.now())
-      .then(r => r.json())
-      .then(data => {
-        const newTime = new Date(data.generated).getTime();
-        const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
-        if (newTime > oldTime) {
-          allData = { students: data.studentData, config: data.config, generated: data.generated };
-          renderForDate(currentDate);
-          adminStatus('✓ Data updated!', '#16a34a');
-          showTimestamp(data.generated);
-        } else {
-          adminStatus('Already up to date.', '#94a3b8');
-        }
-      })
-      .catch(() => adminStatus('Fetch failed — try again', '#dc2626'));
-  }
+function adminRefresh() {
+  adminStatus('Fetching latest data...', '#f59e0b');
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      const newTime = new Date(data.generated).getTime();
+      const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
+      if (newTime > oldTime) {
+        // Merge chores same as window.onload
+        const studentDataWithChores = mergeChoresIntoStudentData(data);
+        allData = { 
+          students: studentDataWithChores, 
+          config: data.config, 
+          generated: data.generated 
+        };
+        renderForDate(currentDate);
+        adminStatus('✓ Data updated!', '#16a34a');
+        showTimestamp(data.generated);
+      } else {
+        adminStatus('Already up to date.', '#94a3b8');
+      }
+    })
+    .catch(() => adminStatus('Fetch failed — try again', '#dc2626'));
+}
 
   function adminClearProgress() {
     if (confirm('Clear all locally cached progress? This won\'t affect the spreadsheet.')) {
