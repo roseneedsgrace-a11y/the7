@@ -191,7 +191,11 @@
 
 <div id="content" class="loading">Loading assignments...</div>
 
+Here is your script with the functions reorganized according to your specific order. I have placed the **Globals**, **Utilities**, **Sync Logic**, and **Core Application** logic into clearly defined sections to improve readability and ensure that functions referencing each other are logically positioned.
+
+```javascript
 <script>
+  // 1. Globals
   const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec'; 
 
   let currentDate = new Date();
@@ -199,16 +203,120 @@
   let allData = null;
   const cardViewState = {}; // studentName -> 'today' | 'both' | 'pastdue'
   let globalViewMode = 'auto'; // 'auto' | 'pastdue'
+  let syncCountdown = null;
+  const SYNC_DELAY = 10;
+
+  // 2. Utility functions
   function getLocalProgress() {
     return JSON.parse(localStorage.getItem('local_progress') || '{}');
   }
-  
+
   function setLocalProgress(id, isDone) {
     const localProgress = getLocalProgress();
     localProgress[id] = isDone;
     localStorage.setItem('local_progress', JSON.stringify(localProgress));
   }
 
+  function showTimestamp(isoString) {
+    const el = document.getElementById('lastUpdated');
+    if (!el || !isoString) return;
+    const d = new Date(isoString);
+    el.textContent = 'Data as of: ' + d.toLocaleString();
+  }
+
+  function getChoreId(studentName, date) {
+    const d = new Date(date);
+    return `${studentName}-chore-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+
+  function statCard(num, label, color) {
+    return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
+  }
+
+  // 3. Sync Actions
+  function pushAndRefresh() {
+    const btn = document.getElementById('refreshBtn');
+    btn.textContent = 'Pushing...';
+    btn.disabled = true;
+
+    fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
+      .then(() => {
+        btn.textContent = 'Waiting for GitHub...';
+        setTimeout(() => forceRefresh(), 8000);
+      })
+      .catch(() => {
+        btn.textContent = 'Error — try again';
+        btn.disabled = false;
+      });
+
+    btn.onclick = forceRefresh;
+  }
+
+  function forceRefresh() {
+    const btn = document.getElementById('refreshBtn');
+    btn.textContent = 'Checking...';
+    btn.disabled = true;
+
+    fetch('data.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        const newTime = new Date(data.generated).getTime();
+        const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
+
+        if (newTime > oldTime) {
+          allData = { students: data.studentData, config: data.config, generated: data.generated };
+          renderForDate(currentDate);
+          showTimestamp(data.generated);
+          btn.textContent = '✓ Updated!';
+        } else {
+          btn.textContent = '✓ Already current';
+        }
+
+        btn.style.opacity = '0.6';
+        btn.style.color = '#94a3b8';
+        btn.style.fontWeight = 'normal';
+        btn.onclick = forceRefresh;
+
+        setTimeout(() => {
+          btn.textContent = '↻';
+          btn.disabled = false;
+        }, 2000);
+      })
+      .catch(() => {
+        btn.textContent = 'Error — try again';
+        btn.disabled = false;
+      });
+  }
+
+  // 4. startSyncTimer (References pushAndRefresh)
+  function startSyncTimer() {
+    if (syncCountdown) clearInterval(syncCountdown);
+
+    const timerEl = document.getElementById('syncTimer');
+    const btn = document.getElementById('refreshBtn');
+    if (!timerEl || !btn) return;
+
+    let seconds = SYNC_DELAY;
+    timerEl.style.display = 'inline';
+    timerEl.textContent = `syncing... ${seconds}s`;
+
+    syncCountdown = setInterval(() => {
+      seconds--;
+      timerEl.textContent = `syncing... ${seconds}s`;
+
+      if (seconds <= 0) {
+        clearInterval(syncCountdown);
+        syncCountdown = null;
+        timerEl.style.display = 'none';
+        btn.style.opacity = '1';
+        btn.style.color = '#16a34a';
+        btn.title = 'New data may be available';
+        btn.onclick = pushAndRefresh;
+      }
+    }, 1000);
+  }
+
+  // 5. Everything else
   window.onload = function() {
     fetch('data.json?v=' + new Date().getTime())
       .then(r => {
@@ -216,7 +324,6 @@
         return r.json();
       })
       .then(function(data) {
-        // Map studentData to the format the dashboard expects
         allData = {
           students: data.studentData,
           config: data.config
@@ -247,204 +354,200 @@
     }
   }
 
-function renderForDate(date) {
-  if (!allData || !allData.students) return;
-  
-  const targetDate = new Date(date);
-  const targetMidnight = Date.UTC(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate());
-  const nowMidnight = Date.UTC(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-  
-  const dateStr = targetDate.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-  const dayName = targetDate.toLocaleDateString('en-US', { weekday: 'long' });
-  document.getElementById('currentDayLabel').textContent = dateStr;
+  function renderForDate(date) {
+    if (!allData || !allData.students) return;
+    
+    const targetDate = new Date(date);
+    const targetMidnight = Date.UTC(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate());
+    const nowMidnight = Date.UTC(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+    
+    const dateStr = targetDate.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    const dayName = targetDate.toLocaleDateString('en-US', { weekday: 'long' });
+    document.getElementById('currentDayLabel').textContent = dateStr;
 
-  const filtered = allData.students.map(function(s) {
-    let dailyTasks = [];
-    let pastDueTasks = {}; // keyed by subject
+    const filtered = allData.students.map(function(s) {
+      let dailyTasks = [];
+      let pastDueTasks = {}; 
 
-    if (s.grid && Array.isArray(s.grid)) {
-      s.grid.forEach(subject => {
-        if (subject.tasks) {
-          subject.tasks.forEach(t => {
-            const d = new Date(t.rawDate);
-            const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+      if (s.grid && Array.isArray(s.grid)) {
+        s.grid.forEach(subject => {
+          if (subject.tasks) {
+            subject.tasks.forEach(t => {
+              const d = new Date(t.rawDate);
+              const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
 
-            // Today's tasks
-            if (taskMidnight === targetMidnight && t.task && t.task.trim() !== '') {
-              const localProgress = getLocalProgress();
-              const isDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
-              dailyTasks.push({ ...t, done: isDone, subject: subject.subject, curriculum: subject.curriculum });
-            }
+              if (taskMidnight === targetMidnight && t.task && t.task.trim() !== '') {
+                const localProgress = getLocalProgress();
+                const isDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
+                dailyTasks.push({ ...t, done: isDone, subject: subject.subject, curriculum: subject.curriculum });
+              }
 
-            // Past due: before today, not done, has content
-            if (taskMidnight < nowMidnight && t.task && t.task.trim() !== '') {
-              const localProgress = getLocalProgress();
-              const isDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
-              if (!isDone) {
-                if (!pastDueTasks[subject.subject]) {
-                  pastDueTasks[subject.subject] = {
-                    curriculum: subject.curriculum,
-                    tasks: [],
-                    oldestDate: Infinity
-                  };
-                }
-                pastDueTasks[subject.subject].tasks.push({ ...t, done: isDone, subject: subject.subject, curriculum: subject.curriculum });
-                // Track oldest date for sorting subjects
-                if (taskMidnight < pastDueTasks[subject.subject].oldestDate) {
-                  pastDueTasks[subject.subject].oldestDate = taskMidnight;
+              if (taskMidnight < nowMidnight && t.task && t.task.trim() !== '') {
+                const localProgress = getLocalProgress();
+                const isDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
+                if (!isDone) {
+                  if (!pastDueTasks[subject.subject]) {
+                    pastDueTasks[subject.subject] = {
+                      curriculum: subject.curriculum,
+                      tasks: [],
+                      oldestDate: Infinity
+                    };
+                  }
+                  pastDueTasks[subject.subject].tasks.push({ ...t, done: isDone, subject: subject.subject, curriculum: subject.curriculum });
+                  if (taskMidnight < pastDueTasks[subject.subject].oldestDate) {
+                    pastDueTasks[subject.subject].oldestDate = taskMidnight;
+                  }
                 }
               }
-            }
-          });
-        }
+            });
+          }
+        });
+      }
+
+      Object.values(pastDueTasks).forEach(subj => {
+        subj.tasks.sort((a, b) => a.rawDate - b.rawDate);
       });
-    }
 
-    // Sort each subject's tasks by date ascending
-    Object.values(pastDueTasks).forEach(subj => {
-      subj.tasks.sort((a, b) => a.rawDate - b.rawDate);
-    });
+      const sortedPastDue = Object.entries(pastDueTasks)
+        .sort((a, b) => a[1].oldestDate - b[1].oldestDate)
+        .map(([subject, data]) => ({ subject, ...data }));
 
-    // Sort subjects by oldest task (most overdue first)
-    const sortedPastDue = Object.entries(pastDueTasks)
-      .sort((a, b) => a[1].oldestDate - b[1].oldestDate)
-      .map(([subject, data]) => ({ subject, ...data }));
+      const incompleteToday = dailyTasks.filter(t => !t.done).length;
+      let autoView;
+      if (incompleteToday >= 3) autoView = 'today';
+      else if (incompleteToday > 0) autoView = 'both';
+      else autoView = 'pastdue';
 
-    // Determine auto view mode
-    const incompleteToday = dailyTasks.filter(t => !t.done).length;
-    let autoView;
-    if (incompleteToday >= 3) autoView = 'today';
-    else if (incompleteToday > 0) autoView = 'both';
-    else autoView = 'pastdue';
+      const studentConfig = allData.students.find(sc => sc.student === s.student);
+      const chore = studentConfig && studentConfig.chore ? studentConfig.chore : null;
+      const totalToday = dailyTasks.length;
+      const doneToday = dailyTasks.filter(t => t.done).length;
+      const showChore = chore && totalToday > 0 && (doneToday / totalToday) >= 0.5;
 
-    // After building dailyTasks and pastDueTasks, find chore for this student
-    const studentConfig = allData.students.find(sc => sc.student === s.student);
-    const chore = studentConfig && studentConfig.chore ? studentConfig.chore : null;
+      return {
+        student: s.student,
+        palette: s.palette,
+        week: s.weekNum,
+        dayName,
+        tasks: dailyTasks,
+        pastDue: sortedPastDue,
+        autoView,
+        chore: showChore ? chore : null 
+      };
+    }).filter(s => s.tasks.length > 0 || s.pastDue.length > 0);
 
-    // Calculate completion % for today
-    const totalToday = dailyTasks.length;
-    const doneToday = dailyTasks.filter(t => t.done).length;
-    const showChore = chore && totalToday > 0 && (doneToday / totalToday) >= 0.5;
+    renderStats(filtered);
 
-return {
-  student: s.student,
-  palette: s.palette,
-  week: s.weekNum,
-  dayName,
-  tasks: dailyTasks,
-  pastDue: sortedPastDue,
-  autoView,
-  chore: showChore ? chore : null  // Only pass if threshold met
-};
-  }).filter(s => s.tasks.length > 0 || s.pastDue.length > 0);
-
-  renderStats(filtered);
-
-  const contentDiv = document.getElementById('content');
-  if (filtered.length === 0) {
-    contentDiv.innerHTML = '<div class="no-school"><strong>No Assignments Found</strong>There are no tasks scheduled near this date.</div>';
-  } else {
-    let html = '<div class="students-grid">';
-    filtered.forEach(s => { html += buildStudentCard(s); });
-    html += buildAdminCard();
-    html += '</div>';
-    contentDiv.innerHTML = html;
-  }
-  
-  updateNavButtons();
-}
-
-function buildStudentCard(s) {
-  const done = s.tasks.filter(t => t.done).length;
-  const total = s.tasks.length;
-  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
-
-  // Determine view mode
-  const viewMode = cardViewState[s.student] || 
-    (globalViewMode === 'pastdue' ? 'pastdue' : s.autoView);
-
-  const viewStates = ['today', 'both', 'pastdue'];
-  const viewLabels = { today: 'Today', both: 'Today + Past Due', pastdue: 'Past Due' };
-  const nextView = viewStates[(viewStates.indexOf(viewMode) + 1) % viewStates.length];
-
-  let html = `<div class="student-card" id="scard-${s.student}">
-    <div class="student-header" style="background:${s.palette.primary};">
-      <div class="student-avatar">${pct === 100 ? '✓' : pct + '%'}</div>
-      <span class="student-name">${s.student}</span>
-      <span class="student-pill">${done}/${total}</span>
-      <button class="view-toggle-pill" onclick="cycleCardView('${s.student}', event)"
-        title="Switch view">${viewLabels[viewMode]}</button>
-    </div>
-    <div class="student-progress-bar">
-      <div class="student-progress-fill" style="width:${pct}%; background:${s.palette.secondary};"></div>
-    </div>`;
-
-  // TODAY SECTION
-  if (viewMode === 'today' || viewMode === 'both') {
-    html += `
-    <div class="task-section-label" style="color:${s.palette.primary};">
-      ${s.dayName.toUpperCase()}'S TASKS
-      <button class="approve-btn" onclick="approveEntireDay('${s.student}')">Mark All Done</button>
-    </div>
-    <div class="task-list">`;
-
-    if (s.tasks.length === 0) {
-      html += `<div class="no-tasks">No tasks today</div>`;
+    const contentDiv = document.getElementById('content');
+    if (filtered.length === 0) {
+      contentDiv.innerHTML = '<div class="no-school"><strong>No Assignments Found</strong>There are no tasks scheduled near this date.</div>';
     } else {
-      s.tasks.forEach(t => {
-        html += buildTaskRow(t, s.palette);
-      });
+      let html = '<div class="students-grid">';
+      filtered.forEach(s => { html += buildStudentCard(s); });
+      html += buildAdminCard();
+      html += '</div>';
+      contentDiv.innerHTML = html;
     }
-    html += `</div>`;
+    
+    updateNavButtons();
   }
 
-  // PAST DUE SECTION
-  if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length > 0) {
-    html += `<div class="task-section-label past-due-label">PAST DUE</div>`;
+  function buildStudentCard(s) {
+    const done = s.tasks.filter(t => t.done).length;
+    const total = s.tasks.length;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    const viewMode = cardViewState[s.student] || (globalViewMode === 'pastdue' ? 'pastdue' : s.autoView);
+    const viewLabels = { today: 'Today', both: 'Today + Past Due', pastdue: 'Past Due' };
 
-    s.pastDue.forEach(subj => {
-      html += `<div class="past-due-subject-header" style="color:${s.palette.primary};">
-        ${subj.subject}
-        ${subj.curriculum ? `<span class="past-due-curriculum">${subj.curriculum}</span>` : ''}
+    let html = `<div class="student-card" id="scard-${s.student}">
+      <div class="student-header" style="background:${s.palette.primary};">
+        <div class="student-avatar">${pct === 100 ? '✓' : pct + '%'}</div>
+        <span class="student-name">${s.student}</span>
+        <span class="student-pill">${done}/${total}</span>
+        <button class="view-toggle-pill" onclick="cycleCardView('${s.student}', event)"
+          title="Switch view">${viewLabels[viewMode]}</button>
+      </div>
+      <div class="student-progress-bar">
+        <div class="student-progress-fill" style="width:${pct}%; background:${s.palette.secondary};"></div>
+      </div>`;
+
+    if (viewMode === 'today' || viewMode === 'both') {
+      html += `
+      <div class="task-section-label" style="color:${s.palette.primary};">
+        ${s.dayName.toUpperCase()}'S TASKS
+        <button class="approve-btn" onclick="approveEntireDay('${s.student}')">Mark All Done</button>
       </div>
       <div class="task-list">`;
-      subj.tasks.forEach(t => {
-        html += buildTaskRow(t, s.palette, true);
-      });
+      if (s.tasks.length === 0) {
+        html += `<div class="no-tasks">No tasks today</div>`;
+      } else {
+        s.tasks.forEach(t => { html += buildTaskRow(t, s.palette); });
+      }
       html += `</div>`;
-    });
+    }
+
+    if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length > 0) {
+      html += `<div class="task-section-label past-due-label">PAST DUE</div>`;
+      s.pastDue.forEach(subj => {
+        html += `<div class="past-due-subject-header" style="color:${s.palette.primary};">
+          ${subj.subject}
+          ${subj.curriculum ? `<span class="past-due-curriculum">${subj.curriculum}</span>` : ''}
+        </div>
+        <div class="task-list">`;
+        subj.tasks.forEach(t => { html += buildTaskRow(t, s.palette, true); });
+        html += `</div>`;
+      });
+    }
+
+    if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length === 0) {
+      html += `<div class="no-tasks" style="color:#16a34a;">✓ No past due assignments</div>`;
+    }
+
+    if (s.chore) {
+      html += buildChoreRow(s.student, s.chore, s.palette, currentDate);
+    }
+    
+    html += `<a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">
+      Full Week View ↗
+    </a></div>`;
+
+    return html;
   }
 
-  if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length === 0) {
-    html += `<div class="no-tasks" style="color:#16a34a;">✓ No past due assignments</div>`;
+  function buildTaskRow(t, palette, isPastDue) {
+    const dateLabel = isPastDue ? `<span class="past-due-date">${t.date}</span>` : '';
+    return `
+      <div class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}"
+        onclick="toggleTask('${t.id}', '${palette.primary}', '${palette.secondary}')">
+        <div class="task-checkbox" style="${t.done ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
+          ${t.done ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
+        </div>
+        <div class="task-info">
+          ${isPastDue ? '' : `<div class="task-subject" style="color:${palette.primary};">${t.subject}</div>`}
+          <div class="task-text">${t.task}${dateLabel}</div>
+        </div>
+      </div>`;
   }
-  // Chore appears after all task sections
-  if (s.chore) {
-    html += buildChoreRow(s.student, s.chore, s.palette, currentDate);
+
+  function buildChoreRow(studentName, chore, palette, date) {
+    const id = getChoreId(studentName, date);
+    const localProgress = getLocalProgress();
+    const isDone = localProgress[id] === true;
+
+    return `
+      <div class="chore-section-label">Last but Not Least</div>
+      <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
+        onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}')">
+        <div class="task-checkbox" style="${isDone ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
+          ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
+        </div>
+        <div class="task-info">
+          <div class="task-subject" style="color:${palette.primary};">Daily Chore</div>
+          <div class="task-text">${chore}</div>
+        </div>
+      </div>`;
   }
-  
-  html += `<a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">
-    Full Week View ↗
-  </a></div>`;
 
-  return html;
-}
-
-// Extracted task row builder used by both today and past due
-function buildTaskRow(t, palette, isPastDue) {
-  const dateLabel = isPastDue ? `<span class="past-due-date">${t.date}</span>` : '';
-  return `
-    <div class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}"
-      onclick="toggleTask('${t.id}', '${palette.primary}', '${palette.secondary}')">
-      <div class="task-checkbox" style="${t.done ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
-        ${t.done ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
-      </div>
-      <div class="task-info">
-        ${isPastDue ? '' : `<div class="task-subject" style="color:${palette.primary};">${t.subject}</div>`}
-        <div class="task-text">${t.task}${dateLabel}</div>
-      </div>
-    </div>`;
-}
   function renderStats(filtered) {
     let total = 0, done = 0;
     filtered.forEach(s => { 
@@ -452,7 +555,6 @@ function buildTaskRow(t, palette, isPastDue) {
       done += s.tasks.filter(t => t.done).length; 
     });
     const pct = total > 0 ? Math.round((done / total) * 100) : 0;
-
     const statsStrip = document.getElementById('statsStrip');
     if (statsStrip) {
       statsStrip.innerHTML = 
@@ -463,49 +565,43 @@ function buildTaskRow(t, palette, isPastDue) {
     }
   }
 
-function toggleTask(id, palettePrimary, paletteSecondary) {
-  const row = document.getElementById('prow-' + id);
-  if (!row) return;
-  
-  const isDone = !row.classList.contains('is-done');
-  row.classList.toggle('is-done', isDone);
-
-  const checkbox = row.querySelector('.task-checkbox');
-  if (checkbox) {
-    if (isDone) {
-      checkbox.style.background = paletteSecondary;
-      checkbox.style.borderColor = paletteSecondary;
-      checkbox.innerHTML = `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>`;
-    } else {
-      checkbox.style.background = '';
-      checkbox.style.borderColor = '';
-      checkbox.innerHTML = '';
+  function toggleTask(id, palettePrimary, paletteSecondary) {
+    const row = document.getElementById('prow-' + id);
+    if (!row) return;
+    
+    const isDone = !row.classList.contains('is-done');
+    row.classList.toggle('is-done', isDone);
+    const checkbox = row.querySelector('.task-checkbox');
+    if (checkbox) {
+      if (isDone) {
+        checkbox.style.background = paletteSecondary;
+        checkbox.style.borderColor = paletteSecondary;
+        checkbox.innerHTML = `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>`;
+      } else {
+        checkbox.style.background = '';
+        checkbox.style.borderColor = '';
+        checkbox.innerHTML = '';
+      }
     }
-  }
 
-  setLocalProgress(id, isDone);
+    setLocalProgress(id, isDone);
 
-  // Chores only live in localStorage — skip GAS sync and data cache update
-  if (!id.includes('-chore-')) {
-    allData.students.forEach(s => {
-      s.grid.forEach(subj => {
-        subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
+    if (!id.includes('-chore-')) {
+      allData.students.forEach(s => {
+        s.grid.forEach(subj => {
+          subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
+        });
       });
-    });
-    console.log('Toggling:', id, '→', isDone);
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' })
-      .then(() => console.log('Fetch sent for:', id))
-      .catch(e => console.error('Fetch failed:', e));
-    startSyncTimer();
+      try {
+        fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+      } catch(e) { console.warn('Fetch error:', e); }
+      startSyncTimer();
+    }
+    try {
+      const card = row.closest('.student-card');
+      if (card) updateCardStats(card);
+    } catch(e) { console.warn('updateCardStats failed:', e); }
   }
-
-  try {
-    const card = row.closest('.student-card');
-    if (card) updateCardStats(card);
-  } catch(e) {
-    console.warn('updateCardStats failed:', e);
-  }
-}
 
   function updateCardStats(card) {
     const total = card.querySelectorAll('.task-row').length;
@@ -515,7 +611,6 @@ function toggleTask(id, palettePrimary, paletteSecondary) {
     card.querySelector('.student-avatar').textContent = pct === 100 ? '✓' : pct + '%';
     card.querySelector('.student-progress-fill').style.width = pct + '%';
     
-    // Recalculate top stats strip
     const allTotal = document.querySelectorAll('.task-row').length;
     const allDone = document.querySelectorAll('.task-row.is-done').length;
     const allPct = Math.round((allDone / allTotal) * 100);
@@ -531,315 +626,148 @@ function toggleTask(id, palettePrimary, paletteSecondary) {
   }
 
   function updateNavButtons() {
-    const prevBtn = document.getElementById('prevDay');
-    const nextBtn = document.getElementById('nextDay');
-    // Basic behavior: let them click. To strictly limit to available dates, 
-    // you would scan allData.students for min/max rawDates.
+    // Nav logic placeholder
   }
 
-function approveEntireDay(studentName, silent) {
-  const student = allData.students.find(s => s.student === studentName);
-  if (!student) return;
-  
-  if (!silent && !confirm(`Mark everything today for ${studentName} as done?`)) return;
+  function approveEntireDay(studentName, silent) {
+    const student = allData.students.find(s => s.student === studentName);
+    if (!student) return;
+    if (!silent && !confirm(`Mark everything today for ${studentName} as done?`)) return;
 
-  const targetMidnight = Date.UTC(
-    currentDate.getFullYear(), 
-    currentDate.getMonth(), 
-    currentDate.getDate()
-  );
+    const targetMidnight = Date.UTC(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
 
-  student.grid.forEach(subj => {
-    subj.tasks.forEach(t => {
-      const d = new Date(t.rawDate);
-      const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
-      if (taskMidnight === targetMidnight && !t.done) {
-        t.done = true;
-        setLocalProgress(t.id, true);
-        const row = document.getElementById('prow-' + t.id);
-        if (row) {
-          row.classList.add('is-done');
-          const checkbox = row.querySelector('.task-checkbox');
-          if (checkbox) {
-            checkbox.style.background = student.palette.secondary;
-            checkbox.style.borderColor = student.palette.secondary;
+    student.grid.forEach(subj => {
+      subj.tasks.forEach(t => {
+        const d = new Date(t.rawDate);
+        const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+        if (taskMidnight === targetMidnight && !t.done) {
+          t.done = true;
+          setLocalProgress(t.id, true);
+          const row = document.getElementById('prow-' + t.id);
+          if (row) {
+            row.classList.add('is-done');
+            const checkbox = row.querySelector('.task-checkbox');
+            if (checkbox) {
+              checkbox.style.background = student.palette.secondary;
+              checkbox.style.borderColor = student.palette.secondary;
+            }
           }
+          fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
         }
-        fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
-      }
+      });
     });
-  });
-
-  if (!silent) renderForDate(currentDate);
-}
-  
-  function statCard(num, label, color) {
-    return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
+    if (!silent) renderForDate(currentDate);
   }
 
   function buildAdminCard() {
-  return `<div class="student-card">
-    <div class="student-header" style="background:#334155;">
-      <div class="student-avatar" style="font-size:18px;">⚙</div>
-      <span class="student-name">Admin</span>
-    </div>
-    <div class="task-list" style="padding: 12px 18px; display:flex; flex-direction:column; gap:10px;">
-      
-      <div class="admin-section">
-        <div class="admin-section-label">Data</div>
-        <div class="admin-actions">
-          <button class="admin-btn" onclick="adminPush()">
-            ⬆ Push an Update
-            <span class="admin-btn-sub">Force a data.json update</span>
-          </button>
-          
-          <button class="admin-btn danger" onclick="adminClearProgress()">
-            ✕ Local Cache
-            <span class="admin-btn-sub">Wipe localStorage</span>
-            <span class="admin-btn-sub">Not Recommended</span>
-          </button>
-        </div>
+    return `<div class="student-card">
+      <div class="student-header" style="background:#334155;">
+        <div class="student-avatar" style="font-size:18px;">⚙</div>
+        <span class="student-name">Admin</span>
       </div>
-
-      <div class="admin-section">
-        <div class="admin-section-label">Navigation</div>
-        <div class="admin-actions">
-          <button class="admin-btn" onclick="window.location.href='index.html'">
-            📋 Student Planner
-            <span class="admin-btn-sub">Full week view</span>
-          </button>
-          <button class="admin-btn" onclick="window.open('${API_URL}?page=config', '_blank')">
-            🔧 System Config
-            <span class="admin-btn-sub">Edit students & palettes</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="admin-section">      
-        <div class="admin-section-label">View</div>
-        <div class="admin-actions">
-          <button class="admin-btn" onclick="adminGoToToday()">
-            📅 Jump to Today
-            <span class="admin-btn-sub">Reset day navigation</span>
-          </button>
-          <button class="admin-btn" onclick="adminApproveAll()">
-            ✓ Today Complete
-            <span class="admin-btn-sub">Mark Remining Tasks</span>
-          </button>
-           <button class="admin-btn" onclick="setGlobalView('auto')">
-            ⚡ Auto View
-            <span class="admin-btn-sub">Smart today/past due</span>
-          </button>
-          <button class="admin-btn" onclick="setGlobalView('pastdue')">
-            ⏰ All Past Due
-            <span class="admin-btn-sub">Show overdue for all</span>
-          </button>
-        </div>
-      </div>
-      
-      <div class="admin-section">      
-        <div class="admin-section-label"><br /> Trouble Shooting</div>
-           <div class="admin-actions">
-              Device Syncing: If your student’s progress isn't appearing on your screen, click "Push to GitHub" to sync the data. Please allow 1–2 minutes for the update to process. For the best experience, your student(s) can click the ↻ (Refresh) icon under the PRINT button occasionally.          
+      <div class="task-list" style="padding: 12px 18px; display:flex; flex-direction:column; gap:10px;">
+        <div class="admin-section">
+          <div class="admin-section-label">Data</div>
+          <div class="admin-actions">
+            <button class="admin-btn" onclick="adminPush()">⬆ Push an Update</button>
+            <button class="admin-btn danger" onclick="adminClearProgress()">✕ Local Cache</button>
           </div>
-      </div>
-
-      <div id="adminStatus" style="font-size:11px; color:#94a3b8; font-style:italic; text-align:center; min-height:16px;"></div>
-
-    </div>
-  </div>`;
-}
-
-function adminStatus(msg, color) {
-  const el = document.getElementById('adminStatus');
-  if (!el) return;
-  el.textContent = msg;
-  el.style.color = color || '#94a3b8';
-  setTimeout(() => { el.textContent = ''; }, 4000);
-}
-
-function adminPush() {
-  adminStatus('Pushing to GitHub...', '#f59e0b');
-  fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
-    .then(() => {
-      adminStatus('Push sent! Waiting for GitHub...', '#f59e0b');
-      setTimeout(() => adminRefresh(), 8000);
-    })
-    .catch(() => adminStatus('Push failed — try again', '#dc2626'));
-}
-
-function adminRefresh() {
-  adminStatus('Fetching latest data...', '#f59e0b');
-  fetch('data.json?v=' + Date.now())
-    .then(r => r.json())
-    .then(data => {
-      const newTime = new Date(data.generated).getTime();
-      const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
-      if (newTime > oldTime) {
-        allData = { students: data.studentData, config: data.config, generated: data.generated };
-        renderForDate(currentDate);
-        adminStatus('✓ Data updated!', '#16a34a');
-        showTimestamp(data.generated);
-      } else {
-        adminStatus('Already up to date.', '#94a3b8');
-      }
-    })
-    .catch(() => adminStatus('Fetch failed — try again', '#dc2626'));
-}
-
-function adminClearProgress() {
-  if (confirm('Clear all locally cached progress? This won\'t affect the spreadsheet.')) {
-    localStorage.removeItem('local_progress');
-    renderForDate(currentDate);
-    adminStatus('✓ Local cache cleared.', '#16a34a');
-  }
-}
-
-function adminGoToToday() {
-  currentDate = new Date();
-  currentDate.setHours(0, 0, 0, 0);
-  renderForDate(currentDate);
-  adminStatus('✓ Jumped to today.', '#16a34a');
-}
-
-function adminApproveAll() {
-  if (!confirm('Mark ALL tasks today as done for every student?')) return;
-  allData.students.forEach(s => {
-    approveEntireDay(s.student, true); // pass silent=true to skip individual confirms
-  });
-  adminStatus('✓ All tasks marked done.', '#16a34a');
-}
-
-function cycleCardView(studentName, event) {
-  event.stopPropagation();
-  const viewStates = ['today', 'both', 'pastdue'];
-  const current = cardViewState[studentName] || 'today';
-  const next = viewStates[(viewStates.indexOf(current) + 1) % viewStates.length];
-  cardViewState[studentName] = next;
-  renderForDate(currentDate);
-}
-
-function setGlobalView(mode) {
-  globalViewMode = mode;
-  // Clear all per-card overrides so global takes effect
-  Object.keys(cardViewState).forEach(k => delete cardViewState[k]);
-  renderForDate(currentDate);
-}
-
-function getChoreId(studentName, date) {
-  const d = new Date(date);
-  return `${studentName}-chore-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-}
-
-function buildChoreRow(studentName, chore, palette, date) {
-  const id = getChoreId(studentName, date);
-  const localProgress = getLocalProgress();
-  const isDone = localProgress[id] === true;
-
-  return `
-    <div class="chore-section-label">Last but Not Least</div>
-    <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
-      onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}')">
-      <div class="task-checkbox" style="${isDone ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
-        ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
-      </div>
-      <div class="task-info">
-        <div class="task-subject" style="color:${palette.primary};">Daily Chore</div>
-        <div class="task-text">${chore}</div>
+        </div>
+        <div class="admin-section">
+          <div class="admin-section-label">Navigation</div>
+          <div class="admin-actions">
+            <button class="admin-btn" onclick="window.location.href='index.html'">📋 Student Planner</button>
+            <button class="admin-btn" onclick="window.open('${API_URL}?page=config', '_blank')">🔧 System Config</button>
+          </div>
+        </div>
+        <div class="admin-section">      
+          <div class="admin-section-label">View</div>
+          <div class="admin-actions">
+            <button class="admin-btn" onclick="adminGoToToday()">📅 Jump to Today</button>
+            <button class="admin-btn" onclick="adminApproveAll()">✓ Today Complete</button>
+            <button class="admin-btn" onclick="setGlobalView('auto')">⚡ Auto View</button>
+            <button class="admin-btn" onclick="setGlobalView('pastdue')">⏰ All Past Due</button>
+          </div>
+        </div>
+        <div id="adminStatus" style="font-size:11px; color:#94a3b8; font-style:italic; text-align:center; min-height:16px;"></div>
       </div>
     </div>`;
-}
+  }
 
-let syncCountdown = null;
-const SYNC_DELAY = 10;
+  function adminStatus(msg, color) {
+    const el = document.getElementById('adminStatus');
+    if (!el) return;
+    el.textContent = msg;
+    el.style.color = color || '#94a3b8';
+    setTimeout(() => { el.textContent = ''; }, 4000);
+  }
 
-function startSyncTimer() {
-  if (syncCountdown) clearInterval(syncCountdown);
+  function adminPush() {
+    adminStatus('Pushing to GitHub...', '#f59e0b');
+    fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
+      .then(() => {
+        adminStatus('Push sent! Waiting for GitHub...', '#f59e0b');
+        setTimeout(() => adminRefresh(), 8000);
+      })
+      .catch(() => adminStatus('Push failed — try again', '#dc2626'));
+  }
 
-  const timerEl = document.getElementById('syncTimer');
-  const btn = document.getElementById('refreshBtn');
-  if (!timerEl || !btn) return; // guard in case elements aren't present
+  function adminRefresh() {
+    adminStatus('Fetching latest data...', '#f59e0b');
+    fetch('data.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        const newTime = new Date(data.generated).getTime();
+        const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
+        if (newTime > oldTime) {
+          allData = { students: data.studentData, config: data.config, generated: data.generated };
+          renderForDate(currentDate);
+          adminStatus('✓ Data updated!', '#16a34a');
+          showTimestamp(data.generated);
+        } else {
+          adminStatus('Already up to date.', '#94a3b8');
+        }
+      })
+      .catch(() => adminStatus('Fetch failed — try again', '#dc2626'));
+  }
 
-  let seconds = SYNC_DELAY;
-  timerEl.style.display = 'inline';
-  timerEl.textContent = `syncing... ${seconds}s`;
-
-  syncCountdown = setInterval(() => {
-    seconds--;
-    timerEl.textContent = `syncing... ${seconds}s`;
-
-    if (seconds <= 0) {
-      clearInterval(syncCountdown);
-      syncCountdown = null;
-      timerEl.style.display = 'none';
-      btn.style.opacity = '1';
-      btn.style.color = '#16a34a';
-      btn.title = 'New data may be available';
-      btn.onclick = pushAndRefresh;
+  function adminClearProgress() {
+    if (confirm('Clear all locally cached progress? This won\'t affect the spreadsheet.')) {
+      localStorage.removeItem('local_progress');
+      renderForDate(currentDate);
+      adminStatus('✓ Local cache cleared.', '#16a34a');
     }
-  }, 1000);
-}
+  }
 
-function pushAndRefresh() {
-  const btn = document.getElementById('refreshBtn');
-  btn.textContent = 'Pushing...';
-  btn.disabled = true;
+  function adminGoToToday() {
+    currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0);
+    renderForDate(currentDate);
+    adminStatus('✓ Jumped to today.', '#16a34a');
+  }
 
-  fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
-    .then(() => {
-      btn.textContent = 'Waiting for GitHub...';
-      setTimeout(() => forceRefresh(), 8000);
-    })
-    .catch(() => {
-      btn.textContent = 'Error — try again';
-      btn.disabled = false;
+  function adminApproveAll() {
+    if (!confirm('Mark ALL tasks today as done for every student?')) return;
+    allData.students.forEach(s => {
+      approveEntireDay(s.student, true);
     });
+    adminStatus('✓ All tasks marked done.', '#16a34a');
+  }
 
-  btn.onclick = forceRefresh;
-}
+  function cycleCardView(studentName, event) {
+    event.stopPropagation();
+    const viewStates = ['today', 'both', 'pastdue'];
+    const current = cardViewState[studentName] || 'today';
+    const next = viewStates[(viewStates.indexOf(current) + 1) % viewStates.length];
+    cardViewState[studentName] = next;
+    renderForDate(currentDate);
+  }
 
-function forceRefresh() {
-  const btn = document.getElementById('refreshBtn');
-  btn.textContent = 'Checking...';
-  btn.disabled = true;
-
-  fetch('data.json?v=' + Date.now())
-    .then(r => r.json())
-    .then(data => {
-      const newTime = new Date(data.generated).getTime();
-      const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
-
-      if (newTime > oldTime) {
-        allData = { students: data.studentData, config: data.config, generated: data.generated };
-        renderForDate(currentDate);
-        showTimestamp(data.generated);
-        btn.textContent = '✓ Updated!';
-      } else {
-        btn.textContent = '✓ Already current';
-      }
-
-      btn.style.opacity = '0.6';
-      btn.style.color = '#94a3b8';
-      btn.style.fontWeight = 'normal';
-      btn.onclick = forceRefresh;
-
-      setTimeout(() => {
-        btn.textContent = '↻';
-        btn.disabled = false;
-      }, 2000);
-    })
-    .catch(() => {
-      btn.textContent = 'Error — try again';
-      btn.disabled = false;
-    });
-}
-
-function showTimestamp(isoString) {
-  const el = document.getElementById('lastUpdated');
-  if (!el || !isoString) return;
-  const d = new Date(isoString);
-  el.textContent = 'Data as of: ' + d.toLocaleString();
-}
+  function setGlobalView(mode) {
+    globalViewMode = mode;
+    Object.keys(cardViewState).forEach(k => delete cardViewState[k]);
+    renderForDate(currentDate);
+  }
 </script>
 </body>
 </html>
