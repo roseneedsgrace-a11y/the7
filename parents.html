@@ -362,10 +362,6 @@ function updateColors(palette, headerColor) {
     
       if (data.config) applyHeaderSettings(data.config);
     
-      if (studentDataWithChores.length > 0) {
-        updateColors(studentDataWithChores[0].palette, data.config && data.config.headerColor);
-      }
-    
       showTimestamp(data.generated);
       renderForDate(currentDate);
     })
@@ -377,13 +373,17 @@ function updateColors(palette, headerColor) {
       });
   };
 
-  function applyHeaderSettings(config) {
-    if (config.headerText) {
-      const words = config.headerText.split(' ');
-      const mid = Math.ceil(words.length / 2);
-      document.getElementById('headerTitle').innerHTML = words.slice(0, mid).join(' ') + '<br>' + words.slice(mid).join(' ');
-    }
+function applyHeaderSettings(config) {
+  if (config.headerText) {
+    const words = config.headerText.split(' ');
+    const mid = Math.ceil(words.length / 2);
+    document.getElementById('headerTitle').innerHTML = 
+      words.slice(0, mid).join(' ') + '<br>' + words.slice(mid).join(' ');
   }
+  if (config.headerColor) {
+    document.getElementById('siteHeader').style.background = config.headerColor;
+  }
+}
 
   function renderForDate(date) {
     if (!allData || !allData.students) return;
