@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-22T15:04:57.739Z",
+  "generated": "2026-04-22T21:39:25.091Z",
   "date": "Wednesday, April 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1496,7 +1496,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Fri"
             },
             {
@@ -1507,7 +1507,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Foreign Language-Mon"
             },
             {
@@ -1518,7 +1518,7 @@
               "task": "Lesson 27 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Foreign Language-Tue"
             },
             {
@@ -3049,7 +3049,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Wed"
             },
             {
@@ -4613,7 +4613,7 @@
               "task": "Read the cahpater if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Literature-Wed"
             },
             {
@@ -4635,7 +4635,7 @@
               "task": "Read the cahpater if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Literature-Fri"
             },
             {
@@ -5026,7 +5026,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Reading & Grammar-Fri"
             },
             {
@@ -5808,7 +5808,7 @@
               "task": "Write out a verse in your very best handwriting.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Handwriting-Fri"
             },
             {
@@ -6177,7 +6177,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Latin-Wed"
             },
             {
@@ -6188,7 +6188,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Latin-Thu"
             },
             {
@@ -6579,7 +6579,7 @@
               "task": "Read \"Relationships\": Ch. 8 (pp. 72-84), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Bible-Wed"
             },
             {
@@ -7752,7 +7752,7 @@
               "task": "☐ Color ABC 186-187",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Anatomy-Wed"
             },
             {
@@ -11651,7 +11651,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-Bible-Mon"
             },
             {
@@ -11662,7 +11662,7 @@
               "task": "The Ology, BIble Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-Bible-Tue"
             },
             {
@@ -11673,7 +11673,7 @@
               "task": "The Ology, BIble Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-Bible-Wed"
             },
             {
@@ -12042,7 +12042,7 @@
               "task": "Lesson 123",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-Saxon Math-Mon"
             },
             {
@@ -12064,7 +12064,7 @@
               "task": "Lesson 124",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-Saxon Math-Wed"
             },
             {
@@ -12086,7 +12086,7 @@
               "task": "Drill Team Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Saxon Math-Fri"
             },
             {
@@ -12433,7 +12433,7 @@
               "task": "Read Vol. 2, Ch. 15, pp. 299-303",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-History-Mon"
             },
             {
@@ -12455,7 +12455,7 @@
               "task": "Read Vol. 2, Ch. 15, pp. 304-308",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-History-Wed"
             },
             {
@@ -12466,7 +12466,7 @@
               "task": "Read Vol. 2, Ch. 15, pp. 309-313",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-History-Thu"
             },
             {
@@ -12477,7 +12477,7 @@
               "task": "Read Vol. 2, Ch. 15, pp. 314-319 (finishes Ch. 15, starts Ch. 16)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-History-Fri"
             },
             {
@@ -13226,7 +13226,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-Literature-Tue"
             },
             {
@@ -13237,7 +13237,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Literature-Wed"
             },
             {
@@ -13248,7 +13248,7 @@
               "task": "Read Chapter 1: How Shasta Set Out on His Travels",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Literature-Thu"
             },
             {
@@ -13606,7 +13606,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
               "linkUrl": "https://youtu.be/GLmjfJyZ-iM?si=FGqogPFs1XasxyEC",
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Mon"
             },
             {
@@ -13628,7 +13628,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Wed"
             },
             {
@@ -13639,7 +13639,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Thu"
             },
             {
@@ -13650,7 +13650,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Fri"
             },
             {
@@ -13997,7 +13997,7 @@
               "task": "Complete pgs. 102-3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W36-Handwriting-Mon"
             },
             {
