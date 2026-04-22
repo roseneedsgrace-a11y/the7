@@ -191,36 +191,17 @@
 
 <div id="content" class="loading">Loading assignments...</div>
 
+<script src="utils.js"></script>  
 <script>
   // 1. Globals
-  const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec'; 
 
   let currentDate = new Date();
   currentDate.setHours(0, 0, 0, 0);
   let allData = null;
   const cardViewState = {}; // studentName -> 'today' | 'both' | 'pastdue'
   let globalViewMode = 'auto'; // 'auto' | 'pastdue'
-  let syncCountdown = null;
-  const SYNC_DELAY = 10;
 
   // 2. Utility functions
-  function getLocalProgress() {
-    return JSON.parse(localStorage.getItem('local_progress') || '{}');
-  }
-
-  function setLocalProgress(id, isDone) {
-    const localProgress = getLocalProgress();
-    localProgress[id] = isDone;
-    localStorage.setItem('local_progress', JSON.stringify(localProgress));
-  }
-
-  function showTimestamp(isoString) {
-    const el = document.getElementById('lastUpdated');
-    if (!el || !isoString) return;
-    const d = new Date(isoString);
-    el.textContent = 'Data as of: ' + d.toLocaleString();
-  }
-
   function getChoreId(studentName, date) {
     const d = new Date(date);
     return `${studentName}-chore-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
@@ -230,35 +211,9 @@
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
 
-  function mergeChoresIntoStudentData(data) {
-    const choreMap = {};
-    if (data.students) {
-      data.students.forEach(s => { choreMap[s.name] = s.chore || ''; });
-    }
-    return (data.studentData || []).map(s => ({
-      ...s,
-      chore: choreMap[s.student] || ''
-    }));
-  }
 
   // 3. Sync Actions
-  function pushAndRefresh() {
-    const btn = document.getElementById('refreshBtn');
-    btn.textContent = 'Pushing...';
-    btn.disabled = true;
 
-    fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
-      .then(() => {
-        btn.textContent = 'Waiting for GitHub...';
-        setTimeout(() => forceRefresh(), 8000);
-      })
-      .catch(() => {
-        btn.textContent = 'Error — try again';
-        btn.disabled = false;
-      });
-
-    btn.onclick = forceRefresh;
-  }
 
 function forceRefresh() {
   const btn = document.getElementById('refreshBtn');
@@ -294,33 +249,6 @@ function forceRefresh() {
     });
 }
 
-  // 4. startSyncTimer (References pushAndRefresh)
-  function startSyncTimer() {
-    if (syncCountdown) clearInterval(syncCountdown);
-
-    const timerEl = document.getElementById('syncTimer');
-    const btn = document.getElementById('refreshBtn');
-    if (!timerEl || !btn) return;
-
-    let seconds = SYNC_DELAY;
-    timerEl.style.display = 'inline';
-    timerEl.textContent = `syncing... ${seconds}s`;
-
-    syncCountdown = setInterval(() => {
-      seconds--;
-      timerEl.textContent = `syncing... ${seconds}s`;
-
-      if (seconds <= 0) {
-        clearInterval(syncCountdown);
-        syncCountdown = null;
-        timerEl.style.display = 'none';
-        btn.style.opacity = '1';
-        btn.style.color = '#16a34a';
-        btn.title = 'New data may be available';
-        btn.onclick = pushAndRefresh;
-      }
-    }, 1000);
-  }
 function updateColors(palette, headerColor) {
   if (!palette) return;
   const root = document.documentElement;
@@ -545,6 +473,10 @@ function applyHeaderSettings(config) {
     return html;
   }
 
+  function onStorageChange() {
+    renderForDate(currentDate);
+  }
+  
   function buildTaskRow(t, palette, isPastDue) {
     const dateLabel = isPastDue ? `<span class="past-due-date">${t.date}</span>` : '';
     return `
