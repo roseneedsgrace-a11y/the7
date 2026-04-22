@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-22T14:17:27.268Z",
+  "generated": "2026-04-22T14:59:31.404Z",
   "date": "Wednesday, April 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3044,7 +3044,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Wed"
             },
             {
@@ -4999,7 +4999,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Reading & Grammar-Wed"
             },
             {
@@ -5781,7 +5781,7 @@
               "task": "Write out a verse in your very best handwriting.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Handwriting-Wed"
             },
             {
@@ -10104,7 +10104,7 @@
               "task": "Final Advanced Topics, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Creation Science-Wed"
             },
             {
@@ -10115,7 +10115,7 @@
               "task": "Course Complete! 🎉",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Creation Science-Thu"
             },
             {
