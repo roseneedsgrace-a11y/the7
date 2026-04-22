@@ -779,7 +779,67 @@ function startSyncTimer() {
     }
   }, 1000);
 }
-  
+
+function pushAndRefresh() {
+  const btn = document.getElementById('refreshBtn');
+  btn.textContent = 'Pushing...';
+  btn.disabled = true;
+
+  fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
+    .then(() => {
+      btn.textContent = 'Waiting for GitHub...';
+      setTimeout(() => forceRefresh(), 8000);
+    })
+    .catch(() => {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+    });
+
+  btn.onclick = forceRefresh;
+}
+
+function forceRefresh() {
+  const btn = document.getElementById('refreshBtn');
+  btn.textContent = 'Checking...';
+  btn.disabled = true;
+
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      const newTime = new Date(data.generated).getTime();
+      const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
+
+      if (newTime > oldTime) {
+        allData = { students: data.studentData, config: data.config, generated: data.generated };
+        renderForDate(currentDate);
+        showTimestamp(data.generated);
+        btn.textContent = '✓ Updated!';
+      } else {
+        btn.textContent = '✓ Already current';
+      }
+
+      btn.style.opacity = '0.6';
+      btn.style.color = '#94a3b8';
+      btn.style.fontWeight = 'normal';
+      btn.onclick = forceRefresh;
+
+      setTimeout(() => {
+        btn.textContent = '↻';
+        btn.disabled = false;
+      }, 2000);
+    })
+    .catch(() => {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+    });
+}
+
+function showTimestamp(isoString) {
+  const el = document.getElementById('lastUpdated');
+  if (!el || !isoString) return;
+  const d = new Date(isoString);
+  el.textContent = 'Data as of: ' + d.toLocaleString();
+}
 </script>
 </body>
 </html>
