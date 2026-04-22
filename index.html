@@ -458,7 +458,23 @@ function buildChoreCardHtml(chore, studentName, palette, isDone) {
     }
     render();
   }
+function updateColors(palette) {
+  console.log("Applying palette:", palette);
+  if (!palette) return;
+  const root = document.documentElement;
 
+  root.style.setProperty('--primary', palette.primary);
+  root.style.setProperty('--secondary', palette.secondary);
+  root.style.setProperty('--bg', palette.bg || '#f8fafc');
+  
+  // Add a property for the header text color
+  // You can pass this in your palette object, or default to white (#ffffff)
+  root.style.setProperty('--header-text', palette.headerText || '#ffffff');
+
+  const header = document.getElementById('siteHeader');
+  if (header) header.style.background = palette.primary;
+}
+    
 function render() {
   if (!allData) return;
   
