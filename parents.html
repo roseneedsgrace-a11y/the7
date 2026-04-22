@@ -158,6 +158,17 @@
   font-weight: 600;
   margin-left: 6px;
 }
+.chore-section-label {
+  padding: 8px 18px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #fefce8;
+  border-bottom: 1px solid #fde68a;
+  border-top: 1px solid #fde68a;
+  color: #92400e;
+}
   </style>
 </head>
 <body>
@@ -305,15 +316,25 @@ function renderForDate(date) {
     else if (incompleteToday > 0) autoView = 'both';
     else autoView = 'pastdue';
 
-    return {
-      student: s.student,
-      palette: s.palette,
-      week: s.weekNum,
-      dayName,
-      tasks: dailyTasks,
-      pastDue: sortedPastDue,
-      autoView
-    };
+    // After building dailyTasks and pastDueTasks, find chore for this student
+    const studentConfig = allData.students.find(sc => sc.student === s.student);
+    const chore = studentConfig && studentConfig.chore ? studentConfig.chore : null;
+
+    // Calculate completion % for today
+    const totalToday = dailyTasks.length;
+    const doneToday = dailyTasks.filter(t => t.done).length;
+    const showChore = chore && totalToday > 0 && (doneToday / totalToday) >= 0.5;
+
+return {
+  student: s.student,
+  palette: s.palette,
+  week: s.weekNum,
+  dayName,
+  tasks: dailyTasks,
+  pastDue: sortedPastDue,
+  autoView,
+  chore: showChore ? chore : null  // Only pass if threshold met
+};
   }).filter(s => s.tasks.length > 0 || s.pastDue.length > 0);
 
   renderStats(filtered);
@@ -396,7 +417,11 @@ function buildStudentCard(s) {
   if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length === 0) {
     html += `<div class="no-tasks" style="color:#16a34a;">✓ No past due assignments</div>`;
   }
-
+  // Chore appears after all task sections
+  if (s.chore) {
+    html += buildChoreRow(s.student, s.chore, s.palette, currentDate);
+  }
+  
   html += `<a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">
     Full Week View ↗
   </a></div>`;
@@ -698,6 +723,29 @@ function setGlobalView(mode) {
   renderForDate(currentDate);
 }
 
+function getChoreId(studentName, date) {
+  const d = new Date(date);
+  return `${studentName}-chore-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function buildChoreRow(studentName, chore, palette, date) {
+  const id = getChoreId(studentName, date);
+  const localProgress = getLocalProgress();
+  const isDone = localProgress[id] === true;
+
+  return `
+    <div class="chore-section-label">Last but Not Least</div>
+    <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
+      onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}')">
+      <div class="task-checkbox" style="${isDone ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
+        ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
+      </div>
+      <div class="task-info">
+        <div class="task-subject" style="color:${palette.primary};">Daily Chore</div>
+        <div class="task-text">${chore}</div>
+      </div>
+    </div>`;
+}
   
 </script>
 </body>
