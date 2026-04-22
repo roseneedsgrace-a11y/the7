@@ -180,6 +180,8 @@
   <button id="prevDay" onclick="changeDay(-1)">← Previous</button>
   <div class="current-day" id="currentDayLabel">Loading Date...</div>
   <button id="nextDay" onclick="changeDay(1)">Next →</button>
+  <span id="syncTimer" style="display:none; font-size:11px; color:#94a3b8; font-style:italic;"></span>
+  <button id="refreshBtn" onclick="forceRefresh()" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">↻</button>
 </div>
 
 <div id="statsStrip" class="stats-strip"></div>
@@ -747,6 +749,36 @@ function buildChoreRow(studentName, chore, palette, date) {
         <div class="task-text">${chore}</div>
       </div>
     </div>`;
+}
+
+let syncCountdown = null;
+const SYNC_DELAY = 10;
+
+function startSyncTimer() {
+  if (syncCountdown) clearInterval(syncCountdown);
+
+  const timerEl = document.getElementById('syncTimer');
+  const btn = document.getElementById('refreshBtn');
+  if (!timerEl || !btn) return; // guard in case elements aren't present
+
+  let seconds = SYNC_DELAY;
+  timerEl.style.display = 'inline';
+  timerEl.textContent = `syncing... ${seconds}s`;
+
+  syncCountdown = setInterval(() => {
+    seconds--;
+    timerEl.textContent = `syncing... ${seconds}s`;
+
+    if (seconds <= 0) {
+      clearInterval(syncCountdown);
+      syncCountdown = null;
+      timerEl.style.display = 'none';
+      btn.style.opacity = '1';
+      btn.style.color = '#16a34a';
+      btn.title = 'New data may be available';
+      btn.onclick = pushAndRefresh;
+    }
+  }, 1000);
 }
   
 </script>
