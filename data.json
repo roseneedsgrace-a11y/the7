@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-22T21:39:25.091Z",
+  "generated": "2026-04-22T22:00:52.930Z",
   "date": "Wednesday, April 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -16,13 +16,13 @@
       "name": "Beth",
       "palette": "ocean",
       "currentWeek": 36,
-      "chore": "PIck up the entertainment room"
+      "chore": "Pick up entertainment room"
     },
     {
       "name": "Charity",
       "palette": "safari",
       "currentWeek": 36,
-      "chore": "PIck up school work, vaccum"
+      "chore": "Pick up school work, vaccum"
     },
     {
       "name": "Ezra",
@@ -1843,7 +1843,7 @@
               "task": "Labs for Chapter 2-6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Science-Mon"
             },
             {
@@ -1854,7 +1854,7 @@
               "task": "Continue Labs",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Science-Tue"
             },
             {
@@ -6794,7 +6794,7 @@
               "task": "P3 L8 #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Health-Wed"
             },
             {
@@ -6805,7 +6805,7 @@
               "task": "P3 L8 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Health-Thu"
             },
             {
@@ -6816,7 +6816,7 @@
               "task": "P3 L8 #7 & Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Health-Fri"
             },
             {
