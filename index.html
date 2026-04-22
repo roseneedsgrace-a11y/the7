@@ -377,104 +377,59 @@ a.link-btn::before {
    <button id="refreshBtn" onclick="pushAndRefresh()" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">↻</button>
 </div>  
 <div id="content">Loading assignments...</div>
-
+<script src="utils.js"></script>
 <script>
-const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
   let allData = null;
 
-window.onload = function() {
-  fetch('data.json?v=' + Date.now())
-    .then(r => r.json())
-    .then(data => {
-      allData = data;
-      const sel = document.getElementById('studentSelect');
-      
-      if (allData.students) {
-        allData.students.forEach(s => {
-          const opt = document.createElement('option');
-          opt.value = s.name; 
-          opt.textContent = s.name;
-          opt.setAttribute('data-week', s.currentWeek);
-          sel.appendChild(opt);
-        });
-        showTimestamp(data.generated);
-      }
+  window.onload = function() {
+    fetch('data.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        allData = data;
+        const sel = document.getElementById('studentSelect');
+        
+        if (allData.students) {
+          allData.students.forEach(s => {
+            const opt = document.createElement('option');
+            opt.value = s.name; 
+            opt.textContent = s.name;
+            opt.setAttribute('data-week', s.currentWeek);
+            sel.appendChild(opt);
+          });
+          showTimestamp(data.generated);
+        }
 
-      // Case-insensitive match against the populated options
-      const urlStudent = getStudentFromUrl();
-      if (urlStudent) {
-        const match = Array.from(sel.options).find(
-          opt => opt.value.toLowerCase() === urlStudent.toLowerCase()
-        );
-        if (match) sel.value = match.value;
-      }
+        const urlStudent = getStudentFromUrl();
+        if (urlStudent) {
+          const match = Array.from(sel.options).find(
+            opt => opt.value.toLowerCase() === urlStudent.toLowerCase()
+          );
+          if (match) sel.value = match.value;
+        }
 
-      updateWeekFromStudent();
-    })
-    .catch(err => console.error("Data load failed:", err));
-};
+        updateWeekFromStudent();
+      })
+      .catch(err => console.error("Data load failed:", err));
+  };
 
-let syncCountdown = null;
-const SYNC_DELAY = 4;
+  // Called by utils.js storage listener
+  function onStorageChange() {
+    render();
+  }
 
-function startSyncTimer() {
-  if (syncCountdown) clearInterval(syncCountdown);
+  function getStudentFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('student');
+  }
 
-  const timerEl = document.getElementById('syncTimer');
-  const btn = document.getElementById('refreshBtn');
-  
-  let seconds = SYNC_DELAY;
-  timerEl.style.display = 'inline';
-  timerEl.textContent = `syncing... ${seconds}s`;
-
-  syncCountdown = setInterval(() => {
-    seconds--;
-    timerEl.textContent = `syncing... ${seconds}s`;
-
-    if (seconds <= 0) {
-      clearInterval(syncCountdown);
-      syncCountdown = null;
-      timerEl.style.display = 'none';
-
-      // Just a subtle glow on the existing refresh icon
-      btn.style.opacity = '1';
-      btn.style.color = '#16a34a';
-      btn.title = 'New data may be available';
-      btn.onclick = pushAndRefresh;
-    }
-  }, 1000);
-}
-
-function pushAndRefresh() {
-  const btn = document.getElementById('refreshBtn');
-  btn.textContent = 'Pushing...';
-  btn.disabled = true;
-
-  // Call GAS to push to GitHub
-  fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
-    .then(() => {
-      // GAS push takes a few seconds, wait then fetch new JSON
-      btn.textContent = 'Waiting for GitHub...';
-      setTimeout(() => forceRefresh(), 8000);
-    })
-    .catch(() => {
-      btn.textContent = 'Error — try again';
-      btn.disabled = false;
-    });
-
-  // Reset button onclick back to forceRefresh for future use
-  btn.onclick = forceRefresh;
-}
-  
-function updateWeekFromStudent() {
+  function updateWeekFromStudent() {
     const sel = document.getElementById('studentSelect');
     const selectedOption = sel.options[sel.selectedIndex];
     const weekInput = document.getElementById('weekInput');
-    
     if (selectedOption) {
       weekInput.value = selectedOption.getAttribute('data-week');
     }
-    render(); // This calls render after setting the week
+    render();
   }
 
   function render() {
@@ -486,7 +441,6 @@ function updateWeekFromStudent() {
     const targetWeek = parseInt(weekInput.value);
     const isStatusMode = document.getElementById('statusToggle').checked;
 
-    // FIX: Match the variable name 'student' to your updateColors call
     const student = allData.studentData.find(s => s.student === studentName);
     
     if (!student) {
@@ -494,8 +448,8 @@ function updateWeekFromStudent() {
       return;
     }
 
-    updateColors(student.palette);
-    
+    updateColors(student.palette); // from utils.js
+
     const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; 
     const now = new Date();
     const todayTs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
@@ -511,18 +465,13 @@ function updateWeekFromStudent() {
       tableHtml += `<tr><td class="subject-cell">${row.subject}<span class="curriculum-subtitle">${row.curriculum || ''}</span></td>`;
       
       days.forEach((dayName, dayIdx) => {
-        // Find task matching DAY and selected WEEK
         const t = (row.tasks || []).find(task => 
           task.day === dayName && parseInt(task.week) === targetWeek
         );
         
         if (t) {
-          // --- OVERRIDE SECTION ---
-          const localProgress = JSON.parse(localStorage.getItem('local_progress') || '{}');
-          // If the ID exists in local storage, use that. Otherwise, use the JSON 'done' status.
+          const localProgress = getLocalProgress(); // from utils.js
           const isTaskDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
-          // ---------------------------------
-        
           const taskDate = new Date(t.rawDate).getTime();
 
           let statusClass = '';
@@ -533,17 +482,17 @@ function updateWeekFromStudent() {
 
           if (hasContent) {
             const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
-            const mediaHtml = renderMedia(t); // This now carries your link logic
+            const mediaHtml = renderMedia(t);
             
-          tableHtml += `<td>
-            <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
-              ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
-              <div class="media-container">${mediaHtml}</div>
-              <label class="status-indicator-wrap">
-                <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
-                <div class="status-indicator"></div>
-              </label>
-            </div>`;
+            tableHtml += `<td>
+              <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
+                ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
+                <div class="media-container">${mediaHtml}</div>
+                <label class="status-indicator-wrap">
+                  <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
+                  <div class="status-indicator"></div>
+                </label>
+              </div>`;
 
             tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
           } else {
@@ -556,10 +505,8 @@ function updateWeekFromStudent() {
       tableHtml += `</tr>`;
     });
 
-    // Finalize HTML
     tableHtml += `</tbody></table></div></div>`;
     
-    // Build List View (Mobile)
     tasksByDay.forEach((dayTasks, idx) => {
       if (dayTasks.length === 0) return;
       const doneCount = dayTasks.filter(t => t.done).length;
@@ -584,141 +531,69 @@ function updateWeekFromStudent() {
     document.getElementById('content').innerHTML = tableHtml + listHtml;
   }
 
-function renderMedia(t) {
-  let html = '';
-  if (t.linkUrl) {
-    html += `<a href="${t.linkUrl}" target="_blank" 
-      class="link-btn" 
-      style="background:var(--primary); color:white; display:inline-flex; align-items:center; justify-content:center; gap:5px; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; letter-spacing:0.5px; text-transform:uppercase; box-shadow:0 2px 6px rgba(0,0,0,0.15); min-width:100px; text-align:center; position:relative; z-index:10; cursor:pointer;"
-      onclick="event.stopPropagation();"> Open Link </a>`;
+  function renderMedia(t) {
+    let html = '';
+    if (t.linkUrl) {
+      html += `<a href="${t.linkUrl}" target="_blank" 
+        class="link-btn" 
+        style="background:var(--primary); color:white; display:inline-flex; align-items:center; justify-content:center; gap:5px; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; letter-spacing:0.5px; text-transform:uppercase; box-shadow:0 2px 6px rgba(0,0,0,0.15); min-width:100px; text-align:center; position:relative; z-index:10; cursor:pointer;"
+        onclick="event.stopPropagation();"> Open Link </a>`;
+    }
+    if (t.imageUrl) {
+      const isQR = t.imageUrl.includes('api.qrserver.com');
+      html += `<img src="${t.imageUrl}" class="${isQR ? 'qr-img' : ''} task-image" alt="Task Media">`;
+    }
+    return html;
   }
-  if (t.imageUrl) {
-    const isQR = t.imageUrl.includes('api.qrserver.com');
-    html += `<img src="${t.imageUrl}" class="${isQR ? 'qr-img' : ''} task-image" alt="Task Media">`;
-  }
-  return html;
-}
   
-function toggle(id, el) {
-  const isDone = el.checked;
-  
-  // 1. Save to Local Storage
-  let localProgress = JSON.parse(localStorage.getItem('local_progress') || '{}');
-  localProgress[id] = isDone;
-  localStorage.setItem('local_progress', JSON.stringify(localProgress));
-
-  // 2. Update the card (go up TWO levels: input → label → card)
-  document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
-    input.checked = isDone;
-    const card = input.closest('.task-card, .list-task-row');
-    if (card) card.classList.toggle('is-done', isDone);
-  });
-
-  // 3. Send to Google Sheets in background
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
-  startSyncTimer(); 
-}
-
-function updateColors(palette) {
-  console.log("Applying palette:", palette);
-  if (!palette) return;
-  const root = document.documentElement;
-
-  root.style.setProperty('--primary', palette.primary);
-  root.style.setProperty('--secondary', palette.secondary);
-  root.style.setProperty('--bg', palette.bg || '#f8fafc');
-  
-  // Add a property for the header text color
-  // You can pass this in your palette object, or default to white (#ffffff)
-  root.style.setProperty('--header-text', palette.headerText || '#ffffff');
-
-  const header = document.getElementById('siteHeader');
-  if (header) header.style.background = palette.primary;
-}
+  function toggle(id, el) {
+    const isDone = el.checked;
     
-function getStudentFromUrl() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get('student'); // Returns "Beth" or null
-}
+    setLocalProgress(id, isDone); // from utils.js
 
-function handleCheck(id, el) {
-  const card = document.getElementById('card-' + id);
-  const isDone = !card.classList.contains('is-done');
-  
-  // Update all cards with this ID
-  document.querySelectorAll(`[id="card-${id}"]`).forEach(c => {
-    c.classList.toggle('is-done', isDone);
-  });
-
-  // Save to local storage
-  let localProgress = JSON.parse(localStorage.getItem('local_progress') || '{}');
-  localProgress[id] = isDone;
-  localStorage.setItem('local_progress', JSON.stringify(localProgress));
-
-  // Send to Google Sheets in background
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
-}
-
-function forceRefresh() {
-  const btn = document.getElementById('refreshBtn');
-  btn.textContent = 'Checking...';
-  btn.disabled = true;
-
-  fetch('data.json?v=' + Date.now())
-    .then(r => r.json())
-    .then(data => {
-      const newTime = new Date(data.generated).getTime();
-      const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
-
-      if (newTime > oldTime) {
-        allData = data;
-        updateWeekFromStudent(); // or renderForDate(currentDate) on parents.html
-        showTimestamp(data.generated);
-        btn.textContent = '✓ Updated!';
-      } else {
-        btn.textContent = '✓ Current';
-      }
-
-      // Reset button styling
-      btn.style.borderColor = '#e2e8f0';
-      btn.style.color = '#64748b';
-      btn.style.fontWeight = 'normal';
-
-      setTimeout(() => {
-        btn.textContent = '↻';
-        btn.disabled = false;
-      }, 2000);
-    })
-    .catch(() => {
-      btn.textContent = 'Error — try again';
-      btn.disabled = false;
+    document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
+      input.checked = isDone;
+      const card = input.closest('.task-card, .list-task-row');
+      if (card) card.classList.toggle('is-done', isDone);
     });
-}
 
-function showTimestamp(isoString) {
-  const el = document.getElementById('lastUpdated');
-  if (!el || !isoString) return;
-
-  const d = new Date(isoString);
-  const now = new Date();
-  
-  // Calculate difference in milliseconds
-  const diffInMs = now - d;
-  // Convert 23 hours to milliseconds (23 * 60 * 60 * 1000)
-  const twentyThreeHoursInMs = 82800000;
-
-  if (diffInMs < twentyThreeHoursInMs) {
-    // Show only the time (e.g., "10:30 AM")
-    el.textContent = 'Data as of: ' + d.toLocaleTimeString([], { 
-      hour: '2-digit', 
-      minute: '2-digit' 
-    });
-  } else {
-    // Show full date and time if older than 23 hours
-    el.textContent = 'Data as of: ' + d.toLocaleString();
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+    startSyncTimer(); // from utils.js
   }
-}
-  
+
+  function forceRefresh() {
+    const btn = document.getElementById('refreshBtn');
+    btn.textContent = 'Checking...';
+    btn.disabled = true;
+
+    fetch('data.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        const newTime = new Date(data.generated).getTime();
+        const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
+
+        if (newTime > oldTime) {
+          allData = data;
+          updateWeekFromStudent();
+          showTimestamp(data.generated); // from utils.js
+          btn.textContent = '✓ Updated!';
+        } else {
+          btn.textContent = '✓ Current';
+        }
+
+        btn.style.color = '#94a3b8';
+        btn.style.fontWeight = 'normal';
+
+        setTimeout(() => {
+          btn.textContent = '↻';
+          btn.disabled = false;
+        }, 2000);
+      })
+      .catch(() => {
+        btn.textContent = 'Error — try again';
+        btn.disabled = false;
+      });
+  }
 </script>
 </body>
 </html>
