@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-22T14:59:31.404Z",
+  "generated": "2026-04-22T15:00:52.496Z",
   "date": "Wednesday, April 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -9,27 +9,32 @@
     {
       "name": "Amos",
       "palette": "colonial",
-      "currentWeek": 36
+      "currentWeek": 36,
+      "chore": "Pick up the shop or mow (30 minutes each)"
     },
     {
       "name": "Beth",
       "palette": "ocean",
-      "currentWeek": 36
+      "currentWeek": 36,
+      "chore": "PIck up the entertainment room"
     },
     {
       "name": "Charity",
       "palette": "safari",
-      "currentWeek": 36
+      "currentWeek": 36,
+      "chore": "PIck up school work, vaccum"
     },
     {
       "name": "Ezra",
       "palette": "boy",
-      "currentWeek": 36
+      "currentWeek": 36,
+      "chore": "Learn how to use the big blower. Blow off driveway and all concrete areas"
     },
     {
       "name": "Tabitha",
       "palette": "original",
-      "currentWeek": 36
+      "currentWeek": 36,
+      "chore": "Sweep and vaccuum"
     }
   ],
   "studentData": [
