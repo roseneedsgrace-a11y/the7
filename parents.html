@@ -469,7 +469,6 @@ function toggleTask(id, palettePrimary, paletteSecondary) {
   const isDone = !row.classList.contains('is-done');
   row.classList.toggle('is-done', isDone);
 
-  // Update the checkbox div appearance
   const checkbox = row.querySelector('.task-checkbox');
   if (checkbox) {
     if (isDone) {
@@ -485,23 +484,26 @@ function toggleTask(id, palettePrimary, paletteSecondary) {
 
   setLocalProgress(id, isDone);
 
-  allData.students.forEach(s => {
-    s.grid.forEach(subj => {
-      subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
+  // Chores only live in localStorage — skip GAS sync and data cache update
+  if (!id.includes('-chore-')) {
+    allData.students.forEach(s => {
+      s.grid.forEach(subj => {
+        subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
+      });
     });
-  });
+    console.log('Toggling:', id, '→', isDone);
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' })
+      .then(() => console.log('Fetch sent for:', id))
+      .catch(e => console.error('Fetch failed:', e));
+    startSyncTimer();
+  }
 
-    try {
-      const card = row.closest('.student-card');
-      if (card) updateCardStats(card);
-    } catch(e) {
-        console.warn('updateCardStats failed:', e);
-    }
-  // Log to confirm fetch is firing
-  console.log('Toggling:', id, '→', isDone);
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' })
-    .then(() => console.log('Fetch sent for:', id))
-    .catch(e => console.error('Fetch failed:', e));
+  try {
+    const card = row.closest('.student-card');
+    if (card) updateCardStats(card);
+  } catch(e) {
+    console.warn('updateCardStats failed:', e);
+  }
 }
 
   function updateCardStats(card) {
