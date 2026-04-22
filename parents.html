@@ -366,7 +366,7 @@ function updateColors(palette, headerColor) {
       if (data.config) applyHeaderSettings(data.config);
     
       if (studentDataWithChores.length > 0) {
-        updateColors(studentDataWithChores[0].palette);
+        updateColors(studentDataWithChores[0].palette, data.config && data.config.headerColor);
       }
     
       showTimestamp(data.generated);
