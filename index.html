@@ -382,35 +382,62 @@ a.link-btn::before {
   let allData = null;
 
   window.onload = function() {
-    fetch('data.json?v=' + Date.now())
-      .then(r => r.json())
-      .then(data => {
-        allData = data;
-        const sel = document.getElementById('studentSelect');
-        
-        if (allData.students) {
-          allData.students.forEach(s => {
-            const opt = document.createElement('option');
-            opt.value = s.name; 
-            opt.textContent = s.name;
-            opt.setAttribute('data-week', s.currentWeek);
-            sel.appendChild(opt);
-          });
-          showTimestamp(data.generated);
-        }
+  fetch('data.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      // Merge chores into studentData same as parents.html
+      const studentDataWithChores = mergeChoresIntoStudentData(data); // from utils.js
+      allData = {
+        ...data,
+        studentData: studentDataWithChores
+      };
 
-        const urlStudent = getStudentFromUrl();
-        if (urlStudent) {
-          const match = Array.from(sel.options).find(
-            opt => opt.value.toLowerCase() === urlStudent.toLowerCase()
-          );
-          if (match) sel.value = match.value;
-        }
+      const sel = document.getElementById('studentSelect');
+      
+      if (allData.students) {
+        allData.students.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.name; 
+          opt.textContent = s.name;
+          opt.setAttribute('data-week', s.currentWeek);
+          sel.appendChild(opt);
+        });
+        showTimestamp(data.generated);
+      }
 
-        updateWeekFromStudent();
-      })
-      .catch(err => console.error("Data load failed:", err));
-  };
+      const urlStudent = getStudentFromUrl();
+      if (urlStudent) {
+        const match = Array.from(sel.options).find(
+          opt => opt.value.toLowerCase() === urlStudent.toLowerCase()
+        );
+        if (match) sel.value = match.value;
+      }
+
+      updateWeekFromStudent();
+    })
+    .catch(err => console.error("Data load failed:", err));
+};
+
+    function getTodayMidnight() {
+  const now = new Date();
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+}
+
+function buildChoreCardHtml(chore, studentName, palette, isDone) {
+  const id = getChoreId(studentName, new Date()); // from utils.js
+  const checkStyle = isDone ? `background:var(--secondary);border-color:var(--secondary)` : '';
+  return `<td>
+    <div class="task-card ${isDone ? 'is-done' : ''}">
+      <div class="task-text">🧹 ${chore}</div>
+      <label class="status-indicator-wrap">
+        <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''} 
+          data-id="${id}" onchange="toggle('${id}', this)">
+        <div class="status-indicator"></div>
+      </label>
+    </div>
+  </td>`;
+}
+    
 
   // Called by utils.js storage listener
   function onStorageChange() {
@@ -432,104 +459,206 @@ a.link-btn::before {
     render();
   }
 
-  function render() {
-    if (!allData) return;
+function render() {
+  if (!allData) return;
+  
+  const studentName = document.getElementById('studentSelect').value;  
+  document.getElementById('printStudentName').textContent = studentName;
+  const weekInput = document.getElementById('weekInput');
+  const targetWeek = parseInt(weekInput.value);
+  const isStatusMode = document.getElementById('statusToggle').checked;
+
+  const student = allData.studentData.find(s => s.student === studentName);
+  
+  if (!student) {
+    console.error("Could not find data for student:", studentName);
+    return;
+  }
+
+  updateColors(student.palette);
+
+  const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; 
+  const now = new Date();
+  const todayTs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+
+  let tableHtml = `<div class="table-view"><div class="${isStatusMode ? 'status-mode' : ''}"><table><thead><tr><th>Subject</th>`;
+  days.forEach(d => tableHtml += `<th>${d}</th>`);
+  tableHtml += `</tr></thead><tbody>`;
+
+  let listHtml = `<div class="list-view"><div class="${isStatusMode ? 'status-mode' : ''}">`;
+  const tasksByDay = days.map(() => []);
+
+  student.grid.forEach(row => {
+    tableHtml += `<tr><td class="subject-cell">${row.subject}<span class="curriculum-subtitle">${row.curriculum || ''}</span></td>`;
     
-    const studentName = document.getElementById('studentSelect').value;  
-    document.getElementById('printStudentName').textContent = studentName;
-    const weekInput = document.getElementById('weekInput');
-    const targetWeek = parseInt(weekInput.value);
-    const isStatusMode = document.getElementById('statusToggle').checked;
-
-    const student = allData.studentData.find(s => s.student === studentName);
-    
-    if (!student) {
-      console.error("Could not find data for student:", studentName);
-      return;
-    }
-
-    updateColors(student.palette); // from utils.js
-
-    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; 
-    const now = new Date();
-    const todayTs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
-
-    let tableHtml = `<div class="table-view"><div class="${isStatusMode ? 'status-mode' : ''}"><table><thead><tr><th>Subject</th>`;
-    days.forEach(d => tableHtml += `<th>${d}</th>`);
-    tableHtml += `</tr></thead><tbody>`;
-
-    let listHtml = `<div class="list-view"><div class="${isStatusMode ? 'status-mode' : ''}">`;
-    const tasksByDay = days.map(() => []);
-
-    student.grid.forEach(row => {
-      tableHtml += `<tr><td class="subject-cell">${row.subject}<span class="curriculum-subtitle">${row.curriculum || ''}</span></td>`;
+    days.forEach((dayName, dayIdx) => {
+      const t = (row.tasks || []).find(task => 
+        task.day === dayName && parseInt(task.week) === targetWeek
+      );
       
-      days.forEach((dayName, dayIdx) => {
-        const t = (row.tasks || []).find(task => 
-          task.day === dayName && parseInt(task.week) === targetWeek
+      if (t) {
+        const localProgress = getLocalProgress();
+        const isTaskDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
+        const taskDate = new Date(t.rawDate).getTime();
+
+        let statusClass = '';
+        if (taskDate < todayTs) statusClass = 'due-late';
+        else if (taskDate === todayTs) statusClass = 'due-warning';
+
+        const hasContent = (t.task && t.task.trim().length > 0) || t.imageUrl || t.linkUrl;
+
+        if (hasContent) {
+          const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
+          const mediaHtml = renderMedia(t);
+          
+          tableHtml += `<td>
+            <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
+              ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
+              <div class="media-container">${mediaHtml}</div>
+              <label class="status-indicator-wrap">
+                <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
+                <div class="status-indicator"></div>
+              </label>
+            </div>`;
+
+          tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
+        } else {
+          tableHtml += `<td><div class="task-card empty-card"></div></td>`;
+        }
+      } else {
+        tableHtml += `<td><div class="task-card empty-card"></div></td>`;
+      }
+    });
+    tableHtml += `</tr>`;
+  });
+
+  // ─── CHORE ROW (TABLE VIEW) ───────────────────
+  if (student.chore) {
+    // Count today's tasks and completion
+    let todayTotal = 0, todayDone = 0;
+    student.grid.forEach(row => {
+      const todayTask = (row.tasks || []).find(task =>
+        parseInt(task.week) === targetWeek &&
+        new Date(task.rawDate).setHours(0,0,0,0) === todayTs
+      );
+      if (todayTask) {
+        todayTotal++;
+        const lp = getLocalProgress();
+        if (lp[todayTask.id] !== undefined ? lp[todayTask.id] : todayTask.done) todayDone++;
+      }
+    });
+
+    const showChore = todayTotal > 0 && (todayDone / todayTotal) >= 0.5;
+
+    if (showChore) {
+      const choreId = getChoreId(student.student, new Date());
+      const lp = getLocalProgress();
+      const choreDone = lp[choreId] === true;
+
+      tableHtml += `<tr>
+        <td class="subject-cell">
+          Last but Not Least
+          <span class="curriculum-subtitle">Daily Chore</span>
+        </td>`;
+
+      days.forEach(dayName => {
+        // Find the date for this day column in the target week
+        const dayTask = student.grid[0] && (student.grid[0].tasks || []).find(
+          task => task.day === dayName && parseInt(task.week) === targetWeek
         );
-        
-        if (t) {
-          const localProgress = getLocalProgress(); // from utils.js
-          const isTaskDone = localProgress[t.id] !== undefined ? localProgress[t.id] : t.done;
-          const taskDate = new Date(t.rawDate).getTime();
 
-          let statusClass = '';
-          if (taskDate < todayTs) statusClass = 'due-late';
-          else if (taskDate === todayTs) statusClass = 'due-warning';
-
-          const hasContent = (t.task && t.task.trim().length > 0) || t.imageUrl || t.linkUrl;
-
-          if (hasContent) {
-            const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
-            const mediaHtml = renderMedia(t);
-            
-            tableHtml += `<td>
-              <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
-                ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
-                <div class="media-container">${mediaHtml}</div>
-                <label class="status-indicator-wrap">
-                  <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
-                  <div class="status-indicator"></div>
-                </label>
-              </div>`;
-
-            tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
-          } else {
-            tableHtml += `<td><div class="task-card empty-card"></div></td>`;
-          }
+        if (dayTask && new Date(dayTask.rawDate).setHours(0,0,0,0) === todayTs) {
+          tableHtml += `<td>
+            <div class="task-card ${choreDone ? 'is-done' : ''}">
+              <div class="task-text">🧹 ${student.chore}</div>
+              <label class="status-indicator-wrap">
+                <input type="checkbox" class="check-overlay" ${choreDone ? 'checked' : ''}
+                  data-id="${choreId}" onchange="toggle('${choreId}', this)">
+                <div class="status-indicator"></div>
+              </label>
+            </div>
+          </td>`;
         } else {
           tableHtml += `<td><div class="task-card empty-card"></div></td>`;
         }
       });
+
       tableHtml += `</tr>`;
-    });
-
-    tableHtml += `</tbody></table></div></div>`;
-    
-    tasksByDay.forEach((dayTasks, idx) => {
-      if (dayTasks.length === 0) return;
-      const doneCount = dayTasks.filter(t => t.done).length;
-      listHtml += `<div class="day-block"><div class="day-header"><span class="day-name">${days[idx]}</span><span class="progress-pill">${doneCount} / ${dayTasks.length} done</span></div>`;
-      dayTasks.forEach(t => {
-        listHtml += `
-          <label class="list-task-row ${t.done ? 'is-done' : ''} ${t.statusClass}">
-            <div class="list-checkbox"></div>
-            <div style="flex:1">
-              <div style="font-size:10px; font-weight:bold; color:var(--primary); text-transform:uppercase;">${t.subject}</div>
-              ${t.curriculum ? `<div style="font-size:10px; color:#94a3b8; margin-bottom:4px;">${t.curriculum}</div>` : ''}
-              ${t.task ? `<div class="task-text" style="font-size:14px;">${t.task}</div>` : ''}
-              ${renderMedia(t)}
-            </div>
-            <input type="checkbox" class="check-overlay" ${t.done ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
-          </label>`;
-      });
-      listHtml += `</div>`;
-    });
-
-    listHtml += `</div></div>`;
-    document.getElementById('content').innerHTML = tableHtml + listHtml;
+    }
   }
+
+  tableHtml += `</tbody></table></div></div>`;
+  
+  // ─── LIST VIEW ────────────────────────────────
+  tasksByDay.forEach((dayTasks, idx) => {
+    if (dayTasks.length === 0) return;
+
+    // Check if this day is today
+    const firstTask = dayTasks[0];
+    const dayMidnight = firstTask ? new Date(firstTask.rawDate).setHours(0,0,0,0) : null;
+    const isToday = dayMidnight === todayTs;
+
+    // Calculate done count using localStorage
+    const lp = getLocalProgress();
+    const doneCount = dayTasks.filter(t => 
+      lp[t.id] !== undefined ? lp[t.id] : t.done
+    ).length;
+
+    // Chore threshold check
+    const showChore = isToday && student.chore &&
+      dayTasks.length > 0 && (doneCount / dayTasks.length) >= 0.5;
+
+    listHtml += `<div class="day-block">
+      <div class="day-header">
+        <span class="day-name">${days[idx]}</span>
+        <span class="progress-pill">${doneCount} / ${dayTasks.length} done</span>
+      </div>`;
+
+    dayTasks.forEach(t => {
+      const isDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
+      listHtml += `
+        <label class="list-task-row ${isDone ? 'is-done' : ''} ${t.statusClass}">
+          <div class="list-checkbox"></div>
+          <div style="flex:1">
+            <div style="font-size:10px; font-weight:bold; color:var(--primary); text-transform:uppercase;">${t.subject}</div>
+            ${t.curriculum ? `<div style="font-size:10px; color:#94a3b8; margin-bottom:4px;">${t.curriculum}</div>` : ''}
+            ${t.task ? `<div class="task-text" style="font-size:14px;">${t.task}</div>` : ''}
+            ${renderMedia(t)}
+          </div>
+          <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
+            data-id="${t.id}" onchange="toggle('${t.id}', this)">
+        </label>`;
+    });
+
+    // ─── CHORE ROW (LIST VIEW) ─────────────────
+    if (showChore) {
+      const choreId = getChoreId(student.student, new Date());
+      const choreDone = lp[choreId] === true;
+      listHtml += `
+        <div style="font-size:10px; font-weight:700; color:var(--primary);
+          text-transform:uppercase; padding:6px 16px; background:#fefce8;
+          border-top:1px solid #fde68a; border-bottom:1px solid #fde68a;">
+          Last but Not Least
+        </div>
+        <label class="list-task-row ${choreDone ? 'is-done' : ''}">
+          <div class="list-checkbox"></div>
+          <div style="flex:1">
+            <div style="font-size:10px; font-weight:bold; color:var(--primary); text-transform:uppercase;">
+              Daily Chore
+            </div>
+            <div class="task-text" style="font-size:14px;">${student.chore}</div>
+          </div>
+          <input type="checkbox" class="check-overlay" ${choreDone ? 'checked' : ''}
+            data-id="${choreId}" onchange="toggle('${choreId}', this)">
+        </label>`;
+    }
+
+    listHtml += `</div>`;
+  });
+
+  listHtml += `</div></div>`;
+  document.getElementById('content').innerHTML = tableHtml + listHtml;
+}
 
   function renderMedia(t) {
     let html = '';
