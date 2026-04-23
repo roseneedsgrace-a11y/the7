@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-23T12:16:23.826Z",
+  "generated": "2026-04-23T12:22:13.413Z",
   "date": "Thursday, April 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3042,6 +3042,17 @@
               "id": "Beth-W36-Bible-Mon"
             },
             {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "The Ology, BIble Reading, Catechism Q35",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Bible-Tue"
+            },
+            {
               "day": "Wed",
               "date": "4/22",
               "rawDate": 1776834000000,
@@ -3060,7 +3071,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Thu"
             },
             {
@@ -3431,6 +3442,17 @@
               "linkUrl": null,
               "done": true,
               "id": "Beth-W36-Nicole the Math Lady-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "Drill Team & Lesson 57",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Nicole the Math Lady-Tue"
             },
             {
               "day": "Wed",
@@ -3824,6 +3846,17 @@
               "id": "Beth-W36-History-Mon"
             },
             {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-History-Tue"
+            },
+            {
               "day": "Wed",
               "date": "4/22",
               "rawDate": 1776834000000,
@@ -4213,6 +4246,17 @@
               "linkUrl": null,
               "done": true,
               "id": "Beth-W36-Music-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
+              "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
+              "done": false,
+              "id": "Beth-W36-Music-Tue"
             },
             {
               "day": "Wed",
@@ -4606,6 +4650,17 @@
               "id": "Beth-W36-Literature-Mon"
             },
             {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Literature-Tue"
+            },
+            {
               "day": "Wed",
               "date": "4/22",
               "rawDate": 1776834000000,
@@ -4995,6 +5050,17 @@
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": true,
               "id": "Beth-W36-Reading & Grammar-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Reading & Grammar-Tue"
             },
             {
               "day": "Wed",
@@ -5388,6 +5454,17 @@
               "id": "Beth-W36-Writing & Rhetoric-Mon"
             },
             {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Writing & Rhetoric-Tue"
+            },
+            {
               "day": "Wed",
               "date": "4/22",
               "rawDate": 1776834000000,
@@ -5779,6 +5856,17 @@
               "id": "Beth-W36-Handwriting-Mon"
             },
             {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "Level 4, p. 102 (Last page)",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Handwriting-Tue"
+            },
+            {
               "day": "Wed",
               "date": "4/22",
               "rawDate": 1776834000000,
@@ -6168,6 +6256,17 @@
               "linkUrl": null,
               "done": true,
               "id": "Beth-W36-Latin-Mon"
+            },
+            {
+              "day": "Tue",
+              "date": "4/21",
+              "rawDate": 1776747600000,
+              "week": 36,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W36-Latin-Tue"
             },
             {
               "day": "Wed",
