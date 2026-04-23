@@ -13,6 +13,11 @@ function setLocalProgress(id, isDone) {
   localStorage.setItem('local_progress', JSON.stringify(localProgress));
 }
 
+function getTodayMidnight() {
+  const now = new Date();
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+}
+
 // ─── SYNC TIMER ───────────────────────────────
 let syncCountdown = null;
 const SYNC_DELAY = 10;
