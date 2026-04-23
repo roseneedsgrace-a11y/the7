@@ -589,43 +589,46 @@ function saveChore(studentName, event) {
     }
   }
 
-  function toggleTask(id, palettePrimary, paletteSecondary) {
-    const row = document.getElementById('prow-' + id);
-    if (!row) return;
-    
-    const isDone = !row.classList.contains('is-done');
-    row.classList.toggle('is-done', isDone);
-    const checkbox = row.querySelector('.task-checkbox');
-    if (checkbox) {
-      if (isDone) {
-        checkbox.style.background = paletteSecondary;
-        checkbox.style.borderColor = paletteSecondary;
-        checkbox.innerHTML = `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>`;
-      } else {
-        checkbox.style.background = '';
-        checkbox.style.borderColor = '';
-        checkbox.innerHTML = '';
-      }
-    }
+ function toggleTask(id, palettePrimary, paletteSecondary) {
+  const row = document.getElementById('prow-' + id);
+  if (!row) return;
+  
+  const isDone = !row.classList.contains('is-done');
+  row.classList.toggle('is-done', isDone);
 
-    setLocalProgress(id, isDone);
-
-    if (!id.includes('-chore-')) {
-      allData.students.forEach(s => {
-        s.grid.forEach(subj => {
-          subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
-        });
-      });
-      try {
-        fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
-      } catch(e) { console.warn('Fetch error:', e); }
-      startSyncTimer();
+  const checkbox = row.querySelector('.task-checkbox');
+  if (checkbox) {
+    if (isDone) {
+      checkbox.style.background = paletteSecondary;
+      checkbox.style.borderColor = paletteSecondary;
+      checkbox.innerHTML = `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>`;
+    } else {
+      checkbox.style.background = '';
+      checkbox.style.borderColor = '';
+      checkbox.innerHTML = '';
     }
-    try {
-      const card = row.closest('.student-card');
-      if (card) updateCardStats(card);
-    } catch(e) { console.warn('updateCardStats failed:', e); }
   }
+
+  setLocalProgress(id, isDone);
+
+  // Update data cache for non-chores only
+  if (!id.includes('-chore-')) {
+    allData.students.forEach(s => {
+      s.grid.forEach(subj => {
+        subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
+      });
+    });
+    startSyncTimer();
+  }
+
+  // Send everything to GAS including chores
+  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
+
+  try {
+    const card = row.closest('.student-card');
+    if (card) updateCardStats(card);
+  } catch(e) { console.warn('updateCardStats failed:', e); }
+}
 
   function updateCardStats(card) {
     const total = card.querySelectorAll('.task-row').length;
