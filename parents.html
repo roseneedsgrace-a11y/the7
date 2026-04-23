@@ -492,25 +492,89 @@ function applyHeaderSettings(config) {
       </div>`;
   }
 
-  function buildChoreRow(studentName, chore, palette, date) {
-    const id = getChoreId(studentName, date);
-    const localProgress = getLocalProgress();
-    const isDone = localProgress[id] === true;
+function buildChoreRow(studentName, chore, palette, date) {
+  const id = getChoreId(studentName, date);
+  const localProgress = getLocalProgress();
+  const isDone = localProgress[id] === true;
 
-    return `
-      <div class="chore-section-label">Last but Not Least</div>
-      <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
-        onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}')">
-        <div class="task-checkbox" style="${isDone ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
-          ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
-        </div>
-        <div class="task-info">
+  return `
+    <div class="chore-section-label">Last but Not Least</div>
+    <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
+      onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}')">
+      <div class="task-checkbox" style="${isDone ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
+        ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
+      </div>
+      <div class="task-info">
+        <div style="display:flex; align-items:center; justify-content:space-between;">
           <div class="task-subject" style="color:${palette.primary};">Daily Chore</div>
-          <div class="task-text">${chore}</div>
+          <button onclick="editChore('${studentName}', event)" 
+            style="font-size:11px; color:#94a3b8; background:none; border:none; cursor:pointer; padding:2px 6px;">
+            ✏️ edit
+          </button>
         </div>
-      </div>`;
-  }
+        <div class="task-text" id="chore-text-${studentName}">${chore}</div>
+        <div id="chore-edit-${studentName}" style="display:none; margin-top:6px;">
+          <input type="text" id="chore-input-${studentName}" value="${chore}"
+            style="width:100%; padding:6px 10px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px;"
+            onclick="event.stopPropagation()">
+          <div style="display:flex; gap:8px; margin-top:6px;">
+            <button onclick="saveChore('${studentName}', event)"
+              style="flex:1; padding:6px; background:#16a34a; color:white; border:none; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+              Save
+            </button>
+            <button onclick="cancelChoreEdit('${studentName}', event)"
+              style="flex:1; padding:6px; background:#f1f5f9; color:#475569; border:1px solid #e2e8f0; border-radius:6px; font-size:12px; cursor:pointer;">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
 
+function editChore(studentName, event) {
+  event.stopPropagation();
+  document.getElementById('chore-text-' + studentName).style.display = 'none';
+  document.getElementById('chore-edit-' + studentName).style.display = 'block';
+  document.getElementById('chore-input-' + studentName).focus();
+}
+
+function cancelChoreEdit(studentName, event) {
+  event.stopPropagation();
+  document.getElementById('chore-text-' + studentName).style.display = 'block';
+  document.getElementById('chore-edit-' + studentName).style.display = 'none';
+}
+
+function saveChore(studentName, event) {
+  event.stopPropagation();
+  const newChore = document.getElementById('chore-input-' + studentName).value.trim();
+  if (!newChore) return;
+
+  const textEl = document.getElementById('chore-text-' + studentName);
+  const editEl = document.getElementById('chore-edit-' + studentName);
+
+  textEl.textContent = 'Saving...';
+  textEl.style.display = 'block';
+  editEl.style.display = 'none';
+
+  // Update in allData so re-renders stay current
+  allData.students.forEach(s => {
+    if (s.student === studentName) s.chore = newChore;
+  });
+
+  // Save to GAS then push
+  fetch(`${API_URL}?action=updateChore&student=${encodeURIComponent(studentName)}&chore=${encodeURIComponent(newChore)}`, 
+    { mode: 'no-cors' }
+  );
+
+  // Push after a short delay to let the write complete
+  setTimeout(() => {
+    fetch(`${API_URL}?action=push`, { mode: 'no-cors' });
+    textEl.textContent = newChore;
+    adminStatus('✓ Chore updated and push triggered.', '#16a34a');
+  }, 2000);
+}
+  
   function renderStats(filtered) {
     let total = 0, done = 0;
     filtered.forEach(s => { 
