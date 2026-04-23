@@ -280,13 +280,21 @@ function updateColors(palette, headerColor) {
         return r.json();
       })
     .then(function(data) {
-      // Build a chore lookup from the config students array
       const studentDataWithChores = mergeChoresIntoStudentData(data);
-      allData = { 
-        students: studentDataWithChores, 
-        config: data.config, 
-        generated: data.generated 
+      allData = {
+        students: studentDataWithChores,
+        config: data.config,
+        generated: data.generated
       };
+    
+      if (data.config) applyHeaderSettings(data.config);
+      showTimestamp(data.generated);
+    
+      // Fetch server progress and merge before first render
+      fetchAndMergeProgress().then(() => {
+        renderForDate(currentDate);
+      });
+    })
     
       if (data.config) applyHeaderSettings(data.config);
     
