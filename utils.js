@@ -7,6 +7,36 @@ function getLocalProgress() {
   return JSON.parse(localStorage.getItem('local_progress') || '{}');
 }
 
+function fetchAndMergeProgress() {
+  return fetch(`${API_URL}?action=getProgress`, { mode: 'cors' })
+    .then(r => r.json())
+    .then(data => {
+      if (data && typeof data === 'object') {
+        // Merge server progress into localStorage
+        // localStorage wins for any key that exists locally
+        // server wins for keys that don't exist locally (other devices)
+        const localProgress = getLocalProgress();
+        let changed = false;
+        
+        Object.entries(data).forEach(([key, value]) => {
+          if (localProgress[key] === undefined) {
+            localProgress[key] = value;
+            changed = true;
+          }
+        });
+        
+        if (changed) {
+          localStorage.setItem('local_progress', JSON.stringify(localProgress));
+        }
+      }
+      return getLocalProgress(); // return merged result
+    })
+    .catch(e => {
+      console.warn('Could not fetch progress from server:', e);
+      return getLocalProgress(); // fall back to local only
+    });
+}
+
 function setLocalProgress(id, isDone) {
   const localProgress = getLocalProgress();
   localProgress[id] = isDone;
