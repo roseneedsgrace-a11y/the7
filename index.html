@@ -335,6 +335,120 @@ a.link-btn::before {
   font-style: italic;
 }
 
+#choreBanner {
+  width: calc(100% + 40px);
+  margin: -20px -20px 20px -20px;
+  transition: all 0.4s ease;
+}
+
+#choreBannerInner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  transition: all 0.4s ease;
+}
+
+/* SUBTLE STATE — before threshold or done */
+#choreBanner.subtle #choreBannerInner {
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+#choreBanner.subtle #choreBannerText {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+#choreBanner.subtle #choreBannerIcon {
+  opacity: 0.4;
+  font-size: 1rem;
+}
+
+/* ACTIVE STATE — threshold met, not done */
+#choreBanner.active #choreBannerInner {
+  background: var(--primary);
+  border-bottom: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+#choreBanner.active #choreBannerText {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+#choreBanner.active #choreBannerIcon {
+  opacity: 1;
+  font-size: 1.2rem;
+  animation: wiggle 1s ease 0.5s 2;
+}
+
+/* DONE STATE */
+#choreBanner.done #choreBannerInner {
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+#choreBanner.done #choreBannerText {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+#choreBanner.done #choreBannerIcon {
+  opacity: 0.3;
+  font-size: 1rem;
+}
+
+/* Checkbox styling */
+#choreBannerBox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(255,255,255,0.6);
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.2s;
+}
+#choreBanner.subtle #choreBannerBox,
+#choreBanner.done #choreBannerBox {
+  border-color: #cbd5e1;
+}
+#choreBannerInput {
+  display: none;
+}
+#choreBannerInput:checked + #choreBannerBox {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+#choreBannerInput:checked + #choreBannerBox::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 9px;
+  border: 2px solid white;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translate(3px, 1px);
+}
+#choreBanner.active #choreBannerInput:checked + #choreBannerBox {
+  background: rgba(255,255,255,0.3);
+  border-color: white;
+}
+
+/* Label takes remaining space */
+#choreBannerCheck {
+  margin-left: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Wiggle animation for active state */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-15deg); }
+  75% { transform: rotate(15deg); }
+}
+
 /* Hide admin links when printing */
 @media print {
   .admin-links { display: none !important; }
@@ -361,7 +475,18 @@ a.link-btn::before {
 <div id="printHeader" class="page-header">
   <h1>Student Planner: <span id="printStudentName"></span></h1>
 </div>
-
+    
+<div id="choreBanner" style="display:none;">
+  <div id="choreBannerInner">
+    <div id="choreBannerIcon">🧹</div>
+    <div id="choreBannerText"></div>
+    <label id="choreBannerCheck">
+      <input type="checkbox" id="choreBannerInput" onchange="toggleChoreBanner(this)">
+      <span id="choreBannerBox"></span>
+    </label>
+  </div>
+</div>
+    
 <div class="controls">
   <div><strong>Student:</strong> <select id="studentSelect" onchange="updateWeekFromStudent(); render();"></select></div>
   <div><strong>Week:</strong> <input type="number" id="weekInput" min="1" max="36" style="width: 60px" onchange="render()"></div>
@@ -423,25 +548,84 @@ a.link-btn::before {
   return new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
 }
 
-function buildChoreCardHtml(chore, studentName, palette, isDone) {
-  const id = getChoreId(studentName, new Date()); // from utils.js
-  const checkStyle = isDone ? `background:var(--secondary);border-color:var(--secondary)` : '';
-  return `<td>
-    <div class="task-card ${isDone ? 'is-done' : ''}">
-      <div class="task-text">🧹 ${chore}</div>
-      <label class="status-indicator-wrap">
-        <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''} 
-          data-id="${id}" onchange="toggle('${id}', this)">
-        <div class="status-indicator"></div>
-      </label>
-    </div>
-  </td>`;
+function updateChoreBanner() {
+  if (!allData) return;
+
+  const studentName = document.getElementById('studentSelect').value;
+  const student = allData.studentData.find(s => s.student === studentName);
+  if (!student || !student.chore) {
+    document.getElementById('choreBanner').style.display = 'none';
+    return;
+  }
+
+  const targetWeek = parseInt(document.getElementById('weekInput').value);
+  const todayTs = new Date().setHours(0, 0, 0, 0);
+
+  // Count today's tasks and completion
+  let todayTotal = 0, todayDone = 0;
+  student.grid.forEach(row => {
+    const todayTask = (row.tasks || []).find(task =>
+      parseInt(task.week) === targetWeek &&
+      new Date(task.rawDate).setHours(0,0,0,0) === todayTs
+    );
+    if (todayTask) {
+      todayTotal++;
+      const lp = getLocalProgress();
+      if (lp[todayTask.id] !== undefined ? lp[todayTask.id] : todayTask.done) todayDone++;
+    }
+  });
+
+  // Only show banner if there are tasks today
+  if (todayTotal === 0) {
+    document.getElementById('choreBanner').style.display = 'none';
+    return;
+  }
+
+  const choreId = getChoreId(student.student, new Date());
+  const lp = getLocalProgress();
+  const choreDone = lp[choreId] === true;
+  const thresholdMet = (todayDone / todayTotal) >= 0.5;
+
+  const banner = document.getElementById('choreBanner');
+  const bannerText = document.getElementById('choreBannerText');
+  const bannerInput = document.getElementById('choreBannerInput');
+
+  banner.style.display = 'block';
+  bannerText.textContent = student.chore;
+  bannerInput.checked = choreDone;
+  bannerInput.setAttribute('data-chore-id', choreId);
+
+  // Set state
+  banner.className = choreDone ? 'done' : thresholdMet ? 'active' : 'subtle';
+}
+
+function toggleChoreBanner(el) {
+  const choreId = el.getAttribute('data-chore-id');
+  const isDone = el.checked;
+
+  setLocalProgress(choreId, isDone);
+
+  const banner = document.getElementById('choreBanner');
+  if (isDone) {
+    banner.className = 'done';
+  } else {
+    // Re-evaluate threshold to decide whether to go back to active or subtle
+    updateChoreBanner();
+  }
+
+  // Also update the chore row in the grid if it's visible
+  const gridRow = document.querySelector(`input[data-id="${choreId}"]`);
+  if (gridRow) {
+    gridRow.checked = isDone;
+    const card = gridRow.closest('.task-card, .list-task-row');
+    if (card) card.classList.toggle('is-done', isDone);
+  }
 }
     
 
   // Called by utils.js storage listener
   function onStorageChange() {
-    render();
+    );
   }
 
   function getStudentFromUrl() {
@@ -456,7 +640,7 @@ function buildChoreCardHtml(chore, studentName, palette, isDone) {
     if (selectedOption) {
       weekInput.value = selectedOption.getAttribute('data-week');
     }
-    render();
+    );
   }
 function updateColors(palette) {
   console.log("Applying palette:", palette);
@@ -548,81 +732,16 @@ function render() {
     tableHtml += `</tr>`;
   });
 
-  // ─── CHORE ROW (TABLE VIEW) ───────────────────
-  if (student.chore) {
-    // Count today's tasks and completion
-    let todayTotal = 0, todayDone = 0;
-    student.grid.forEach(row => {
-      const todayTask = (row.tasks || []).find(task =>
-        parseInt(task.week) === targetWeek &&
-        new Date(task.rawDate).setHours(0,0,0,0) === todayTs
-      );
-      if (todayTask) {
-        todayTotal++;
-        const lp = getLocalProgress();
-        if (lp[todayTask.id] !== undefined ? lp[todayTask.id] : todayTask.done) todayDone++;
-      }
-    });
-
-    const showChore = todayTotal > 0 && (todayDone / todayTotal) >= 0.5;
-
-    if (showChore) {
-      const choreId = getChoreId(student.student, new Date());
-      const lp = getLocalProgress();
-      const choreDone = lp[choreId] === true;
-
-      tableHtml += `<tr>
-        <td class="subject-cell">
-          Last but Not Least
-          <span class="curriculum-subtitle">Daily Chore</span>
-        </td>`;
-
-      days.forEach(dayName => {
-        // Find the date for this day column in the target week
-        const dayTask = student.grid[0] && (student.grid[0].tasks || []).find(
-          task => task.day === dayName && parseInt(task.week) === targetWeek
-        );
-
-        if (dayTask && new Date(dayTask.rawDate).setHours(0,0,0,0) === todayTs) {
-          tableHtml += `<td>
-            <div class="task-card ${choreDone ? 'is-done' : ''}">
-              <div class="task-text">🧹 ${student.chore}</div>
-              <label class="status-indicator-wrap">
-                <input type="checkbox" class="check-overlay" ${choreDone ? 'checked' : ''}
-                  data-id="${choreId}" onchange="toggle('${choreId}', this)">
-                <div class="status-indicator"></div>
-              </label>
-            </div>
-          </td>`;
-        } else {
-          tableHtml += `<td><div class="task-card empty-card"></div></td>`;
-        }
-      });
-
-      tableHtml += `</tr>`;
-    }
-  }
-
   tableHtml += `</tbody></table></div></div>`;
   
   // ─── LIST VIEW ────────────────────────────────
   tasksByDay.forEach((dayTasks, idx) => {
     if (dayTasks.length === 0) return;
 
-    // Check if this day is today
-    const firstTask = dayTasks[0];
-    const dayMidnight = firstTask ? new Date(firstTask.rawDate).setHours(0,0,0,0) : null;
-    const isToday = dayMidnight === todayTs;
-
-    // Calculate done count using localStorage
     const lp = getLocalProgress();
     const doneCount = dayTasks.filter(t => 
       lp[t.id] !== undefined ? lp[t.id] : t.done
     ).length;
-
-    // Chore threshold check
-    const showChore = isToday && student.chore &&
-      dayTasks.length > 0 && (doneCount / dayTasks.length) >= 0.5;
 
     listHtml += `<div class="day-block">
       <div class="day-header">
@@ -646,34 +765,12 @@ function render() {
         </label>`;
     });
 
-    // ─── CHORE ROW (LIST VIEW) ─────────────────
-    if (showChore) {
-      const choreId = getChoreId(student.student, new Date());
-      const choreDone = lp[choreId] === true;
-      listHtml += `
-        <div style="font-size:10px; font-weight:700; color:var(--primary);
-          text-transform:uppercase; padding:6px 16px; background:#fefce8;
-          border-top:1px solid #fde68a; border-bottom:1px solid #fde68a;">
-          Last but Not Least
-        </div>
-        <label class="list-task-row ${choreDone ? 'is-done' : ''}">
-          <div class="list-checkbox"></div>
-          <div style="flex:1">
-            <div style="font-size:10px; font-weight:bold; color:var(--primary); text-transform:uppercase;">
-              Daily Chore
-            </div>
-            <div class="task-text" style="font-size:14px;">${student.chore}</div>
-          </div>
-          <input type="checkbox" class="check-overlay" ${choreDone ? 'checked' : ''}
-            data-id="${choreId}" onchange="toggle('${choreId}', this)">
-        </label>`;
-    }
-
     listHtml += `</div>`;
   });
 
   listHtml += `</div></div>`;
   document.getElementById('content').innerHTML = tableHtml + listHtml;
+  updateChoreBanner();
 }
 
   function renderMedia(t) {
@@ -704,6 +801,7 @@ function render() {
 
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
     startSyncTimer(); // from utils.js
+    updateChoreBanner();
   }
 
   function forceRefresh() {
