@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-23T17:58:27.078Z",
+  "generated": "2026-04-23T20:32:31.161Z",
   "date": "Thursday, April 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -681,7 +681,7 @@
               "task": "Lesson 12 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-History-Tue"
             },
             {
@@ -1485,7 +1485,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W36-Foreign Language-Thu"
             },
             {
@@ -6689,7 +6689,7 @@
               "task": "Read \"Relationships\": Ch. 9 (pp. 85-97), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Bible-Thu"
             },
             {
@@ -8253,7 +8253,7 @@
               "task": "Epilogue #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Math-Thu"
             },
             {
