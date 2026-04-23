@@ -540,8 +540,9 @@ window.onload = function() {
 
       // Fetch server progress and merge before first render
       fetchAndMergeProgress().then(() => {
-        updateWeekFromStudent();
+        updateWeekFromStudent(); // This triggers render()
       });
+    updateWeekFromStudent();
     })
     .catch(err => console.error("Data load failed:", err));
 };
