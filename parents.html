@@ -289,8 +289,11 @@ window.onload = function() {
     
       if (data.config) applyHeaderSettings(data.config);
       showTimestamp(data.generated);
-    
-      // Fetch server progress and merge before first render
+
+      // Render immediately with local progress
+      renderForDate(currentDate);
+
+      // Then fetch server progress and re-render silently
       fetchAndMergeProgress().then(() => {
         renderForDate(currentDate);
       });
