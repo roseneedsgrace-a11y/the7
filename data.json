@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-23T17:58:14.875Z",
+  "generated": "2026-04-23T17:58:27.078Z",
   "date": "Thursday, April 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10748,7 +10748,7 @@
               "task": "Word Up Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Other-Tue"
             },
             {
