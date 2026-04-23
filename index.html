@@ -507,12 +507,11 @@ a.link-btn::before {
 <script>
   let allData = null;
 
-  window.onload = function() {
+window.onload = function() {
   fetch('data.json?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
-      // Merge chores into studentData same as parents.html
-      const studentDataWithChores = mergeChoresIntoStudentData(data); // from utils.js
+      const studentDataWithChores = mergeChoresIntoStudentData(data);
       allData = {
         ...data,
         studentData: studentDataWithChores
@@ -539,11 +538,13 @@ a.link-btn::before {
         if (match) sel.value = match.value;
       }
 
-      updateWeekFromStudent();
+      // Fetch server progress and merge before first render
+      fetchAndMergeProgress().then(() => {
+        updateWeekFromStudent();
+      });
     })
     .catch(err => console.error("Data load failed:", err));
 };
-
 
 
 function updateChoreBanner() {
