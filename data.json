@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-23T22:12:48.351Z",
+  "generated": "2026-04-23T22:16:23.954Z",
   "date": "Thursday, April 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1485,7 +1485,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Thu"
             },
             {
@@ -8870,7 +8870,7 @@
               "task": "Lesson 14.4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Financial Literacy-Fri"
             },
             {
