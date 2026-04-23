@@ -620,10 +620,10 @@ function toggleChoreBanner(el) {
 }
     
 
-  // Called by utils.js storage listener
-  function onStorageChange() {
-    );
-  }
+// Called by utils.js storage listener
+function onStorageChange() {
+  render();
+}
 
   function getStudentFromUrl() {
     const params = new URLSearchParams(window.location.search);
