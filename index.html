@@ -543,10 +543,7 @@ a.link-btn::before {
     .catch(err => console.error("Data load failed:", err));
 };
 
-    function getTodayMidnight() {
-  const now = new Date();
-  return new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
-}
+
 
 function updateChoreBanner() {
   if (!allData) return;
@@ -642,6 +639,8 @@ function toggleChoreBanner(el) {
     }
     );
   }
+
+/*
 function updateColors(palette) {
   console.log("Applying palette:", palette);
   if (!palette) return;
@@ -658,6 +657,7 @@ function updateColors(palette) {
   const header = document.getElementById('siteHeader');
   if (header) header.style.background = palette.primary;
 }
+*/
     
 function render() {
   if (!allData) return;
