@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-23T21:14:21.966Z",
+  "generated": "2026-04-23T21:16:14.506Z",
   "date": "Thursday, April 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -35,12 +35,6 @@
       "palette": "original",
       "currentWeek": 36,
       "chore": "Laundry"
-    },
-    {
-      "name": "Rose",
-      "palette": "classic",
-      "currentWeek": 1,
-      "chore": ""
     }
   ],
   "studentData": [
@@ -8650,7 +8644,7 @@
               "task": "The Book Thief Chap 79-86 & Day 19",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-English-Thu"
             },
             {
@@ -14273,16 +14267,6 @@
           ]
         }
       ]
-    },
-    {
-      "student": "Rose",
-      "palette": {
-        "primary": "#000080",
-        "secondary": "#DAA520",
-        "bg": "#FFFFFF"
-      },
-      "weekNum": 1,
-      "grid": []
     }
   ]
 }
