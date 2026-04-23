@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-23T12:23:13.423Z",
+  "generated": "2026-04-23T13:33:50.440Z",
   "date": "Thursday, April 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1865,7 +1865,7 @@
               "task": "Continue Labs",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Science-Wed"
             },
             {
@@ -3049,7 +3049,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Tue"
             },
             {
@@ -3451,7 +3451,7 @@
               "task": "Drill Team & Lesson 57",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Nicole the Math Lady-Tue"
             },
             {
@@ -4255,7 +4255,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Music-Tue"
             },
             {
@@ -5863,7 +5863,7 @@
               "task": "Level 4, p. 102 (Last page)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Handwriting-Tue"
             },
             {
@@ -9828,7 +9828,7 @@
               "task": "The Second World Wars #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Hillsdale History-Thu"
             },
             {
@@ -10737,8 +10737,8 @@
           ]
         },
         {
-          "subject": "Latin 1",
-          "curriculum": "🧭/Logic",
+          "subject": "Other",
+          "curriculum": "",
           "tasks": [
             {
               "day": "Tue",
@@ -10748,8 +10748,8 @@
               "task": "Word Up Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W32-Latin 1-Tue"
+              "done": false,
+              "id": "Ezra-W32-Other-Tue"
             },
             {
               "day": "Wed",
@@ -10759,8 +10759,8 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W32-Latin 1-Wed"
+              "done": false,
+              "id": "Ezra-W32-Other-Wed"
             },
             {
               "day": "Thu",
@@ -10770,8 +10770,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W32-Latin 1-Thu"
+              "done": false,
+              "id": "Ezra-W32-Other-Thu"
             },
             {
               "day": "Fri",
@@ -10781,8 +10781,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W32-Latin 1-Fri"
+              "done": false,
+              "id": "Ezra-W32-Other-Fri"
             },
             {
               "day": "Sat",
@@ -10792,8 +10792,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W32-Latin 1-Sat"
+              "done": false,
+              "id": "Ezra-W32-Other-Sat"
             },
             {
               "day": "Tue",
@@ -10803,8 +10803,8 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W33-Latin 1-Tue"
+              "done": false,
+              "id": "Ezra-W33-Other-Tue"
             },
             {
               "day": "Wed",
@@ -10814,8 +10814,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W33-Latin 1-Wed"
+              "done": false,
+              "id": "Ezra-W33-Other-Wed"
             },
             {
               "day": "Thu",
@@ -10825,8 +10825,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W33-Latin 1-Thu"
+              "done": false,
+              "id": "Ezra-W33-Other-Thu"
             },
             {
               "day": "Fri",
@@ -10836,8 +10836,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W33-Latin 1-Fri"
+              "done": false,
+              "id": "Ezra-W33-Other-Fri"
             },
             {
               "day": "Sat",
@@ -10848,7 +10848,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W33-Latin 1-Sat"
+              "id": "Ezra-W33-Other-Sat"
             },
             {
               "day": "Tue",
@@ -10858,8 +10858,8 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W34-Latin 1-Tue"
+              "done": false,
+              "id": "Ezra-W34-Other-Tue"
             },
             {
               "day": "Wed",
@@ -10869,8 +10869,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W34-Latin 1-Wed"
+              "done": false,
+              "id": "Ezra-W34-Other-Wed"
             },
             {
               "day": "Thu",
@@ -10880,8 +10880,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W34-Latin 1-Thu"
+              "done": false,
+              "id": "Ezra-W34-Other-Thu"
             },
             {
               "day": "Fri",
@@ -10891,8 +10891,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W34-Latin 1-Fri"
+              "done": false,
+              "id": "Ezra-W34-Other-Fri"
             },
             {
               "day": "Sat",
@@ -10903,7 +10903,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W34-Latin 1-Sat"
+              "id": "Ezra-W34-Other-Sat"
             },
             {
               "day": "Mon",
@@ -10913,8 +10913,8 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W35-Latin 1-Mon"
+              "done": false,
+              "id": "Ezra-W35-Other-Mon"
             },
             {
               "day": "Tue",
@@ -10924,8 +10924,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W35-Latin 1-Tue"
+              "done": false,
+              "id": "Ezra-W35-Other-Tue"
             },
             {
               "day": "Wed",
@@ -10935,8 +10935,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W35-Latin 1-Wed"
+              "done": false,
+              "id": "Ezra-W35-Other-Wed"
             },
             {
               "day": "Thu",
@@ -10946,8 +10946,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W35-Latin 1-Thu"
+              "done": false,
+              "id": "Ezra-W35-Other-Thu"
             },
             {
               "day": "Fri",
@@ -10958,7 +10958,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W35-Latin 1-Fri"
+              "id": "Ezra-W35-Other-Fri"
             },
             {
               "day": "Mon",
@@ -10968,8 +10968,8 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W36-Latin 1-Mon"
+              "done": false,
+              "id": "Ezra-W36-Other-Mon"
             },
             {
               "day": "Tue",
@@ -10979,8 +10979,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W36-Latin 1-Tue"
+              "done": false,
+              "id": "Ezra-W36-Other-Tue"
             },
             {
               "day": "Wed",
@@ -10990,8 +10990,8 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
-              "id": "Ezra-W36-Latin 1-Wed"
+              "done": false,
+              "id": "Ezra-W36-Other-Wed"
             },
             {
               "day": "Thu",
@@ -11002,7 +11002,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W36-Latin 1-Thu"
+              "id": "Ezra-W36-Other-Thu"
             },
             {
               "day": "Fri",
@@ -11013,7 +11013,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W36-Latin 1-Fri"
+              "id": "Ezra-W36-Other-Fri"
             },
             {
               "day": "Mon",
@@ -11024,7 +11024,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W37-Latin 1-Mon"
+              "id": "Ezra-W37-Other-Mon"
             },
             {
               "day": "Tue",
@@ -11035,7 +11035,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W37-Latin 1-Tue"
+              "id": "Ezra-W37-Other-Tue"
             },
             {
               "day": "Wed",
@@ -11046,7 +11046,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W37-Latin 1-Wed"
+              "id": "Ezra-W37-Other-Wed"
             },
             {
               "day": "Thu",
@@ -11057,7 +11057,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W37-Latin 1-Thu"
+              "id": "Ezra-W37-Other-Thu"
             },
             {
               "day": "Fri",
@@ -11068,7 +11068,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W37-Latin 1-Fri"
+              "id": "Ezra-W37-Other-Fri"
             },
             {
               "day": "Mon",
@@ -11079,7 +11079,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W38-Latin 1-Mon"
+              "id": "Ezra-W38-Other-Mon"
             },
             {
               "day": "Tue",
@@ -11090,7 +11090,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W38-Latin 1-Tue"
+              "id": "Ezra-W38-Other-Tue"
             },
             {
               "day": "Wed",
@@ -11101,7 +11101,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W38-Latin 1-Wed"
+              "id": "Ezra-W38-Other-Wed"
             },
             {
               "day": "Thu",
@@ -11112,7 +11112,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W38-Latin 1-Thu"
+              "id": "Ezra-W38-Other-Thu"
             },
             {
               "day": "Fri",
@@ -11123,7 +11123,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "id": "Ezra-W38-Latin 1-Fri"
+              "id": "Ezra-W38-Other-Fri"
             }
           ]
         },
