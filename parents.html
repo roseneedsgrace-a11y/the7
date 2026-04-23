@@ -379,10 +379,7 @@ function applyHeaderSettings(config) {
 
       const studentConfig = allData.students.find(sc => sc.student === s.student);
       const chore = studentConfig && studentConfig.chore ? studentConfig.chore : null;
-      const totalToday = dailyTasks.length;
-      const doneToday = dailyTasks.filter(t => t.done).length;
-      const showChore = chore && totalToday > 0 && (doneToday / totalToday) >= 0.5;
-
+      
       return {
         student: s.student,
         palette: s.palette,
@@ -391,7 +388,7 @@ function applyHeaderSettings(config) {
         tasks: dailyTasks,
         pastDue: sortedPastDue,
         autoView,
-        chore: showChore ? chore : null 
+        chore: chore  // Always show if it exists, no threshold
       };
     }).filter(s => s.tasks.length > 0 || s.pastDue.length > 0);
 
