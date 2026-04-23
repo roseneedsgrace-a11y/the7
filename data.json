@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-23T01:24:18.552Z",
-  "date": "Wednesday, April 22",
+  "generated": "2026-04-23T11:54:39.206Z",
+  "date": "Thursday, April 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47"
@@ -11684,7 +11684,7 @@
               "task": "The Ology, BIble Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Bible-Thu"
             },
             {
