@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-24T14:14:03.330Z",
+  "generated": "2026-04-24T20:24:45.562Z",
   "date": "Friday, April 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3082,7 +3082,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Fri"
             },
             {
@@ -3484,7 +3484,7 @@
               "task": "Drill Team & Lesson 60",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Nicole the Math Lady-Fri"
             },
             {
@@ -4690,7 +4690,7 @@
               "task": "Read the cahpater if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Literature-Fri"
             },
             {
@@ -5092,7 +5092,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Reading & Grammar-Fri"
             },
             {
@@ -11794,7 +11794,7 @@
               "task": "The Ology, BIble Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Bible-Fri"
             },
             {
