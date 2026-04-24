@@ -12,14 +12,12 @@ function fetchAndMergeProgress() {
     .then(r => r.json())
     .then(data => {
       if (data && typeof data === 'object') {
-        // Merge server progress into localStorage
-        // localStorage wins for any key that exists locally
-        // server wins for keys that don't exist locally (other devices)
         const localProgress = getLocalProgress();
         let changed = false;
         
+        // Only merge chore keys from server
         Object.entries(data).forEach(([key, value]) => {
-          if (localProgress[key] === undefined) {
+          if (key.includes('-chore-') && localProgress[key] === undefined) {
             localProgress[key] = value;
             changed = true;
           }
@@ -29,13 +27,14 @@ function fetchAndMergeProgress() {
           localStorage.setItem('local_progress', JSON.stringify(localProgress));
         }
       }
-      return getLocalProgress(); // return merged result
+      return getLocalProgress();
     })
     .catch(e => {
       console.warn('Could not fetch progress from server:', e);
-      return getLocalProgress(); // fall back to local only
+      return getLocalProgress();
     });
 }
+
 
 function setLocalProgress(id, isDone) {
   const localProgress = getLocalProgress();
