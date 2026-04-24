@@ -793,7 +793,7 @@ function render() {
     return html;
   }
   
-function toggle(id, el) {
+function toggle(id, el, studentName, row, col) {
   const isDone = el.checked;
   
   setLocalProgress(id, isDone);
@@ -804,11 +804,13 @@ function toggle(id, el) {
     if (card) card.classList.toggle('is-done', isDone);
   });
 
-  // Send everything to GAS including chores
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
-  
-  // Only start sync timer for real assignments not chores
-  if (!id.includes('-chore-')) {
+  // Build fetch URL with cell address for assignments
+  if (id.includes('-chore-')) {
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}`, 
+      { mode: 'no-cors' });
+  } else {
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`, 
+      { mode: 'no-cors' });
     startSyncTimer();
   }
   
