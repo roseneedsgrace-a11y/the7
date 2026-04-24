@@ -716,15 +716,17 @@ function render() {
           const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
           const mediaHtml = renderMedia(t);
           
-          tableHtml += `<td>
-            <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
-              ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
-              <div class="media-container">${mediaHtml}</div>
-              <label class="status-indicator-wrap">
-                <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} data-id="${t.id}" onchange="toggle('${t.id}', this)">
-                <div class="status-indicator"></div>
-              </label>
-            </div>`;
+            tableHtml += `<td>
+              <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
+                ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
+                <div class="media-container">${mediaHtml}</div>
+                <label class="status-indicator-wrap">
+                  <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} 
+                    data-id="${t.id}" 
+                    onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
+                  <div class="status-indicator"></div>
+                </label>
+              </div>`;
 
           tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
         } else {
@@ -765,8 +767,9 @@ function render() {
             ${t.task ? `<div class="task-text" style="font-size:14px;">${t.task}</div>` : ''}
             ${renderMedia(t)}
           </div>
-          <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
-            data-id="${t.id}" onchange="toggle('${t.id}', this)">
+            <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
+              data-id="${t.id}" 
+              onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
         </label>`;
     });
 
