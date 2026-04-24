@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>e
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -612,14 +612,14 @@ function renderStats(filtered) {
   }
 }
 
- function toggleTask(id, palettePrimary, paletteSecondary) {
-  const row = document.getElementById('prow-' + id);
-  if (!row) return;
+function toggleTask(id, palettePrimary, paletteSecondary, studentName, row, col) {
+  const rowEl = document.getElementById('prow-' + id);
+  if (!rowEl) return;
   
-  const isDone = !row.classList.contains('is-done');
-  row.classList.toggle('is-done', isDone);
+  const isDone = !rowEl.classList.contains('is-done');
+  rowEl.classList.toggle('is-done', isDone);
 
-  const checkbox = row.querySelector('.task-checkbox');
+  const checkbox = rowEl.querySelector('.task-checkbox');
   if (checkbox) {
     if (isDone) {
       checkbox.style.background = paletteSecondary;
@@ -634,21 +634,22 @@ function renderStats(filtered) {
 
   setLocalProgress(id, isDone);
 
-  // Update data cache for non-chores only
-  if (!id.includes('-chore-')) {
+  if (id.includes('-chore-')) {
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}`, 
+      { mode: 'no-cors' });
+  } else {
     allData.students.forEach(s => {
       s.grid.forEach(subj => {
         subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
       });
     });
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`, 
+      { mode: 'no-cors' });
     startSyncTimer();
   }
 
-  // Send everything to GAS including chores
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}`, { mode: 'no-cors' });
-
   try {
-    const card = row.closest('.student-card');
+    const card = rowEl.closest('.student-card');
     if (card) updateCardStats(card);
   } catch(e) { console.warn('updateCardStats failed:', e); }
 }
