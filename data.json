@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-24T13:16:21.008Z",
+  "generated": "2026-04-24T13:19:51.012Z",
   "date": "Friday, April 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -16,7 +16,7 @@
       "name": "Beth",
       "palette": "ocean",
       "currentWeek": 36,
-      "chore": "Pick up entertainment room"
+      "chore": "Clean entertainment room"
     },
     {
       "name": "Charity",
@@ -81,7 +81,7 @@
               "task": "Chap. from God w/o Passions",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Bible-Wed"
             },
             {
@@ -92,7 +92,7 @@
               "task": "Chap. from God w/o Passions",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Bible-Thu"
             },
             {
@@ -103,7 +103,7 @@
               "task": "Write 10 key details from the chapters.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Bible-Fri"
             },
             {
@@ -169,7 +169,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Bible-Mon"
             },
             {
@@ -180,7 +180,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Bible-Tue"
             },
             {
@@ -191,7 +191,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Bible-Wed"
             },
             {
@@ -224,7 +224,7 @@
               "task": "Chap. from God w/o Passions",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Bible-Mon"
             },
             {
@@ -246,7 +246,7 @@
               "task": "Chap. from God w/o Passions",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Bible-Wed"
             },
             {
@@ -257,7 +257,7 @@
               "task": "Read \"Relationships\": Ch. 1-2 (pp. 3-16)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Bible-Thu"
             },
             {
@@ -268,7 +268,7 @@
               "task": "Write 10 key details from the chapters.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Bible-Fri"
             },
             {
@@ -279,7 +279,7 @@
               "task": "Read \"Relationships\": Ch. 3 (pp. 17-28)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Mon"
             },
             {
@@ -290,7 +290,7 @@
               "task": "Read \"Relationships\": Ch. 4 (pp. 29-39)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Tue"
             },
             {
@@ -301,7 +301,7 @@
               "task": "Read \"Relationships\": Ch. 5 (pp. 40-50)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Wed"
             },
             {
@@ -312,7 +312,7 @@
               "task": "Read \"Relationships\": Ch. 6 (pp. 51-62)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Thu"
             },
             {
@@ -626,7 +626,7 @@
               "task": "Lesson 6 Porfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-History-Tue"
             },
             {
@@ -637,7 +637,7 @@
               "task": "Lesson 10 Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-History-Wed"
             },
             {
@@ -648,7 +648,7 @@
               "task": "Lesson 11 - Tes",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-History-Thu"
             },
             {
@@ -681,7 +681,7 @@
               "task": "Lesson 12 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-History-Tue"
             },
             {
@@ -896,7 +896,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-English-Mon"
             },
             {
@@ -907,7 +907,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-English-Tue"
             },
             {
@@ -918,7 +918,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-English-Wed"
             },
             {
@@ -929,7 +929,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-English-Thu"
             },
             {
@@ -951,7 +951,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-English-Mon"
             },
             {
@@ -962,7 +962,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-English-Tue"
             },
             {
@@ -973,7 +973,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-English-Wed"
             },
             {
@@ -984,7 +984,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-English-Thu"
             },
             {
@@ -1006,7 +1006,7 @@
               "task": "Lesson & Paper (L5-9 Writing Exercise)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Mon"
             },
             {
@@ -1017,7 +1017,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Tue"
             },
             {
@@ -1028,7 +1028,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Wed"
             },
             {
@@ -1039,7 +1039,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Thu"
             },
             {
@@ -1050,7 +1050,7 @@
               "task": "Lesson 10 & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-English-Fri"
             },
             {
@@ -1342,7 +1342,7 @@
               "task": "Lesson 24",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Mon"
             },
             {
@@ -1353,7 +1353,7 @@
               "task": "Lesson 24 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Tue"
             },
             {
@@ -1364,7 +1364,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Wed"
             },
             {
@@ -1375,7 +1375,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Thu"
             },
             {
@@ -1386,7 +1386,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Foreign Language-Fri"
             },
             {
@@ -1397,7 +1397,7 @@
               "task": "Lesson 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Mon"
             },
             {
@@ -1408,7 +1408,7 @@
               "task": "Lesson 25 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Tue"
             },
             {
@@ -1419,7 +1419,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Wed"
             },
             {
@@ -1430,7 +1430,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Thu"
             },
             {
@@ -1441,7 +1441,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Foreign Language-Fri"
             },
             {
@@ -1452,7 +1452,7 @@
               "task": "Lesson 26",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Mon"
             },
             {
@@ -1463,7 +1463,7 @@
               "task": "Lesson 26 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Tue"
             },
             {
@@ -1474,7 +1474,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Wed"
             },
             {
@@ -1485,7 +1485,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Thu"
             },
             {
@@ -1496,7 +1496,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Foreign Language-Fri"
             },
             {
@@ -1507,7 +1507,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Foreign Language-Mon"
             },
             {
@@ -1518,7 +1518,7 @@
               "task": "Lesson 27 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Foreign Language-Tue"
             },
             {
@@ -1788,7 +1788,7 @@
               "task": "Chapter 7.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Mon"
             },
             {
@@ -1799,7 +1799,7 @@
               "task": "Chapter 7.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Tue"
             },
             {
@@ -1810,7 +1810,7 @@
               "task": "Chapter 7.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Wed"
             },
             {
@@ -1821,7 +1821,7 @@
               "task": "Chapter 7.4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Thu"
             },
             {
@@ -1832,7 +1832,7 @@
               "task": "Chapter 7.5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Science-Fri"
             },
             {
@@ -1843,7 +1843,7 @@
               "task": "Labs for Chapter 2-6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Science-Mon"
             },
             {
@@ -1854,7 +1854,7 @@
               "task": "Continue Labs",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Science-Tue"
             },
             {
@@ -1865,7 +1865,7 @@
               "task": "Continue Labs",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Science-Wed"
             },
             {
@@ -2014,7 +2014,7 @@
               "task": "Lesson 96",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Mon"
             },
             {
@@ -2025,7 +2025,7 @@
               "task": "Review/Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Tue"
             },
             {
@@ -2036,7 +2036,7 @@
               "task": "Lesson 96 (Part 2)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Wed"
             },
             {
@@ -2047,7 +2047,7 @@
               "task": "Quiz 28",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Thu"
             },
             {
@@ -2058,7 +2058,7 @@
               "task": "Lesson 97",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Math-Fri"
             },
             {
@@ -2069,7 +2069,7 @@
               "task": "Lesson 98",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Math-Mon"
             },
             {
@@ -2080,7 +2080,7 @@
               "task": "Review/Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Math-Tue"
             },
             {
@@ -2091,7 +2091,7 @@
               "task": "Lesson 99",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Math-Wed"
             },
             {
@@ -2102,7 +2102,7 @@
               "task": "Lesson 100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Math-Thu"
             },
             {
@@ -2124,7 +2124,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Math-Mon"
             },
             {
@@ -2135,7 +2135,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Math-Tue"
             },
             {
@@ -2201,7 +2201,7 @@
               "task": "Quiz 29",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Math-Wed"
             },
             {
@@ -2212,7 +2212,7 @@
               "task": "Final Review",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Math-Thu"
             },
             {
@@ -2223,7 +2223,7 @@
               "task": "Exam 4 & Print Certificate of Completion*",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Math-Fri"
             },
             {
@@ -2405,7 +2405,7 @@
               "task": "Economics 101: Lesson/Quiz #8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Mon"
             },
             {
@@ -2416,7 +2416,7 @@
               "task": "Economics 101: Lesson/Quiz #9",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Tue"
             },
             {
@@ -2427,7 +2427,7 @@
               "task": "Economics 101: Lesson/Quiz #10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Wed"
             },
             {
@@ -2438,7 +2438,7 @@
               "task": "Economics 101: Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Thu"
             },
             {
@@ -2449,7 +2449,7 @@
               "task": "Record your class overall score __________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W32-Citizenship-Fri"
             },
             {
@@ -2460,7 +2460,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Mon"
             },
             {
@@ -2471,7 +2471,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Tue"
             },
             {
@@ -2482,7 +2482,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Wed"
             },
             {
@@ -2493,7 +2493,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Thu"
             },
             {
@@ -2504,7 +2504,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W33-Citizenship-Fri"
             },
             {
@@ -2515,7 +2515,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Citizenship-Mon"
             },
             {
@@ -2526,7 +2526,7 @@
               "task": "Understanding Capitalism: Lesson/Quiz #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Citizenship-Tue"
             },
             {
@@ -2537,7 +2537,7 @@
               "task": "Understanding Capitalism: Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Citizenship-Wed"
             },
             {
@@ -2548,7 +2548,7 @@
               "task": "Record your class grade: ________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Citizenship-Thu"
             },
             {
@@ -2559,7 +2559,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W34-Citizenship-Fri"
             },
             {
@@ -2570,7 +2570,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Mon"
             },
             {
@@ -2581,7 +2581,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Tue"
             },
             {
@@ -2592,7 +2592,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Wed"
             },
             {
@@ -2603,7 +2603,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Thu"
             },
             {
@@ -2614,7 +2614,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-Citizenship-Fri"
             },
             {
@@ -2625,7 +2625,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Mon"
             },
             {
@@ -2636,7 +2636,7 @@
               "task": "Supply Side Economics: Lesson/Quiz #8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Tue"
             },
             {
@@ -2647,7 +2647,7 @@
               "task": "Supply Side Economics: Take Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Wed"
             },
             {
@@ -2658,7 +2658,7 @@
               "task": "Record overall class score: _______",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Thu"
             },
             {
@@ -2669,7 +2669,7 @@
               "task": "Average all three Hillsdale Course scores together: ________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Fri"
             },
             {
@@ -2807,7 +2807,7 @@
               "task": "The Ology, BIble Reading, Catechism Q30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Bible-Tue"
             },
             {
@@ -2818,7 +2818,7 @@
               "task": "The Ology, BIble Reading, Catechism Q30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Bible-Wed"
             },
             {
@@ -2829,7 +2829,7 @@
               "task": "The Ology, BIble Reading, Catechism Q30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Bible-Thu"
             },
             {
@@ -2840,7 +2840,7 @@
               "task": "The Ology, BIble Reading, Catechism Q30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Bible-Fri"
             },
             {
@@ -2851,7 +2851,7 @@
               "task": "The Ology, BIble Reading, Catechism Q30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Bible-Sat"
             },
             {
@@ -2862,7 +2862,7 @@
               "task": "The Ology, BIble Reading, Catechism Q31",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Bible-Tue"
             },
             {
@@ -2873,7 +2873,7 @@
               "task": "The Ology, BIble Reading, Catechism Q31",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Bible-Wed"
             },
             {
@@ -2884,7 +2884,7 @@
               "task": "The Ology, BIble Reading, Catechism Q31",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Bible-Thu"
             },
             {
@@ -2895,7 +2895,7 @@
               "task": "The Ology, BIble Reading, Catechism Q31",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Bible-Fri"
             },
             {
@@ -2906,7 +2906,7 @@
               "task": "The Ology, BIble Reading, Catechism Q31",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Bible-Sat"
             },
             {
@@ -2917,7 +2917,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Bible-Tue"
             },
             {
@@ -2928,7 +2928,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Bible-Wed"
             },
             {
@@ -2939,7 +2939,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Bible-Thu"
             },
             {
@@ -2950,7 +2950,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Bible-Fri"
             },
             {
@@ -2961,7 +2961,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Bible-Sat"
             },
             {
@@ -2972,7 +2972,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Mon"
             },
             {
@@ -2983,7 +2983,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Tue"
             },
             {
@@ -2994,7 +2994,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Wed"
             },
             {
@@ -3005,7 +3005,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Thu"
             },
             {
@@ -3016,7 +3016,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Fri"
             },
             {
@@ -3027,7 +3027,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Bible-Sat"
             },
             {
@@ -3038,7 +3038,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Mon"
             },
             {
@@ -3049,7 +3049,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Tue"
             },
             {
@@ -3060,7 +3060,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Wed"
             },
             {
@@ -3071,7 +3071,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Bible-Thu"
             },
             {
@@ -3209,7 +3209,7 @@
               "task": "Drill Team & Lesson 41",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Nicole the Math Lady-Tue"
             },
             {
@@ -3220,7 +3220,7 @@
               "task": "Drill Team & Lesson 42",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Nicole the Math Lady-Wed"
             },
             {
@@ -3231,7 +3231,7 @@
               "task": "Drill Team & Lesson 43",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Nicole the Math Lady-Thu"
             },
             {
@@ -3242,7 +3242,7 @@
               "task": "Drill Team & Lesson 44",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Nicole the Math Lady-Fri"
             },
             {
@@ -3264,7 +3264,7 @@
               "task": "Drill Team & Lesson 45",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Nicole the Math Lady-Tue"
             },
             {
@@ -3275,7 +3275,7 @@
               "task": "Drill Team & Lesson 46",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Nicole the Math Lady-Wed"
             },
             {
@@ -3286,7 +3286,7 @@
               "task": "Drill Team & Lesson 47",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Nicole the Math Lady-Thu"
             },
             {
@@ -3297,7 +3297,7 @@
               "task": "Drill Team & Lesson 48",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Nicole the Math Lady-Fri"
             },
             {
@@ -3319,7 +3319,7 @@
               "task": "Drill Team & Lesson 49",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Nicole the Math Lady-Tue"
             },
             {
@@ -3330,7 +3330,7 @@
               "task": "Drill Team & Lesson 50",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Nicole the Math Lady-Wed"
             },
             {
@@ -3341,7 +3341,7 @@
               "task": "Drill Team & Investigation 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Nicole the Math Lady-Thu"
             },
             {
@@ -3352,7 +3352,7 @@
               "task": "Drill Team & Lesson 51",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Nicole the Math Lady-Fri"
             },
             {
@@ -3374,7 +3374,7 @@
               "task": "Drill Team & Lesson 52",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Nicole the Math Lady-Mon"
             },
             {
@@ -3385,7 +3385,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Nicole the Math Lady-Tue"
             },
             {
@@ -3396,7 +3396,7 @@
               "task": "Drill Team & Lesson 53",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Nicole the Math Lady-Wed"
             },
             {
@@ -3407,7 +3407,7 @@
               "task": "Drill Team & Lesson 54",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Nicole the Math Lady-Thu"
             },
             {
@@ -3429,7 +3429,7 @@
               "task": "Lesson 55",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Nicole the Math Lady-Sat"
             },
             {
@@ -3440,7 +3440,7 @@
               "task": "Lesson 56, Drill Team",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Nicole the Math Lady-Mon"
             },
             {
@@ -3451,7 +3451,7 @@
               "task": "Drill Team & Lesson 57",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Nicole the Math Lady-Tue"
             },
             {
@@ -3462,7 +3462,7 @@
               "task": "Drill Team & Lesson 58",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Nicole the Math Lady-Wed"
             },
             {
@@ -3473,7 +3473,7 @@
               "task": "Drill Team & Lesson 59",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Nicole the Math Lady-Thu"
             },
             {
@@ -3611,7 +3611,7 @@
               "task": "Read Story 87",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-History-Tue"
             },
             {
@@ -3622,7 +3622,7 @@
               "task": "Read Story 88",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-History-Wed"
             },
             {
@@ -3633,7 +3633,7 @@
               "task": "Read Story 89",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-History-Thu"
             },
             {
@@ -3644,7 +3644,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-History-Fri"
             },
             {
@@ -3666,7 +3666,7 @@
               "task": "Read Story 90",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-History-Tue"
             },
             {
@@ -3677,7 +3677,7 @@
               "task": "Read Story 91 (Final Story)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-History-Wed"
             },
             {
@@ -3688,7 +3688,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-History-Thu"
             },
             {
@@ -3699,7 +3699,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-History-Fri"
             },
             {
@@ -3721,7 +3721,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-History-Tue"
             },
             {
@@ -3732,7 +3732,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-History-Wed"
             },
             {
@@ -3743,7 +3743,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-History-Thu"
             },
             {
@@ -3754,7 +3754,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-History-Fri"
             },
             {
@@ -3776,7 +3776,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-History-Mon"
             },
             {
@@ -3787,7 +3787,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-History-Tue"
             },
             {
@@ -3798,7 +3798,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-History-Wed"
             },
             {
@@ -3809,7 +3809,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-History-Thu"
             },
             {
@@ -3820,7 +3820,7 @@
               "task": "Tell mom and Tabitha what you learned.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-History-Fri"
             },
             {
@@ -4013,7 +4013,7 @@
               "task": "He Lives (p. 154) - Copywork",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Music-Tue"
             },
             {
@@ -4024,7 +4024,7 @@
               "task": "He Lives (p. 154) - Music Theory",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Music-Wed"
             },
             {
@@ -4035,7 +4035,7 @@
               "task": "He Lives (p. 154) - Activity & Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Music-Thu"
             },
             {
@@ -4046,7 +4046,7 @@
               "task": "In the Garden (p. 160) - The Story & Hymn Study",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Music-Fri"
             },
             {
@@ -4057,7 +4057,7 @@
               "task": "CellImage",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Music-Sat"
             },
             {
@@ -4068,7 +4068,7 @@
               "task": "In the Garden (p. 160) - Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Music-Tue"
             },
             {
@@ -4079,7 +4079,7 @@
               "task": "In the Garden (p. 160) - Copywork & Music Theory",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Music-Wed"
             },
             {
@@ -4090,7 +4090,7 @@
               "task": "In the Garden (p. 160) - Activity",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Music-Thu"
             },
             {
@@ -4101,7 +4101,7 @@
               "task": "In the Garden (p. 160) - Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Music-Fri"
             },
             {
@@ -4112,7 +4112,7 @@
               "task": "CellImage",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Music-Sat"
             },
             {
@@ -4123,7 +4123,7 @@
               "task": "Trust and Obey (p. 166) - The Story & Hymn Study & Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Music-Tue"
             },
             {
@@ -4134,7 +4134,7 @@
               "task": "Trust and Obey (p. 166) - Copywork",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Music-Wed"
             },
             {
@@ -4145,7 +4145,7 @@
               "task": "Trust and Obey (p. 166) - Music Theory & Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Music-Thu"
             },
             {
@@ -4156,7 +4156,7 @@
               "task": "Trust and Obey (p. 166) - Activity",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Music-Fri"
             },
             {
@@ -4167,7 +4167,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Music-Sat"
             },
             {
@@ -4178,7 +4178,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Mon"
             },
             {
@@ -4189,7 +4189,7 @@
               "task": "When We All Get to Heaven (p. 172) - The Story & Hymn Study",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Tue"
             },
             {
@@ -4200,7 +4200,7 @@
               "task": "When We All Get to Heaven (p. 172) - Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Wed"
             },
             {
@@ -4211,7 +4211,7 @@
               "task": "When We All Get to Heaven (p. 172) - Copywork & Music Theory",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Thu"
             },
             {
@@ -4222,7 +4222,7 @@
               "task": "When We All Get to Heaven (p. 172) - Activity",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Fri"
             },
             {
@@ -4233,7 +4233,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Music-Sat"
             },
             {
@@ -4244,7 +4244,7 @@
               "task": "When We All Get to Heaven (p. 172) - Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Music-Mon"
             },
             {
@@ -4255,7 +4255,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Music-Tue"
             },
             {
@@ -4266,7 +4266,7 @@
               "task": "The Star-Spangled Banner (p. 178) - Activity & Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Music-Wed"
             },
             {
@@ -4277,7 +4277,7 @@
               "task": "The Star-Spangled Banner (p. 178) - Copywork",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Music-Thu"
             },
             {
@@ -4288,7 +4288,7 @@
               "task": "The Star-Spangled Banner (p. 178) - Music Theory",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Music-Fri"
             },
             {
@@ -4415,7 +4415,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Literature-Tue"
             },
             {
@@ -4426,7 +4426,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Literature-Wed"
             },
             {
@@ -4437,7 +4437,7 @@
               "task": "Read Chapter 16: What Happened About the Statues",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Literature-Thu"
             },
             {
@@ -4448,7 +4448,7 @@
               "task": "Discuss chapter w/mom and Narnia book",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Literature-Fri"
             },
             {
@@ -4470,7 +4470,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Literature-Tue"
             },
             {
@@ -4481,7 +4481,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Literature-Wed"
             },
             {
@@ -4492,7 +4492,7 @@
               "task": "Read Chapter 17: The Hunting of the White Stag",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Literature-Thu"
             },
             {
@@ -4503,7 +4503,7 @@
               "task": "Discuss chapter w/mom and Narnia book",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Literature-Fri"
             },
             {
@@ -4525,7 +4525,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Literature-Tue"
             },
             {
@@ -4536,7 +4536,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Literature-Wed"
             },
             {
@@ -4547,7 +4547,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Literature-Thu"
             },
             {
@@ -4646,7 +4646,7 @@
               "task": "Read the cahpater if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Literature-Mon"
             },
             {
@@ -4668,7 +4668,7 @@
               "task": "Read the cahpater if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Literature-Wed"
             },
             {
@@ -4690,7 +4690,7 @@
               "task": "Read the cahpater if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Literature-Fri"
             },
             {
@@ -4817,7 +4817,7 @@
               "task": "Chapter 12, Lesson 9",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Reading & Grammar-Tue"
             },
             {
@@ -4828,7 +4828,7 @@
               "task": "Chapter 12, Lesson 10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Reading & Grammar-Wed"
             },
             {
@@ -4839,7 +4839,7 @@
               "task": "Chapter 12, Lesson 11",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Reading & Grammar-Thu"
             },
             {
@@ -4861,7 +4861,7 @@
               "task": "Chapter 13, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Reading & Grammar-Sat"
             },
             {
@@ -4872,7 +4872,7 @@
               "task": "Chapter 13, Lessons 2-3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Reading & Grammar-Tue"
             },
             {
@@ -4883,7 +4883,7 @@
               "task": "Chapter 13, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Reading & Grammar-Wed"
             },
             {
@@ -4894,7 +4894,7 @@
               "task": "Chapter 13, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Reading & Grammar-Thu"
             },
             {
@@ -4916,7 +4916,7 @@
               "task": "Chapter 13, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Reading & Grammar-Sat"
             },
             {
@@ -4927,7 +4927,7 @@
               "task": "Chapter 13, Lesson 7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Reading & Grammar-Tue"
             },
             {
@@ -4938,7 +4938,7 @@
               "task": "Chapter 13, Lesson 8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Reading & Grammar-Wed"
             },
             {
@@ -4949,7 +4949,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Reading & Grammar-Thu"
             },
             {
@@ -4960,7 +4960,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Reading & Grammar-Fri"
             },
             {
@@ -4971,7 +4971,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Reading & Grammar-Sat"
             },
             {
@@ -4982,7 +4982,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Mon"
             },
             {
@@ -4993,7 +4993,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Tue"
             },
             {
@@ -5015,7 +5015,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutube.com%2Fplaylist%3Flist%3DPLKTUEjoI9EhsLRrAQwC9hOp9MJMcXOG54%26si%3D6FZOxg_OFmfRAzEg",
               "linkUrl": "https://youtube.com/playlist?list=PLKTUEjoI9EhsLRrAQwC9hOp9MJMcXOG54&si=6FZOxg_OFmfRAzEg",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Thu"
             },
             {
@@ -5026,7 +5026,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
               "linkUrl": "https://youtu.be/GLmjfJyZ-iM?si=FGqogPFs1XasxyEC",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Fri"
             },
             {
@@ -5037,7 +5037,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Reading & Grammar-Sat"
             },
             {
@@ -5048,7 +5048,7 @@
               "task": "Challenge yourself: See how much you can write.",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Reading & Grammar-Mon"
             },
             {
@@ -5070,7 +5070,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Reading & Grammar-Wed"
             },
             {
@@ -5092,7 +5092,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Reading & Grammar-Fri"
             },
             {
@@ -5219,7 +5219,7 @@
               "task": "Chapter 13: The Wolf in Sheep's Clothing:** Read \"The Wolf in Sheep's Clothing.\"",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Writing & Rhetoric-Tue"
             },
             {
@@ -5230,7 +5230,7 @@
               "task": "Chapter 13: The Wolf in Sheep's Clothing:** Work on \"Talk About It.\"",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Writing & Rhetoric-Wed"
             },
             {
@@ -5241,7 +5241,7 @@
               "task": "Chapter 13: The Wolf in Sheep's Clothing:** Practice Oral/Written Narration and work on the \"Go Deeper\" section.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Writing & Rhetoric-Thu"
             },
             {
@@ -5252,7 +5252,7 @@
               "task": "Chapter 13: The Wolf in Sheep's Clothing:** Complete Copywork/Dictation and \"Writing Time\" exercises.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Writing & Rhetoric-Fri"
             },
             {
@@ -5274,7 +5274,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Writing & Rhetoric-Tue"
             },
             {
@@ -5285,7 +5285,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Writing & Rhetoric-Wed"
             },
             {
@@ -5296,7 +5296,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Writing & Rhetoric-Thu"
             },
             {
@@ -5307,7 +5307,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Writing & Rhetoric-Fri"
             },
             {
@@ -5329,7 +5329,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Writing & Rhetoric-Tue"
             },
             {
@@ -5340,7 +5340,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Writing & Rhetoric-Wed"
             },
             {
@@ -5351,7 +5351,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Writing & Rhetoric-Thu"
             },
             {
@@ -5362,7 +5362,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Writing & Rhetoric-Fri"
             },
             {
@@ -5439,7 +5439,7 @@
               "task": "I love you, Beth!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Writing & Rhetoric-Sat"
             },
             {
@@ -5450,7 +5450,7 @@
               "task": "Chapter 13 & 14 Transition:** Create an outline, draft, write final copy, and \"Speak It\" for \"The Wolf in Sheep's Clothing.\"",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Writing & Rhetoric-Mon"
             },
             {
@@ -5483,7 +5483,7 @@
               "task": "Chapter 13 & 14 Transition:** Read \"The Lion & the Mouse.\"",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Writing & Rhetoric-Thu"
             },
             {
@@ -5621,7 +5621,7 @@
               "task": "Level 4, pp. 79-80",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Handwriting-Tue"
             },
             {
@@ -5632,7 +5632,7 @@
               "task": "Level 4, p. 81",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Handwriting-Wed"
             },
             {
@@ -5643,7 +5643,7 @@
               "task": "Level 4, pp. 82-83",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Handwriting-Thu"
             },
             {
@@ -5654,7 +5654,7 @@
               "task": "Level 4, p. 84",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Handwriting-Fri"
             },
             {
@@ -5676,7 +5676,7 @@
               "task": "Level 4, pp. 85-86",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Handwriting-Tue"
             },
             {
@@ -5687,7 +5687,7 @@
               "task": "Level 4, p. 87",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Handwriting-Wed"
             },
             {
@@ -5698,7 +5698,7 @@
               "task": "Level 4, pp. 88-89",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Handwriting-Thu"
             },
             {
@@ -5709,7 +5709,7 @@
               "task": "Level 4, p. 90",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Handwriting-Fri"
             },
             {
@@ -5731,7 +5731,7 @@
               "task": "Level 4, pp. 91-92",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Handwriting-Tue"
             },
             {
@@ -5742,7 +5742,7 @@
               "task": "Level 4, p. 93",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Handwriting-Wed"
             },
             {
@@ -5753,7 +5753,7 @@
               "task": "Level 4, pp. 94-95",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Handwriting-Thu"
             },
             {
@@ -5764,7 +5764,7 @@
               "task": "Level 4, p. 96",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Handwriting-Fri"
             },
             {
@@ -5786,7 +5786,7 @@
               "task": "Handwriting.... very carefully. Pgs. 97-100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Handwriting-Mon"
             },
             {
@@ -5797,7 +5797,7 @@
               "task": "Level 4, p. 97",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Handwriting-Tue"
             },
             {
@@ -5808,7 +5808,7 @@
               "task": "Level 4, p. 98",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Handwriting-Wed"
             },
             {
@@ -5819,7 +5819,7 @@
               "task": "Level 4, p. 99",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Handwriting-Thu"
             },
             {
@@ -5830,7 +5830,7 @@
               "task": "Level 4, p. 100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Handwriting-Fri"
             },
             {
@@ -5863,7 +5863,7 @@
               "task": "Level 4, p. 102 (Last page)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Handwriting-Tue"
             },
             {
@@ -5874,7 +5874,7 @@
               "task": "Write out a verse in your very best handwriting.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Handwriting-Wed"
             },
             {
@@ -5896,7 +5896,7 @@
               "task": "Write out a verse in your very best handwriting.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Handwriting-Fri"
             },
             {
@@ -6023,7 +6023,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Latin-Tue"
             },
             {
@@ -6034,7 +6034,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Latin-Wed"
             },
             {
@@ -6045,7 +6045,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Latin-Thu"
             },
             {
@@ -6056,7 +6056,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W32-Latin-Fri"
             },
             {
@@ -6078,7 +6078,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Latin-Tue"
             },
             {
@@ -6089,7 +6089,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Latin-Wed"
             },
             {
@@ -6100,7 +6100,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Latin-Thu"
             },
             {
@@ -6111,7 +6111,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W33-Latin-Fri"
             },
             {
@@ -6133,7 +6133,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Latin-Tue"
             },
             {
@@ -6144,7 +6144,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Latin-Wed"
             },
             {
@@ -6155,7 +6155,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Latin-Thu"
             },
             {
@@ -6166,7 +6166,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W34-Latin-Fri"
             },
             {
@@ -6188,7 +6188,7 @@
               "task": "Quiz... on the printer",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Mon"
             },
             {
@@ -6199,7 +6199,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Tue"
             },
             {
@@ -6210,7 +6210,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Wed"
             },
             {
@@ -6221,7 +6221,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Thu"
             },
             {
@@ -6243,7 +6243,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W35-Latin-Sat"
             },
             {
@@ -6254,7 +6254,7 @@
               "task": "Latin Class @ 12:45 & Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Latin-Mon"
             },
             {
@@ -6276,7 +6276,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Latin-Wed"
             },
             {
@@ -6287,7 +6287,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W36-Latin-Thu"
             },
             {
@@ -6436,7 +6436,7 @@
               "task": "Chap from How People Change, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Bible-Tue"
             },
             {
@@ -6447,7 +6447,7 @@
               "task": "Chap from How People Change, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Bible-Wed"
             },
             {
@@ -6458,7 +6458,7 @@
               "task": "Chap from How People Change, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Bible-Thu"
             },
             {
@@ -6469,7 +6469,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Bible-Fri"
             },
             {
@@ -6491,7 +6491,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Bible-Tue"
             },
             {
@@ -6502,7 +6502,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Bible-Wed"
             },
             {
@@ -6513,7 +6513,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Bible-Thu"
             },
             {
@@ -6524,7 +6524,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Bible-Fri"
             },
             {
@@ -6546,7 +6546,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Bible-Tue"
             },
             {
@@ -6557,7 +6557,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Bible-Wed"
             },
             {
@@ -6568,7 +6568,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Bible-Thu"
             },
             {
@@ -6579,7 +6579,7 @@
               "task": "Chap. from God w/o Passions, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Bible-Fri"
             },
             {
@@ -6601,7 +6601,7 @@
               "task": "Read \"Relationships\": Ch. 1-2 (pp. 3-16), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Bible-Mon"
             },
             {
@@ -6612,7 +6612,7 @@
               "task": "Read \"Relationships\": Ch. 3 (pp. 17-28), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Bible-Tue"
             },
             {
@@ -6623,7 +6623,7 @@
               "task": "Read \"Relationships\": Ch. 4 (pp. 29-39), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Bible-Wed"
             },
             {
@@ -6634,7 +6634,7 @@
               "task": "Read \"Relationships\": Ch. 5 (pp. 40-50), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Bible-Thu"
             },
             {
@@ -6656,7 +6656,7 @@
               "task": "Read \"Relationships\": Ch. 6 (pp. 51-62), Bible Journaling, Journal Entries Due",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Bible-Mon"
             },
             {
@@ -6667,7 +6667,7 @@
               "task": "Read \"Relationships\": Ch. 7 (pp. 63-71), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Bible-Tue"
             },
             {
@@ -6678,7 +6678,7 @@
               "task": "Read \"Relationships\": Ch. 8 (pp. 72-84), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Bible-Wed"
             },
             {
@@ -6689,7 +6689,7 @@
               "task": "Read \"Relationships\": Ch. 9 (pp. 85-97), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Bible-Thu"
             },
             {
@@ -6827,7 +6827,7 @@
               "task": "P3 L7 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Health-Tue"
             },
             {
@@ -6838,7 +6838,7 @@
               "task": "P3 L7 #7 & Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Health-Wed"
             },
             {
@@ -6849,7 +6849,7 @@
               "task": "P3 L8 #1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Health-Thu"
             },
             {
@@ -6860,7 +6860,7 @@
               "task": "P3 L8 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Health-Fri"
             },
             {
@@ -6882,7 +6882,7 @@
               "task": "P3 L8 #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Health-Tue"
             },
             {
@@ -6893,7 +6893,7 @@
               "task": "P3 L8 #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Health-Wed"
             },
             {
@@ -6904,7 +6904,7 @@
               "task": "P3 L8 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Health-Thu"
             },
             {
@@ -6915,7 +6915,7 @@
               "task": "P3 L8 #7 & Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Health-Fri"
             },
             {
@@ -6937,7 +6937,7 @@
               "task": "P4 L1 #1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Health-Tue"
             },
             {
@@ -6948,7 +6948,7 @@
               "task": "P4 L1 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Health-Wed"
             },
             {
@@ -6959,7 +6959,7 @@
               "task": "P4 L1 #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Health-Thu"
             },
             {
@@ -6970,7 +6970,7 @@
               "task": "P4 L1 #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Health-Fri"
             },
             {
@@ -6992,7 +6992,7 @@
               "task": "P4 L1 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Health-Mon"
             },
             {
@@ -7003,7 +7003,7 @@
               "task": "P4 L1 #7 & Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Health-Tue"
             },
             {
@@ -7014,7 +7014,7 @@
               "task": "P4 L2 #1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Health-Wed"
             },
             {
@@ -7025,7 +7025,7 @@
               "task": "P4 L2 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Health-Thu"
             },
             {
@@ -7047,7 +7047,7 @@
               "task": "P4 L2 #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Health-Mon"
             },
             {
@@ -7058,7 +7058,7 @@
               "task": "P4 L2 #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Health-Tue"
             },
             {
@@ -7069,7 +7069,7 @@
               "task": "P4 L2 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Health-Wed"
             },
             {
@@ -7080,7 +7080,7 @@
               "task": "P4 L2 #7 & Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Health-Thu"
             },
             {
@@ -7218,7 +7218,7 @@
               "task": "N&K Step #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-History of Ideas-Tue"
             },
             {
@@ -7229,7 +7229,7 @@
               "task": "N&K Step #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-History of Ideas-Wed"
             },
             {
@@ -7240,7 +7240,7 @@
               "task": "N&K Step #8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-History of Ideas-Thu"
             },
             {
@@ -7251,7 +7251,7 @@
               "task": "Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-History of Ideas-Fri"
             },
             {
@@ -7273,7 +7273,7 @@
               "task": "S&H Step #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-History of Ideas-Tue"
             },
             {
@@ -7284,7 +7284,7 @@
               "task": "S&H Step #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-History of Ideas-Wed"
             },
             {
@@ -7295,7 +7295,7 @@
               "task": "S&H Step #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-History of Ideas-Thu"
             },
             {
@@ -7306,7 +7306,7 @@
               "task": "S&H Step #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-History of Ideas-Fri"
             },
             {
@@ -7328,7 +7328,7 @@
               "task": "S&H Step #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-History of Ideas-Tue"
             },
             {
@@ -7339,7 +7339,7 @@
               "task": "S&H Step #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-History of Ideas-Wed"
             },
             {
@@ -7350,7 +7350,7 @@
               "task": "Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-History of Ideas-Thu"
             },
             {
@@ -7383,7 +7383,7 @@
               "task": "Russell & Modern Philospohers Step #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-History of Ideas-Mon"
             },
             {
@@ -7394,7 +7394,7 @@
               "task": "Russell & Modern Philospohers Step #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-History of Ideas-Tue"
             },
             {
@@ -7405,7 +7405,7 @@
               "task": "Russell & Modern Philospohers Step #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-History of Ideas-Wed"
             },
             {
@@ -7416,7 +7416,7 @@
               "task": "Russell & Modern Philospohers Step #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-History of Ideas-Thu"
             },
             {
@@ -7438,7 +7438,7 @@
               "task": "Russell & Modern Philospohers Step #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-History of Ideas-Mon"
             },
             {
@@ -7449,7 +7449,7 @@
               "task": "Russell & Modern Philospohers Step #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-History of Ideas-Tue"
             },
             {
@@ -7460,7 +7460,7 @@
               "task": "Russell & Modern Philospohers Step #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-History of Ideas-Wed"
             },
             {
@@ -7609,7 +7609,7 @@
               "task": "☐ Read WHB pg 262-267",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Anatomy-Tue"
             },
             {
@@ -7620,7 +7620,7 @@
               "task": "☐ Worksheet 51",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Anatomy-Wed"
             },
             {
@@ -7631,7 +7631,7 @@
               "task": "☐ Color ABC 160-161\n☐ Read WHB pg 268-277",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Anatomy-Thu"
             },
             {
@@ -7642,7 +7642,7 @@
               "task": "☐ Worksheet 52\n☐ Color ABC 162-165",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Anatomy-Fri"
             },
             {
@@ -7664,7 +7664,7 @@
               "task": "☐ Study",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Anatomy-Tue"
             },
             {
@@ -7675,7 +7675,7 @@
               "task": "☐ Take Unit 3: Quiz 2\n☐ Color ABC 166-167",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Anatomy-Wed"
             },
             {
@@ -7686,7 +7686,7 @@
               "task": "☐ Read WHB pg 278-279\n☐ ABC 170-171",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Anatomy-Thu"
             },
             {
@@ -7697,7 +7697,7 @@
               "task": "☐ Read WHB pg 280-281\n☐ Worksheet 53",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Anatomy-Fri"
             },
             {
@@ -7719,7 +7719,7 @@
               "task": "☐ Read WHB pg 282\n☐ Color ABC 168-169",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Anatomy-Tue"
             },
             {
@@ -7730,7 +7730,7 @@
               "task": "☐ Read WHB pg 283-284\n☐ Color ABC 180-181",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Anatomy-Wed"
             },
             {
@@ -7741,7 +7741,7 @@
               "task": "☐ Worksheet 54 front",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Anatomy-Thu"
             },
             {
@@ -7752,7 +7752,7 @@
               "task": "☐ Worksheet 54 back\n☐ Read WHB pg 284-286",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Anatomy-Fri"
             },
             {
@@ -7774,7 +7774,7 @@
               "task": "☐ Read WHB pg 286-287\n☐ Color ABC 182-183",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Anatomy-Mon"
             },
             {
@@ -7785,7 +7785,7 @@
               "task": "☐ Worksheet 55 front",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Anatomy-Tue"
             },
             {
@@ -7796,7 +7796,7 @@
               "task": "☐ Worksheet 55 back",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Anatomy-Wed"
             },
             {
@@ -7807,7 +7807,7 @@
               "task": "☐ Read pg 187-191",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Anatomy-Thu"
             },
             {
@@ -7829,7 +7829,7 @@
               "task": "☐ Worksheet 56",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Anatomy-Mon"
             },
             {
@@ -7840,7 +7840,7 @@
               "task": "☐ Read WHB pg 292-301",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Anatomy-Tue"
             },
             {
@@ -7851,7 +7851,7 @@
               "task": "☐ Color ABC 186-187",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Anatomy-Wed"
             },
             {
@@ -7862,7 +7862,7 @@
               "task": "☐ Worksheet 57\n☐ Color ABC 176-177\n☐ Study for Unit 3: Quiz 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Anatomy-Thu"
             },
             {
@@ -8000,7 +8000,7 @@
               "task": "Chap 23 #2 (Part 1)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Math-Tue"
             },
             {
@@ -8011,7 +8011,7 @@
               "task": "Chap 23 #2 (Part 2)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Math-Wed"
             },
             {
@@ -8022,7 +8022,7 @@
               "task": "Chap 23 #3 (Part 1)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Math-Thu"
             },
             {
@@ -8033,7 +8033,7 @@
               "task": "Chap 23 #3 (Part 2)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Math-Fri"
             },
             {
@@ -8055,7 +8055,7 @@
               "task": "Chap 23 #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Math-Tue"
             },
             {
@@ -8066,7 +8066,7 @@
               "task": "Chap 23 #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Math-Wed"
             },
             {
@@ -8077,7 +8077,7 @@
               "task": "Chap 23 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Math-Thu"
             },
             {
@@ -8088,7 +8088,7 @@
               "task": "Chap 24 #1 (Part 1)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Math-Fri"
             },
             {
@@ -8110,7 +8110,7 @@
               "task": "Chap 24 #1 (Part 2)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Math-Tue"
             },
             {
@@ -8121,7 +8121,7 @@
               "task": "Chap 24 #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Math-Wed"
             },
             {
@@ -8132,7 +8132,7 @@
               "task": "Chap 24 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Math-Thu"
             },
             {
@@ -8143,7 +8143,7 @@
               "task": "Chap 24 #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Math-Fri"
             },
             {
@@ -8165,7 +8165,7 @@
               "task": "Chap 25 #1 (Part 1)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Math-Mon"
             },
             {
@@ -8176,7 +8176,7 @@
               "task": "Chap 25 #1 (Part 2)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Math-Tue"
             },
             {
@@ -8187,7 +8187,7 @@
               "task": "Chap 25 #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Math-Wed"
             },
             {
@@ -8198,7 +8198,7 @@
               "task": "Chap 25 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Math-Thu"
             },
             {
@@ -8220,7 +8220,7 @@
               "task": "Chap 25 #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Math-Mon"
             },
             {
@@ -8231,7 +8231,7 @@
               "task": "Epilogue #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Math-Tue"
             },
             {
@@ -8242,7 +8242,7 @@
               "task": "Epilogue #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Math-Wed"
             },
             {
@@ -8253,7 +8253,7 @@
               "task": "Epilogue #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Math-Thu"
             },
             {
@@ -8391,7 +8391,7 @@
               "task": "Kristen Lavransdatter Chap  59-60 & Day 18",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-English-Tue"
             },
             {
@@ -8402,7 +8402,7 @@
               "task": "Kristen Lavransdatter Chap 61-62 & Day 19",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-English-Wed"
             },
             {
@@ -8413,7 +8413,7 @@
               "task": "Kristen Lavransdatter Chap 63-64",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-English-Thu"
             },
             {
@@ -8424,7 +8424,7 @@
               "task": "Kristen Lavransdatter Chap 65-67 & Day 20",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-English-Fri"
             },
             {
@@ -8446,7 +8446,7 @@
               "task": "Kristen Lavransdatter Chap 68-70",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-English-Tue"
             },
             {
@@ -8457,7 +8457,7 @@
               "task": "Kristen Lavransdatter Chap 71-73",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-English-Wed"
             },
             {
@@ -8468,7 +8468,7 @@
               "task": "(Fiction 3) The Book Thief Chap 1-6 & Day 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-English-Thu"
             },
             {
@@ -8479,7 +8479,7 @@
               "task": "The Book Theif Chap 7-12 & Day 2-3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-English-Fri"
             },
             {
@@ -8501,7 +8501,7 @@
               "task": "The Book Thief Chap 13-18 & Day 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-English-Tue"
             },
             {
@@ -8512,7 +8512,7 @@
               "task": "The Book Thief Chap 19-24 & Day 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-English-Wed"
             },
             {
@@ -8523,7 +8523,7 @@
               "task": "The Book Thief Chap 25-30 & Day 6-7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-English-Thu"
             },
             {
@@ -8534,7 +8534,7 @@
               "task": "The Book Thief Chap  31-36 & Day 8-9",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-English-Fri"
             },
             {
@@ -8556,7 +8556,7 @@
               "task": "The Book Thief Chap 37-42 & Day 10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-English-Mon"
             },
             {
@@ -8567,7 +8567,7 @@
               "task": "The Book Thief Chap 43-48 & Day 11",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-English-Tue"
             },
             {
@@ -8578,7 +8578,7 @@
               "task": "The Book Thief Chap 49-54 & Day 12",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-English-Wed"
             },
             {
@@ -8589,7 +8589,7 @@
               "task": "The Book Thief Chap 55-60 & Day 13-14",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-English-Thu"
             },
             {
@@ -8611,7 +8611,7 @@
               "task": "The Book Thief Chap 61-66 & Day 15-16",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-English-Mon"
             },
             {
@@ -8622,7 +8622,7 @@
               "task": "The Book Thief Chap 67-72 & Day 17",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-English-Tue"
             },
             {
@@ -8633,7 +8633,7 @@
               "task": "The Book Thief Chap 73-78 & Day 18",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-English-Wed"
             },
             {
@@ -8644,7 +8644,7 @@
               "task": "The Book Thief Chap 79-86 & Day 19",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-English-Thu"
             },
             {
@@ -8782,7 +8782,7 @@
               "task": "Lesson 13.5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Financial Literacy-Tue"
             },
             {
@@ -8793,7 +8793,7 @@
               "task": "Lesson 13.6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Financial Literacy-Wed"
             },
             {
@@ -8804,7 +8804,7 @@
               "task": "Lesosn 13.7 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Financial Literacy-Thu"
             },
             {
@@ -8815,7 +8815,7 @@
               "task": "Lesosn 13.7 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W32-Financial Literacy-Fri"
             },
             {
@@ -8837,7 +8837,7 @@
               "task": "Lesson 14.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Financial Literacy-Tue"
             },
             {
@@ -8848,7 +8848,7 @@
               "task": "Lesson 14.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Financial Literacy-Wed"
             },
             {
@@ -8859,7 +8859,7 @@
               "task": "Lesson 14.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Financial Literacy-Thu"
             },
             {
@@ -8870,7 +8870,7 @@
               "task": "Lesson 14.4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W33-Financial Literacy-Fri"
             },
             {
@@ -8892,7 +8892,7 @@
               "task": "Lesson 14.5 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Financial Literacy-Tue"
             },
             {
@@ -8903,7 +8903,7 @@
               "task": "Lesson 14.5 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Financial Literacy-Wed"
             },
             {
@@ -8914,7 +8914,7 @@
               "task": "Lessonn 15.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Financial Literacy-Thu"
             },
             {
@@ -8925,7 +8925,7 @@
               "task": "Lessonn 15.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W34-Financial Literacy-Fri"
             },
             {
@@ -8947,7 +8947,7 @@
               "task": "Lessonn 15.3-4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Financial Literacy-Mon"
             },
             {
@@ -8958,7 +8958,7 @@
               "task": "Lessonn 15.5 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Financial Literacy-Tue"
             },
             {
@@ -8969,7 +8969,7 @@
               "task": "Lessonn 15.5 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Financial Literacy-Wed"
             },
             {
@@ -8980,7 +8980,7 @@
               "task": "Lessonn 15.5 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W35-Financial Literacy-Thu"
             },
             {
@@ -9002,7 +9002,7 @@
               "task": "Lesson 16.1–2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Financial Literacy-Mon"
             },
             {
@@ -9013,7 +9013,7 @@
               "task": "Lesson 16.3–4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Financial Literacy-Tue"
             },
             {
@@ -9024,7 +9024,7 @@
               "task": "Lesson 16.5–6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Financial Literacy-Wed"
             },
             {
@@ -9035,7 +9035,7 @@
               "task": "Lesson 16.7–8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W36-Financial Literacy-Thu"
             },
             {
@@ -9184,7 +9184,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Bible-Tue"
             },
             {
@@ -9195,7 +9195,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Bible-Wed"
             },
             {
@@ -9206,7 +9206,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Bible-Thu"
             },
             {
@@ -9217,7 +9217,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Bible-Fri"
             },
             {
@@ -9228,7 +9228,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Bible-Sat"
             },
             {
@@ -9239,7 +9239,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Bible-Tue"
             },
             {
@@ -9250,7 +9250,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Bible-Wed"
             },
             {
@@ -9261,7 +9261,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Bible-Thu"
             },
             {
@@ -9272,7 +9272,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Bible-Fri"
             },
             {
@@ -9283,7 +9283,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Bible-Sat"
             },
             {
@@ -9305,7 +9305,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Bible-Wed"
             },
             {
@@ -9316,7 +9316,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Bible-Thu"
             },
             {
@@ -9327,7 +9327,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Bible-Fri"
             },
             {
@@ -9338,7 +9338,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Bible-Sat"
             },
             {
@@ -9349,7 +9349,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Mon"
             },
             {
@@ -9360,7 +9360,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Tue"
             },
             {
@@ -9371,7 +9371,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Wed"
             },
             {
@@ -9382,7 +9382,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Thu"
             },
             {
@@ -9393,7 +9393,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Bible-Fri"
             },
             {
@@ -9404,7 +9404,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Bible-Mon"
             },
             {
@@ -9415,7 +9415,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Bible-Tue"
             },
             {
@@ -9426,7 +9426,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Bible-Wed"
             },
             {
@@ -9437,7 +9437,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Bible-Thu"
             },
             {
@@ -9575,7 +9575,7 @@
               "task": "American Heritage #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Hillsdale History-Tue"
             },
             {
@@ -9597,7 +9597,7 @@
               "task": "American Heritage #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Hillsdale History-Thu"
             },
             {
@@ -9608,7 +9608,7 @@
               "task": "American Heritage #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Hillsdale History-Fri"
             },
             {
@@ -9630,7 +9630,7 @@
               "task": "American Heritage #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Hillsdale History-Tue"
             },
             {
@@ -9652,7 +9652,7 @@
               "task": "American Heritage #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Hillsdale History-Thu"
             },
             {
@@ -9663,7 +9663,7 @@
               "task": "American Heritage #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Hillsdale History-Fri"
             },
             {
@@ -9685,7 +9685,7 @@
               "task": "American Heritage #8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Hillsdale History-Tue"
             },
             {
@@ -9707,7 +9707,7 @@
               "task": "American Heritage #9",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Hillsdale History-Thu"
             },
             {
@@ -9718,7 +9718,7 @@
               "task": "American Heritage #10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Hillsdale History-Fri"
             },
             {
@@ -9740,7 +9740,7 @@
               "task": "American Heritage #11",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Hillsdale History-Mon"
             },
             {
@@ -9762,7 +9762,7 @@
               "task": "Review Course Material",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Hillsdale History-Wed"
             },
             {
@@ -9773,7 +9773,7 @@
               "task": "Take Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Hillsdale History-Thu"
             },
             {
@@ -9784,7 +9784,7 @@
               "task": "Take Final Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Hillsdale History-Fri"
             },
             {
@@ -9795,7 +9795,7 @@
               "task": "The Second World Wars #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Hillsdale History-Mon"
             },
             {
@@ -9817,7 +9817,7 @@
               "task": "The Second World Wars #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Hillsdale History-Wed"
             },
             {
@@ -9828,7 +9828,7 @@
               "task": "The Second World Wars #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Hillsdale History-Thu"
             },
             {
@@ -9966,7 +9966,7 @@
               "task": "The Tower of Babel, Lessons 1 & 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Creation Science-Tue"
             },
             {
@@ -9977,7 +9977,7 @@
               "task": "The Tower of Babel, Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Creation Science-Wed"
             },
             {
@@ -9988,7 +9988,7 @@
               "task": "The Tower of Babel, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Creation Science-Thu"
             },
             {
@@ -9999,7 +9999,7 @@
               "task": "The Tower of Babel, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Creation Science-Fri"
             },
             {
@@ -10021,7 +10021,7 @@
               "task": "The Tower of Babel, Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Creation Science-Tue"
             },
             {
@@ -10032,7 +10032,7 @@
               "task": "The Culture of Genesis, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Creation Science-Wed"
             },
             {
@@ -10043,7 +10043,7 @@
               "task": "The Culture of Genesis, Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Creation Science-Thu"
             },
             {
@@ -10054,7 +10054,7 @@
               "task": "The Culture of Genesis, Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Creation Science-Fri"
             },
             {
@@ -10076,7 +10076,7 @@
               "task": "The Culture of Genesis, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Creation Science-Tue"
             },
             {
@@ -10087,7 +10087,7 @@
               "task": "The Culture of Genesis, Lesson 5 & Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Creation Science-Wed"
             },
             {
@@ -10098,7 +10098,7 @@
               "task": "The Church & Genesis, Lessons 1 & 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Creation Science-Thu"
             },
             {
@@ -10109,7 +10109,7 @@
               "task": "The Church & Genesis, Lessons 3 & 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Creation Science-Fri"
             },
             {
@@ -10131,7 +10131,7 @@
               "task": "The Church & Genesis, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Creation Science-Mon"
             },
             {
@@ -10142,7 +10142,7 @@
               "task": "The Church & Genesis, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Creation Science-Tue"
             },
             {
@@ -10153,7 +10153,7 @@
               "task": "The Church & Genesis, Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Creation Science-Wed"
             },
             {
@@ -10164,7 +10164,7 @@
               "task": "Final Advanced Topics, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Creation Science-Thu"
             },
             {
@@ -10186,7 +10186,7 @@
               "task": "Final Advanced Topics, Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Creation Science-Mon"
             },
             {
@@ -10197,7 +10197,7 @@
               "task": "Final Advanced Topics, Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Creation Science-Tue"
             },
             {
@@ -10208,7 +10208,7 @@
               "task": "Final Advanced Topics, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Creation Science-Wed"
             },
             {
@@ -10219,7 +10219,7 @@
               "task": "Course Complete! 🎉",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Creation Science-Thu"
             },
             {
@@ -10500,7 +10500,7 @@
               "task": "Shormann Math\nLesson 92 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Algebra 1-Fri"
             },
             {
@@ -10522,7 +10522,7 @@
               "task": "Shormann Math\nWeek 27 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Algebra 1-Mon"
             },
             {
@@ -10544,7 +10544,7 @@
               "task": "Shormann Math\nLesson 93 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Algebra 1-Wed"
             },
             {
@@ -10566,7 +10566,7 @@
               "task": "Shormann Math\nLesson 94 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Algebra 1-Fri"
             },
             {
@@ -10577,7 +10577,7 @@
               "task": "Shormann Math\nLesson 95 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Algebra 1-Mon"
             },
             {
@@ -10599,7 +10599,7 @@
               "task": "Shormann Math\nLesson 96 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Algebra 1-Wed"
             },
             {
@@ -10731,7 +10731,7 @@
               "task": "Shormann Math\nPractice Exam 4.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Algebra 1-Fri"
             }
           ]
@@ -10748,7 +10748,7 @@
               "task": "Word Up Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Other-Tue"
             },
             {
@@ -10759,7 +10759,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Other-Wed"
             },
             {
@@ -10770,7 +10770,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Other-Thu"
             },
             {
@@ -10781,7 +10781,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Other-Fri"
             },
             {
@@ -10792,7 +10792,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Other-Sat"
             },
             {
@@ -10803,7 +10803,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Other-Tue"
             },
             {
@@ -10814,7 +10814,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Other-Wed"
             },
             {
@@ -10825,7 +10825,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Other-Thu"
             },
             {
@@ -10836,7 +10836,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Other-Fri"
             },
             {
@@ -10858,7 +10858,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Other-Tue"
             },
             {
@@ -10869,7 +10869,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Other-Wed"
             },
             {
@@ -10880,7 +10880,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Other-Thu"
             },
             {
@@ -10891,7 +10891,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Other-Fri"
             },
             {
@@ -10913,7 +10913,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Other-Mon"
             },
             {
@@ -10924,7 +10924,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Other-Tue"
             },
             {
@@ -10935,7 +10935,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Other-Wed"
             },
             {
@@ -10946,7 +10946,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Other-Thu"
             },
             {
@@ -10968,7 +10968,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Other-Mon"
             },
             {
@@ -10979,7 +10979,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Other-Tue"
             },
             {
@@ -10990,7 +10990,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Other-Wed"
             },
             {
@@ -11001,7 +11001,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Other-Thu"
             },
             {
@@ -11139,7 +11139,7 @@
               "task": "Biblical Arch. Lesson 13 Watch",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Electives-Tue"
             },
             {
@@ -11150,7 +11150,7 @@
               "task": "Biblical Arch. Lesson 13 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Electives-Wed"
             },
             {
@@ -11161,7 +11161,7 @@
               "task": "Read",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Electives-Thu"
             },
             {
@@ -11172,7 +11172,7 @@
               "task": "Discuss",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W32-Electives-Fri"
             },
             {
@@ -11194,7 +11194,7 @@
               "task": "Biblical Arch. Lesson 14 Watch",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Electives-Tue"
             },
             {
@@ -11205,7 +11205,7 @@
               "task": "Biblical Arch. Lesson 14 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Electives-Wed"
             },
             {
@@ -11216,7 +11216,7 @@
               "task": "Read",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Electives-Thu"
             },
             {
@@ -11227,7 +11227,7 @@
               "task": "Discuss",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W33-Electives-Fri"
             },
             {
@@ -11249,7 +11249,7 @@
               "task": "Biblical Arch. Lesson 15 Watch",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Electives-Tue"
             },
             {
@@ -11260,7 +11260,7 @@
               "task": "Biblical Arch. Lesson 15 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Electives-Wed"
             },
             {
@@ -11271,7 +11271,7 @@
               "task": "Read",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Electives-Thu"
             },
             {
@@ -11282,7 +11282,7 @@
               "task": "Discuss",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W34-Electives-Fri"
             },
             {
@@ -11304,7 +11304,7 @@
               "task": "Biblical Arch. Lesson 16 Watch",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Electives-Mon"
             },
             {
@@ -11315,7 +11315,7 @@
               "task": "Biblical Arch. Lesson 16 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Electives-Tue"
             },
             {
@@ -11326,7 +11326,7 @@
               "task": "Read",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Electives-Wed"
             },
             {
@@ -11337,7 +11337,7 @@
               "task": "Discuss",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Electives-Thu"
             },
             {
@@ -11348,7 +11348,7 @@
               "task": "Biblical Archeology Project #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W35-Electives-Fri"
             },
             {
@@ -11381,7 +11381,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W36-Electives-Wed"
             },
             {
@@ -11541,7 +11541,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Bible-Tue"
             },
             {
@@ -11552,7 +11552,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Bible-Wed"
             },
             {
@@ -11563,7 +11563,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Bible-Thu"
             },
             {
@@ -11574,7 +11574,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Bible-Fri"
             },
             {
@@ -11585,7 +11585,7 @@
               "task": "The Ology, BIble Reading, Catechism Q32",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Bible-Mon"
             },
             {
@@ -11596,7 +11596,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Bible-Tue"
             },
             {
@@ -11607,7 +11607,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Bible-Wed"
             },
             {
@@ -11618,7 +11618,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Bible-Thu"
             },
             {
@@ -11629,7 +11629,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Bible-Fri"
             },
             {
@@ -11640,7 +11640,7 @@
               "task": "The Ology, BIble Reading, Catechism Q33",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Bible-Mon"
             },
             {
@@ -11651,7 +11651,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Bible-Tue"
             },
             {
@@ -11662,7 +11662,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Bible-Wed"
             },
             {
@@ -11673,7 +11673,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Bible-Thu"
             },
             {
@@ -11684,7 +11684,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Bible-Fri"
             },
             {
@@ -11695,7 +11695,7 @@
               "task": "The Ology, BIble Reading, Catechism Q34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Bible-Mon"
             },
             {
@@ -11706,7 +11706,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Bible-Tue"
             },
             {
@@ -11717,7 +11717,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Bible-Wed"
             },
             {
@@ -11728,7 +11728,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Bible-Thu"
             },
             {
@@ -11739,7 +11739,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Bible-Fri"
             },
             {
@@ -11750,7 +11750,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Bible-Mon"
             },
             {
@@ -11761,7 +11761,7 @@
               "task": "The Ology, BIble Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Bible-Tue"
             },
             {
@@ -11772,7 +11772,7 @@
               "task": "The Ology, BIble Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Bible-Wed"
             },
             {
@@ -11783,7 +11783,7 @@
               "task": "The Ology, BIble Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Bible-Thu"
             },
             {
@@ -11932,7 +11932,7 @@
               "task": "Lesson 110",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Saxon Math-Tue"
             },
             {
@@ -11943,7 +11943,7 @@
               "task": "Assessment (after Lesson 110)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Saxon Math-Wed"
             },
             {
@@ -11954,7 +11954,7 @@
               "task": "Lesson 111",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Saxon Math-Thu"
             },
             {
@@ -11965,7 +11965,7 @@
               "task": "Lesson 112",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Saxon Math-Fri"
             },
             {
@@ -11987,7 +11987,7 @@
               "task": "Lesson 113",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Saxon Math-Tue"
             },
             {
@@ -11998,7 +11998,7 @@
               "task": "Lesson 114",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Saxon Math-Wed"
             },
             {
@@ -12009,7 +12009,7 @@
               "task": "Lesson 115",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Saxon Math-Thu"
             },
             {
@@ -12020,7 +12020,7 @@
               "task": "Drill Team Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Saxon Math-Fri"
             },
             {
@@ -12042,7 +12042,7 @@
               "task": "Lesson 116",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Saxon Math-Tue"
             },
             {
@@ -12053,7 +12053,7 @@
               "task": "Lesson 117",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Saxon Math-Wed"
             },
             {
@@ -12064,7 +12064,7 @@
               "task": "Lesson 118",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Saxon Math-Thu"
             },
             {
@@ -12075,7 +12075,7 @@
               "task": "Lesson 119",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Saxon Math-Fri"
             },
             {
@@ -12086,7 +12086,7 @@
               "task": "Lesson 120",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Saxon Math-Mon"
             },
             {
@@ -12097,7 +12097,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Saxon Math-Tue"
             },
             {
@@ -12108,7 +12108,7 @@
               "task": "Assessment (after Lesson 120)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Saxon Math-Wed"
             },
             {
@@ -12119,7 +12119,7 @@
               "task": "Lesson 121",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Saxon Math-Thu"
             },
             {
@@ -12130,7 +12130,7 @@
               "task": "Lesson 122",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Saxon Math-Fri"
             },
             {
@@ -12141,7 +12141,7 @@
               "task": "Lesson 123",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Saxon Math-Mon"
             },
             {
@@ -12163,7 +12163,7 @@
               "task": "Lesson 124",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Saxon Math-Wed"
             },
             {
@@ -12174,7 +12174,7 @@
               "task": "Lesson 125",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Saxon Math-Thu"
             },
             {
@@ -12185,7 +12185,7 @@
               "task": "Drill Team Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Saxon Math-Fri"
             },
             {
@@ -12323,7 +12323,7 @@
               "task": "Read Vol. 2, Ch. 11, pp. 213-217",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-History-Tue"
             },
             {
@@ -12334,7 +12334,7 @@
               "task": "Read Vol. 2, Ch. 11, pp. 218-222",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-History-Wed"
             },
             {
@@ -12345,7 +12345,7 @@
               "task": "Read Vol. 2, Ch. 11, pp. 223-228",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-History-Thu"
             },
             {
@@ -12356,7 +12356,7 @@
               "task": "Read Vol. 2, pp. 229-234 (finishes Ch. 11, starts Ch. 12)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-History-Fri"
             },
             {
@@ -12378,7 +12378,7 @@
               "task": "Read Vol. 2, Ch. 12, pp. 235-239",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-History-Tue"
             },
             {
@@ -12389,7 +12389,7 @@
               "task": "Read Vol. 2, Ch. 12, pp. 240-244",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-History-Wed"
             },
             {
@@ -12400,7 +12400,7 @@
               "task": "Read Vol. 2, Ch. 12, pp. 245-249 (finishes Ch. 12, starts Ch. 13)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-History-Thu"
             },
             {
@@ -12411,7 +12411,7 @@
               "task": "Read Vol. 2, Ch. 13, pp. 250-255",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-History-Fri"
             },
             {
@@ -12433,7 +12433,7 @@
               "task": "Read Vol. 2, Ch. 13, pp. 256-260",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-History-Tue"
             },
             {
@@ -12444,7 +12444,7 @@
               "task": "Read Vol. 2, Ch. 13, pp. 261-265",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-History-Wed"
             },
             {
@@ -12455,7 +12455,7 @@
               "task": "Read Vol. 2, Ch. 13, pp. 266-271 (finishes Ch. 13, starts Ch. 14)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-History-Thu"
             },
             {
@@ -12466,7 +12466,7 @@
               "task": "Read Vol. 2, Ch. 14, pp. 272-277",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-History-Fri"
             },
             {
@@ -12477,7 +12477,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-History-Mon"
             },
             {
@@ -12488,7 +12488,7 @@
               "task": "Read Vol. 2, Ch. 14, pp. 278-282",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-History-Tue"
             },
             {
@@ -12499,7 +12499,7 @@
               "task": "Read Vol. 2, Ch. 14, pp. 283-287",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-History-Wed"
             },
             {
@@ -12510,7 +12510,7 @@
               "task": "Read Vol. 2, Ch. 14, pp. 288-292",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-History-Thu"
             },
             {
@@ -12532,7 +12532,7 @@
               "task": "Read Vol. 2, Ch. 15, pp. 299-303",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-History-Mon"
             },
             {
@@ -12554,7 +12554,7 @@
               "task": "Read Vol. 2, Ch. 15, pp. 304-308",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-History-Wed"
             },
             {
@@ -12565,7 +12565,7 @@
               "task": "Read Vol. 2, Ch. 15, pp. 309-313",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-History-Thu"
             },
             {
@@ -12576,7 +12576,7 @@
               "task": "Read Vol. 2, Ch. 15, pp. 314-319 (finishes Ch. 15, starts Ch. 16)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-History-Fri"
             },
             {
@@ -12714,7 +12714,7 @@
               "task": "Wk/Video 30: Measure Words – Day 1: Watch Word Up! Video - Focus: Metrum (Latin for measure) & Metron (Greek for measure)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Vocabulary Expansion-Tue"
             },
             {
@@ -12725,7 +12725,7 @@
               "task": "Day 2: Review & Write - Vocabulary Words: meter, metric, thermometer, geometry, symmetry, barometer",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Vocabulary Expansion-Wed"
             },
             {
@@ -12736,7 +12736,7 @@
               "task": "Day 3: Game Day! - Play a game on TurtleDiary",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Vocabulary Expansion-Thu"
             },
             {
@@ -12747,7 +12747,7 @@
               "task": "Day 4: Writing Assignment - Find something in your house that has symmetry. Draw it and describe why it is symmetrical.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Vocabulary Expansion-Fri"
             },
             {
@@ -12945,7 +12945,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Vocabulary Expansion-Wed"
             },
             {
@@ -13105,7 +13105,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Literature-Tue"
             },
             {
@@ -13116,7 +13116,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Literature-Wed"
             },
             {
@@ -13127,7 +13127,7 @@
               "task": "Read Chapter 14: The Triumph of the Witch",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Literature-Thu"
             },
             {
@@ -13138,7 +13138,7 @@
               "task": "Discuss chapter w/mom and Narnia book",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Literature-Fri"
             },
             {
@@ -13160,7 +13160,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Literature-Tue"
             },
             {
@@ -13171,7 +13171,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Literature-Wed"
             },
             {
@@ -13182,7 +13182,7 @@
               "task": "Read Chapter 15: Deeper Magic from Before the Dawn of Time",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Literature-Thu"
             },
             {
@@ -13193,7 +13193,7 @@
               "task": "Discuss chapter w/mom and Narnia book",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Literature-Fri"
             },
             {
@@ -13215,7 +13215,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Literature-Tue"
             },
             {
@@ -13226,7 +13226,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Literature-Wed"
             },
             {
@@ -13237,7 +13237,7 @@
               "task": "Read Chapter 16: What Happened About the Statues",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Literature-Thu"
             },
             {
@@ -13248,7 +13248,7 @@
               "task": "Discuss chapter w/mom and Narnia book",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Literature-Fri"
             },
             {
@@ -13259,7 +13259,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Literature-Mon"
             },
             {
@@ -13270,7 +13270,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Literature-Tue"
             },
             {
@@ -13281,7 +13281,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Literature-Wed"
             },
             {
@@ -13292,7 +13292,7 @@
               "task": "Read Chapter 17: The Hunting of the White Stag",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Literature-Thu"
             },
             {
@@ -13303,7 +13303,7 @@
               "task": "Discuss chapter w/mom and Narnia book",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Literature-Fri"
             },
             {
@@ -13325,7 +13325,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Literature-Tue"
             },
             {
@@ -13336,7 +13336,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Literature-Wed"
             },
             {
@@ -13347,7 +13347,7 @@
               "task": "Read Chapter 1: How Shasta Set Out on His Travels",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Literature-Thu"
             },
             {
@@ -13496,7 +13496,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 20, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Grammar-Tue"
             },
             {
@@ -13507,7 +13507,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 20, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Grammar-Wed"
             },
             {
@@ -13518,7 +13518,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 21, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Grammar-Thu"
             },
             {
@@ -13529,7 +13529,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 21, Lesson 2 & Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Grammar-Fri"
             },
             {
@@ -13540,7 +13540,7 @@
               "task": "CellImage",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Grammar-Mon"
             },
             {
@@ -13551,7 +13551,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 21, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Grammar-Tue"
             },
             {
@@ -13562,7 +13562,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 21, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Grammar-Wed"
             },
             {
@@ -13573,7 +13573,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 21, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Grammar-Thu"
             },
             {
@@ -13584,7 +13584,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 21, Lesson 7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Grammar-Fri"
             },
             {
@@ -13595,7 +13595,7 @@
               "task": "CellImage",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Grammar-Mon"
             },
             {
@@ -13606,7 +13606,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 22, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Grammar-Tue"
             },
             {
@@ -13617,7 +13617,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 22, Lesson 2 & Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Grammar-Wed"
             },
             {
@@ -13628,7 +13628,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 22, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Grammar-Thu"
             },
             {
@@ -13639,7 +13639,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 22, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Grammar-Fri"
             },
             {
@@ -13650,7 +13650,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
               "linkUrl": "https://youtu.be/GLmjfJyZ-iM?si=FGqogPFs1XasxyEC",
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Grammar-Mon"
             },
             {
@@ -13661,7 +13661,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 22, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Grammar-Tue"
             },
             {
@@ -13672,7 +13672,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Grammar-Wed"
             },
             {
@@ -13683,7 +13683,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Grammar-Thu"
             },
             {
@@ -13694,7 +13694,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Grammar-Fri"
             },
             {
@@ -13705,7 +13705,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
               "linkUrl": "https://youtu.be/GLmjfJyZ-iM?si=FGqogPFs1XasxyEC",
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Mon"
             },
             {
@@ -13716,7 +13716,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Tue"
             },
             {
@@ -13727,7 +13727,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Wed"
             },
             {
@@ -13738,7 +13738,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Thu"
             },
             {
@@ -13749,7 +13749,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 23, Lesson 7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Grammar-Fri"
             },
             {
@@ -13887,7 +13887,7 @@
               "task": "Complete p. 90",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Handwriting-Tue"
             },
             {
@@ -13898,7 +13898,7 @@
               "task": "Complete p. 91",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Handwriting-Wed"
             },
             {
@@ -13909,7 +13909,7 @@
               "task": "Complete p. 92",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W32-Handwriting-Thu"
             },
             {
@@ -13942,7 +13942,7 @@
               "task": "Complete p. 93",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Handwriting-Tue"
             },
             {
@@ -13953,7 +13953,7 @@
               "task": "Complete p. 94",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Handwriting-Wed"
             },
             {
@@ -13964,7 +13964,7 @@
               "task": "Complete p. 95",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W33-Handwriting-Thu"
             },
             {
@@ -13997,7 +13997,7 @@
               "task": "Complete p. 96",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Handwriting-Tue"
             },
             {
@@ -14008,7 +14008,7 @@
               "task": "Complete p. 97",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Handwriting-Wed"
             },
             {
@@ -14019,7 +14019,7 @@
               "task": "Complete p. 98",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W34-Handwriting-Thu"
             },
             {
@@ -14041,7 +14041,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Handwriting-Mon"
             },
             {
@@ -14052,7 +14052,7 @@
               "task": "Complete p. 99",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Handwriting-Tue"
             },
             {
@@ -14063,7 +14063,7 @@
               "task": "Complete p. 100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Handwriting-Wed"
             },
             {
@@ -14074,7 +14074,7 @@
               "task": "Complete p. 101",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W35-Handwriting-Thu"
             },
             {
@@ -14096,7 +14096,7 @@
               "task": "Complete pgs. 102-3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Handwriting-Mon"
             },
             {
@@ -14118,7 +14118,7 @@
               "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W36-Handwriting-Wed"
             },
             {
