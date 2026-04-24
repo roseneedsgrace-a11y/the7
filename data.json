@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-24T14:11:22.045Z",
+  "generated": "2026-04-24T14:14:03.330Z",
   "date": "Friday, April 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -323,7 +323,7 @@
               "task": "Have you finished God w/o Passions? Are you through Ch. 6 in Relationships?",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Bible-Fri"
             },
             {
@@ -2669,7 +2669,7 @@
               "task": "Average all three Hillsdale Course scores together: ________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W36-Citizenship-Fri"
             },
             {
