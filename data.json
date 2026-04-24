@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-24T22:48:49.590Z",
+  "generated": "2026-04-24T22:50:07.642Z",
   "date": "Friday, April 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2669,7 +2669,7 @@
               "task": "Average all three Hillsdale Course scores together: ________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Citizenship-Fri"
             },
             {
