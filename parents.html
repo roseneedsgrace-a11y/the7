@@ -448,7 +448,7 @@ function applyHeaderSettings(config) {
       if (s.tasks.length === 0) {
         html += `<div class="no-tasks">No tasks today</div>`;
       } else {
-        s.tasks.forEach(t => { html += buildTaskRow(t, s.palette); });
+        s.tasks.forEach(t => { html += buildTaskRow(t, s.palette, false, s.student)); });
       }
       html += `</div>`;
     }
@@ -461,7 +461,7 @@ function applyHeaderSettings(config) {
           ${subj.curriculum ? `<span class="past-due-curriculum">${subj.curriculum}</span>` : ''}
         </div>
         <div class="task-list">`;
-        subj.tasks.forEach(t => { html += buildTaskRow(t, s.palette, true); });
+        subj.tasks.forEach(t => { html += buildTaskRow(t, s.palette, true, s.student)); });
         html += `</div>`;
       });
     }
@@ -485,20 +485,20 @@ function applyHeaderSettings(config) {
     renderForDate(currentDate);
   }
   
-  function buildTaskRow(t, palette, isPastDue) {
-    const dateLabel = isPastDue ? `<span class="past-due-date">${t.date}</span>` : '';
-    return `
-      <div class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}"
-        onclick="toggleTask('${t.id}', '${palette.primary}', '${palette.secondary}')">
-        <div class="task-checkbox" style="${t.done ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
-          ${t.done ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
-        </div>
-        <div class="task-info">
-          ${isPastDue ? '' : `<div class="task-subject" style="color:${palette.primary};">${t.subject}</div>`}
-          <div class="task-text">${t.task}${dateLabel}</div>
-        </div>
-      </div>`;
-  }
+function buildTaskRow(t, palette, isPastDue, studentName) {
+  const dateLabel = isPastDue ? `<span class="past-due-date">${t.date}</span>` : '';
+  return `
+    <div class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}"
+      onclick="toggleTask('${t.id}', '${palette.primary}', '${palette.secondary}', '${studentName}', ${t.row || 0}, ${t.col || 0})">
+      <div class="task-checkbox" style="${t.done ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
+        ${t.done ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
+      </div>
+      <div class="task-info">
+        ${isPastDue ? '' : `<div class="task-subject" style="color:${palette.primary};">${t.subject}</div>`}
+        <div class="task-text">${t.task}${dateLabel}</div>
+      </div>
+    </div>`;
+}e
 
 function buildChoreRow(studentName, chore, palette, date) {
   const id = getChoreId(studentName, date);
@@ -680,35 +680,42 @@ function toggleTask(id, palettePrimary, paletteSecondary, studentName, row, col)
     // Nav logic placeholder
   }
 
-  function approveEntireDay(studentName, silent) {
-    const student = allData.students.find(s => s.student === studentName);
-    if (!student) return;
-    if (!silent && !confirm(`Mark everything today for ${studentName} as done?`)) return;
+function approveEntireDay(studentName, silent) {
+  const student = allData.students.find(s => s.student === studentName);
+  if (!student) return;
+  if (!silent && !confirm(`Mark everything today for ${studentName} as done?`)) return;
 
-    const targetMidnight = Date.UTC(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+  const targetMidnight = Date.UTC(
+    currentDate.getFullYear(), 
+    currentDate.getMonth(), 
+    currentDate.getDate()
+  );
 
-    student.grid.forEach(subj => {
-      subj.tasks.forEach(t => {
-        const d = new Date(t.rawDate);
-        const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
-        if (taskMidnight === targetMidnight && !t.done) {
-          t.done = true;
-          setLocalProgress(t.id, true);
-          const row = document.getElementById('prow-' + t.id);
-          if (row) {
-            row.classList.add('is-done');
-            const checkbox = row.querySelector('.task-checkbox');
-            if (checkbox) {
-              checkbox.style.background = student.palette.secondary;
-              checkbox.style.borderColor = student.palette.secondary;
-            }
+  student.grid.forEach(subj => {
+    subj.tasks.forEach(t => {
+      const d = new Date(t.rawDate);
+      const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+      if (taskMidnight === targetMidnight && !t.done) {
+        t.done = true;
+        setLocalProgress(t.id, true);
+        const row = document.getElementById('prow-' + t.id);
+        if (row) {
+          row.classList.add('is-done');
+          const checkbox = row.querySelector('.task-checkbox');
+          if (checkbox) {
+            checkbox.style.background = student.palette.secondary;
+            checkbox.style.borderColor = student.palette.secondary;
           }
-          fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true`, { mode: 'no-cors' });
         }
-      });
+        // Pass cell address
+        fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true&student=${encodeURIComponent(studentName)}&row=${t.row}&col=${t.col}`, 
+          { mode: 'no-cors' });
+      }
     });
-    if (!silent) renderForDate(currentDate);
-  }
+  });
+
+  if (!silent) renderForDate(currentDate);
+}
 
   function buildAdminCard() {
     return `<div class="student-card">
