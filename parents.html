@@ -419,67 +419,67 @@ function applyHeaderSettings(config) {
     updateNavButtons();
   }
 
-  function buildStudentCard(s) {
-    const done = s.tasks.filter(t => t.done).length;
-    const total = s.tasks.length;
-    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
-    const viewMode = cardViewState[s.student] || (globalViewMode === 'pastdue' ? 'pastdue' : s.autoView);
-    const viewLabels = { today: 'Today', both: 'Today + Past Due', pastdue: 'Past Due' };
+function buildStudentCard(s) {
+  const done = s.tasks.filter(t => t.done).length;
+  const total = s.tasks.length;
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+  const viewMode = cardViewState[s.student] || (globalViewMode === 'pastdue' ? 'pastdue' : s.autoView);
+  const viewLabels = { today: 'Today', both: 'Today + Past Due', pastdue: 'Past Due' };
 
-    let html = `<div class="student-card" id="scard-${s.student}">
-      <div class="student-header" style="background:${s.palette.primary};">
-        <div class="student-avatar">${pct === 100 ? '✓' : pct + '%'}</div>
-        <span class="student-name">${s.student}</span>
-        <span class="student-pill">${done}/${total}</span>
-        <button class="view-toggle-pill" onclick="cycleCardView('${s.student}', event)"
-          title="Switch view">${viewLabels[viewMode]}</button>
-      </div>
-      <div class="student-progress-bar">
-        <div class="student-progress-fill" style="width:${pct}%; background:${s.palette.secondary};"></div>
-      </div>`;
+  let html = `<div class="student-card" id="scard-${s.student}">
+    <div class="student-header" style="background:${s.palette.primary};">
+      <div class="student-avatar">${pct === 100 ? '✓' : pct + '%'}</div>
+      <span class="student-name">${s.student}</span>
+      <span class="student-pill">${done}/${total}</span>
+      <button class="view-toggle-pill" onclick="cycleCardView('${s.student}', event)"
+        title="Switch view">${viewLabels[viewMode]}</button>
+    </div>
+    <div class="student-progress-bar">
+      <div class="student-progress-fill" style="width:${pct}%; background:${s.palette.secondary};"></div>
+    </div>`;
 
-    if (viewMode === 'today' || viewMode === 'both') {
-      html += `
-      <div class="task-section-label" style="color:${s.palette.primary};">
-        ${s.dayName.toUpperCase()}'S TASKS
-        <button class="approve-btn" onclick="approveEntireDay('${s.student}')">Mark All Done</button>
+  if (viewMode === 'today' || viewMode === 'both') {
+    html += `
+    <div class="task-section-label" style="color:${s.palette.primary};">
+      ${s.dayName.toUpperCase()}'S TASKS
+      <button class="approve-btn" onclick="approveEntireDay('${s.student}')">Mark All Done</button>
+    </div>
+    <div class="task-list">`;
+    if (s.tasks.length === 0) {
+      html += `<div class="no-tasks">No tasks today</div>`;
+    } else {
+      s.tasks.forEach(t => { html += buildTaskRow(t, s.palette, false, s.student); });
+    }
+    html += `</div>`;
+  }
+
+  if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length > 0) {
+    html += `<div class="task-section-label past-due-label">PAST DUE</div>`;
+    s.pastDue.forEach(subj => {
+      html += `<div class="past-due-subject-header" style="color:${s.palette.primary};">
+        ${subj.subject}
+        ${subj.curriculum ? `<span class="past-due-curriculum">${subj.curriculum}</span>` : ''}
       </div>
       <div class="task-list">`;
-      if (s.tasks.length === 0) {
-        html += `<div class="no-tasks">No tasks today</div>`;
-      } else {
-        s.tasks.forEach(t => { html += buildTaskRow(t, s.palette, false, s.student)); });
-      }
+      subj.tasks.forEach(t => { html += buildTaskRow(t, s.palette, true, s.student); });
       html += `</div>`;
-    }
-
-    if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length > 0) {
-      html += `<div class="task-section-label past-due-label">PAST DUE</div>`;
-      s.pastDue.forEach(subj => {
-        html += `<div class="past-due-subject-header" style="color:${s.palette.primary};">
-          ${subj.subject}
-          ${subj.curriculum ? `<span class="past-due-curriculum">${subj.curriculum}</span>` : ''}
-        </div>
-        <div class="task-list">`;
-        subj.tasks.forEach(t => { html += buildTaskRow(t, s.palette, true, s.student)); });
-        html += `</div>`;
-      });
-    }
-
-    if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length === 0) {
-      html += `<div class="no-tasks" style="color:#16a34a;">✓ No past due assignments</div>`;
-    }
-
-    if (s.chore) {
-      html += buildChoreRow(s.student, s.chore, s.palette, currentDate);
-    }
-    
-    html += `<a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">
-      Full Week View ↗
-    </a></div>`;
-
-    return html;
+    });
   }
+
+  if ((viewMode === 'pastdue' || viewMode === 'both') && s.pastDue.length === 0) {
+    html += `<div class="no-tasks" style="color:#16a34a;">✓ No past due assignments</div>`;
+  }
+
+  if (s.chore) {
+    html += buildChoreRow(s.student, s.chore, s.palette, currentDate);
+  }
+  
+  html += `<a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">
+    Full Week View ↗
+  </a></div>`;
+
+  return html;
+}
 
   function onStorageChange() {
     renderForDate(currentDate);
