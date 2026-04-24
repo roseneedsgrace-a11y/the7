@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-24T00:55:41.243Z",
+  "generated": "2026-04-24T03:34:24.866Z",
   "date": "Thursday, April 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -626,7 +626,7 @@
               "task": "Lesson 6 Porfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-History-Tue"
             },
             {
@@ -637,7 +637,7 @@
               "task": "Lesson 10 Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W35-History-Wed"
             },
             {
