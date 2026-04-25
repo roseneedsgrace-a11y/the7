@@ -500,7 +500,7 @@ a.link-btn::before {
   <a href="parents.html" class="nav-link">Parent Dashboard</a>
     <span id="lastUpdated" class="timestamp"></span>
     <span id="syncTimer" style="display:none; font-size:11px; color:#94a3b8; font-style:italic;"></span>
-   <button id="refreshBtn" onclick="pushAndRefresh()" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">↻</button>
+   <button id="refreshBtn" onclick="pushAndRefresh()" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">↻ SAVE</button>
 </div>  
 <div id="content">Loading assignments...</div>
 
@@ -846,7 +846,7 @@ function toggle(id, el, studentName, row, col) {
         btn.style.fontWeight = 'normal';
 
         setTimeout(() => {
-          btn.textContent = '↻';
+          btn.textContent = '↻ SAVE';
           btn.disabled = false;
         }, 2000);
       })
