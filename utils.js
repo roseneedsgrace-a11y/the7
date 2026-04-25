@@ -96,10 +96,26 @@ function pushAndRefresh() {
 function showTimestamp(isoString) {
   const el = document.getElementById('lastUpdated');
   if (!el || !isoString) return;
-  const d = new Date(isoString);
-  el.textContent = 'Data as of: ' + d.toLocaleString();
-}
 
+  const d = new Date(isoString);
+  const diffMs = Date.now() - d.getTime();
+  const diffMins = Math.floor(diffMs / 60000);
+  const diffHours = Math.floor(diffMins / 60);
+
+  let text;
+  if (diffMins < 1) {
+    text = 'Data updated just now';
+  } else if (diffMins < 60) {
+    text = `Data updated ${diffMins} minute${diffMins === 1 ? '' : 's'} ago`;
+  } else if (diffHours < 48) {
+    const remainingMins = diffMins % 60;
+    text = `Data updated ${diffHours} hour${diffHours === 1 ? '' : 's'}${remainingMins > 0 ? ` ${remainingMins}m` : ''} ago`;
+  } else {
+    text = 'Data as of: ' + d.toLocaleString();
+  }
+
+  el.textContent = text;
+}
 // ─── CHORE HELPERS ────────────────────────────
 function getChoreId(studentName, date) {
   const d = new Date(date);
