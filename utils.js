@@ -106,12 +106,12 @@ function showTimestamp(isoString) {
   if (diffMins < 1) {
     text = 'Data updated just now';
   } else if (diffMins < 60) {
-    text = `Data updated ${diffMins} minute${diffMins === 1 ? '' : 's'} ago`;
+    text = `Last Sync: ${diffMins} minute${diffMins === 1 ? '' : 's'} ago`;
   } else if (diffHours < 48) {
     const remainingMins = diffMins % 60;
-    text = `Data updated ${diffHours} hour${diffHours === 1 ? '' : 's'}${remainingMins > 0 ? ` ${remainingMins}m` : ''} ago`;
+    text = `Last sync ${diffHours} hour${diffHours === 1 ? '' : 's'}${remainingMins > 0 ? ` ${remainingMins}m` : ''} ago`;
   } else {
-    text = 'Data as of: ' + d.toLocaleString();
+    text = 'Last sync: ' + d.toLocaleString();
   }
 
   el.textContent = text;
