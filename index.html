@@ -801,6 +801,8 @@ function render() {
 function toggle(id, el, studentName, row, col) {
   const isDone = el.checked;
   
+  console.log('Toggle called:', { id, isDone, studentName, row, col });
+  
   setLocalProgress(id, isDone);
 
   document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
@@ -809,11 +811,13 @@ function toggle(id, el, studentName, row, col) {
     if (card) card.classList.toggle('is-done', isDone);
   });
 
-  // Build fetch URL with cell address for assignments
   if (id.includes('-chore-')) {
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}`, 
+    const choreStudent = id.split('-chore-')[0];
+    console.log('Chore fetch:', `${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(choreStudent)}`);
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(choreStudent)}`, 
       { mode: 'no-cors' });
   } else {
+    console.log('Assignment fetch:', `${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`);
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`, 
       { mode: 'no-cors' });
     startSyncTimer();
