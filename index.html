@@ -605,8 +605,11 @@ function toggleChoreBanner(el) {
 
   setLocalProgress(choreId, isDone);
 
-  // Sync to GAS for cross-device support
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(choreId)}&status=${isDone}`, { mode: 'no-cors' });
+  // Extract student name from chore id: "Amos-chore-2026-04-24" → "Amos"
+  const studentName = choreId.split('-chore-')[0];
+
+  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(choreId)}&status=${isDone}&student=${encodeURIComponent(studentName)}`, 
+    { mode: 'no-cors' });
 
   const banner = document.getElementById('choreBanner');
   if (isDone) {
@@ -615,7 +618,6 @@ function toggleChoreBanner(el) {
     updateChoreBanner();
   }
 
-  // Sync any grid checkbox with same id if visible
   const gridRow = document.querySelector(`input[data-id="${choreId}"]`);
   if (gridRow) {
     gridRow.checked = isDone;
