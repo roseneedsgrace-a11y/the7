@@ -508,7 +508,7 @@ function buildChoreRow(studentName, chore, palette, date) {
   return `
     <div class="chore-section-label">Last but Not Least</div>
     <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
-      onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}')">
+      onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}', '${studentName}', 0, 0)">
       <div class="task-checkbox" style="${isDone ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
         ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
       </div>
@@ -635,7 +635,9 @@ function toggleTask(id, palettePrimary, paletteSecondary, studentName, row, col)
   setLocalProgress(id, isDone);
 
   if (id.includes('-chore-')) {
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}`, 
+    // Always derive student name from chore id to be safe
+    const choreStudent = id.split('-chore-')[0];
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(choreStudent)}`, 
       { mode: 'no-cors' });
   } else {
     allData.students.forEach(s => {
@@ -654,6 +656,7 @@ function toggleTask(id, palettePrimary, paletteSecondary, studentName, row, col)
   } catch(e) { console.warn('updateCardStats failed:', e); }
 }
 
+  
   function updateCardStats(card) {
     const total = card.querySelectorAll('.task-row').length;
     const done = card.querySelectorAll('.task-row.is-done').length;
