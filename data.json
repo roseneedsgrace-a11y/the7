@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-27T15:28:58.557Z",
+  "generated": "2026-04-27T19:48:52.359Z",
   "date": "Monday, April 27",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3570,7 +3570,7 @@
               "task": "The Ology, BIble Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Bible-Mon",
               "row": 184,
               "col": 3
@@ -5206,7 +5206,7 @@
               "task": "Read the cahpater if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Literature-Mon",
               "row": 184,
               "col": 7
@@ -5615,7 +5615,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Reading & Grammar-Mon",
               "row": 184,
               "col": 8
@@ -6433,7 +6433,7 @@
               "task": "Write out a verse in your very best handwriting.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Handwriting-Mon",
               "row": 184,
               "col": 10
@@ -6842,7 +6842,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Latin-Mon",
               "row": 184,
               "col": 11
@@ -7249,7 +7249,7 @@
               "task": "Read \"Relationships\": Ch. 10 (pp. 98-108), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Bible-Mon",
               "row": 183,
               "col": 3
@@ -7697,7 +7697,7 @@
               "task": "P4 L3 #1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Health-Mon",
               "row": 183,
               "col": 4
@@ -8158,7 +8158,7 @@
               "task": "Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-History of Ideas-Tue",
               "row": 184,
               "col": 5
@@ -8593,7 +8593,7 @@
               "task": "☐ Take Unit 3: Quiz 3\n☐ Color ABC 178-179",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Anatomy-Mon",
               "row": 183,
               "col": 6
@@ -9041,7 +9041,7 @@
               "task": "Epilogue #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Math-Mon",
               "row": 183,
               "col": 7
@@ -9937,7 +9937,7 @@
               "task": "Lesson 16.9 Project",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Financial Literacy-Mon",
               "row": 183,
               "col": 10
@@ -12770,7 +12770,7 @@
               "task": "The Ology, BIble Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Bible-Mon",
               "row": 182,
               "col": 3
@@ -14114,7 +14114,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Literature-Mon",
               "row": 182,
               "col": 7
