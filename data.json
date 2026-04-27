@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-27T13:08:40.524Z",
+  "generated": "2026-04-27T14:09:07.621Z",
   "date": "Monday, April 27",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -13666,7 +13666,7 @@
               "task": "Read Vol. 2, Ch. 16, pp. 320-324",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-History-Mon",
               "row": 182,
               "col": 5
@@ -13679,7 +13679,7 @@
               "task": "Read Vol. 2, Ch. 16, pp. 325-328 (finishes Vol. 2)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-History-Tue",
               "row": 183,
               "col": 5
@@ -14114,7 +14114,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Literature-Mon",
               "row": 182,
               "col": 7
@@ -14562,7 +14562,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 24, Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Grammar-Mon",
               "row": 182,
               "col": 8
