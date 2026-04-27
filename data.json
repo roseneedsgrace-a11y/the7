@@ -1,10 +1,9 @@
 {
-  "generated": "2026-04-27T23:12:47.988Z",
+  "generated": "2026-04-27T23:16:27.169Z",
   "date": "Monday, April 27",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
-    "headerColor": "#741b47",
-    "makeupDaysEnabled": true
+    "headerColor": "#741b47"
   },
   "students": [
     {
@@ -3086,7 +3085,7 @@
               "task": "Record your \"Economic for Everyone Score\" _________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Citizenship-Mon",
               "row": 183,
               "col": 9
