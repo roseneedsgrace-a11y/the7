@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-27T13:07:06.440Z",
+  "generated": "2026-04-27T13:07:47.085Z",
   "date": "Monday, April 27",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12917,6 +12917,45 @@
               "id": "Tabitha-W39-Bible-Tue",
               "row": 193,
               "col": 3
+            },
+            {
+              "day": "Wed",
+              "date": "5/13",
+              "rawDate": 1778648400000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Bible-Wed",
+              "row": 194,
+              "col": 3
+            },
+            {
+              "day": "Thu",
+              "date": "5/14",
+              "rawDate": 1778734800000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Bible-Thu",
+              "row": 195,
+              "col": 3
+            },
+            {
+              "day": "Fri",
+              "date": "5/15",
+              "rawDate": 1778821200000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Bible-Fri",
+              "row": 196,
+              "col": 3
             }
           ]
         },
@@ -13325,6 +13364,45 @@
               "done": false,
               "id": "Tabitha-W39-Saxon Math-Tue",
               "row": 193,
+              "col": 4
+            },
+            {
+              "day": "Wed",
+              "date": "5/13",
+              "rawDate": 1778648400000,
+              "week": 39,
+              "task": "Lesson 136",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Saxon Math-Wed",
+              "row": 194,
+              "col": 4
+            },
+            {
+              "day": "Thu",
+              "date": "5/14",
+              "rawDate": 1778734800000,
+              "week": 39,
+              "task": "Lesson 137",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Saxon Math-Thu",
+              "row": 195,
+              "col": 4
+            },
+            {
+              "day": "Fri",
+              "date": "5/15",
+              "rawDate": 1778821200000,
+              "week": 39,
+              "task": "Lesson 138",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Saxon Math-Fri",
+              "row": 196,
               "col": 4
             }
           ]
@@ -13735,6 +13813,45 @@
               "id": "Tabitha-W39-History-Tue",
               "row": 193,
               "col": 5
+            },
+            {
+              "day": "Wed",
+              "date": "5/13",
+              "rawDate": 1778648400000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-History-Wed",
+              "row": 194,
+              "col": 5
+            },
+            {
+              "day": "Thu",
+              "date": "5/14",
+              "rawDate": 1778734800000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-History-Thu",
+              "row": 195,
+              "col": 5
+            },
+            {
+              "day": "Fri",
+              "date": "5/15",
+              "rawDate": 1778821200000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-History-Fri",
+              "row": 196,
+              "col": 5
             }
           ]
         },
@@ -14143,6 +14260,45 @@
               "done": false,
               "id": "Tabitha-W39-Literature-Tue",
               "row": 193,
+              "col": 7
+            },
+            {
+              "day": "Wed",
+              "date": "5/13",
+              "rawDate": 1778648400000,
+              "week": 39,
+              "task": "Read Chap. from Christian Heroes book.",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Literature-Wed",
+              "row": 194,
+              "col": 7
+            },
+            {
+              "day": "Thu",
+              "date": "5/14",
+              "rawDate": 1778734800000,
+              "week": 39,
+              "task": "Read Chapter 4: Shasta Falls in with the Narnians",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Literature-Thu",
+              "row": 195,
+              "col": 7
+            },
+            {
+              "day": "Fri",
+              "date": "5/15",
+              "rawDate": 1778821200000,
+              "week": 39,
+              "task": "Discuss chapter w/mom and Narnia book",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Literature-Fri",
+              "row": 196,
               "col": 7
             }
           ]
@@ -14553,6 +14709,45 @@
               "id": "Tabitha-W39-Grammar-Tue",
               "row": 193,
               "col": 8
+            },
+            {
+              "day": "Wed",
+              "date": "5/13",
+              "rawDate": 1778648400000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Grammar-Wed",
+              "row": 194,
+              "col": 8
+            },
+            {
+              "day": "Thu",
+              "date": "5/14",
+              "rawDate": 1778734800000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Grammar-Thu",
+              "row": 195,
+              "col": 8
+            },
+            {
+              "day": "Fri",
+              "date": "5/15",
+              "rawDate": 1778821200000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Grammar-Fri",
+              "row": 196,
+              "col": 8
             }
           ]
         },
@@ -14961,6 +15156,45 @@
               "done": false,
               "id": "Tabitha-W39-Handwriting-Tue",
               "row": 193,
+              "col": 10
+            },
+            {
+              "day": "Wed",
+              "date": "5/13",
+              "rawDate": 1778648400000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Handwriting-Wed",
+              "row": 194,
+              "col": 10
+            },
+            {
+              "day": "Thu",
+              "date": "5/14",
+              "rawDate": 1778734800000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Handwriting-Thu",
+              "row": 195,
+              "col": 10
+            },
+            {
+              "day": "Fri",
+              "date": "5/15",
+              "rawDate": 1778821200000,
+              "week": 39,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Tabitha-W39-Handwriting-Fri",
+              "row": 196,
               "col": 10
             }
           ]
