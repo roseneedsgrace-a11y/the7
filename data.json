@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-27T19:48:52.359Z",
+  "generated": "2026-04-27T22:51:15.813Z",
   "date": "Monday, April 27",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -319,7 +319,7 @@
               "task": "Read \"Relationships\": Ch. 7 (pp. 63-71)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Bible-Mon",
               "row": 183,
               "col": 3
@@ -2137,7 +2137,7 @@
               "task": "Chapter 7 test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-Science-Thu",
               "row": 181,
               "col": 7
@@ -2163,7 +2163,7 @@
               "task": "Chapter 8.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Science-Mon",
               "row": 183,
               "col": 7
@@ -7710,7 +7710,7 @@
               "task": "P4 L3 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Health-Tue",
               "row": 184,
               "col": 4
@@ -8606,7 +8606,7 @@
               "task": "☐ Study for Unit 3: Test 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Anatomy-Tue",
               "row": 184,
               "col": 6
