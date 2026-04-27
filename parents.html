@@ -302,6 +302,7 @@ window.onload = function() {
       // Then fetch server progress and re-render silently
       fetchAndMergeProgress().then(() => {
         renderForDate(currentDate);
+        updateMakeupToggleBtn(allData.config && allData.config.makeupDaysEnabled !== false);
       });
     })
     .catch(e => {
@@ -720,6 +721,29 @@ function approveEntireDay(studentName, silent) {
   if (!silent) renderForDate(currentDate);
 }
 
+function toggleMakeupDays() {
+  const current = allData && allData.config ? allData.config.makeupDaysEnabled !== false : true;
+  const newVal = !current;
+  
+  fetch(`${API_URL}?action=setMakeupDays&enabled=${newVal}`, { mode: 'no-cors' });
+  
+  // Update local config immediately
+  if (allData && allData.config) allData.config.makeupDaysEnabled = newVal;
+  
+  // Trigger a push so data.json updates for all devices
+  setTimeout(() => {
+    fetch(`${API_URL}?action=push`, { mode: 'no-cors' });
+  }, 1000);
+
+  updateMakeupToggleBtn(newVal);
+  adminStatus(newVal ? '✓ Make-up Days enabled' : '✓ Make-up Days disabled', '#16a34a');
+}
+
+function updateMakeupToggleBtn(enabled) {
+  const sub = document.getElementById('makeupToggleStatus');
+  if (sub) sub.textContent = enabled ? 'Currently ON' : 'Currently OFF';
+}
+
   function buildAdminCard() {
     return `<div class="student-card">
       <div class="student-header" style="background:#334155;">
@@ -748,6 +772,10 @@ function approveEntireDay(studentName, silent) {
             <button class="admin-btn" onclick="adminApproveAll()">✓ Today Complete</button>
             <button class="admin-btn" onclick="setGlobalView('auto')">⚡ Auto View</button>
             <button class="admin-btn" onclick="setGlobalView('pastdue')">⏰ All Past Due</button>
+            <button class="admin-btn" id="makeupToggleBtn" onclick="toggleMakeupDays()">
+              📝 Make-up Days
+              <span class="admin-btn-sub" id="makeupToggleStatus">Loading...</span>
+            </button>            
           </div>
         </div>
         <div id="adminStatus" style="font-size:11px; color:#94a3b8; font-style:italic; text-align:center; min-height:16px;"></div>
