@@ -143,3 +143,12 @@ window.addEventListener('storage', function(e) {
     onStorageChange();
   }
 });
+
+function getMakeupDaysEnabled() {
+  // Read from allData config which comes from data.json
+  // Each page's allData has a config object
+  if (typeof allData !== 'undefined' && allData && allData.config) {
+    return allData.config.makeupDaysEnabled !== false;
+  }
+  return true; // default on
+}
