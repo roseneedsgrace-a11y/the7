@@ -665,6 +665,74 @@ function updateColors(palette) {
   if (header) header.style.background = palette.primary;
 }
 
+function getPastDueForDay(student, targetWeek, dayName, dayRawDate) {
+  const dayMidnight = new Date(dayRawDate).setHours(0, 0, 0, 0);
+  const lp = getLocalProgress();
+  const pastDueBySubject = {};
+
+  student.grid.forEach(row => {
+    (row.tasks || []).forEach(t => {
+      if (!t.task || t.task.trim() === '') return;
+      
+      const taskMidnight = new Date(t.rawDate).setHours(0, 0, 0, 0);
+      
+      // Past due = before this specific day
+      if (taskMidnight >= dayMidnight) return;
+      
+      // Skip if done
+      const isDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
+      if (isDone) return;
+
+      if (!pastDueBySubject[row.subject]) {
+        pastDueBySubject[row.subject] = {
+          curriculum: row.curriculum,
+          tasks: []
+        };
+      }
+      pastDueBySubject[row.subject].tasks.push(t);
+    });
+  });
+
+  // Sort subjects by oldest task first
+  return Object.entries(pastDueBySubject)
+    .sort((a, b) => {
+      const oldestA = Math.min(...a[1].tasks.map(t => t.rawDate));
+      const oldestB = Math.min(...b[1].tasks.map(t => t.rawDate));
+      return oldestA - oldestB;
+    })
+    .map(([subject, data]) => ({ subject, ...data }));
+}
+
+function buildMakeupSection(pastDue, studentName) {
+  if (!pastDue.length) return '';
+  let html = `<div style="border-top: 2px dashed #e2e8f0; margin-top: 8px; padding-top: 8px;">
+    <div style="font-size:9px; font-weight:700; color:#94a3b8; text-transform:uppercase; 
+      letter-spacing:1px; margin-bottom:6px;">Make-up Work</div>`;
+  
+  pastDue.forEach(subj => {
+    html += `<div style="font-size:9px; font-weight:700; color:var(--primary); 
+      text-transform:uppercase; margin-bottom:3px;">${subj.subject}</div>`;
+    subj.tasks.forEach(t => {
+      const lp = getLocalProgress();
+      const isDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
+      html += `
+        <div class="task-card ${isDone ? 'is-done' : ''}" style="min-height:unset; margin-bottom:4px;">
+          <div class="task-text" style="font-size:0.75rem;">${t.task}
+            <span style="color:#94a3b8; font-size:0.65rem;"> (${t.date})</span>
+          </div>
+          <label class="status-indicator-wrap">
+            <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
+              data-id="${t.id}"
+              onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
+            <div class="status-indicator"></div>
+          </label>
+        </div>`;
+    });
+  });
+
+  html += `</div>`;
+  return html;
+}
     
 function render() {
   if (!allData) return;
