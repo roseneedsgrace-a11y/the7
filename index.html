@@ -758,7 +758,6 @@ function render() {
   const todayTs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
 
   // ─── DETERMINE WHICH DAYS TO SHOW ─────────────
-  // Count tasks per day for THIS week only
   const taskCountByDay = {};
   allDays.forEach(d => taskCountByDay[d] = 0);
   
@@ -771,7 +770,6 @@ function render() {
     });
   });
 
-  // Get rawDate for each day in this week (needed for past-due calc)
   const dayRawDates = {};
   allDays.forEach(dayName => {
     const sample = student.grid[0] && (student.grid[0].tasks || []).find(
@@ -780,45 +778,36 @@ function render() {
     if (sample) dayRawDates[dayName] = sample.rawDate;
   });
 
-    // After building dayRawDates from the grid:
-    const dayOrder = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    
-    // If Sat has no rawDate but we have other days, calculate it
-    if (!dayRawDates['Sat']) {
-      // Find any day we do have a date for and calculate Saturday from it
-      const knownDay = dayOrder.find(d => dayRawDates[d]);
-      if (knownDay) {
-        const knownDate = new Date(dayRawDates[knownDay]);
-        const knownDayOfWeek = knownDate.getDay(); // 0=Sun, 1=Mon...
-        const knownIndex = dayOrder.indexOf(knownDay);
-        // dayOrder index 0=Mon(1), 1=Tue(2)... 5=Sat(6)
-        const daysToSat = 6 - knownDayOfWeek; // days until Saturday
-        const sat = new Date(knownDate);
-        sat.setDate(sat.getDate() + daysToSat);
-        sat.setHours(0, 0, 0, 0);
-        dayRawDates['Sat'] = sat.getTime();
-      }
+  const dayOrder = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  if (!dayRawDates['Sat']) {
+    const knownDay = dayOrder.find(d => dayRawDates[d]);
+    if (knownDay) {
+      const knownDate = new Date(dayRawDates[knownDay]);
+      const knownDayOfWeek = knownDate.getDay(); 
+      const daysToSat = 6 - knownDayOfWeek; 
+      const sat = new Date(knownDate);
+      sat.setDate(sat.getDate() + daysToSat);
+      sat.setHours(0, 0, 0, 0);
+      dayRawDates['Sat'] = sat.getTime();
     }
+  }
 
-  // Decide which days to include
   const visibleDays = allDays.filter(dayName => {
     const count = taskCountByDay[dayName];
     const rawDate = dayRawDates[dayName];
-    const dayMidnight = rawDate ? new Date(rawDate).setHours(0,0,0,0) : null;
 
-    if (count >= 3) return true; // always show
+    if (count >= 3) return true; 
+    if (count >= 1) return true;
 
-    if (count >= 1) {
-      // 1-2 tasks — show, will also show makeup if enabled
-      return true;
-    }
-
-    // 0 tasks — only show if makeup is enabled and there are past-due tasks
     if (!makeupEnabled || !rawDate) return false;
-    // ADDITION: Pass a flag or filter the results to ensure we only see previous weeks
-    const pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate)
-                    .filter(subj => subj.tasks.some(t => parseInt(t.week) < targetWeek)); 
     
+    // Filter past due to ensure only EARLIER weeks are counted
+    const pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate)
+      .map(subj => ({
+        ...subj,
+        tasks: subj.tasks.filter(t => parseInt(t.week) < targetWeek)
+      })).filter(subj => subj.tasks.length > 0);
+
     return pastDue.length > 0;
   });
 
@@ -891,11 +880,17 @@ function render() {
         tableHtml += `<td><div class="task-card empty-card">`;
       }
 
-      // Add makeup section to this cell if applicable
+      // Filtered Make-up section for Table View
       const count = taskCountByDay[dayName];
       const rawDate = dayRawDates[dayName];
       if (makeupEnabled && count < 3 && rawDate) {
-        const pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate);
+        let pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate);
+        // Ensure only previous weeks
+        pastDue = pastDue.map(subj => ({
+          ...subj,
+          tasks: subj.tasks.filter(mt => parseInt(mt.week) < targetWeek)
+        })).filter(subj => subj.tasks.length > 0);
+
         if (pastDue.length > 0) {
           tableHtml += buildMakeupSection(pastDue, studentName);
         }
@@ -915,10 +910,15 @@ function render() {
     const dayMidnight = rawDate ? new Date(rawDate).setHours(0,0,0,0) : null;
     const count = taskCountByDay[dayName];
 
-    // Get past due for this day
-    const pastDue = makeupEnabled && count < 3 && rawDate 
+    // Filtered Make-up tasks for List View
+    let pastDue = makeupEnabled && count < 3 && rawDate 
       ? getPastDueForDay(student, targetWeek, dayName, rawDate) 
       : [];
+    
+    pastDue = pastDue.map(subj => ({
+      ...subj,
+      tasks: subj.tasks.filter(mt => parseInt(mt.week) < targetWeek)
+    })).filter(subj => subj.tasks.length > 0);
 
     if (dayTasks.length === 0 && pastDue.length === 0) return;
 
@@ -942,7 +942,6 @@ function render() {
         <span class="progress-pill">${doneCount} / ${dayTasks.length} done</span>
       </div>`;
 
-    // Regular tasks
     dayTasks.forEach(t => {
       const isDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
       listHtml += `
@@ -960,7 +959,6 @@ function render() {
         </label>`;
     });
 
-    // Make-up tasks in list view
     if (pastDue.length > 0) {
       listHtml += `<div style="font-size:10px; font-weight:700; color:#94a3b8;
         text-transform:uppercase; padding:6px 16px; background:#f8fafc;
