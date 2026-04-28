@@ -778,6 +778,7 @@ function render() {
     if (sample) dayRawDates[dayName] = sample.rawDate;
   });
 
+  // Saturay date calculation fallback
   const dayOrder = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   if (!dayRawDates['Sat']) {
     const knownDay = dayOrder.find(d => dayRawDates[d]);
@@ -836,12 +837,14 @@ function render() {
       <span class="curriculum-subtitle">${row.curriculum || ''}</span></td>`;
     
     visibleDays.forEach((dayName, dayIdx) => {
+      // Find current week task for this subject/day
       const t = (row.tasks || []).find(task => 
         task.day === dayName && parseInt(task.week) === targetWeek
       );
       
       tableHtml += `<td>`;
       
+      // 1. Render current week task if it exists
       if (t) {
         const lp = getLocalProgress();
         const isTaskDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
@@ -871,24 +874,41 @@ function render() {
         } else {
           tableHtml += `<div class="task-card empty-card"></div>`;
         }
-      } else {
-        tableHtml += `<div class="task-card empty-card"></div>`;
       }
 
-      // FIXED: Only add makeup section once per column (on the very last row)
-      const isLastRow = rowIndex === student.grid.length - 1;
+      // 2. Render Make-up tasks for THIS SPECIFIC SUBJECT only
       const count = taskCountByDay[dayName];
       const rawDate = dayRawDates[dayName];
 
-      if (isLastRow && makeupEnabled && count < 3 && rawDate) {
-        let pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate);
-        pastDue = pastDue.map(subj => ({
-          ...subj,
-          tasks: subj.tasks.filter(mt => parseInt(mt.week) < targetWeek)
-        })).filter(subj => subj.tasks.length > 0);
+      if (makeupEnabled && count < 3 && rawDate) {
+        // Get all past due for this day
+        let allPastDue = getPastDueForDay(student, targetWeek, dayName, rawDate);
+        
+        // Filter to find the one entry that matches THIS specific subject row
+        let subjectSpecificPastDue = allPastDue
+          .filter(subjEntry => subjEntry.subject === row.subject)
+          .map(subj => ({
+            ...subj,
+            tasks: subj.tasks.filter(mt => parseInt(mt.week) < targetWeek)
+          }))
+          .filter(subj => subj.tasks.length > 0);
 
-        if (pastDue.length > 0) {
-          tableHtml += buildMakeupSection(pastDue, studentName);
+        if (subjectSpecificPastDue.length > 0) {
+          // Use buildMakeupSection on just this subject's past-due tasks
+          tableHtml += buildMakeupSection(subjectSpecificPastDue, studentName);
+        }
+      }
+
+      // If no current task and no makeup task, ensure cell is filled correctly
+      if (!t) {
+        // We only add the empty-card placeholder if no makeup work was added either
+        // Note: buildMakeupSection generates its own containers.
+        const hasMakeup = makeupEnabled && count < 3 && rawDate && 
+                          getPastDueForDay(student, targetWeek, dayName, rawDate)
+                          .some(s => s.subject === row.subject && s.tasks.some(mt => parseInt(mt.week) < targetWeek));
+        
+        if (!hasMakeup) {
+          tableHtml += `<div class="task-card empty-card"></div>`;
         }
       }
 
@@ -900,6 +920,7 @@ function render() {
   tableHtml += `</tbody></table></div></div>`;
   
   // ─── LIST VIEW ────────────────────────────────
+  // (List view remains unchanged as it naturally groups by day, which is standard)
   visibleDays.forEach((dayName, idx) => {
     const dayTasks = tasksByDay[idx];
     const rawDate = dayRawDates[dayName];
