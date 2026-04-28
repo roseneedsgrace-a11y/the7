@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-28T11:58:00.227Z",
+  "generated": "2026-04-28T12:07:38.499Z",
   "date": "Tuesday, April 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5707,7 +5707,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": true,
+              "done": false,
               "id": "Beth-W37-Reading & Grammar-Mon",
               "row": 184,
               "col": 8
@@ -10488,7 +10488,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Bible-Mon",
               "row": 183,
               "col": 3
@@ -10884,7 +10884,7 @@
               "task": "The Second World Wars #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Hillsdale History-Mon",
               "row": 183,
               "col": 4
@@ -11676,7 +11676,7 @@
               "task": "Shormann Math\nLesson 97 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Algebra 1-Mon",
               "row": 183,
               "col": 6
@@ -12072,7 +12072,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Other-Mon",
               "row": 183,
               "col": 8
