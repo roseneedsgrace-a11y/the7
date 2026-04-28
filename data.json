@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-28T15:49:54.431Z",
+  "generated": "2026-04-28T19:37:34.604Z",
   "date": "Tuesday, April 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -781,7 +781,7 @@
               "task": "Lesson 13 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-History-Fri",
               "row": 182,
               "col": 4
@@ -7354,7 +7354,7 @@
               "task": "Read \"Relationships\": Ch. 11 (pp. 109-121), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Bible-Tue",
               "row": 184,
               "col": 3
@@ -9146,7 +9146,7 @@
               "task": "Epilogue #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Math-Tue",
               "row": 184,
               "col": 7
@@ -9594,7 +9594,7 @@
               "task": "(Fiction 4) Till We Have Faces Chap & Days 1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-English-Tue",
               "row": 184,
               "col": 8
