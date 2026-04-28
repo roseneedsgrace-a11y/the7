@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-28T13:47:16.364Z",
+  "generated": "2026-04-28T13:48:39.503Z",
   "date": "Tuesday, April 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10501,7 +10501,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Bible-Tue",
               "row": 184,
               "col": 3
@@ -12085,7 +12085,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Other-Tue",
               "row": 184,
               "col": 8
