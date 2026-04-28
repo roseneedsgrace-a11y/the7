@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-28T13:22:43.651Z",
+  "generated": "2026-04-28T13:47:16.364Z",
   "date": "Tuesday, April 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -320,7 +320,7 @@
               "task": "Read \"Relationships\": Ch. 7 (pp. 63-71)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Bible-Mon",
               "row": 183,
               "col": 3
@@ -3177,7 +3177,7 @@
               "task": "Average the last two numbers together: _________",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Citizenship-Tue",
               "row": 184,
               "col": 9
@@ -3190,7 +3190,7 @@
               "task": "-----> This is your final score.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Citizenship-Wed",
               "row": 185,
               "col": 9
