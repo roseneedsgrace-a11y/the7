@@ -1053,7 +1053,7 @@ function render() {
     if (t.imageUrl) {
       const isQR = t.imageUrl.includes('api.qrserver.com');
       if (isQR) {
-        html += `<img src="${t.imageUrl}" class="qr-img" alt="QR Code">`;
+        html += `<img src="${t.imageUrl}" class="qr-img" style="display: none" alt="QR Code">`;
       } else {
         html += `<img src="${t.imageUrl}" class="task-image" alt="Task Media">`;
       }
