@@ -795,13 +795,9 @@ function render() {
   const visibleDays = allDays.filter(dayName => {
     const count = taskCountByDay[dayName];
     const rawDate = dayRawDates[dayName];
-
-    if (count >= 3) return true; 
     if (count >= 1) return true;
-
     if (!makeupEnabled || !rawDate) return false;
     
-    // Filter past due to ensure only EARLIER weeks are counted
     const pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate)
       .map(subj => ({
         ...subj,
@@ -822,12 +818,10 @@ function render() {
     const isMakeupDay = count < 3 && makeupEnabled;
     
     let headerLabel = d;
-    if (isMakeupDay && rawDate) {
+    if (isMakeupDay && rawDate && count === 0) {
       const dateObj = new Date(rawDate);
       const dateLabel = (dateObj.getMonth()+1) + '/' + dateObj.getDate();
-      if (count === 0) {
-        headerLabel = `Make-up Day<br><small>${d} ${dateLabel}</small>`;
-      }
+      headerLabel = `Make-up Day<br><small>${d} ${dateLabel}</small>`;
     }
     tableHtml += `<th${isToday ? ' style="background:var(--secondary);color:white;"' : ''}>${headerLabel}</th>`;
   });
@@ -836,7 +830,8 @@ function render() {
   let listHtml = `<div class="list-view"><div class="${isStatusMode ? 'status-mode' : ''}">`;
   const tasksByDay = visibleDays.map(() => []);
 
-  student.grid.forEach(row => {
+  // Loop through subjects (rows)
+  student.grid.forEach((row, rowIndex) => {
     tableHtml += `<tr><td class="subject-cell">${row.subject}
       <span class="curriculum-subtitle">${row.curriculum || ''}</span></td>`;
     
@@ -845,11 +840,12 @@ function render() {
         task.day === dayName && parseInt(task.week) === targetWeek
       );
       
+      tableHtml += `<td>`;
+      
       if (t) {
         const lp = getLocalProgress();
         const isTaskDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
         const taskDate = new Date(t.rawDate).getTime();
-
         let statusClass = '';
         if (taskDate < todayTs) statusClass = 'due-late';
         else if (taskDate === todayTs) statusClass = 'due-warning';
@@ -860,7 +856,7 @@ function render() {
           const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
           const mediaHtml = renderMedia(t);
           
-          tableHtml += `<td>
+          tableHtml += `
             <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
               ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
               <div class="media-container">${mediaHtml}</div>
@@ -871,21 +867,21 @@ function render() {
                 <div class="status-indicator"></div>
               </label>
             </div>`;
-
           tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
         } else {
-          tableHtml += `<td><div class="task-card empty-card"></div>`;
+          tableHtml += `<div class="task-card empty-card"></div>`;
         }
       } else {
-        tableHtml += `<td><div class="task-card empty-card">`;
+        tableHtml += `<div class="task-card empty-card"></div>`;
       }
 
-      // Filtered Make-up section for Table View
+      // FIXED: Only add makeup section once per column (on the very last row)
+      const isLastRow = rowIndex === student.grid.length - 1;
       const count = taskCountByDay[dayName];
       const rawDate = dayRawDates[dayName];
-      if (makeupEnabled && count < 3 && rawDate) {
+
+      if (isLastRow && makeupEnabled && count < 3 && rawDate) {
         let pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate);
-        // Ensure only previous weeks
         pastDue = pastDue.map(subj => ({
           ...subj,
           tasks: subj.tasks.filter(mt => parseInt(mt.week) < targetWeek)
@@ -896,7 +892,7 @@ function render() {
         }
       }
 
-      tableHtml += `</div></td>`;
+      tableHtml += `</td>`;
     });
     tableHtml += `</tr>`;
   });
@@ -910,7 +906,6 @@ function render() {
     const dayMidnight = rawDate ? new Date(rawDate).setHours(0,0,0,0) : null;
     const count = taskCountByDay[dayName];
 
-    // Filtered Make-up tasks for List View
     let pastDue = makeupEnabled && count < 3 && rawDate 
       ? getPastDueForDay(student, targetWeek, dayName, rawDate) 
       : [];
@@ -923,10 +918,7 @@ function render() {
     if (dayTasks.length === 0 && pastDue.length === 0) return;
 
     const lp = getLocalProgress();
-    const doneCount = dayTasks.filter(t => 
-      lp[t.id] !== undefined ? lp[t.id] : t.done
-    ).length;
-
+    const doneCount = dayTasks.filter(t => lp[t.id] !== undefined ? lp[t.id] : t.done).length;
     const isToday = dayMidnight === todayTs;
     const isMakeupDay = count < 3 && makeupEnabled;
 
@@ -954,41 +946,28 @@ function render() {
             ${renderMedia(t)}
           </div>
           <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
-            data-id="${t.id}" 
-            onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
+            data-id="${t.id}" onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
         </label>`;
     });
 
     if (pastDue.length > 0) {
-      listHtml += `<div style="font-size:10px; font-weight:700; color:#94a3b8;
-        text-transform:uppercase; padding:6px 16px; background:#f8fafc;
-        border-top:2px dashed #e2e8f0; letter-spacing:1px;">
-        Make-up Work
-      </div>`;
-
+      listHtml += `<div style="font-size:10px; font-weight:700; color:#94a3b8; text-transform:uppercase; padding:6px 16px; background:#f8fafc; border-top:2px dashed #e2e8f0; letter-spacing:1px;">Make-up Work</div>`;
       pastDue.forEach(subj => {
-        listHtml += `<div style="font-size:10px; font-weight:700; color:var(--primary);
-          text-transform:uppercase; padding:4px 16px; background:#f8fafc;">
-          ${subj.subject}
-        </div>`;
+        listHtml += `<div style="font-size:10px; font-weight:700; color:var(--primary); text-transform:uppercase; padding:4px 16px; background:#f8fafc;">${subj.subject}</div>`;
         subj.tasks.forEach(t => {
           const isDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
           listHtml += `
             <label class="list-task-row ${isDone ? 'is-done' : ''}">
               <div class="list-checkbox"></div>
               <div style="flex:1">
-                <div class="task-text" style="font-size:14px;">${t.task}
-                  <span style="color:#94a3b8; font-size:11px;"> (${t.date})</span>
-                </div>
+                <div class="task-text" style="font-size:14px;">${t.task} <span style="color:#94a3b8; font-size:11px;"> (${t.date})</span></div>
               </div>
               <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
-                data-id="${t.id}"
-                onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
+                data-id="${t.id}" onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
             </label>`;
         });
       });
     }
-
     listHtml += `</div>`;
   });
 
@@ -996,6 +975,7 @@ function render() {
   document.getElementById('content').innerHTML = tableHtml + listHtml;
   updateChoreBanner();
 }
+    
 
   function renderMedia(t) {
     let html = '';
