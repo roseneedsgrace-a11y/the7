@@ -1044,21 +1044,22 @@ function render() {
 }
     
 
-  function renderMedia(t) {
-    let html = '';
-    if (t.linkUrl) {
-      html += `<a href="${t.linkUrl}" target="_blank" 
-        class="link-btn" 
-        style="background:var(--primary); color:white; display:inline-flex; align-items:center; justify-content:center; gap:5px; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; letter-spacing:0.5px; text-transform:uppercase; box-shadow:0 2px 6px rgba(0,0,0,0.15); min-width:100px; text-align:center; position:relative; z-index:10; cursor:pointer;"
-        onclick="event.stopPropagation();"> Open Link </a>`;
-    }
-    if (t.imageUrl) {
-      const isQR = t.imageUrl.includes('api.qrserver.com');
-      html += `<img src="${t.imageUrl}" class="${isQR ? 'qr-img' : ''} task-image" alt="Task Media">`;
-    }
-    return html;
+ function renderMedia(t) {
+  let html = '';
+  if (t.linkUrl) {
+    html += `<a href="${t.linkUrl}" target="_blank" 
+      class="link-btn" 
+      style="background:var(--primary); color:white; display:inline-flex; align-items:center; justify-content:center; gap:5px; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; letter-spacing:0.5px; text-transform:uppercase; box-shadow:0 2px 6px rgba(0,0,0,0.15); min-width:100px; text-align:center; position:relative; z-index:10; cursor:pointer;"
+      onclick="event.stopPropagation();"> Open Link </a>`;
   }
-  
+  if (t.imageUrl) {
+    const isQR = t.imageUrl.includes('api.qrserver.com');
+    html += `<img src="${t.imageUrl}" class="${isQR ? 'qr-img' : ''} task-image" alt="Task Media">`;
+  }
+  return html;
+}
+
+    
 function toggle(id, el, studentName, row, col) {
   const isDone = el.checked;
   
