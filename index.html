@@ -693,6 +693,7 @@ function getPastDueForDay(student, targetWeek, dayName, dayRawDate) {
     });
   });
 
+    
   // Sort subjects by oldest task first
   return Object.entries(pastDueBySubject)
     .sort((a, b) => {
@@ -778,6 +779,25 @@ function render() {
     );
     if (sample) dayRawDates[dayName] = sample.rawDate;
   });
+
+   const dayOrder = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    
+    // If Sat has no rawDate but we have other days, calculate it
+    if (!dayRawDates['Sat']) {
+      // Find any day we do have a date for and calculate Saturday from it
+      const knownDay = dayOrder.find(d => dayRawDates[d]);
+      if (knownDay) {
+        const knownDate = new Date(dayRawDates[knownDay]);
+        const knownDayOfWeek = knownDate.getDay(); // 0=Sun, 1=Mon...
+        const knownIndex = dayOrder.indexOf(knownDay);
+        // dayOrder index 0=Mon(1), 1=Tue(2)... 5=Sat(6)
+        const daysToSat = 6 - knownDayOfWeek; // days until Saturday
+        const sat = new Date(knownDate);
+        sat.setDate(sat.getDate() + daysToSat);
+        sat.setHours(0, 0, 0, 0);
+        dayRawDates['Sat'] = sat.getTime();
+      }
+    }
 
   // Decide which days to include
   const visibleDays = allDays.filter(dayName => {
