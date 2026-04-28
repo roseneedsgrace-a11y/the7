@@ -824,7 +824,7 @@ function render() {
     if (isMakeupDay && rawDate && count === 0) {
       const dateObj = new Date(rawDate);
       const dateLabel = (dateObj.getMonth()+1) + '/' + dateObj.getDate();
-      headerLabel = `Make-up Day<br><small>${d} ${dateLabel}</small>`;
+      headerLabel = `Make-up Work<br><small>${d} ${dateLabel}</small>`;
     }
     tableHtml += `<th${isToday ? ' style="background:var(--secondary);color:white;"' : ''}>${headerLabel}</th>`;
   });
