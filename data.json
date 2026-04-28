@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-28T13:48:39.503Z",
+  "generated": "2026-04-28T14:13:21.665Z",
   "date": "Tuesday, April 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12098,7 +12098,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Other-Wed",
               "row": 185,
               "col": 8
@@ -12111,7 +12111,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Other-Thu",
               "row": 186,
               "col": 8
