@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-28T14:13:21.665Z",
+  "generated": "2026-04-28T15:42:28.900Z",
   "date": "Tuesday, April 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -333,7 +333,7 @@
               "task": "Read \"Relationships\": Ch. 8 (pp. 72-84)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Bible-Tue",
               "row": 184,
               "col": 3
@@ -2229,7 +2229,7 @@
               "task": "Chapter 8.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Science-Tue",
               "row": 184,
               "col": 7
