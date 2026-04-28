@@ -780,6 +780,26 @@ function render() {
     if (sample) dayRawDates[dayName] = sample.rawDate;
   });
 
+    // After building dayRawDates from the grid:
+    const dayOrder = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    
+    // If Sat has no rawDate but we have other days, calculate it
+    if (!dayRawDates['Sat']) {
+      // Find any day we do have a date for and calculate Saturday from it
+      const knownDay = dayOrder.find(d => dayRawDates[d]);
+      if (knownDay) {
+        const knownDate = new Date(dayRawDates[knownDay]);
+        const knownDayOfWeek = knownDate.getDay(); // 0=Sun, 1=Mon...
+        const knownIndex = dayOrder.indexOf(knownDay);
+        // dayOrder index 0=Mon(1), 1=Tue(2)... 5=Sat(6)
+        const daysToSat = 6 - knownDayOfWeek; // days until Saturday
+        const sat = new Date(knownDate);
+        sat.setDate(sat.getDate() + daysToSat);
+        sat.setHours(0, 0, 0, 0);
+        dayRawDates['Sat'] = sat.getTime();
+      }
+    }
+
   // Decide which days to include
   const visibleDays = allDays.filter(dayName => {
     const count = taskCountByDay[dayName];
@@ -795,7 +815,10 @@ function render() {
 
     // 0 tasks — only show if makeup is enabled and there are past-due tasks
     if (!makeupEnabled || !rawDate) return false;
-    const pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate);
+    // ADDITION: Pass a flag or filter the results to ensure we only see previous weeks
+    const pastDue = getPastDueForDay(student, targetWeek, dayName, rawDate)
+                    .filter(subj => subj.tasks.some(t => parseInt(t.week) < targetWeek)); 
+    
     return pastDue.length > 0;
   });
 
