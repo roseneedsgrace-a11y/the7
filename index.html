@@ -756,6 +756,7 @@ function render() {
 
   const allDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   const now = new Date();
+  // Normalize "today" to midnight for accurate date comparisons
   const todayTs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
 
   // ─── TASK COUNTING ─────────────
@@ -791,12 +792,23 @@ function render() {
     }
   }
 
+  // Pre-compute past due per day
   const pastDueByDay = {};
   allDays.forEach(dayName => {
     const rawDate = dayRawDates[dayName];
     const count = taskCountByDay[dayName];
     if (makeupEnabled && count < 3 && rawDate) {
-      pastDueByDay[dayName] = getPastDueForDay(student, targetWeek, dayName, rawDate);
+      // Get all incomplete tasks
+      const rawPastDue = getPastDueForDay(student, targetWeek, dayName, rawDate);
+      
+      // CRITICAL FILTER: Task must be from a previous week AND its date must be BEFORE today
+      pastDueByDay[dayName] = rawPastDue.map(subj => ({
+        ...subj,
+        tasks: subj.tasks.filter(t => {
+          const taskDate = new Date(t.rawDate).getTime();
+          return parseInt(t.week) < targetWeek && taskDate < todayTs;
+        })
+      })).filter(subj => subj.tasks.length > 0);
     } else {
       pastDueByDay[dayName] = [];
     }
@@ -807,9 +819,7 @@ function render() {
     const rawDate = dayRawDates[dayName];
     if (count >= 1) return true;
     if (!makeupEnabled || !rawDate) return false;
-    return (pastDueByDay[dayName] || []).some(subj => 
-       subj.tasks.some(mt => parseInt(mt.week) < targetWeek)
-    );
+    return (pastDueByDay[dayName] || []).length > 0;
   });
 
   const visibleRows = student.grid.filter(row => {
@@ -823,8 +833,7 @@ function render() {
 
     const hasMakeupTask = visibleDays.some(dayName => {
       const pd = pastDueByDay[dayName] || [];
-      return pd.some(subj => subj.subject === row.subject && 
-             subj.tasks.some(mt => parseInt(mt.week) < targetWeek));
+      return pd.some(subj => subj.subject === row.subject);
     });
     return hasMakeupTask;
   });
@@ -862,7 +871,6 @@ function render() {
       tableHtml += `<td>`;
       let hasRenderedAnything = false;
 
-      // 1. Table Current Task
       if (t) {
         const lp = getLocalProgress();
         const isTaskDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
@@ -889,12 +897,9 @@ function render() {
         }
       }
       
-      // 2. Table Makeup Task
       const pd = (pastDueByDay[dayName] || []);
       const subjectPastDue = pd.find(s => s.subject === row.subject);
-      const makeupTasks = subjectPastDue 
-        ? subjectPastDue.tasks.filter(mt => parseInt(mt.week) < targetWeek)
-        : [];
+      const makeupTasks = subjectPastDue ? subjectPastDue.tasks : [];
       
       if (makeupEnabled && taskCountByDay[dayName] < 3 && makeupTasks.length > 0) {
         const needsDivider = hasRenderedAnything;
@@ -937,10 +942,8 @@ function render() {
     const dayMidnight = rawDate ? new Date(rawDate).setHours(0,0,0,0) : null;
     const isToday = dayMidnight === todayTs;
     
-    const pastDueFiltered = (pastDueByDay[dayName] || []).map(subj => ({
-      ...subj,
-      tasks: subj.tasks.filter(t => parseInt(t.week) < targetWeek)
-    })).filter(subj => subj.tasks.length > 0);
+    // Use pre-computed pastDueByDay which already has the date-safety filter
+    const pastDueFiltered = pastDueByDay[dayName] || [];
 
     if (dayTasks.length === 0 && pastDueFiltered.length === 0) return;
 
@@ -1003,7 +1006,6 @@ function render() {
   document.getElementById('content').innerHTML = tableHtml + listHtml;
   updateChoreBanner();
 }
-    
 
  function renderMedia(t) {
   let html = '';
