@@ -874,78 +874,79 @@ function render() {
       tableHtml += `<td>`;
       
       // 1. Current Week Task
-      if (t) {
-        const lp = getLocalProgress();
-        const isTaskDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
-        const taskDate = new Date(t.rawDate).getTime();
-        let statusClass = '';
-        if (taskDate < todayTs) statusClass = 'due-late';
-        else if (taskDate === todayTs) statusClass = 'due-warning';
-
-        const hasContent = (t.task && t.task.trim().length > 0) || t.imageUrl || t.linkUrl;
-
-        if (hasContent) {
-          const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
-          const mediaHtml = renderMedia(t); // includes link buttons and QR codes
-          
-          tableHtml += `
-            <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
-              ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
-              <div class="media-container">${mediaHtml}</div>
-              <label class="status-indicator-wrap">
-                <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} 
-                  data-id="${t.id}" 
-                  onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
-                <div class="status-indicator"></div>
-              </label>
-            </div>`;
-          tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
-        } else {
-          tableHtml += `<div class="task-card empty-card"></div>`;
-        }
-      }
-
-      // 2. Make-up Tasks for this subject in this day column
-      const count = taskCountByDay[dayName];
-      const rawDate = dayRawDates[dayName];
-
-      if (makeupEnabled && count < 3 && rawDate) {
-        const pd = pastDueByDay[dayName] || [];
-        const subjectData = pd.find(s => s.subject === row.subject);
+        if (t) {
+          const lp = getLocalProgress();
+          const isTaskDone = lp[t.id] !== undefined ? lp[t.id] : t.done;
+          const taskDate = new Date(t.rawDate).getTime();
+          let statusClass = '';
+          if (taskDate < todayTs) statusClass = 'due-late';
+          else if (taskDate === todayTs) statusClass = 'due-warning';
         
-        if (subjectData && subjectData.tasks.length > 0) {
-          tableHtml += `<div class="makeup-section" style="border-top: 1px dashed #cbd5e1; margin-top: 8px; padding-top: 8px;">`;
-          subjectData.tasks.forEach(mt => {
-            const lp = getLocalProgress();
-            const isDone = lp[mt.id] !== undefined ? lp[mt.id] : mt.done;
-            const mediaHtml = renderMedia(mt); // QR codes for print, links for screen
+          const hasContent = (t.task && t.task.trim().length > 0) || t.imageUrl || t.linkUrl;
+        
+          if (hasContent) {
+            const isLinkOnly = t.linkUrl && (!t.task || t.task.trim() === "");
+            const mediaHtml = renderMedia(t);
+            
             tableHtml += `
-              <div class="task-card ${isDone ? 'is-done' : ''}" style="min-height:auto; margin-bottom:5px; border-style:dotted;">
-                <div class="task-text" style="font-size:0.75rem;">
-                  <small style="color:var(--primary); font-weight:bold; display:block;">
-                    MAKEUP (Wk ${mt.week})
-                  </small>
-                  ${mt.task}
-                </div>
-                ${mediaHtml ? `<div class="media-container">${mediaHtml}</div>` : ''}
+              <div class="task-card ${isTaskDone ? 'is-done' : ''} ${statusClass} ${isLinkOnly ? 'link-only' : ''}">
+                ${t.task ? `<div class="task-text">${t.task}</div>` : ''}
+                <div class="media-container">${mediaHtml}</div>
                 <label class="status-indicator-wrap">
-                  <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''} 
-                    data-id="${mt.id}" 
-                    onchange="toggle('${mt.id}', this, '${studentName}', ${mt.row}, ${mt.col})">
+                  <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} 
+                    data-id="${t.id}" 
+                    onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
                   <div class="status-indicator"></div>
                 </label>
               </div>`;
-          });
-          tableHtml += `</div>`;
+            tasksByDay[dayIdx].push({ ...t, subject: row.subject, curriculum: row.curriculum, statusClass, isLinkOnly });
+          } else {
+            tableHtml += `<div class="task-card empty-card"></div>`;
+          }
         }
-      }
-
-      // Empty cell if nothing at all
-      if (!t && (!(makeupEnabled && count < 3 && rawDate) || 
-          !(pastDueByDay[dayName] || []).some(s => s.subject === row.subject))) {
-        tableHtml += `<div class="task-card empty-card"></div>`;
-      }
-
+        // No else here — makeup section below will fill the cell if needed
+        
+        // 2. Make-up Tasks for this subject in this day column
+        const count = taskCountByDay[dayName];
+        const rawDate = dayRawDates[dayName];
+        
+        if (makeupEnabled && count < 3 && rawDate) {
+          const pd = pastDueByDay[dayName] || [];
+          const subjectData = pd.find(s => s.subject === row.subject);
+          
+          if (subjectData && subjectData.tasks.length > 0) {
+            const needsDivider = !!t; // only add divider if there's also a current task above
+            tableHtml += `<div class="makeup-section" style="${needsDivider ? 'border-top: 1px dashed #cbd5e1; margin-top: 8px; padding-top: 8px;' : ''}">`;
+            subjectData.tasks.forEach(mt => {
+              const lp = getLocalProgress();
+              const isDone = lp[mt.id] !== undefined ? lp[mt.id] : mt.done;
+              const mediaHtml = renderMedia(mt);
+              tableHtml += `
+                <div class="task-card ${isDone ? 'is-done' : ''}" style="min-height:auto; margin-bottom:5px; border-style:dotted;">
+                  <div class="task-text" style="font-size:0.75rem;">
+                    <small style="color:var(--primary); font-weight:bold; display:block;">
+                      MAKEUP (Wk ${mt.week})
+                    </small>
+                    ${mt.task}
+                  </div>
+                  ${mediaHtml ? `<div class="media-container">${mediaHtml}</div>` : ''}
+                  <label class="status-indicator-wrap">
+                    <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''} 
+                      data-id="${mt.id}" 
+                      onchange="toggle('${mt.id}', this, '${studentName}', ${mt.row}, ${mt.col})">
+                    <div class="status-indicator"></div>
+                  </label>
+                </div>`;
+            });
+            tableHtml += `</div>`;
+          } else if (!t) {
+            // No current task AND no makeup for this subject — empty cell
+            tableHtml += `<div class="task-card empty-card"></div>`;
+          }
+        } else if (!t) {
+          // Makeup not enabled or not applicable — empty cell if no current task
+          tableHtml += `<div class="task-card empty-card"></div>`;
+        }
       tableHtml += `</td>`;
     });
     tableHtml += `</tr>`;
