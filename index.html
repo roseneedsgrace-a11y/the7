@@ -194,6 +194,7 @@
     height: 45px !important; 
     margin: 2px auto !important;
   }
+  .link-btn { display: none !important; }
 
   /* 7. Checkboxes for Print */
   .status-indicator { 
@@ -462,13 +463,10 @@ a.link-btn::before {
 
 /* Ensure QR codes only show up on the printed page, not the screen */
 @media screen {
-  .qr-img { display: none; }
+    .qr-img { display: none !important; }
 }
 
-@media print {
-  .link-btn { display: none !important; }
-  .qr-img { display: block !important; margin: 5px auto; width: 50px; height: 50px; }
-}
+
   </style>
 </head>
 <body>
