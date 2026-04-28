@@ -793,21 +793,16 @@ function render() {
   }
 
   // Pre-compute past due per day for efficiency
-  const pastDueByDay = {};
-  allDays.forEach(dayName => {
-    const rawDate = dayRawDates[dayName];
-    const count = taskCountByDay[dayName];
-    if (makeupEnabled && count < 3 && rawDate) {
-      let pd = getPastDueForDay(student, targetWeek, dayName, rawDate);
-      pd = pd.map(subj => ({
-        ...subj,
-        tasks: subj.tasks.filter(mt => parseInt(mt.week) < targetWeek)
-      })).filter(subj => subj.tasks.length > 0);
-      pastDueByDay[dayName] = pd;
-    } else {
-      pastDueByDay[dayName] = [];
-    }
-  });
+    const pastDueByDay = {};
+    allDays.forEach(dayName => {
+      const rawDate = dayRawDates[dayName];
+      const count = taskCountByDay[dayName];
+      if (makeupEnabled && count < 3 && rawDate) {
+        pastDueByDay[dayName] = getPastDueForDay(student, targetWeek, dayName, rawDate);
+      } else {
+        pastDueByDay[dayName] = [];
+      }
+    });
 
   const visibleDays = allDays.filter(dayName => {
     const count = taskCountByDay[dayName];
