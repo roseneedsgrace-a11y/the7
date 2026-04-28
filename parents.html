@@ -722,21 +722,32 @@ function approveEntireDay(studentName, silent) {
 }
 
 function toggleMakeupDays() {
-  const current = allData && allData.config ? allData.config.makeupDaysEnabled !== false : true;
-  const newVal = !current;
+  const statusEl = document.getElementById('makeupToggleStatus');
+  const btn = document.getElementById('makeupToggleBtn');
   
-  fetch(`${API_URL}?action=setMakeupDays&enabled=${newVal}`, { mode: 'no-cors' });
-  
-  // Update local config immediately
-  if (allData && allData.config) allData.config.makeupDaysEnabled = newVal;
-  
-  // Trigger a push so data.json updates for all devices
-  setTimeout(() => {
-    fetch(`${API_URL}?action=push`, { mode: 'no-cors' });
-  }, 1000);
+  // Determine flip
+  const currentlyEnabled = statusEl.textContent.trim() === "ON";
+  const newState = !currentlyEnabled;
 
-  updateMakeupToggleBtn(newVal);
-  adminStatus(newVal ? '✓ Make-up Days enabled' : '✓ Make-up Days disabled', '#16a34a');
+  statusEl.textContent = "Updating...";
+  btn.disabled = true;
+
+  // This calls your GAS Web App URL
+  const url = `${api_url}?action=setMakeupDays&enabled=${newState}`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        statusEl.textContent = newState ? "ON" : "OFF";
+        btn.classList.toggle('active-state', newState); // Optional CSS class change
+        
+        // Alert the user or log success
+        console.log("GitHub Sync Triggered");
+      }
+    })
+    .catch(err => alert("Error: " + err))
+    .finally(() => { btn.disabled = false; });
 }
 
 function updateMakeupToggleBtn(enabled) {
