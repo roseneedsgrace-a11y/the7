@@ -901,18 +901,20 @@ function render() {
         }
         // No else here — makeup section below will fill the cell if needed
         
-        // 2. Make-up Tasks for this subject in this day column       
+        // 2. Make-up Tasks for this subject in this day column
         const count = taskCountByDay[dayName];
         const rawDate = dayRawDates[dayName];
-        const pd = pastDueByDay[dayName] || [];
-        const subjectData = pd.find(s => s.subject === row.subject);
-        const hasMakeup = subjectData && subjectData.tasks.length > 0;
+        const pd = (pastDueByDay[dayName] || []);
+        const subjectPastDue = pd.find(s => s.subject === row.subject);
+        const makeupTasks = subjectPastDue 
+          ? subjectPastDue.tasks.filter(mt => parseInt(mt.week) < targetWeek)
+          : [];
+        const hasMakeup = makeupTasks.length > 0;
         
         if (makeupEnabled && count < 3 && rawDate && hasMakeup) {
-          // Render makeup section
           const needsDivider = !!t;
           tableHtml += `<div class="makeup-section" style="${needsDivider ? 'border-top: 1px dashed #cbd5e1; margin-top: 8px; padding-top: 8px;' : ''}">`;
-          subjectData.tasks.forEach(mt => {
+          makeupTasks.forEach(mt => {
             const lp = getLocalProgress();
             const isDone = lp[mt.id] !== undefined ? lp[mt.id] : mt.done;
             const mediaHtml = renderMedia(mt);
@@ -935,7 +937,7 @@ function render() {
           });
           tableHtml += `</div>`;
         } else if (!t && !hasMakeup) {
-          // Only show empty card if there's genuinely nothing here at all
+          // Only show empty card if there's genuinely nothing here
           tableHtml += `<div class="task-card empty-card"></div>`;
         }
       tableHtml += `</td>`;
