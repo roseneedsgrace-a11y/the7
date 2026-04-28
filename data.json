@@ -1,10 +1,10 @@
 {
-  "generated": "2026-04-28T02:45:43.704Z",
+  "generated": "2026-04-28T02:46:16.617Z",
   "date": "Monday, April 27",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
-    "makeupDaysEnabled": false
+    "makeupDaysEnabled": true
   },
   "students": [
     {
