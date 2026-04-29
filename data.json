@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-29T14:56:08.324Z",
+  "generated": "2026-04-29T16:57:00.104Z",
   "date": "Wednesday, April 29",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -346,7 +346,7 @@
               "task": "Read \"Relationships\": Ch. 9 (pp. 85-97)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Bible-Wed",
               "row": 185,
               "col": 3
@@ -4915,7 +4915,7 @@
               "task": "My Country, 'Tis of Thee (p. 184) - Copywork & Music Theory & Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Music-Wed",
               "row": 186,
               "col": 6
@@ -4928,7 +4928,7 @@
               "task": "My Country, 'Tis of Thee (p. 184) - Activity",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Music-Thu",
               "row": 187,
               "col": 6
@@ -4941,7 +4941,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Music-Fri",
               "row": 188,
               "col": 6
@@ -5733,7 +5733,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Reading & Grammar-Wed",
               "row": 186,
               "col": 8
@@ -6551,7 +6551,7 @@
               "task": "Write out a verse in your very best handwriting.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Handwriting-Wed",
               "row": 186,
               "col": 10
@@ -6960,7 +6960,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Beth-W37-Latin-Wed",
               "row": 186,
               "col": 11
@@ -8711,7 +8711,7 @@
               "task": "☐ Take Unit 3; Test 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Anatomy-Wed",
               "row": 185,
               "col": 6
@@ -9159,7 +9159,7 @@
               "task": "Epilogue #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Math-Wed",
               "row": 185,
               "col": 7
@@ -10514,7 +10514,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Bible-Wed",
               "row": 185,
               "col": 3
