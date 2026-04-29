@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-28T21:29:10.409Z",
+  "generated": "2026-04-29T03:37:19.451Z",
   "date": "Tuesday, April 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -794,7 +794,7 @@
               "task": "Lesson 13 Test, pt. 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-History-Mon",
               "row": 183,
               "col": 4
@@ -3675,7 +3675,7 @@
               "task": "The Ology, Bible Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Bible-Tue",
               "row": 185,
               "col": 3
@@ -4902,7 +4902,7 @@
               "task": "My Country, 'Tis of Thee (p. 184) - The Story & Hymn Study & Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Music-Tue",
               "row": 185,
               "col": 6
@@ -5720,7 +5720,7 @@
               "task": "Journal Entry. 5 Sentences",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Reading & Grammar-Tue",
               "row": 185,
               "col": 8
@@ -6947,7 +6947,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Latin-Tue",
               "row": 185,
               "col": 11
@@ -9607,7 +9607,7 @@
               "task": "Till We Have Faces Chap & Days 3-4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-English-Wed",
               "row": 185,
               "col": 8
@@ -14232,7 +14232,7 @@
               "task": "Read Chapter 2: A Wayside Adventure",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Literature-Wed",
               "row": 184,
               "col": 7
