@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-29T17:42:56.134Z",
+  "generated": "2026-04-29T19:28:01.457Z",
   "date": "Wednesday, April 29",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6960,7 +6960,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Latin-Wed",
               "row": 186,
               "col": 11
@@ -12888,7 +12888,7 @@
               "task": "The Ology, Bible Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Bible-Wed",
               "row": 184,
               "col": 3
