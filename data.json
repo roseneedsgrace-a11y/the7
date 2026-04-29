@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-29T03:37:19.451Z",
-  "date": "Tuesday, April 28",
+  "generated": "2026-04-29T14:56:08.324Z",
+  "date": "Wednesday, April 29",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -2242,7 +2242,7 @@
               "task": "Study for Chapter 8 Test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Science-Wed",
               "row": 185,
               "col": 7
@@ -3688,7 +3688,7 @@
               "task": "The Ology, Bible Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Bible-Wed",
               "row": 186,
               "col": 3
@@ -4097,7 +4097,7 @@
               "task": "Drill Team & Investigation 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Nicole the Math Lady-Wed",
               "row": 186,
               "col": 4
@@ -6960,7 +6960,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Latin-Wed",
               "row": 186,
               "col": 11
@@ -7367,7 +7367,7 @@
               "task": "Read \"Relationships\": Ch. 12 (pp. 122-131), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Bible-Wed",
               "row": 185,
               "col": 3
@@ -9620,7 +9620,7 @@
               "task": "Till We Have Faces Chap & Days 5-6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-English-Thu",
               "row": 186,
               "col": 8
@@ -10923,7 +10923,7 @@
               "task": "The Second World Wars #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Hillsdale History-Thu",
               "row": 186,
               "col": 4
@@ -12150,7 +12150,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Other-Tue",
               "row": 189,
               "col": 8
@@ -12163,7 +12163,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Other-Wed",
               "row": 190,
               "col": 8
@@ -12176,7 +12176,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Other-Thu",
               "row": 191,
               "col": 8
