@@ -128,7 +128,6 @@ function mergeChoresIntoStudentData(data) {
   const choreMap = {};
   if (data.students) {
     data.students.forEach(s => {
-      // Handle both old string format and new array format
       choreMap[s.name] = Array.isArray(s.chore) 
         ? s.chore 
         : (s.chore ? [s.chore] : []);
