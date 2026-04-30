@@ -382,6 +382,38 @@ a.link-btn::before {
   font-size: 1.2rem;
   animation: wiggle 1s ease 0.5s 2;
 }
+.chore-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 2px solid rgba(255,255,255,0.6);
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+#choreBanner.subtle .chore-checkbox,
+#choreBanner.done .chore-checkbox {
+  border-color: #cbd5e1;
+}
+.chore-checkbox.checked {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+.chore-checkbox.checked::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 7px;
+  border: 2px solid white;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translate(2px, 0px);
+  margin: 1px auto;
+}
+#choreBanner.active .chore-checkbox.checked {
+  background: rgba(255,255,255,0.3);
+  border-color: white;
+}
+      
 
 /* DONE STATE */
 #choreBanner.done #choreBannerInner {
@@ -479,14 +511,12 @@ a.link-btn::before {
 </div>
     
 <div id="choreBanner" style="display:none;">
-  <div id="choreBannerInner">
-    <div id="choreBannerIcon">🧹</div>
-    <div id="choreBannerText"></div>
-    <label id="choreBannerCheck">
-      <input type="checkbox" id="choreBannerInput" onchange="toggleChoreBanner(this)">
-      <span id="choreBannerBox"></span>
-    </label>
-  </div>
+    <div id="choreBanner" style="display:none;">
+      <div id="choreBannerInner">
+        <div id="choreBannerIcon">🧹</div>
+        <div id="choreBannerContent" style="flex:1;"></div>
+      </div>
+    </div>
 </div>
     
 <div class="controls">
@@ -554,7 +584,9 @@ function updateChoreBanner() {
 
   const studentName = document.getElementById('studentSelect').value;
   const student = allData.studentData.find(s => s.student === studentName);
-  if (!student || !student.chore) {
+  const chores = student && student.chores ? student.chores.filter(c => c.trim()) : [];
+  
+  if (!chores.length) {
     document.getElementById('choreBanner').style.display = 'none';
     return;
   }
@@ -562,7 +594,7 @@ function updateChoreBanner() {
   const targetWeek = parseInt(document.getElementById('weekInput').value);
   const todayTs = new Date().setHours(0, 0, 0, 0);
 
-  // Count today's tasks and completion
+  // Count today's tasks
   let todayTotal = 0, todayDone = 0;
   student.grid.forEach(row => {
     const todayTask = (row.tasks || []).find(task =>
@@ -576,28 +608,87 @@ function updateChoreBanner() {
     }
   });
 
-  // Only show banner if there are tasks today
   if (todayTotal === 0) {
     document.getElementById('choreBanner').style.display = 'none';
     return;
   }
 
-  const choreId = getChoreId(student.student, new Date());
   const lp = getLocalProgress();
-  const choreDone = lp[choreId] === true;
   const thresholdMet = (todayDone / todayTotal) >= 0.5;
 
+  // Check all chores completion
+  const choreStates = chores.map((chore, i) => ({
+    chore,
+    id: getChoreId(student.student, new Date(), i),
+    done: lp[getChoreId(student.student, new Date(), i)] === true
+  }));
+  const allDone = choreStates.every(c => c.done);
+
   const banner = document.getElementById('choreBanner');
-  const bannerText = document.getElementById('choreBannerText');
+  const bannerContent = document.getElementById('choreBannerContent');
   const bannerInput = document.getElementById('choreBannerInput');
 
   banner.style.display = 'block';
-  bannerText.textContent = student.chore;
-  bannerInput.checked = choreDone;
-  bannerInput.setAttribute('data-chore-id', choreId);
+  banner.className = allDone ? 'done' : thresholdMet ? 'active' : 'subtle';
 
-  // Set state
-  banner.className = choreDone ? 'done' : thresholdMet ? 'active' : 'subtle';
+  // Build chore list — show first 2 by default
+  const INITIAL_SHOW = 2;
+  const hasMore = choreStates.length > INITIAL_SHOW;
+  
+  let contentHtml = '';
+  choreStates.forEach((c, i) => {
+    const isHidden = i >= INITIAL_SHOW;
+    contentHtml += `
+      <div class="chore-item ${c.done ? 'is-done' : ''} ${isHidden ? 'chore-hidden' : ''}" 
+        style="${isHidden ? 'display:none;' : ''}">
+        <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+          <input type="checkbox" style="display:none;"
+            ${c.done ? 'checked' : ''}
+            data-chore-id="${c.id}"
+            onchange="toggleSingleChore(this)">
+          <div class="chore-checkbox ${c.done ? 'checked' : ''}"></div>
+          <span style="${c.done ? 'text-decoration:line-through; opacity:0.6;' : ''}">${c.chore}</span>
+        </label>
+      </div>`;
+  });
+
+  if (hasMore) {
+    contentHtml += `
+      <button id="choreExpandBtn" onclick="toggleChoreExpand()" 
+        style="font-size:11px; background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.4); 
+        color:inherit; border-radius:12px; padding:2px 8px; cursor:pointer; margin-top:4px;">
+        +${choreStates.length - INITIAL_SHOW} more
+      </button>`;
+  }
+
+  bannerContent.innerHTML = contentHtml;
+}
+
+function toggleSingleChore(el) {
+  const choreId = el.getAttribute('data-chore-id');
+  const isDone = el.checked;
+
+  setLocalProgress(choreId, isDone);
+  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(choreId)}&status=${isDone}&student=${encodeURIComponent(choreId.split('-chore-')[0])}`, 
+    { mode: 'no-cors' });
+
+  updateChoreBanner();
+}
+
+function toggleChoreExpand() {
+  const hidden = document.querySelectorAll('.chore-hidden');
+  const btn = document.getElementById('choreExpandBtn');
+  const isExpanded = hidden[0] && hidden[0].style.display !== 'none';
+  
+  hidden.forEach(el => {
+    el.style.display = isExpanded ? 'none' : 'flex';
+  });
+  
+  if (btn) {
+    btn.textContent = isExpanded 
+      ? `+${hidden.length} more` 
+      : 'Show less';
+  }
 }
 
 function toggleChoreBanner(el) {
