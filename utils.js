@@ -117,20 +117,26 @@ function showTimestamp(isoString) {
   el.textContent = text;
 }
 // ─── CHORE HELPERS ────────────────────────────
-function getChoreId(studentName, date) {
+function getChoreId(studentName, date, index) {
   const d = new Date(date);
-  return `${studentName}-chore-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  const dateStr = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  return `${studentName}-chore-${index}-${dateStr}`;
 }
 
 // ─── DATA MERGE ───────────────────────────────
 function mergeChoresIntoStudentData(data) {
   const choreMap = {};
   if (data.students) {
-    data.students.forEach(s => { choreMap[s.name] = s.chore || ''; });
+    data.students.forEach(s => {
+      // Handle both old string format and new array format
+      choreMap[s.name] = Array.isArray(s.chore) 
+        ? s.chore 
+        : (s.chore ? [s.chore] : []);
+    });
   }
   return (data.studentData || []).map(s => ({
     ...s,
-    chore: choreMap[s.student] || ''
+    chores: choreMap[s.student] || []
   }));
 }
 
