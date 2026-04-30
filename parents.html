@@ -471,8 +471,8 @@ function buildStudentCard(s) {
     html += `<div class="no-tasks" style="color:#16a34a;">✓ No past due assignments</div>`;
   }
 
-  if (s.chore) {
-    html += buildChoreRow(s.student, s.chore, s.palette, currentDate);
+  if (s.chores && s.chores.length) {
+    html += buildChoreRow(s.student, s.chores, s.palette, currentDate);
   }
   
   html += `<a class="week-link" href="index.html?student=${encodeURIComponent(s.student)}">
@@ -501,88 +501,128 @@ function buildTaskRow(t, palette, isPastDue, studentName) {
     </div>`;
 }
 
-function buildChoreRow(studentName, chore, palette, date) {
-  const id = getChoreId(studentName, date);
-  const localProgress = getLocalProgress();
-  const isDone = localProgress[id] === true;
+function buildChoreRow(studentName, chores, palette, date) {
+  if (!chores || !chores.length) return '';
+  
+  const lp = getLocalProgress();
+  let html = `<div class="chore-section-label">Last but Not Least</div>`;
+  
+  chores.forEach((chore, i) => {
+    const id = getChoreId(studentName, date, i);
+    const isDone = lp[id] === true;
+    html += `
+      <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
+        onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}')">
+        <div class="task-checkbox" style="${isDone ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
+          ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
+        </div>
+        <div class="task-info">
+          ${i === 0 ? `
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <div class="task-subject" style="color:${palette.primary};">Daily Chore</div>
+              <button onclick="editChores('${studentName}', event)" 
+                style="font-size:11px; color:#94a3b8; background:none; border:none; cursor:pointer; padding:2px 6px;">
+                ✏️ edit
+              </button>
+            </div>` : ''}
+          <div class="task-text">${chore}</div>
+        </div>
+      </div>`;
+  });
 
-  return `
-    <div class="chore-section-label">Last but Not Least</div>
-    <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
-      onclick="toggleTask('${id}', '${palette.primary}', '${palette.secondary}', '${studentName}', 0, 0)">
-      <div class="task-checkbox" style="${isDone ? `background:${palette.secondary};border-color:${palette.secondary}` : ''}">
-        ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
+  // Inline edit panel — edit all chores at once
+  html += `
+    <div id="chore-edit-${studentName}" style="display:none; padding:12px 18px; background:#f8fafc; border-top:1px solid #e2e8f0;">
+      <div id="chore-inputs-${studentName}">
+        ${chores.map((c, i) => `
+          <div style="display:flex; gap:6px; margin-bottom:6px; align-items:center;">
+            <input type="text" value="${c}" id="chore-input-${studentName}-${i}"
+              style="flex:1; padding:6px 10px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px;"
+              onclick="event.stopPropagation()">
+            <button onclick="removeChoreInput('${studentName}', ${i}, event)"
+              style="padding:4px 8px; border:1px solid #fca5a5; color:#dc2626; background:white; border-radius:6px; cursor:pointer; font-size:12px;">✕</button>
+          </div>`).join('')}
       </div>
-      <div class="task-info">
-        <div style="display:flex; align-items:center; justify-content:space-between;">
-          <div class="task-subject" style="color:${palette.primary};">Daily Chore</div>
-          <button onclick="editChore('${studentName}', event)" 
-            style="font-size:11px; color:#94a3b8; background:none; border:none; cursor:pointer; padding:2px 6px;">
-            ✏️ edit
-          </button>
-        </div>
-        <div class="task-text" id="chore-text-${studentName}">${chore}</div>
-        <div id="chore-edit-${studentName}" style="display:none; margin-top:6px;">
-          <input type="text" id="chore-input-${studentName}" value="${chore}"
-            style="width:100%; padding:6px 10px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px;"
-            onclick="event.stopPropagation()">
-          <div style="display:flex; gap:8px; margin-top:6px;">
-            <button onclick="saveChore('${studentName}', event)"
-              style="flex:1; padding:6px; background:#16a34a; color:white; border:none; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
-              Save
-            </button>
-            <button onclick="cancelChoreEdit('${studentName}', event)"
-              style="flex:1; padding:6px; background:#f1f5f9; color:#475569; border:1px solid #e2e8f0; border-radius:6px; font-size:12px; cursor:pointer;">
-              Cancel
-            </button>
-          </div>
-        </div>
+      <button onclick="addChoreInput('${studentName}', event)"
+        style="width:100%; padding:5px; background:white; border:1px dashed #94a3b8; color:#475569; border-radius:6px; cursor:pointer; font-size:12px; margin-bottom:8px;">
+        + Add chore
+      </button>
+      <div style="display:flex; gap:8px;">
+        <button onclick="saveChores('${studentName}', event)"
+          style="flex:1; padding:6px; background:#16a34a; color:white; border:none; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+          Save
+        </button>
+        <button onclick="cancelChoreEdit('${studentName}', event)"
+          style="flex:1; padding:6px; background:#f1f5f9; color:#475569; border:1px solid #e2e8f0; border-radius:6px; font-size:12px; cursor:pointer;">
+          Cancel
+        </button>
       </div>
     </div>`;
+
+  return html;
 }
 
-function editChore(studentName, event) {
+function editChores(studentName, event) {
   event.stopPropagation();
-  document.getElementById('chore-text-' + studentName).style.display = 'none';
   document.getElementById('chore-edit-' + studentName).style.display = 'block';
-  document.getElementById('chore-input-' + studentName).focus();
 }
 
+function addChoreInput(studentName, event) {
+  event.stopPropagation();
+  const container = document.getElementById('chore-inputs-' + studentName);
+  const i = container.children.length;
+  const div = document.createElement('div');
+  div.style.cssText = 'display:flex; gap:6px; margin-bottom:6px; align-items:center;';
+  div.innerHTML = `
+    <input type="text" value="" id="chore-input-${studentName}-${i}"
+      style="flex:1; padding:6px 10px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px;"
+      onclick="event.stopPropagation()">
+    <button onclick="removeChoreInput('${studentName}', ${i}, event)"
+      style="padding:4px 8px; border:1px solid #fca5a5; color:#dc2626; background:white; border-radius:6px; cursor:pointer; font-size:12px;">✕</button>`;
+  container.appendChild(div);
+}
+
+function removeChoreInput(studentName, idx, event) {
+  event.stopPropagation();
+  const container = document.getElementById('chore-inputs-' + studentName);
+  if (container.children.length > 1) {
+    container.children[idx].remove();
+  }
+}
+
+function saveChores(studentName, event) {
+  event.stopPropagation();
+  const container = document.getElementById('chore-inputs-' + studentName);
+  const newChores = Array.from(container.querySelectorAll('input'))
+    .map(el => el.value.trim())
+    .filter(v => v);
+
+  if (!newChores.length) return;
+
+  // Update allData
+  allData.students.forEach(s => {
+    if (s.student === studentName) s.chores = newChores;
+  });
+
+  document.getElementById('chore-edit-' + studentName).style.display = 'none';
+
+  fetch(`${API_URL}?action=updateChore&student=${encodeURIComponent(studentName)}&chores=${encodeURIComponent(JSON.stringify(newChores))}`,
+    { mode: 'no-cors' });
+
+  setTimeout(() => {
+    fetch(`${API_URL}?action=push`, { mode: 'no-cors' });
+    adminStatus('✓ Chores updated and push triggered.', '#16a34a');
+  }, 2000);
+
+  renderForDate(currentDate);
+}
 function cancelChoreEdit(studentName, event) {
   event.stopPropagation();
   document.getElementById('chore-text-' + studentName).style.display = 'block';
   document.getElementById('chore-edit-' + studentName).style.display = 'none';
 }
 
-function saveChore(studentName, event) {
-  event.stopPropagation();
-  const newChore = document.getElementById('chore-input-' + studentName).value.trim();
-  if (!newChore) return;
 
-  const textEl = document.getElementById('chore-text-' + studentName);
-  const editEl = document.getElementById('chore-edit-' + studentName);
-
-  textEl.textContent = 'Saving...';
-  textEl.style.display = 'block';
-  editEl.style.display = 'none';
-
-  // Update in allData so re-renders stay current
-  allData.students.forEach(s => {
-    if (s.student === studentName) s.chore = newChore;
-  });
-
-  // Save to GAS then push
-  fetch(`${API_URL}?action=updateChore&student=${encodeURIComponent(studentName)}&chore=${encodeURIComponent(newChore)}`, 
-    { mode: 'no-cors' }
-  );
-
-  // Push after a short delay to let the write complete
-  setTimeout(() => {
-    fetch(`${API_URL}?action=push`, { mode: 'no-cors' });
-    textEl.textContent = newChore;
-    adminStatus('✓ Chore updated and push triggered.', '#16a34a');
-  }, 2000);
-}
   
 function renderStats(filtered) {
   let total = 0, done = 0, choreTotal = 0, choreDone = 0;
@@ -593,10 +633,12 @@ function renderStats(filtered) {
     done += s.tasks.filter(t => lp[t.id] !== undefined ? lp[t.id] : t.done).length;
 
     // Count chore if student has one
-    if (s.chore) {
-      choreTotal++;
-      const choreId = getChoreId(s.student, currentDate);
-      if (lp[choreId] === true) choreDone++;
+    if (s.chores && s.chores.length) {
+      s.chores.forEach((chore, i) => {
+        choreTotal++;
+        const choreId = getChoreId(s.student, currentDate, i);
+        if (lp[choreId] === true) choreDone++;
+      });
     }
   });
 
