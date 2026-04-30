@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-30T23:16:24.836Z",
+  "generated": "2026-04-30T23:18:00.826Z",
   "date": "Thursday, April 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5757,7 +5757,7 @@
               "task": "Journal Entry. At least 5 Sentences",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Reading & Grammar-Thu",
               "row": 187,
               "col": 8
