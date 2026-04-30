@@ -202,11 +202,6 @@
   let globalViewMode = 'auto'; // 'auto' | 'pastdue'
 
   // 2. Utility functions
-  function getChoreId(studentName, date) {
-    const d = new Date(date);
-    return `${studentName}-chore-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-  }
-
   function statCard(num, label, color) {
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
@@ -390,8 +385,9 @@ function applyHeaderSettings(config) {
       else autoView = 'pastdue';
 
       const studentConfig = allData.students.find(sc => sc.student === s.student);
-      const chore = studentConfig && studentConfig.chore ? studentConfig.chore : null;
-      
+      const chores = studentConfig && studentConfig.chores && studentConfig.chores.length 
+        ? studentConfig.chores 
+        : null;      
       return {
         student: s.student,
         palette: s.palette,
@@ -400,7 +396,7 @@ function applyHeaderSettings(config) {
         tasks: dailyTasks,
         pastDue: sortedPastDue,
         autoView,
-        chore: chore  // Always show if it exists, no threshold
+        chores: chores  // Always show if it exists, no threshold
       };
     }).filter(s => s.tasks.length > 0 || s.pastDue.length > 0);
 
