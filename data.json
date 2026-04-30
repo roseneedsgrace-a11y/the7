@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-30T15:11:01.569Z",
+  "generated": "2026-04-30T21:42:55.540Z",
   "date": "Thursday, April 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1307,7 +1307,7 @@
               "task": "Lesson 14 & Paper (L10-14 Writing Exercise)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-English-Thu",
               "row": 186,
               "col": 5
@@ -2255,7 +2255,7 @@
               "task": "Chapter 8 Test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Science-Thu",
               "row": 186,
               "col": 7
@@ -9581,7 +9581,7 @@
               "task": "The Book Thief Chap 87-88 & Day 20",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-English-Mon",
               "row": 183,
               "col": 8
@@ -10527,7 +10527,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Bible-Thu",
               "row": 186,
               "col": 3
