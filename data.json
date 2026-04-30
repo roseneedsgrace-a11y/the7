@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-30T02:09:48.456Z",
-  "date": "Wednesday, April 29",
+  "generated": "2026-04-30T15:08:01.851Z",
+  "date": "Thursday, April 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -359,7 +359,7 @@
               "task": "Read \"Relationships\": Ch. 10 (pp. 98-108)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Bible-Thu",
               "row": 186,
               "col": 3
@@ -7380,7 +7380,7 @@
               "task": "Review \"Relationships\" Ch. 1-12 / Catch-up, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W37-Bible-Thu",
               "row": 186,
               "col": 3
@@ -13310,7 +13310,7 @@
               "task": "Lesson 126",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Saxon Math-Mon",
               "row": 182,
               "col": 4
@@ -13323,7 +13323,7 @@
               "task": "Lesson 127",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Saxon Math-Tue",
               "row": 183,
               "col": 4
@@ -13336,7 +13336,7 @@
               "task": "Lesson 128",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Saxon Math-Wed",
               "row": 184,
               "col": 4
