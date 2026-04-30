@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-30T22:04:21.770Z",
+  "generated": "2026-04-30T22:38:35.516Z",
   "date": "Thursday, April 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -29,7 +29,7 @@
       "name": "Ezra",
       "palette": "boy",
       "currentWeek": 37,
-      "chore": "Clean kitchen - dishes, counters, dishwasher, organize"
+      "chore": "Clean kitchen - dishes, counters, dishwasher, organize<br/> Walk a dog"
     },
     {
       "name": "Tabitha",
