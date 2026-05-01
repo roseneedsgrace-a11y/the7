@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T14:57:36.989Z",
+  "generated": "2026-05-01T14:59:59.892Z",
   "date": "Friday, May 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12926,7 +12926,7 @@
               "task": "The Ology, Bible Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Bible-Fri",
               "row": 186,
               "col": 3
