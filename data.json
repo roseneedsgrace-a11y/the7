@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T13:15:16.489Z",
+  "generated": "2026-05-01T13:38:24.004Z",
   "date": "Friday, May 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -741,7 +741,7 @@
               "task": "Lesson 11 - Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W36-History-Mon",
               "row": 178,
               "col": 4
@@ -2280,7 +2280,7 @@
               "task": "Study for Midterm",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Science-Fri",
               "row": 187,
               "col": 7
@@ -3228,7 +3228,7 @@
               "task": "Final Grade is the Average of Hillsdale Courses (combined) and Econoomics for Everyone and a pop quiz, which mom will give you later.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Citizenship-Fri",
               "row": 187,
               "col": 9
@@ -10552,7 +10552,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W37-Bible-Fri",
               "row": 187,
               "col": 3
