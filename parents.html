@@ -501,7 +501,7 @@ function buildChoreRow(studentName, chores, palette, date) {
   if (!chores || !chores.length) return '';
   
   const lp = getLocalProgress();
-  let html = `<div class="chore-section-label">Last but Not Least</div>`;
+  let html = `<div class="chore-section-label">Last but Not Least: Daily Chores</div>`;
   
   chores.forEach((chore, i) => {
     const id = getChoreId(studentName, date, i);
@@ -514,8 +514,7 @@ function buildChoreRow(studentName, chores, palette, date) {
         </div>
         <div class="task-info">
           ${i === 0 ? `
-            <div style="display:flex; align-items:center; justify-content:space-between;">
-              <div class="task-subject" style="color:${palette.primary};">Daily Chore</div>
+            <div style="display:flex; align-items:center; justify-content:flex-end;">
               <button onclick="editChores('${studentName}', event)" 
                 style="font-size:11px; color:#94a3b8; background:none; border:none; cursor:pointer; padding:2px 6px;">
                 ✏️ edit
@@ -526,7 +525,6 @@ function buildChoreRow(studentName, chores, palette, date) {
       </div>`;
   });
 
-  // Inline edit panel — edit all chores at once
   html += `
     <div id="chore-edit-${studentName}" style="display:none; padding:12px 18px; background:#f8fafc; border-top:1px solid #e2e8f0;">
       <div id="chore-inputs-${studentName}">
