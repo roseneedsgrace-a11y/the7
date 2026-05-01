@@ -402,18 +402,28 @@
   }
   #choreBanner.subtle #choreBannerIcon { opacity: 0.4; font-size: 1rem; }
 
-  /* Active state */
-  #choreBanner.active #choreBannerInner {
-    background: var(--secondary);
-    color: var(--tertiary);
-    border-bottom: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-  #choreBanner.active #choreBannerIcon {
-    opacity: 1;
-    font-size: 1.3rem;
-    animation: wiggle 1s ease 0.5s 2;
-  }
+    /* Active state */
+    #choreBanner.active #choreBannerInner {
+      background: var(--secondary);
+      border-bottom: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      color: var(--bg);
+    }
+    #choreBanner.active #choreBannerIcon {
+      opacity: 1;
+      font-size: 1.2rem;
+      animation: wiggle 1s ease 0.5s 2;
+    }
+    #choreBanner.active .chore-checkbox {
+      border-color: var(--bg);
+    }
+    #choreBanner.active .chore-checkbox.checked {
+      background: var(--bg);
+      border-color: var(--bg);
+    }
+    #choreBanner.active .chore-checkbox.checked::after {
+      border-color: var(--secondary);
+    }
 
   /* Done state */
   #choreBanner.done #choreBannerInner {
