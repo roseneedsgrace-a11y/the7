@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T13:38:24.004Z",
+  "generated": "2026-05-01T14:57:36.989Z",
   "date": "Friday, May 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5362,7 +5362,7 @@
               "task": "Read the chapter if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Literature-Fri",
               "row": 188,
               "col": 7
@@ -5771,7 +5771,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Reading & Grammar-Fri",
               "row": 188,
               "col": 8
