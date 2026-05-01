@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T16:08:56.334Z",
+  "generated": "2026-05-01T22:29:38.157Z",
   "date": "Friday, May 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1332,7 +1332,7 @@
               "task": "Lesson 15 & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-English-Fri",
               "row": 187,
               "col": 5
@@ -13361,7 +13361,7 @@
               "task": "Lesson 129",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Saxon Math-Thu",
               "row": 185,
               "col": 4
@@ -13374,7 +13374,7 @@
               "task": "Lesson 130 (assessment)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Saxon Math-Fri",
               "row": 186,
               "col": 4
