@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T00:25:50.713Z",
+  "generated": "2026-05-01T02:38:05.479Z",
   "date": "Thursday, April 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -20,7 +20,7 @@
       "palette": "ocean",
       "currentWeek": 37,
       "chore": [
-        "Vacuum and pick up floors"
+        "Pick up floors, put away schoolwork"
       ]
     },
     {
@@ -4530,7 +4530,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-History-Thu",
               "row": 187,
               "col": 5
@@ -5348,7 +5348,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Literature-Thu",
               "row": 187,
               "col": 7
@@ -6166,7 +6166,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Writing & Rhetoric-Thu",
               "row": 187,
               "col": 9
@@ -6575,7 +6575,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Handwriting-Thu",
               "row": 187,
               "col": 10
@@ -6984,7 +6984,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Latin-Thu",
               "row": 187,
               "col": 11
