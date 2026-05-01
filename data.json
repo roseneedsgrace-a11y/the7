@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T02:38:05.479Z",
+  "generated": "2026-05-01T02:38:23.032Z",
   "date": "Thursday, April 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -28,7 +28,8 @@
       "palette": "safari",
       "currentWeek": 37,
       "chore": [
-        "Pick up school work, vaccum"
+        "Pick up school work",
+        "Vacuum"
       ]
     },
     {
