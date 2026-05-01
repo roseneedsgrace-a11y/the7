@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T00:03:04.234Z",
+  "generated": "2026-05-01T00:25:50.713Z",
   "date": "Thursday, April 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12,7 +12,7 @@
       "palette": "colonial",
       "currentWeek": 37,
       "chore": [
-        "Mow front lawn"
+        "Mow front lawn or Clean Room"
       ]
     },
     {
@@ -3712,7 +3712,7 @@
               "task": "The Ology, Bible Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Bible-Thu",
               "row": 187,
               "col": 3
@@ -4527,7 +4527,7 @@
               "date": "4/30",
               "rawDate": 1777525200000,
               "week": 37,
-              "task": "",
+              "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5345,7 +5345,7 @@
               "date": "4/30",
               "rawDate": 1777525200000,
               "week": 37,
-              "task": "",
+              "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6163,7 +6163,7 @@
               "date": "4/30",
               "rawDate": 1777525200000,
               "week": 37,
-              "task": "",
+              "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -6572,7 +6572,7 @@
               "date": "4/30",
               "rawDate": 1777525200000,
               "week": 37,
-              "task": "",
+              "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
