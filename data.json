@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T11:58:53.851Z",
+  "generated": "2026-05-01T13:15:16.489Z",
   "date": "Friday, May 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3726,7 +3726,7 @@
               "task": "The Ology, Bible Reading, Catechism Q35",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Bible-Fri",
               "row": 188,
               "col": 3
@@ -12913,7 +12913,7 @@
               "task": "The Ology, Bible Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Bible-Thu",
               "row": 185,
               "col": 3
@@ -13796,7 +13796,7 @@
               "task": "Review & Activities",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-History-Wed",
               "row": 184,
               "col": 5
@@ -13809,7 +13809,7 @@
               "task": "Review & Activities",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-History-Thu",
               "row": 185,
               "col": 5
@@ -14257,7 +14257,7 @@
               "task": "Discuss chapter w/mom and Narnia book",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W37-Literature-Thu",
               "row": 185,
               "col": 7
