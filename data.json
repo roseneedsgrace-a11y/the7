@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-04T20:05:49.317Z",
+  "generated": "2026-05-04T20:20:17.543Z",
   "date": "Monday, May 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5050,7 +5050,7 @@
               "task": "Read the chapter if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Literature-Mon",
               "row": 189,
               "col": 7
@@ -12762,7 +12762,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Literature-Tue",
               "row": 188,
               "col": 7
