@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-04T17:35:54.461Z",
+  "generated": "2026-05-04T20:05:49.317Z",
   "date": "Monday, May 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -345,7 +345,7 @@
               "task": "Read \"Relationships\": Ch. 11 (pp. 109-121)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-Bible-Mon",
               "row": 189,
               "col": 3
@@ -3674,7 +3674,7 @@
               "task": "The Ology, Bible Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Bible-Mon",
               "row": 189,
               "col": 3
@@ -4706,7 +4706,7 @@
               "task": "America the Beautiful (p. 190) - The Story & Hymn Study & Bible Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Music-Mon",
               "row": 189,
               "col": 6
@@ -6426,7 +6426,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Latin-Mon",
               "row": 189,
               "col": 11
@@ -11444,7 +11444,7 @@
               "task": "The Ology, Bible Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Bible-Mon",
               "row": 187,
               "col": 3
@@ -12788,7 +12788,7 @@
               "task": "Read Chapter 3: At the Gates of Tashbaan",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Literature-Thu",
               "row": 190,
               "col": 7
