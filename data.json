@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-04T22:06:00.037Z",
+  "generated": "2026-05-05T03:06:01.828Z",
   "date": "Monday, May 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -46,7 +46,8 @@
       "palette": "original",
       "currentWeek": 38,
       "chore": [
-        "Laundry"
+        "Laundry",
+        "Vacuum the car"
       ]
     }
   ],
@@ -806,7 +807,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-History-Sat",
               "row": 188,
               "col": 4
@@ -1280,7 +1281,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-English-Sat",
               "row": 188,
               "col": 5
@@ -2228,7 +2229,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Science-Sat",
               "row": 188,
               "col": 7
@@ -2702,7 +2703,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Math-Sat",
               "row": 188,
               "col": 8
@@ -3176,7 +3177,7 @@
               "task": "(✔️)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W37-Citizenship-Sat",
               "row": 188,
               "col": 9
