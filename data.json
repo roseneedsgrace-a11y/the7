@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-05T18:31:34.936Z",
+  "generated": "2026-05-05T20:25:41.594Z",
   "date": "Tuesday, May 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3688,7 +3688,7 @@
               "task": "The Ology, Bible Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Bible-Tue",
               "row": 190,
               "col": 3
@@ -9474,7 +9474,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Bible-Tue",
               "row": 189,
               "col": 3
@@ -11880,7 +11880,7 @@
               "task": "Lesson 131",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Saxon Math-Mon",
               "row": 187,
               "col": 4
@@ -13185,7 +13185,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
               "linkUrl": "https://youtu.be/GLmjfJyZ-iM?si=FGqogPFs1XasxyEC",
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Grammar-Mon",
               "row": 187,
               "col": 8
