@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-05T03:06:01.828Z",
-  "date": "Monday, May 4",
+  "generated": "2026-05-05T14:47:13.844Z",
+  "date": "Tuesday, May 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -1781,7 +1781,7 @@
               "task": "Lesson 29",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-Foreign Language-Tue",
               "row": 190,
               "col": 6
@@ -1794,7 +1794,7 @@
               "task": "Lesson 29",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-Foreign Language-Wed",
               "row": 191,
               "col": 6
@@ -8684,7 +8684,7 @@
               "task": "Till We Have Faces Chap & Days 7-8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-English-Mon",
               "row": 188,
               "col": 8
