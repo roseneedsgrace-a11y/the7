@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-05T20:25:41.594Z",
+  "generated": "2026-05-05T20:52:30.024Z",
   "date": "Tuesday, May 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -820,7 +820,7 @@
               "task": "Lesson 15 Test, pt. 1 & 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-History-Mon",
               "row": 189,
               "col": 4
@@ -11458,7 +11458,7 @@
               "task": "The Ology, Bible Reading, Catechism Q38",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Bible-Tue",
               "row": 188,
               "col": 3
@@ -13185,7 +13185,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
               "linkUrl": "https://youtu.be/GLmjfJyZ-iM?si=FGqogPFs1XasxyEC",
-              "done": true,
+              "done": false,
               "id": "Tabitha-W38-Grammar-Mon",
               "row": 187,
               "col": 8
