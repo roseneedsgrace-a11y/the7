@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-05T14:47:13.844Z",
+  "generated": "2026-05-05T18:31:34.936Z",
   "date": "Tuesday, May 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6769,7 +6769,7 @@
               "task": "Read \"Relationships\": Ch. 13 (pp. 132-143), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-Bible-Mon",
               "row": 188,
               "col": 3
@@ -6782,7 +6782,7 @@
               "task": "Read \"Relationships\": Ch. 14 (pp. 144-157), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-Bible-Tue",
               "row": 189,
               "col": 3
@@ -7178,7 +7178,7 @@
               "task": "P4 L4 #1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-Health-Wed",
               "row": 190,
               "col": 4
@@ -7191,7 +7191,7 @@
               "task": "P4 L4 #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-Health-Thu",
               "row": 191,
               "col": 4
@@ -8697,7 +8697,7 @@
               "task": "Till We Have Faces Chap & Days 9-10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-English-Tue",
               "row": 189,
               "col": 8
@@ -9461,7 +9461,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Bible-Mon",
               "row": 188,
               "col": 3
@@ -10454,7 +10454,7 @@
               "task": "Shormann Math\nLesson 99 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Algebra 1-Mon",
               "row": 188,
               "col": 6
