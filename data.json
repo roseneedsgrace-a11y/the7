@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T18:47:17.227Z",
+  "generated": "2026-05-06T20:06:01.827Z",
   "date": "Wednesday, May 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -372,7 +372,7 @@
               "task": "Read \"Relationships\": Ch. 12 (pp. 122-131)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-Bible-Wed",
               "row": 191,
               "col": 3
@@ -4032,7 +4032,7 @@
               "task": "Drill Team & Lesson 63",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Nicole the Math Lady-Tue",
               "row": 190,
               "col": 4
@@ -4045,7 +4045,7 @@
               "task": "Drill Team & Lesson 63 & 64",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Nicole the Math Lady-Wed",
               "row": 191,
               "col": 4
@@ -6401,7 +6401,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W37-Latin-Thu",
               "row": 187,
               "col": 11
