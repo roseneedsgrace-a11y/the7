@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T20:06:01.827Z",
+  "generated": "2026-05-06T20:11:23.976Z",
   "date": "Wednesday, May 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5077,7 +5077,7 @@
               "task": "Read the chapter if you need to. Work through the next Narnia devotional with Tabitha",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Literature-Wed",
               "row": 191,
               "col": 7
@@ -6109,7 +6109,7 @@
               "task": "Write out a verse in your very best handwriting.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Handwriting-Wed",
               "row": 191,
               "col": 10
