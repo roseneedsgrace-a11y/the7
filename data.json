@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-06T02:21:35.847Z",
-  "date": "Tuesday, May 5",
+  "generated": "2026-05-06T14:21:21.496Z",
+  "date": "Wednesday, May 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -833,7 +833,7 @@
               "task": "Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-History-Tue",
               "row": 190,
               "col": 4
@@ -6795,7 +6795,7 @@
               "task": "Read \"Relationships\": Ch. 15 (pp. 158-167), Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-Bible-Wed",
               "row": 190,
               "col": 3
@@ -8710,7 +8710,7 @@
               "task": "Till We Have Faces Chap & Days 11-12",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-English-Wed",
               "row": 190,
               "col": 8
@@ -11471,7 +11471,7 @@
               "task": "The Ology, Bible Reading, Catechism Q38",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Bible-Wed",
               "row": 189,
               "col": 3
@@ -13208,9 +13208,9 @@
               "date": "5/6",
               "rawDate": 1778043600000,
               "week": 38,
-              "task": "CellImage",
-              "imageUrl": null,
-              "linkUrl": null,
+              "task": "",
+              "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutube.com%2Fplaylist%3Flist%3DPLKTUEjoI9EhsLRrAQwC9hOp9MJMcXOG54%26si%3D0HNsmMAmn6YEnej-",
+              "linkUrl": "https://youtube.com/playlist?list=PLKTUEjoI9EhsLRrAQwC9hOp9MJMcXOG54&si=0HNsmMAmn6YEnej-",
               "done": false,
               "id": "Tabitha-W38-Grammar-Wed",
               "row": 189,
