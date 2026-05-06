@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T16:45:55.172Z",
+  "generated": "2026-05-06T18:47:17.227Z",
   "date": "Wednesday, May 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3701,7 +3701,7 @@
               "task": "The Ology, Bible Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Bible-Wed",
               "row": 191,
               "col": 3
@@ -5421,7 +5421,7 @@
               "task": "Journal Entry. At least 5 Sentences",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Reading & Grammar-Wed",
               "row": 191,
               "col": 8
@@ -6453,7 +6453,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Latin-Wed",
               "row": 191,
               "col": 11
