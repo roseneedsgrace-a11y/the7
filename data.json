@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T16:18:55.204Z",
+  "generated": "2026-05-07T18:24:11.872Z",
   "date": "Thursday, May 7",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1307,7 +1307,7 @@
               "task": "Lesson 16 & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Amos-W38-English-Tue",
               "row": 190,
               "col": 5
@@ -8723,7 +8723,7 @@
               "task": "Till We Have Faces Chap & Days 13-14",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-English-Thu",
               "row": 191,
               "col": 8
