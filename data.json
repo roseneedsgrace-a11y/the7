@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-07T02:48:18.476Z",
-  "date": "Wednesday, May 6",
+  "generated": "2026-05-07T15:50:47.053Z",
+  "date": "Thursday, May 7",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -398,7 +398,7 @@
               "task": "Review \"Relationships\" Ch. 1-12 / Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-Bible-Fri",
               "row": 193,
               "col": 3
@@ -3714,7 +3714,7 @@
               "task": "The Ology, Bible Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Bible-Thu",
               "row": 192,
               "col": 3
@@ -4746,7 +4746,7 @@
               "task": "America the Beautiful (p. 190) - Review & Final Practice",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Music-Thu",
               "row": 192,
               "col": 6
@@ -4759,7 +4759,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
               "linkUrl": "https://drive.google.com/drive/folders/1YhfsnOtZhJi0X5AIWDAnUDZHCWsZCmdZ",
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Music-Fri",
               "row": 193,
               "col": 6
@@ -5434,7 +5434,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Reading & Grammar-Thu",
               "row": 192,
               "col": 8
@@ -6466,7 +6466,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Latin-Thu",
               "row": 192,
               "col": 11
@@ -9500,7 +9500,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Bible-Thu",
               "row": 191,
               "col": 3
@@ -10493,7 +10493,7 @@
               "task": "Shormann Math\nLesson 100 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Algebra 1-Thu",
               "row": 191,
               "col": 6
