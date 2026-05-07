@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T23:20:35.602Z",
+  "generated": "2026-05-07T02:48:01.987Z",
   "date": "Wednesday, May 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -846,7 +846,7 @@
               "task": "Lesson 16 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-History-Wed",
               "row": 191,
               "col": 4
@@ -1320,7 +1320,7 @@
               "task": "Lesson 17 & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-English-Wed",
               "row": 191,
               "col": 5
@@ -9487,7 +9487,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Bible-Wed",
               "row": 190,
               "col": 3
