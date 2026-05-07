@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T18:24:11.872Z",
+  "generated": "2026-05-07T20:01:13.869Z",
   "date": "Thursday, May 7",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1307,7 +1307,7 @@
               "task": "Lesson 16 & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-English-Tue",
               "row": 190,
               "col": 5
@@ -6808,7 +6808,7 @@
               "task": "Final Review / Catch-up, Bible Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W38-Bible-Thu",
               "row": 191,
               "col": 3
@@ -11484,7 +11484,7 @@
               "task": "The Ology, Bible Reading, Catechism Q38",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Bible-Thu",
               "row": 190,
               "col": 3
@@ -12854,7 +12854,7 @@
               "task": "Read Chapter 4: Shasta Falls in with the Narnians",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W39-Literature-Thu",
               "row": 195,
               "col": 7
@@ -13185,7 +13185,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fyoutu.be%2FGLmjfJyZ-iM%3Fsi%3DFGqogPFs1XasxyEC",
               "linkUrl": "https://youtu.be/GLmjfJyZ-iM?si=FGqogPFs1XasxyEC",
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Grammar-Mon",
               "row": 187,
               "col": 8
