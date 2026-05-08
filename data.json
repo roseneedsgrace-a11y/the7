@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-08T16:28:13.282Z",
+  "generated": "2026-05-08T19:19:18.702Z",
   "date": "Friday, May 8",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -37,8 +37,8 @@
       "palette": "boy",
       "currentWeek": 38,
       "chore": [
-        "Clean kitchen - dishes, counters, dishwasher, organize",
-        "Walk the dogs"
+        "Walk the dogs",
+        "Clean two bathrooms"
       ]
     },
     {
@@ -9513,7 +9513,7 @@
               "task": "The Ology\nProv. Lesson\nBible Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W38-Bible-Fri",
               "row": 192,
               "col": 3
