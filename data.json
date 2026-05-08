@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-08T13:56:24.003Z",
+  "generated": "2026-05-08T13:56:59.543Z",
   "date": "Friday, May 8",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12802,7 +12802,7 @@
               "task": "Discuss chapter w/mom and Narnia book",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Literature-Fri",
               "row": 191,
               "col": 7
@@ -13224,7 +13224,7 @@
               "task": "Lesson Jingles EACH day. Complete Ch. 24, Lesson 6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Grammar-Thu",
               "row": 190,
               "col": 8
