@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T23:45:31.808Z",
+  "generated": "2026-05-08T03:09:42.588Z",
   "date": "Thursday, May 7",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -872,7 +872,7 @@
               "task": "Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W38-History-Fri",
               "row": 193,
               "col": 4
@@ -11919,7 +11919,7 @@
               "task": "Lesson 134",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Saxon Math-Thu",
               "row": 190,
               "col": 4
