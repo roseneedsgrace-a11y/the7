@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-08T13:56:59.543Z",
+  "generated": "2026-05-08T15:01:14.145Z",
   "date": "Friday, May 8",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3727,7 +3727,7 @@
               "task": "The Ology, Bible Reading, Catechism Q36",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Bible-Fri",
               "row": 193,
               "col": 3
@@ -7217,7 +7217,7 @@
               "task": "P4 L4 #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W39-Health-Mon",
               "row": 193,
               "col": 4
@@ -7230,7 +7230,7 @@
               "task": "P4 L4 #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W39-Health-Tue",
               "row": 194,
               "col": 4
