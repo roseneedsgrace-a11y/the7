@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-11T15:03:27.945Z",
+  "generated": "2026-05-11T17:21:26.979Z",
   "date": "Monday, May 11",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -346,7 +346,7 @@
               "task": "Read \"Relationships\": Ch. 13 (pp. 132-143)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Bible-Mon",
               "row": 194,
               "col": 3
@@ -1768,7 +1768,7 @@
               "task": "Lesson 30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Foreign Language-Mon",
               "row": 194,
               "col": 6
@@ -2242,7 +2242,7 @@
               "task": "Chapter 10.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Science-Mon",
               "row": 194,
               "col": 7
@@ -6871,7 +6871,7 @@
               "task": "Till We Have Faces Chap & Days 15-16",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W39-English-Mon",
               "row": 193,
               "col": 8
