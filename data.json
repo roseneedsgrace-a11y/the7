@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-11T17:21:26.979Z",
+  "generated": "2026-05-12T00:36:25.074Z",
   "date": "Monday, May 11",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -9306,7 +9306,7 @@
               "task": "Lesson 135",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W38-Saxon Math-Fri",
               "row": 191,
               "col": 4
@@ -10098,7 +10098,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W39-Literature-Tue",
               "row": 193,
               "col": 7
@@ -10124,7 +10124,7 @@
               "task": "Read Chapter 4: Shasta Falls in with the Narnians",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Tabitha-W39-Literature-Thu",
               "row": 195,
               "col": 7
