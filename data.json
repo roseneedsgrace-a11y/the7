@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12T16:31:51.448Z",
+  "generated": "2026-05-12T16:35:28.230Z",
   "date": "Tuesday, May 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -7258,7 +7258,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Bible-Tue",
               "row": 3,
               "col": 3
@@ -7271,7 +7271,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Bible-Wed",
               "row": 4,
               "col": 3
@@ -7284,7 +7284,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Bible-Thu",
               "row": 5,
               "col": 3
@@ -7297,7 +7297,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Bible-Fri",
               "row": 6,
               "col": 3
@@ -7310,7 +7310,7 @@
               "task": "The Ology, Bible Reading w/ Journaling (turn in 5 entries)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Bible-Sat",
               "row": 7,
               "col": 3
@@ -7323,7 +7323,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Bible-Tue",
               "row": 8,
               "col": 3
@@ -7336,7 +7336,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Bible-Wed",
               "row": 9,
               "col": 3
@@ -7349,7 +7349,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Bible-Thu",
               "row": 10,
               "col": 3
@@ -7362,7 +7362,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Bible-Fri",
               "row": 11,
               "col": 3
@@ -7375,7 +7375,7 @@
               "task": "The Ology, Bible Reading w/ Journaling (turn in 5 entries)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Bible-Sat",
               "row": 12,
               "col": 3
@@ -7388,7 +7388,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Bible-Tue",
               "row": 13,
               "col": 3
@@ -7401,7 +7401,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Bible-Wed",
               "row": 14,
               "col": 3
@@ -7414,7 +7414,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Bible-Thu",
               "row": 15,
               "col": 3
@@ -7427,7 +7427,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Bible-Fri",
               "row": 16,
               "col": 3
@@ -7440,7 +7440,7 @@
               "task": "The Ology, Bible Reading w/ Journaling (turn in 5 entries)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Bible-Sat",
               "row": 17,
               "col": 3
@@ -7459,7 +7459,7 @@
               "task": "Set up your online account with Hillsdale",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Hillsdale History-Tue",
               "row": 3,
               "col": 4
@@ -7485,7 +7485,7 @@
               "task": "Ancient Christianity Lesson #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Hillsdale History-Thu",
               "row": 5,
               "col": 4
@@ -7511,7 +7511,7 @@
               "task": "Ancient Christianity Lesson #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Hillsdale History-Sat",
               "row": 7,
               "col": 4
@@ -7537,7 +7537,7 @@
               "task": "Ancient Christianity Lesson #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Hillsdale History-Wed",
               "row": 9,
               "col": 4
@@ -7563,7 +7563,7 @@
               "task": "Ancient Christianity Lesson #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Hillsdale History-Fri",
               "row": 11,
               "col": 4
@@ -7589,7 +7589,7 @@
               "task": "Ancient Christianity Lesson #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Hillsdale History-Tue",
               "row": 13,
               "col": 4
@@ -7615,7 +7615,7 @@
               "task": "Ancient Christianity Lesson #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Hillsdale History-Thu",
               "row": 15,
               "col": 4
@@ -7628,7 +7628,7 @@
               "task": "Ancient Christianity Lesson #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Hillsdale History-Fri",
               "row": 16,
               "col": 4
@@ -7673,7 +7673,7 @@
               "task": "First Steps: How this Class Works",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Creation Science-Wed",
               "row": 4,
               "col": 5
@@ -7686,7 +7686,7 @@
               "task": "First Steps: Read \"Young Beginnings\"",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Creation Science-Thu",
               "row": 5,
               "col": 5
@@ -7699,7 +7699,7 @@
               "task": "Read Genesis 1–11",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Creation Science-Fri",
               "row": 6,
               "col": 5
@@ -7712,7 +7712,7 @@
               "task": "Lesson 1: ½ Is Genensis History Video",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Creation Science-Sat",
               "row": 7,
               "col": 5
@@ -7725,7 +7725,7 @@
               "task": "Lesson 1: ½ Is Genensis History Video",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Creation Science-Tue",
               "row": 8,
               "col": 5
@@ -7738,7 +7738,7 @@
               "task": "Lesson 1: next step",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Creation Science-Wed",
               "row": 9,
               "col": 5
@@ -7751,7 +7751,7 @@
               "task": "Lesson 1: essay - day 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Creation Science-Thu",
               "row": 10,
               "col": 5
@@ -7764,7 +7764,7 @@
               "task": "Lesson 1: essay - day 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Creation Science-Fri",
               "row": 11,
               "col": 5
@@ -7777,7 +7777,7 @@
               "task": "Lesson 1: next step",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Creation Science-Sat",
               "row": 12,
               "col": 5
@@ -7790,7 +7790,7 @@
               "task": "Co-Op Science Class",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Creation Science-Tue",
               "row": 13,
               "col": 5
@@ -7803,7 +7803,7 @@
               "task": "Lesson 1: next step",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Creation Science-Wed",
               "row": 14,
               "col": 5
@@ -7816,7 +7816,7 @@
               "task": "Lesson 1: next step",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Creation Science-Thu",
               "row": 15,
               "col": 5
@@ -7829,7 +7829,7 @@
               "task": "Lesson 1: next step",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Creation Science-Fri",
               "row": 16,
               "col": 5
@@ -7842,7 +7842,7 @@
               "task": "Lesson 1: Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Creation Science-Sat",
               "row": 17,
               "col": 5
@@ -7861,7 +7861,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Algebra 1-Tue",
               "row": 3,
               "col": 6
@@ -7874,7 +7874,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Algebra 1-Wed",
               "row": 4,
               "col": 6
@@ -7887,7 +7887,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Algebra 1-Thu",
               "row": 5,
               "col": 6
@@ -7900,7 +7900,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Algebra 1-Fri",
               "row": 6,
               "col": 6
@@ -7913,7 +7913,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Algebra 1-Sat",
               "row": 7,
               "col": 6
@@ -7926,7 +7926,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Algebra 1-Tue",
               "row": 8,
               "col": 6
@@ -7939,7 +7939,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Algebra 1-Wed",
               "row": 9,
               "col": 6
@@ -7952,7 +7952,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Algebra 1-Thu",
               "row": 10,
               "col": 6
@@ -7965,7 +7965,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Algebra 1-Fri",
               "row": 11,
               "col": 6
@@ -7978,7 +7978,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Algebra 1-Sat",
               "row": 12,
               "col": 6
@@ -7991,7 +7991,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Algebra 1-Tue",
               "row": 13,
               "col": 6
@@ -8004,7 +8004,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Algebra 1-Wed",
               "row": 14,
               "col": 6
@@ -8017,7 +8017,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Algebra 1-Thu",
               "row": 15,
               "col": 6
@@ -8030,7 +8030,7 @@
               "task": "Shormann Math",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Algebra 1-Fri",
               "row": 16,
               "col": 6
@@ -8062,7 +8062,7 @@
               "task": "1/2 of a Lecture",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Middle School Literature-Tue",
               "row": 3,
               "col": 7
@@ -8075,7 +8075,7 @@
               "task": "2nd 1/2 of the Lecture",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Middle School Literature-Wed",
               "row": 4,
               "col": 7
@@ -8088,7 +8088,7 @@
               "task": "Assignment",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Middle School Literature-Thu",
               "row": 5,
               "col": 7
@@ -8127,7 +8127,7 @@
               "task": "1/2 of a Lecture",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Middle School Literature-Tue",
               "row": 8,
               "col": 7
@@ -8140,7 +8140,7 @@
               "task": "2nd 1/2 of the Lecture",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Middle School Literature-Wed",
               "row": 9,
               "col": 7
@@ -8153,7 +8153,7 @@
               "task": "Assignment",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Middle School Literature-Thu",
               "row": 10,
               "col": 7
@@ -8192,7 +8192,7 @@
               "task": "1/2 of a Lecture",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Middle School Literature-Tue",
               "row": 13,
               "col": 7
@@ -8205,7 +8205,7 @@
               "task": "2nd 1/2 of the Lecture",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Middle School Literature-Wed",
               "row": 14,
               "col": 7
@@ -8218,7 +8218,7 @@
               "task": "Assignment",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Middle School Literature-Thu",
               "row": 15,
               "col": 7
@@ -8263,7 +8263,7 @@
               "task": "Word Up Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Other-Tue",
               "row": 3,
               "col": 8
@@ -8276,7 +8276,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Other-Wed",
               "row": 4,
               "col": 8
@@ -8289,7 +8289,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Other-Thu",
               "row": 5,
               "col": 8
@@ -8302,7 +8302,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Other-Fri",
               "row": 6,
               "col": 8
@@ -8315,7 +8315,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Other-Sat",
               "row": 7,
               "col": 8
@@ -8328,7 +8328,7 @@
               "task": "Word Up Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Other-Tue",
               "row": 8,
               "col": 8
@@ -8341,7 +8341,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Other-Wed",
               "row": 9,
               "col": 8
@@ -8354,7 +8354,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Other-Thu",
               "row": 10,
               "col": 8
@@ -8367,7 +8367,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Other-Fri",
               "row": 11,
               "col": 8
@@ -8380,7 +8380,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Other-Sat",
               "row": 12,
               "col": 8
@@ -8393,7 +8393,7 @@
               "task": "Word Up Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Other-Tue",
               "row": 13,
               "col": 8
@@ -8406,7 +8406,7 @@
               "task": "A Tutle Twins Logical Fallacy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Other-Wed",
               "row": 14,
               "col": 8
@@ -8419,7 +8419,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Other-Thu",
               "row": 15,
               "col": 8
@@ -8432,7 +8432,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Other-Fri",
               "row": 16,
               "col": 8
@@ -8445,7 +8445,7 @@
               "task": "Sherlock Holmes Cunundrum",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Other-Sat",
               "row": 17,
               "col": 8
@@ -8464,7 +8464,7 @@
               "task": "Great Music: Instructions and Set Up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Electives-Tue",
               "row": 3,
               "col": 9
@@ -8477,7 +8477,7 @@
               "task": "Great Music Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Electives-Wed",
               "row": 4,
               "col": 9
@@ -8490,7 +8490,7 @@
               "task": "Great Music Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Electives-Thu",
               "row": 5,
               "col": 9
@@ -8503,7 +8503,7 @@
               "task": "Great Music Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Electives-Fri",
               "row": 6,
               "col": 9
@@ -8516,7 +8516,7 @@
               "task": "Finish Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W1-Electives-Sat",
               "row": 7,
               "col": 9
@@ -8529,7 +8529,7 @@
               "task": "Great Music Lesosn 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Electives-Tue",
               "row": 8,
               "col": 9
@@ -8542,7 +8542,7 @@
               "task": "Great Music Lesosn 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Electives-Wed",
               "row": 9,
               "col": 9
@@ -8555,7 +8555,7 @@
               "task": "Great Music Lesosn 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Electives-Thu",
               "row": 10,
               "col": 9
@@ -8568,7 +8568,7 @@
               "task": "Great Music Lesosn 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Electives-Fri",
               "row": 11,
               "col": 9
@@ -8581,7 +8581,7 @@
               "task": "Great Music Quiz #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W2-Electives-Sat",
               "row": 12,
               "col": 9
@@ -8594,7 +8594,7 @@
               "task": "Great Music Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Electives-Tue",
               "row": 13,
               "col": 9
@@ -8607,7 +8607,7 @@
               "task": "Great Music Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Electives-Wed",
               "row": 14,
               "col": 9
@@ -8620,7 +8620,7 @@
               "task": "Great Music Lesson 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Electives-Thu",
               "row": 15,
               "col": 9
@@ -8633,7 +8633,7 @@
               "task": "Great Music Quiz #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Ezra-W3-Electives-Fri",
               "row": 16,
               "col": 9
