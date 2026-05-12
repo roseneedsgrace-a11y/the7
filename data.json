@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-12T00:36:49.648Z",
-  "date": "Monday, May 11",
+  "generated": "2026-05-12T16:31:51.448Z",
+  "date": "Tuesday, May 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -359,7 +359,7 @@
               "task": "Write 10 key details from the chapters.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Bible-Tue",
               "row": 195,
               "col": 3
@@ -820,7 +820,7 @@
               "task": "Lesson 17 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-History-Mon",
               "row": 194,
               "col": 4
@@ -1781,7 +1781,7 @@
               "task": "Lesson 30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Foreign Language-Tue",
               "row": 195,
               "col": 6
@@ -2255,7 +2255,7 @@
               "task": "Chapter 10.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Science-Tue",
               "row": 195,
               "col": 7
@@ -5625,7 +5625,7 @@
               "task": "P4 L4 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W39-Health-Wed",
               "row": 195,
               "col": 4
@@ -5638,7 +5638,7 @@
               "task": "P4 L4 #7 & Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W39-Health-Thu",
               "row": 196,
               "col": 4
@@ -6884,7 +6884,7 @@
               "task": "Till We Have Faces Chap & Days 17-18",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W39-English-Tue",
               "row": 194,
               "col": 8
