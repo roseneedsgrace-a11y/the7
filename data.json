@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12T22:23:58.378Z",
+  "generated": "2026-05-12T23:30:48.047Z",
   "date": "Tuesday, May 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12769,7 +12769,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W39-Literature-Wed",
               "row": 194,
               "col": 7
