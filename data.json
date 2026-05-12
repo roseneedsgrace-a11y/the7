@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12T19:55:51.527Z",
+  "generated": "2026-05-12T19:58:43.905Z",
   "date": "Tuesday, May 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3675,7 +3675,7 @@
               "task": "The Ology, Bible Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Bible-Mon",
               "row": 194,
               "col": 3
@@ -4162,7 +4162,7 @@
               "task": "Drill Team & Lesson 67",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Nicole the Math Lady-Tue",
               "row": 195,
               "col": 4
@@ -7454,7 +7454,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W38-Latin-Fri",
               "row": 193,
               "col": 11
