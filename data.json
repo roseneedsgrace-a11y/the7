@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12T20:05:57.063Z",
+  "generated": "2026-05-12T22:23:58.378Z",
   "date": "Tuesday, May 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6045,7 +6045,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Reading & Grammar-Mon",
               "row": 194,
               "col": 8
@@ -7480,7 +7480,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Latin-Tue",
               "row": 195,
               "col": 11
@@ -12003,7 +12003,7 @@
               "task": "Lesson 136",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W39-Saxon Math-Wed",
               "row": 194,
               "col": 4
