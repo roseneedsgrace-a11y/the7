@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-13T02:23:40.371Z",
-  "date": "Tuesday, May 12",
+  "generated": "2026-05-13T13:44:22.116Z",
+  "date": "Wednesday, May 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -3688,7 +3688,7 @@
               "task": "The Ology, Bible Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Bible-Tue",
               "row": 195,
               "col": 3
