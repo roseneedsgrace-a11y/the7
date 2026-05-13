@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-13T13:44:22.116Z",
+  "generated": "2026-05-13T15:56:12.957Z",
   "date": "Wednesday, May 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3701,7 +3701,7 @@
               "task": "The Ology, Bible Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Bible-Wed",
               "row": 196,
               "col": 3
@@ -4188,7 +4188,7 @@
               "task": "Drill Team & Lesson 69",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Nicole the Math Lady-Thu",
               "row": 197,
               "col": 4
@@ -6071,7 +6071,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Reading & Grammar-Wed",
               "row": 196,
               "col": 8
