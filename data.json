@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12T23:55:16.310Z",
+  "generated": "2026-05-13T01:04:42.488Z",
   "date": "Tuesday, May 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1294,7 +1294,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-English-Mon",
               "row": 194,
               "col": 5
