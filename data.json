@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-13T18:41:11.718Z",
-  "date": "Wednesday, May 13",
+  "generated": "2026-05-14T13:19:49.319Z",
+  "date": "Thursday, May 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -2268,7 +2268,7 @@
               "task": "Chapter 10.4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Science-Wed",
               "row": 196,
               "col": 7
@@ -4188,7 +4188,7 @@
               "task": "Drill Team & Lesson 69",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Beth-W39-Nicole the Math Lady-Thu",
               "row": 197,
               "col": 4
