@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-14T13:51:28.791Z",
+  "generated": "2026-05-14T23:14:02.160Z",
   "date": "Thursday, May 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1807,7 +1807,7 @@
               "task": "Lesson 30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Foreign Language-Thu",
               "row": 197,
               "col": 6
@@ -2281,7 +2281,7 @@
               "task": "Chapter 10.5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Science-Thu",
               "row": 197,
               "col": 7
@@ -4175,7 +4175,7 @@
               "task": "Drill Team & Lesson 68",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Nicole the Math Lady-Wed",
               "row": 196,
               "col": 4
@@ -4188,7 +4188,7 @@
               "task": "Drill Team & Lesson 69",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Nicole the Math Lady-Thu",
               "row": 197,
               "col": 4
@@ -12782,7 +12782,7 @@
               "task": "Read Chapter 4: Shasta Falls in with the Narnians",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W39-Literature-Thu",
               "row": 195,
               "col": 7
