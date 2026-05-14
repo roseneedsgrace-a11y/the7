@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-14T13:19:49.319Z",
+  "generated": "2026-05-14T13:51:28.791Z",
   "date": "Thursday, May 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3714,7 +3714,7 @@
               "task": "The Ology, Bible Reading, Catechism Q37",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Bible-Thu",
               "row": 197,
               "col": 3
@@ -6097,7 +6097,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Reading & Grammar-Fri",
               "row": 198,
               "col": 8
@@ -7506,7 +7506,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W39-Latin-Thu",
               "row": 197,
               "col": 11
