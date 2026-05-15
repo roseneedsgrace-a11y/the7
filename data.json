@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-15T13:51:59.052Z",
+  "generated": "2026-05-15T14:15:26.554Z",
   "date": "Friday, May 15",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4175,7 +4175,7 @@
               "task": "Drill Team & Lesson 68",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Beth-W39-Nicole the Math Lady-Wed",
               "row": 196,
               "col": 4
@@ -4188,7 +4188,7 @@
               "task": "Drill Team & Lesson 69",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "id": "Beth-W39-Nicole the Math Lady-Thu",
               "row": 197,
               "col": 4
