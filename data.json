@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-15T15:38:42.392Z",
+  "generated": "2026-05-15T17:17:06.253Z",
   "date": "Friday, May 15",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1820,7 +1820,7 @@
               "task": "Lesson 30 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Foreign Language-Fri",
               "row": 198,
               "col": 6
