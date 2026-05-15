@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-15T14:15:39.078Z",
+  "generated": "2026-05-15T15:27:13.611Z",
   "date": "Friday, May 15",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -385,7 +385,7 @@
               "task": "Read \"Relationships\": Ch. 14 (pp. 144-157)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-Bible-Thu",
               "row": 197,
               "col": 3
@@ -859,7 +859,7 @@
               "task": "Lesson 18 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-History-Thu",
               "row": 197,
               "col": 4
@@ -1320,7 +1320,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W39-English-Wed",
               "row": 196,
               "col": 5
