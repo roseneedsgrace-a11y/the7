@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-15T18:06:13.757Z",
-  "date": "Friday, May 15",
+  "generated": "2026-05-16T16:05:57.179Z",
+  "date": "Saturday, May 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -7545,7 +7545,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W40-Latin-Tue",
               "row": 200,
               "col": 11
@@ -7558,7 +7558,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W40-Latin-Wed",
               "row": 201,
               "col": 11
@@ -7571,7 +7571,7 @@
               "task": "Review Latin Flash Cards",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W40-Latin-Thu",
               "row": 202,
               "col": 11
@@ -7584,7 +7584,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W40-Latin-Fri",
               "row": 203,
               "col": 11
