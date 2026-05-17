@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-17T02:49:12.893Z",
-  "date": "Saturday, May 16",
+  "generated": "2026-05-17T13:23:41.727Z",
+  "date": "Sunday, May 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -11586,7 +11586,7 @@
               "task": "Lesson 136",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W39-Saxon Math-Wed",
               "row": 194,
               "col": 4
@@ -11599,7 +11599,7 @@
               "task": "Lesson 137",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W39-Saxon Math-Thu",
               "row": 195,
               "col": 4
@@ -11612,7 +11612,7 @@
               "task": "Lesson 138",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W39-Saxon Math-Fri",
               "row": 196,
               "col": 4
