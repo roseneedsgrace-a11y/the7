@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-18T16:47:57.114Z",
+  "generated": "2026-05-19T01:50:47.872Z",
   "date": "Monday, May 18",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2242,7 +2242,7 @@
               "task": "Chapter 11.1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W40-Science-Mon",
               "row": 199,
               "col": 7
