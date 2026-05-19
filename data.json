@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-19T12:36:23.906Z",
+  "generated": "2026-05-19T14:02:58.489Z",
   "date": "Tuesday, May 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2255,7 +2255,7 @@
               "task": "Chapter 11.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W40-Science-Tue",
               "row": 200,
               "col": 7
@@ -12027,7 +12027,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W40-Literature-Tue",
               "row": 198,
               "col": 7
@@ -12040,7 +12040,7 @@
               "task": "Read Chap. from Christian Heroes book.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W40-Literature-Wed",
               "row": 199,
               "col": 7
@@ -12053,7 +12053,7 @@
               "task": "Read Chapter 5: Prince Corin",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Tabitha-W40-Literature-Thu",
               "row": 200,
               "col": 7
