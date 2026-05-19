@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-19T17:44:26.729Z",
+  "generated": "2026-05-19T19:09:28.818Z",
   "date": "Tuesday, May 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -7562,7 +7562,7 @@
               "task": "OT: Intro #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Bible-Tue",
               "row": 3,
               "col": 3
@@ -7575,7 +7575,7 @@
               "task": "OT: Intro #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Bible-Wed",
               "row": 4,
               "col": 3
@@ -7588,7 +7588,7 @@
               "task": "OT: Intro #3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Bible-Thu",
               "row": 5,
               "col": 3
@@ -7601,7 +7601,7 @@
               "task": "OT: Intro #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Bible-Fri",
               "row": 6,
               "col": 3
@@ -7627,7 +7627,7 @@
               "task": "OT: L1 #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Bible-Tue",
               "row": 8,
               "col": 3
@@ -7640,7 +7640,7 @@
               "task": "OT: L1 #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Bible-Wed",
               "row": 9,
               "col": 3
@@ -7653,7 +7653,7 @@
               "task": "OT: Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Bible-Thu",
               "row": 10,
               "col": 3
@@ -7666,7 +7666,7 @@
               "task": "Seeng w/ New Eyes, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Bible-Fri",
               "row": 11,
               "col": 3
@@ -7692,7 +7692,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Bible-Tue",
               "row": 13,
               "col": 3
@@ -7705,7 +7705,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Bible-Wed",
               "row": 14,
               "col": 3
@@ -7718,7 +7718,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Bible-Thu",
               "row": 15,
               "col": 3
@@ -7731,7 +7731,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Bible-Fri",
               "row": 16,
               "col": 3
@@ -7744,7 +7744,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Bible-Sat",
               "row": 17,
               "col": 3
@@ -7763,7 +7763,7 @@
               "task": "Intro Step 1 & 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Health-Tue",
               "row": 3,
               "col": 4
@@ -7776,7 +7776,7 @@
               "task": "P1 L1 #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Health-Wed",
               "row": 4,
               "col": 4
@@ -7789,7 +7789,7 @@
               "task": "P1 L1 #2-3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Health-Thu",
               "row": 5,
               "col": 4
@@ -7815,7 +7815,7 @@
               "task": "P1 L1 #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Health-Sat",
               "row": 7,
               "col": 4
@@ -7828,7 +7828,7 @@
               "task": "P1 L1 #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Health-Tue",
               "row": 8,
               "col": 4
@@ -7854,7 +7854,7 @@
               "task": "P1 L2 #1-2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Health-Thu",
               "row": 10,
               "col": 4
@@ -7880,7 +7880,7 @@
               "task": "P1 L2 #4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Health-Sat",
               "row": 12,
               "col": 4
@@ -7893,7 +7893,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Health-Tue",
               "row": 13,
               "col": 4
@@ -7906,7 +7906,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Health-Wed",
               "row": 14,
               "col": 4
@@ -7919,7 +7919,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Health-Thu",
               "row": 15,
               "col": 4
@@ -7932,7 +7932,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Health-Fri",
               "row": 16,
               "col": 4
@@ -7945,7 +7945,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W3-Health-Sat",
               "row": 17,
               "col": 4
@@ -8165,7 +8165,7 @@
               "task": "☐ Read WHB pg 6-7\n ☐ Read Teacher Guide pg 4-5\n ☐ ACB (coloring book)pg6-7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Anatomy-Tue",
               "row": 3,
               "col": 6
@@ -8178,7 +8178,7 @@
               "task": "☐ Read WHB pg 8-14\n ☐  Wksht 1 (TG)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Anatomy-Wed",
               "row": 4,
               "col": 6
@@ -8191,7 +8191,7 @@
               "task": "☐  Read WHB pg 15-18\n ☐ ACB 8-9",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W1-Anatomy-Thu",
               "row": 5,
               "col": 6
@@ -8230,7 +8230,7 @@
               "task": "☐ Read WHB pg 18-24\n ☐ Wksht 3 (TG)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Anatomy-Tue",
               "row": 8,
               "col": 6
@@ -8243,7 +8243,7 @@
               "task": "☐ Read WHB 25-30\n ☐ ACB 10-13",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Charity-W2-Anatomy-Wed",
               "row": 9,
               "col": 6
