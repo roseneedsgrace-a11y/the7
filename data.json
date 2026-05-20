@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-19T19:09:28.818Z",
-  "date": "Tuesday, May 19",
+  "generated": "2026-05-20T14:11:31.470Z",
+  "date": "Wednesday, May 20",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -820,7 +820,7 @@
               "task": "Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W40-History-Mon",
               "row": 199,
               "col": 4
@@ -833,7 +833,7 @@
               "task": "Lesson 19 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W40-History-Tue",
               "row": 200,
               "col": 4
@@ -1294,7 +1294,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W40-English-Mon",
               "row": 199,
               "col": 5
