@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-20T20:31:56.180Z",
-  "date": "Wednesday, May 20",
+  "generated": "2026-05-21T17:25:10.623Z",
+  "date": "Thursday, May 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -1320,7 +1320,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W40-English-Wed",
               "row": 201,
               "col": 5
