@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-01T16:56:37.568Z",
+  "generated": "2026-06-01T23:00:03.924Z",
   "date": "Monday, June 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4058,7 +4058,7 @@
               "task": "Drill Team & Lesson 74",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W41-Nicole the Math Lady-Mon",
               "row": 204,
               "col": 4
@@ -6376,7 +6376,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W41-Latin-Tue",
               "row": 205,
               "col": 11
@@ -6389,7 +6389,7 @@
               "task": "Latin Class!",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W41-Latin-Wed",
               "row": 206,
               "col": 11
