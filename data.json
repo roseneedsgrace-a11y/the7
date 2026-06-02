@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-02T16:35:01.326Z",
+  "generated": "2026-06-02T17:11:29.565Z",
   "date": "Tuesday, June 2",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2242,7 +2242,7 @@
               "task": "Chapter 12.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-Science-Mon",
               "row": 204,
               "col": 7
@@ -2255,7 +2255,7 @@
               "task": "Chapter 12.2-12.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-Science-Tue",
               "row": 205,
               "col": 7
