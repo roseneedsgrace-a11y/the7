@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-03T10:43:42.200Z",
+  "generated": "2026-06-03T16:25:23.505Z",
   "date": "Wednesday, June 3",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -833,7 +833,7 @@
               "task": "Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-History-Tue",
               "row": 205,
               "col": 4
