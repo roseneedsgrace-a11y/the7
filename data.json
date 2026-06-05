@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-05T00:07:24.365Z",
-  "date": "Thursday, June 4",
+  "generated": "2026-06-05T16:03:15.024Z",
+  "date": "Friday, June 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -4175,7 +4175,7 @@
               "task": "Make up 3 worst grades (mom has to reset)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W42-Nicole the Math Lady-Fri",
               "row": 213,
               "col": 4
