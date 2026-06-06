@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T16:05:54.319Z",
+  "generated": "2026-06-06T01:43:44.945Z",
   "date": "Friday, June 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -859,7 +859,7 @@
               "task": "Lesson 21 Test, pt. 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-History-Thu",
               "row": 207,
               "col": 4
@@ -872,7 +872,7 @@
               "task": "Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-History-Fri",
               "row": 208,
               "col": 4
@@ -1320,7 +1320,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-English-Wed",
               "row": 206,
               "col": 5
@@ -1346,7 +1346,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-English-Fri",
               "row": 208,
               "col": 5
@@ -2268,7 +2268,7 @@
               "task": "Chatper 12 Test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-Science-Wed",
               "row": 206,
               "col": 7
@@ -2294,7 +2294,7 @@
               "task": "Chapter 13.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W41-Science-Fri",
               "row": 208,
               "col": 7
