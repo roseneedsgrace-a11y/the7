@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-08T13:05:01.405Z",
+  "generated": "2026-06-08T13:22:58.080Z",
   "date": "Monday, June 8",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3110,7 +3110,7 @@
               "task": "Investigation 8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W43-Nicole the Math Lady-Mon",
               "row": 214,
               "col": 4
