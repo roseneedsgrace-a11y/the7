@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-08T13:22:58.080Z",
-  "date": "Monday, June 8",
+  "generated": "2026-06-09T20:27:34.944Z",
+  "date": "Tuesday, June 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -1268,7 +1268,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W42-English-Tue",
               "row": 210,
               "col": 5
@@ -2177,7 +2177,7 @@
               "task": "Chapter 13.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W42-Science-Mon",
               "row": 209,
               "col": 7
@@ -2190,7 +2190,7 @@
               "task": "Chapter 13 Test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W42-Science-Tue",
               "row": 210,
               "col": 7
