@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-09T20:27:34.944Z",
-  "date": "Tuesday, June 9",
+  "generated": "2026-06-10T20:34:47.407Z",
+  "date": "Wednesday, June 10",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -3123,7 +3123,7 @@
               "task": "Drill Team & Lesson 81-82",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W43-Nicole the Math Lady-Tue",
               "row": 215,
               "col": 4
@@ -3136,7 +3136,7 @@
               "task": "Lesson 83-84",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W43-Nicole the Math Lady-Wed",
               "row": 216,
               "col": 4
