@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-15T17:01:14.797Z",
-  "date": "Monday, June 15",
+  "generated": "2026-06-16T20:55:27.464Z",
+  "date": "Tuesday, June 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -794,7 +794,7 @@
               "task": "Lesson 24 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W43-History-Mon",
               "row": 214,
               "col": 4
