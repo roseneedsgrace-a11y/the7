@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-16T20:58:30.854Z",
+  "generated": "2026-06-16T21:40:08.605Z",
   "date": "Tuesday, June 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2268,7 +2268,7 @@
               "task": "Appendix Reading 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W44-Science-Wed",
               "row": 221,
               "col": 7
@@ -2281,7 +2281,7 @@
               "task": "Appendix Reading 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W44-Science-Thu",
               "row": 222,
               "col": 7
@@ -2294,7 +2294,7 @@
               "task": "Appendix Reading 3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W44-Science-Fri",
               "row": 223,
               "col": 7
@@ -2307,7 +2307,7 @@
               "task": "Take Final Test (Appendix)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-Science-Mon",
               "row": 224,
               "col": 7
