@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-19T13:00:10.801Z",
+  "generated": "2026-06-19T16:50:22.110Z",
   "date": "Friday, June 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -833,7 +833,7 @@
               "task": "Lesson 25 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W43-History-Thu",
               "row": 217,
               "col": 4
@@ -2203,7 +2203,7 @@
               "task": "Chapter15.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W43-Science-Wed",
               "row": 216,
               "col": 7
@@ -2216,7 +2216,7 @@
               "task": "Chapter15.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W43-Science-Thu",
               "row": 217,
               "col": 7
@@ -2229,7 +2229,7 @@
               "task": "Chapter15.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W43-Science-Fri",
               "row": 218,
               "col": 7
