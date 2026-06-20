@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-20T00:19:34.515Z",
+  "generated": "2026-06-20T00:25:01.438Z",
   "date": "Friday, June 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3162,7 +3162,7 @@
               "task": "Drill Team(all the rest)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W44-Nicole the Math Lady-Fri",
               "row": 223,
               "col": 4
