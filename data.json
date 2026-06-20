@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-20T12:25:25.933Z",
+  "generated": "2026-06-20T22:09:14.189Z",
   "date": "Saturday, June 20",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2701,7 +2701,7 @@
               "task": "BibleProject Video: Wisdom Within Laws About Oaths, Retaliation, and Enemy Love (SotM Ep. 5) -",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fsermon-on-the-mount%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/sermon-on-the-mount/",
-              "done": false,
+              "done": true,
               "id": "Beth-W44-Bible-Fri",
               "row": 223,
               "col": 3
