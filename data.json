@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-20T22:09:14.189Z",
-  "date": "Saturday, June 20",
+  "generated": "2026-06-22T00:19:05.443Z",
+  "date": "Sunday, June 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -846,7 +846,7 @@
               "task": "Lesson 25 Test, pt. 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W43-History-Fri",
               "row": 218,
               "col": 4
