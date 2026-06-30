@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T19:54:17.320Z",
+  "generated": "2026-06-30T19:55:46.959Z",
   "date": "Tuesday, June 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -333,7 +333,7 @@
               "task": "Watch Hidden Treasure Application Video (9 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-Bible-Mon",
               "row": 224,
               "col": 3
@@ -703,7 +703,7 @@
               "task": "Lesson 26 Test, pt. 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-History-Tue",
               "row": 225,
               "col": 4
@@ -1060,7 +1060,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-English-Tue",
               "row": 225,
               "col": 5
@@ -1417,7 +1417,7 @@
               "task": "Chapter 15 Test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-Science-Tue",
               "row": 225,
               "col": 7
