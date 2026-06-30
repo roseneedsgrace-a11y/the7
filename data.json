@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-30T01:14:28.976Z",
-  "date": "Monday, June 29",
+  "generated": "2026-06-30T19:54:17.320Z",
+  "date": "Tuesday, June 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -346,7 +346,7 @@
               "task": "Read \"Four Aspects of Living the Parables\"",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-Bible-Tue",
               "row": 225,
               "col": 3
@@ -3051,7 +3051,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W46-Reading & Grammar-Mon",
               "row": 229,
               "col": 8
@@ -3064,7 +3064,7 @@
               "task": "Read an hour",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W46-Reading & Grammar-Tue",
               "row": 230,
               "col": 8
