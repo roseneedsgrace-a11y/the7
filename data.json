@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T19:58:12.619Z",
+  "generated": "2026-06-30T19:58:40.943Z",
   "date": "Tuesday, June 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -268,7 +268,7 @@
               "task": "Introduction: Read How to Use this Study",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W44-Bible-Mon",
               "row": 219,
               "col": 3
@@ -281,7 +281,7 @@
               "task": "Read: What are Parables?",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W44-Bible-Tue",
               "row": 220,
               "col": 3
@@ -320,7 +320,7 @@
               "task": "Discussion Questions for Hidden Treasure",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W44-Bible-Fri",
               "row": 223,
               "col": 3
