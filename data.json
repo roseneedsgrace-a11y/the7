@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-30T19:58:55.714Z",
-  "date": "Tuesday, June 30",
+  "generated": "2026-07-02T18:53:05.395Z",
+  "date": "Thursday, July 2",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -359,7 +359,7 @@
               "task": "Discussion Questions for Hidden Treasure Application",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-Bible-Wed",
               "row": 226,
               "col": 3
@@ -1073,7 +1073,7 @@
               "task": "Lesson & Paper",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-English-Wed",
               "row": 226,
               "col": 5
