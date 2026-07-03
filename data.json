@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-03T01:24:21.685Z",
+  "generated": "2026-07-03T01:24:38.172Z",
   "date": "Thursday, July 2",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -716,7 +716,7 @@
               "task": "Lesson 26 Test, pt. 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-History-Wed",
               "row": 226,
               "col": 4
