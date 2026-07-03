@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-02T22:23:46.251Z",
+  "generated": "2026-07-03T00:40:59.979Z",
   "date": "Thursday, July 2",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -372,7 +372,7 @@
               "task": "Watch Hidden Treasure Application Video (9 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-Bible-Thu",
               "row": 227,
               "col": 3
@@ -385,7 +385,7 @@
               "task": "Read \"Four Aspects of Living the Parables\"",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-Bible-Fri",
               "row": 228,
               "col": 3
@@ -729,7 +729,7 @@
               "task": "Portfolio",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W45-History-Thu",
               "row": 227,
               "col": 4
