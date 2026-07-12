@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-08T20:06:38.748Z",
-  "date": "Wednesday, July 8",
+  "generated": "2026-07-12T20:09:42.618Z",
+  "date": "Sunday, July 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -2160,7 +2160,7 @@
               "task": "Lesson 92",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W46-Nicole the Math Lady-Tue",
               "row": 230,
               "col": 4
@@ -2173,7 +2173,7 @@
               "task": "Lesson 93",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W46-Nicole the Math Lady-Wed",
               "row": 231,
               "col": 4
@@ -2186,7 +2186,7 @@
               "task": "Lesson 94",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W46-Nicole the Math Lady-Thu",
               "row": 232,
               "col": 4
@@ -3134,7 +3134,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W47-Reading & Grammar-Mon",
               "row": 234,
               "col": 8
@@ -3160,7 +3160,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W47-Reading & Grammar-Wed",
               "row": 236,
               "col": 8
@@ -3173,7 +3173,7 @@
               "task": "Read an hour",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W47-Reading & Grammar-Thu",
               "row": 237,
               "col": 8
@@ -3186,7 +3186,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W47-Reading & Grammar-Fri",
               "row": 238,
               "col": 8
