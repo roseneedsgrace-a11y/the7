@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-12T20:09:42.618Z",
-  "date": "Sunday, July 12",
+  "generated": "2026-07-13T23:24:12.721Z",
+  "date": "Monday, July 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -18,7 +18,7 @@
     {
       "name": "Beth",
       "palette": "ocean",
-      "currentWeek": 47,
+      "currentWeek": 48,
       "chore": [
         "Pick up floors, put away schoolwork"
       ]
@@ -73,7 +73,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W1-Bible-Tue",
               "row": 3,
               "col": 3
@@ -138,7 +138,7 @@
               "task": "true",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W2-Bible-Tue",
               "row": 8,
               "col": 3
@@ -203,7 +203,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Bible-Tue",
               "row": 13,
               "col": 3
@@ -216,7 +216,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Bible-Wed",
               "row": 14,
               "col": 3
@@ -229,7 +229,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Bible-Thu",
               "row": 15,
               "col": 3
@@ -242,7 +242,7 @@
               "task": "The Ology, Bible Reading w/ Journaling",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Bible-Fri",
               "row": 16,
               "col": 3
@@ -255,7 +255,7 @@
               "task": "The Ology, Bible Reading w/ Journaling (turn in 5 entries)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Bible-Sat",
               "row": 17,
               "col": 3
@@ -404,7 +404,7 @@
               "task": "🧭 2.5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-History-Tue",
               "row": 13,
               "col": 4
@@ -417,7 +417,7 @@
               "task": "🧭 2.6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-History-Wed",
               "row": 14,
               "col": 4
@@ -430,7 +430,7 @@
               "task": "🧭 3.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-History-Thu",
               "row": 15,
               "col": 4
@@ -443,7 +443,7 @@
               "task": "🧭 3.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-History-Fri",
               "row": 16,
               "col": 4
@@ -456,7 +456,7 @@
               "task": "🧭 3.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-History-Sat",
               "row": 17,
               "col": 4
@@ -806,7 +806,7 @@
               "task": "Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Foreign Language-Tue",
               "row": 13,
               "col": 6
@@ -819,7 +819,7 @@
               "task": "Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Foreign Language-Wed",
               "row": 14,
               "col": 6
@@ -832,7 +832,7 @@
               "task": "Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Foreign Language-Thu",
               "row": 15,
               "col": 6
@@ -845,7 +845,7 @@
               "task": "Lesson 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Foreign Language-Fri",
               "row": 16,
               "col": 6
@@ -858,7 +858,7 @@
               "task": "Lesson 2 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Foreign Language-Sat",
               "row": 17,
               "col": 6
@@ -1007,7 +1007,7 @@
               "task": "Chapter 1 Test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Science-Tue",
               "row": 13,
               "col": 7
@@ -1020,7 +1020,7 @@
               "task": "Chapter 2.1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Science-Wed",
               "row": 14,
               "col": 7
@@ -1033,7 +1033,7 @@
               "task": "Chapter 2.2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Science-Thu",
               "row": 15,
               "col": 7
@@ -1046,7 +1046,7 @@
               "task": "Chapter 2.3",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Science-Fri",
               "row": 16,
               "col": 7
@@ -1208,7 +1208,7 @@
               "task": "Lesson 7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Math-Tue",
               "row": 13,
               "col": 8
@@ -1221,7 +1221,7 @@
               "task": "Lesson 8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Math-Wed",
               "row": 14,
               "col": 8
@@ -1234,7 +1234,7 @@
               "task": "Quiz 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Math-Thu",
               "row": 15,
               "col": 8
@@ -1247,7 +1247,7 @@
               "task": "Lesson 9",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Math-Fri",
               "row": 16,
               "col": 8
@@ -1260,7 +1260,7 @@
               "task": "Review/Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Math-Sat",
               "row": 17,
               "col": 8
@@ -1409,7 +1409,7 @@
               "task": "Dr. Ransom Fallacy #5",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Citizenship-Tue",
               "row": 13,
               "col": 9
@@ -1422,7 +1422,7 @@
               "task": "Dr. Ransom Fallacy #6",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Citizenship-Wed",
               "row": 14,
               "col": 9
@@ -1435,7 +1435,7 @@
               "task": "Dr. Ransom Fallacy #7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Citizenship-Thu",
               "row": 15,
               "col": 9
@@ -1448,7 +1448,7 @@
               "task": "Dr. Ransom Fallacy #8",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Amos-W3-Citizenship-Fri",
               "row": 16,
               "col": 9
@@ -1477,77 +1477,12 @@
         "secondary": "#20B2AA",
         "bg": "#E0F7FA"
       },
-      "weekNum": 47,
+      "weekNum": 48,
       "grid": [
         {
           "subject": "Bible",
           "curriculum": "",
           "tasks": [
-            {
-              "day": "Mon",
-              "date": "6/8",
-              "rawDate": 1780894800000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Bible-Mon",
-              "row": 214,
-              "col": 3
-            },
-            {
-              "day": "Tue",
-              "date": "6/9",
-              "rawDate": 1780981200000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Bible-Tue",
-              "row": 215,
-              "col": 3
-            },
-            {
-              "day": "Wed",
-              "date": "6/10",
-              "rawDate": 1781067600000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Bible-Wed",
-              "row": 216,
-              "col": 3
-            },
-            {
-              "day": "Thu",
-              "date": "6/11",
-              "rawDate": 1781154000000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Bible-Thu",
-              "row": 217,
-              "col": 3
-            },
-            {
-              "day": "Fri",
-              "date": "6/12",
-              "rawDate": 1781240400000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Bible-Fri",
-              "row": 218,
-              "col": 3
-            },
             {
               "day": "Mon",
               "date": "6/15",
@@ -1937,6 +1872,71 @@
               "id": "Beth-W49-Bible-Fri",
               "row": 248,
               "col": 3
+            },
+            {
+              "day": "Mon",
+              "date": "7/27",
+              "rawDate": 1785128400000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Bible-Mon",
+              "row": 249,
+              "col": 3
+            },
+            {
+              "day": "Tue",
+              "date": "7/28",
+              "rawDate": 1785214800000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Bible-Tue",
+              "row": 250,
+              "col": 3
+            },
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Bible-Wed",
+              "row": 251,
+              "col": 3
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Bible-Thu",
+              "row": 252,
+              "col": 3
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Bible-Fri",
+              "row": 253,
+              "col": 3
             }
           ]
         },
@@ -1944,71 +1944,6 @@
           "subject": "Nicole the Math Lady",
           "curriculum": "",
           "tasks": [
-            {
-              "day": "Mon",
-              "date": "6/8",
-              "rawDate": 1780894800000,
-              "week": 43,
-              "task": "Investigation 8",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": true,
-              "id": "Beth-W43-Nicole the Math Lady-Mon",
-              "row": 214,
-              "col": 4
-            },
-            {
-              "day": "Tue",
-              "date": "6/9",
-              "rawDate": 1780981200000,
-              "week": 43,
-              "task": "Drill Team & Lesson 81-82",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": true,
-              "id": "Beth-W43-Nicole the Math Lady-Tue",
-              "row": 215,
-              "col": 4
-            },
-            {
-              "day": "Wed",
-              "date": "6/10",
-              "rawDate": 1781067600000,
-              "week": 43,
-              "task": "Lesson 83-84",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": true,
-              "id": "Beth-W43-Nicole the Math Lady-Wed",
-              "row": 216,
-              "col": 4
-            },
-            {
-              "day": "Thu",
-              "date": "6/11",
-              "rawDate": 1781154000000,
-              "week": 43,
-              "task": "Drill Team & Lesson 85",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": true,
-              "id": "Beth-W43-Nicole the Math Lady-Thu",
-              "row": 217,
-              "col": 4
-            },
-            {
-              "day": "Fri",
-              "date": "6/12",
-              "rawDate": 1781240400000,
-              "week": 43,
-              "task": "Lesson 86-87",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": true,
-              "id": "Beth-W43-Nicole the Math Lady-Fri",
-              "row": 218,
-              "col": 4
-            },
             {
               "day": "Mon",
               "date": "6/15",
@@ -2199,7 +2134,7 @@
               "task": "Lesson 96",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W46-Nicole the Math Lady-Fri",
               "row": 233,
               "col": 4
@@ -2212,7 +2147,7 @@
               "task": "Lesson 77",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W47-Nicole the Math Lady-Mon",
               "row": 234,
               "col": 4
@@ -2225,7 +2160,7 @@
               "task": "Lesson 98",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W47-Nicole the Math Lady-Tue",
               "row": 235,
               "col": 4
@@ -2277,7 +2212,7 @@
               "task": "Lesson 99",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W48-Nicole the Math Lady-Mon",
               "row": 239,
               "col": 4
@@ -2398,6 +2333,71 @@
               "id": "Beth-W49-Nicole the Math Lady-Fri",
               "row": 248,
               "col": 4
+            },
+            {
+              "day": "Mon",
+              "date": "7/27",
+              "rawDate": 1785128400000,
+              "week": 50,
+              "task": "Lesson 102",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Nicole the Math Lady-Mon",
+              "row": 249,
+              "col": 4
+            },
+            {
+              "day": "Tue",
+              "date": "7/28",
+              "rawDate": 1785214800000,
+              "week": 50,
+              "task": "Lesson 103",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Nicole the Math Lady-Tue",
+              "row": 250,
+              "col": 4
+            },
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 50,
+              "task": "Lesson 104",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Nicole the Math Lady-Wed",
+              "row": 251,
+              "col": 4
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 50,
+              "task": "Lesson 105",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Nicole the Math Lady-Thu",
+              "row": 252,
+              "col": 4
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Nicole the Math Lady-Fri",
+              "row": 253,
+              "col": 4
             }
           ]
         },
@@ -2405,71 +2405,6 @@
           "subject": "Literature",
           "curriculum": "",
           "tasks": [
-            {
-              "day": "Mon",
-              "date": "6/8",
-              "rawDate": 1780894800000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Literature-Mon",
-              "row": 214,
-              "col": 7
-            },
-            {
-              "day": "Tue",
-              "date": "6/9",
-              "rawDate": 1780981200000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Literature-Tue",
-              "row": 215,
-              "col": 7
-            },
-            {
-              "day": "Wed",
-              "date": "6/10",
-              "rawDate": 1781067600000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Literature-Wed",
-              "row": 216,
-              "col": 7
-            },
-            {
-              "day": "Thu",
-              "date": "6/11",
-              "rawDate": 1781154000000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Literature-Thu",
-              "row": 217,
-              "col": 7
-            },
-            {
-              "day": "Fri",
-              "date": "6/12",
-              "rawDate": 1781240400000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Literature-Fri",
-              "row": 218,
-              "col": 7
-            },
             {
               "day": "Mon",
               "date": "6/15",
@@ -2859,6 +2794,71 @@
               "id": "Beth-W49-Literature-Fri",
               "row": 248,
               "col": 7
+            },
+            {
+              "day": "Mon",
+              "date": "7/27",
+              "rawDate": 1785128400000,
+              "week": 50,
+              "task": "Reading (1hr)",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Literature-Mon",
+              "row": 249,
+              "col": 7
+            },
+            {
+              "day": "Tue",
+              "date": "7/28",
+              "rawDate": 1785214800000,
+              "week": 50,
+              "task": "Reading (1hr)",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Literature-Tue",
+              "row": 250,
+              "col": 7
+            },
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 50,
+              "task": "Reading (1hr)",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Literature-Wed",
+              "row": 251,
+              "col": 7
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 50,
+              "task": "Reading (1hr)",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Literature-Thu",
+              "row": 252,
+              "col": 7
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 50,
+              "task": "Reading (1hr)",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Literature-Fri",
+              "row": 253,
+              "col": 7
             }
           ]
         },
@@ -2866,71 +2866,6 @@
           "subject": "Reading & Grammar",
           "curriculum": "User: grandlizard78\nPwd: Hadassah",
           "tasks": [
-            {
-              "day": "Mon",
-              "date": "6/8",
-              "rawDate": 1780894800000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Reading & Grammar-Mon",
-              "row": 214,
-              "col": 8
-            },
-            {
-              "day": "Tue",
-              "date": "6/9",
-              "rawDate": 1780981200000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Reading & Grammar-Tue",
-              "row": 215,
-              "col": 8
-            },
-            {
-              "day": "Wed",
-              "date": "6/10",
-              "rawDate": 1781067600000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Reading & Grammar-Wed",
-              "row": 216,
-              "col": 8
-            },
-            {
-              "day": "Thu",
-              "date": "6/11",
-              "rawDate": 1781154000000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Reading & Grammar-Thu",
-              "row": 217,
-              "col": 8
-            },
-            {
-              "day": "Fri",
-              "date": "6/12",
-              "rawDate": 1781240400000,
-              "week": 43,
-              "task": "",
-              "imageUrl": null,
-              "linkUrl": null,
-              "done": false,
-              "id": "Beth-W43-Reading & Grammar-Fri",
-              "row": 218,
-              "col": 8
-            },
             {
               "day": "Mon",
               "date": "6/15",
@@ -3319,6 +3254,71 @@
               "done": false,
               "id": "Beth-W49-Reading & Grammar-Fri",
               "row": 248,
+              "col": 8
+            },
+            {
+              "day": "Mon",
+              "date": "7/27",
+              "rawDate": 1785128400000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Reading & Grammar-Mon",
+              "row": 249,
+              "col": 8
+            },
+            {
+              "day": "Tue",
+              "date": "7/28",
+              "rawDate": 1785214800000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Reading & Grammar-Tue",
+              "row": 250,
+              "col": 8
+            },
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Reading & Grammar-Wed",
+              "row": 251,
+              "col": 8
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Reading & Grammar-Thu",
+              "row": 252,
+              "col": 8
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 50,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "id": "Beth-W50-Reading & Grammar-Fri",
+              "row": 253,
               "col": 8
             }
           ]
