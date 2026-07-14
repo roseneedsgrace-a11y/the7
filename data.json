@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-14T00:12:49.732Z",
-  "date": "Monday, July 13",
+  "generated": "2026-07-14T14:42:15.923Z",
+  "date": "Tuesday, July 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -3147,7 +3147,7 @@
               "task": "Read an hour",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W48-Reading & Grammar-Tue",
               "row": 240,
               "col": 8
