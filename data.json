@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-14T14:42:15.923Z",
-  "date": "Tuesday, July 14",
+  "generated": "2026-07-16T13:25:23.095Z",
+  "date": "Thursday, July 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -2225,7 +2225,7 @@
               "task": "Make up 3 worst grades",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W48-Nicole the Math Lady-Tue",
               "row": 240,
               "col": 4
@@ -2238,7 +2238,7 @@
               "task": "Lesson 100",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "id": "Beth-W48-Nicole the Math Lady-Wed",
               "row": 241,
               "col": 4
@@ -3160,7 +3160,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "id": "Beth-W48-Reading & Grammar-Wed",
               "row": 241,
               "col": 8
