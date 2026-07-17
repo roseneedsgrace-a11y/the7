@@ -154,6 +154,29 @@
     margin-top: 5px;
   }
 
+    /*-- REFLECTION PROMPTS -- */
+.reflection-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+  z-index: 1000; align-items: center; justify-content: center; padding: 20px;
+}
+.reflection-overlay.open { display: flex; }
+.reflection-box {
+  background: white; border-radius: 14px; padding: 24px; max-width: 400px; width: 100%;
+}
+.reflection-box h3 { margin: 0 0 6px 0; font-size: 16px; color: #1e293b; }
+.reflection-box p { font-size: 13px; color: #64748b; margin-bottom: 14px; }
+.reflection-box textarea {
+  width: 100%; min-height: 90px; padding: 10px; border: 1px solid #cbd5e1;
+  border-radius: 8px; font-family: inherit; font-size: 14px; resize: vertical;
+}
+.reflection-actions { display: flex; gap: 10px; margin-top: 14px; }
+.reflection-actions button {
+  flex: 1; padding: 10px; border-radius: 8px; border: none; font-weight: 600; cursor: pointer;
+}
+.reflection-cancel { background: #f1f5f9; color: #475569; }
+.reflection-submit { background: var(--secondary, #741b47); color: white; }
+.reflection-submit:disabled { opacity: 0.5; cursor: default; }
+
   /* ─── TASK CARDS ─────────────────────────────── */
   .task-card {
     background: var(--panel);
@@ -661,6 +684,18 @@
 </div>  
 <div id="content">Loading assignments...</div>
 
+<div class="reflection-overlay" id="reflectionOverlay">
+  <div class="reflection-box">
+    <h3 id="reflectionPromptText">What did you learn about?</h3>
+    <p>Answer before checking this off.</p>
+    <textarea id="reflectionAnswer" placeholder="Type your answer..."></textarea>
+    <div class="reflection-actions">
+      <button class="reflection-cancel" onclick="closeReflectionModal(false)">Cancel</button>
+      <button class="reflection-submit" id="reflectionSubmitBtn" onclick="closeReflectionModal(true)">Submit</button>
+    </div>
+  </div>
+</div>
+    
 <script>
   let allData = null;
 
@@ -705,6 +740,42 @@ window.onload = function() {
 };
 
 
+
+const REFLECTION_PROMPTS = [
+  "What did you learn about?",
+  "Name three facts you learned.",
+  "What was the most interesting part?",
+  "Explain this in your own words.",
+  "What questions do you still have?"
+];
+
+let reflectionResolver = null;
+
+function askReflection() {
+  return new Promise(resolve => {
+    reflectionResolver = resolve;
+    const prompt = REFLECTION_PROMPTS[Math.floor(Math.random() * REFLECTION_PROMPTS.length)];
+    document.getElementById('reflectionPromptText').textContent = prompt;
+    document.getElementById('reflectionAnswer').value = '';
+    document.getElementById('reflectionOverlay').classList.add('open');
+    document.getElementById('reflectionAnswer').focus();
+  });
+}
+
+function closeReflectionModal(submitted) {
+  const overlay = document.getElementById('reflectionOverlay');
+  const answer = document.getElementById('reflectionAnswer').value.trim();
+  if (submitted && !answer) return; // require non-empty answer
+  overlay.classList.remove('open');
+  if (reflectionResolver) reflectionResolver(submitted ? answer : null);
+  reflectionResolver = null;
+}
+
+function subjectNeedsReflection(subject) {
+  const list = (allData && allData.config && allData.config.reflectionSubjects) || [];
+  return list.includes(subject);
+}
+    
 function updateChoreBanner() {
   if (!allData) return;
 
@@ -942,7 +1013,7 @@ function buildMakeupSection(pastDue, studentName) {
           <label class="status-indicator-wrap">
             <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
               data-id="${t.id}"
-              onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
+              onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(row.subject||'').replace(/'/g,"\\'")}')">
             <div class="status-indicator"></div>
           </label>
         </div>`;
@@ -1135,7 +1206,7 @@ function render() {
               <label class="status-indicator-wrap">
                 <input type="checkbox" class="check-overlay" ${isTaskDone ? 'checked' : ''} 
                   data-id="${t.id}" 
-                  onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
+                  onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(row.subject||'').replace(/'/g,"\\'")}')">
                 <div class="status-indicator"></div>
               </label>
             </div>`;
@@ -1237,7 +1308,7 @@ function render() {
           </div>
           <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
             data-id="${t.id}" 
-            onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
+            onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(row.subject||'').replace(/'/g,"\\'")}')">
         </label>`;
     });
 
@@ -1273,7 +1344,7 @@ function render() {
               </div>
               <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
                 data-id="${t.id}" 
-                onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col})">
+                onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(row.subject||'').replace(/'/g,"\\'")}')">
             </label>`;
         });
       });
@@ -1307,13 +1378,32 @@ function render() {
 }
 
     
-function toggle(id, el, studentName, row, col) {
-  const isDone = el.checked;
-  
-  console.log('Toggle called:', { id, isDone, studentName, row, col });
-  
-  setLocalProgress(id, isDone);
+async function toggle(id, el, studentName, row, col, subject) {
+  const wantsDone = el.checked;
 
+  // Only require reflection when marking DONE, not when unchecking
+  if (wantsDone && subject && subjectNeedsReflection(subject) && !id.includes('-chore-')) {
+    const answer = await askReflection();
+    if (answer === null) {
+      el.checked = false; // user cancelled — revert
+      return;
+    }
+    setLocalProgress(id, true);
+    document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
+      input.checked = true;
+      const card = input.closest('.task-card, .list-task-row');
+      if (card) card.classList.toggle('is-done', true);
+    });
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=true&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}&subject=${encodeURIComponent(subject)}&reflection=${encodeURIComponent(answer)}`,
+      { mode: 'no-cors' });
+    startSyncTimer();
+    updateChoreBanner();
+    return;
+  }
+
+  // Original behavior (unchecking, chores, or no reflection needed)
+  const isDone = wantsDone;
+  setLocalProgress(id, isDone);
   document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
     input.checked = isDone;
     const card = input.closest('.task-card, .list-task-row');
@@ -1322,11 +1412,9 @@ function toggle(id, el, studentName, row, col) {
 
   if (id.includes('-chore-')) {
     const choreStudent = id.split('-chore-')[0];
-    console.log('Chore fetch:', `${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(choreStudent)}`);
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(choreStudent)}`, 
       { mode: 'no-cors' });
   } else {
-    console.log('Assignment fetch:', `${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`);
     fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`, 
       { mode: 'no-cors' });
     startSyncTimer();
@@ -1334,7 +1422,6 @@ function toggle(id, el, studentName, row, col) {
   
   updateChoreBanner();
 }
-
   function forceRefresh() {
     const btn = document.getElementById('refreshBtn');
     btn.textContent = 'Checking...';
