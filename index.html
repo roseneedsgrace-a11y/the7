@@ -1013,7 +1013,7 @@ function buildMakeupSection(pastDue, studentName) {
           <label class="status-indicator-wrap">
             <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
               data-id="${t.id}"
-              onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(row.subject||'').replace(/'/g,"\\'")}')">
+              onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(subj.subject||'').replace(/'/g,"\\'")}')">
             <div class="status-indicator"></div>
           </label>
         </div>`;
@@ -1245,7 +1245,7 @@ function render() {
               <label class="status-indicator-wrap">
                 <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''} 
                   data-id="${mt.id}" 
-                  onchange="toggle('${mt.id}', this, '${studentName}', ${mt.row}, ${mt.col})">
+                  onchange="toggle('${mt.id}', this, '${studentName}', ${mt.row}, ${mt.col}, '${(row.subject||'').replace(/'/g,"\\'")}')">
                 <div class="status-indicator"></div>
               </label>
             </div>`;
@@ -1308,7 +1308,7 @@ function render() {
           </div>
           <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
             data-id="${t.id}" 
-            onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(row.subject||'').replace(/'/g,"\\'")}')">
+            onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(t.subject||'').replace(/'/g,"\\'")}')">
         </label>`;
     });
 
@@ -1344,7 +1344,7 @@ function render() {
               </div>
               <input type="checkbox" class="check-overlay" ${isDone ? 'checked' : ''}
                 data-id="${t.id}" 
-                onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(row.subject||'').replace(/'/g,"\\'")}')">
+                onchange="toggle('${t.id}', this, '${studentName}', ${t.row}, ${t.col}, '${(subj.subject||'').replace(/'/g,"\\'")}')">
             </label>`;
         });
       });
