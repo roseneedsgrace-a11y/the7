@@ -301,6 +301,10 @@ window.onload = function() {
         renderForDate(currentDate);
         updateMakeupToggleBtn(allData.config && allData.config.makeupDaysEnabled !== false);
       });
+      fetch(`${API_URL}?action=getReflections`)
+        .then(r => r.json())
+        .then(refs => { window.reflectionsMap = refs; renderForDate(currentDate); })
+        .catch(() => {});
     })
     .catch(e => {
       const content = document.getElementById('content');
@@ -486,6 +490,8 @@ function buildStudentCard(s) {
   
 function buildTaskRow(t, palette, isPastDue, studentName) {
   const dateLabel = isPastDue ? `<span class="past-due-date">${t.date}</span>` : '';
+  const ref = window.reflectionsMap && window.reflectionsMap[t.id];
+  const reflectionHtml = ref ? `<div style="font-size:12px; color:#64748b; margin-top:4px; font-style:italic;">"${ref.answer}"</div>` : '';
   return `
     <div class="task-row ${t.done ? 'is-done' : ''}" id="prow-${t.id}"
       onclick="toggleTask('${t.id}', '${palette.primary}', '${palette.secondary}', '${studentName}', ${t.row || 0}, ${t.col || 0})">
@@ -495,6 +501,7 @@ function buildTaskRow(t, palette, isPastDue, studentName) {
       <div class="task-info">
         ${isPastDue ? '' : `<div class="task-subject" style="color:${palette.primary};">${t.subject}</div>`}
         <div class="task-text">${t.task}${dateLabel}</div>
+        ${reflectionHtml}
       </div>
     </div>`;
 }
