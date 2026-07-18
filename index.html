@@ -751,10 +751,16 @@ const REFLECTION_PROMPTS = [
 
 let reflectionResolver = null;
 
+function getReflectionPromptPool() {
+  const list = (allData && allData.config && allData.config.reflectionPrompts) || [];
+  return list.length ? list : REFLECTION_PROMPTS;
+}
+
 function askReflection() {
   return new Promise(resolve => {
     reflectionResolver = resolve;
-    const prompt = REFLECTION_PROMPTS[Math.floor(Math.random() * REFLECTION_PROMPTS.length)];
+    const pool = getReflectionPromptPool();
+    const prompt = pool[Math.floor(Math.random() * pool.length)];
     document.getElementById('reflectionPromptText').textContent = prompt;
     document.getElementById('reflectionAnswer').value = '';
     document.getElementById('reflectionOverlay').classList.add('open');
@@ -771,9 +777,9 @@ function closeReflectionModal(submitted) {
   reflectionResolver = null;
 }
 
-function subjectNeedsReflection(subject) {
+function subjectNeedsReflection(studentName, subject) {
   const list = (allData && allData.config && allData.config.reflectionSubjects) || [];
-  return list.includes(subject);
+  return list.includes(studentName + '::' + subject);
 }
     
 function updateChoreBanner() {
@@ -1382,7 +1388,7 @@ async function toggle(id, el, studentName, row, col, subject) {
   const wantsDone = el.checked;
 
   // Only require reflection when marking DONE, not when unchecking
-  if (wantsDone && subject && subjectNeedsReflection(subject) && !id.includes('-chore-')) {
+  if (wantsDone && subject && subjectNeedsReflection(studentName, subject) && !id.includes('-chore-')) {
     const answer = await askReflection();
     if (answer === null) {
       el.checked = false; // user cancelled — revert
