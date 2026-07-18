@@ -1,14 +1,11 @@
 {
-  "generated": "2026-07-18T00:59:38.766Z",
+  "generated": "2026-07-18T01:01:02.784Z",
   "date": "Friday, July 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [
-      "Amos::Bible",
-      "Beth::Nicole the Math Lady"
-    ],
+    "reflectionSubjects": [],
     "reflectionPrompts": [
       "What did you learn about?",
       "Name three facts you learned.",
@@ -2425,7 +2422,7 @@
               "task": "Lesson 11 Completion; Make Up some low grades",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W48-Nicole the Math Lady-Thu",
               "row": 242,
