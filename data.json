@@ -1,10 +1,11 @@
 {
-  "generated": "2026-07-16T15:15:15.497Z",
-  "date": "Thursday, July 16",
+  "generated": "2026-07-18T00:02:56.282Z",
+  "date": "Friday, July 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
-    "makeupDaysEnabled": true
+    "makeupDaysEnabled": true,
+    "reflectionSubjects": []
   },
   "students": [
     {
@@ -74,6 +75,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Bible-Tue",
               "row": 3,
               "col": 3
@@ -87,6 +89,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Bible-Wed",
               "row": 4,
               "col": 3
@@ -100,6 +103,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Bible-Thu",
               "row": 5,
               "col": 3
@@ -113,6 +117,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Bible-Fri",
               "row": 6,
               "col": 3
@@ -126,6 +131,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Bible-Sat",
               "row": 7,
               "col": 3
@@ -139,6 +145,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Bible-Tue",
               "row": 8,
               "col": 3
@@ -152,6 +159,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Bible-Wed",
               "row": 9,
               "col": 3
@@ -165,6 +173,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Bible-Thu",
               "row": 10,
               "col": 3
@@ -178,6 +187,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Bible-Fri",
               "row": 11,
               "col": 3
@@ -191,6 +201,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Bible-Sat",
               "row": 12,
               "col": 3
@@ -204,6 +215,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Bible-Tue",
               "row": 13,
               "col": 3
@@ -217,6 +229,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Bible-Wed",
               "row": 14,
               "col": 3
@@ -230,6 +243,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Bible-Thu",
               "row": 15,
               "col": 3
@@ -243,6 +257,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Bible-Fri",
               "row": 16,
               "col": 3
@@ -256,6 +271,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Bible-Sat",
               "row": 17,
               "col": 3
@@ -275,6 +291,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-History-Tue",
               "row": 3,
               "col": 4
@@ -288,6 +305,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-History-Wed",
               "row": 4,
               "col": 4
@@ -301,6 +319,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-History-Thu",
               "row": 5,
               "col": 4
@@ -314,6 +333,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-History-Fri",
               "row": 6,
               "col": 4
@@ -327,6 +347,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-History-Sat",
               "row": 7,
               "col": 4
@@ -340,6 +361,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-History-Tue",
               "row": 8,
               "col": 4
@@ -353,6 +375,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-History-Wed",
               "row": 9,
               "col": 4
@@ -366,6 +389,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-History-Thu",
               "row": 10,
               "col": 4
@@ -379,6 +403,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-History-Fri",
               "row": 11,
               "col": 4
@@ -392,6 +417,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-History-Sat",
               "row": 12,
               "col": 4
@@ -405,6 +431,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-History-Tue",
               "row": 13,
               "col": 4
@@ -418,6 +445,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-History-Wed",
               "row": 14,
               "col": 4
@@ -431,6 +459,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-History-Thu",
               "row": 15,
               "col": 4
@@ -444,6 +473,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-History-Fri",
               "row": 16,
               "col": 4
@@ -457,6 +487,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-History-Sat",
               "row": 17,
               "col": 4
@@ -476,6 +507,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-English-Tue",
               "row": 3,
               "col": 5
@@ -489,6 +521,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-English-Wed",
               "row": 4,
               "col": 5
@@ -502,6 +535,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-English-Thu",
               "row": 5,
               "col": 5
@@ -515,6 +549,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-English-Fri",
               "row": 6,
               "col": 5
@@ -528,6 +563,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-English-Sat",
               "row": 7,
               "col": 5
@@ -541,6 +577,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-English-Tue",
               "row": 8,
               "col": 5
@@ -554,6 +591,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-English-Wed",
               "row": 9,
               "col": 5
@@ -567,6 +605,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-English-Thu",
               "row": 10,
               "col": 5
@@ -580,6 +619,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-English-Fri",
               "row": 11,
               "col": 5
@@ -593,6 +633,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-English-Sat",
               "row": 12,
               "col": 5
@@ -606,6 +647,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W3-English-Tue",
               "row": 13,
               "col": 5
@@ -619,6 +661,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W3-English-Wed",
               "row": 14,
               "col": 5
@@ -632,6 +675,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W3-English-Thu",
               "row": 15,
               "col": 5
@@ -645,6 +689,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W3-English-Fri",
               "row": 16,
               "col": 5
@@ -658,6 +703,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W3-English-Sat",
               "row": 17,
               "col": 5
@@ -677,6 +723,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-Foreign Language-Tue",
               "row": 3,
               "col": 6
@@ -690,6 +737,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-Foreign Language-Wed",
               "row": 4,
               "col": 6
@@ -703,6 +751,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-Foreign Language-Thu",
               "row": 5,
               "col": 6
@@ -716,6 +765,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-Foreign Language-Fri",
               "row": 6,
               "col": 6
@@ -729,6 +779,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-Foreign Language-Sat",
               "row": 7,
               "col": 6
@@ -742,6 +793,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Foreign Language-Tue",
               "row": 8,
               "col": 6
@@ -755,6 +807,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Foreign Language-Wed",
               "row": 9,
               "col": 6
@@ -768,6 +821,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Foreign Language-Thu",
               "row": 10,
               "col": 6
@@ -781,6 +835,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Foreign Language-Fri",
               "row": 11,
               "col": 6
@@ -794,6 +849,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Foreign Language-Sat",
               "row": 12,
               "col": 6
@@ -807,6 +863,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Foreign Language-Tue",
               "row": 13,
               "col": 6
@@ -820,6 +877,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Foreign Language-Wed",
               "row": 14,
               "col": 6
@@ -833,6 +891,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Foreign Language-Thu",
               "row": 15,
               "col": 6
@@ -846,6 +905,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Foreign Language-Fri",
               "row": 16,
               "col": 6
@@ -859,6 +919,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Foreign Language-Sat",
               "row": 17,
               "col": 6
@@ -878,6 +939,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Science-Tue",
               "row": 3,
               "col": 7
@@ -891,6 +953,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Science-Wed",
               "row": 4,
               "col": 7
@@ -904,6 +967,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Science-Thu",
               "row": 5,
               "col": 7
@@ -917,6 +981,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Science-Fri",
               "row": 6,
               "col": 7
@@ -930,6 +995,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-Science-Sat",
               "row": 7,
               "col": 7
@@ -943,6 +1009,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Science-Tue",
               "row": 8,
               "col": 7
@@ -956,6 +1023,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Science-Wed",
               "row": 9,
               "col": 7
@@ -969,6 +1037,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Science-Thu",
               "row": 10,
               "col": 7
@@ -982,6 +1051,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Science-Fri",
               "row": 11,
               "col": 7
@@ -995,6 +1065,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Science-Sat",
               "row": 12,
               "col": 7
@@ -1008,6 +1079,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Science-Tue",
               "row": 13,
               "col": 7
@@ -1021,6 +1093,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Science-Wed",
               "row": 14,
               "col": 7
@@ -1034,6 +1107,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Science-Thu",
               "row": 15,
               "col": 7
@@ -1047,6 +1121,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Science-Fri",
               "row": 16,
               "col": 7
@@ -1060,6 +1135,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W3-Science-Sat",
               "row": 17,
               "col": 7
@@ -1079,6 +1155,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Math-Tue",
               "row": 3,
               "col": 8
@@ -1092,6 +1169,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Math-Wed",
               "row": 4,
               "col": 8
@@ -1105,6 +1183,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Math-Thu",
               "row": 5,
               "col": 8
@@ -1118,6 +1197,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Math-Fri",
               "row": 6,
               "col": 8
@@ -1131,6 +1211,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Math-Sat",
               "row": 7,
               "col": 8
@@ -1144,6 +1225,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Math-Tue",
               "row": 8,
               "col": 8
@@ -1157,6 +1239,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Math-Wed",
               "row": 9,
               "col": 8
@@ -1170,6 +1253,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Math-Thu",
               "row": 10,
               "col": 8
@@ -1183,6 +1267,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Math-Fri",
               "row": 11,
               "col": 8
@@ -1196,6 +1281,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Math-Sat",
               "row": 12,
               "col": 8
@@ -1209,6 +1295,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Math-Tue",
               "row": 13,
               "col": 8
@@ -1222,6 +1309,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Math-Wed",
               "row": 14,
               "col": 8
@@ -1235,6 +1323,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Math-Thu",
               "row": 15,
               "col": 8
@@ -1248,6 +1337,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Math-Fri",
               "row": 16,
               "col": 8
@@ -1261,6 +1351,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Math-Sat",
               "row": 17,
               "col": 8
@@ -1280,6 +1371,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Citizenship-Tue",
               "row": 3,
               "col": 9
@@ -1293,6 +1385,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Citizenship-Wed",
               "row": 4,
               "col": 9
@@ -1306,6 +1399,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Citizenship-Thu",
               "row": 5,
               "col": 9
@@ -1319,6 +1413,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W1-Citizenship-Fri",
               "row": 6,
               "col": 9
@@ -1332,6 +1427,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W1-Citizenship-Sat",
               "row": 7,
               "col": 9
@@ -1345,6 +1441,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Citizenship-Tue",
               "row": 8,
               "col": 9
@@ -1358,6 +1455,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W2-Citizenship-Wed",
               "row": 9,
               "col": 9
@@ -1371,6 +1469,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W2-Citizenship-Thu",
               "row": 10,
               "col": 9
@@ -1384,6 +1483,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W2-Citizenship-Fri",
               "row": 11,
               "col": 9
@@ -1397,6 +1497,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W2-Citizenship-Sat",
               "row": 12,
               "col": 9
@@ -1410,6 +1511,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Citizenship-Tue",
               "row": 13,
               "col": 9
@@ -1423,6 +1525,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Citizenship-Wed",
               "row": 14,
               "col": 9
@@ -1436,6 +1539,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Citizenship-Thu",
               "row": 15,
               "col": 9
@@ -1449,6 +1553,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Amos-W3-Citizenship-Fri",
               "row": 16,
               "col": 9
@@ -1462,6 +1567,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Amos-W3-Citizenship-Sat",
               "row": 17,
               "col": 9
@@ -1492,6 +1598,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Bible-Mon",
               "row": 219,
               "col": 3
@@ -1505,6 +1612,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Bible-Tue",
               "row": 220,
               "col": 3
@@ -1518,6 +1626,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Bible-Wed",
               "row": 221,
               "col": 3
@@ -1531,6 +1640,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Bible-Thu",
               "row": 222,
               "col": 3
@@ -1544,6 +1654,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fsermon-on-the-mount%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/sermon-on-the-mount/",
               "done": true,
+              "isBreak": false,
               "id": "Beth-W44-Bible-Fri",
               "row": 223,
               "col": 3
@@ -1557,6 +1668,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Bible-Mon",
               "row": 224,
               "col": 3
@@ -1570,6 +1682,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Bible-Tue",
               "row": 225,
               "col": 3
@@ -1583,6 +1696,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Bible-Wed",
               "row": 226,
               "col": 3
@@ -1596,6 +1710,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Bible-Thu",
               "row": 227,
               "col": 3
@@ -1609,6 +1724,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Bible-Fri",
               "row": 228,
               "col": 3
@@ -1622,6 +1738,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Bible-Mon",
               "row": 229,
               "col": 3
@@ -1635,6 +1752,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Bible-Tue",
               "row": 230,
               "col": 3
@@ -1648,6 +1766,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Bible-Wed",
               "row": 231,
               "col": 3
@@ -1661,6 +1780,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Bible-Thu",
               "row": 232,
               "col": 3
@@ -1674,6 +1794,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Bible-Fri",
               "row": 233,
               "col": 3
@@ -1687,6 +1808,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Bible-Mon",
               "row": 234,
               "col": 3
@@ -1700,6 +1822,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Bible-Tue",
               "row": 235,
               "col": 3
@@ -1713,6 +1836,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Bible-Wed",
               "row": 236,
               "col": 3
@@ -1726,6 +1850,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Bible-Thu",
               "row": 237,
               "col": 3
@@ -1739,6 +1864,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Bible-Fri",
               "row": 238,
               "col": 3
@@ -1752,6 +1878,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Bible-Mon",
               "row": 239,
               "col": 3
@@ -1765,6 +1892,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Bible-Tue",
               "row": 240,
               "col": 3
@@ -1778,6 +1906,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Bible-Wed",
               "row": 241,
               "col": 3
@@ -1791,6 +1920,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Bible-Thu",
               "row": 242,
               "col": 3
@@ -1804,6 +1934,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Bible-Fri",
               "row": 243,
               "col": 3
@@ -1817,6 +1948,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Bible-Mon",
               "row": 244,
               "col": 3
@@ -1830,6 +1962,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Bible-Tue",
               "row": 245,
               "col": 3
@@ -1843,6 +1976,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Bible-Wed",
               "row": 246,
               "col": 3
@@ -1856,6 +1990,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Bible-Thu",
               "row": 247,
               "col": 3
@@ -1869,6 +2004,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Bible-Fri",
               "row": 248,
               "col": 3
@@ -1882,6 +2018,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Bible-Mon",
               "row": 249,
               "col": 3
@@ -1895,6 +2032,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Bible-Tue",
               "row": 250,
               "col": 3
@@ -1908,6 +2046,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Bible-Wed",
               "row": 251,
               "col": 3
@@ -1921,6 +2060,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Bible-Thu",
               "row": 252,
               "col": 3
@@ -1934,6 +2074,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Bible-Fri",
               "row": 253,
               "col": 3
@@ -1953,6 +2094,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W44-Nicole the Math Lady-Mon",
               "row": 219,
               "col": 4
@@ -1966,6 +2108,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W44-Nicole the Math Lady-Tue",
               "row": 220,
               "col": 4
@@ -1979,6 +2122,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W44-Nicole the Math Lady-Wed",
               "row": 221,
               "col": 4
@@ -1992,6 +2136,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W44-Nicole the Math Lady-Thu",
               "row": 222,
               "col": 4
@@ -2005,6 +2150,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W44-Nicole the Math Lady-Fri",
               "row": 223,
               "col": 4
@@ -2018,6 +2164,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Nicole the Math Lady-Mon",
               "row": 224,
               "col": 4
@@ -2031,6 +2178,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Nicole the Math Lady-Tue",
               "row": 225,
               "col": 4
@@ -2044,6 +2192,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Nicole the Math Lady-Wed",
               "row": 226,
               "col": 4
@@ -2057,6 +2206,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Nicole the Math Lady-Thu",
               "row": 227,
               "col": 4
@@ -2070,6 +2220,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Nicole the Math Lady-Fri",
               "row": 228,
               "col": 4
@@ -2083,6 +2234,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W46-Nicole the Math Lady-Mon",
               "row": 229,
               "col": 4
@@ -2096,6 +2248,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W46-Nicole the Math Lady-Tue",
               "row": 230,
               "col": 4
@@ -2109,6 +2262,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W46-Nicole the Math Lady-Wed",
               "row": 231,
               "col": 4
@@ -2122,6 +2276,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W46-Nicole the Math Lady-Thu",
               "row": 232,
               "col": 4
@@ -2135,6 +2290,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W46-Nicole the Math Lady-Fri",
               "row": 233,
               "col": 4
@@ -2148,6 +2304,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W47-Nicole the Math Lady-Mon",
               "row": 234,
               "col": 4
@@ -2161,6 +2318,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W47-Nicole the Math Lady-Tue",
               "row": 235,
               "col": 4
@@ -2174,6 +2332,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Nicole the Math Lady-Wed",
               "row": 236,
               "col": 4
@@ -2187,6 +2346,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Nicole the Math Lady-Thu",
               "row": 237,
               "col": 4
@@ -2200,6 +2360,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Nicole the Math Lady-Fri",
               "row": 238,
               "col": 4
@@ -2213,6 +2374,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W48-Nicole the Math Lady-Mon",
               "row": 239,
               "col": 4
@@ -2226,6 +2388,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W48-Nicole the Math Lady-Tue",
               "row": 240,
               "col": 4
@@ -2239,6 +2402,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W48-Nicole the Math Lady-Wed",
               "row": 241,
               "col": 4
@@ -2252,6 +2416,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Nicole the Math Lady-Thu",
               "row": 242,
               "col": 4
@@ -2265,6 +2430,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Nicole the Math Lady-Fri",
               "row": 243,
               "col": 4
@@ -2278,6 +2444,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Nicole the Math Lady-Mon",
               "row": 244,
               "col": 4
@@ -2291,6 +2458,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Nicole the Math Lady-Tue",
               "row": 245,
               "col": 4
@@ -2304,6 +2472,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Nicole the Math Lady-Wed",
               "row": 246,
               "col": 4
@@ -2317,6 +2486,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Nicole the Math Lady-Thu",
               "row": 247,
               "col": 4
@@ -2330,6 +2500,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Nicole the Math Lady-Fri",
               "row": 248,
               "col": 4
@@ -2343,6 +2514,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Nicole the Math Lady-Mon",
               "row": 249,
               "col": 4
@@ -2356,6 +2528,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Nicole the Math Lady-Tue",
               "row": 250,
               "col": 4
@@ -2369,6 +2542,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Nicole the Math Lady-Wed",
               "row": 251,
               "col": 4
@@ -2382,6 +2556,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Nicole the Math Lady-Thu",
               "row": 252,
               "col": 4
@@ -2395,6 +2570,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Nicole the Math Lady-Fri",
               "row": 253,
               "col": 4
@@ -2414,6 +2590,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Literature-Mon",
               "row": 219,
               "col": 7
@@ -2427,6 +2604,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Literature-Tue",
               "row": 220,
               "col": 7
@@ -2440,6 +2618,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Literature-Wed",
               "row": 221,
               "col": 7
@@ -2453,6 +2632,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Literature-Thu",
               "row": 222,
               "col": 7
@@ -2466,6 +2646,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Literature-Fri",
               "row": 223,
               "col": 7
@@ -2479,6 +2660,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Literature-Mon",
               "row": 224,
               "col": 7
@@ -2492,6 +2674,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Literature-Tue",
               "row": 225,
               "col": 7
@@ -2505,6 +2688,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Literature-Wed",
               "row": 226,
               "col": 7
@@ -2518,6 +2702,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Literature-Thu",
               "row": 227,
               "col": 7
@@ -2531,6 +2716,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Literature-Fri",
               "row": 228,
               "col": 7
@@ -2544,6 +2730,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Literature-Mon",
               "row": 229,
               "col": 7
@@ -2557,6 +2744,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Literature-Tue",
               "row": 230,
               "col": 7
@@ -2570,6 +2758,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Literature-Wed",
               "row": 231,
               "col": 7
@@ -2583,6 +2772,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Literature-Thu",
               "row": 232,
               "col": 7
@@ -2596,6 +2786,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Literature-Fri",
               "row": 233,
               "col": 7
@@ -2609,6 +2800,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Literature-Mon",
               "row": 234,
               "col": 7
@@ -2622,6 +2814,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Literature-Tue",
               "row": 235,
               "col": 7
@@ -2635,6 +2828,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Literature-Wed",
               "row": 236,
               "col": 7
@@ -2648,6 +2842,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Literature-Thu",
               "row": 237,
               "col": 7
@@ -2661,6 +2856,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W47-Literature-Fri",
               "row": 238,
               "col": 7
@@ -2674,6 +2870,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Literature-Mon",
               "row": 239,
               "col": 7
@@ -2687,6 +2884,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Literature-Tue",
               "row": 240,
               "col": 7
@@ -2700,6 +2898,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Literature-Wed",
               "row": 241,
               "col": 7
@@ -2713,6 +2912,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Literature-Thu",
               "row": 242,
               "col": 7
@@ -2726,6 +2926,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Literature-Fri",
               "row": 243,
               "col": 7
@@ -2739,6 +2940,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Literature-Mon",
               "row": 244,
               "col": 7
@@ -2752,6 +2954,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Literature-Tue",
               "row": 245,
               "col": 7
@@ -2765,6 +2968,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Literature-Wed",
               "row": 246,
               "col": 7
@@ -2778,6 +2982,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Literature-Thu",
               "row": 247,
               "col": 7
@@ -2791,6 +2996,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Literature-Fri",
               "row": 248,
               "col": 7
@@ -2804,6 +3010,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Literature-Mon",
               "row": 249,
               "col": 7
@@ -2817,6 +3024,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Literature-Tue",
               "row": 250,
               "col": 7
@@ -2830,6 +3038,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Literature-Wed",
               "row": 251,
               "col": 7
@@ -2843,6 +3052,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Literature-Thu",
               "row": 252,
               "col": 7
@@ -2856,6 +3066,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Literature-Fri",
               "row": 253,
               "col": 7
@@ -2875,6 +3086,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Reading & Grammar-Mon",
               "row": 219,
               "col": 8
@@ -2888,6 +3100,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Reading & Grammar-Tue",
               "row": 220,
               "col": 8
@@ -2901,6 +3114,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Reading & Grammar-Wed",
               "row": 221,
               "col": 8
@@ -2914,6 +3128,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Reading & Grammar-Thu",
               "row": 222,
               "col": 8
@@ -2927,6 +3142,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W44-Reading & Grammar-Fri",
               "row": 223,
               "col": 8
@@ -2940,6 +3156,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W45-Reading & Grammar-Mon",
               "row": 224,
               "col": 8
@@ -2953,6 +3170,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Reading & Grammar-Tue",
               "row": 225,
               "col": 8
@@ -2966,6 +3184,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W45-Reading & Grammar-Wed",
               "row": 226,
               "col": 8
@@ -2979,6 +3198,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
+              "isBreak": false,
               "id": "Beth-W45-Reading & Grammar-Thu",
               "row": 227,
               "col": 8
@@ -2992,6 +3212,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W45-Reading & Grammar-Fri",
               "row": 228,
               "col": 8
@@ -3005,6 +3226,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": true,
+              "isBreak": false,
               "id": "Beth-W46-Reading & Grammar-Mon",
               "row": 229,
               "col": 8
@@ -3018,6 +3240,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W46-Reading & Grammar-Tue",
               "row": 230,
               "col": 8
@@ -3031,6 +3254,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Reading & Grammar-Wed",
               "row": 231,
               "col": 8
@@ -3044,6 +3268,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W46-Reading & Grammar-Thu",
               "row": 232,
               "col": 8
@@ -3057,6 +3282,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
+              "isBreak": false,
               "id": "Beth-W46-Reading & Grammar-Fri",
               "row": 233,
               "col": 8
@@ -3070,6 +3296,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": true,
+              "isBreak": false,
               "id": "Beth-W47-Reading & Grammar-Mon",
               "row": 234,
               "col": 8
@@ -3083,6 +3310,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W47-Reading & Grammar-Tue",
               "row": 235,
               "col": 8
@@ -3096,6 +3324,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": true,
+              "isBreak": false,
               "id": "Beth-W47-Reading & Grammar-Wed",
               "row": 236,
               "col": 8
@@ -3109,6 +3338,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W47-Reading & Grammar-Thu",
               "row": 237,
               "col": 8
@@ -3122,6 +3352,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": true,
+              "isBreak": false,
               "id": "Beth-W47-Reading & Grammar-Fri",
               "row": 238,
               "col": 8
@@ -3135,6 +3366,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": true,
+              "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Mon",
               "row": 239,
               "col": 8
@@ -3148,6 +3380,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Tue",
               "row": 240,
               "col": 8
@@ -3161,6 +3394,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": true,
+              "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Wed",
               "row": 241,
               "col": 8
@@ -3174,6 +3408,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Thu",
               "row": 242,
               "col": 8
@@ -3187,6 +3422,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
+              "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Fri",
               "row": 243,
               "col": 8
@@ -3200,6 +3436,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Reading & Grammar-Mon",
               "row": 244,
               "col": 8
@@ -3213,6 +3450,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Reading & Grammar-Tue",
               "row": 245,
               "col": 8
@@ -3226,6 +3464,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Reading & Grammar-Wed",
               "row": 246,
               "col": 8
@@ -3239,6 +3478,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Reading & Grammar-Thu",
               "row": 247,
               "col": 8
@@ -3252,6 +3492,7 @@
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
               "done": false,
+              "isBreak": false,
               "id": "Beth-W49-Reading & Grammar-Fri",
               "row": 248,
               "col": 8
@@ -3265,6 +3506,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Reading & Grammar-Mon",
               "row": 249,
               "col": 8
@@ -3278,6 +3520,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Reading & Grammar-Tue",
               "row": 250,
               "col": 8
@@ -3291,6 +3534,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Reading & Grammar-Wed",
               "row": 251,
               "col": 8
@@ -3304,6 +3548,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Reading & Grammar-Thu",
               "row": 252,
               "col": 8
@@ -3317,6 +3562,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Beth-W50-Reading & Grammar-Fri",
               "row": 253,
               "col": 8
@@ -3347,6 +3593,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Bible-Tue",
               "row": 3,
               "col": 3
@@ -3360,6 +3607,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Bible-Wed",
               "row": 4,
               "col": 3
@@ -3373,6 +3621,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Bible-Thu",
               "row": 5,
               "col": 3
@@ -3386,6 +3635,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Bible-Fri",
               "row": 6,
               "col": 3
@@ -3399,6 +3649,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Bible-Sat",
               "row": 7,
               "col": 3
@@ -3412,6 +3663,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Bible-Tue",
               "row": 8,
               "col": 3
@@ -3425,6 +3677,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Bible-Wed",
               "row": 9,
               "col": 3
@@ -3438,6 +3691,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Bible-Thu",
               "row": 10,
               "col": 3
@@ -3451,6 +3705,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Bible-Fri",
               "row": 11,
               "col": 3
@@ -3464,6 +3719,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W2-Bible-Sat",
               "row": 12,
               "col": 3
@@ -3477,6 +3733,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Bible-Tue",
               "row": 13,
               "col": 3
@@ -3490,6 +3747,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Bible-Wed",
               "row": 14,
               "col": 3
@@ -3503,6 +3761,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Bible-Thu",
               "row": 15,
               "col": 3
@@ -3516,6 +3775,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Bible-Fri",
               "row": 16,
               "col": 3
@@ -3529,6 +3789,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Bible-Sat",
               "row": 17,
               "col": 3
@@ -3548,6 +3809,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Health-Tue",
               "row": 3,
               "col": 4
@@ -3561,6 +3823,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Health-Wed",
               "row": 4,
               "col": 4
@@ -3574,6 +3837,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Health-Thu",
               "row": 5,
               "col": 4
@@ -3587,6 +3851,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Health-Fri",
               "row": 6,
               "col": 4
@@ -3600,6 +3865,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Health-Sat",
               "row": 7,
               "col": 4
@@ -3613,6 +3879,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Health-Tue",
               "row": 8,
               "col": 4
@@ -3626,6 +3893,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Health-Wed",
               "row": 9,
               "col": 4
@@ -3639,6 +3907,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Health-Thu",
               "row": 10,
               "col": 4
@@ -3652,6 +3921,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Health-Fri",
               "row": 11,
               "col": 4
@@ -3665,6 +3935,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Health-Sat",
               "row": 12,
               "col": 4
@@ -3678,6 +3949,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Health-Tue",
               "row": 13,
               "col": 4
@@ -3691,6 +3963,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Health-Wed",
               "row": 14,
               "col": 4
@@ -3704,6 +3977,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Health-Thu",
               "row": 15,
               "col": 4
@@ -3717,6 +3991,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Health-Fri",
               "row": 16,
               "col": 4
@@ -3730,6 +4005,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Health-Sat",
               "row": 17,
               "col": 4
@@ -3749,6 +4025,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-History of Ideas-Tue",
               "row": 3,
               "col": 5
@@ -3762,6 +4039,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-History of Ideas-Wed",
               "row": 4,
               "col": 5
@@ -3775,6 +4053,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-History of Ideas-Thu",
               "row": 5,
               "col": 5
@@ -3788,6 +4067,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-History of Ideas-Fri",
               "row": 6,
               "col": 5
@@ -3801,6 +4081,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-History of Ideas-Sat",
               "row": 7,
               "col": 5
@@ -3814,6 +4095,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-History of Ideas-Tue",
               "row": 8,
               "col": 5
@@ -3827,6 +4109,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-History of Ideas-Wed",
               "row": 9,
               "col": 5
@@ -3840,6 +4123,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-History of Ideas-Thu",
               "row": 10,
               "col": 5
@@ -3853,6 +4137,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-History of Ideas-Fri",
               "row": 11,
               "col": 5
@@ -3866,6 +4151,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-History of Ideas-Sat",
               "row": 12,
               "col": 5
@@ -3879,6 +4165,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-History of Ideas-Tue",
               "row": 13,
               "col": 5
@@ -3892,6 +4179,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-History of Ideas-Wed",
               "row": 14,
               "col": 5
@@ -3905,6 +4193,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-History of Ideas-Thu",
               "row": 15,
               "col": 5
@@ -3918,6 +4207,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-History of Ideas-Fri",
               "row": 16,
               "col": 5
@@ -3931,6 +4221,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-History of Ideas-Sat",
               "row": 17,
               "col": 5
@@ -3950,6 +4241,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Anatomy-Tue",
               "row": 3,
               "col": 6
@@ -3963,6 +4255,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Anatomy-Wed",
               "row": 4,
               "col": 6
@@ -3976,6 +4269,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Anatomy-Thu",
               "row": 5,
               "col": 6
@@ -3989,6 +4283,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Anatomy-Fri",
               "row": 6,
               "col": 6
@@ -4002,6 +4297,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W1-Anatomy-Sat",
               "row": 7,
               "col": 6
@@ -4015,6 +4311,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Anatomy-Tue",
               "row": 8,
               "col": 6
@@ -4028,6 +4325,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Anatomy-Wed",
               "row": 9,
               "col": 6
@@ -4041,6 +4339,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Anatomy-Thu",
               "row": 10,
               "col": 6
@@ -4054,6 +4353,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Anatomy-Fri",
               "row": 11,
               "col": 6
@@ -4067,6 +4367,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W2-Anatomy-Sat",
               "row": 12,
               "col": 6
@@ -4080,6 +4381,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Anatomy-Tue",
               "row": 13,
               "col": 6
@@ -4093,6 +4395,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Anatomy-Wed",
               "row": 14,
               "col": 6
@@ -4106,6 +4409,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Anatomy-Thu",
               "row": 15,
               "col": 6
@@ -4119,6 +4423,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Anatomy-Fri",
               "row": 16,
               "col": 6
@@ -4132,6 +4437,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Anatomy-Sat",
               "row": 17,
               "col": 6
@@ -4151,6 +4457,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Math-Tue",
               "row": 3,
               "col": 7
@@ -4164,6 +4471,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Math-Wed",
               "row": 4,
               "col": 7
@@ -4177,6 +4485,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Math-Thu",
               "row": 5,
               "col": 7
@@ -4190,6 +4499,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Math-Fri",
               "row": 6,
               "col": 7
@@ -4203,6 +4513,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Math-Sat",
               "row": 7,
               "col": 7
@@ -4216,6 +4527,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Math-Tue",
               "row": 8,
               "col": 7
@@ -4229,6 +4541,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Math-Wed",
               "row": 9,
               "col": 7
@@ -4242,6 +4555,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Math-Thu",
               "row": 10,
               "col": 7
@@ -4255,6 +4569,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Math-Fri",
               "row": 11,
               "col": 7
@@ -4268,6 +4583,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Math-Sat",
               "row": 12,
               "col": 7
@@ -4281,6 +4597,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Math-Tue",
               "row": 13,
               "col": 7
@@ -4294,6 +4611,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Math-Wed",
               "row": 14,
               "col": 7
@@ -4307,6 +4625,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Math-Thu",
               "row": 15,
               "col": 7
@@ -4320,6 +4639,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Math-Fri",
               "row": 16,
               "col": 7
@@ -4333,6 +4653,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Math-Sat",
               "row": 17,
               "col": 7
@@ -4352,6 +4673,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-English-Tue",
               "row": 3,
               "col": 8
@@ -4365,6 +4687,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-English-Wed",
               "row": 4,
               "col": 8
@@ -4378,6 +4701,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-English-Thu",
               "row": 5,
               "col": 8
@@ -4391,6 +4715,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-English-Fri",
               "row": 6,
               "col": 8
@@ -4404,6 +4729,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-English-Sat",
               "row": 7,
               "col": 8
@@ -4417,6 +4743,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-English-Tue",
               "row": 8,
               "col": 8
@@ -4430,6 +4757,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-English-Wed",
               "row": 9,
               "col": 8
@@ -4443,6 +4771,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-English-Thu",
               "row": 10,
               "col": 8
@@ -4456,6 +4785,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-English-Fri",
               "row": 11,
               "col": 8
@@ -4469,6 +4799,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-English-Sat",
               "row": 12,
               "col": 8
@@ -4482,6 +4813,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-English-Tue",
               "row": 13,
               "col": 8
@@ -4495,6 +4827,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-English-Wed",
               "row": 14,
               "col": 8
@@ -4508,6 +4841,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-English-Thu",
               "row": 15,
               "col": 8
@@ -4521,6 +4855,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-English-Fri",
               "row": 16,
               "col": 8
@@ -4534,6 +4869,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-English-Sat",
               "row": 17,
               "col": 8
@@ -4553,6 +4889,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Electives – How Should We Then Live?-Tue",
               "row": 3,
               "col": 9
@@ -4566,6 +4903,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Electives – How Should We Then Live?-Wed",
               "row": 4,
               "col": 9
@@ -4579,6 +4917,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Electives – How Should We Then Live?-Thu",
               "row": 5,
               "col": 9
@@ -4592,6 +4931,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Electives – How Should We Then Live?-Fri",
               "row": 6,
               "col": 9
@@ -4605,6 +4945,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W1-Electives – How Should We Then Live?-Sat",
               "row": 7,
               "col": 9
@@ -4618,6 +4959,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Electives – How Should We Then Live?-Tue",
               "row": 8,
               "col": 9
@@ -4631,6 +4973,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Electives – How Should We Then Live?-Wed",
               "row": 9,
               "col": 9
@@ -4644,6 +4987,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Electives – How Should We Then Live?-Thu",
               "row": 10,
               "col": 9
@@ -4657,6 +5001,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Electives – How Should We Then Live?-Fri",
               "row": 11,
               "col": 9
@@ -4670,6 +5015,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Electives – How Should We Then Live?-Sat",
               "row": 12,
               "col": 9
@@ -4683,6 +5029,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Electives – How Should We Then Live?-Tue",
               "row": 13,
               "col": 9
@@ -4696,6 +5043,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Electives – How Should We Then Live?-Wed",
               "row": 14,
               "col": 9
@@ -4709,6 +5057,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Electives – How Should We Then Live?-Thu",
               "row": 15,
               "col": 9
@@ -4722,6 +5071,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Electives – How Should We Then Live?-Fri",
               "row": 16,
               "col": 9
@@ -4735,6 +5085,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Electives – How Should We Then Live?-Sat",
               "row": 17,
               "col": 9
@@ -4754,6 +5105,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Financial Literacy-Tue",
               "row": 3,
               "col": 10
@@ -4767,6 +5119,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Financial Literacy-Wed",
               "row": 4,
               "col": 10
@@ -4780,6 +5133,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Financial Literacy-Thu",
               "row": 5,
               "col": 10
@@ -4793,6 +5147,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W1-Financial Literacy-Fri",
               "row": 6,
               "col": 10
@@ -4806,6 +5161,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W1-Financial Literacy-Sat",
               "row": 7,
               "col": 10
@@ -4819,6 +5175,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Financial Literacy-Tue",
               "row": 8,
               "col": 10
@@ -4832,6 +5189,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Financial Literacy-Wed",
               "row": 9,
               "col": 10
@@ -4845,6 +5203,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Financial Literacy-Thu",
               "row": 10,
               "col": 10
@@ -4858,6 +5217,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W2-Financial Literacy-Fri",
               "row": 11,
               "col": 10
@@ -4871,6 +5231,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W2-Financial Literacy-Sat",
               "row": 12,
               "col": 10
@@ -4884,6 +5245,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Financial Literacy-Tue",
               "row": 13,
               "col": 10
@@ -4897,6 +5259,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Financial Literacy-Wed",
               "row": 14,
               "col": 10
@@ -4910,6 +5273,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Financial Literacy-Thu",
               "row": 15,
               "col": 10
@@ -4923,6 +5287,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Financial Literacy-Fri",
               "row": 16,
               "col": 10
@@ -4936,6 +5301,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Financial Literacy-Sat",
               "row": 17,
               "col": 10
@@ -4955,6 +5321,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W1-Writing-Tue",
               "row": 3,
               "col": 11
@@ -4968,6 +5335,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W1-Writing-Wed",
               "row": 4,
               "col": 11
@@ -4981,6 +5349,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W1-Writing-Thu",
               "row": 5,
               "col": 11
@@ -4994,6 +5363,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W1-Writing-Fri",
               "row": 6,
               "col": 11
@@ -5007,6 +5377,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W1-Writing-Sat",
               "row": 7,
               "col": 11
@@ -5020,6 +5391,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W2-Writing-Tue",
               "row": 8,
               "col": 11
@@ -5033,6 +5405,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W2-Writing-Wed",
               "row": 9,
               "col": 11
@@ -5046,6 +5419,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W2-Writing-Thu",
               "row": 10,
               "col": 11
@@ -5059,6 +5433,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W2-Writing-Fri",
               "row": 11,
               "col": 11
@@ -5072,6 +5447,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W2-Writing-Sat",
               "row": 12,
               "col": 11
@@ -5085,6 +5461,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Charity-W3-Writing-Tue",
               "row": 13,
               "col": 11
@@ -5098,6 +5475,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W3-Writing-Wed",
               "row": 14,
               "col": 11
@@ -5111,6 +5489,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W3-Writing-Thu",
               "row": 15,
               "col": 11
@@ -5124,6 +5503,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W3-Writing-Fri",
               "row": 16,
               "col": 11
@@ -5137,6 +5517,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Charity-W3-Writing-Sat",
               "row": 17,
               "col": 11
@@ -5167,6 +5548,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Bible-Tue",
               "row": 3,
               "col": 3
@@ -5180,6 +5562,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Bible-Wed",
               "row": 4,
               "col": 3
@@ -5193,6 +5576,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Bible-Thu",
               "row": 5,
               "col": 3
@@ -5206,6 +5590,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Bible-Fri",
               "row": 6,
               "col": 3
@@ -5219,6 +5604,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Bible-Sat",
               "row": 7,
               "col": 3
@@ -5232,6 +5618,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Bible-Tue",
               "row": 8,
               "col": 3
@@ -5245,6 +5632,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Bible-Wed",
               "row": 9,
               "col": 3
@@ -5258,6 +5646,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Bible-Thu",
               "row": 10,
               "col": 3
@@ -5271,6 +5660,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Bible-Fri",
               "row": 11,
               "col": 3
@@ -5284,6 +5674,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Bible-Sat",
               "row": 12,
               "col": 3
@@ -5297,6 +5688,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Bible-Tue",
               "row": 13,
               "col": 3
@@ -5310,6 +5702,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Bible-Wed",
               "row": 14,
               "col": 3
@@ -5323,6 +5716,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Bible-Thu",
               "row": 15,
               "col": 3
@@ -5336,6 +5730,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Bible-Fri",
               "row": 16,
               "col": 3
@@ -5349,6 +5744,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Bible-Sat",
               "row": 17,
               "col": 3
@@ -5368,6 +5764,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Hillsdale History-Tue",
               "row": 3,
               "col": 4
@@ -5381,6 +5778,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W1-Hillsdale History-Wed",
               "row": 4,
               "col": 4
@@ -5394,6 +5792,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Hillsdale History-Thu",
               "row": 5,
               "col": 4
@@ -5407,6 +5806,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W1-Hillsdale History-Fri",
               "row": 6,
               "col": 4
@@ -5420,6 +5820,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Hillsdale History-Sat",
               "row": 7,
               "col": 4
@@ -5433,6 +5834,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W2-Hillsdale History-Tue",
               "row": 8,
               "col": 4
@@ -5446,6 +5848,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Hillsdale History-Wed",
               "row": 9,
               "col": 4
@@ -5459,6 +5862,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W2-Hillsdale History-Thu",
               "row": 10,
               "col": 4
@@ -5472,6 +5876,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Hillsdale History-Fri",
               "row": 11,
               "col": 4
@@ -5485,6 +5890,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W2-Hillsdale History-Sat",
               "row": 12,
               "col": 4
@@ -5498,6 +5904,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Hillsdale History-Tue",
               "row": 13,
               "col": 4
@@ -5511,6 +5918,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W3-Hillsdale History-Wed",
               "row": 14,
               "col": 4
@@ -5524,6 +5932,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Hillsdale History-Thu",
               "row": 15,
               "col": 4
@@ -5537,6 +5946,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Hillsdale History-Fri",
               "row": 16,
               "col": 4
@@ -5550,6 +5960,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W3-Hillsdale History-Sat",
               "row": 17,
               "col": 4
@@ -5569,6 +5980,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W1-Creation Science-Tue",
               "row": 3,
               "col": 5
@@ -5582,6 +5994,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Creation Science-Wed",
               "row": 4,
               "col": 5
@@ -5595,6 +6008,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Creation Science-Thu",
               "row": 5,
               "col": 5
@@ -5608,6 +6022,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Creation Science-Fri",
               "row": 6,
               "col": 5
@@ -5621,6 +6036,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Creation Science-Sat",
               "row": 7,
               "col": 5
@@ -5634,6 +6050,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Creation Science-Tue",
               "row": 8,
               "col": 5
@@ -5647,6 +6064,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Creation Science-Wed",
               "row": 9,
               "col": 5
@@ -5660,6 +6078,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Creation Science-Thu",
               "row": 10,
               "col": 5
@@ -5673,6 +6092,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Creation Science-Fri",
               "row": 11,
               "col": 5
@@ -5686,6 +6106,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Creation Science-Sat",
               "row": 12,
               "col": 5
@@ -5699,6 +6120,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Creation Science-Tue",
               "row": 13,
               "col": 5
@@ -5712,6 +6134,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Creation Science-Wed",
               "row": 14,
               "col": 5
@@ -5725,6 +6148,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Creation Science-Thu",
               "row": 15,
               "col": 5
@@ -5738,6 +6162,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Creation Science-Fri",
               "row": 16,
               "col": 5
@@ -5751,6 +6176,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Creation Science-Sat",
               "row": 17,
               "col": 5
@@ -5770,6 +6196,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Algebra 1-Tue",
               "row": 3,
               "col": 6
@@ -5783,6 +6210,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Algebra 1-Wed",
               "row": 4,
               "col": 6
@@ -5796,6 +6224,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Algebra 1-Thu",
               "row": 5,
               "col": 6
@@ -5809,6 +6238,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Algebra 1-Fri",
               "row": 6,
               "col": 6
@@ -5822,6 +6252,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Algebra 1-Sat",
               "row": 7,
               "col": 6
@@ -5835,6 +6266,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Algebra 1-Tue",
               "row": 8,
               "col": 6
@@ -5848,6 +6280,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Algebra 1-Wed",
               "row": 9,
               "col": 6
@@ -5861,6 +6294,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Algebra 1-Thu",
               "row": 10,
               "col": 6
@@ -5874,6 +6308,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Algebra 1-Fri",
               "row": 11,
               "col": 6
@@ -5887,6 +6322,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Algebra 1-Sat",
               "row": 12,
               "col": 6
@@ -5900,6 +6336,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Algebra 1-Tue",
               "row": 13,
               "col": 6
@@ -5913,6 +6350,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Algebra 1-Wed",
               "row": 14,
               "col": 6
@@ -5926,6 +6364,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Algebra 1-Thu",
               "row": 15,
               "col": 6
@@ -5939,6 +6378,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Algebra 1-Fri",
               "row": 16,
               "col": 6
@@ -5952,6 +6392,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Algebra 1-Sat",
               "row": 17,
               "col": 6
@@ -5971,6 +6412,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Middle School Literature-Tue",
               "row": 3,
               "col": 7
@@ -5984,6 +6426,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Middle School Literature-Wed",
               "row": 4,
               "col": 7
@@ -5997,6 +6440,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Middle School Literature-Thu",
               "row": 5,
               "col": 7
@@ -6010,6 +6454,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W1-Middle School Literature-Fri",
               "row": 6,
               "col": 7
@@ -6023,6 +6468,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W1-Middle School Literature-Sat",
               "row": 7,
               "col": 7
@@ -6036,6 +6482,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Middle School Literature-Tue",
               "row": 8,
               "col": 7
@@ -6049,6 +6496,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Middle School Literature-Wed",
               "row": 9,
               "col": 7
@@ -6062,6 +6510,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Middle School Literature-Thu",
               "row": 10,
               "col": 7
@@ -6075,6 +6524,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W2-Middle School Literature-Fri",
               "row": 11,
               "col": 7
@@ -6088,6 +6538,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W2-Middle School Literature-Sat",
               "row": 12,
               "col": 7
@@ -6101,6 +6552,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Middle School Literature-Tue",
               "row": 13,
               "col": 7
@@ -6114,6 +6566,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Middle School Literature-Wed",
               "row": 14,
               "col": 7
@@ -6127,6 +6580,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Middle School Literature-Thu",
               "row": 15,
               "col": 7
@@ -6140,6 +6594,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W3-Middle School Literature-Fri",
               "row": 16,
               "col": 7
@@ -6153,6 +6608,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W3-Middle School Literature-Sat",
               "row": 17,
               "col": 7
@@ -6172,6 +6628,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Other-Tue",
               "row": 3,
               "col": 8
@@ -6185,6 +6642,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Other-Wed",
               "row": 4,
               "col": 8
@@ -6198,6 +6656,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Other-Thu",
               "row": 5,
               "col": 8
@@ -6211,6 +6670,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Other-Fri",
               "row": 6,
               "col": 8
@@ -6224,6 +6684,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Other-Sat",
               "row": 7,
               "col": 8
@@ -6237,6 +6698,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Other-Tue",
               "row": 8,
               "col": 8
@@ -6250,6 +6712,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Other-Wed",
               "row": 9,
               "col": 8
@@ -6263,6 +6726,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Other-Thu",
               "row": 10,
               "col": 8
@@ -6276,6 +6740,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Other-Fri",
               "row": 11,
               "col": 8
@@ -6289,6 +6754,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Other-Sat",
               "row": 12,
               "col": 8
@@ -6302,6 +6768,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Other-Tue",
               "row": 13,
               "col": 8
@@ -6315,6 +6782,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Other-Wed",
               "row": 14,
               "col": 8
@@ -6328,6 +6796,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Other-Thu",
               "row": 15,
               "col": 8
@@ -6341,6 +6810,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Other-Fri",
               "row": 16,
               "col": 8
@@ -6354,6 +6824,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Other-Sat",
               "row": 17,
               "col": 8
@@ -6373,6 +6844,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Electives-Tue",
               "row": 3,
               "col": 9
@@ -6386,6 +6858,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Electives-Wed",
               "row": 4,
               "col": 9
@@ -6399,6 +6872,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Electives-Thu",
               "row": 5,
               "col": 9
@@ -6412,6 +6886,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Electives-Fri",
               "row": 6,
               "col": 9
@@ -6425,6 +6900,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W1-Electives-Sat",
               "row": 7,
               "col": 9
@@ -6438,6 +6914,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Electives-Tue",
               "row": 8,
               "col": 9
@@ -6451,6 +6928,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Electives-Wed",
               "row": 9,
               "col": 9
@@ -6464,6 +6942,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Electives-Thu",
               "row": 10,
               "col": 9
@@ -6477,6 +6956,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Electives-Fri",
               "row": 11,
               "col": 9
@@ -6490,6 +6970,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W2-Electives-Sat",
               "row": 12,
               "col": 9
@@ -6503,6 +6984,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Electives-Tue",
               "row": 13,
               "col": 9
@@ -6516,6 +6998,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Electives-Wed",
               "row": 14,
               "col": 9
@@ -6529,6 +7012,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Electives-Thu",
               "row": 15,
               "col": 9
@@ -6542,6 +7026,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Ezra-W3-Electives-Fri",
               "row": 16,
               "col": 9
@@ -6555,6 +7040,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Ezra-W3-Electives-Sat",
               "row": 17,
               "col": 9
@@ -6585,6 +7071,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Bible-Tue",
               "row": 3,
               "col": 3
@@ -6598,6 +7085,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Bible-Wed",
               "row": 4,
               "col": 3
@@ -6611,6 +7099,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Bible-Thu",
               "row": 5,
               "col": 3
@@ -6624,6 +7113,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Bible-Fri",
               "row": 6,
               "col": 3
@@ -6637,6 +7127,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Bible-Sat",
               "row": 7,
               "col": 3
@@ -6650,6 +7141,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Bible-Tue",
               "row": 8,
               "col": 3
@@ -6663,6 +7155,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Bible-Wed",
               "row": 9,
               "col": 3
@@ -6676,6 +7169,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Bible-Thu",
               "row": 10,
               "col": 3
@@ -6689,6 +7183,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Bible-Fri",
               "row": 11,
               "col": 3
@@ -6702,6 +7197,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Bible-Sat",
               "row": 12,
               "col": 3
@@ -6715,6 +7211,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Bible-Tue",
               "row": 13,
               "col": 3
@@ -6728,6 +7225,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Bible-Wed",
               "row": 14,
               "col": 3
@@ -6741,6 +7239,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Bible-Thu",
               "row": 15,
               "col": 3
@@ -6754,6 +7253,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Bible-Fri",
               "row": 16,
               "col": 3
@@ -6767,6 +7267,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Bible-Sat",
               "row": 17,
               "col": 3
@@ -6786,6 +7287,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Saxon Math-Tue",
               "row": 3,
               "col": 4
@@ -6799,6 +7301,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Saxon Math-Wed",
               "row": 4,
               "col": 4
@@ -6812,6 +7315,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Saxon Math-Thu",
               "row": 5,
               "col": 4
@@ -6825,6 +7329,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Saxon Math-Fri",
               "row": 6,
               "col": 4
@@ -6838,6 +7343,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Saxon Math-Sat",
               "row": 7,
               "col": 4
@@ -6851,6 +7357,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Saxon Math-Tue",
               "row": 8,
               "col": 4
@@ -6864,6 +7371,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Saxon Math-Wed",
               "row": 9,
               "col": 4
@@ -6877,6 +7385,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Saxon Math-Thu",
               "row": 10,
               "col": 4
@@ -6890,6 +7399,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Saxon Math-Fri",
               "row": 11,
               "col": 4
@@ -6903,6 +7413,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Saxon Math-Sat",
               "row": 12,
               "col": 4
@@ -6916,6 +7427,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Saxon Math-Tue",
               "row": 13,
               "col": 4
@@ -6929,6 +7441,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Saxon Math-Wed",
               "row": 14,
               "col": 4
@@ -6942,6 +7455,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Saxon Math-Thu",
               "row": 15,
               "col": 4
@@ -6955,6 +7469,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Saxon Math-Fri",
               "row": 16,
               "col": 4
@@ -6968,6 +7483,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Saxon Math-Sat",
               "row": 17,
               "col": 4
@@ -6987,6 +7503,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-History-Tue",
               "row": 3,
               "col": 5
@@ -7000,6 +7517,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-History-Wed",
               "row": 4,
               "col": 5
@@ -7013,6 +7531,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-History-Thu",
               "row": 5,
               "col": 5
@@ -7026,6 +7545,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-History-Fri",
               "row": 6,
               "col": 5
@@ -7039,6 +7559,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-History-Sat",
               "row": 7,
               "col": 5
@@ -7052,6 +7573,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-History-Tue",
               "row": 8,
               "col": 5
@@ -7065,6 +7587,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-History-Wed",
               "row": 9,
               "col": 5
@@ -7078,6 +7601,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-History-Thu",
               "row": 10,
               "col": 5
@@ -7091,6 +7615,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-History-Fri",
               "row": 11,
               "col": 5
@@ -7104,6 +7629,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-History-Sat",
               "row": 12,
               "col": 5
@@ -7117,6 +7643,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-History-Tue",
               "row": 13,
               "col": 5
@@ -7130,6 +7657,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-History-Wed",
               "row": 14,
               "col": 5
@@ -7143,6 +7671,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-History-Thu",
               "row": 15,
               "col": 5
@@ -7156,6 +7685,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-History-Fri",
               "row": 16,
               "col": 5
@@ -7169,6 +7699,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-History-Sat",
               "row": 17,
               "col": 5
@@ -7188,6 +7719,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Vocabulary Expansion-Tue",
               "row": 3,
               "col": 6
@@ -7201,6 +7733,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Vocabulary Expansion-Wed",
               "row": 4,
               "col": 6
@@ -7214,6 +7747,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Vocabulary Expansion-Thu",
               "row": 5,
               "col": 6
@@ -7227,6 +7761,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Vocabulary Expansion-Fri",
               "row": 6,
               "col": 6
@@ -7240,6 +7775,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Vocabulary Expansion-Sat",
               "row": 7,
               "col": 6
@@ -7253,6 +7789,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Vocabulary Expansion-Tue",
               "row": 8,
               "col": 6
@@ -7266,6 +7803,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Vocabulary Expansion-Wed",
               "row": 9,
               "col": 6
@@ -7279,6 +7817,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Vocabulary Expansion-Thu",
               "row": 10,
               "col": 6
@@ -7292,6 +7831,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Vocabulary Expansion-Fri",
               "row": 11,
               "col": 6
@@ -7305,6 +7845,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Vocabulary Expansion-Sat",
               "row": 12,
               "col": 6
@@ -7318,6 +7859,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Vocabulary Expansion-Tue",
               "row": 13,
               "col": 6
@@ -7331,6 +7873,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Vocabulary Expansion-Wed",
               "row": 14,
               "col": 6
@@ -7344,6 +7887,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Vocabulary Expansion-Thu",
               "row": 15,
               "col": 6
@@ -7357,6 +7901,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Vocabulary Expansion-Fri",
               "row": 16,
               "col": 6
@@ -7370,6 +7915,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Vocabulary Expansion-Sat",
               "row": 17,
               "col": 6
@@ -7389,6 +7935,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Literature-Tue",
               "row": 3,
               "col": 7
@@ -7402,6 +7949,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Literature-Wed",
               "row": 4,
               "col": 7
@@ -7415,6 +7963,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Literature-Thu",
               "row": 5,
               "col": 7
@@ -7428,6 +7977,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Literature-Fri",
               "row": 6,
               "col": 7
@@ -7441,6 +7991,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Literature-Sat",
               "row": 7,
               "col": 7
@@ -7454,6 +8005,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Literature-Tue",
               "row": 8,
               "col": 7
@@ -7467,6 +8019,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Literature-Wed",
               "row": 9,
               "col": 7
@@ -7480,6 +8033,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Literature-Thu",
               "row": 10,
               "col": 7
@@ -7493,6 +8047,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Literature-Fri",
               "row": 11,
               "col": 7
@@ -7506,6 +8061,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Literature-Sat",
               "row": 12,
               "col": 7
@@ -7519,6 +8075,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Literature-Tue",
               "row": 13,
               "col": 7
@@ -7532,6 +8089,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Literature-Wed",
               "row": 14,
               "col": 7
@@ -7545,6 +8103,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Literature-Thu",
               "row": 15,
               "col": 7
@@ -7558,6 +8117,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Literature-Fri",
               "row": 16,
               "col": 7
@@ -7571,6 +8131,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Literature-Sat",
               "row": 17,
               "col": 7
@@ -7590,6 +8151,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Grammar-Tue",
               "row": 3,
               "col": 8
@@ -7603,6 +8165,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Grammar-Wed",
               "row": 4,
               "col": 8
@@ -7616,6 +8179,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Grammar-Thu",
               "row": 5,
               "col": 8
@@ -7629,6 +8193,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Grammar-Fri",
               "row": 6,
               "col": 8
@@ -7642,6 +8207,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Grammar-Sat",
               "row": 7,
               "col": 8
@@ -7655,6 +8221,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Grammar-Tue",
               "row": 8,
               "col": 8
@@ -7668,6 +8235,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Grammar-Wed",
               "row": 9,
               "col": 8
@@ -7681,6 +8249,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Grammar-Thu",
               "row": 10,
               "col": 8
@@ -7694,6 +8263,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Grammar-Fri",
               "row": 11,
               "col": 8
@@ -7707,6 +8277,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Grammar-Sat",
               "row": 12,
               "col": 8
@@ -7720,6 +8291,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Grammar-Tue",
               "row": 13,
               "col": 8
@@ -7733,6 +8305,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Grammar-Wed",
               "row": 14,
               "col": 8
@@ -7746,6 +8319,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Grammar-Thu",
               "row": 15,
               "col": 8
@@ -7759,6 +8333,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Grammar-Fri",
               "row": 16,
               "col": 8
@@ -7772,6 +8347,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Grammar-Sat",
               "row": 17,
               "col": 8
@@ -7791,6 +8367,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Science & Art-Tue",
               "row": 3,
               "col": 9
@@ -7804,6 +8381,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Science & Art-Wed",
               "row": 4,
               "col": 9
@@ -7817,6 +8395,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Science & Art-Thu",
               "row": 5,
               "col": 9
@@ -7830,6 +8409,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Science & Art-Fri",
               "row": 6,
               "col": 9
@@ -7843,6 +8423,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Science & Art-Sat",
               "row": 7,
               "col": 9
@@ -7856,6 +8437,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Science & Art-Tue",
               "row": 8,
               "col": 9
@@ -7869,6 +8451,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Science & Art-Wed",
               "row": 9,
               "col": 9
@@ -7882,6 +8465,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Science & Art-Thu",
               "row": 10,
               "col": 9
@@ -7895,6 +8479,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Science & Art-Fri",
               "row": 11,
               "col": 9
@@ -7908,6 +8493,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Science & Art-Sat",
               "row": 12,
               "col": 9
@@ -7921,6 +8507,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Science & Art-Tue",
               "row": 13,
               "col": 9
@@ -7934,6 +8521,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Science & Art-Wed",
               "row": 14,
               "col": 9
@@ -7947,6 +8535,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Science & Art-Thu",
               "row": 15,
               "col": 9
@@ -7960,6 +8549,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Science & Art-Fri",
               "row": 16,
               "col": 9
@@ -7973,6 +8563,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Science & Art-Sat",
               "row": 17,
               "col": 9
@@ -7992,6 +8583,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Handwriting-Tue",
               "row": 3,
               "col": 10
@@ -8005,6 +8597,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Handwriting-Wed",
               "row": 4,
               "col": 10
@@ -8018,6 +8611,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W1-Handwriting-Thu",
               "row": 5,
               "col": 10
@@ -8031,6 +8625,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Handwriting-Fri",
               "row": 6,
               "col": 10
@@ -8044,6 +8639,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W1-Handwriting-Sat",
               "row": 7,
               "col": 10
@@ -8057,6 +8653,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Handwriting-Tue",
               "row": 8,
               "col": 10
@@ -8070,6 +8667,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Handwriting-Wed",
               "row": 9,
               "col": 10
@@ -8083,6 +8681,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W2-Handwriting-Thu",
               "row": 10,
               "col": 10
@@ -8096,6 +8695,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Handwriting-Fri",
               "row": 11,
               "col": 10
@@ -8109,6 +8709,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W2-Handwriting-Sat",
               "row": 12,
               "col": 10
@@ -8122,6 +8723,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Handwriting-Tue",
               "row": 13,
               "col": 10
@@ -8135,6 +8737,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Handwriting-Wed",
               "row": 14,
               "col": 10
@@ -8148,6 +8751,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": true,
+              "isBreak": false,
               "id": "Tabitha-W3-Handwriting-Thu",
               "row": 15,
               "col": 10
@@ -8161,6 +8765,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Handwriting-Fri",
               "row": 16,
               "col": 10
@@ -8174,6 +8779,7 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
+              "isBreak": false,
               "id": "Tabitha-W3-Handwriting-Sat",
               "row": 17,
               "col": 10
