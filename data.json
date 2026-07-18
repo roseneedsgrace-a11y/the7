@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-18T01:38:37.906Z",
+  "generated": "2026-07-18T01:46:54.902Z",
   "date": "Friday, July 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3417,7 +3417,7 @@
               "task": "Read an hour",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Thu",
               "row": 242,
@@ -3431,7 +3431,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Fri",
               "row": 243,
