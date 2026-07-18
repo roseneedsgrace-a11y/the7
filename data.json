@@ -1,11 +1,18 @@
 {
-  "generated": "2026-07-18T00:02:56.282Z",
+  "generated": "2026-07-18T00:32:41.701Z",
   "date": "Friday, July 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": []
+    "reflectionSubjects": [],
+    "reflectionPrompts": [
+      "What did you learn about?",
+      "Name three facts you learned.",
+      "What was the most interesting part?",
+      "Explain the lesson in your own words.",
+      "What questions do you still have?"
+    ]
   },
   "students": [
     {
@@ -2415,7 +2422,7 @@
               "task": "Lesson 11 Completion; Make Up some low grades",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W48-Nicole the Math Lady-Thu",
               "row": 242,
@@ -3407,7 +3414,7 @@
               "task": "Read an hour",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Thu",
               "row": 242,
