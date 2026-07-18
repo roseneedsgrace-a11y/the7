@@ -1,11 +1,14 @@
 {
-  "generated": "2026-07-18T01:01:02.784Z",
+  "generated": "2026-07-18T01:01:28.785Z",
   "date": "Friday, July 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [],
+    "reflectionSubjects": [
+      "Amos::Bible",
+      "Beth::Reading & Grammar"
+    ],
     "reflectionPrompts": [
       "What did you learn about?",
       "Name three facts you learned.",
