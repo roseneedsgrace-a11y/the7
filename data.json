@@ -1,11 +1,14 @@
 {
-  "generated": "2026-07-18T00:34:04.246Z",
+  "generated": "2026-07-18T00:57:49.459Z",
   "date": "Friday, July 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [],
+    "reflectionSubjects": [
+      "Amos::Bible",
+      "Beth::Nicole the Math Lady"
+    ],
     "reflectionPrompts": [
       "What did you learn about?",
       "Name three facts you learned.",
@@ -3414,7 +3417,7 @@
               "task": "Read an hour",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Beth-W48-Reading & Grammar-Thu",
               "row": 242,
