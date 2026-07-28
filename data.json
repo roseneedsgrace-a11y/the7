@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T22:35:05.939Z",
+  "generated": "2026-07-28T22:38:06.369Z",
   "date": "Tuesday, July 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -72,8 +72,50 @@
       "grid": [
         {
           "subject": "Bible",
-          "curriculum": "CBTS",
+          "curriculum": "Community Bible Study",
           "tasks": [
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Bible-Wed",
+              "row": 3,
+              "col": 3
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Bible-Thu",
+              "row": 4,
+              "col": 3
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Bible-Fri",
+              "row": 5,
+              "col": 3
+            },
             {
               "day": "Tue",
               "date": "8/4",
@@ -85,7 +127,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Bible-Tue",
-              "row": 9,
+              "row": 7,
               "col": 3
             },
             {
@@ -99,7 +141,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Bible-Wed",
-              "row": 10,
+              "row": 8,
               "col": 3
             },
             {
@@ -113,7 +155,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Bible-Thu",
-              "row": 11,
+              "row": 9,
               "col": 3
             },
             {
@@ -127,7 +169,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Bible-Fri",
-              "row": 12,
+              "row": 10,
               "col": 3
             },
             {
@@ -141,7 +183,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Bible-Mon",
-              "row": 13,
+              "row": 11,
               "col": 3
             },
             {
@@ -155,7 +197,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Bible-Tue",
-              "row": 14,
+              "row": 12,
               "col": 3
             },
             {
@@ -169,7 +211,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Bible-Wed",
-              "row": 15,
+              "row": 13,
               "col": 3
             },
             {
@@ -183,7 +225,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Bible-Thu",
-              "row": 16,
+              "row": 14,
               "col": 3
             },
             {
@@ -197,7 +239,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Bible-Fri",
-              "row": 17,
+              "row": 15,
               "col": 3
             },
             {
@@ -211,7 +253,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Bible-Mon",
-              "row": 18,
+              "row": 16,
               "col": 3
             },
             {
@@ -225,7 +267,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Bible-Tue",
-              "row": 19,
+              "row": 17,
               "col": 3
             },
             {
@@ -239,7 +281,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Bible-Wed",
-              "row": 20,
+              "row": 18,
               "col": 3
             },
             {
@@ -253,7 +295,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Bible-Thu",
-              "row": 21,
+              "row": 19,
               "col": 3
             },
             {
@@ -267,7 +309,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Bible-Fri",
-              "row": 22,
+              "row": 20,
               "col": 3
             }
           ]
@@ -276,6 +318,48 @@
           "subject": "Math",
           "curriculum": "Nicole the Math Lady",
           "tasks": [
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 1,
+              "task": "Lesson 103",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Math-Wed",
+              "row": 3,
+              "col": 4
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 1,
+              "task": "Lesson 104",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Math-Thu",
+              "row": 4,
+              "col": 4
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 1,
+              "task": "Lesson 105",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Math-Fri",
+              "row": 5,
+              "col": 4
+            },
             {
               "day": "Tue",
               "date": "8/4",
@@ -287,7 +371,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Math-Tue",
-              "row": 9,
+              "row": 7,
               "col": 4
             },
             {
@@ -301,7 +385,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Math-Wed",
-              "row": 10,
+              "row": 8,
               "col": 4
             },
             {
@@ -315,7 +399,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Math-Thu",
-              "row": 11,
+              "row": 9,
               "col": 4
             },
             {
@@ -329,7 +413,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Math-Fri",
-              "row": 12,
+              "row": 10,
               "col": 4
             },
             {
@@ -343,7 +427,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Math-Mon",
-              "row": 13,
+              "row": 11,
               "col": 4
             },
             {
@@ -357,7 +441,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Math-Tue",
-              "row": 14,
+              "row": 12,
               "col": 4
             },
             {
@@ -371,7 +455,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Math-Wed",
-              "row": 15,
+              "row": 13,
               "col": 4
             },
             {
@@ -385,7 +469,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Math-Thu",
-              "row": 16,
+              "row": 14,
               "col": 4
             },
             {
@@ -399,7 +483,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Math-Fri",
-              "row": 17,
+              "row": 15,
               "col": 4
             },
             {
@@ -413,7 +497,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Math-Mon",
-              "row": 18,
+              "row": 16,
               "col": 4
             },
             {
@@ -427,7 +511,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Math-Tue",
-              "row": 19,
+              "row": 17,
               "col": 4
             },
             {
@@ -441,7 +525,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Math-Wed",
-              "row": 20,
+              "row": 18,
               "col": 4
             },
             {
@@ -455,7 +539,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Math-Thu",
-              "row": 21,
+              "row": 19,
               "col": 4
             },
             {
@@ -469,7 +553,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Math-Fri",
-              "row": 22,
+              "row": 20,
               "col": 4
             }
           ]
@@ -478,6 +562,48 @@
           "subject": "History",
           "curriculum": "Monarch 500",
           "tasks": [
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-History-Wed",
+              "row": 3,
+              "col": 5
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-History-Thu",
+              "row": 4,
+              "col": 5
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-History-Fri",
+              "row": 5,
+              "col": 5
+            },
             {
               "day": "Tue",
               "date": "8/4",
@@ -489,7 +615,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-History-Tue",
-              "row": 9,
+              "row": 7,
               "col": 5
             },
             {
@@ -503,7 +629,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-History-Wed",
-              "row": 10,
+              "row": 8,
               "col": 5
             },
             {
@@ -517,7 +643,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-History-Thu",
-              "row": 11,
+              "row": 9,
               "col": 5
             },
             {
@@ -531,7 +657,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-History-Fri",
-              "row": 12,
+              "row": 10,
               "col": 5
             },
             {
@@ -545,7 +671,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-History-Mon",
-              "row": 13,
+              "row": 11,
               "col": 5
             },
             {
@@ -559,7 +685,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-History-Tue",
-              "row": 14,
+              "row": 12,
               "col": 5
             },
             {
@@ -573,7 +699,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-History-Wed",
-              "row": 15,
+              "row": 13,
               "col": 5
             },
             {
@@ -587,7 +713,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-History-Thu",
-              "row": 16,
+              "row": 14,
               "col": 5
             },
             {
@@ -601,7 +727,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-History-Fri",
-              "row": 17,
+              "row": 15,
               "col": 5
             },
             {
@@ -615,7 +741,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-History-Mon",
-              "row": 18,
+              "row": 16,
               "col": 5
             },
             {
@@ -629,7 +755,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-History-Tue",
-              "row": 19,
+              "row": 17,
               "col": 5
             },
             {
@@ -643,7 +769,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-History-Wed",
-              "row": 20,
+              "row": 18,
               "col": 5
             },
             {
@@ -657,7 +783,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-History-Thu",
-              "row": 21,
+              "row": 19,
               "col": 5
             },
             {
@@ -671,7 +797,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-History-Fri",
-              "row": 22,
+              "row": 20,
               "col": 5
             }
           ]
@@ -680,6 +806,48 @@
           "subject": "Science",
           "curriculum": "Monarch 500",
           "tasks": [
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Science-Wed",
+              "row": 3,
+              "col": 6
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Science-Thu",
+              "row": 4,
+              "col": 6
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Science-Fri",
+              "row": 5,
+              "col": 6
+            },
             {
               "day": "Tue",
               "date": "8/4",
@@ -691,7 +859,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Science-Tue",
-              "row": 9,
+              "row": 7,
               "col": 6
             },
             {
@@ -705,7 +873,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Science-Wed",
-              "row": 10,
+              "row": 8,
               "col": 6
             },
             {
@@ -719,7 +887,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Science-Thu",
-              "row": 11,
+              "row": 9,
               "col": 6
             },
             {
@@ -733,7 +901,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Science-Fri",
-              "row": 12,
+              "row": 10,
               "col": 6
             },
             {
@@ -747,7 +915,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Science-Mon",
-              "row": 13,
+              "row": 11,
               "col": 6
             },
             {
@@ -761,7 +929,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Science-Tue",
-              "row": 14,
+              "row": 12,
               "col": 6
             },
             {
@@ -775,7 +943,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Science-Wed",
-              "row": 15,
+              "row": 13,
               "col": 6
             },
             {
@@ -789,7 +957,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Science-Thu",
-              "row": 16,
+              "row": 14,
               "col": 6
             },
             {
@@ -803,7 +971,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Science-Fri",
-              "row": 17,
+              "row": 15,
               "col": 6
             },
             {
@@ -817,7 +985,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Science-Mon",
-              "row": 18,
+              "row": 16,
               "col": 6
             },
             {
@@ -831,7 +999,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Science-Tue",
-              "row": 19,
+              "row": 17,
               "col": 6
             },
             {
@@ -845,7 +1013,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Science-Wed",
-              "row": 20,
+              "row": 18,
               "col": 6
             },
             {
@@ -859,7 +1027,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Science-Thu",
-              "row": 21,
+              "row": 19,
               "col": 6
             },
             {
@@ -873,7 +1041,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Science-Fri",
-              "row": 22,
+              "row": 20,
               "col": 6
             }
           ]
@@ -882,6 +1050,48 @@
           "subject": "English Lit",
           "curriculum": "Hillsdale: Classic Children's Literature Password: Hadassah=021016",
           "tasks": [
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-English Lit-Wed",
+              "row": 3,
+              "col": 7
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-English Lit-Thu",
+              "row": 4,
+              "col": 7
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-English Lit-Fri",
+              "row": 5,
+              "col": 7
+            },
             {
               "day": "Tue",
               "date": "8/4",
@@ -893,7 +1103,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-English Lit-Tue",
-              "row": 9,
+              "row": 7,
               "col": 7
             },
             {
@@ -907,7 +1117,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-English Lit-Wed",
-              "row": 10,
+              "row": 8,
               "col": 7
             },
             {
@@ -921,7 +1131,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-English Lit-Thu",
-              "row": 11,
+              "row": 9,
               "col": 7
             },
             {
@@ -935,7 +1145,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-English Lit-Fri",
-              "row": 12,
+              "row": 10,
               "col": 7
             },
             {
@@ -949,7 +1159,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-English Lit-Mon",
-              "row": 13,
+              "row": 11,
               "col": 7
             },
             {
@@ -963,7 +1173,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-English Lit-Tue",
-              "row": 14,
+              "row": 12,
               "col": 7
             },
             {
@@ -977,7 +1187,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-English Lit-Wed",
-              "row": 15,
+              "row": 13,
               "col": 7
             },
             {
@@ -991,7 +1201,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-English Lit-Thu",
-              "row": 16,
+              "row": 14,
               "col": 7
             },
             {
@@ -1005,7 +1215,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-English Lit-Fri",
-              "row": 17,
+              "row": 15,
               "col": 7
             },
             {
@@ -1019,7 +1229,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-English Lit-Mon",
-              "row": 18,
+              "row": 16,
               "col": 7
             },
             {
@@ -1033,7 +1243,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-English Lit-Tue",
-              "row": 19,
+              "row": 17,
               "col": 7
             },
             {
@@ -1047,7 +1257,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-English Lit-Wed",
-              "row": 20,
+              "row": 18,
               "col": 7
             },
             {
@@ -1061,7 +1271,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-English Lit-Thu",
-              "row": 21,
+              "row": 19,
               "col": 7
             },
             {
@@ -1075,7 +1285,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-English Lit-Fri",
-              "row": 22,
+              "row": 20,
               "col": 7
             }
           ]
@@ -1084,6 +1294,48 @@
           "subject": "Grammar & Writing",
           "curriculum": "User: grandlizard78\nPwd: Hadassah",
           "tasks": [
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Grammar & Writing-Wed",
+              "row": 3,
+              "col": 8
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Grammar & Writing-Thu",
+              "row": 4,
+              "col": 8
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Grammar & Writing-Fri",
+              "row": 5,
+              "col": 8
+            },
             {
               "day": "Tue",
               "date": "8/4",
@@ -1095,7 +1347,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Grammar & Writing-Tue",
-              "row": 9,
+              "row": 7,
               "col": 8
             },
             {
@@ -1109,7 +1361,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Grammar & Writing-Wed",
-              "row": 10,
+              "row": 8,
               "col": 8
             },
             {
@@ -1123,7 +1375,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Grammar & Writing-Thu",
-              "row": 11,
+              "row": 9,
               "col": 8
             },
             {
@@ -1137,7 +1389,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Grammar & Writing-Fri",
-              "row": 12,
+              "row": 10,
               "col": 8
             },
             {
@@ -1151,7 +1403,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Grammar & Writing-Mon",
-              "row": 13,
+              "row": 11,
               "col": 8
             },
             {
@@ -1165,7 +1417,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Grammar & Writing-Tue",
-              "row": 14,
+              "row": 12,
               "col": 8
             },
             {
@@ -1179,7 +1431,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Grammar & Writing-Wed",
-              "row": 15,
+              "row": 13,
               "col": 8
             },
             {
@@ -1193,7 +1445,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Grammar & Writing-Thu",
-              "row": 16,
+              "row": 14,
               "col": 8
             },
             {
@@ -1207,7 +1459,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Grammar & Writing-Fri",
-              "row": 17,
+              "row": 15,
               "col": 8
             },
             {
@@ -1221,7 +1473,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Grammar & Writing-Mon",
-              "row": 18,
+              "row": 16,
               "col": 8
             },
             {
@@ -1235,7 +1487,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Grammar & Writing-Tue",
-              "row": 19,
+              "row": 17,
               "col": 8
             },
             {
@@ -1249,7 +1501,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Grammar & Writing-Wed",
-              "row": 20,
+              "row": 18,
               "col": 8
             },
             {
@@ -1263,7 +1515,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Grammar & Writing-Thu",
-              "row": 21,
+              "row": 19,
               "col": 8
             },
             {
@@ -1277,7 +1529,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Grammar & Writing-Fri",
-              "row": 22,
+              "row": 20,
               "col": 8
             }
           ]
@@ -1286,6 +1538,48 @@
           "subject": "Latin",
           "curriculum": "Lartin Meets at 12:45",
           "tasks": [
+            {
+              "day": "Wed",
+              "date": "7/29",
+              "rawDate": 1785301200000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Latin-Wed",
+              "row": 3,
+              "col": 9
+            },
+            {
+              "day": "Thu",
+              "date": "7/30",
+              "rawDate": 1785387600000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Latin-Thu",
+              "row": 4,
+              "col": 9
+            },
+            {
+              "day": "Fri",
+              "date": "7/31",
+              "rawDate": 1785474000000,
+              "week": 1,
+              "task": "",
+              "imageUrl": null,
+              "linkUrl": null,
+              "done": false,
+              "isBreak": false,
+              "id": "Beth-W1-Latin-Fri",
+              "row": 5,
+              "col": 9
+            },
             {
               "day": "Tue",
               "date": "8/4",
@@ -1297,7 +1591,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Latin-Tue",
-              "row": 9,
+              "row": 7,
               "col": 9
             },
             {
@@ -1311,7 +1605,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Latin-Wed",
-              "row": 10,
+              "row": 8,
               "col": 9
             },
             {
@@ -1325,7 +1619,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Latin-Thu",
-              "row": 11,
+              "row": 9,
               "col": 9
             },
             {
@@ -1339,7 +1633,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W1-Latin-Fri",
-              "row": 12,
+              "row": 10,
               "col": 9
             },
             {
@@ -1353,7 +1647,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Latin-Mon",
-              "row": 13,
+              "row": 11,
               "col": 9
             },
             {
@@ -1367,7 +1661,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Latin-Tue",
-              "row": 14,
+              "row": 12,
               "col": 9
             },
             {
@@ -1381,7 +1675,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Latin-Wed",
-              "row": 15,
+              "row": 13,
               "col": 9
             },
             {
@@ -1395,7 +1689,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Latin-Thu",
-              "row": 16,
+              "row": 14,
               "col": 9
             },
             {
@@ -1409,7 +1703,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W2-Latin-Fri",
-              "row": 17,
+              "row": 15,
               "col": 9
             },
             {
@@ -1423,7 +1717,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Latin-Mon",
-              "row": 18,
+              "row": 16,
               "col": 9
             },
             {
@@ -1437,7 +1731,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Latin-Tue",
-              "row": 19,
+              "row": 17,
               "col": 9
             },
             {
@@ -1451,7 +1745,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Latin-Wed",
-              "row": 20,
+              "row": 18,
               "col": 9
             },
             {
@@ -1465,7 +1759,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Latin-Thu",
-              "row": 21,
+              "row": 19,
               "col": 9
             },
             {
@@ -1479,7 +1773,7 @@
               "done": false,
               "isBreak": false,
               "id": "Beth-W3-Latin-Fri",
-              "row": 22,
+              "row": 20,
               "col": 9
             }
           ]
