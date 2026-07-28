@@ -1,6 +1,6 @@
 // utils.js
 
-const API_URL = 'https://script.google.com/macros/s/AKfycbxWveKXenQGLmeJyhNZCJUrsOEvrDNYGBiIEKEMgKA1kD6Vyn708lXL3rqOsoiYkbYn/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbzPPzHJq-iNfSiQVO-LlBJ6EXujQGwatgK7KOgt9PLxMEV4Qi_TVkky_BNDozKSkQAe/exec';
 
 // ─── LOCAL STORAGE ────────────────────────────
 function getLocalProgress() {
