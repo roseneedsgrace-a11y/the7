@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T16:57:44.991Z",
+  "generated": "2026-08-04T16:59:00.944Z",
   "date": "Tuesday, August 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5092,7 +5092,7 @@
               "task": "Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W1-Math-Tue",
               "row": 4,
