@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T12:56:16.785Z",
+  "generated": "2026-08-04T14:00:26.578Z",
   "date": "Tuesday, August 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1830,7 +1830,7 @@
               "task": "Lesson 1 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W1-Math-Tue",
               "row": 4,
@@ -3785,7 +3785,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W1-History-Tue",
               "row": 7,
@@ -4001,7 +4001,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W1-Science-Tue",
               "row": 7,
