@@ -1,11 +1,14 @@
 {
-  "generated": "2026-08-04T01:29:48.666Z",
+  "generated": "2026-08-04T01:30:01.425Z",
   "date": "Monday, August 3",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [],
+    "reflectionSubjects": [
+      "Beth::Co-Op Classes",
+      "Amos::Bible"
+    ],
     "reflectionPrompts": [
       "What did you learn about?",
       "Name three facts you learned.",
@@ -35,7 +38,9 @@
       "name": "Beth",
       "palette": "#741b47",
       "currentWeek": "1",
-      "chore": []
+      "chore": [
+        "Laundry"
+      ]
     },
     {
       "name": "Tabitha",
