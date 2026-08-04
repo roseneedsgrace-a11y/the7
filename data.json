@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T01:47:39.746Z",
+  "generated": "2026-08-04T01:51:27.291Z",
   "date": "Monday, August 3",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -91,7 +91,7 @@
               "task": "Watch Samaritan Application (8 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-Bible-Tue",
               "row": 4,
@@ -1373,7 +1373,7 @@
               "task": "(BREAK)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-F.O.R.M.-Mon",
               "row": 3,
@@ -1387,7 +1387,7 @@
               "task": "Lesson 1 - Watch Lesson (Watch animated video & use Interactive Learning Guide)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-F.O.R.M.-Tue",
               "row": 4,
