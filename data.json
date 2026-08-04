@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T01:42:01.032Z",
+  "generated": "2026-08-04T01:45:16.264Z",
   "date": "Monday, August 3",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1614,7 +1614,7 @@
               "task": "Genesis 1-11 Overview\n\nRead Genesis 1–2 (Video Day (Light Reading))",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fold-testament%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/old-testament/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W1-Bible-Tue",
               "row": 4,
@@ -2248,7 +2248,7 @@
               "task": "(BREAK)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W1-F.O.R.M.-Mon",
               "row": 3,
