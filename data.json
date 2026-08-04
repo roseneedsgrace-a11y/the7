@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T01:29:34.007Z",
+  "generated": "2026-08-04T01:29:48.666Z",
   "date": "Monday, August 3",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -27,7 +27,9 @@
       "name": "Ezra",
       "palette": "#073763",
       "currentWeek": "*",
-      "chore": []
+      "chore": [
+        "Yard Work"
+      ]
     },
     {
       "name": "Beth",
