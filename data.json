@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T18:00:36.384Z",
+  "generated": "2026-08-04T18:04:12.941Z",
   "date": "Tuesday, August 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -307,7 +307,7 @@
               "task": "Lesson 1 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-Math-Tue",
               "row": 4,
@@ -523,7 +523,7 @@
               "task": "1.1—Introduction & Note-taking (23 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-History/Social Studies-Tue",
               "row": 4,
@@ -955,7 +955,7 @@
               "task": "Lesson: First Steps - How This Class Works",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-Creation Science-Tue",
               "row": 4,
