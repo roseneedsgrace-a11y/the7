@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T01:30:12.453Z",
+  "generated": "2026-08-04T01:36:58.876Z",
   "date": "Monday, August 3",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -17,7 +17,7 @@
   "students": [
     {
       "name": "Amos",
-      "palette": "#073763",
+      "palette": "boy",
       "currentWeek": "*",
       "chore": [
         "Work on shop organization"
@@ -25,7 +25,7 @@
     },
     {
       "name": "Ezra",
-      "palette": "#073763",
+      "palette": "outdoorsy",
       "currentWeek": "*",
       "chore": [
         "Yard Work"
@@ -33,7 +33,7 @@
     },
     {
       "name": "Beth",
-      "palette": "#741b47",
+      "palette": "patriotic",
       "currentWeek": "1",
       "chore": [
         "Laundry"
@@ -41,7 +41,7 @@
     },
     {
       "name": "Tabitha",
-      "palette": "#4c1130",
+      "palette": "ocean",
       "currentWeek": "*",
       "chore": [
         "Dishwasher"
@@ -52,8 +52,8 @@
     {
       "student": "Amos",
       "palette": {
-        "primary": "#9988CC",
-        "secondary": "#87CEEB",
+        "primary": "#708090",
+        "secondary": "#4682B4",
         "bg": "#F0F8FF"
       },
       "weekNum": null,
@@ -62,9 +62,9 @@
     {
       "student": "Ezra",
       "palette": {
-        "primary": "#9988CC",
-        "secondary": "#87CEEB",
-        "bg": "#F0F8FF"
+        "primary": "#5B7B4E",
+        "secondary": "#C17F3A",
+        "bg": "#F5F5EE"
       },
       "weekNum": null,
       "grid": []
@@ -72,9 +72,9 @@
     {
       "student": "Beth",
       "palette": {
-        "primary": "#9988CC",
-        "secondary": "#87CEEB",
-        "bg": "#F0F8FF"
+        "primary": "#B22234",
+        "secondary": "#002868",
+        "bg": "#F8F8FF"
       },
       "weekNum": 1,
       "grid": [
@@ -1595,9 +1595,9 @@
     {
       "student": "Tabitha",
       "palette": {
-        "primary": "#9988CC",
-        "secondary": "#87CEEB",
-        "bg": "#F0F8FF"
+        "primary": "#0077BE",
+        "secondary": "#20B2AA",
+        "bg": "#E0F7FA"
       },
       "weekNum": null,
       "grid": []
