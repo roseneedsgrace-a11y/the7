@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T13:43:07.421Z",
+  "generated": "2026-08-05T14:26:02.378Z",
   "date": "Wednesday, August 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3583,7 +3583,7 @@
               "task": "Lesson 107",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W1-Math-Wed",
               "row": 8,
@@ -5336,7 +5336,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W1-Grammar & Writing-Thu",
               "row": 6,
@@ -5350,7 +5350,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W1-Grammar & Writing-Fri",
               "row": 7,
