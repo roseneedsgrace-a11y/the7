@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T18:58:29.398Z",
+  "generated": "2026-08-05T19:08:54.626Z",
   "date": "Wednesday, August 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -321,7 +321,7 @@
               "task": "Lesson 2 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-Math-Wed",
               "row": 5,
@@ -537,7 +537,7 @@
               "task": "1.1—Read Quotes About Wisdom & 1.2—Why Life? (12 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-History/Social Studies-Wed",
               "row": 5,
@@ -1401,7 +1401,7 @@
               "task": "Rest Day",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-F.O.R.M.-Wed",
               "row": 5,
