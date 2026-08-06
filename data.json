@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T14:01:03.420Z",
+  "generated": "2026-08-06T14:39:07.368Z",
   "date": "Thursday, August 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3841,7 +3841,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W2-History-Mon",
               "row": 11,
@@ -3855,7 +3855,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W2-History-Tue",
               "row": 12,
@@ -4461,7 +4461,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W1-Grammar & Writing-Thu",
               "row": 9,
