@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T18:03:55.406Z",
+  "generated": "2026-08-06T18:06:44.011Z",
   "date": "Thursday, August 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1859,7 +1859,7 @@
               "task": "Lesson 3 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W1-Math-Thu",
               "row": 6,
@@ -2507,7 +2507,7 @@
               "task": "Study Day / Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W1-Science-Thu",
               "row": 6,
