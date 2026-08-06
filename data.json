@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T09:32:47.999Z",
+  "generated": "2026-08-06T13:51:43.923Z",
   "date": "Thursday, August 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4663,7 +4663,7 @@
               "task": "Latin",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W1-Latin-Wed",
               "row": 8,
