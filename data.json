@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T14:39:07.368Z",
+  "generated": "2026-08-06T15:07:24.901Z",
   "date": "Thursday, August 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1642,7 +1642,7 @@
               "task": "Genesis 12-50 Overview\n\nRead Genesis 12–13 (Video Day (Light Reading))",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fold-testament%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/old-testament/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W1-Bible-Thu",
               "row": 6,
