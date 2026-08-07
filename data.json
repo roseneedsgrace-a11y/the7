@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T17:54:09.127Z",
+  "generated": "2026-08-07T21:15:55.371Z",
   "date": "Friday, August 7",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -351,7 +351,7 @@
               "task": "Lesson 4 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W1-Math-Fri",
               "row": 7,
