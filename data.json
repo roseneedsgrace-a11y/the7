@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T00:14:22.449Z",
+  "generated": "2026-08-12T00:45:36.932Z",
   "date": "Tuesday, August 11",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -163,7 +163,7 @@
               "task": "Discussion Questions for The Shrewd Manager",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W2-Bible-Tue",
               "row": 9,
@@ -449,7 +449,7 @@
               "task": "Quiz Week  01",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W2-Math-Tue",
               "row": 9,
@@ -1021,7 +1021,7 @@
               "task": "Complete Compass Classroom work",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W2-Literature-Tue",
               "row": 9,
