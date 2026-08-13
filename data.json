@@ -1,24 +1,15 @@
 {
-  "generated": "2026-08-12T19:58:14.375Z",
-  "date": "Wednesday, August 12",
+  "generated": "2026-08-13T12:13:06.402Z",
+  "date": "Thursday, August 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [
-      "Amos::Bible",
-      "Ezra::Bible",
-      "Ezra::Co-Op Classes",
-      "Beth::Co-Op Classes",
-      "Tabitha::History",
-      "Tabitha::Co-Op Classes"
-    ],
+    "reflectionSubjects": [],
     "reflectionPrompts": [
       "What did you learn about?",
       "Name three facts you learned.",
-      "What was the most interesting part?",
-      "Explain the lesson in your own words.",
-      "What questions do you still have?"
+      "What was the most interesting part?"
     ]
   },
   "students": [
@@ -27,7 +18,7 @@
       "palette": "boy",
       "currentWeek": "2",
       "chore": [
-        "Work on shop organization"
+        "Yard work - 2 hrs (can include blowing off roofs or driveway, mowing, burning yard trash/sticks, pruning, etc. "
       ]
     },
     {
@@ -35,8 +26,7 @@
       "palette": "outdoorsy",
       "currentWeek": "2",
       "chore": [
-        "Yard Work",
-        "Blow off driveway"
+        "Work on shop organization - 30 minutes"
       ]
     },
     {
@@ -5142,7 +5132,7 @@
               "date": "8/20",
               "rawDate": 1787202000000,
               "week": 3,
-              "task": "Complete Monarch Work Assigned",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -5212,7 +5202,7 @@
               "date": "8/27",
               "rawDate": 1787806800000,
               "week": 4,
-              "task": "Complete Monarch Work Assigned",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -8246,7 +8236,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W2-Literature-Fri",
               "row": 12,
@@ -8260,7 +8250,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W3-Literature-Mon",
               "row": 13,
@@ -8271,10 +8261,10 @@
               "date": "8/18",
               "rawDate": 1787029200000,
               "week": 3,
-              "task": "Complete Monarch Work Assigned",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W3-Literature-Tue",
               "row": 14,
@@ -8288,7 +8278,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W3-Literature-Wed",
               "row": 15,
@@ -8299,10 +8289,10 @@
               "date": "8/20",
               "rawDate": 1787202000000,
               "week": 3,
-              "task": "Complete Monarch Work Assigned",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W3-Literature-Thu",
               "row": 16,
@@ -8316,7 +8306,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Tabitha-W3-Literature-Fri",
               "row": 17,
@@ -8341,7 +8331,7 @@
               "date": "8/25",
               "rawDate": 1787634000000,
               "week": 4,
-              "task": "",
+              "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -8369,7 +8359,7 @@
               "date": "8/27",
               "rawDate": 1787806800000,
               "week": 4,
-              "task": "Complete Monarch Work Assigned",
+              "task": "",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
