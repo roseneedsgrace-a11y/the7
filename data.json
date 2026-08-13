@@ -1,11 +1,18 @@
 {
-  "generated": "2026-08-13T12:13:44.009Z",
+  "generated": "2026-08-13T13:29:59.666Z",
   "date": "Thursday, August 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [],
+    "reflectionSubjects": [
+      "Amos::Bible",
+      "Ezra::Bible",
+      "Ezra::Co-Op Classes",
+      "Beth::Co-Op Classes",
+      "Tabitha::History",
+      "Tabitha::Co-Op Classes"
+    ],
     "reflectionPrompts": [
       "What did you learn about? Be detailed.",
       "Name three facts you learned.",
@@ -2196,7 +2203,7 @@
               "task": "Read Genesis 34–39 ()",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W2-Bible-Thu",
               "row": 11,
@@ -3054,7 +3061,7 @@
               "task": "Rest Day",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W2-F.O.R.M.-Thu",
               "row": 11,
@@ -3340,7 +3347,7 @@
               "task": "Study Day / Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W2-Science-Thu",
               "row": 11,
