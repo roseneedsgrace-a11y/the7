@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T12:13:06.402Z",
+  "generated": "2026-08-13T12:13:44.009Z",
   "date": "Thursday, August 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -7,9 +7,11 @@
     "makeupDaysEnabled": true,
     "reflectionSubjects": [],
     "reflectionPrompts": [
-      "What did you learn about?",
+      "What did you learn about? Be detailed.",
       "Name three facts you learned.",
-      "What was the most interesting part?"
+      "What was the most interesting part?",
+      "Explain the lesson in your own words.",
+      "What questions do you still have?"
     ]
   },
   "students": [
