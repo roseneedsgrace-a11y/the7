@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T16:25:27.183Z",
+  "generated": "2026-08-14T16:50:41.690Z",
   "date": "Friday, August 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2217,7 +2217,7 @@
               "task": "Read Genesis 40–41 (Meet w/ Pops (Light Reading))",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W2-Bible-Fri",
               "row": 12,
