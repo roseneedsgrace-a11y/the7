@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18T22:54:36.396Z",
+  "generated": "2026-08-18T23:06:27.295Z",
   "date": "Tuesday, August 18",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -588,7 +588,7 @@
               "task": "Lesson 8 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W3-Math-Tue",
               "row": 14,
@@ -5950,7 +5950,7 @@
               "task": "Lessons 31–33,35 Fact Practice Completion",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W3-Math-Tue",
               "row": 17,
@@ -6662,7 +6662,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Beth-W3-Science-Tue",
               "row": 17,
