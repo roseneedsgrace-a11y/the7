@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T15:22:58.759Z",
+  "generated": "2026-08-19T15:27:17.111Z",
   "date": "Wednesday, August 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2749,7 +2749,7 @@
               "task": "Exodus 1-18 Overview\n\nRead Exodus 1–2 (Video Day (Light Reading))",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fold-testament%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/old-testament/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W3-Bible-Wed",
               "row": 15,
@@ -3817,7 +3817,7 @@
               "task": "Rest Day",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W3-F.O.R.M.-Wed",
               "row": 15,
@@ -4173,7 +4173,7 @@
               "task": "Study Day / Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W3-Science-Wed",
               "row": 15,
