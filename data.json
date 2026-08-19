@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T15:27:17.111Z",
+  "generated": "2026-08-19T15:40:57.045Z",
   "date": "Wednesday, August 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8467,7 +8467,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W3-Bible-Wed",
               "row": 15,
@@ -10247,7 +10247,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W3-Literature-Wed",
               "row": 15,
@@ -10603,7 +10603,7 @@
               "task": "Level 3, p. 16",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W3-Handwriting-Wed",
               "row": 15,
