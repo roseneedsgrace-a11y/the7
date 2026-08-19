@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T15:40:57.045Z",
+  "generated": "2026-08-19T16:53:15.490Z",
   "date": "Wednesday, August 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3461,7 +3461,7 @@
               "task": "Lesson 2: Watch Lecture (53 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W3-Spanish-Wed",
               "row": 15,
