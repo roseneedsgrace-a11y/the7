@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T18:31:23.763Z",
+  "generated": "2026-08-20T18:34:08.861Z",
   "date": "Thursday, August 20",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -260,7 +260,7 @@
               "task": "Watch The Widow & Judge Application (12 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W3-Bible-Thu",
               "row": 16,
@@ -1328,7 +1328,7 @@
               "task": "Complete Compass Classroom work",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W3-Literature-Thu",
               "row": 16,
@@ -2040,7 +2040,7 @@
               "task": "Lesson 1: 1C – Reading",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W3-Visual Latin 2-Thu",
               "row": 16,
