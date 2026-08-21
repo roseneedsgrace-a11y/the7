@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T14:55:49.151Z",
+  "generated": "2026-08-21T16:24:25.340Z",
   "date": "Friday, August 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2777,7 +2777,7 @@
               "task": "Read Exodus 9–10 (Meet w/ Pops (Light Reading))",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W3-Bible-Fri",
               "row": 17,
@@ -3133,7 +3133,7 @@
               "task": "Lesson 10 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W3-Math-Fri",
               "row": 17,
@@ -3845,7 +3845,7 @@
               "task": "Lesson 1 - Devotional Guide (Scripture reading, reflection, and response)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W3-F.O.R.M.-Fri",
               "row": 17,
