@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T19:32:14.554Z",
+  "generated": "2026-08-21T19:32:59.088Z",
   "date": "Friday, August 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -274,7 +274,7 @@
               "task": "Living the Parable",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W3-Bible-Fri",
               "row": 17,
@@ -1342,7 +1342,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Amos-W3-Literature-Fri",
               "row": 17,
