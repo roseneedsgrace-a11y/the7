@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T20:55:27.979Z",
+  "generated": "2026-08-21T21:21:41.348Z",
   "date": "Friday, August 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1342,7 +1342,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W3-Literature-Fri",
               "row": 17,
@@ -5992,7 +5992,7 @@
               "task": "Lesson 113",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W3-Math-Fri",
               "row": 20,
