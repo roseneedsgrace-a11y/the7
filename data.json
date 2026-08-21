@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T11:42:17.023Z",
+  "generated": "2026-08-21T12:53:41.153Z",
   "date": "Friday, August 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -7702,7 +7702,7 @@
               "task": "Latin Quiz, if applicable.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W2-Latin-Fri",
               "row": 15,
