@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T16:47:14.220Z",
+  "generated": "2026-08-24T17:25:43.246Z",
   "date": "Monday, August 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10545,7 +10545,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W4-Bible-Mon",
               "row": 18,
