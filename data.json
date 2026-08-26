@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T16:44:17.226Z",
+  "generated": "2026-08-26T18:44:15.672Z",
   "date": "Wednesday, August 26",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10999,7 +10999,7 @@
               "task": "Lesson 13",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W4-Math-Wed",
               "row": 20,
@@ -13129,7 +13129,7 @@
               "task": "Level 3, p. 22",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W4-Handwriting-Wed",
               "row": 20,
