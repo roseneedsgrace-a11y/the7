@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T16:43:51.934Z",
+  "generated": "2026-08-26T16:44:17.226Z",
   "date": "Wednesday, August 26",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8432,7 +8432,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W4-Science-Wed",
               "row": 23,
@@ -8858,7 +8858,7 @@
               "task": "Video 1:",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fonline.hillsdale.edu%2Fcourses%2Fclassic-childrens-literature%2Flessons%2Fbeauty-and-the-beast",
               "linkUrl": "https://online.hillsdale.edu/courses/classic-childrens-literature/lessons/beauty-and-the-beast",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W4-English Lit-Wed",
               "row": 23,
