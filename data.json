@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T23:07:57.753Z",
+  "generated": "2026-08-27T23:08:18.326Z",
   "date": "Thursday, August 27",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8872,7 +8872,7 @@
               "task": "Video 2:",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fonline.hillsdale.edu%2Fcourses%2Fclassic-childrens-literature%2Flessons%2Fbeauty-and-the-beast",
               "linkUrl": "https://online.hillsdale.edu/courses/classic-childrens-literature/lessons/beauty-and-the-beast",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W4-English Lit-Thu",
               "row": 24,
