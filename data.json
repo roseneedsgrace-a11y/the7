@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T22:15:41.742Z",
+  "generated": "2026-08-27T22:54:11.735Z",
   "date": "Thursday, August 27",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -7140,7 +7140,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W4-Bible-Tue",
               "row": 22,
@@ -7168,7 +7168,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W4-Bible-Thu",
               "row": 24,
@@ -10587,7 +10587,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W4-Bible-Thu",
               "row": 21,
