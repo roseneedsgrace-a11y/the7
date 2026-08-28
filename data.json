@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-28T18:38:18.281Z",
+  "generated": "2026-08-28T21:06:47.546Z",
   "date": "Friday, August 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -16,8 +16,8 @@
     "reflectionPrompts": [
       "What did you learn about? Be detailed.",
       "Name three facts you learned.",
-      "What was the most interesting part?",
-      "Explain the lesson in your own words.",
+      "What was the most interesting part? Use at least two complete sentences.",
+      "Explain the lesson in your own words. Use multiple sentenses.",
       "What questions do you still have?"
     ]
   },
@@ -770,7 +770,7 @@
               "task": "Lesson 13 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W4-Math-Fri",
               "row": 22,
@@ -12344,7 +12344,7 @@
               "date": "9/2",
               "rawDate": 1788325200000,
               "week": 5,
-              "task": "",
+              "task": "HIstory of the World #1",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -12372,7 +12372,7 @@
               "date": "9/4",
               "rawDate": 1788498000000,
               "week": 5,
-              "task": "",
+              "task": "HIstory of the World #2",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
@@ -12414,7 +12414,7 @@
               "date": "9/9",
               "rawDate": 1788930000000,
               "week": 6,
-              "task": "",
+              "task": "History of the World #3",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
