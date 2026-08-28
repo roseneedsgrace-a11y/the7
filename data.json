@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-28T15:27:18.944Z",
+  "generated": "2026-08-28T16:56:42.863Z",
   "date": "Friday, August 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10601,7 +10601,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W4-Bible-Fri",
               "row": 22,
@@ -11027,7 +11027,7 @@
               "task": "Lesson 15",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W4-Math-Fri",
               "row": 22,
