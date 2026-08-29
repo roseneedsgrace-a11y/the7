@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T16:44:08.342Z",
+  "generated": "2026-08-29T17:20:15.869Z",
   "date": "Saturday, August 29",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -7182,7 +7182,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W4-Bible-Fri",
               "row": 25,
