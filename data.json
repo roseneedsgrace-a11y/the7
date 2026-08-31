@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T17:33:27.383Z",
+  "generated": "2026-08-31T23:52:51.581Z",
   "date": "Monday, August 31",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1336,7 +1336,7 @@
               "task": "3.5—Lesson 3 Portfolio & Submit",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W4-History/Social Studies-Fri",
               "row": 22,
@@ -1350,7 +1350,7 @@
               "task": "3.5—Lesson 3 Exam & Submit",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W5-History/Social Studies-Mon",
               "row": 23,
@@ -1846,7 +1846,7 @@
               "task": "🧭 LIVE CLASS MONDAY 2:30 – 3:30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W5-Literature-Mon",
               "row": 23,
