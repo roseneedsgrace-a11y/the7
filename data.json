@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T02:02:16.286Z",
+  "generated": "2026-09-01T02:18:11.949Z",
   "date": "Monday, August 31",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8812,7 +8812,7 @@
               "task": "Lesson 118",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-Math-Mon",
               "row": 26,
