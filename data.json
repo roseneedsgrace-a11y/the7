@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T23:52:51.581Z",
+  "generated": "2026-09-01T01:27:25.594Z",
   "date": "Monday, August 31",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -7313,7 +7313,7 @@
               "task": "🧭 LIVE CLASS MONDAY 1-2:10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W5-American Literature-Mon",
               "row": 23,
@@ -12295,7 +12295,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-Bible-Mon",
               "row": 23,
@@ -15271,7 +15271,7 @@
               "task": "Level 3, p. 25",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-Handwriting-Mon",
               "row": 23,
