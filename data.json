@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T19:08:21.464Z",
+  "generated": "2026-09-01T22:18:24.096Z",
   "date": "Tuesday, September 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -868,7 +868,7 @@
               "task": "Lesson 14 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W5-Math-Tue",
               "row": 24,
@@ -2356,7 +2356,7 @@
               "task": "Lesson: 2. What is Science? - Project: Research a Scientist",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W5-Creation Science-Tue",
               "row": 24,
@@ -8826,7 +8826,7 @@
               "task": "Lesssons 41-45 Fact Practice Completion",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-Math-Tue",
               "row": 27,
