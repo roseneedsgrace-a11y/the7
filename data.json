@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T23:28:47.757Z",
+  "generated": "2026-09-01T23:40:51.708Z",
   "date": "Tuesday, September 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -11306,7 +11306,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-Latin-Tue",
               "row": 27,
@@ -15285,7 +15285,7 @@
               "task": "Level 3, pp. 26-27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-Handwriting-Tue",
               "row": 24,
