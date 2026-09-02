@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T18:57:12.341Z",
+  "generated": "2026-09-02T19:01:52.359Z",
   "date": "Wednesday, September 2",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -13329,7 +13329,7 @@
               "task": "NZK",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-Grammar & Writing-Thu",
               "row": 26,
@@ -14307,7 +14307,7 @@
               "task": "HIstory of the World #1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-History-Wed",
               "row": 25,
