@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T19:42:26.807Z",
+  "generated": "2026-09-02T20:28:08.492Z",
   "date": "Wednesday, September 2",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8840,7 +8840,7 @@
               "task": "Lesson 119",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-Math-Wed",
               "row": 28,
@@ -8854,7 +8854,7 @@
               "task": "Lesson 120 (Part 1 / Instruction)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-Math-Thu",
               "row": 29,
@@ -12323,7 +12323,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-Bible-Wed",
               "row": 25,
