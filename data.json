@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-02T22:42:42.584Z",
-  "date": "Wednesday, September 2",
+  "generated": "2026-09-03T12:31:42.183Z",
+  "date": "Thursday, September 3",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -4379,7 +4379,7 @@
               "task": "Leviticus Overview\n\nRead Leviticus 1–2 (Video Day (Light Reading))",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fold-testament%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/old-testament/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W5-Bible-Thu",
               "row": 26,
@@ -12337,7 +12337,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-Bible-Thu",
               "row": 26,
