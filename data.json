@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T16:04:20.222Z",
+  "generated": "2026-09-04T16:40:27.243Z",
   "date": "Friday, September 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10356,7 +10356,7 @@
               "task": "Read the Snow Queen",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-English Lit-Fri",
               "row": 30,
