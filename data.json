@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T15:53:18.957Z",
+  "generated": "2026-09-04T16:04:20.222Z",
   "date": "Friday, September 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4393,7 +4393,7 @@
               "task": "Read Leviticus 3–4 (Meet w/ Pops (Light Reading))",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W5-Bible-Fri",
               "row": 27,
@@ -4889,7 +4889,7 @@
               "task": "Quiz Week  04",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W5-Math-Fri",
               "row": 27,
