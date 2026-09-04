@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T15:31:32.176Z",
+  "generated": "2026-09-04T15:53:18.957Z",
   "date": "Friday, September 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5385,7 +5385,7 @@
               "task": "Assignment Before Next Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W5-Spanish-Fri",
               "row": 27,
@@ -14335,7 +14335,7 @@
               "task": "HIstory of the World #2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-History-Fri",
               "row": 27,
