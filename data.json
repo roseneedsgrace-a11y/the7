@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T13:41:27.913Z",
+  "generated": "2026-09-04T15:14:03.228Z",
   "date": "Friday, September 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10852,7 +10852,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-Grammar & Writing-Fri",
               "row": 30,
@@ -13343,7 +13343,7 @@
               "task": "NZK",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W5-Grammar & Writing-Fri",
               "row": 27,
