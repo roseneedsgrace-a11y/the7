@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-05T00:04:06.136Z",
-  "date": "Friday, September 4",
+  "generated": "2026-09-05T19:08:07.912Z",
+  "date": "Saturday, September 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -8868,7 +8868,7 @@
               "task": "Lesson 120 (Part 2 / Practice)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-Math-Fri",
               "row": 30,
@@ -11348,7 +11348,7 @@
               "task": "Latin Quiz, if applicable.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W5-Latin-Fri",
               "row": 30,
