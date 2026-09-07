@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07T13:26:27.100Z",
+  "generated": "2026-09-07T13:47:25.667Z",
   "date": "Monday, September 7",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2342,7 +2342,7 @@
               "task": "Lesson: 2. What is Science? - Read “History, Science, and Authority”",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W6-Creation Science-Mon",
               "row": 28,
@@ -13797,7 +13797,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W6-Science-Tue",
               "row": 29,
@@ -14789,7 +14789,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W6-Literature-Tue",
               "row": 29,
