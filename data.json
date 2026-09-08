@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T19:03:40.868Z",
+  "generated": "2026-09-08T19:05:33.695Z",
   "date": "Tuesday, September 8",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -11802,7 +11802,7 @@
               "task": "First Day of Class",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W6-Co-Op Classes-Tue",
               "row": 32,
