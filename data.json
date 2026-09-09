@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T14:58:55.618Z",
+  "generated": "2026-09-09T15:45:55.500Z",
   "date": "Wednesday, September 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12323,7 +12323,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W6-Bible-Wed",
               "row": 30,
@@ -12819,7 +12819,7 @@
               "task": "Investigation 2",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W6-Math-Wed",
               "row": 30,
