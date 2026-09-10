@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T18:58:48.416Z",
+  "generated": "2026-09-10T18:59:46.715Z",
   "date": "Thursday, September 10",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8358,7 +8358,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W6-Bible-Thu",
               "row": 34,
