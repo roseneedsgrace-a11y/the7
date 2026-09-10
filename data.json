@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T22:19:11.787Z",
+  "generated": "2026-09-10T22:47:35.954Z",
   "date": "Thursday, September 10",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1392,7 +1392,7 @@
               "task": "4.5 —Lesson 4 Exam & Submit, Start Copying the piece by Handel.",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fwww.blanksheetmusic.net%2F",
               "linkUrl": "https://www.blanksheetmusic.net/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W6-History/Social Studies-Thu",
               "row": 31,
