@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T22:18:48.680Z",
+  "generated": "2026-09-10T22:19:11.787Z",
   "date": "Thursday, September 10",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4365,7 +4365,7 @@
               "task": "Read Leviticus 17–22 ()",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W6-Bible-Wed",
               "row": 30,
@@ -6349,7 +6349,7 @@
               "task": "Module 3 - Week 6: Submit Module 3 Test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W6-Science-Wed",
               "row": 30,
