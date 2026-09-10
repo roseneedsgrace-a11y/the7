@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T14:05:35.629Z",
+  "generated": "2026-09-10T16:35:34.511Z",
   "date": "Thursday, September 10",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -896,7 +896,7 @@
               "task": "Lesson 19 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W6-Math-Thu",
               "row": 31,
@@ -4875,7 +4875,7 @@
               "task": "Lesson 19 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W6-Math-Thu",
               "row": 31,
@@ -5867,7 +5867,7 @@
               "task": "Activity Day – Do something active.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W6-F.O.R.M.-Thu",
               "row": 31,
