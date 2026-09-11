@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T15:39:05.011Z",
+  "generated": "2026-09-11T15:39:32.504Z",
   "date": "Friday, September 11",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8868,7 +8868,7 @@
               "task": "Fact Practice Completion",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W6-Math-Fri",
               "row": 35,
