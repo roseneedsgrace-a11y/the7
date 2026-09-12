@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12T14:11:12.721Z",
+  "generated": "2026-09-12T14:24:11.778Z",
   "date": "Saturday, September 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1350,7 +1350,7 @@
               "task": "4.5 —Enlightened Despots (17 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W6-History/Social Studies-Mon",
               "row": 28,
@@ -5385,7 +5385,7 @@
               "task": "Assignment Before Next Lecture",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W6-Spanish-Fri",
               "row": 32,
