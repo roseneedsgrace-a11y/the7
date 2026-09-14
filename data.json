@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-14T14:02:31.517Z",
+  "generated": "2026-09-14T14:14:33.326Z",
   "date": "Monday, September 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6321,7 +6321,7 @@
               "task": "Module 5 - Week 7: Watch Lecture (55 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W7-Science-Mon",
               "row": 33,
