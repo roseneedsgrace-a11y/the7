@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-14T19:00:31.251Z",
+  "generated": "2026-09-14T21:51:19.314Z",
   "date": "Monday, September 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8316,7 +8316,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W7-Bible-Mon",
               "row": 36,
@@ -8812,7 +8812,7 @@
               "task": "Lesson 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W7-Math-Mon",
               "row": 36,
@@ -11292,7 +11292,7 @@
               "task": "Latin at 12:45",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W7-Latin-Mon",
               "row": 36,
