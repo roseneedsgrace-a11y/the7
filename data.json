@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T20:02:16.268Z",
+  "generated": "2026-09-16T20:03:34.969Z",
   "date": "Wednesday, September 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -882,7 +882,7 @@
               "task": "Lesson 21 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W7-Math-Wed",
               "row": 35,
@@ -1874,7 +1874,7 @@
               "task": "Complete Compass Classroom work",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W7-Literature-Wed",
               "row": 35,
