@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-16T01:12:35.937Z",
-  "date": "Tuesday, September 15",
+  "generated": "2026-09-16T14:18:10.737Z",
+  "date": "Wednesday, September 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -6349,7 +6349,7 @@
               "task": "Study Day / Catch-up",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W7-Science-Wed",
               "row": 35,
@@ -12323,7 +12323,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W7-Bible-Wed",
               "row": 35,
