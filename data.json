@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T16:14:21.377Z",
+  "generated": "2026-09-16T16:55:43.062Z",
   "date": "Wednesday, September 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4861,7 +4861,7 @@
               "task": "Lesson 21 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W7-Math-Wed",
               "row": 35,
@@ -5357,7 +5357,7 @@
               "task": "Lesson 6: Watch Lecture (57 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W7-Spanish-Wed",
               "row": 35,
@@ -10328,7 +10328,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fonline.hillsdale.edu%2Fcourses%2Fclassic-childrens-literature%2Flessons%2Fthe-snow-queen",
               "linkUrl": "https://online.hillsdale.edu/courses/classic-childrens-literature/lessons/the-snow-queen",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W7-English Lit-Wed",
               "row": 38,
