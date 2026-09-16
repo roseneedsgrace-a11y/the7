@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T16:55:43.062Z",
+  "generated": "2026-09-16T20:02:16.268Z",
   "date": "Wednesday, September 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6845,7 +6845,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W7-Southern Hemisphere Geography-Wed",
               "row": 35,
