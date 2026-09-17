@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T18:18:44.231Z",
+  "generated": "2026-09-17T19:29:58.207Z",
   "date": "Thursday, September 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3376,7 +3376,7 @@
               "task": "Manual Labor for Mr. Billy",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W7-F.O.R.M.-Thu",
               "row": 36,
@@ -6859,7 +6859,7 @@
               "task": "🧭 LIVE CLASS THURSDAY 1-2:10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W7-Southern Hemisphere Geography-Thu",
               "row": 36,
