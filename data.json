@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18T13:14:33.043Z",
+  "generated": "2026-09-18T13:19:27.030Z",
   "date": "Friday, September 18",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10356,7 +10356,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fonline.hillsdale.edu%2Fcourses%2Fclassic-childrens-literature%2Flessons%2Fthe-snow-queen",
               "linkUrl": "https://online.hillsdale.edu/courses/classic-childrens-literature/lessons/the-snow-queen",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W7-English Lit-Fri",
               "row": 40,
