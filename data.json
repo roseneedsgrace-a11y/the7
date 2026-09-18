@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18T16:34:46.227Z",
+  "generated": "2026-09-18T17:08:23.281Z",
   "date": "Friday, September 18",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -414,7 +414,7 @@
               "task": "Finish the video",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fvimeopro.com%2Fcbtseminary%2Fst14-symbolics-2023",
               "linkUrl": "https://vimeopro.com/cbtseminary/st14-symbolics-2023",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W7-Bible-Fri",
               "row": 37,
@@ -1392,7 +1392,7 @@
               "task": "5.5—Lesson 5 Portfolio & Submit, Copy a Work by Handel & Submit",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fwww.blanksheetmusic.net%2F",
               "linkUrl": "https://www.blanksheetmusic.net/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W7-History/Social Studies-Thu",
               "row": 36,
