@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T14:16:23.573Z",
+  "generated": "2026-09-21T14:16:47.868Z",
   "date": "Monday, September 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -854,7 +854,7 @@
               "task": "Catch up / Review",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W8-Math-Mon",
               "row": 38,
