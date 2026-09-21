@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T13:18:06.132Z",
+  "generated": "2026-09-21T13:19:35.824Z",
   "date": "Monday, September 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -11802,7 +11802,7 @@
               "task": "No Co-op",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W8-Co-Op Classes-Tue",
               "row": 42,
