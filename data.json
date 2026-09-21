@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T15:11:43.355Z",
+  "generated": "2026-09-21T15:21:05.238Z",
   "date": "Monday, September 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6321,7 +6321,7 @@
               "task": "Module 5 - Week 8: Watch Lecture (1 hour video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W8-Science-Mon",
               "row": 38,
@@ -10300,7 +10300,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fonline.hillsdale.edu%2Fcourses%2Fclassic-childrens-literature%2Fquizzes%2Fsnow-queen",
               "linkUrl": "https://online.hillsdale.edu/courses/classic-childrens-literature/quizzes/snow-queen",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W8-English Lit-Mon",
               "row": 41,
