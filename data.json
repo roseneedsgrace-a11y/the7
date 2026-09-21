@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T13:19:35.824Z",
+  "generated": "2026-09-21T14:16:23.573Z",
   "date": "Monday, September 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1832,7 +1832,7 @@
               "task": "Classroom & Daily work (or quiz, etc). as assigned in class. (Everything needed before class Monday.)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W7-Literature-Fri",
               "row": 37,
