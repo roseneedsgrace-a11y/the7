@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-21T19:19:38.386Z",
-  "date": "Monday, September 21",
+  "generated": "2026-09-22T13:05:34.650Z",
+  "date": "Tuesday, September 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -27,7 +27,7 @@
       "palette": "boy",
       "currentWeek": "8",
       "chore": [
-        "Yard work - 2 hrs (can include blowing off roofs or driveway, mowing, burning yard trash/sticks, pruning, etc. "
+        "Yard work - 1.5 hrs (can include blowing off roofs or driveway, mowing, burning yard trash/sticks, pruning, etc. "
       ]
     },
     {
@@ -1846,7 +1846,7 @@
               "task": "🧭 LIVE CLASS MONDAY 2:30 – 3:30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W8-Literature-Mon",
               "row": 38,
@@ -6831,7 +6831,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W8-Southern Hemisphere Geography-Tue",
               "row": 39,
@@ -7313,7 +7313,7 @@
               "task": "🧭 LIVE CLASS MONDAY 1-2:10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W8-American Literature-Mon",
               "row": 38,
@@ -7823,7 +7823,7 @@
               "task": "No Co-op",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W8-Co-Op Classes-Tue",
               "row": 39,
@@ -15271,7 +15271,7 @@
               "task": "Level 3, p. 43",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W8-Handwriting-Mon",
               "row": 38,
@@ -15781,7 +15781,7 @@
               "task": "No Co-op",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W8-Co-Op Classes-Tue",
               "row": 39,
