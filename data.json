@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T23:51:33.988Z",
+  "generated": "2026-09-22T23:54:04.589Z",
   "date": "Tuesday, September 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2852,7 +2852,7 @@
               "task": "Lesson 5: Lesson 5 Quiz",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W8-Visual Latin 2-Tue",
               "row": 39,
