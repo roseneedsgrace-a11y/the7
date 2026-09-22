@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T15:14:09.072Z",
+  "generated": "2026-09-22T16:17:28.784Z",
   "date": "Tuesday, September 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4847,7 +4847,7 @@
               "task": "Lesson 23 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W8-Math-Tue",
               "row": 39,
@@ -7327,7 +7327,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W8-American Literature-Tue",
               "row": 39,
