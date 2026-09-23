@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T15:39:53.199Z",
+  "generated": "2026-09-23T16:43:43.150Z",
   "date": "Wednesday, September 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6349,7 +6349,7 @@
               "task": "Module 5 - Week 8: Submit Module 5 Test",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W8-Science-Wed",
               "row": 40,
