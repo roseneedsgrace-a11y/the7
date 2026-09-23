@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T16:43:43.150Z",
+  "generated": "2026-09-23T18:52:01.110Z",
   "date": "Wednesday, September 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -882,7 +882,7 @@
               "task": "Lesson 24 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W8-Math-Wed",
               "row": 40,
@@ -11320,7 +11320,7 @@
               "task": "Latin at 12:45",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W8-Latin-Wed",
               "row": 43,
