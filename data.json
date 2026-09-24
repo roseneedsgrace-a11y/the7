@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T17:56:56.213Z",
+  "generated": "2026-09-24T18:26:16.653Z",
   "date": "Thursday, September 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3376,7 +3376,7 @@
               "task": "Rest Day",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Amos-W8-F.O.R.M.-Thu",
               "row": 41,
