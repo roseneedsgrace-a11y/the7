@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T18:27:27.136Z",
+  "generated": "2026-09-24T18:27:35.621Z",
   "date": "Thursday, September 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -55,7 +55,7 @@
       "currentWeek": "8",
       "chore": [
         "Dishwasher",
-        "Clean your room. Fold your clothes. Put them away. Sweep the floor, etc."
+        "Clean your room: Fold your clothes, put them away, sweep the floor, etc."
       ]
     }
   ],
