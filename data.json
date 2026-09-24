@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T18:27:51.706Z",
+  "generated": "2026-09-24T18:39:20.039Z",
   "date": "Thursday, September 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -36,7 +36,8 @@
       "palette": "outdoorsy",
       "currentWeek": "8",
       "chore": [
-        "Work on shop organization - 30 minutes"
+        "Work on shop organization - 30 minutes",
+        "Blow leaves off the roof and back patio"
       ]
     },
     {
@@ -12340,7 +12341,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W8-Bible-Thu",
               "row": 41,
