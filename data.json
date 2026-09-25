@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T00:57:49.699Z",
+  "generated": "2026-09-25T01:01:40.055Z",
   "date": "Thursday, September 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8362,7 +8362,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W8-Bible-Thu",
               "row": 44,
@@ -8858,7 +8858,7 @@
               "task": "Lesson 7",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W8-Math-Thu",
               "row": 44,
