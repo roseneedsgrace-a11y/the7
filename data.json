@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T12:34:08.981Z",
+  "generated": "2026-09-25T13:27:47.916Z",
   "date": "Friday, September 25",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -13347,7 +13347,7 @@
               "task": "NZK",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W8-Grammar & Writing-Fri",
               "row": 42,
