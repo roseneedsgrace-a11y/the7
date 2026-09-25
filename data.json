@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T15:44:48.385Z",
+  "generated": "2026-09-25T15:54:24.622Z",
   "date": "Friday, September 25",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6877,7 +6877,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W8-Southern Hemisphere Geography-Fri",
               "row": 42,
@@ -12355,7 +12355,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W8-Bible-Fri",
               "row": 42,
@@ -12851,7 +12851,7 @@
               "task": "Lesson 30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W8-Math-Fri",
               "row": 42,
