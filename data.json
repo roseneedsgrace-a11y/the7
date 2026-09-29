@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T14:20:07.528Z",
+  "generated": "2026-09-29T14:50:03.584Z",
   "date": "Tuesday, September 29",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1864,7 +1864,7 @@
               "task": "Complete Compass Classroom work",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W9-Literature-Tue",
               "row": 44,
@@ -10814,7 +10814,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W9-Latin-Tue",
               "row": 47,
