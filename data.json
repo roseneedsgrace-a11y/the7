@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T21:23:17.303Z",
+  "generated": "2026-10-01T21:32:39.889Z",
   "date": "Thursday, October 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3887,7 +3887,7 @@
               "task": "Read Deuteronomy 28–31 ()",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W9-Bible-Thu",
               "row": 46,
@@ -4383,7 +4383,7 @@
               "task": "Quarterly Exam 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W9-Math-Thu",
               "row": 46,
@@ -6367,7 +6367,7 @@
               "task": "🧭 LIVE CLASS THURSDAY 1-2:10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W9-Southern Hemisphere Geography-Thu",
               "row": 46,
