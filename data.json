@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T20:54:01.914Z",
+  "generated": "2026-10-01T21:23:17.303Z",
   "date": "Thursday, October 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -11845,7 +11845,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W9-Bible-Thu",
               "row": 46,
