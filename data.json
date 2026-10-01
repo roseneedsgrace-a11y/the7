@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-30T16:36:53.490Z",
-  "date": "Wednesday, September 30",
+  "generated": "2026-10-01T13:26:27.032Z",
+  "date": "Thursday, October 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -13333,7 +13333,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W9-Science-Thu",
               "row": 46,
