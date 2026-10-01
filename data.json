@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T18:44:55.642Z",
+  "generated": "2026-10-01T20:54:01.914Z",
   "date": "Thursday, October 1",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8362,7 +8362,7 @@
               "task": "Investigation 1",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W9-Math-Thu",
               "row": 49,
