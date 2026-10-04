@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T23:24:36.282Z",
+  "generated": "2026-10-04T23:26:30.259Z",
   "date": "Sunday, October 4",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1093,12 +1093,12 @@
               "date": "10/7",
               "rawDate": 1791349200000,
               "week": 9,
-              "task": "",
+              "task": "TAKE THE ACTUAL PSAT",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "isBreak": true,
-              "id": null,
+              "isBreak": false,
+              "id": "Amos-W9-Math-Wed",
               "row": 50,
               "col": 4
             },
@@ -2243,8 +2243,8 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "isBreak": false,
-              "id": "Amos-W9-Literature-Thu",
+              "isBreak": true,
+              "id": null,
               "row": 51,
               "col": 6
             },
@@ -2257,8 +2257,8 @@
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
-              "isBreak": false,
-              "id": "Amos-W9-Literature-Fri",
+              "isBreak": true,
+              "id": null,
               "row": 52,
               "col": 6
             },
