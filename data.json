@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T12:55:55.109Z",
+  "generated": "2026-10-06T17:04:36.262Z",
   "date": "Tuesday, October 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -11236,7 +11236,7 @@
               "task": "Read Aesop's Fables... we have multiple books",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W9-English Lit-Wed",
               "row": 53,
