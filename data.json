@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T21:20:37.065Z",
+  "generated": "2026-10-07T22:12:48.148Z",
   "date": "Wednesday, October 7",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6159,7 +6159,7 @@
               "task": "Activity Day – Do something active.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W9-F.O.R.M.-Fri",
               "row": 52,
@@ -13511,7 +13511,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W9-Bible-Wed",
               "row": 50,
@@ -14077,7 +14077,7 @@
               "task": "Lesson 34",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W9-Math-Wed",
               "row": 50,
