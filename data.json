@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T14:59:51.771Z",
+  "generated": "2026-10-07T15:52:53.977Z",
   "date": "Wednesday, October 7",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -15775,7 +15775,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fangelaodell.com%2Freal-cool-history-for-kids-home-page%2F",
               "linkUrl": "https://angelaodell.com/real-cool-history-for-kids-home-page/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W9-History-Wed",
               "row": 50,
