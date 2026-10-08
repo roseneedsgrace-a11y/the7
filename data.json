@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T23:41:29.722Z",
+  "generated": "2026-10-08T23:42:28.644Z",
   "date": "Thursday, October 8",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -488,7 +488,7 @@
               "task": "Watch 1/3 of the video",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fvimeopro.com%2Fcbtseminary%2Fst14-symbolics-2023",
               "linkUrl": "https://vimeopro.com/cbtseminary/st14-symbolics-2023",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W9-Bible-Fri",
               "row": 52,
