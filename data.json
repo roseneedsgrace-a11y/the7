@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T16:23:08.529Z",
+  "generated": "2026-10-09T18:25:34.224Z",
   "date": "Friday, October 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1302,7 +1302,7 @@
               "task": "4 — Submit Lesson 4 Exam\nWork on Reformational Imitation Project",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fwww.blanksheetmusic.net%2F",
               "linkUrl": "https://www.blanksheetmusic.net/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W6-History/Social Studies-Tue",
               "row": 29,
