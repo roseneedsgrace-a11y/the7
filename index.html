@@ -110,7 +110,7 @@
   color: #334155;
   cursor: pointer;
   transition: background 0.15s, border-color 0.15s;
-  min-width: 130px;
+  min-width: 60px;
   text-align: left;
 }
 .admin-btn:hover { background: #f1f5f9; border-color: #cbd5e1; }
@@ -699,14 +699,15 @@
   <label style="display:flex; align-items:center; font-size:13px; cursor:pointer;">Status Mode
     <div class="switch"><input type="checkbox" id="statusToggle" onchange="render()"><span class="slider"></span></div>
   </label>
-  <button class="print-btn" onclick="window.print()">🖨️</button>
+  <button class="print-btn" onclick="window.print()">⎙</button>
+  <button class="admin-btn danger" onclick="adminClearProgress()">✕ Cache</button>
 </div>
 <div class="admin-links">
   <a href="parents.html" class="nav-link">Parent Dashboard</a>
     <span id="lastUpdated" class="timestamp"></span>
     <span id="syncTimer" style="display:none; font-size:11px; color:#94a3b8; font-style:italic;"></span>
    <button id="refreshBtn" onclick="pushAndRefresh()" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">↻ SYNC</button>
-    <button class="admin-btn danger" onclick="adminClearProgress()">✕ Cache</button>
+    
 </div>  
 <div id="content">Loading assignments...</div>
 
