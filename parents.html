@@ -207,7 +207,12 @@
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
 
-  function isPortfolioTask(text) { return /portfolio/i.test(text || ''); }
+  let portfolioSettings = { enabled: true, keywords: ['portfolio'] };
+  function isPortfolioTask(text) {
+    if (!portfolioSettings.enabled) return false;
+    const t = String(text || '').toLowerCase();
+    return portfolioSettings.keywords.some(k => k && t.indexOf(k) !== -1);
+  }
 
   function escHtml(s) {
     return String(s || '').replace(/[&<>"']/g, c =>
@@ -376,6 +381,10 @@ function startDashboard() {
       fetch(`${API_URL}?action=getPortfolioSubmissions${pinQ()}`)
         .then(r => r.json())
         .then(m => { window.portfolioMap = m; renderForDate(currentDate); })
+        .catch(() => {});
+      fetch(`${API_URL}?action=getPortfolioSettings`)
+        .then(r => r.json())
+        .then(cfg => { if (cfg && Array.isArray(cfg.keywords)) { portfolioSettings = cfg; renderForDate(currentDate); } })
         .catch(() => {});
     })
     .catch(e => {
