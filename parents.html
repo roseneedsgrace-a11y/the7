@@ -3,14 +3,13 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>e
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
   <title>Parent Dashboard</title>
   <style>
-    /* ... [Keeping your existing CSS] ... */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #1e293b; padding-bottom: 60px; }
     .site-header { background: #741b47; width: 100%; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; margin-bottom: 0; }
@@ -208,6 +207,27 @@
     return `<div class="stat-card"><div class="stat-num" style="color:${color};">${num}</div><div class="stat-label">${label}</div></div>`;
   }
 
+  function isPortfolioTask(text) { return /portfolio/i.test(text || ''); }
+
+  function escHtml(s) {
+    return String(s || '').replace(/[&<>"']/g, c =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  function portfolioHtml(t) {
+    if (!isPortfolioTask(t.task)) return '';
+    const sub = window.portfolioMap && window.portfolioMap[t.id];
+    const url = sub && /^https?:\/\//i.test(sub.link || '') ? sub.link : '';
+    if (url) {
+      return `<div style="margin-top:6px;">
+        <a href="${escHtml(url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()"
+          style="display:inline-block; font-size:12px; font-weight:600; color:white; background:#741b47; padding:5px 10px; border-radius:6px; text-decoration:none;">
+          📷 View submitted work</a>
+        ${t.done ? '' : '<span style="font-size:11px; color:#b45309; margin-left:6px;">Review it, then tap this row to mark complete</span>'}
+      </div>`;
+    }
+    return t.done ? '' : '<div style="font-size:11px; color:#94a3b8; margin-top:4px;">📎 No work submitted yet</div>';
+  }
 
   // 3. Sync Actions
 
@@ -304,6 +324,10 @@ window.onload = function() {
       fetch(`${API_URL}?action=getReflections`)
         .then(r => r.json())
         .then(refs => { window.reflectionsMap = refs; renderForDate(currentDate); })
+        .catch(() => {});
+      fetch(`${API_URL}?action=getPortfolioSubmissions`)
+        .then(r => r.json())
+        .then(m => { window.portfolioMap = m; renderForDate(currentDate); })
         .catch(() => {});
     })
     .catch(e => {
@@ -502,6 +526,7 @@ function buildTaskRow(t, palette, isPastDue, studentName) {
         ${isPastDue ? '' : `<div class="task-subject" style="color:${palette.primary};">${t.subject}</div>`}
         <div class="task-text">${t.task}${dateLabel}</div>
         ${reflectionHtml}
+        ${portfolioHtml(t)}
       </div>
     </div>`;
 }
@@ -621,7 +646,6 @@ function saveChores(studentName, event) {
 }
 function cancelChoreEdit(studentName, event) {
   event.stopPropagation();
-  document.getElementById('chore-text-' + studentName).style.display = 'block';
   document.getElementById('chore-edit-' + studentName).style.display = 'none';
 }
 
@@ -732,7 +756,7 @@ function toggleTask(id, palettePrimary, paletteSecondary, studentName, row, col)
 function approveEntireDay(studentName, silent) {
   const student = allData.students.find(s => s.student === studentName);
   if (!student) return;
-  if (!silent && !confirm(`Mark everything today for ${studentName} as done?`)) return;
+  if (!silent && !confirm(`Mark everything today for ${studentName} as done? (Portfolio tasks are skipped; mark those individually.)`)) return;
 
   const targetMidnight = Date.UTC(
     currentDate.getFullYear(), 
@@ -744,7 +768,7 @@ function approveEntireDay(studentName, silent) {
     subj.tasks.forEach(t => {
       const d = new Date(t.rawDate);
       const taskMidnight = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
-      if (taskMidnight === targetMidnight && !t.done) {
+      if (taskMidnight === targetMidnight && !t.done && !isPortfolioTask(t.task)) {
         t.done = true;
         setLocalProgress(t.id, true);
         const row = document.getElementById('prow-' + t.id);
@@ -770,15 +794,15 @@ function toggleMakeupDays() {
   const statusEl = document.getElementById('makeupToggleStatus');
   const btn = document.getElementById('makeupToggleBtn');
   
-  // Determine flip
-  const currentlyEnabled = statusEl.textContent.trim() === "ON";
+  // Determine flip (text is "Currently ON", "Currently OFF", "ON" or "OFF")
+  const currentlyEnabled = /ON$/.test(statusEl.textContent.trim());
   const newState = !currentlyEnabled;
 
   statusEl.textContent = "Updating...";
   btn.disabled = true;
 
   // This calls your GAS Web App URL
-  const url = `${api_url}?action=setMakeupDays&enabled=${newState}`;
+  const url = `${API_URL}?action=setMakeupDays&enabled=${newState}`;
 
   fetch(url)
     .then(response => response.json())
@@ -786,12 +810,15 @@ function toggleMakeupDays() {
       if (data.success) {
         statusEl.textContent = newState ? "ON" : "OFF";
         btn.classList.toggle('active-state', newState); // Optional CSS class change
-        
-        // Alert the user or log success
         console.log("GitHub Sync Triggered");
+      } else {
+        statusEl.textContent = currentlyEnabled ? "ON" : "OFF";
       }
     })
-    .catch(err => alert("Error: " + err))
+    .catch(err => {
+      statusEl.textContent = currentlyEnabled ? "ON" : "OFF";
+      alert("Error: " + err);
+    })
     .finally(() => { btn.disabled = false; });
 }
 
@@ -898,11 +925,12 @@ function adminRefresh() {
   }
 
   function adminApproveAll() {
-    if (!confirm('Mark ALL tasks today as done for every student?')) return;
+    if (!confirm('Mark ALL tasks today as done for every student? (Portfolio tasks are skipped.)')) return;
     allData.students.forEach(s => {
       approveEntireDay(s.student, true);
     });
-    adminStatus('✓ All tasks marked done.', '#16a34a');
+    renderForDate(currentDate);
+    adminStatus('✓ All tasks marked done (portfolio tasks skipped).', '#16a34a');
   }
 
   function cycleCardView(studentName, event) {
