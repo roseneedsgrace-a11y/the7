@@ -290,7 +290,55 @@ function updateColors(palette, headerColor) {
 }
 
   // 5. Everything else
-window.onload = function() {
+// ─── PARENT PIN GATE ─────────────────────────
+function getStoredPin() { try { return sessionStorage.getItem('parent_pin') || ''; } catch (e) { return ''; } }
+function setStoredPin(v) { try { sessionStorage.setItem('parent_pin', v); } catch (e) {} }
+function pinQ() { return '&pin=' + encodeURIComponent(getStoredPin()); }
+
+function verifyPin(pin) {
+  return fetch(`${API_URL}?action=checkPin&pin=${encodeURIComponent(pin)}`)
+    .then(r => r.json())
+    .then(r => !!(r && r.success))
+    .catch(() => false);
+}
+
+function showLockScreen(msg) {
+  document.getElementById('statsStrip').innerHTML = '';
+  const c = document.getElementById('content');
+  c.className = '';
+  c.innerHTML = `
+    <div style="max-width:320px; margin:40px auto; text-align:center; padding:0 20px;">
+      <div style="font-size:28px;">🔒</div>
+      <div style="font-weight:700; margin:8px 0 14px;">Parent PIN</div>
+      <input type="password" id="pinInput" inputmode="numeric" autocomplete="off"
+        onkeydown="if(event.key==='Enter') submitPin()"
+        style="width:100%; padding:10px; border:1px solid #cbd5e1; border-radius:8px; font-size:16px; text-align:center;">
+      <div style="color:#dc2626; font-size:12px; min-height:16px; margin-top:8px;">${msg || ''}</div>
+      <button class="approve-btn" onclick="submitPin()" style="margin-top:8px; padding:10px 24px; font-size:13px;">Unlock</button>
+    </div>`;
+  setTimeout(() => { const i = document.getElementById('pinInput'); if (i) i.focus(); }, 0);
+}
+
+async function submitPin() {
+  const input = document.getElementById('pinInput');
+  const pin = input ? input.value.trim() : '';
+  if (!pin) return;
+  if (await verifyPin(pin)) {
+    setStoredPin(pin);
+    startDashboard();
+  } else {
+    showLockScreen('Wrong PIN, or too many tries. Wait 15 minutes and try again.');
+  }
+}
+
+window.onload = async function() {
+  const stored = getStoredPin();
+  if (stored && await verifyPin(stored)) startDashboard();
+  else showLockScreen();
+};
+
+function startDashboard() {
+  document.getElementById('content').innerHTML = 'Loading assignments...';
   // Set the date label immediately so it shows before render completes
   const dateStr = currentDate.toLocaleDateString('en-US', { 
     weekday: 'long', month: 'long', day: 'numeric' 
@@ -321,11 +369,11 @@ window.onload = function() {
         renderForDate(currentDate);
         updateMakeupToggleBtn(allData.config && allData.config.makeupDaysEnabled !== false);
       });
-      fetch(`${API_URL}?action=getReflections`)
+      fetch(`${API_URL}?action=getReflections${pinQ()}`)
         .then(r => r.json())
         .then(refs => { window.reflectionsMap = refs; renderForDate(currentDate); })
         .catch(() => {});
-      fetch(`${API_URL}?action=getPortfolioSubmissions`)
+      fetch(`${API_URL}?action=getPortfolioSubmissions${pinQ()}`)
         .then(r => r.json())
         .then(m => { window.portfolioMap = m; renderForDate(currentDate); })
         .catch(() => {});
@@ -336,7 +384,7 @@ window.onload = function() {
         content.innerHTML = `<div style="padding:40px;text-align:center;color:#dc2626;">Error loading data: ${e.message}</div>`;
       }
     });
-};
+}
 
 function applyHeaderSettings(config) {
   if (config.headerText) {
@@ -634,7 +682,7 @@ function saveChores(studentName, event) {
 
   document.getElementById('chore-edit-' + studentName).style.display = 'none';
 
-  fetch(`${API_URL}?action=updateChore&student=${encodeURIComponent(studentName)}&chores=${encodeURIComponent(JSON.stringify(newChores))}`,
+  fetch(`${API_URL}?action=updateChore&student=${encodeURIComponent(studentName)}&chores=${encodeURIComponent(JSON.stringify(newChores))}${pinQ()}`,
     { mode: 'no-cors' });
 
   setTimeout(() => {
@@ -715,7 +763,7 @@ function toggleTask(id, palettePrimary, paletteSecondary, studentName, row, col)
         subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
       });
     });
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`, 
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}${pinQ()}`, 
       { mode: 'no-cors' });
     startSyncTimer();
   }
@@ -781,7 +829,7 @@ function approveEntireDay(studentName, silent) {
           }
         }
         // Pass cell address
-        fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true&student=${encodeURIComponent(studentName)}&row=${t.row}&col=${t.col}`, 
+        fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true&student=${encodeURIComponent(studentName)}&row=${t.row}&col=${t.col}${pinQ()}`, 
           { mode: 'no-cors' });
       }
     });
@@ -802,7 +850,7 @@ function toggleMakeupDays() {
   btn.disabled = true;
 
   // This calls your GAS Web App URL
-  const url = `${API_URL}?action=setMakeupDays&enabled=${newState}`;
+  const url = `${API_URL}?action=setMakeupDays&enabled=${newState}${pinQ()}`;
 
   fetch(url)
     .then(response => response.json())
