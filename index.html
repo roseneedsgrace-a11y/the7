@@ -1397,12 +1397,15 @@ function render() {
 }
 
     
-// ─── PORTFOLIO PHOTO ──────────────────────────
+// ─── PORTFOLIO LINK ───────────────────────────
 let portfolioResolver = null;
-let portfolioDataUrl = null;
+let portfolioSubmissions = {};
 
-function isPortfolioTask(text) {
-  return /portfolio/i.test(text || '');
+function isPortfolioTask(text) { return /portfolio/i.test(text || ''); }
+
+function isValidLink(s) {
+  try { const u = new URL(s); return u.protocol === 'https:' || u.protocol === 'http:'; }
+  catch (e) { return false; }
 }
 
 function findTaskById(studentName, id) {
@@ -1415,100 +1418,87 @@ function findTaskById(studentName, id) {
   return null;
 }
 
-function resizeImage(file, maxDim = 1600, quality = 0.8) {
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    const url = URL.createObjectURL(file);
-    img.onload = () => {
-      const scale = Math.min(1, maxDim / Math.max(img.width, img.height));
-      const c = document.createElement('canvas');
-      c.width = Math.round(img.width * scale);
-      c.height = Math.round(img.height * scale);
-      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
-      URL.revokeObjectURL(url);
-      resolve(c.toDataURL('image/jpeg', quality));
-    };
-    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Could not read image')); };
-    img.src = url;
-  });
+function loadPortfolioSubmissions() {
+  fetch(`${API_URL}?action=getPortfolioSubmissions`)
+    .then(r => r.json())
+    .then(m => { portfolioSubmissions = m || {}; render(); })
+    .catch(() => {});
 }
 
-async function onPortfolioFileChosen(input) {
-  const file = input.files && input.files[0];
-  const btn = document.getElementById('portfolioSubmitBtn');
-  const preview = document.getElementById('portfolioPreview');
-  portfolioDataUrl = null;
-  btn.disabled = true;
-  if (!file) { preview.style.display = 'none'; return; }
-  try {
-    portfolioDataUrl = await resizeImage(file);
-    preview.src = portfolioDataUrl;
-    preview.style.display = 'block';
-    btn.disabled = false;
-  } catch (e) {
-    alert('Sorry, that photo could not be read. Please try another.');
-    preview.style.display = 'none';
-  }
+function portfolioBadge(t, isDone) {
+  if (isDone || !isPortfolioTask(t.task)) return '';
+  return portfolioSubmissions[t.id]
+    ? '<div style="font-size:11px; color:#b45309; font-weight:600; margin-top:4px;">⏳ Submitted, waiting for parent</div>'
+    : '<div style="font-size:11px; color:#94a3b8; margin-top:4px;">📎 Needs a picture link</div>';
 }
 
-function askPortfolioPhoto(taskText) {
+function askPortfolioLink(taskText, existingLink) {
   return new Promise(resolve => {
     portfolioResolver = resolve;
-    portfolioDataUrl = null;
-    document.getElementById('portfolioFile').value = '';
-    document.getElementById('portfolioPreview').style.display = 'none';
-    document.getElementById('portfolioSubmitBtn').disabled = true;
+    document.getElementById('portfolioLink').value = existingLink || '';
+    document.getElementById('portfolioError').textContent = '';
     document.getElementById('portfolioTaskText').textContent =
-      'Take or choose a picture of your work before checking this off.' +
-      (taskText ? ' (' + taskText + ')' : '');
+      'Paste a link to a picture of your work.' + (taskText ? ' (' + taskText + ')' : '');
     document.getElementById('portfolioOverlay').classList.add('open');
+    document.getElementById('portfolioLink').focus();
   });
 }
 
 function closePortfolioModal(submitted) {
-  if (submitted && !portfolioDataUrl) return;
+  const link = document.getElementById('portfolioLink').value.trim();
+  if (submitted && !isValidLink(link)) {
+    document.getElementById('portfolioError').textContent =
+      'Please paste a full link that starts with https://';
+    return;
+  }
   document.getElementById('portfolioOverlay').classList.remove('open');
-  if (portfolioResolver) portfolioResolver(submitted ? portfolioDataUrl : null);
+  if (portfolioResolver) portfolioResolver(submitted ? link : null);
   portfolioResolver = null;
 }
 
-function sendPortfolioPhoto(task, studentName, subject, dataUrl) {
-  fetch(API_URL, {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-    body: JSON.stringify({
-      action: 'portfolioPhoto',
-      student: studentName,
-      subject: subject,
-      task: task.task,
-      week: task.week,
-      date: task.date,
-      image: dataUrl
-    })
+async function submitPortfolioLink(task, studentName, subject, link) {
+  const qs = new URLSearchParams({
+    action: 'submitPortfolio',
+    key: task.id,
+    student: studentName,
+    subject: subject || '',
+    task: task.task || '',
+    week: task.week || '',
+    date: task.date || '',
+    link: link
   });
+  try {
+    const res = await (await fetch(`${API_URL}?${qs.toString()}`)).json();
+    if (!res.success) throw new Error(res.error || 'failed');
+    portfolioSubmissions[task.id] = { student: studentName, subject, task: task.task, link };
+    render();
+    alert('Submitted! Your parent will look at it and check it off.');
+  } catch (e) {
+    alert('Sorry, that did not go through. Please try again.');
+  }
 }
 
 // ─── TOGGLE (replaces existing) ───────────────
 async function toggle(id, el, studentName, row, col, subject) {
   const wantsDone = el.checked;
   const isChore = id.includes('-chore-');
+  const task = isChore ? null : findTaskById(studentName, id);
+
+  // Portfolio tasks: student submits a link; only the parent marks them done
+  if (task && isPortfolioTask(task.task)) {
+    el.checked = !wantsDone;   // undo the checkbox change either way
+    if (wantsDone) {
+      const existing = portfolioSubmissions[id] && portfolioSubmissions[id].link;
+      const link = await askPortfolioLink(task.task, existing);
+      if (link) await submitPortfolioLink(task, studentName, subject, link);
+    }
+    return;
+  }
+
   let reflectionAnswer = null;
-
-  if (wantsDone && !isChore) {
-    // 1. Reflection (if configured for this subject)
-    if (subject && subjectNeedsReflection(studentName, subject)) {
-      reflectionAnswer = await askReflection();
-      if (reflectionAnswer === null) { el.checked = false; return; }
-    }
-
-    // 2. Portfolio photo (any task containing "portfolio")
-    const task = findTaskById(studentName, id);
-    if (task && isPortfolioTask(task.task)) {
-      const photo = await askPortfolioPhoto(task.task);
-      if (!photo) { el.checked = false; return; }
-      sendPortfolioPhoto(task, studentName, subject, photo);
-    }
+  if (wantsDone && !isChore && subject && subjectNeedsReflection(studentName, subject)) {
+    reflectionAnswer = await askReflection();
+    if (reflectionAnswer === null) { el.checked = false; return; }
   }
 
   setLocalProgress(id, wantsDone);
@@ -1530,7 +1520,6 @@ async function toggle(id, el, studentName, row, col, subject) {
     fetch(url, { mode: 'no-cors' });
     startSyncTimer();
   }
-
   updateChoreBanner();
 }
     
