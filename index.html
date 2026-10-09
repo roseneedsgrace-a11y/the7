@@ -747,7 +747,7 @@ window.onload = function() {
       fetchAndMergeProgress().then(() => {
         updateWeekFromStudent(); // This triggers render()
       });
-        loadPortfolioSubmissions();
+        fetch(`${API_URL}?action=getPortfolioStatus`)
     updateWeekFromStudent();
     })
     .catch(err => console.error("Data load failed:", err));
