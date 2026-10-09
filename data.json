@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T11:52:45.509Z",
+  "generated": "2026-10-09T12:49:07.772Z",
   "date": "Friday, October 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2713,7 +2713,7 @@
               "task": "[Break]",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Amos-W9-Creation Science-Tue",
               "row": 49,
@@ -2727,7 +2727,7 @@
               "task": "[Break]",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Amos-W9-Creation Science-Wed",
               "row": 50,
