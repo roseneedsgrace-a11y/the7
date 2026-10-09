@@ -747,12 +747,12 @@ window.onload = function() {
       fetchAndMergeProgress().then(() => {
         updateWeekFromStudent(); // This triggers render()
       });
-        fetch(`${API_URL}?action=getPortfolioStatus`)
-    updateWeekFromStudent();
+      loadPortfolioSubmissions();
+      loadPortfolioSettings();
+      updateWeekFromStudent();
     })
     .catch(err => console.error("Data load failed:", err));
 };
-
 
 
 const REFLECTION_PROMPTS = [
@@ -1404,7 +1404,20 @@ function render() {
 let portfolioResolver = null;
 let portfolioSubmissions = {};
 
-function isPortfolioTask(text) { return /portfolio/i.test(text || ''); }
+let portfolioSettings = { enabled: true, keywords: ['portfolio'] };
+
+function isPortfolioTask(text) {
+  if (!portfolioSettings.enabled) return false;
+  const t = String(text || '').toLowerCase();
+  return portfolioSettings.keywords.some(k => k && t.indexOf(k) !== -1);
+}
+
+function loadPortfolioSettings() {
+  fetch(`${API_URL}?action=getPortfolioSettings`)
+    .then(r => r.json())
+    .then(s => { if (s && Array.isArray(s.keywords)) { portfolioSettings = s; render(); } })
+    .catch(() => {});
+}
 
 function isValidLink(s) {
   try { const u = new URL(s); return u.protocol === 'https:' || u.protocol === 'http:'; }
