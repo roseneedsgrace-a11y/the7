@@ -695,7 +695,20 @@
     </div>
   </div>
 </div>
-    
+<div class="reflection-overlay" id="portfolioOverlay">
+  <div class="reflection-box">
+    <h3>Submit your work</h3>
+    <p id="portfolioTaskText">Paste a link to a picture of your work.</p>
+    <input type="url" id="portfolioLink" placeholder="https://..."
+      oninput="document.getElementById('portfolioError').textContent=''"
+      style="width:100%; padding:10px; border:1px solid #cbd5e1; border-radius:8px; font-size:14px; box-sizing:border-box;">
+    <div id="portfolioError" style="color:#dc2626; font-size:12px; margin-top:6px; min-height:14px;"></div>
+    <div class="reflection-actions">
+      <button class="reflection-cancel" onclick="closePortfolioModal(false)">Cancel</button>
+      <button class="reflection-submit" onclick="closePortfolioModal(true)">Submit</button>
+    </div>
+  </div>
+</div>    
 <script>
   let allData = null;
 
@@ -1384,50 +1397,143 @@ function render() {
 }
 
     
+// ─── PORTFOLIO PHOTO ──────────────────────────
+let portfolioResolver = null;
+let portfolioDataUrl = null;
+
+function isPortfolioTask(text) {
+  return /portfolio/i.test(text || '');
+}
+
+function findTaskById(studentName, id) {
+  const student = allData.studentData.find(s => s.student === studentName);
+  if (!student) return null;
+  for (const row of student.grid) {
+    const t = (row.tasks || []).find(x => String(x.id) === String(id));
+    if (t) return t;
+  }
+  return null;
+}
+
+function resizeImage(file, maxDim = 1600, quality = 0.8) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      const scale = Math.min(1, maxDim / Math.max(img.width, img.height));
+      const c = document.createElement('canvas');
+      c.width = Math.round(img.width * scale);
+      c.height = Math.round(img.height * scale);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      resolve(c.toDataURL('image/jpeg', quality));
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Could not read image')); };
+    img.src = url;
+  });
+}
+
+async function onPortfolioFileChosen(input) {
+  const file = input.files && input.files[0];
+  const btn = document.getElementById('portfolioSubmitBtn');
+  const preview = document.getElementById('portfolioPreview');
+  portfolioDataUrl = null;
+  btn.disabled = true;
+  if (!file) { preview.style.display = 'none'; return; }
+  try {
+    portfolioDataUrl = await resizeImage(file);
+    preview.src = portfolioDataUrl;
+    preview.style.display = 'block';
+    btn.disabled = false;
+  } catch (e) {
+    alert('Sorry, that photo could not be read. Please try another.');
+    preview.style.display = 'none';
+  }
+}
+
+function askPortfolioPhoto(taskText) {
+  return new Promise(resolve => {
+    portfolioResolver = resolve;
+    portfolioDataUrl = null;
+    document.getElementById('portfolioFile').value = '';
+    document.getElementById('portfolioPreview').style.display = 'none';
+    document.getElementById('portfolioSubmitBtn').disabled = true;
+    document.getElementById('portfolioTaskText').textContent =
+      'Take or choose a picture of your work before checking this off.' +
+      (taskText ? ' (' + taskText + ')' : '');
+    document.getElementById('portfolioOverlay').classList.add('open');
+  });
+}
+
+function closePortfolioModal(submitted) {
+  if (submitted && !portfolioDataUrl) return;
+  document.getElementById('portfolioOverlay').classList.remove('open');
+  if (portfolioResolver) portfolioResolver(submitted ? portfolioDataUrl : null);
+  portfolioResolver = null;
+}
+
+function sendPortfolioPhoto(task, studentName, subject, dataUrl) {
+  fetch(API_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify({
+      action: 'portfolioPhoto',
+      student: studentName,
+      subject: subject,
+      task: task.task,
+      week: task.week,
+      date: task.date,
+      image: dataUrl
+    })
+  });
+}
+
+// ─── TOGGLE (replaces existing) ───────────────
 async function toggle(id, el, studentName, row, col, subject) {
   const wantsDone = el.checked;
+  const isChore = id.includes('-chore-');
+  let reflectionAnswer = null;
 
-  // Only require reflection when marking DONE, not when unchecking
-  if (wantsDone && subject && subjectNeedsReflection(studentName, subject) && !id.includes('-chore-')) {
-    const answer = await askReflection();
-    if (answer === null) {
-      el.checked = false; // user cancelled — revert
-      return;
+  if (wantsDone && !isChore) {
+    // 1. Reflection (if configured for this subject)
+    if (subject && subjectNeedsReflection(studentName, subject)) {
+      reflectionAnswer = await askReflection();
+      if (reflectionAnswer === null) { el.checked = false; return; }
     }
-    setLocalProgress(id, true);
-    document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
-      input.checked = true;
-      const card = input.closest('.task-card, .list-task-row');
-      if (card) card.classList.toggle('is-done', true);
-    });
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=true&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}&subject=${encodeURIComponent(subject)}&reflection=${encodeURIComponent(answer)}`,
-      { mode: 'no-cors' });
-    startSyncTimer();
-    updateChoreBanner();
-    return;
+
+    // 2. Portfolio photo (any task containing "portfolio")
+    const task = findTaskById(studentName, id);
+    if (task && isPortfolioTask(task.task)) {
+      const photo = await askPortfolioPhoto(task.task);
+      if (!photo) { el.checked = false; return; }
+      sendPortfolioPhoto(task, studentName, subject, photo);
+    }
   }
 
-  // Original behavior (unchecking, chores, or no reflection needed)
-  const isDone = wantsDone;
-  setLocalProgress(id, isDone);
+  setLocalProgress(id, wantsDone);
   document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => {
-    input.checked = isDone;
+    input.checked = wantsDone;
     const card = input.closest('.task-card, .list-task-row');
-    if (card) card.classList.toggle('is-done', isDone);
+    if (card) card.classList.toggle('is-done', wantsDone);
   });
 
-  if (id.includes('-chore-')) {
+  if (isChore) {
     const choreStudent = id.split('-chore-')[0];
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(choreStudent)}`, 
+    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${wantsDone}&student=${encodeURIComponent(choreStudent)}`,
       { mode: 'no-cors' });
   } else {
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`, 
-      { mode: 'no-cors' });
+    let url = `${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${wantsDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`;
+    if (reflectionAnswer !== null) {
+      url += `&subject=${encodeURIComponent(subject)}&reflection=${encodeURIComponent(reflectionAnswer)}`;
+    }
+    fetch(url, { mode: 'no-cors' });
     startSyncTimer();
   }
-  
+
   updateChoreBanner();
 }
+    
   function forceRefresh() {
     const btn = document.getElementById('refreshBtn');
     btn.textContent = 'Checking...';
