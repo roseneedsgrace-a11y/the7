@@ -675,6 +675,7 @@
     <div class="switch"><input type="checkbox" id="statusToggle" onchange="render()"><span class="slider"></span></div>
   </label>
   <button class="print-btn" onclick="window.print()">Print</button>
+  <button class="admin-btn danger" onclick="adminClearProgress()">✕ Local Cache</button>
 </div>
 <div class="admin-links">
   <a href="parents.html" class="nav-link">Parent Dashboard</a>
@@ -1399,6 +1400,13 @@ function render() {
   return html;
 }
 
+function adminClearProgress() {
+    if (confirm('Clear all locally cached progress? This won\'t affect the spreadsheet.')) {
+      localStorage.removeItem('local_progress');
+      renderForDate(currentDate);
+      adminStatus('✓ Local cache cleared.', '#16a34a');
+    }
+  }
     
 // ─── PORTFOLIO LINK ───────────────────────────
 let portfolioResolver = null;
