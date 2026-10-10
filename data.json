@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T21:53:53.051Z",
+  "generated": "2026-10-10T00:23:52.160Z",
   "date": "Friday, October 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1484,7 +1484,7 @@
               "task": "6.5—Lesson 6 Portfolio & Submit\nWork on Reformational Imitation Project",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fwww.blanksheetmusic.net%2F",
               "linkUrl": "https://www.blanksheetmusic.net/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W8-History/Social Studies-Fri",
               "row": 42,
@@ -2714,7 +2714,7 @@
               "task": "[Break]",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W9-Creation Science-Tue",
               "row": 49,
@@ -2728,7 +2728,7 @@
               "task": "[Break]",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W9-Creation Science-Wed",
               "row": 50,
