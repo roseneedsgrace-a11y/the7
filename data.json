@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T00:23:58.564Z",
+  "generated": "2026-10-10T00:24:53.889Z",
   "date": "Friday, October 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1554,7 +1554,7 @@
               "task": "7.5—Lesson 7 Portfolio & Submit",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Amos-W8-History/Social Studies-Fri",
               "row": 47,
@@ -1582,7 +1582,7 @@
               "task": "2.5—Lesson 2 Exam & Submit Lesson 2 Exam (OUT OF ORDER)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W9-History/Social Studies-Tue",
               "row": 49,
