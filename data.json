@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-10T18:24:08.959Z",
-  "date": "Saturday, October 10",
+  "generated": "2026-10-11T21:13:36.493Z",
+  "date": "Sunday, October 11",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -8,13 +8,7 @@
     "reflectionSubjects": [
       "Amos::Bible",
       "Amos::History/Social Studies",
-      "Amos::Literature",
-      "Amos::Creation Science",
-      "Ezra::Bible",
-      "Ezra::Co-Op Classes",
-      "Beth::Co-Op Classes",
-      "Tabitha::History",
-      "Tabitha::Co-Op Classes"
+      "Amos::Literature"
     ],
     "reflectionPrompts": [
       "What did you learn about? Be detailed.",
@@ -39,7 +33,7 @@
       "currentWeek": "9",
       "chore": [
         "Work on shop organization - 30 minutes",
-        "Blow leaves off the roof and back patio...once a week",
+        "Blow leaves off the roof, shop roof, and back patio...once a week",
         "Blow off driveway...twice a week",
         "Weed-eat. Let me know if you're having trouble."
       ]
