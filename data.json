@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T13:53:58.318Z",
+  "generated": "2026-10-12T14:02:41.044Z",
   "date": "Monday, October 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1002,7 +1002,7 @@
               "task": "Lesson 28 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W10-Math-Mon",
               "row": 53,
@@ -8948,7 +8948,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W10-Bible-Mon",
               "row": 56,
