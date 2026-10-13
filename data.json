@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T00:16:22.359Z",
+  "generated": "2026-10-13T00:24:11.759Z",
   "date": "Monday, October 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2641,10 +2641,10 @@
               "date": "10/6",
               "rawDate": 1791262800000,
               "week": 9,
-              "task": "[Break]",
+              "task": "Lesson: 2. What is Science? - Submit Project: Research a Scientist (Out of Order)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Amos-W9-Creation Science-Tue",
               "row": 49,
