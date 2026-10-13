@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T19:18:06.426Z",
+  "generated": "2026-10-13T19:34:22.136Z",
   "date": "Tuesday, October 13",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12924,7 +12924,7 @@
               "task": "Classes",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W10-Co-Op Classes-Tue",
               "row": 57,
