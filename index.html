@@ -1461,12 +1461,12 @@ function render() {
 }
 
 function adminClearProgress() {
-    if (confirm('Clear all locally cached progress? This won\'t affect the spreadsheet.')) {
-      localStorage.removeItem('local_progress');
-      renderForDate(currentDate);
-      adminStatus('✓ Local cache cleared.', '#16a34a');
-    }
+  if (confirm('Clear all locally cached progress? This won\'t affect the spreadsheet.')) {
+    localStorage.removeItem('local_progress');
+    render();
+    alert('Local cache cleared.');
   }
+}
     
 // ─── PORTFOLIO LINK ───────────────────────────
 let portfolioResolver = null;
@@ -1607,7 +1607,7 @@ async function toggle(id, el, studentName, row, col, subject) {
   updateChoreBanner();
 }
     
-  function forceRefresh() {
+function forceRefresh() {
     const btn = document.getElementById('refreshBtn');
     btn.textContent = 'Checking...';
     btn.disabled = true;
@@ -1619,9 +1619,9 @@ async function toggle(id, el, studentName, row, col, subject) {
         const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
 
         if (newTime > oldTime) {
-          allData = data;
+          allData = { ...data, studentData: mergeChoresIntoStudentData(data) };
           updateWeekFromStudent();
-          showTimestamp(data.generated); // from utils.js
+          showTimestamp(data.generated);
           btn.textContent = '✓ Updated!';
         } else {
           btn.textContent = '✓ Current';
@@ -1631,7 +1631,7 @@ async function toggle(id, el, studentName, row, col, subject) {
         btn.style.fontWeight = 'normal';
 
         setTimeout(() => {
-          btn.textContent = '↻';
+          btn.textContent = '↻ SYNC';
           btn.disabled = false;
         }, 2000);
       })
