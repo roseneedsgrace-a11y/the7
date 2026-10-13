@@ -142,7 +142,29 @@
     color: #94a3b8;
     font-style: italic;
   }
-
+  /* ─── DATA REFRESH HELP ──────────────────────── */
+  .data-help {
+    margin: -10px 10px 20px 10px;
+    font-size: 12px;
+    color: #64748b;
+  }
+  .data-help summary {
+    cursor: pointer;
+    color: #94a3b8;
+    font-style: italic;
+    width: fit-content;
+  }
+  .data-help-body {
+    margin-top: 8px;
+    background: var(--panel);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    max-width: 480px;
+  }
+  .data-help-body ol { margin: 6px 0 0 0; padding-left: 20px; line-height: 1.6; }
+  .data-help-body a { color: #741b47; font-weight: 600; }
+    
   /* ─── TABLE VIEW ─────────────────────────────── */
   .table-view table {
     width: 100%;
@@ -558,7 +580,7 @@
 
   /* ─── PRINT STYLES ───────────────────────────── */
   @media print {
-    .controls, .site-header, .admin-links, 
+    .controls, .site-header, .admin-links, .data-help,
     .list-view, .link-btn, #scrollTopBtn,
     #choreBanner { 
       display: none !important; 
@@ -709,6 +731,18 @@
    <button id="refreshBtn" onclick="pushAndRefresh()" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">↻ SYNC</button>
     
 </div>  
+<details class="data-help">
+  <summary>Data not updating?</summary>
+  <div class="data-help-body">
+    If you just changed the spreadsheet and this page still shows old assignments:
+    <ol>
+      <li><a href="data.json" target="_blank" rel="noopener">Open data.json</a> (opens in a new tab).</li>
+      <li>Refresh that tab with <strong>Ctrl+Shift+R</strong> (Windows) or <strong>Cmd+Shift+R</strong> (Mac). On a phone or tablet, pull down to refresh.</li>
+      <li>Check the <code>"generated"</code> time near the top. Keep refreshing until it shows your latest update. GitHub can take a few minutes.</li>
+      <li>Close that tab, come back here, and reload this page.</li>
+    </ol>
+  </div>
+</details>
 <div id="content">Loading assignments...</div>
 
 <div class="reflection-overlay" id="reflectionOverlay">
