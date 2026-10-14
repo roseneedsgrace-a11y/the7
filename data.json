@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T18:46:16.794Z",
+  "generated": "2026-10-14T21:15:16.159Z",
   "date": "Wednesday, October 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3608,7 +3608,7 @@
               "task": "Submit any pastdue assignment that I failed to notice. I will notice it later. This is the last thing you check off.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W7-F.O.R.M.-Fri",
               "row": 37,
