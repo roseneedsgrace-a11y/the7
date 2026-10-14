@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T13:46:24.159Z",
+  "generated": "2026-10-14T14:30:57.587Z",
   "date": "Wednesday, October 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1596,7 +1596,7 @@
               "task": "8.3—The Man of Ambition (24 min video) & 8.3—Read Napoleon Proclamation",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W10-History/Social Studies-Wed",
               "row": 55,
@@ -2728,7 +2728,7 @@
               "task": "Advanced Topics: Biblical Authority to Philosophy of Science - Watch “Philosophy of Science” – Dr. Kurt Wise",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W10-Creation Science-Wed",
               "row": 55,
@@ -9542,7 +9542,7 @@
               "task": "Lesson 14",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W10-Math-Wed",
               "row": 58,
