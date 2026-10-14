@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T14:57:05.491Z",
+  "generated": "2026-10-14T18:37:25.190Z",
   "date": "Wednesday, October 14",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2630,7 +2630,7 @@
               "task": "LESSON 1: SUBMIT ESSAY: Structure of Film (OUT OF ORDER)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W9-Creation Science-Mon",
               "row": 48,
@@ -5569,7 +5569,7 @@
               "task": "Lesson 9: Watch Lecture (45 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W10-Spanish-Wed",
               "row": 55,
