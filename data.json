@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-16T01:21:36.112Z",
-  "date": "Thursday, October 15",
+  "generated": "2026-10-16T15:40:59.540Z",
+  "date": "Friday, October 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -9004,7 +9004,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W10-Bible-Fri",
               "row": 60,
@@ -9570,7 +9570,7 @@
               "task": "Lesson 16",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W10-Math-Fri",
               "row": 60,
