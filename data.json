@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T15:41:11.702Z",
+  "generated": "2026-10-16T15:56:07.169Z",
   "date": "Friday, October 16",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -13543,7 +13543,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W10-Bible-Fri",
               "row": 57,
@@ -14109,7 +14109,7 @@
               "task": "Lesson 38",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W10-Math-Fri",
               "row": 57,
@@ -14675,7 +14675,7 @@
               "task": "NZK",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W10-Grammar & Writing-Fri",
               "row": 57,
