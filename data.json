@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T01:00:49.496Z",
+  "generated": "2026-10-16T01:20:43.506Z",
   "date": "Thursday, October 15",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2462,7 +2462,7 @@
               "task": "Lesson 3: Research a Scientist",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W7-Creation Science-Thu",
               "row": 36,
@@ -2742,7 +2742,7 @@
               "task": "Lesson: 5. The Cause of the Flood - Read Chapters from The New Creationism",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W10-Creation Science-Thu",
               "row": 56,
