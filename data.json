@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T18:39:19.987Z",
+  "generated": "2026-10-16T01:00:49.496Z",
   "date": "Thursday, October 15",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1044,7 +1044,7 @@
               "task": "Lesson 30 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W10-Math-Thu",
               "row": 56,
@@ -1610,7 +1610,7 @@
               "task": "8.4—The Man as Emperor I (25 min video) & 8.4—Read Writings & Proclamations of Napoleon & 8.5—The Man as Emperor II (16 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W10-History/Social Studies-Thu",
               "row": 56,
@@ -2176,7 +2176,7 @@
               "task": "Complete Compass Classroom work",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W10-Literature-Thu",
               "row": 56,
