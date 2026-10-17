@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T17:50:15.668Z",
+  "generated": "2026-10-17T18:02:57.489Z",
   "date": "Saturday, October 17",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1554,7 +1554,7 @@
               "task": "7.6—Reformational Imitation Finished & Submit Project",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fwww.blanksheetmusic.net%2F",
               "linkUrl": "https://www.blanksheetmusic.net/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W9-History/Social Studies-Fri",
               "row": 52,
@@ -12400,7 +12400,7 @@
               "task": "Latin Quiz, if applicable.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W10-Latin-Fri",
               "row": 60,
