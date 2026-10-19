@@ -123,6 +123,41 @@ function getChoreId(studentName, date, index) {
   return `${studentName}-chore-${index}-${dateStr}`;
 }
 
+// ─── DAY-SPECIFIC CHORES ──────────────────────
+// A chore with no prefix shows every day:      "Dishwasher"
+// A chore with a day prefix shows on those days: "Tue: Take out the trash"
+//                                              "Mon, Thu: Clean bathroom"
+// Day names can be short or long (Tue, Tues, Tuesday). "Weekdays" and
+// "Weekends" also work. If the text before the colon isn't all day names,
+// the whole thing is treated as an everyday chore.
+const CHORE_DAY_KEYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+
+function parseChoreDays(raw) {
+  const text = String(raw || '').trim();
+  const m = text.match(/^([A-Za-z][A-Za-z\s,&\/]*?)\s*:\s*(.+)$/);
+  if (!m) return { text, days: null };
+  const tokens = m[1].split(/[\s,&\/]+/).map(t => t.toLowerCase()).filter(t => t && t !== 'and');
+  const days = [];
+  for (const tok of tokens) {
+    if (tok === 'weekdays') { days.push(1, 2, 3, 4, 5); continue; }
+    if (tok === 'weekends') { days.push(0, 6); continue; }
+    const idx = tok.length >= 3 ? CHORE_DAY_KEYS.indexOf(tok.slice(0, 3)) : -1;
+    if (idx === -1) return { text, days: null }; // not a day list, show every day
+    days.push(idx);
+  }
+  return days.length ? { text: m[2].trim(), days } : { text, days: null };
+}
+
+// Returns only the chores that apply on `date`, as { text, index }.
+// `index` is the chore's position in the FULL list, so check-off IDs stay stable.
+function getChoresForDate(chores, date) {
+  const dow = new Date(date).getDay();
+  return (chores || []).map((raw, index) => ({ raw, index }))
+    .filter(c => String(c.raw || '').trim())
+    .map(c => ({ ...parseChoreDays(c.raw), index: c.index }))
+    .filter(c => !c.days || c.days.includes(dow));
+}
+
 // ─── DATA MERGE ───────────────────────────────
 function mergeChoresIntoStudentData(data) {
   const choreMap = {};
