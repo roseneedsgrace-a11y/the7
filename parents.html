@@ -337,9 +337,20 @@ async function submitPin() {
 }
 
 window.onload = async function() {
+  // Accept ?pin=1234 from a bookmarked link
+  const params = new URLSearchParams(window.location.search);
+  const urlPin = params.get('pin');
+  if (urlPin) {
+    setStoredPin(urlPin.trim());
+    // Remove the PIN from the address bar so it doesn't stay on screen
+    params.delete('pin');
+    const clean = window.location.pathname + (params.toString() ? '?' + params : '') + window.location.hash;
+    history.replaceState(null, '', clean);
+  }
+
   const stored = getStoredPin();
   if (stored && await verifyPin(stored)) startDashboard();
-  else showLockScreen();
+  else showLockScreen(urlPin ? 'That PIN didn\'t work.' : '');
 };
 
 function startDashboard() {
