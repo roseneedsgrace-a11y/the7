@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T15:50:12.632Z",
+  "generated": "2026-10-19T16:01:36.699Z",
   "date": "Monday, October 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10080,7 +10080,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W11-History-Mon",
               "row": 61,
@@ -10646,7 +10646,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W11-Science-Mon",
               "row": 61,
