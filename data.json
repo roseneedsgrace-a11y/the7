@@ -1,21 +1,11 @@
 {
-  "generated": "2026-10-20T00:04:04.072Z",
+  "generated": "2026-10-20T00:07:42.272Z",
   "date": "Monday, October 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [
-      "Amos::Bible",
-      "Amos::History/Social Studies",
-      "Amos::Literature",
-      "Amos::Creation Science",
-      "Ezra::Bible",
-      "Ezra::Co-Op Classes",
-      "Beth::Co-Op Classes",
-      "Tabitha::History",
-      "Tabitha::Co-Op Classes"
-    ],
+    "reflectionSubjects": [],
     "reflectionPrompts": [
       "What did you learn about? Be detailed.",
       "Name three facts you learned.",
@@ -31,7 +21,7 @@
       "currentWeek": "11",
       "chore": [
         "Yard work - 1.5 hrs (can include burning yard trash/sticks, pruning, etc.",
-        "Tuesdays: Take out the trash all the way to the curb."
+        "Tue: Take out the trash all the way to the curb."
       ]
     },
     {
@@ -51,8 +41,8 @@
       "currentWeek": "11",
       "chore": [
         "Laundry",
-        "Friday: Shelve books",
-        "Clean your room! This includes folding the clothes!"
+        "Thursday: Shelve books",
+        "Friday: Clean your room! This includes folding the clothes!"
       ]
     },
     {
