@@ -1,21 +1,11 @@
 {
-  "generated": "2026-10-20T00:08:01.810Z",
+  "generated": "2026-10-20T00:10:45.821Z",
   "date": "Monday, October 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [
-      "Amos::Bible",
-      "Amos::History/Social Studies",
-      "Amos::Literature",
-      "Amos::Creation Science",
-      "Ezra::Bible",
-      "Ezra::Co-Op Classes",
-      "Beth::Co-Op Classes",
-      "Tabitha::History",
-      "Tabitha::Co-Op Classes"
-    ],
+    "reflectionSubjects": [],
     "reflectionPrompts": [
       "What did you learn about? Be detailed.",
       "Name three facts you learned.",
@@ -31,7 +21,8 @@
       "currentWeek": "11",
       "chore": [
         "Yard work - 1.5 hrs (can include burning yard trash/sticks, pruning, etc.",
-        "Tue: Take out the trash all the way to the curb."
+        "Tue: Take out the trash all the way to the curb.",
+        "Tue, Thu, Sat.: Clean the litter box"
       ]
     },
     {
@@ -42,7 +33,8 @@
         "Mon., Wed: Work on shop organization - 30 minutes",
         "Tuesday, Thursday: Blow leaves off the roof, shop roof, and back patio...once a week",
         "Tuesday, Friday: Blow off driveway...twice a week",
-        "Friday: Weed-eat. Let me know if you're having trouble."
+        "Friday: Weed-eat. Let me know if you're having trouble.",
+        "Mon, Tue, Fri: Clean the litter box"
       ]
     },
     {
