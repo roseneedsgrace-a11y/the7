@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T00:03:05.102Z",
+  "generated": "2026-10-20T00:03:25.111Z",
   "date": "Monday, October 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -50,9 +50,9 @@
       "palette": "patriotic",
       "currentWeek": "11",
       "chore": [
-        "Laundry",
-        "Shelve books (Fridays)",
-        "Clean your room! This includes folding the clothes!"
+        "Mondays, Wednesday: Laundry",
+        "Fridays: Shelve books",
+        "Thursdays: Clean your room! This includes folding the clothes!"
       ]
     },
     {
