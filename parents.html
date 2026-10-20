@@ -603,6 +603,7 @@ function buildChoreRow(studentName, chores, palette, date) {
   if (!chores || !chores.length) return '';
   
   const lp = getLocalProgress();
+  const todaysChores = getChoresForDate(chores, date);
   let html = `<div class="chore-section-label">
     Last but Not Least: Daily Chores
     <button onclick="editChores('${studentName}', event)" 
@@ -611,8 +612,12 @@ function buildChoreRow(studentName, chores, palette, date) {
     </button>
   </div>`;
   
-  chores.forEach((chore, i) => {
-    const id = getChoreId(studentName, date, i);
+  if (!todaysChores.length) {
+    html += `<div class="no-tasks">No chores scheduled today</div>`;
+  }
+
+  todaysChores.forEach(c => {
+    const id = getChoreId(studentName, date, c.index);
     const isDone = lp[id] === true;
     html += `
       <div class="task-row ${isDone ? 'is-done' : ''}" id="prow-${id}"
@@ -621,7 +626,7 @@ function buildChoreRow(studentName, chores, palette, date) {
           ${isDone ? `<span style="display:block;width:5px;height:9px;border:2px solid white;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);"></span>` : ''}
         </div>
         <div class="task-info">
-          <div class="task-text">${chore}</div>
+          <div class="task-text">${c.text}</div>
         </div>
       </div>`;
   });
@@ -629,10 +634,14 @@ function buildChoreRow(studentName, chores, palette, date) {
 
   html += `
     <div id="chore-edit-${studentName}" style="display:none; padding:12px 18px; background:#f8fafc; border-top:1px solid #e2e8f0;">
+      <div style="font-size:11px; color:#64748b; margin-bottom:8px; line-height:1.4;">
+        Every day: just type the chore. Certain days only: start with the day(s) and a colon,
+        like <b>Tue: Take out the trash</b> or <b>Mon, Thu: Clean bathroom</b>.
+      </div>
       <div id="chore-inputs-${studentName}">
         ${chores.map((c, i) => `
           <div style="display:flex; gap:6px; margin-bottom:6px; align-items:center;">
-            <input type="text" value="${c}" id="chore-input-${studentName}-${i}"
+            <input type="text" value="${escHtml(c)}" id="chore-input-${studentName}-${i}"
               style="flex:1; padding:6px 10px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px;"
               onclick="event.stopPropagation()">
             <button onclick="removeChoreInput('${studentName}', ${i}, event)"
@@ -670,7 +679,7 @@ function addChoreInput(studentName, event) {
   const div = document.createElement('div');
   div.style.cssText = 'display:flex; gap:6px; margin-bottom:6px; align-items:center;';
   div.innerHTML = `
-    <input type="text" value="" id="chore-input-${studentName}-${i}"
+    <input type="text" value="" placeholder="e.g. Tue: Take out the trash" id="chore-input-${studentName}-${i}"
       style="flex:1; padding:6px 10px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px;"
       onclick="event.stopPropagation()">
     <button onclick="removeChoreInput('${studentName}', ${i}, event)"
@@ -729,9 +738,9 @@ function renderStats(filtered) {
 
     // Count chore if student has one
     if (s.chores && s.chores.length) {
-      s.chores.forEach((chore, i) => {
+      getChoresForDate(s.chores, currentDate).forEach(c => {
         choreTotal++;
-        const choreId = getChoreId(s.student, currentDate, i);
+        const choreId = getChoreId(s.student, currentDate, c.index);
         if (lp[choreId] === true) choreDone++;
       });
     }
