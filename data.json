@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T00:13:33.720Z",
+  "generated": "2026-10-20T00:13:54.139Z",
   "date": "Monday, October 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -9,7 +9,12 @@
       "Amos::Bible",
       "Amos::History/Social Studies",
       "Amos::Literature",
-      "Amos::Creation Science"
+      "Amos::Creation Science",
+      "Ezra::Bible",
+      "Ezra::Co-Op Classes",
+      "Beth::Co-Op Classes",
+      "Tabitha::History",
+      "Tabitha::Co-Op Classes"
     ],
     "reflectionPrompts": [
       "What did you learn about? Be detailed.",
