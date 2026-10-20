@@ -1,11 +1,16 @@
 {
-  "generated": "2026-10-20T00:13:31.583Z",
+  "generated": "2026-10-20T00:13:33.720Z",
   "date": "Monday, October 19",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
     "makeupDaysEnabled": true,
-    "reflectionSubjects": [],
+    "reflectionSubjects": [
+      "Amos::Bible",
+      "Amos::History/Social Studies",
+      "Amos::Literature",
+      "Amos::Creation Science"
+    ],
     "reflectionPrompts": [
       "What did you learn about? Be detailed.",
       "Name three facts you learned.",
