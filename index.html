@@ -862,7 +862,8 @@ function updateChoreBanner() {
 
   const studentName = document.getElementById('studentSelect').value;
   const student = allData.studentData.find(s => s.student === studentName);
-  const chores = student && student.chores ? student.chores.filter(c => c.trim()) : [];
+  // Only the chores scheduled for today (everyday chores + any for today's weekday)
+  const chores = student && student.chores ? getChoresForDate(student.chores, new Date()) : [];
   
   if (!chores.length) {
     document.getElementById('choreBanner').style.display = 'none';
@@ -895,10 +896,10 @@ function updateChoreBanner() {
   const thresholdMet = (todayDone / todayTotal) >= 0.5;
 
   // Check all chores completion
-  const choreStates = chores.map((chore, i) => ({
-    chore,
-    id: getChoreId(student.student, new Date(), i),
-    done: lp[getChoreId(student.student, new Date(), i)] === true
+  const choreStates = chores.map(c => ({
+    chore: c.text,
+    id: getChoreId(student.student, new Date(), c.index),
+    done: lp[getChoreId(student.student, new Date(), c.index)] === true
   }));
   const allDone = choreStates.every(c => c.done);
 
