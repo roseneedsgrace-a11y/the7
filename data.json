@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T16:33:11.634Z",
+  "generated": "2026-10-21T16:37:06.149Z",
   "date": "Wednesday, October 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -14084,7 +14084,7 @@
               "task": "Investigation 4",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W11-Math-Wed",
               "row": 60,
