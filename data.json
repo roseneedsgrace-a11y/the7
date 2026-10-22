@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-22T02:49:36.428Z",
-  "date": "Wednesday, October 21",
+  "generated": "2026-10-22T12:19:12.272Z",
+  "date": "Thursday, October 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -13532,7 +13532,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W11-Bible-Thu",
               "row": 61,
@@ -14664,7 +14664,7 @@
               "task": "NZK",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W11-Grammar & Writing-Thu",
               "row": 61,
