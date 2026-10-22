@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T12:19:12.272Z",
+  "generated": "2026-10-22T15:26:36.107Z",
   "date": "Thursday, October 22",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5006,7 +5006,7 @@
               "task": "Lesson 32 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W11-Math-Wed",
               "row": 60,
@@ -8993,7 +8993,7 @@
               "task": "CBS Meeting",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W11-Bible-Thu",
               "row": 64,
@@ -10691,7 +10691,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W11-Science-Thu",
               "row": 64,
