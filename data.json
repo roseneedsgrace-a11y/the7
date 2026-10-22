@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T19:05:46.581Z",
+  "generated": "2026-10-22T02:49:36.428Z",
   "date": "Wednesday, October 21",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8979,7 +8979,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W11-Bible-Wed",
               "row": 63,
@@ -11809,7 +11809,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W11-Grammar & Writing-Wed",
               "row": 63,
