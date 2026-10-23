@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T14:02:46.398Z",
+  "generated": "2026-10-23T14:17:02.988Z",
   "date": "Friday, October 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6718,7 +6718,7 @@
               "task": "Module 7 - Week 12: Watch Lecture (48 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W11-Science-Thu",
               "row": 61,
@@ -11254,7 +11254,7 @@
               "date": "10/22",
               "rawDate": 1792645200000,
               "week": 11,
-              "task": "Read Winnie-the-Pooh, and Tigger",
+              "task": "Read Winnie-the-Pooh, and Tigger. <strong>Show mom your progress on Hillsdale College Online site</strong>",
               "imageUrl": null,
               "linkUrl": null,
               "done": false,
