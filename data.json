@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T14:33:14.696Z",
+  "generated": "2026-10-23T15:05:51.735Z",
   "date": "Friday, October 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4468,7 +4468,7 @@
               "task": "Read Judges 17–21 ()",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W11-Bible-Fri",
               "row": 62,
@@ -6732,7 +6732,7 @@
               "task": "Module 7 - Week 12: Study Module 7 (be sure to study Figures 6.7, 6.8 & 6.9, pp. 151-153: the four types of mountains)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W11-Science-Fri",
               "row": 62,
@@ -7864,7 +7864,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W11-American Literature-Fri",
               "row": 62,
