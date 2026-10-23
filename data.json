@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T14:23:07.811Z",
+  "generated": "2026-10-23T14:33:14.696Z",
   "date": "Friday, October 23",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5600,7 +5600,7 @@
               "task": "Assignment Before Next Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W11-Spanish-Fri",
               "row": 62,
@@ -11257,7 +11257,7 @@
               "task": "Read Winnie-the-Pooh, and Tigger. <strong>Show mom your progress on Hillsdale College Online site</strong>",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W11-English Lit-Thu",
               "row": 64,
