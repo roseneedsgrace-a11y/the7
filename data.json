@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-24T00:16:55.264Z",
-  "date": "Friday, October 23",
+  "generated": "2026-10-24T15:09:56.959Z",
+  "date": "Saturday, October 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -12969,7 +12969,7 @@
               "task": "LATIN QUIZ DUE TODAY! Complete it and turn it in to Mom so she can scan and send it to your teacher.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W11-Latin-Fri",
               "row": 65,
