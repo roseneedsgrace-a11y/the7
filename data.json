@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T18:47:02.666Z",
+  "generated": "2026-10-24T19:24:55.411Z",
   "date": "Saturday, October 24",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -15244,7 +15244,7 @@
               "task": "NZK",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W11-Grammar & Writing-Fri",
               "row": 62,
@@ -17508,7 +17508,7 @@
               "task": "Level 3, pp. 68-69",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W11-Handwriting-Fri",
               "row": 62,
