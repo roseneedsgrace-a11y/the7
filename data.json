@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T15:41:22.824Z",
+  "generated": "2026-10-26T15:53:01.996Z",
   "date": "Monday, October 26",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4978,7 +4978,7 @@
               "task": "Ruth Overview\n\nRead Ruth 1–2 (Video Day (Light Reading))",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fold-testament%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/old-testament/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W12-Bible-Mon",
               "row": 63,
@@ -7808,7 +7808,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W12-Southern Hemisphere Geography-Mon",
               "row": 63,
@@ -14056,7 +14056,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W12-Bible-Mon",
               "row": 63,
