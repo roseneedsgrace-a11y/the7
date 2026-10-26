@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T19:26:18.196Z",
+  "generated": "2026-10-26T20:03:29.135Z",
   "date": "Monday, October 26",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -8374,7 +8374,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W12-American Literature-Mon",
               "row": 63,
@@ -14622,7 +14622,7 @@
               "task": "Lesson 42",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W12-Math-Mon",
               "row": 63,
