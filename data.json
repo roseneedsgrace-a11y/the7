@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T23:21:37.311Z",
+  "generated": "2026-10-27T03:51:43.074Z",
   "date": "Monday, October 26",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2137,7 +2137,7 @@
               "task": "🧭 LIVE CLASS MONDAY 2:30 – 3:30",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W12-Literature-Mon",
               "row": 63,
@@ -15202,7 +15202,7 @@
               "task": "NZK",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W12-Grammar & Writing-Tue",
               "row": 64,
