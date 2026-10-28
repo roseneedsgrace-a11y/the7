@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T15:45:48.770Z",
+  "generated": "2026-10-28T16:29:37.984Z",
   "date": "Wednesday, October 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10111,7 +10111,7 @@
               "task": "Lesson 21",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-Math-Wed",
               "row": 68,
@@ -12375,7 +12375,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-Grammar & Writing-Wed",
               "row": 68,
