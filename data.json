@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T14:10:37.554Z",
+  "generated": "2026-10-28T15:08:22.165Z",
   "date": "Wednesday, October 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5006,7 +5006,7 @@
               "task": "1 Samuel Overview\n\nRead 1 Samuel 1–2 (Meet w/ Pops & Video (Light))",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fold-testament%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/old-testament/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W12-Bible-Wed",
               "row": 65,
@@ -6138,7 +6138,7 @@
               "task": "Lesson 11: Watch Lecture (46 min video)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W12-Spanish-Wed",
               "row": 65,
@@ -6704,7 +6704,7 @@
               "task": "Activity Day – Do something active.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W12-F.O.R.M.-Wed",
               "row": 65,
