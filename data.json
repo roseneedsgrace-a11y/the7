@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T15:08:22.165Z",
+  "generated": "2026-10-28T15:11:36.394Z",
   "date": "Wednesday, October 28",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -11809,7 +11809,7 @@
               "task": "Read Peter Rabbit",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-English Lit-Wed",
               "row": 68,
