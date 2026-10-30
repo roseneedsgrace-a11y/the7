@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-30T02:04:48.948Z",
-  "date": "Thursday, October 29",
+  "generated": "2026-10-30T13:32:55.403Z",
+  "date": "Friday, October 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -9573,7 +9573,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-Bible-Fri",
               "row": 70,
@@ -11837,7 +11837,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fonline.hillsdale.edu%2Fcourses%2Fclassic-childrens-literature%2Flessons%2Fthe-stories-of-beatrix-potter-and-a-a-milne",
               "linkUrl": "https://online.hillsdale.edu/courses/classic-childrens-literature/lessons/the-stories-of-beatrix-potter-and-a-a-milne",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-English Lit-Fri",
               "row": 70,
