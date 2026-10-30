@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T14:51:24.943Z",
+  "generated": "2026-10-30T15:31:34.637Z",
   "date": "Friday, October 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10139,7 +10139,7 @@
               "task": "Lesson 23",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-Math-Fri",
               "row": 70,
@@ -12969,7 +12969,7 @@
               "task": "LATIN QUIZ DUE TODAY! Complete it and turn it in to Mom so she can scan and send it to your teacher.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-Latin-Fri",
               "row": 70,
