@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T15:31:34.637Z",
+  "generated": "2026-10-30T16:07:11.403Z",
   "date": "Friday, October 30",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6732,7 +6732,7 @@
               "task": "Rest Day",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W12-F.O.R.M.-Fri",
               "row": 67,
@@ -7864,7 +7864,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W12-Southern Hemisphere Geography-Fri",
               "row": 67,
