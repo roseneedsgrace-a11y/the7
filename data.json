@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T02:01:21.033Z",
+  "generated": "2026-10-30T02:04:48.948Z",
   "date": "Thursday, October 29",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10125,7 +10125,7 @@
               "task": "Lesson 22",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-Math-Thu",
               "row": 69,
@@ -11257,7 +11257,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W12-Science-Thu",
               "row": 69,
