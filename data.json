@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T16:47:36.106Z",
+  "generated": "2026-11-02T17:09:30.253Z",
   "date": "Monday, November 2",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -3897,7 +3897,7 @@
               "task": "SATURDAY 11/7 – Creation Science Lesson 6 (optional): Commentary from Del & the Director on filming Dr. Steve Austin (12 min)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W13-Odds & Ends-Fri",
               "row": 72,
@@ -8823,7 +8823,7 @@
               "task": "Lesson 24",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W13-Math-Mon",
               "row": 71,
@@ -14290,7 +14290,7 @@
               "task": "History of the World #12",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W13-History-Mon",
               "row": 68,
