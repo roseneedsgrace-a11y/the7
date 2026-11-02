@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T17:09:30.253Z",
+  "generated": "2026-11-02T19:50:10.620Z",
   "date": "Monday, November 2",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -11303,7 +11303,7 @@
               "task": "Latin at 12:45",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W13-Latin-Mon",
               "row": 71,
@@ -11813,7 +11813,7 @@
               "task": "No Co-op",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W13-Co-Op Classes-Tue",
               "row": 72,
