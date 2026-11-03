@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T21:19:26.161Z",
+  "generated": "2026-11-03T21:42:49.352Z",
   "date": "Tuesday, November 3",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -11317,7 +11317,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W13-Latin-Tue",
               "row": 72,
