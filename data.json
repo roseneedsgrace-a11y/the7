@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T20:24:49.887Z",
+  "generated": "2026-11-05T20:59:02.612Z",
   "date": "Thursday, November 5",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -425,7 +425,7 @@
               "task": "<strong>ST14 08</strong> – Finish the video",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fvimeopro.com%2Fcbtseminary%2Fst14-symbolics-2023%2Fvideo%2F796854793",
               "linkUrl": "https://vimeopro.com/cbtseminary/st14-symbolics-2023/video/796854793",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W13-Bible-Fri",
               "row": 72,
@@ -1913,7 +1913,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W13-Literature-Fri",
               "row": 72,
@@ -6870,7 +6870,7 @@
               "task": "🧭 LIVE CLASS THURSDAY 1-2:10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Ezra-W13-Southern Hemisphere Geography-Thu",
               "row": 71,
