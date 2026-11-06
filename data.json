@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T17:16:02.810Z",
+  "generated": "2026-11-06T17:23:45.519Z",
   "date": "Friday, November 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -12362,7 +12362,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W13-Bible-Fri",
               "row": 72,
@@ -15338,7 +15338,7 @@
               "task": "Level 3, pp. 80-81",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W13-Handwriting-Fri",
               "row": 72,
