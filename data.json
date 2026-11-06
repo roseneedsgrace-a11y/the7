@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T16:06:57.564Z",
+  "generated": "2026-11-06T16:37:40.996Z",
   "date": "Friday, November 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -13354,7 +13354,7 @@
               "task": "NZK",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W13-Grammar & Writing-Fri",
               "row": 72,
@@ -13850,7 +13850,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W13-Science-Fri",
               "row": 72,
@@ -14842,7 +14842,7 @@
               "task": "Complete Monarch Work Assigned",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W13-Literature-Fri",
               "row": 72,
