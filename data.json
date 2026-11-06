@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T14:10:12.151Z",
+  "generated": "2026-11-06T14:11:45.288Z",
   "date": "Friday, November 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5892,7 +5892,7 @@
               "task": "Activity Day – Do something active.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W13-F.O.R.M.-Fri",
               "row": 72,
@@ -6870,7 +6870,7 @@
               "task": "🧭 LIVE CLASS THURSDAY 1-2:10",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W13-Southern Hemisphere Geography-Thu",
               "row": 71,
