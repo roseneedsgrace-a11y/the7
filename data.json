@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T16:37:40.996Z",
+  "generated": "2026-11-06T17:16:02.810Z",
   "date": "Friday, November 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -6884,7 +6884,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W13-Southern Hemisphere Geography-Fri",
               "row": 72,
@@ -8879,7 +8879,7 @@
               "task": "Lesson 27",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W13-Math-Fri",
               "row": 75,
