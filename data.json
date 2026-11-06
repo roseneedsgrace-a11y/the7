@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T14:11:45.288Z",
+  "generated": "2026-11-06T14:26:51.964Z",
   "date": "Friday, November 6",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4404,7 +4404,7 @@
               "task": "2 Samuel Overview\n\nRead 2 Samuel 1–2 (Video Day (Light Reading))",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fbibleproject.com%2Fvideos%2Fcollections%2Fold-testament%2F",
               "linkUrl": "https://bibleproject.com/videos/collections/old-testament/",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W13-Bible-Fri",
               "row": 72,
