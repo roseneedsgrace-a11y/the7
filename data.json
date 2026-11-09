@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T15:50:03.851Z",
+  "generated": "2026-11-09T16:06:40.577Z",
   "date": "Monday, November 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -5836,7 +5836,7 @@
               "task": "Lesson 4 - Move (Warm Up, Movement Training, & Cool Down with Coach Ashton and Joel)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W14-F.O.R.M.-Mon",
               "row": 73,
@@ -6332,7 +6332,7 @@
               "task": "Module 8 - Week 14: Assignment Before Next Lesson",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W14-Science-Mon",
               "row": 73,
@@ -6828,7 +6828,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W14-Southern Hemisphere Geography-Mon",
               "row": 73,
