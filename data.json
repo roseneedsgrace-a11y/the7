@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T15:48:43.790Z",
+  "generated": "2026-11-09T15:50:03.851Z",
   "date": "Monday, November 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10283,7 +10283,7 @@
               "task": "Read Treasure Island",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W13-English Lit-Thu",
               "row": 74,
@@ -10807,7 +10807,7 @@
               "task": "Get caught up in Monarch so you can \"thaw\" your Mommy bank account.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W14-Grammar & Writing-Mon",
               "row": 76,
