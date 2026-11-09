@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T16:06:40.577Z",
+  "generated": "2026-11-09T17:53:51.835Z",
   "date": "Monday, November 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4348,7 +4348,7 @@
               "task": "Read 2 Samuel 3–8 ()",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W14-Bible-Mon",
               "row": 73,
@@ -4844,7 +4844,7 @@
               "task": "Lesson 41 Practice Set",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W14-Math-Mon",
               "row": 73,
