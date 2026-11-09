@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T20:56:47.890Z",
+  "generated": "2026-11-09T21:08:45.723Z",
   "date": "Monday, November 9",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10311,7 +10311,7 @@
               "task": "Read Treasure Island",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W14-English Lit-Mon",
               "row": 76,
