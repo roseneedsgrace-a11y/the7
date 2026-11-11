@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T16:24:56.025Z",
+  "generated": "2026-11-11T16:25:56.022Z",
   "date": "Wednesday, November 11",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -4376,7 +4376,7 @@
               "task": "Read 2 Samuel 15–16 (Meet w/ Pops (Light Reading))",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W14-Bible-Wed",
               "row": 75,
@@ -6856,7 +6856,7 @@
               "task": "Daily work (or quiz, etc). as assigned in class.",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Ezra-W14-Southern Hemisphere Geography-Wed",
               "row": 75,
