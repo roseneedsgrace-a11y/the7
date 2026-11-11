@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-11T02:08:44.794Z",
-  "date": "Tuesday, November 10",
+  "generated": "2026-11-11T12:52:54.290Z",
+  "date": "Wednesday, November 11",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
     "headerColor": "#741b47",
@@ -10821,7 +10821,7 @@
               "task": "",
               "imageUrl": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fapp.nightzookeeper.com%2Fzoo%2Fmap",
               "linkUrl": "https://app.nightzookeeper.com/zoo/map",
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W14-Grammar & Writing-Tue",
               "row": 77,
