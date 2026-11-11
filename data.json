@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T17:29:24.040Z",
+  "generated": "2026-11-11T17:38:42.114Z",
   "date": "Wednesday, November 11",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -2381,7 +2381,7 @@
               "task": "Lesson: 8. The Fossil Record - Part 1 - Read \"Understanding the Fossil Record\" from The New Creationism & Watch \"The Fossil Record\" (64 min)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": true,
+              "done": false,
               "isBreak": false,
               "id": "Amos-W14-Creation Science-Wed",
               "row": 75,
@@ -2395,7 +2395,7 @@
               "task": "Lesson: 8. The Fossil Record - Part 1 - Quiz: The Fossil Record (Part 1)",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W14-Creation Science-Thu",
               "row": 76,
@@ -12334,7 +12334,7 @@
               "task": "CBS Q's & A's",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W14-Bible-Wed",
               "row": 75,
