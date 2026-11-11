@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T22:28:06.868Z",
+  "generated": "2026-11-11T02:08:44.794Z",
   "date": "Tuesday, November 10",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -10325,7 +10325,7 @@
               "task": "Read Treasure Island",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W14-English Lit-Tue",
               "row": 77,
@@ -11317,7 +11317,7 @@
               "task": "Latin Homework",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Beth-W14-Latin-Tue",
               "row": 77,
