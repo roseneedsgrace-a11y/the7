@@ -808,7 +808,7 @@
   <div><strong>Student:</strong> <select id="studentSelect" onchange="updateWeekFromStudent(); render();"></select></div>
   <div><strong>Week:</strong> <input type="number" id="weekInput" min="1" max="36" style="width: 60px" onchange="render()"></div>
   <label style="display:flex; align-items:center; font-size:13px; cursor:pointer;">Status Mode
-    <div class="switch"><input type="checkbox" id="statusToggle" onchange="render()"><span class="slider"></span></div>
+    <div class="switch"><input type="checkbox" id="statusToggle" checked onchange="saveStatusPref(this.checked); render()"><span class="slider"></span></div>
   </label>
   <button class="print-btn" onclick="window.print()">PRINT</button>
   <button class="admin-btn danger" onclick="adminClearProgress()">✕ Cache</button>
@@ -1094,7 +1094,22 @@ function onStorageChange() {
     if (selectedOption) {
       weekInput.value = selectedOption.getAttribute('data-week');
     }
+    applyStatusPref();
     render();
+  }
+
+  // Status Mode starts ON for each kid; if they switch it, their choice is
+  // remembered on this device.
+  function statusPrefKey() {
+    return 'status_mode_' + (document.getElementById('studentSelect').value || 'default');
+  }
+  function applyStatusPref() {
+    let v = null;
+    try { v = localStorage.getItem(statusPrefKey()); } catch (e) {}
+    document.getElementById('statusToggle').checked = (v === null) ? true : v === '1';
+  }
+  function saveStatusPref(on) {
+    try { localStorage.setItem(statusPrefKey(), on ? '1' : '0'); } catch (e) {}
   }
 
 
