@@ -242,8 +242,7 @@ function forceRefresh() {
   btn.textContent = 'Checking...';
   btn.disabled = true;
 
-  fetch(DATA_URL + '?v=' + Date.now())
-    .then(r => r.json())
+  fetchLatestData()
     .then(data => {
       const newTime = new Date(data.generated).getTime();
       const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
@@ -361,11 +360,7 @@ function startDashboard() {
   });
   document.getElementById('currentDayLabel').textContent = dateStr;
 
-  fetch(DATA_URL + '?v=' + Date.now())
-    .then(r => {
-      if (!r.ok) throw new Error("File not found on server");
-      return r.json();
-    })
+  loadInitialData()
     .then(function(data) {
       const studentDataWithChores = mergeChoresIntoStudentData(data);
       allData = {
@@ -379,6 +374,9 @@ function startDashboard() {
 
       // Render immediately with local progress
       renderForDate(currentDate);
+
+      // Quietly check for anything newer than the GitHub copy
+      forceRefresh();
 
       // Then fetch server progress and re-render silently
       fetchAndMergeProgress().then(() => {
@@ -955,16 +953,15 @@ function updateMakeupToggleBtn(enabled) {
     adminStatus('Pushing to GitHub...', '#f59e0b');
     fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
       .then(() => {
-        adminStatus('Push sent! Waiting for GitHub...', '#f59e0b');
-        setTimeout(() => adminRefresh(), 8000);
+        adminStatus('Push done! Loading latest data...', '#f59e0b');
+        adminRefresh();
       })
       .catch(() => adminStatus('Push failed — try again', '#dc2626'));
   }
 
 function adminRefresh() {
   adminStatus('Fetching latest data...', '#f59e0b');
-  fetch(DATA_URL + '?v=' + Date.now())
-    .then(r => r.json())
+  fetchLatestData()
     .then(data => {
       const newTime = new Date(data.generated).getTime();
       const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;

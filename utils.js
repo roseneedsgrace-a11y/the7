@@ -4,6 +4,38 @@
 const DATA_URL = 'https://raw.githubusercontent.com/roseneedsgrace-a11y/the7/main/data.json';
 const API_URL = 'https://script.google.com/macros/s/AKfycbzPPzHJq-iNfSiQVO-LlBJ6EXujQGwatgK7KOgt9PLxMEV4Qi_TVkky_BNDozKSkQAe/exec';
 
+// ─── DATA LOADING ─────────────────────────────
+// GitHub copy: very fast, but can be up to ~5 minutes old.
+function fetchGithubData() {
+  return fetch(DATA_URL + '?v=' + Date.now()).then(r => {
+    if (!r.ok) throw new Error('GitHub data not found');
+    return r.json();
+  });
+}
+
+// Apps Script copy: always current (saved whenever data is pushed), takes ~1-2 seconds.
+function fetchLiveData() {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 20000);
+  return fetch(API_URL + '?action=getJson&v=' + Date.now(), { signal: ctrl.signal })
+    .then(r => r.json())
+    .then(d => {
+      clearTimeout(timer);
+      if (!d || !d.generated) throw new Error('Live data missing');
+      return d;
+    });
+}
+
+// First page load: show the fast GitHub copy; fall back to Apps Script if GitHub fails.
+function loadInitialData() {
+  return fetchGithubData().catch(() => fetchLiveData());
+}
+
+// Refreshes: get the freshest copy; fall back to GitHub if Apps Script fails.
+function fetchLatestData() {
+  return fetchLiveData().catch(() => fetchGithubData());
+}
+
 // ─── LOCAL STORAGE ────────────────────────────
 function getLocalProgress() {
   return JSON.parse(localStorage.getItem('local_progress') || '{}');
@@ -85,8 +117,8 @@ function pushAndRefresh() {
   btn.disabled = true;
   fetch(`${API_URL}?action=push`, { mode: 'no-cors' })
     .then(() => {
-      btn.textContent = 'Waiting for GitHub...';
-      setTimeout(() => forceRefresh(), 8000);
+      // The push call finishes after the fresh copy is saved, so refresh right away.
+      forceRefresh();
     })
     .catch(() => {
       btn.textContent = 'Error — try again';

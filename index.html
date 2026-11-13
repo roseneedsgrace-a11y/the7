@@ -774,8 +774,7 @@
   let allData = null;
 
 window.onload = function() {
-  fetch(DATA_URL + '?v=' + Date.now())
-    .then(r => r.json())
+  loadInitialData()
     .then(data => {
       const studentDataWithChores = mergeChoresIntoStudentData(data);
       allData = {
@@ -811,6 +810,9 @@ window.onload = function() {
       loadPortfolioSubmissions();
       loadPortfolioSettings();
       updateWeekFromStudent();
+
+      // Quietly check for anything newer than the GitHub copy
+      forceRefresh();
     })
     .catch(err => console.error("Data load failed:", err));
 };
@@ -1613,8 +1615,7 @@ function forceRefresh() {
     btn.textContent = 'Checking...';
     btn.disabled = true;
 
-    fetch(DATA_URL + '?v=' + Date.now())
-      .then(r => r.json())
+    fetchLatestData()
       .then(data => {
         const newTime = new Date(data.generated).getTime();
         const oldTime = allData && allData.generated ? new Date(allData.generated).getTime() : 0;
