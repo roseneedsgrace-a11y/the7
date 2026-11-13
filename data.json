@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T01:20:08.655Z",
+  "generated": "2026-11-13T01:42:45.003Z",
   "date": "Thursday, November 12",
   "config": {
     "headerText": "Thus Far the Lord Has Helped Us",
@@ -1361,7 +1361,7 @@
               "task": "10.5—Lesson 10 Portfolio & Submit",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Amos-W14-History/Social Studies-Mon",
               "row": 73,
@@ -12844,7 +12844,7 @@
               "task": "Lesson 51",
               "imageUrl": null,
               "linkUrl": null,
-              "done": false,
+              "done": true,
               "isBreak": false,
               "id": "Tabitha-W14-Math-Thu",
               "row": 76,
