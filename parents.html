@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +22,14 @@
     .day-nav button:hover { background: #f1f5f9; }
     .day-nav button:disabled { opacity: 0.35; cursor: default; background: white; }
     .day-nav .current-day { font-size: 15px; font-weight: 700; color: #1e293b; min-width: 220px; text-align: center; }
+    .day-nav { flex-wrap: wrap; }
+    .day-nav .nav-tools { display: flex; align-items: center; gap: 4px; }
+    @media (max-width: 600px) {
+      .day-nav { gap: 8px; padding: 10px 12px; }
+      .day-nav button { padding: 8px 10px; }
+      .day-nav .current-day { min-width: 0; flex: 1; font-size: 14px; }
+      .day-nav .nav-tools { flex-basis: 100%; justify-content: center; margin-top: -2px; }
+    }
     .stats-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; padding: 0 24px; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
     .stat-card { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; text-align: center; }
     .stat-card .stat-num { font-size: 28px; font-weight: 700; line-height: 1; margin-bottom: 4px; }
@@ -179,10 +188,12 @@
 </div> <div class="day-nav">
   <button id="prevDay" onclick="changeDay(-1)">← Previous</button>
   <div class="current-day" id="currentDayLabel">Loading Date...</div>
-  <button id="nextDay" onclick="changeDay(1)">Next →</button><br/>
+  <button id="nextDay" onclick="changeDay(1)">Next →</button>
+  <div class="nav-tools">
   <span id="syncTimer" style="display:none; font-size:11px; color:#94a3b8; font-style:italic;"></span>
   <button id="refreshBtn" onclick="forceRefresh()" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">↻</button>
   <button id="lockBtn" onclick="lockDashboard()" title="Lock and forget the PIN on this device" style="font-size:11px; color:#94a3b8; background:transparent; border:none; padding:4px 6px; border-radius:6px; cursor:pointer; opacity:0.6;">🔒 Lock</button>
+  </div>
 </div>
 
 <div id="statsStrip" class="stats-strip"></div>
