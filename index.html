@@ -1030,6 +1030,7 @@ function toggleSingleChore(el) {
   sendSave(`${API_URL}?action=toggle&key=${encodeURIComponent(choreId)}&status=${isDone}&student=${encodeURIComponent(choreId.split('-chore-')[0])}`);
 
   updateChoreBanner();
+  checkCelebrations();
 }
 
 function toggleChoreExpand() {
@@ -1072,6 +1073,7 @@ function toggleChoreBanner(el) {
     const card = gridRow.closest('.task-card, .list-task-row');
     if (card) card.classList.toggle('is-done', isDone);
   }
+  checkCelebrations();
 }
     
 
@@ -1635,6 +1637,7 @@ async function submitPortfolioLink(task, studentName, subject, link) {
     portfolioSubmissions[task.id] = { student: studentName, subject, task: task.task, link };
     render();
     alert('Submitted! Your parent will look at it and check it off.');
+    checkCelebrations();
   } catch (e) {
     alert('Sorry, that did not go through. Please try again.');
   }
@@ -1682,6 +1685,7 @@ async function toggle(id, el, studentName, row, col, subject) {
     startSyncTimer();
   }
   updateChoreBanner();
+  checkCelebrations();
 }
     
 function forceRefresh() {
@@ -1717,5 +1721,182 @@ function forceRefresh() {
       });
   }
 </script>
+<!-- ─── DAILY CELEBRATIONS ─────────────────────── -->
+<style>
+  .celebrate-overlay {
+    display: none; position: fixed; inset: 0; z-index: 2000;
+    background: rgba(15,23,42,0.55); align-items: center; justify-content: center; padding: 20px;
+  }
+  .celebrate-overlay.open { display: flex; }
+  .celebrate-box {
+    background: #fff; border-radius: 22px; padding: 28px 24px 22px; max-width: 360px; width: 100%;
+    text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    animation: celebratePop 0.45s cubic-bezier(.2,1.4,.4,1) both;
+  }
+  .celebrate-emoji { font-size: 72px; line-height: 1; display: inline-block; animation: celebrateHigh5 0.9s ease 0.2s 2; }
+  .celebrate-title { font-size: 22px; font-weight: 800; color: #1e293b; margin: 14px 0 6px; }
+  .celebrate-text { font-size: 15px; color: #475569; line-height: 1.5; margin: 0 0 14px; }
+  .celebrate-chores { text-align: left; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px;
+    padding: 10px 14px; margin: 0 0 16px; font-size: 14px; color: #334155; }
+  .celebrate-chores div { padding: 3px 0; }
+  .celebrate-candy { font-size: 17px; font-weight: 700; color: #9d174d; background: #fdf2f8;
+    border: 2px dashed #f9a8d4; border-radius: 14px; padding: 12px; margin: 0 0 16px; }
+  .celebrate-btn { width: 100%; padding: 12px; border: none; border-radius: 12px; font-size: 16px; font-weight: 700;
+    color: #fff; background: var(--primary, #741b47); cursor: pointer; }
+  .confetti-piece { position: fixed; top: -12px; width: 10px; height: 14px; z-index: 2001; pointer-events: none;
+    border-radius: 2px; animation: confettiFall linear forwards; }
+  #choreBanner.nudge #choreBannerInner { animation: choreNudge 0.6s ease 3; }
+  @keyframes celebratePop { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  @keyframes celebrateHigh5 { 0%,100% { transform: rotate(0) scale(1); } 30% { transform: rotate(-14deg) scale(1.15); } 60% { transform: rotate(10deg) scale(1.1); } }
+  @keyframes confettiFall { to { transform: translate3d(var(--dx), 105vh, 0) rotate(var(--rot)); opacity: 0.9; } }
+  @keyframes choreNudge { 0%,100% { transform: scale(1); } 50% { transform: scale(1.03); box-shadow: 0 0 0 4px rgba(250,204,21,0.6); } }
+  @media (prefers-reduced-motion: reduce) {
+    .celebrate-box, .celebrate-emoji, #choreBanner.nudge #choreBannerInner { animation: none; }
+    .confetti-piece { display: none; }
+  }
+  @media print { .celebrate-overlay, .confetti-piece { display: none !important; } }
+</style>
+
+<div class="celebrate-overlay" id="celebrateOverlay" onclick="if(event.target===this) closeCelebration()">
+  <div class="celebrate-box" role="dialog" aria-live="polite">
+    <div class="celebrate-emoji" id="celebrateEmoji">🙌</div>
+    <div class="celebrate-title" id="celebrateTitle"></div>
+    <p class="celebrate-text" id="celebrateText"></p>
+    <div id="celebrateExtra"></div>
+    <button class="celebrate-btn" id="celebrateBtn" onclick="closeCelebration()">Yay!</button>
+  </div>
+</div>
+
+<script>
+// Celebrates when today's schoolwork is finished (and nudges toward chores),
+// and again when schoolwork AND chores are all done (candy time!).
+// Each celebration shows once per student per day on this device.
+
+function todayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function getTodayStatus(studentName) {
+  if (!allData || !allData.studentData) return null;
+  const student = allData.studentData.find(s => s.student === studentName);
+  if (!student) return null;
+
+  const lp = getLocalProgress();
+  const todayTs = new Date().setHours(0, 0, 0, 0);
+
+  // Today's schoolwork (any week), skipping breaks and blank cells
+  let schoolTotal = 0, schoolDone = 0;
+  (student.grid || []).forEach(row => {
+    (row.tasks || []).forEach(t => {
+      if (!t.rawDate || new Date(t.rawDate).setHours(0, 0, 0, 0) !== todayTs) return;
+      if (t.isBreak) return;
+      if (!((t.task && t.task.trim()) || t.imageUrl || t.linkUrl)) return;
+      schoolTotal++;
+      const done = lp[t.id] !== undefined ? lp[t.id] : t.done;
+      // A picture-link task counts once it's been submitted for a parent to check
+      const submitted = isPortfolioTask(t.task) && portfolioSubmissions && portfolioSubmissions[t.id];
+      if (done || submitted) schoolDone++;
+    });
+  });
+
+  const chores = student.chores ? getChoresForDate(student.chores, new Date()) : [];
+  const choresLeft = chores.filter(c => lp[getChoreId(student.student, new Date(), c.index)] !== true)
+                           .map(c => c.text);
+
+  return {
+    schoolTotal, schoolDone,
+    schoolComplete: schoolTotal > 0 && schoolDone === schoolTotal,
+    choreTotal: chores.length,
+    choresLeft
+  };
+}
+
+function alreadyCelebrated(studentName, level) {
+  try { return localStorage.getItem(`celebrated_${studentName}_${todayKey()}_${level}`) === '1'; } catch (e) { return false; }
+}
+function markCelebrated(studentName, level) {
+  try { localStorage.setItem(`celebrated_${studentName}_${todayKey()}_${level}`, '1'); } catch (e) {}
+}
+
+function checkCelebrations() {
+  const studentName = document.getElementById('studentSelect').value;
+  const s = getTodayStatus(studentName);
+  if (!s || !s.schoolComplete) return;
+
+  if (s.choresLeft.length === 0) {
+    if (alreadyCelebrated(studentName, 'all')) return;
+    markCelebrated(studentName, 'all');
+    markCelebrated(studentName, 'school');
+    showCelebration({
+      emoji: '🙌',
+      title: `You did it ALL, ${studentName}!`,
+      text: s.choreTotal ? 'Every bit of schoolwork and every chore is done for today. High five!' : 'Every bit of schoolwork is done for today. High five!',
+      extra: '<div class="celebrate-candy">🍬 Go get a piece of candy from the jar! 🍬</div>',
+      button: 'Yum! 🍬',
+      confetti: 140
+    });
+  } else {
+    if (alreadyCelebrated(studentName, 'school')) return;
+    markCelebrated(studentName, 'school');
+    const list = s.choresLeft.map(c => `<div>⬜ ${c}</div>`).join('');
+    showCelebration({
+      emoji: '🙌',
+      title: 'High five! Schoolwork done!',
+      text: 'Awesome work! Now finish your chores. Get them all done and you earn a piece of candy! 🍬',
+      extra: `<div class="celebrate-chores">${list}</div>`,
+      button: "I'm on it! 💪",
+      confetti: 70,
+      afterClose: nudgeChores
+    });
+  }
+}
+
+let celebrationAfterClose = null;
+function showCelebration(o) {
+  document.getElementById('celebrateEmoji').textContent = o.emoji;
+  document.getElementById('celebrateTitle').textContent = o.title;
+  document.getElementById('celebrateText').textContent = o.text;
+  document.getElementById('celebrateExtra').innerHTML = o.extra || '';
+  document.getElementById('celebrateBtn').textContent = o.button || 'Yay!';
+  celebrationAfterClose = o.afterClose || null;
+  const ov = document.getElementById('celebrateOverlay');
+  ov.classList.remove('open'); void ov.offsetWidth; ov.classList.add('open');
+  launchConfetti(o.confetti || 80);
+  try { if (navigator.vibrate) navigator.vibrate([60, 40, 60, 40, 120]); } catch (e) {}
+}
+
+function closeCelebration() {
+  document.getElementById('celebrateOverlay').classList.remove('open');
+  if (celebrationAfterClose) { const f = celebrationAfterClose; celebrationAfterClose = null; f(); }
+}
+
+function nudgeChores() {
+  const banner = document.getElementById('choreBanner');
+  if (!banner || banner.style.display === 'none') return;
+  banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  banner.classList.remove('nudge'); void banner.offsetWidth; banner.classList.add('nudge');
+  setTimeout(() => banner.classList.remove('nudge'), 2200);
+}
+
+function launchConfetti(count) {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const colors = ['#f43f5e', '#f59e0b', '#22c55e', '#3b82f6', '#a855f7', '#ec4899', '#facc15'];
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'confetti-piece';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.background = colors[i % colors.length];
+    p.style.setProperty('--dx', (Math.random() * 200 - 100) + 'px');
+    p.style.setProperty('--rot', (Math.random() * 720 - 360) + 'deg');
+    p.style.animationDuration = (2.2 + Math.random() * 1.8) + 's';
+    p.style.animationDelay = (Math.random() * 0.6) + 's';
+    if (Math.random() < 0.4) { p.style.width = '8px'; p.style.height = '8px'; p.style.borderRadius = '50%'; }
+    document.body.appendChild(p);
+    setTimeout(() => p.remove(), 5000);
+  }
+}
+</script>
+
 </body>
 </html>
