@@ -1,5 +1,7 @@
 // utils.js
 
+// data.json is read straight from GitHub so data updates don't need a Netlify deploy
+const DATA_URL = 'https://raw.githubusercontent.com/roseneedsgrace-a11y/the7/main/data.json';
 const API_URL = 'https://script.google.com/macros/s/AKfycbzPPzHJq-iNfSiQVO-LlBJ6EXujQGwatgK7KOgt9PLxMEV4Qi_TVkky_BNDozKSkQAe/exec';
 
 // ─── LOCAL STORAGE ────────────────────────────

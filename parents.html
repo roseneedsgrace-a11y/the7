@@ -242,7 +242,7 @@ function forceRefresh() {
   btn.textContent = 'Checking...';
   btn.disabled = true;
 
-  fetch('data.json?v=' + Date.now())
+  fetch(DATA_URL + '?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
       const newTime = new Date(data.generated).getTime();
@@ -361,7 +361,7 @@ function startDashboard() {
   });
   document.getElementById('currentDayLabel').textContent = dateStr;
 
-  fetch('data.json?v=' + new Date().getTime())
+  fetch(DATA_URL + '?v=' + Date.now())
     .then(r => {
       if (!r.ok) throw new Error("File not found on server");
       return r.json();
@@ -963,7 +963,7 @@ function updateMakeupToggleBtn(enabled) {
 
 function adminRefresh() {
   adminStatus('Fetching latest data...', '#f59e0b');
-  fetch('data.json?v=' + Date.now())
+  fetch(DATA_URL + '?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
       const newTime = new Date(data.generated).getTime();

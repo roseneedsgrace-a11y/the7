@@ -736,7 +736,7 @@
   <div class="data-help-body">
     If you just synced, cleared local cache, and this page still isn't displaying everything the way it should:
     <ol>
-      <li><a href="data.json" target="_blank" rel="noopener">Open data.json</a> (opens in a new tab).</li>
+      <li><a href="https://raw.githubusercontent.com/roseneedsgrace-a11y/the7/main/data.json" target="_blank" rel="noopener">Open data.json</a> (opens in a new tab).</li>
       <li>Refresh that tab with <strong>Ctrl+Shift+R</strong> (Windows) or <strong>Cmd+Shift+R</strong> (Mac). On a phone or tablet, pull down to refresh.</li>
       <li>Check the <code>"generated"</code> time near the top. Keep refreshing until it shows your latest update. GitHub can take a few minutes.</li>
       <li>Close that tab, come back here, and reload this page.</li>
@@ -774,7 +774,7 @@
   let allData = null;
 
 window.onload = function() {
-  fetch('data.json?v=' + Date.now())
+  fetch(DATA_URL + '?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
       const studentDataWithChores = mergeChoresIntoStudentData(data);
@@ -1613,7 +1613,7 @@ function forceRefresh() {
     btn.textContent = 'Checking...';
     btn.disabled = true;
 
-    fetch('data.json?v=' + Date.now())
+    fetch(DATA_URL + '?v=' + Date.now())
       .then(r => r.json())
       .then(data => {
         const newTime = new Date(data.generated).getTime();
