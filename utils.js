@@ -36,6 +36,94 @@ function fetchLatestData() {
   return fetchLiveData().catch(() => fetchGithubData());
 }
 
+// ─── SAVE STATUS ──────────────────────────────
+// Sends a checkmark save to the Apps Script, waits for its answer, and shows a
+// small status pill: "Saving…", "Saved ✓", or "Not saved — tap to retry".
+// Failed saves are remembered on this device (latest one per task) and retried
+// automatically when the page loads, when the connection comes back, or on tap.
+let pendingSaves = 0;
+
+function getFailedSaves() {
+  try { return JSON.parse(localStorage.getItem('failed_saves') || '{}'); } catch (e) { return {}; }
+}
+function setFailedSaves(map) {
+  try { localStorage.setItem('failed_saves', JSON.stringify(map)); } catch (e) {}
+}
+function saveKeyFromUrl(url) {
+  try { return new URL(url).searchParams.get('key') || url; } catch (e) { return url; }
+}
+
+function sendSave(url) {
+  const key = saveKeyFromUrl(url);
+  pendingSaves++;
+  showSaveStatus('saving');
+  return fetch(url)
+    .then(r => r.json())
+    .then(res => {
+      if (!res || res.success === false) throw new Error((res && res.error) || 'Save failed');
+      const failed = getFailedSaves();
+      if (failed[key] === url) { delete failed[key]; setFailedSaves(failed); }
+      return true;
+    })
+    .catch(err => {
+      console.warn('Save failed:', err);
+      const failed = getFailedSaves();
+      failed[key] = url;
+      setFailedSaves(failed);
+      return false;
+    })
+    .then(ok => {
+      pendingSaves--;
+      if (pendingSaves === 0) {
+        showSaveStatus(Object.keys(getFailedSaves()).length ? 'failed' : 'saved');
+      }
+      return ok;
+    });
+}
+
+function retryFailedSaves() {
+  const urls = Object.values(getFailedSaves());
+  urls.forEach(url => sendSave(url));
+  return urls.length;
+}
+
+function showSaveStatus(state) {
+  let el = document.getElementById('saveStatus');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'saveStatus';
+    el.setAttribute('role', 'status');
+    el.style.cssText = 'position:fixed; right:16px; bottom:16px; z-index:9999; padding:8px 14px; ' +
+      'border-radius:20px; font:600 13px system-ui, sans-serif; box-shadow:0 2px 8px rgba(0,0,0,0.2); ' +
+      'transition:opacity 0.4s; color:#fff;';
+    document.body.appendChild(el);
+  }
+  clearTimeout(el._hideTimer);
+  el.onclick = null;
+  el.style.cursor = 'default';
+  el.style.opacity = '1';
+  el.style.display = 'block';
+  if (state === 'saving') {
+    el.textContent = 'Saving…';
+    el.style.background = '#64748b';
+  } else if (state === 'saved') {
+    el.textContent = 'Saved ✓';
+    el.style.background = '#16a34a';
+    el._hideTimer = setTimeout(() => {
+      el.style.opacity = '0';
+      el._hideTimer = setTimeout(() => { el.style.display = 'none'; }, 400);
+    }, 2000);
+  } else {
+    el.textContent = 'Not saved — tap to retry';
+    el.style.background = '#dc2626';
+    el.style.cursor = 'pointer';
+    el.onclick = retryFailedSaves;
+  }
+}
+
+window.addEventListener('online', retryFailedSaves);
+window.addEventListener('load', () => setTimeout(retryFailedSaves, 3000));
+
 // ─── LOCAL STORAGE ────────────────────────────
 function getLocalProgress() {
   return JSON.parse(localStorage.getItem('local_progress') || '{}');

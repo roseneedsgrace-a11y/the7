@@ -950,8 +950,7 @@ function toggleSingleChore(el) {
   const isDone = el.checked;
 
   setLocalProgress(choreId, isDone);
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(choreId)}&status=${isDone}&student=${encodeURIComponent(choreId.split('-chore-')[0])}`, 
-    { mode: 'no-cors' });
+  sendSave(`${API_URL}?action=toggle&key=${encodeURIComponent(choreId)}&status=${isDone}&student=${encodeURIComponent(choreId.split('-chore-')[0])}`);
 
   updateChoreBanner();
 }
@@ -981,8 +980,7 @@ function toggleChoreBanner(el) {
   // Extract student name from chore id: "Amos-chore-2026-04-24" → "Amos"
   const studentName = choreId.split('-chore-')[0];
 
-  fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(choreId)}&status=${isDone}&student=${encodeURIComponent(studentName)}`, 
-    { mode: 'no-cors' });
+  sendSave(`${API_URL}?action=toggle&key=${encodeURIComponent(choreId)}&status=${isDone}&student=${encodeURIComponent(studentName)}`);
 
   const banner = document.getElementById('choreBanner');
   if (isDone) {
@@ -1597,14 +1595,13 @@ async function toggle(id, el, studentName, row, col, subject) {
 
   if (isChore) {
     const choreStudent = id.split('-chore-')[0];
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${wantsDone}&student=${encodeURIComponent(choreStudent)}`,
-      { mode: 'no-cors' });
+    sendSave(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${wantsDone}&student=${encodeURIComponent(choreStudent)}`);
   } else {
     let url = `${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${wantsDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}`;
     if (reflectionAnswer !== null) {
       url += `&subject=${encodeURIComponent(subject)}&reflection=${encodeURIComponent(reflectionAnswer)}`;
     }
-    fetch(url, { mode: 'no-cors' });
+    sendSave(url);
     startSyncTimer();
   }
   updateChoreBanner();

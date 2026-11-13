@@ -821,16 +821,14 @@ function toggleTask(id, palettePrimary, paletteSecondary, studentName, row, col)
   if (id.includes('-chore-')) {
     // Always derive student name from chore id to be safe
     const choreStudent = id.split('-chore-')[0];
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(choreStudent)}`, 
-      { mode: 'no-cors' });
+    sendSave(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(choreStudent)}`);
   } else {
     allData.students.forEach(s => {
       s.grid.forEach(subj => {
         subj.tasks.forEach(t => { if (t.id === id) t.done = isDone; });
       });
     });
-    fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}${pinQ()}`, 
-      { mode: 'no-cors' });
+    sendSave(`${API_URL}?action=toggle&key=${encodeURIComponent(id)}&status=${isDone}&student=${encodeURIComponent(studentName)}&row=${row}&col=${col}${pinQ()}`);
     startSyncTimer();
   }
 
@@ -895,8 +893,7 @@ function approveEntireDay(studentName, silent) {
           }
         }
         // Pass cell address
-        fetch(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true&student=${encodeURIComponent(studentName)}&row=${t.row}&col=${t.col}${pinQ()}`, 
-          { mode: 'no-cors' });
+        sendSave(`${API_URL}?action=toggle&key=${encodeURIComponent(t.id)}&status=true&student=${encodeURIComponent(studentName)}&row=${t.row}&col=${t.col}${pinQ()}`);
       }
     });
   });
