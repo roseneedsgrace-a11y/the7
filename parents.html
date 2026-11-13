@@ -325,11 +325,11 @@ function lockDashboard() {
   forgetPin();
   showLockScreen('Locked. This device no longer remembers your PIN.');
 }
-function pinQ() { return '&pin=' + encodeURIComponent(getStoredPin()); }
+function pinQ() { return '&pin=' + encodeURIComponent(getStoredPin()) + '&device=' + encodeURIComponent(getDeviceId()); }
 
 // Resolves true (right PIN), false (wrong PIN), or null (couldn't reach the server).
 function verifyPin(pin) {
-  return fetch(`${API_URL}?action=checkPin&pin=${encodeURIComponent(pin)}`)
+  return fetch(`${API_URL}?action=checkPin&pin=${encodeURIComponent(pin)}&device=${encodeURIComponent(getDeviceId())}`)
     .then(r => r.json())
     .then(r => !!(r && r.success))
     .catch(() => null);

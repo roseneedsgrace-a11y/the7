@@ -124,6 +124,20 @@ function showSaveStatus(state) {
 window.addEventListener('online', retryFailedSaves);
 window.addEventListener('load', () => setTimeout(retryFailedSaves, 3000));
 
+// ─── DEVICE ID ────────────────────────────────
+// A random ID for this browser, sent with PIN checks so that wrong guesses
+// lock out only this device instead of everyone.
+function getDeviceId() {
+  try {
+    let id = localStorage.getItem('device_id');
+    if (!id) {
+      id = 'd' + Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+      localStorage.setItem('device_id', id);
+    }
+    return id;
+  } catch (e) { return 'unknown'; }
+}
+
 // ─── LOCAL STORAGE ────────────────────────────
 function getLocalProgress() {
   return JSON.parse(localStorage.getItem('local_progress') || '{}');
@@ -190,12 +204,16 @@ function startSyncTimer() {
       clearInterval(syncCountdown);
       syncCountdown = null;
       timerEl.style.display = 'none';
-      btn.style.opacity = '1';
-      btn.style.color = '#16a34a';
-      btn.title = 'New data may be available';
-      btn.onclick = pushAndRefresh;
+      autoPushWhenSaved();
     }
   }, 1000);
+}
+
+// After checkmarks are saved, rebuild the shared data automatically so other
+// devices (like the Parents Dashboard) see them. Waits for any saves in progress.
+function autoPushWhenSaved() {
+  if (pendingSaves > 0) { setTimeout(autoPushWhenSaved, 500); return; }
+  pushAndRefresh();
 }
 
 // ─── PUSH AND REFRESH ─────────────────────────
