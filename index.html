@@ -966,13 +966,9 @@ function updateChoreBanner() {
     }
   });
 
-  if (todayTotal === 0) {
-    document.getElementById('choreBanner').style.display = 'none';
-    return;
-  }
-
+  // No schoolwork today (e.g. Saturday): chores are still due, so show them right away
   const lp = getLocalProgress();
-  const thresholdMet = (todayDone / todayTotal) >= 0.5;
+  const thresholdMet = todayTotal === 0 || (todayDone / todayTotal) >= 0.5;
 
   // Check all chores completion
   const choreStates = chores.map(c => ({
