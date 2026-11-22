@@ -544,7 +544,7 @@ function applyHeaderSettings(config) {
         autoView,
         chores: chores  // Always show if it exists, no threshold
       };
-    }).filter(s => s.tasks.length > 0 || s.pastDue.length > 0);
+    }).filter(s => s.tasks.length > 0 || s.pastDue.length > 0 || (s.chores && getChoresForDate(s.chores, targetDate).length > 0));
 
     renderStats(filtered);
 
